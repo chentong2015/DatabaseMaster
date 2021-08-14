@@ -1,3 +1,5 @@
+package mysql;
+
 public class DatabaseBasics {
 
     // MySQL的运行原理 https://juejin.cn/post/6969839499731795999

@@ -1,4 +1,8 @@
+package mysql;
+
 public class DatabaseMaster {
+
+
 
     // Q1. MySQL有哪些存储引擎啊？有何区别？
     // 1. 数据库往往是一个比较丰富完整的系统, 提供了SQL查询语言，事务和水平扩展等支持，底层往往会使用某种存储引擎
