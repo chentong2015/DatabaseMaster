@@ -1,7 +1,7 @@
-package mysql;
+package mysql.optimization;
 
 // 数据库(Oracle, MySQL)优化和调优的经验
-public class DatabaseOptimization {
+public class BaseDBOptimization {
 
     /*
      * 什么是索引？

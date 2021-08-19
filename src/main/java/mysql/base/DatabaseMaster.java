@@ -1,7 +1,6 @@
-package mysql;
+package mysql.base;
 
 public class DatabaseMaster {
-
 
 
     // Q1. MySQL有哪些存储引擎啊？有何区别？

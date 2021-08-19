@@ -1,4 +1,4 @@
-package mysql;
+package mysql.base;
 
 public class DatabaseBasics {
 
