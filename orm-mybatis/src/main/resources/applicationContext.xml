@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <!-- Spring Web:
+         添加依赖，如果是Spring项目，可以添加myBaits-spring
+         在IoC Container中注入MyBatis Spring bean
+
+         <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+            <property name="dataSource" ref="dataSource" />
+            <property name="typeAliasesPackage" value="com.lesson.model"/>
+         </bean>
+
+         <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+            <constructor-arg index="0" ref="sqlSessionFactory" />
+         </bean>
+
+         <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+            <property name="basePackage" value="com.lesson.dao" />
+         </bean>
+
+         <tx:annotation-driven transaction-manager="transactionManager" />
+         <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <property name="dataSource" ref="dataSource" />
+         </bean>
+    -->
+</beans>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>DatabaseMaster</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>orm-hibernate</artifactId>
+
+    <properties>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <!-- <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>8.4.1.jre8</version>
+        </dependency> -->
+
+        <!-- 这里需要从本地将hibernate jar文件添加进来 hibernate-core-5.4.11.Final.jar -->
+
+        <!-- Add module as dependency将自定义模块作为dependency (该模块将会获取所有dependency模块的所有依赖)
+            提供module的artifactId
+            使用parent的version来动态的匹配版本号
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>hibernate</artifactId>
+            <version>${parent.version}</version>
+        </dependency> -->
+    </dependencies>
+
+</project>

@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DatabaseMaster" />
+        <module name="distributed-db" />
+        <module name="orm-mybatis" />
+        <module name="relational-db-mysql" />
+        <module name="orm-hibernate" />
       </profile>
     </annotationProcessing>
   </component>
