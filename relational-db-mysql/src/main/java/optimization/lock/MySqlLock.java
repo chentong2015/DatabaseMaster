@@ -1,4 +1,4 @@
-package optimization;
+package optimization.lock;
 
 // 性能: 乐观锁，悲观锁
 // 操作: 读锁，写锁

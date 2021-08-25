@@ -1,6 +1,8 @@
 package com.ctong.main;
 
 // TODO: 对ORM架构源码级别的理解
+// https://www.bilibili.com/video/BV1QA411A7q1
+// https://www.bilibili.com/video/BV1U64y1W7fw
 public class MyBatisMaster {
 
     /**
