@@ -1,6 +1,6 @@
 package mysql_basics;
 
-public class DatabaseBasics {
+public class MysqlBasics {
 
     // 基本数据类型的理解
     // 1. Float、Decimal 存储金额的区别？

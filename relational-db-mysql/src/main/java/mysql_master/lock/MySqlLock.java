@@ -1,4 +1,4 @@
-package optimization.lock;
+package mysql_master.lock;
 
 // 性能: 乐观锁，悲观锁
 // 操作: 读锁，写锁
