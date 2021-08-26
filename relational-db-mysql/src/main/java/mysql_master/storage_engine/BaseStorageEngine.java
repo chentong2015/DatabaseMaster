@@ -3,7 +3,7 @@ package mysql_master.storage_engine;
 // TODO: 不同的"存储引擎"底层索引的存储结构有所区别
 // 1. 数据库往往是一个比较丰富完整的系统, 提供了SQL查询语言，事务和水平扩展等支持，底层往往会使用某种存储引擎
 // 2. 存储引擎则是小而精, 纯粹专注于单机的读/写/存储, 是用来形容数据库表的 !!
-public class StorageEngine {
+public class BaseStorageEngine {
 
     // MySQL底层的四种存储引擎
     // 1. Memory存储引擎
