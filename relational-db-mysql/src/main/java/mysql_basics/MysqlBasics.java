@@ -1,5 +1,6 @@
 package mysql_basics;
 
+// MySQL数据库的数据实际存储在安装目录下/data/数据库名称/...(一个库对于一个文件夹)
 public class MysqlBasics {
 
     // 基本数据类型的理解
