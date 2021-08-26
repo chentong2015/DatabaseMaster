@@ -9,4 +9,5 @@ package mysql_master.transactions;
 // 3. 保持事务短小,事务占有时间越短越好
 //    事务长时间锁表会严重阻塞其他SQL语句的执行
 public class TransactionSpecification {
+
 }
