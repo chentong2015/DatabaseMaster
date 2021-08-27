@@ -9,7 +9,7 @@
          String selectPerson = "SELECT * FROM PERSON WHERE ID=?";
          PreparedStatement ps = conn.prepareStatement(selectPerson);
          ps.setInt(1,id); -->
-    <select id="selectBlog" resultType="com.ctong.main.model.Blog"> <!-- 返回的类型必须能够通过完整的package路径找到 -->
+    <select id="selectBlog" resultType="mybatis_basics.model.Blog"> <!-- 返回的类型必须能够通过完整的package路径找到 -->
         select *
         from blog
         where id = #{id}

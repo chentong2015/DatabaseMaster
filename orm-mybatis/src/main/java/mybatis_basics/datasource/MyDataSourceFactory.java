@@ -1,4 +1,4 @@
-package com.ctong.main.datasource;
+package mybatis_basics.datasource;
 
 import org.apache.ibatis.datasource.DataSourceFactory;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;

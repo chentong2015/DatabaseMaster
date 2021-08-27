@@ -1,7 +1,7 @@
-package com.ctong.main.mapper;
+package mybatis_basics.mapper;
 
-import com.ctong.main.model.Blog;
-import com.ctong.main.model.User;
+import mybatis_basics.model.Blog;
+import mybatis_basics.model.User;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.mapping.FetchType;
 

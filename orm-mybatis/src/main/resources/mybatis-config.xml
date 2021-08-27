@@ -44,6 +44,6 @@
     <mappers>
         <!-- 使用相对于类路径的资源引用, 默认的资源路径/resources -->
         <mapper resource="BlogMapper.xml"/>
-        <!-- 添加使用Java注解配置的映射器 <mapper class="com.ctong.main.mapper.BlogMapper"/> -->
+        <!-- 添加使用Java注解配置的映射器 <mapper class="mybatis_basics.mapper.BlogMapper"/> -->
     </mappers>
 </configuration>

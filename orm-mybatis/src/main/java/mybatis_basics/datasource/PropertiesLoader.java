@@ -1,4 +1,4 @@
-package com.ctong.main.datasource;
+package mybatis_basics.datasource;
 
 import java.io.IOException;
 import java.util.Properties;

@@ -1,4 +1,4 @@
-package com.ctong.main.handler;
+package mybatis_basics.handler;
 
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;

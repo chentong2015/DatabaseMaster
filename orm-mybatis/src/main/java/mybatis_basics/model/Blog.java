@@ -1,4 +1,4 @@
-package com.ctong.main.model;
+package mybatis_basics.model;
 
 public class Blog {
 

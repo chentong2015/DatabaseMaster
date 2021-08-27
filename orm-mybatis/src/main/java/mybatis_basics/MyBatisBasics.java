@@ -1,9 +1,9 @@
-package com.ctong.main;
+package mybatis_basics;
 
-import com.ctong.main.datasource.MyDataSourceFactory;
-import com.ctong.main.datasource.PropertiesLoader;
-import com.ctong.main.mapper.BlogMapper;
-import com.ctong.main.model.Blog;
+import mybatis_basics.datasource.MyDataSourceFactory;
+import mybatis_basics.datasource.PropertiesLoader;
+import mybatis_basics.mapper.BlogMapper;
+import mybatis_basics.model.Blog;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.mapping.Environment;
 import org.apache.ibatis.session.Configuration;

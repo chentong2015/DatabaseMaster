@@ -1,4 +1,4 @@
-package com.ctong.main;
+package mybatis_master;
 
 // TODO: 对ORM架构源码级别的理解
 // https://www.bilibili.com/video/BV1QA411A7q1
