@@ -1,12 +1,13 @@
 
- 索引补充 https://www.bilibili.com/video/BV1954y1h7Lw?p=9
- 数据库锁
+ 数据库锁补充
  在执行transactions操作的时候所使用的两种锁的策略: 乐观锁，悲观锁 !!!
  https://docs.oracle.com/javaee/7/tutorial/persistence-locking001.htm
  https://www.objectdb.com/java/jpa/persistence/lock#Optimistic_Locking
  https://docs.jboss.org/hibernate/orm/4.0/devguide/en-US/html/ch05.html
 
- 什么是MySQL隔离级别？
+  索引补充 https://www.bilibili.com/video/BV1954y1h7Lw?p=9
+
+  什么是MySQL隔离级别？
   对Explain参数及重要参数的理解？
   二叉树的装置是什么？
   B+tree 如何进行优化？索引遵循哪些原则？

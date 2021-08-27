@@ -30,13 +30,16 @@ public class TransactionsConcurrency {
     //    1.3 读未提交
     //    1.4 串行化: 使用锁
 
-    // TODO: MySQL使用MVCC机制实现"可重复读"和"读可提交"两种隔离级别: ReadView机制 + Undo回滚链
-    //       MySQL使用MVCC机制+锁，解决数据"幻读"的问题
+    // TODO: Multi-Version Concurrency Control
+    // MySQL使用MVCC机制实现"可重复读"和"读可提交"两种隔离级别: ReadView机制 + Undo回滚链
+    // MySQL使用MVCC机制+锁，解决数据"幻读"的问题
 
-    // ReadView机制：查询sql时会生成一致性视图(快照记录，并不是复制数据)，由所有未提交的事务id和已经创建的最大事务id组成
-    //              [min_id,,,]max_id; 根据该一致性视图判断数据的可见性(如图)
-    // TODO: ReadView是针对session级别的，当session中执行select的时候，则会生成这样一个快照，
-    //       之后所有的select语句的执行都延用这个快照去完成"版本链比对规则"，即使换一张表select也是如此 !!
+    // TODO: ReadView机制：
+    // 1. 查询sql时会生成一致性视图(快照记录，并不是复制数据)，由所有未提交的事务id和已经创建的最大事务id组成
+    //    [min_id,,,]max_id; 根据该一致性视图判断数据的可见性(如图)
+    // 2. ReadView是针对session级别的，当session中执行select的时候，则会生成这样一个快照，
+    //    之后所有的select语句的执行都延用这个快照去完成"版本链比对规则"，即使换一张表select也是如此
+
     // #Transaction100          #Transactions200         #Transactions300            #Select1                                          #Select2
     // begin;                   begin;                   begin;                      begin;                                            begin;
     // update test c1=123

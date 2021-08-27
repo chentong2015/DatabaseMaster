@@ -10,4 +10,10 @@ package mysql_master.transactions;
 //    事务长时间锁表会严重阻塞其他SQL语句的执行
 public class TransactionSpecification {
 
+    // Java JDBC Transaction执行操作
+    // 1. Turn off auto-commit: Connection.setAutoCommit(false);
+    // 2. Perform the SQL Operations
+    // 3. If OK, Connection.commit();
+    //    Else Connection.rollback();
+    // 4. Turn on the auto-commit: Connection.setAutoCommit(true);
 }
