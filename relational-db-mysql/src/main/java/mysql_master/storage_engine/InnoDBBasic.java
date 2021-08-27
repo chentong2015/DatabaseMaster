@@ -41,7 +41,7 @@ public class InnoDBBasic {
     //        如果写的过程中DoubleWrite Buffer，可以通过t1表空间+redo log来恢复原来内存中的page页数据
     //    2.2 如果成功，再分四次写到t1表空间，如果在写的过程中OS挂了
     //        再通过DoubleWrite Buffer中的持久化数据来将数据页写完成
-    // 随着磁盘的优化，如果能够支撑16KB原子性的写，则不再需要DoubleWrite Buffer Files
+    //    随着磁盘的优化，如果能够支撑16KB原子性的写，则不再需要DoubleWrite Buffer Files
 
     // 3. InnoDB如何使用Page页(16KB)来存储数据 ?
     //    页目录(索引)  在用户数据区域

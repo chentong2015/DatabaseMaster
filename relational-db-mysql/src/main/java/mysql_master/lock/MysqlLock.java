@@ -5,6 +5,6 @@ package mysql_master.lock;
 // 操作: 读锁，写锁
 // 粒度: 表锁，行锁
 // 其他: 间隙锁，临键锁
-public class MySqlLock {
+public class MysqlLock {
 
 }
