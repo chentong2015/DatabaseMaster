@@ -17,4 +17,12 @@ public class IndexSpecification {
     // Index基本操作指令
     // > CREATE INDEX index_name ON table_name (col1);
     // > Show index from table_name;
+
+    // TODO: 常见的索引失效问题 ==> 索引优化策略
+    // 1. 不在索引列上做任何操作(计算、函数、类型转换)，会导致索引失效而转向全表扫描
+    // 2. mysql在使用不等于(！=或者<>)的时候无法使用索引会导致全表扫描
+    // 3. is null，is not null无法使用索引
+    // 4. like以通配符开头（“%abc..…）mysql索引失效会变成全表扫描的操作
+    // 5. 字符串不加单引号索引失效
+    // 6. 少用or，用它来连接时会索引失效
 }
