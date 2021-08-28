@@ -1,11 +1,11 @@
-package mysql_master.transactions;
+package mysql_master.transaction;
 
 // 并发事务带来的问题，事务失效的场景
 // 1. 脏读: 读到未提交更新的数据
 // 2. 幻读: 读到已提交插入数据                       ===> MVCC机制 + lock_ordinary锁
 // 3. 更新丢失: A事务提交或者撤销时，把B事务更新数据覆盖
 // 4. 不可重复读：一个事务范围内两个查询返回了不同的结果   ===> MySQL设计的效果是"REPEATABLE-READ 可重复读"
-public class TransactionsConcurrency {
+public class TransactionConcurrency {
 
     // MySQL何时生成事务ID
     // 1. 在begin之后，执行第一个操作InnoDB语句表的语句时，事务才真正启动，向MySQL申请事务id，并且严格按照顺序来分配

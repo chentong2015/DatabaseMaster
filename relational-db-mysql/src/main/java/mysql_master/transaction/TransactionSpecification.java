@@ -1,4 +1,4 @@
-package mysql_master.transactions;
+package mysql_master.transaction;
 
 // 事务操作的基本规范：
 // 1. 多表写操作要保证事务完整性

@@ -1,6 +1,6 @@
-package mysql_master.transactions;
+package mysql_master.transaction;
 
-public class Transactions {
+public class Transaction {
 
     // 事务的ACID属性
     // 1. Atomicity  原子性: 事务是一个原子执行单元，全部执行或者不执行
