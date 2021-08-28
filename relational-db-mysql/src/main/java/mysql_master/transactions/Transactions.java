@@ -19,7 +19,7 @@ public class Transactions {
     // 1. bin log: MySQL的概念
     //    1.1 存储一些执行的SQL语句，恢复的时候需要执行语句，比redo log慢
     //    1.2 主要用在数据库主从上面，比如需要将数据库转移到新开的数据库中，则需要bin log
-    // 2. redo log: InnoDB存储引擎概念
+    // 2. redo log: InnoDB存储引擎概念  >> 在事务commit提交之后生成
     //    2.1 记录的是Page中某地址中的一些数据进行了修改，做数据恢复会更快
     //    2.2 不能用于数据库的主从关系，不能搬redo log
     // 3. undo log:

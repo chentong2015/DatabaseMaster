@@ -8,4 +8,5 @@ package mysql_basics;
 //    把原始驱动表的数据读取到join_buffer中，然后扫描被驱动表，从被驱动表中提取每一行和join_buffer中的数据对比
 public class MysqlMaster {
 
+    // TODO: 数据库常见操作规范
 }

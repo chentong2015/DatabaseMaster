@@ -1,6 +1,7 @@
 package mysql_master.index;
 
 // 索引是什么：帮助MySQL高效获取数据的"排好序的数据结构"
+// 索引的利弊：高效搜索 & 空间和资源
 public class IndexDataStructure {
 
     // 1. 二叉树: 结点存储<key, value> value存储的是磁盘文件地址
@@ -43,12 +44,13 @@ public class IndexDataStructure {
     // 3. 最左前缀法则: 一种限制
     //    要使用联合索引，必须从前面的字段开始使用，不能跳过前面的直接使用后面的字段
     //    因为联合索引的B+树的构建是根据逐个字段排号序的，后面的单个字段不是排好序的
-    // 4. 为什么非主键索引结构，叶子结点存储的是主键值?
+    // 4. 为什么非主键索引结构(二级索引)，叶子结点存储的是主键值?
     //    TODO: 存在一致性(数据更新困难)和节省存储空间问题
     //    对于创建的非主键索引，在叶子结点上如果存储的是表的实际数据，则会和主键索引生成的B+树中的叶子结点上的数据一致，存在数据的冗余 !!
     //    因此在叶子结点存储的是主键值，通过主键去主键索引B+树上查询完整的一行数据信息 ==> "回表"到聚集索引上去查询
-    // 5. TODO: 在联合索引的场景下，如果走索引(回表操作)所执行的性能更低，则MySQL会选择全表扫描来执行
-    //    具体是否走索引需要进一步的判断
+    // 5. TODO: 锁失效的一般问题 ? MySQL会做出最优性能的选择，走索引 & 全表扫描
+    //          即使在没有添加where的情况下，也可能从已有的索引中找出能走的索引，并且找出效率最高的那个索引(比如走二级索引，叶子页包含更多)
+    //          在联合索引的场景下，如果走索引所执行的性能更低，没有办法直接在B+树中拿到数据，造成回表操作
     //    Select * from b > 1;    All
     //    Select b from b > 1;    Index  利用B+树存储结构中的数据，判断是否有回表造成的性能损失
     //    Select * from b = 1;    Index
@@ -60,5 +62,5 @@ public class IndexDataStructure {
     //    Select * from table1 where e = '1';            Index
     //    Select * from table1 where a = 1;              Index
     //    Select * from table1 where a = '1';            Index 可以在char和int直接直接大小比较，因此会走索引
-    //    SELECT * FROM t_demo_index where a = 'chen';   ALL   如果类型之间需要比较强的转换，则不会走索引
+    //    Select * FROM t_demo_index where a = 'chen';   ALL   如果类型之间需要比较强的转换，则不会走索引
 }

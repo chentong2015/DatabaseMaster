@@ -22,7 +22,6 @@
             <artifactId>mssql-jdbc</artifactId>
             <version>8.4.1.jre8</version>
         </dependency> -->
-
         <!-- 这里需要从本地将hibernate jar文件添加进来 hibernate-core-5.4.11.Final.jar -->
 
         <!-- Add module as dependency将自定义模块作为dependency (该模块将会获取所有dependency模块的所有依赖)
@@ -34,5 +33,4 @@
             <version>${parent.version}</version>
         </dependency> -->
     </dependencies>
-
 </project>
