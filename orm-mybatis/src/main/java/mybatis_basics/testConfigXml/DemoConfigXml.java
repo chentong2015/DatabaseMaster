@@ -1,6 +1,7 @@
 package mybatis_basics.testConfigXml;
 
 import mybatis_basics.DataModel.Blog;
+import mybatis_basics.testJavaAnnotation.mapper.BlogMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -19,7 +20,8 @@ public class DemoConfigXml {
 
         // SqlSession提供了在数据库执行SQL命令所需的所有方法, 直接执行已映射的SQL语句
         try (SqlSession session = sqlSessionFactory.openSession()) {
-            // 使用完整的名称空间来调用指定的方法
+            // BlogMapper mapper = session.getMapper(BlogMapper.class); 新版使用方式
+            // 使用完整的名称空间来调用指定的方法(老版本的使用方式)
             Blog blog = session.selectOne("mybatis_basics.testConfigXml.BlogMapper.selectBlog", 1);
             System.out.println(blog.getName());
         }

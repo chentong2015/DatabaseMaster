@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-    <!-- 使用配置文件来动态配置全局的property属性变量，资源默认路径是/resources -->
+    <!-- 使用配置文件来动态配置"全局的property属性变量"，资源默认路径是/resources -->
     <properties resource="mybatis-config.properties">
         <property name="driverClassName" value="driverClassName"/>
         <property name="url" value="url"/>
@@ -25,10 +25,13 @@
         </environment>
     </environments>
 
-    <!-- 两种设置Mapper的方式：使用xml文件配置(默认资源路径/resources) & 定义class类型方法 -->
+    <!-- TODO: Mappers提供四种加载映射语句的方式 + Package -->
     <mappers>
-        <mapper resource="BlogMapper.xml"/>
+        <!-- <package name="mybatis_basics.testJavaAnnotation.mapper"/> 首先级更高，加载的映射语句更多 -->
+        <mapper resource="BlogMapper.xml"/> <!-- 默认资源路径/resources -->
         <!-- <mapper class="mybatis_basics.testJavaAnnotation.mapper.BlogMapper"/> -->
+        <!-- <mapper url="file:///var/mappers/BlogMapper.xml"/> -->
+        <!-- <mapper name="org.mybatis.builder"/> -->
     </mappers>
 
     <!-- MyBatis可以用完整配置参数

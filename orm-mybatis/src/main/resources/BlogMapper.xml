@@ -9,15 +9,13 @@
     <select id="selectBlog" resultType="mybatis_basics.DataModel.Blog">
         select * from blog where id = #{id}
         <!-- #{id} 类似于创建一个预处理语句PreparedStatement参数
-              String selectPerson = "SELECT * FROM PERSON WHERE ID=?";
-              PreparedStatement ps = conn.prepareStatement(selectPerson);
-              ps.setInt(1,id);
-         -->
+        String selectPerson = "SELECT * FROM PERSON WHERE ID=?";
+        PreparedStatement ps = conn.prepareStatement(selectPerson);
+        ps.setInt(1,id); -->
     </select>
 
-    <!--
-    resultMap – 描述如何从数据库结果集中加载对象
-    可以提供一个结果的映射map, 将查询出来的信息映射到User对象
+    <!-- resultMap – 描述如何从数据库结果集中加载对象
+         可以提供一个结果的映射map, 将查询出来的信息映射到User对象
     <resultMap type="org.apache.ibatis.submitted.rounding.User" id="usermap">
         <id column="id" property="id"/>
         <result column="name" property="name"/>
@@ -26,7 +24,6 @@
     </resultMap>
     <select id="getUser" resultMap="usermap">  这里必须使用resultMap, 而不是resultType
         select * from users
-    </select>
-    -->
+    </select> -->
 </mapper>
 

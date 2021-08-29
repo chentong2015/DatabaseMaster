@@ -1,6 +1,5 @@
 package mybatis_basics.testJavaAnnotation;
 
-import mybatis_basics.DataModel.Blog;
 import mybatis_basics.DataModel.User;
 import mybatis_basics.testJavaAnnotation.mapper.BlogMapper;
 import mybatis_basics.testJavaAnnotation.datasource.MyDataSourceFactory;
@@ -16,7 +15,7 @@ import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 import javax.sql.DataSource;
 import java.io.IOException;
 
-// 全部使用Java源码和注解的方式，提高编译时的类型安全性
+// 全部使用Java源码和注解的方式，提高编译时的类型安全性，但是不利于SQL的维护，重新编译
 public class DemoJavaAnnotation {
 
     public static void main(String[] args) throws IOException {
