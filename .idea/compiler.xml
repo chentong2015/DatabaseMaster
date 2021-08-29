@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="distributed-db" />
+        <module name="orm-spring-jdbc" />
         <module name="orm-mybatis" />
         <module name="relational-db-mysql" />
         <module name="orm-hibernate" />

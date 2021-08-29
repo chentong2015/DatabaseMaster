@@ -25,7 +25,7 @@
         </environment>
     </environments>
 
-    <!-- TODO: Mappers提供四种加载映射语句的方式 + Package -->
+    <!-- TODO: Mappers提供Package + 四种加载映射语句的方式 -->
     <mappers>
         <!-- <package name="mybatis_basics.testJavaAnnotation.mapper"/> 首先级更高，加载的映射语句更多 -->
         <mapper resource="BlogMapper.xml"/> <!-- 默认资源路径/resources -->
@@ -56,7 +56,6 @@
      <typeAliases>
          <typeAlias alias="Author" type="domain.blog.Author"/> 设置别名
      </typeAliases>
-
      <typeHandlers>
          自定义的类型处理器：将从PreparedStatement结果集中取出的值转换成Java类型
          <typeHandler handler="org.mybatis.example.ExampleTypeHandler"/>

@@ -2,19 +2,33 @@ package mybatis_basics;
 
 // SSM(SpringMVC+Spring+Mybatis)设计思路
 // SSH(Struts2+Spring+Hibernate)由于Struts2高危漏洞, 被SSM替代
+
+// 数据库开发规范：访问数据库必须使用连接池, 提供可靠性保护：网络中断自动重连, 连接数限制，定期回收连接，设置超时时间等
+// 1. 必须具有自动重连的功能
+// 2. 必须设置何理的超时时间, 防止程序访问数据库长时间的挂死
+// 3. 数据库连接池必须设置最大值, 默认是500个连接
+// 4. Java语言推荐使用mybatis持久层框架来访问数据库
 public class MyBatisBasics {
+
+    // TODO: ORM(Object Relational Mapping)层的精髓: Map映射 + Row Mapper思想
+    // 对于面向对象编程语言(类型安全)里，不同"类型系统数据"之间的转换
+    //  Java类型               数据库表字段      数据库类型
+    //  java.lang.Integer     id              Integer
+    //  java.lang.String      name            VARCHAR
+    //  java.lang.String      context         LONGVARCHAR
+
+    // TODO：A系统传递给B系统一条SQL, B系统如何检测判断这条SQL正确性 ?
+    // select * from t_blog where id=#{id};  JDBC无法执行
+    // select * from t_blog where id=?;      MyBatis需要对其进行改写
+    // 底层本质：SQL改写，语法引擎(SQL必须符合引擎所规定的语法)
+
 
     // iBatis: Google 2001年发起的开放源代码项目, 一个基于Java的持久层框架, 2010 Apache软件基金会退役
     // MyBatis: 持久层框架，它支持自定义SQL、存储过程以及高级映射
-    // 1. 主要提供SQL(sql语句)和DAO(Data Access Objects 实体类)之间的映射Map, 省掉了相同功能的JDBC很多代码
-    // 2. "半自动化"的ORM实现, 需要写SQL, 增加了程序的灵活性(作为ORM的一种补充)
-    // 3. 取消JDBC代码以及设置参数和获取结果集的代码
-    // 4. MyBatis特性的两种实现方式"基于XML映射"或者"Java注解"
+    // 1. 提供SQL(sql语句)和DAO(Data Access Objects实体类)之间的映射Map, 省掉了相同功能的JDBC很多代码
+    // 2. ORM的补充: "半自动化"的ORM实现, 需要写SQL, 增加了程序的灵活性
 
-    // 官网: https://mybatis.org/mybatis-3/zh/getting-started.html
-    // APIs: https://mybatis.org/mybatis-3/es/apidocs/index.html?org/apache/ibatis
-
-    // MyBatis核心类型
+    // MyBatis核心类型 / 两种实现方式"基于XML映射"或者"Java注解"
     // 1. SqlSessionFactoryBuilder:
     //    实例化之后，创建SqlSessionFactory之后则不再需要，最好关闭(保证在方法局部作用域)
     // 2. SqlSessionFactory:
@@ -27,5 +41,4 @@ public class MyBatisBasics {
     // 4. Mapper:
     //    映射器接口实例是从SqlSession中获得的, 最好放在方法作用域内, 映射器实例并不需要被显式地关闭
     //    MyBatis创建结果对象的新实例时, 它都会使用一个对象工厂(ObjectFactory)实例来完成实例化工作
-    //
 }
