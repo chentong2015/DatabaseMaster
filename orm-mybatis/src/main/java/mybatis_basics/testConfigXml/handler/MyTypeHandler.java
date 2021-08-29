@@ -1,4 +1,4 @@
-package mybatis_basics.handler;
+package mybatis_basics.testConfigXml.handler;
 
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
@@ -12,7 +12,7 @@ import java.sql.SQLException;
 @MappedJdbcTypes(JdbcType.VARCHAR)
 public class MyTypeHandler extends BaseTypeHandler<String> {
 
-    // 设置预处理语句（PreparedStatement）中的参数，使用PreparedStatement可以避免SQL注入
+    // 设置预处理语句PreparedStatement中的参数，使用PreparedStatement可以避免SQL注入
     @Override
     public void setNonNullParameter(PreparedStatement preparedStatement, int i, String s, JdbcType jdbcType) throws SQLException {
         preparedStatement.setString(i, s);

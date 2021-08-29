@@ -6,7 +6,7 @@
 <hibernate-mapping>
     <!--
          连接好数据库之后，选择正确的Table进行关联，在这里配置映射的关系(或者自动生成)
-         <class name="com.ctong.springbasic.BaseTechnologies.spring.model.DBTable" table="Book" schema="Books" catalog="Database">
+         <class name="com.ctong.springbasic.BaseTechnologies.spring.DataModel.DBTable" table="Book" schema="Books" catalog="Database">
             <id name="id" column="ID">
                 <generator class="native"/>  该列的ID会自动的增加
             </id>

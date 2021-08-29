@@ -1,19 +1,19 @@
-package mybatis_basics.datasource;
+package mybatis_basics.testJavaAnnotation.datasource;
 
 import java.io.IOException;
 import java.util.Properties;
 
 public class PropertiesLoader {
 
-    // 从默认的资源/resources路径下面加载配置文件, InputStream
-    public static Properties getPropertiesFromResourcePath() throws IOException {
+    // 1. 从默认的资源路径/resources下面加载动态配置文件
+    public static Properties getPropertiesFromResource() throws IOException {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         Properties properties = new Properties();
         properties.load(classLoader.getResourceAsStream("mybatis-config.properties"));
         return properties;
     }
 
-    // 将配置信息写进java源码中: 不推荐 !!
+    // 2. 将配置信息写进java源码
     public static Properties createProperties() {
         Properties prop = new Properties();
         prop.setProperty("driverClassName", "com.mysql.jdbc.Driver");

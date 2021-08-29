@@ -1,4 +1,4 @@
-package mybatis_basics.datasource;
+package mybatis_basics.testJavaAnnotation.datasource;
 
 import org.apache.ibatis.datasource.DataSourceFactory;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
@@ -10,7 +10,13 @@ public class MyDataSourceFactory implements DataSourceFactory {
 
     private Properties properties;
 
-    // 使用MyBatis的数据资源池PooledDataSource, 该类型实现了DataSource接口
+    // 设置从PropertiesLoader加载的properties配置信息
+    @Override
+    public void setProperties(Properties properties) {
+        this.properties = properties;
+    }
+
+    // 使用properties配置信息生成连接数据库的dataSource
     @Override
     public DataSource getDataSource() {
         PooledDataSource dataSource = new PooledDataSource();
@@ -19,10 +25,5 @@ public class MyDataSourceFactory implements DataSourceFactory {
         dataSource.setUsername(properties.getProperty("username"));
         dataSource.setPassword(properties.getProperty("password"));
         return dataSource;
-    }
-
-    @Override
-    public void setProperties(Properties properties) {
-        this.properties = properties;
     }
 }

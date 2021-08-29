@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 定义映射器所在的特定的名称空间 -->
-<mapper namespace="com.ctong.main.BlogMapper">
+<mapper namespace="mybatis_basics.testConfigXml.BlogMapper">
 
-    <!-- 定义了一个名为selectBlog的映射语句: 类似于创建一个预处理语句PreparedStatement参数
-         String selectPerson = "SELECT * FROM PERSON WHERE ID=?";
-         PreparedStatement ps = conn.prepareStatement(selectPerson);
-         ps.setInt(1,id); -->
-    <select id="selectBlog" resultType="mybatis_basics.model.Blog"> <!-- 返回的类型必须能够通过完整的package路径找到 -->
-        select *
-        from blog
-        where id = #{id}
+    <!-- 返回的类型必须能够通过完整的package路径找到 -->
+    <select id="selectBlog" resultType="mybatis_basics.DataModel.Blog">
+        select * from blog where id = #{id}
+        <!-- #{id} 类似于创建一个预处理语句PreparedStatement参数
+              String selectPerson = "SELECT * FROM PERSON WHERE ID=?";
+              PreparedStatement ps = conn.prepareStatement(selectPerson);
+              ps.setInt(1,id);
+         -->
     </select>
 
     <!--
@@ -24,17 +24,9 @@
         <result column="funkyNumber" property="funkyNumber"/>
         <result column="roundingMode" property="roundingMode"/>
     </resultMap>
-
     <select id="getUser" resultMap="usermap">  这里必须使用resultMap, 而不是resultType
-        select *
-        from users
+        select * from users
     </select>
-
-    sql – 可被其它语句引用的可重用语句块
-    insert – 映射插入语句
-    update – 映射更新语句
-    delete – 映射删除语句
-    select – 映射查询语句
     -->
 </mapper>
 

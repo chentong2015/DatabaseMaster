@@ -1,7 +1,7 @@
 package mysql_master;
 
 // 基础优化策略：数据库表优化，索引优化，SQL慢查询的优化
-// 高级优化策略: 分布式缓存，CDN，数据库读写分离
+// 高级优化策略: 分布式缓存，CDN，数据库读写分离(CopyOnWrite思想)
 public class MysqlOptimization {
 
     // 数据库表优化

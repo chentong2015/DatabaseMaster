@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE configuration
-        PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-    <!-- 使用配置文件来配置属性变量的值，然后在整个配置文件中替换需要动态配置的属性值
-         resource默认是资源的路径/resources -->
+    <!-- 使用配置文件来动态配置全局的property属性变量，资源默认路径是/resources -->
     <properties resource="mybatis-config.properties">
         <property name="driverClassName" value="driverClassName"/>
         <property name="url" value="url"/>
@@ -16,7 +15,7 @@
         <environment id="development">
             <!-- 决定事务作用域和控制方式的事务管理器 -->
             <transactionManager type="JDBC"/>
-            <!-- 获取数据库连接实例的数据源DataSource: 4个基本名称变量不可修改 -->
+            <!-- 获取数据库连接实例的数据源DataSource: 基本名称变量不可修改 -->
             <dataSource type="POOLED">
                 <property name="driver" value="${driverClassName}"/>
                 <property name="url" value="${url}"/>
@@ -26,24 +25,37 @@
         </environment>
     </environments>
 
-    <!-- 整体的XML的配置
-    <settings>
-        <setting name="cacheEnabled" value="true"/>
-    </settings>
-
-    类型别名可为 Java 类型设置一个缩写名字
-    <typeAliases>
-        <typeAlias alias="Author" type="domain.blog.Author"/>
-    </typeAliases>
-
-    添加自定义的类型处理器：将从PreparedStatement结果集中取出的值转换成Java类型
-    <typeHandlers>
-        <typeHandler handler="org.mybatis.example.ExampleTypeHandler"/>
-    </typeHandlers> -->
-
+    <!-- 两种设置Mapper的方式：使用xml文件配置(默认资源路径/resources) & 定义class类型方法 -->
     <mappers>
-        <!-- 使用相对于类路径的资源引用, 默认的资源路径/resources -->
         <mapper resource="BlogMapper.xml"/>
-        <!-- 添加使用Java注解配置的映射器 <mapper class="com.ctong.main.mapper.BlogMapper"/> -->
+        <!-- <mapper class="mybatis_basics.testJavaAnnotation.mapper.BlogMapper"/> -->
     </mappers>
+
+    <!-- MyBatis可以用完整配置参数
+     <settings>
+         <setting name="cacheEnabled" value="true"/>
+         <setting name="lazyLoadingEnabled" value="true"/>
+         <setting name="multipleResultSetsEnabled" value="true"/>
+         <setting name="useColumnLabel" value="true"/>
+         <setting name="useGeneratedKeys" value="false"/>
+         <setting name="autoMappingBehavior" value="PARTIAL"/>
+         <setting name="autoMappingUnknownColumnBehavior" value="WARNING"/>
+         <setting name="defaultExecutorType" value="SIMPLE"/>
+         <setting name="defaultStatementTimeout" value="25"/>
+         <setting name="defaultFetchSize" value="100"/>
+         <setting name="safeRowBoundsEnabled" value="false"/>
+         <setting name="mapUnderscoreToCamelCase" value="false"/>
+         <setting name="localCacheScope" value="SESSION"/>
+         <setting name="jdbcTypeForNull" value="OTHER"/>
+         <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+     </settings>
+
+     <typeAliases>
+         <typeAlias alias="Author" type="domain.blog.Author"/> 设置别名
+     </typeAliases>
+
+     <typeHandlers>
+         自定义的类型处理器：将从PreparedStatement结果集中取出的值转换成Java类型
+         <typeHandler handler="org.mybatis.example.ExampleTypeHandler"/>
+     </typeHandlers> -->
 </configuration>

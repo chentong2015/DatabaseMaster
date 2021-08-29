@@ -1,4 +1,4 @@
-package mybatis_basics.model;
+package mybatis_basics.DataModel;
 
 public class Blog {
 
