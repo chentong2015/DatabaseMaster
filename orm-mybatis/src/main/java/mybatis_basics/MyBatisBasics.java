@@ -17,7 +17,7 @@ package mybatis_basics;
 //    3.3 使用Web框架, 应该将SqlSession放在和HTTP请求相似的作用域中, 收到请求时打开, 返回响应后关闭
 // 4. Mapper:
 //    映射器接口实例是从SqlSession中获得的, 最好放在方法作用域内, 映射器实例并不需要被显式地关闭
-//    MyBatis创建结果对象的新实例时, 它都会使用一个对象工厂(ObjectFactory)实例来完成实例化工作
+//    MyBatis创建结果对象的新实例时, 它都会使用对象工厂(ObjectFactory)实例来完成实例化工作
 public class MyBatisBasics {
 
     // TODO: ORM(Object Relational Mapping)层的精髓: Map映射 + Row Mapper思想

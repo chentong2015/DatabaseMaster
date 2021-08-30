@@ -23,10 +23,14 @@ public class MapperSqlLoader {
     //   if (resource != null && url == null && mapperClass == null) {
     //      ErrorContext.instance().resource(resource);
     //      inputStream = Resources.getResourceAsStream(resource);
-    //      使用特定的类型来加载xxxMapper.xml
+    //      // 使用特定的类型来加载xxxMapper.xml
     //      mapperParser = new XMLMapperBuilder(inputStream, this.configuration, resource, this.configuration.getSqlFragments());
     //      mapperParser.parse();
     //      ...
+    //   } else if (resource == null && url == null && mapperClass != null) {
+    //      // 以下是使用<mapper class="xxx" />的方式添加映射语句
+    //      Class<?> mapperInterface = Resources.classForName(mapperClass);
+    //      configuration.addMapper(mapperInterface);
     //
 
     // XMLMapperBuilder.configurationElement(XNode context)

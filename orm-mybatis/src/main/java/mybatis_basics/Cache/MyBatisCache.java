@@ -28,23 +28,26 @@ public class MyBatisCache {
         InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         String statement = "mybatis_basics.testConfigXml.BlogMapper.selectBlog";
+        // 1. 第二次查询时，直接从缓存中取数据
         try (SqlSession session = sqlSessionFactory.openSession()) {
             Blog blog1 = session.selectOne(statement, 1);
-            Blog blog2 = session.selectOne(statement, 1); // 第二次查询时，直接从缓存中取数据
+            Blog blog2 = session.selectOne(statement, 1);
             System.out.println(blog1.getName());
             System.out.println(blog2.getName());
         }
 
+        // 2. 第二次查询时，如果缓存中找不到，则查询数据库
         try (SqlSession session = sqlSessionFactory.openSession()) {
             Blog blog1 = session.selectOne(statement, 1);
-            Blog blog2 = session.selectOne(statement, 2); // 第二次查询时，如果缓存中找不到，则查询数据库
+            Blog blog2 = session.selectOne(statement, 2);
             System.out.println(blog1.getName());
             System.out.println(blog2.getName());
         }
 
+        // 3. 如果Session会话已经Commit，则下次查询时将重新走数据库
         SqlSession session = sqlSessionFactory.openSession();
         Blog blog1 = session.selectOne(statement, 1);
-        session.commit();                                      // 如果Session会话已经Commit，则下次查询时将重新走数据库
+        session.commit();
         Blog blog2 = session.selectOne(statement, 1);
         System.out.println(blog1.getName());
         System.out.println(blog2.getName());
