@@ -18,7 +18,6 @@ public class DemoConfigXml {
         InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
 
-        // SqlSession提供了在数据库执行SQL命令所需的所有方法, 直接执行已映射的SQL语句
         try (SqlSession session = sqlSessionFactory.openSession()) {
             // BlogMapper mapper = session.getMapper(BlogMapper.class); 新版使用方式
             // 使用完整的名称空间来调用指定的方法(老版本的使用方式)

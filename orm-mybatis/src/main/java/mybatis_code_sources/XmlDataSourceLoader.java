@@ -1,10 +1,31 @@
 package mybatis_code_sources;
 
 // 源码主要通过XMLConfigBuilder获取和解析MyBatis-config.xml配置文件
+// TODO: MyBatis提供两种Transaction类型
+//       源码层面分别使用JdbcTransaction或ManagedTransaction
+// 1. <transactionManager type="JDBC">    直接使用JDBC提交和回滚功能的事务, 它依赖于从数据源检索到的连接来管理事务的范围
+// 2. <transactionManager type="MANAGED"> 让容器管理事务的整个生命周期, 延迟连接检索直到调用getConnection(), 忽略所有提交或回滚请求
+// TODO: MyBatis提供两种dataSource方式
+//       源码层面分别使用PooledDataSource(UnpooledDataSource)或JndiDataSourceFactory
+// 1. <dataSource type="POOLED">  使用数据库连接池访问
+// 2. <dataSource type="JNDI">    使用JDNI接口提供的服务
 public class XmlDataSourceLoader {
 
     // 使用SqlSessionFactoryBuilder构建SqlSessionFactory时
     // 创建 XMLConfigBuilder parser = new XMLConfigBuilder(inputStream, environment, properties);
+
+    // 以下师对于环境参数的解析
+    // <environments default="development">
+    //     <environment id="development">
+    //         <transactionManager type="JDBC"/>
+    //         <dataSource type="POOLED">
+    //             <property name="driver" value="${driverClassName}"/>
+    //             <property name="url" value="${url}"/>
+    //             <property name="username" value="${username}"/>
+    //             <property name="password" value="${password}"/>
+    //         </dataSource>
+    //     </environment>
+    // </environments>
 
     // 对于xml配置<configuration>中的所有全局参数，源码中都有对应的解析方法
     // private void parseConfiguration(XNode root) {
@@ -27,20 +48,7 @@ public class XmlDataSourceLoader {
     //         throw new BuilderException("Error parsing SQL Mapper Configuration. Cause: " + var3, var3);
     //     }
     // }
-    //
-    // 以下师对于环境参数的解析
-    // <environments default="development">
-    //     <environment id="development">
-    //         <transactionManager type="JDBC"/>
-    //         <dataSource type="POOLED">
-    //             <property name="driver" value="${driverClassName}"/>
-    //             <property name="url" value="${url}"/>
-    //             <property name="username" value="${username}"/>
-    //             <property name="password" value="${password}"/>
-    //         </dataSource>
-    //     </environment>
-    // </environments>
-    //
+
     // private void environmentsElement(XNode context) throws Exception {
     //     if (context != null) {
     //         if (this.environment == null) {

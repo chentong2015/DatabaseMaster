@@ -22,8 +22,8 @@ public class DemoJavaAnnotation {
         MyDataSourceFactory dataSourceFactory = new MyDataSourceFactory();
         dataSourceFactory.setProperties(PropertiesLoader.getPropertiesFromResource());
         DataSource dataSource = dataSourceFactory.getDataSource();
-        TransactionFactory transactionFactory = new JdbcTransactionFactory();
 
+        TransactionFactory transactionFactory = new JdbcTransactionFactory();
         Environment environment = new Environment("development", transactionFactory, dataSource);
         Configuration configuration = new Configuration(environment);
         configuration.addMapper(BlogMapper.class);

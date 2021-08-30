@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 所有配置信息的详细参数，都可以通过DTD(Document Type Definition)文件定义类型文档来确定 -->
 <configuration>
-
     <!-- 使用配置文件来动态配置"全局的property属性变量"，资源默认路径是/resources -->
     <properties resource="mybatis-config.properties">
         <property name="driverClassName" value="driverClassName"/>
@@ -52,7 +52,6 @@
          <setting name="jdbcTypeForNull" value="OTHER"/>
          <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
      </settings>
-
      <typeAliases>
          <typeAlias alias="Author" type="domain.blog.Author"/> 设置别名
      </typeAliases>

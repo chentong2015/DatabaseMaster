@@ -6,17 +6,16 @@ import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import javax.sql.DataSource;
 import java.util.Properties;
 
+// 数据源(数据库)工厂: 将Properties属性配置信息设置成DataSource
 public class MyDataSourceFactory implements DataSourceFactory {
 
     private Properties properties;
 
-    // 设置从PropertiesLoader加载的properties配置信息
     @Override
     public void setProperties(Properties properties) {
         this.properties = properties;
     }
 
-    // 使用properties配置信息生成连接数据库的dataSource
     @Override
     public DataSource getDataSource() {
         PooledDataSource dataSource = new PooledDataSource();
