@@ -11,10 +11,11 @@ package mybatis_code_sources;
 // 2. <dataSource type="JNDI">    使用JDNI接口提供的服务
 public class XmlDataSourceLoader {
 
-    // 使用SqlSessionFactoryBuilder构建SqlSessionFactory时
-    // 创建 XMLConfigBuilder parser = new XMLConfigBuilder(inputStream, environment, properties);
+    // 使用SqlSessionFactoryBuilder构建SqlSessionFactory时, 创建XMLConfigBuilder
+    // XMLConfigBuilder parser = new XMLConfigBuilder(inputStream, environment, properties);
+    // return build(parser.parse());
 
-    // 以下师对于环境参数的解析
+    // 以下是对于环境参数的解析
     // <environments default="development">
     //     <environment id="development">
     //         <transactionManager type="JDBC"/>

@@ -1,14 +1,11 @@
-
+// Java Persistence API (JPA)
+// EntityManagerFactory -> EntityManager -> EntityTransaction / Query
+// 支持乐观锁和悲观锁 https://www.objectdb.com/java/jpa/persistence/lock#Optimistic_Locking
 public class BaseHibernateJPA {
-
-    // Java Persistence API (JPA)
-    // EntityManagerFactory -> EntityManager -> EntityTransaction / Query
-    // 支持乐观锁和悲观锁 https://www.objectdb.com/java/jpa/persistence/lock#Optimistic_Locking
 
     // Hibernate: ORM(Object-Relational mapping)解决方案
     // 1. 将关系型数据库中的行数据映射成一个对象(对应的fields)，"数据表行" <--> "实体类"
-    // 2. 直接通过调用API方法来执SQL(SQL在开发层面不可见)
-    // 3. 对于需要优化SQL语句的场景不适用(比如数据量过大造成慢SQL)
+    // 2. TODO: 直接调用API执行SQL(开发层面不可见)，对于需要优化SQL语句的场景不适用
     // 4. 支持乐观锁悲观锁 https://docs.jboss.org/hibernate/orm/4.0/devguide/en-US/html/ch05.html
 
     // Hibernate两层架构

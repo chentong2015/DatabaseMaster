@@ -8,9 +8,6 @@
     <!-- 返回的类型必须能够通过完整的package路径找到 -->
     <select id="selectBlog" resultType="mybatis_basics.DataModel.Blog">
         select * from blog where id = #{id}
-        <!-- #{id} 类似于创建一个预处理语句PreparedStatement参数
-        String selectPerson = "SELECT * FROM PERSON WHERE ID=?";
-        PreparedStatement ps = conn.prepareStatement(selectPerson); -->
     </select>
 
     <!-- resultMap – 描述如何从数据库结果集中加载对象

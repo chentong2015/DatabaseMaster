@@ -11,11 +11,11 @@ public class DbExecutorHandler {
     //     executorType = executorType == null ? ExecutorType.SIMPLE : executorType;
     //     Object executor;
     //     if (ExecutorType.BATCH == executorType) {
-    //         executor = new BatchExecutor(this, transaction);
+    //         executor = new BatchExecutor(this, transaction); 批量执行器
     //     } else if (ExecutorType.REUSE == executorType) {
-    //         executor = new ReuseExecutor(this, transaction);
+    //         executor = new ReuseExecutor(this, transaction); 复用执行器
     //     } else {
-    //         executor = new SimpleExecutor(this, transaction);
+    //         executor = new SimpleExecutor(this, transaction); 简单执行器
     //     }
     //     if (this.cacheEnabled) {
     //         executor = new CachingExecutor((Executor)executor);
@@ -27,7 +27,7 @@ public class DbExecutorHandler {
     // CachingExecutor.query() 简单的缓存执行器的query()
     // public <E> List<E> query(MappedStatement ms, Object parameterObject, RowBounds rowBounds, ResultHandler resultHandler) throws SQLException {
     //     BoundSql boundSql = ms.getBoundSql(parameterObject);
-    //     // 使用4个参数封装成CacheKey
+    //     // TODO: 使用4个参数封装成CacheKey缓存key值
     //     CacheKey key = this.createCacheKey(ms, parameterObject, rowBounds, boundSql);
     //     return this.query(ms, parameterObject, rowBounds, resultHandler, key, boundSql);
     // }

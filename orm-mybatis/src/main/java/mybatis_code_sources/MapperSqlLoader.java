@@ -3,14 +3,13 @@ package mybatis_code_sources;
 // 源码主要通过XMLMapperBuilder获取和解析xxxMapper.xml映射语句
 public class MapperSqlLoader {
 
-    // Mapper解析和加载对应的映射语句
-    // XMLMapperBuilder 下主要的加载方法
     // <mapper namespace="mybatis_basics.testConfigXml.BlogMapper">
     //    <select id="selectBlog" resultType="mybatis_basics.DataModel.Blog">
     //        select * from blog where id = #{id}
     //    </select>
     // </mapper>
-    //
+
+    // XMLMapperBuilder下主要的加载方法
     // XMLConfigBuilder.parseConfiguration(XNode root)
     //   > XMLConfigBuilder.mapperElement(XNode parent)
     //
