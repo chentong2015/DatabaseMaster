@@ -12,7 +12,7 @@ import javax.sql.DataSource;
  * @Repository: component annotation for the persistent or DB layer 特殊层(具有特殊功能的)component, 会被自动扫描
  */
 @Repository("infoDao")
-public class InformationDaoImpl implements InformationDao {
+public class BaseJdbcTemplate implements InformationDao {
 
     // JdbcTemplate用来包装dataSource: 连接数据库和执行SQL的机制
     private JdbcTemplate jdbcTemplate;
@@ -39,7 +39,7 @@ public class InformationDaoImpl implements InformationDao {
     public Information getInformation(int id) {
         String sqlQuery = "SELECT * FROM information where id = ?";
         Object[] args = new Object[]{id};
-        return jdbcTemplate.queryForObject(sqlQuery, new InformationRowMapper(), args);
+        return jdbcTemplate.queryForObject(sqlQuery, new InfoRowMapper(), args);
     }
 
     // TRUNCATE 清空table中的所有信息，但是不删table ==> delete from table ==> DROP TABLE nom_table删除表

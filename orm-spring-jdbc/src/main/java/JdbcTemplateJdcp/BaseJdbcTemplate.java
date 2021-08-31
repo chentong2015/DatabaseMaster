@@ -2,7 +2,7 @@ package JdbcTemplateJdcp;
 
 import JdbcTemplateJdcp.base.Information;
 import JdbcTemplateJdcp.base.InformationDao;
-import JdbcTemplateJdcp.dao.InformationDaoImplementation;
+import JdbcTemplateJdcp.dao.BaseNamedParameterJdbcTemplate;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.BadSqlGrammarException;
@@ -38,7 +38,7 @@ public class BaseJdbcTemplate {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         // InformationDao informationDao = (InformationDao) context.getBean("infoDao");
-        InformationDao informationDao = context.getBean(InformationDaoImplementation.class);
+        InformationDao informationDao = context.getBean(BaseNamedParameterJdbcTemplate.class);
         Information information = informationDao.getInformation(2);
         System.out.println(information);
         context.close();

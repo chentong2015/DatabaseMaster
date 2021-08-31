@@ -18,7 +18,7 @@ import javax.sql.DataSource;
  * 3. 解决参数的顺序问题
  */
 @Repository
-public class InformationDaoImplementation implements InformationDao {
+public class BaseNamedParameterJdbcTemplate implements InformationDao {
 
     private NamedParameterJdbcTemplate template;
 
@@ -48,7 +48,7 @@ public class InformationDaoImplementation implements InformationDao {
     public Information getInformation(int id) {
         SqlParameterSource params = new MapSqlParameterSource("ID", id);
         String sqlQuery = "SELECT * FROM information where id = :ID";
-        return template.queryForObject(sqlQuery, params, new InformationRowMapper());
+        return template.queryForObject(sqlQuery, params, new InfoRowMapper());
     }
 
     @Override

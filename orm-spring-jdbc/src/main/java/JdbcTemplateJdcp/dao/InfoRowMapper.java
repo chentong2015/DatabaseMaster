@@ -10,7 +10,7 @@ import java.sql.SQLException;
  * Spring Interface RowMapper: mapping rows of a ResultSet by JdbcTemplate
  * 实现了这个接口的类型执行map each row to a result object的实际操作
  */
-public class InformationRowMapper implements RowMapper<Information> {
+public class InfoRowMapper implements RowMapper<Information> {
 
     /**
      * RowMapper 将DB中的row map映射到指定object对象
