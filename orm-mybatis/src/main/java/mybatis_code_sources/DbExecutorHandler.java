@@ -132,6 +132,7 @@ public class DbExecutorHandler {
     //  }
 
     // TODO: 根据项目的配置信息，设置<dataSource type="POOLED">，源码中将使用PooledDataSource, 构建PooledConnection数据库连接
+    //       PooledDataSource 实现了DataSource接口
     // @Override
     // public Connection getConnection() throws SQLException {
     //    return popConnection(dataSource.getUsername(), dataSource.getPassword()).getProxyConnection();

@@ -2,6 +2,7 @@ package JdbcTemplateJdcp.dao;
 
 import JdbcTemplateJdcp.base.Information;
 import JdbcTemplateJdcp.base.InformationDao;
+import JdbcTemplateJdcp.handler.InfoRowMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
@@ -11,13 +12,10 @@ import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 
-/**
- * NamedParameterJdbcTemplate: Template class with a basic set of JDBC operations   ===> JdbcTemplate的优化 !!
- * 1. Allowing the use of named parameters rather than traditional '?' placeholders
- * 2. 使用具有名称的参数替代传统的'?' placeholders, 解决代码可读性的问题
- * 3. 解决参数的顺序问题
- */
-@Repository
+//
+// NamedParameterJdbcTemplate:
+// 使用具有名称的参数替代传统的'?' placeholders，解决代码可读性，参数的顺序问题
+@Repository("baseNamedParameterJdbcTemplate")
 public class BaseNamedParameterJdbcTemplate implements InformationDao {
 
     private NamedParameterJdbcTemplate template;
@@ -30,8 +28,8 @@ public class BaseNamedParameterJdbcTemplate implements InformationDao {
     /**
      * BeanPropertySqlParameterSource: implementation of SqlParameterSource
      * 1. Obtains parameter values from bean properties of a given JavaBean object
-     * 2. The names of the bean properties have to match the parameter names.
-     * 从指定的Java bean object对象中获取指定数目值(对象中的属性名称和参数的名称必须严格一致) !!!
+     * 2. The names of the bean properties have to match the parameter names
+     * 从指定的Java bean object对象中获取指定数目值(对象中的属性名称和参数的名称必须严格一致)
      */
     @Override
     public boolean insertInformation(Information info) {
@@ -41,8 +39,8 @@ public class BaseNamedParameterJdbcTemplate implements InformationDao {
     }
 
     /**
-     * MapSqlParameterSource: SqlParameterSource implementation that holds a given Map of parameters.
-     * 使用Map格式的参数
+     * MapSqlParameterSource:
+     * SqlParameterSource implementation that holds a given Map of parameters
      */
     @Override
     public Information getInformation(int id) {

@@ -2,6 +2,7 @@ package mysql_basics;
 
 // TODO: 主要数据库开发常见规范
 // MySQL数据库的数据实际存储在安装目录下/data/数据库名称/...(一个库对于一个文件夹)
+// ** Oracle购买的MySQL(限制其发展前景), 首推Oracle DB付费版权数据库 **
 public class BaseMysql {
 
     // 基本数据类型的理解

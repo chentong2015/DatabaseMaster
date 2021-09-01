@@ -11,7 +11,7 @@ package mybatis_basics;
 // TODO: 两种实现方式"基于XML映射(优先级更高，代码会先判断inputStream)"或者"Java注解" !!
 // 1. SqlSessionFactoryBuilder: 通过xml配置或者java程序两种方式.build()出SqlSessionFactory，一次实例化之后直接关闭
 // 2. SqlSessionFactory: 应用内保持唯一(单例模式或者静态单例模式)，负责SqlSession的创建
-// 3. SqlSession: 每个线程都有独立的SqlSession实例，非线程安全的，负责映射语句的调用和执行
+// 3. SqlSession: 每个线程都有独立的SqlSession实例，负责映射语句的调用和执行
 //    3.1 一般使用try-resource声明, 保证所有数据库资源都能被正确地关闭
 //    3.2 不能将SqlSession实例的引用放在一个类的静态域，或者类型的托管作用域中
 //    3.3 使用Web框架, 应该将SqlSession放在和HTTP请求相似的作用域中, 收到请求时打开, 返回响应后关闭
@@ -21,7 +21,7 @@ package mybatis_basics;
 //    MyBatis创建结果对象的新实例时, 它都会使用对象工厂(ObjectFactory)实例来完成实例化工作
 public class MyBatisBasics {
 
-    // TODO: ORM(Object Relational Mapping)层的精髓: Map映射 + Row Mapper思想
+    // TODO: ORM(Object Relational Mapping)层的精髓: Map映射 / Row Mapper思想
     // 对于面向对象(类型安全)编程语言，实现不同"类型系统"数据之间的转换
     //  Java类型               数据库表字段      数据库类型
     //  java.lang.Integer     id              Integer
