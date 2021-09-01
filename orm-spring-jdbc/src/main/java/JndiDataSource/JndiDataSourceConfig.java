@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 @ComponentScan("JndiDataSource")
 public class JndiDataSourceConfig implements WebMvcConfigurer {
 
-    // TODO: Spring可以通过JNDI获取DataSource数据库源
+    // TODO: Spring可以通过JndiTemplate获取DataSource数据库源
 
     // 自定义配置DataSource的来源
     // 1. .setResourceRef(true) 设置"相对路径"引用, 反之使用"java:comp/env/jdbc/dataSourceName"
