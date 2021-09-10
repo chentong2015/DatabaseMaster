@@ -1,15 +1,9 @@
 package mybatis_basics.testJavaAnnotation;
 
-// TODO: 如何从注解中拿到SQL ?
+// TODO: 如何从注解中拿到SQL
+// 根据注解的申明，支持提供多个字符串作为参数
 // @Select("SELECT * FROM blog WHERE id = #{id}")
 // Blog selectBlog(int id);
-
-// public @interface Select {
-//   String[] value();
-//   ...
-// }
-// 由于注解中使用的是数组，因此在使用@Select注解时，可以提供多个SQL，返回多结果
-// @Select{"SELECT id, name FROM t_user WHERE id = #{id}", "Select * from users"}
 public class MapperAnnotationBuilder {
 
     // session.getMapper(BlogMapper.class)
@@ -98,6 +92,6 @@ public class MapperAnnotationBuilder {
     //    }
     //  }
 
-    // 最终底层通过method.getAnnotation(sqlAnnotationType)拿到添加在方法上的指定的注解
-    // 然后获取注解中的SQL执行语句，buildSqlSourceFromAnnotation()构造执行语句
+    // 底层通过method.getAnnotation(sqlAnnotationType)拿到方法上的注解，获取SQL执行语句
+    // buildSqlSourceFromAnnotation()构造执行语句
 }

@@ -1,5 +1,8 @@
 package mybatis_basics.config.plugins;
 
+// TODO: Mybatis插件原理(拦截器)
+// https://www.huaweicloud.com/zhishi/arc-9554613.html
+
 // plugins源码解析：扩展机制, 自定义操作
 // 1. 插件类必须实现Interceptor接口
 // 2. 添加@Intercepte，@Signature注解，指定要拦截的目标方法

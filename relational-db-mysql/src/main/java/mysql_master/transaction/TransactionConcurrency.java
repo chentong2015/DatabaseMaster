@@ -2,7 +2,7 @@ package mysql_master.transaction;
 
 // 并发事务带来的问题，事务失效的场景
 // 1. 脏读: 读到未提交更新的数据
-// 2. 幻读: 读到已提交插入数据                       ===> MVCC机制 + lock_ordinary锁
+// 2. 幻读: 读到已提交插入数据                         ===> MVCC机制 + lock_ordinary锁
 // 3. 更新丢失: A事务提交或者撤销时，把B事务更新数据覆盖
 // 4. 不可重复读：一个事务范围内两个查询返回了不同的结果   ===> MySQL设计的效果是"REPEATABLE-READ 可重复读"
 public class TransactionConcurrency {
@@ -17,7 +17,7 @@ public class TransactionConcurrency {
     //    1.1 可重复读:
     //        #transaction200       #transaction300        #select100
     //        begin;                begin;                 begin;
-    //                                                     select...; readview[200,300]存储除自己以外的活跃事务ID数组
+    //                                                     select...; readview[200,300],300 存储除自己以外的活跃事务ID数组
     //        update...生成undo log
     //                              update...追加undo log
     //                                                     select...; 再次查内存中数据，发现undo log，根据记录的日志来(恢复)回到原始数据
@@ -25,7 +25,7 @@ public class TransactionConcurrency {
     //                                                     select...; readview[200],300 根据隔离级别的机制，不会改变
     //                                                                查询的时候第一次记录的readview始终不变
     //        update
-    //                                             select...; readview[200],300
+    //                                                     select...; readview[200],300
     //        commit;
     //    1.2 读可提交：和可重复读类似，每次查询的时候记录的readview都会刷新
     //                直接判断undo log版本链中的头部的事务id，判断是否执行undo log链
@@ -55,6 +55,6 @@ public class TransactionConcurrency {
     //                          update account name="3"
     //                          update account name="4"
     //                                                                               select name...; readview[100,200],300             select name...; readview[200],300
-    //                                                                               延用之前的readview，和第一取出的数据一致                此时的readview中min_id变化，查找比对返回的结果为"2"
+    //                                                                               延用之前的readview，和第一取出的数据一致               此时的readview中min_id变化，查找比对返回的结果为"2"
     //                          commit;
 }

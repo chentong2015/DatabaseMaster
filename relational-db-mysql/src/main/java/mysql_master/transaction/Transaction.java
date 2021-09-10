@@ -23,6 +23,5 @@ public class Transaction {
     //    2.1 记录的是Page中某地址中的一些数据进行了修改，做数据恢复会更快
     //    2.2 不能用于数据库的主从关系，不能搬redo log
     // 3. undo log:
-    //    3.1 记录"反向操作"，用于事务执行的过程中回滚
-    //        insert -> delete, update -> update
+    //    3.1 记录"反向操作"，用于事务执行的过程中回滚 insert -> delete, update -> update
 }

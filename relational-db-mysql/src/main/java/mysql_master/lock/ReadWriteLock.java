@@ -1,7 +1,7 @@
 package mysql_master.lock;
 
 // 操作角度:
-//   1. 读锁(限制更新，不限制读)                              > 共享锁 shared locks
+//   1. 读锁(限制更新，不限制读)                               > 共享锁 shared locks
 //   2. 写锁(限制更新和读，对于不会加锁的操作Select，不会阻塞冲突) > 排他锁 exclusive locks
 // 粒度范围:
 //   1. 表锁: READ [LOCAL] lock + [LOW_PRIORITY] WRITE lock
@@ -42,8 +42,8 @@ public class ReadWriteLock {
 
     // 1. REPEATABLE-READ 可重复读隔离级别  >>  TODO: 锁住查询出来的行数据
     //    防止幻读：Session1所操作(查询或更新)的数据范围内，不受到Session2插入数据的影响
-    //    2.1 如果操作走的是索引，则会把索引操作范围内的"间隙(索引会排序，出现范围)"锁住  >> 锁和Index的关系
-    //    2.2 如果操作不是走索引，则会把整个表的所用行，同时把所有的间隙都给锁住
+    //    2.1 如果操作走索引，则把索引操作范围内的"间隙(索引会排序，出现范围)"锁住  >> 锁和Index的关系
+    //    2.2 如果操作不走索引，则把整个表的所用行，同时把所有的间隙都给锁住
     //    #Session1                                 #Session2
     //    begin;                                    begin;
     //    select * form t1 where a>1 for update;

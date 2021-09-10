@@ -11,18 +11,18 @@ package mybatis_basics.testJavaAnnotation;
 public class MapperDynamicProxy {
 
     // session.getMapper(BlogMapper.class)
-    // 调用方法DefaultSqlSession.getMapper()
+    // 调用DefaultSqlSession.getMapper()方法
     //  @Override
     //  public <T> T getMapper(Class<T> type) {
     //    return configuration.getMapper(type, this);
     //  }
 
-    // 调用方法configuration.getMapper()
+    // 调用configuration.getMapper()方法
     //  public <T> T getMapper(Class<T> type, SqlSession sqlSession) {
     //    return mapperRegistry.getMapper(type, sqlSession);
     //  }
 
-    // MapperRegistry.getMapper()
+    // 调用MapperRegistry.getMapper()方法
     // public <T> void addMapper(Class<T> type) {
     //    if (type.isInterface()) {
     //      if (hasMapper(type)) {
@@ -30,10 +30,8 @@ public class MapperDynamicProxy {
     //      }
     //      boolean loadCompleted = false;
     //      try {
-    //        // 动态代理的实现
-    //        knownMappers.put(type, new MapperProxyFactory<>(type));
-    //        // 获取注解SQL的实现
-    //        MapperAnnotationBuilder parser = new MapperAnnotationBuilder(config, type);
+    //        knownMappers.put(type, new MapperProxyFactory<>(type)); 使用动态代理
+    //        MapperAnnotationBuilder parser = new MapperAnnotationBuilder(config, type);  获取注解SQL的实现
     //        parser.parse();
     //        loadCompleted = true;
     //      } finally {
@@ -44,33 +42,33 @@ public class MapperDynamicProxy {
     //    }
     //  }
 
-    // MapperProxyFactory.newInstance()
+    // 调用MapperProxyFactory.newInstance()方法, 其中会创建MapperProxy对象，作为代理对象
     // public T newInstance(SqlSession sqlSession) {
     //    final MapperProxy<T> mapperProxy = new MapperProxy<>(sqlSession, mapperInterface, methodCache);
     //    return newInstance(mapperProxy);
     //  }
     //
+    // public class MapperProxy<T> implements InvocationHandler, Serializable {
+    //   ...
+    //   @Override
+    //   public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+    //      try {
+    //        if (Object.class.equals(method.getDeclaringClass())) {
+    //          return method.invoke(this, args);
+    //        } else {
+    //          // 下面调用到嵌套类型的PlainMethodInvoker.invoke()方法
+    //          return cachedInvoker(method).invoke(proxy, method, args, sqlSession);
+    //        }
+    //      } catch (Throwable t) {
+    //        throw ExceptionUtil.unwrapThrowable(t);
+    //      }
+    //   }
+    // }
+
     // TODO: 调用Java原生提供的Proxy代理的实现，mapperProxy作为代理对象
     // protected T newInstance(MapperProxy<T> mapperProxy) {
     //    return (T) Proxy.newProxyInstance(mapperInterface.getClassLoader(), new Class[] { mapperInterface }, mapperProxy);
     // }
-
-    // TODO: 由于MapperProxy<T>实现了动态代理(实现InvocationHandler接口), 调用方法.invoke()
-    // public class MapperProxy<T> implements InvocationHandler, Serializable {...}
-
-    //  @Override
-    //  public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-    //    try {
-    //      if (Object.class.equals(method.getDeclaringClass())) {
-    //        return method.invoke(this, args);
-    //      } else {
-    //        // 下面调用到嵌套类型的PlainMethodInvoker.invoke()方法
-    //        return cachedInvoker(method).invoke(proxy, method, args, sqlSession);
-    //      }
-    //    } catch (Throwable t) {
-    //      throw ExceptionUtil.unwrapThrowable(t);
-    //    }
-    //  }
 
     // private static class PlainMethodInvoker implements MapperMethodInvoker {
     //    private final MapperMethod mapperMethod;
@@ -115,7 +113,7 @@ public class MapperDynamicProxy {
     //          result = executeForCursor(sqlSession, args);
     //        } else {
     //          Object param = method.convertArgsToSqlCommandParam(args);
-    //          // 最终执行的方法
+    //          // TODO: 最终执行的方法
     //          result = sqlSession.selectOne(command.getName(), param);
     //          if (method.returnsOptional()
     //              && (result == null || !method.getReturnType().equals(result.getClass()))) {

@@ -1,6 +1,9 @@
 package mysql_master.storage_engine;
 
 // InnoDB底层架构的设计, 三种链表
+// free链表
+// flush链表
+// LRU链表
 public class InnoDBBufferPool {
 
     // Buffer Pool: InnoDB在内存中存储Page页的一块区域，默认是128M ===> 可以调优，设置越大越好
@@ -14,9 +17,9 @@ public class InnoDBBufferPool {
     // 2. 对于新空出来的page位置，从链表的末尾添加新的控制块
 
     // TODO: Buffer Pool持久化的设计
-    // 什么时候将修改后的数据重新持久化回磁盘 ? Mysql后台有一个线程，定时持久化"脏页"回磁盘
-    // 后台线程该如何判断是否是"脏页" ?      直接在flush链表上面找，持久化之后再删除控制块
     // flush链表: 基结点(做统计，记录信息) --> 控制块 --> 控制块 ... 有多少个"脏页"就有多少个控制块, 控制块顺序是按照修改时间的顺序
+    // 什么时候将修改后的数据重新持久化回磁盘 ? Mysql后台有一个线程，定时持久化"脏页"回磁盘
+    // 后台线程该如何判断是否是"脏页" ?       直接在flush链表上面找，持久化之后再删除控制块
 
     // TODO: Buffer Pool中淘汰机制
     // Buffer Pool占满后如何放置新的page ?
