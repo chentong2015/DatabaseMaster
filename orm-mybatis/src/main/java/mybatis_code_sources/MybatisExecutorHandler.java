@@ -3,7 +3,7 @@ package mybatis_code_sources;
 // 通过Executor执行器封装对数据库操作：Connection, PrepareStatement, ResultSet
 // 1. Mybatis有3+1种执行器，默认是SimpleExecutor()
 // 2. 需要考虑事务(BaseExecutor > transaction)和不同的隔离级别
-public class DbExecutorHandler {
+public class MybatisExecutorHandler {
 
     // Configuration.newExecutor()
     // public Executor newExecutor(Transaction transaction, ExecutorType executorType) {
@@ -20,6 +20,7 @@ public class DbExecutorHandler {
     //     if (this.cacheEnabled) {
     //         executor = new CachingExecutor((Executor)executor);
     //     }
+    //     调用插件链的加载插件功能，形成调用链
     //     Executor executor = (Executor)this.interceptorChain.pluginAll(executor);
     //     return executor;
     // }

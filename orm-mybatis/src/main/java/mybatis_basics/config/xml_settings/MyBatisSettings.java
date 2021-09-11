@@ -1,6 +1,5 @@
-package mybatis_basics.config.settings;
+package mybatis_basics.config.xml_settings;
 
-// 如何统计SQL的执行时间
 public class MyBatisSettings {
 
     // 从XML配置文件中获取所有的参数设置XMLConfigBuilder.parseConfiguration()
@@ -8,15 +7,15 @@ public class MyBatisSettings {
     //     try {
     //         // issue #117 read properties first
     //         propertiesElement(root.evalNode("properties"));
-    //         Properties settings = settingsAsProperties(root.evalNode("settings"));
-    //         loadCustomVfs(settings);
-    //         loadCustomLogImpl(settings);
+    //         Properties xml_settings = settingsAsProperties(root.evalNode("xml_settings"));
+    //         loadCustomVfs(xml_settings);
+    //         loadCustomLogImpl(xml_settings);
     //         typeAliasesElement(root.evalNode("typeAliases"));
     //         pluginElement(root.evalNode("plugins"));
     //         objectFactoryElement(root.evalNode("objectFactory"));
     //         objectWrapperFactoryElement(root.evalNode("objectWrapperFactory"));
     //         reflectorFactoryElement(root.evalNode("reflectorFactory"));
-    //         settingsElement(settings);
+    //         settingsElement(xml_settings);
     //         // read it after objectFactory and objectWrapperFactory issue #631
     //         environmentsElement(root.evalNode("environments"));
     //         databaseIdProviderElement(root.evalNode("databaseIdProvider"));
@@ -33,7 +32,7 @@ public class MyBatisSettings {
     //      return new Properties();
     //    }
     //    Properties props = context.getChildrenAsProperties();
-    //    // Check that all settings are known to the configuration class
+    //    // Check that all xml_settings are known to the configuration class
     //    MetaClass metaConfig = MetaClass.forClass(Configuration.class, localReflectorFactory);
     //    for (Object key : props.keySet()) {
     //      if (!metaConfig.hasSetter(String.valueOf(key))) {

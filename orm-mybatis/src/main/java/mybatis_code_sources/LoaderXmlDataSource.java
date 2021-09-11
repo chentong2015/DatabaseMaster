@@ -9,7 +9,7 @@ package mybatis_code_sources;
 //       源码层面分别使用PooledDataSource(UnpooledDataSource)或JndiDataSourceFactory
 // 1. <dataSource type="POOLED">  使用数据库连接池访问
 // 2. <dataSource type="JNDI">    使用JDNI接口提供的服务
-public class XmlDataSourceLoader {
+public class LoaderXmlDataSource {
 
     // 使用SqlSessionFactoryBuilder构建SqlSessionFactory时, 创建XMLConfigBuilder
     // XMLConfigBuilder parser = new XMLConfigBuilder(inputStream, environment, properties);
@@ -32,15 +32,15 @@ public class XmlDataSourceLoader {
     // private void parseConfiguration(XNode root) {
     //     try {
     //         this.propertiesElement(root.evalNode("properties"));
-    //         Properties settings = this.settingsAsProperties(root.evalNode("settings"));
-    //         this.loadCustomVfs(settings);
-    //         this.loadCustomLogImpl(settings);
+    //         Properties xml_settings = this.settingsAsProperties(root.evalNode("xml_settings"));
+    //         this.loadCustomVfs(xml_settings);
+    //         this.loadCustomLogImpl(xml_settings);
     //         this.typeAliasesElement(root.evalNode("typeAliases"));
     //         this.pluginElement(root.evalNode("plugins"));
     //         this.objectFactoryElement(root.evalNode("objectFactory"));
     //         this.objectWrapperFactoryElement(root.evalNode("objectWrapperFactory"));
     //         this.reflectorFactoryElement(root.evalNode("reflectorFactory"));
-    //         this.settingsElement(settings);
+    //         this.settingsElement(xml_settings);
     //         this.environmentsElement(root.evalNode("environments"));
     //         this.databaseIdProviderElement(root.evalNode("databaseIdProvider"));
     //         this.typeHandlerElement(root.evalNode("typeHandlers"));

@@ -1,7 +1,7 @@
 package mybatis_code_sources;
 
 // 源码主要通过XMLMapperBuilder获取和解析xxxMapper.xml映射语句
-public class MapperSqlLoader {
+public class LoaderMapperSql {
 
     // <mapper namespace="mybatis_basics.testConfigXml.BlogMapper">
     //    <select id="selectBlog" resultType="mybatis_basics.DataModel.Blog">
@@ -75,5 +75,4 @@ public class MapperSqlLoader {
     //         SqlCommandType sqlCommandType = SqlCommandType.valueOf(nodeName.toUpperCase(Locale.ENGLISH));
     //         boolean isSelect = sqlCommandType == SqlCommandType.SELECT;
     //         ...
-
 }
