@@ -13,10 +13,9 @@ import java.io.InputStream;
 // 1. 优点：本地缓存不需要走网络IO和磁盘IO，提升查询效率
 // 2. 缺点: "缓存双写一致性问题"，数据库更换造成缓存数据一致性问题
 
-// TODO: 默认情况下，缓存都是开启的，但是二级缓存需要自定义配置实现
+// TODO: 默认情况下，缓存都是开启的，但是二级缓存需要自定义配置实现(二级缓存的优先级更高)
 // 1. 一级缓存(本地的会话缓存)，它仅仅对一个会话中的数据进行缓存
 // 2. 二级缓存是事务性的，当SqlSession完成并提交，或完成并回滚但没有执行flushCache=true的insert/delete/update语句时，缓存会获得更新
-//    二级缓存的优先级更高 !!
 // 3. SQL映射文件中添加一行<cache/>, 启用全局的二级缓存
 //    <cache eviction="FIFO" flushInterval="60000" size="512" readOnly="true"/>
 public class MyBatisCache {

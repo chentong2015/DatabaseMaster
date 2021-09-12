@@ -1,4 +1,4 @@
-package mybatis_basics.config.plugins;
+package mybatis_basics.config.plugins.interceptor;
 
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.MappedStatement;
@@ -19,7 +19,7 @@ import java.util.Properties;
 // TODO: 自定义的拦截器拦截Executor接口的update方法(SqlSession的新增，删除，修改操作)
 //       所有执行executor的update方法都会被该拦截器拦截到
 @Intercepts({@Signature(type = Executor.class, method = "update", args = {MappedStatement.class, Object.class})})
-public class MyPlugin implements Interceptor {
+public class BaseInterceptor implements Interceptor {
 
     private Properties properties = new Properties();
 

@@ -1,10 +1,9 @@
 package mybatis_basics.config.plugins;
 
 // Plugins：插件，拦截器
-// TODO: 允许在已映射语句执行过程中的某一点进行拦截调用 / 获取SQL执行时间 & 实现分页
-// 1. 插件类必须实现Interceptor接口
-// 2. 添加@Interceptes，@Signature注解，指定要拦截的目标方法
-public class PluginsSourceCode {
+// TODO: 允许在已映射语句执行过程中的某一点进行拦截调用
+//       "责任链"的设计模式 + Plugin中的Proxy动态代理
+public class MyBatisPlugin {
 
     // 从XML配置文件中获取所有的参数设置XMLConfigBuilder.parseConfiguration()
     // private void parseConfiguration(XNode root) {
@@ -49,7 +48,6 @@ public class PluginsSourceCode {
     //     interceptorChain.addInterceptor(interceptor);
     // }
 
-    // TODO: "责任链"的设计模式 + Plugin中的Proxy动态代理
     // public class InterceptorChain {
     //    所有拦截器的实例
     //    private final List<Interceptor> interceptors = new ArrayList<>();

@@ -14,7 +14,7 @@
     </properties>
 
     <plugins>
-        <plugin interceptor="mybatis_basics.config.plugins.MyPlugin"/>
+        <plugin interceptor="mybatis_basics.config.plugins.interceptor.BaseInterceptor"/>
     </plugins>
 
     <environments default="development">
