@@ -1,16 +1,13 @@
 package mybatis_basics.testJavaAnnotation;
 
-// MyBatis支持以注解的方式来执行映射语句，声明指定的映射Mapper接口
-// BlogMapper mapper = session.getMapper(BlogMapper.class);
-// Blog blog = mapper.selectBlog(10);
-
 // TODO: 通过提供接口类型，如何构建BlogMapper接口类型的实例化对象 ?
-// MapperProxyFactory > MapperProxy
-// 1. 底层通过动态代理(Java基础类库提供的Proxy)，使得在最终执行时，调用到session.selectOne()原始方法
-// 2. 动态代理优势: 即使接口中定义的方法selectBlog()改变，最终底层根据command.getType()还是能够调用到对应的方法
+// 通过动态代理调用到对应的session方法
+// 动态代理优势: 即使接口中定义的方法selectBlog()改变，最终底层根据command.getType()调用到对应方法
 public class MapperDynamicProxy {
 
-    // session.getMapper(BlogMapper.class)
+    // BlogMapper mapper = session.getMapper(BlogMapper.class);
+    // Blog blog = mapper.selectBlog(10);
+
     // 调用DefaultSqlSession.getMapper()方法
     //  @Override
     //  public <T> T getMapper(Class<T> type) {
@@ -42,7 +39,7 @@ public class MapperDynamicProxy {
     //    }
     //  }
 
-    // 调用MapperProxyFactory.newInstance()方法, 其中会创建MapperProxy对象，作为代理对象
+    // 调用MapperProxyFactory.newInstance()方法, 其中会创建MapperProxy对象，作为handler
     // public T newInstance(SqlSession sqlSession) {
     //    final MapperProxy<T> mapperProxy = new MapperProxy<>(sqlSession, mapperInterface, methodCache);
     //    return newInstance(mapperProxy);
@@ -56,7 +53,6 @@ public class MapperDynamicProxy {
     //        if (Object.class.equals(method.getDeclaringClass())) {
     //          return method.invoke(this, args);
     //        } else {
-    //          // 下面调用到嵌套类型的PlainMethodInvoker.invoke()方法
     //          return cachedInvoker(method).invoke(proxy, method, args, sqlSession);
     //        }
     //      } catch (Throwable t) {
@@ -65,7 +61,6 @@ public class MapperDynamicProxy {
     //   }
     // }
 
-    // TODO: 调用Java原生提供的Proxy代理的实现，mapperProxy作为代理对象
     // protected T newInstance(MapperProxy<T> mapperProxy) {
     //    return (T) Proxy.newProxyInstance(mapperInterface.getClassLoader(), new Class[] { mapperInterface }, mapperProxy);
     // }
