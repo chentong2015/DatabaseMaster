@@ -1,7 +1,7 @@
 package mysql_master.lock;
 
 // 操作角度:
-//   1. 读锁(限制更新，不限制读)                               > 共享锁 shared locks
+//   1. 读锁(限制更新，不限制读)                              > 共享锁 shared locks
 //   2. 写锁(限制更新和读，对于不会加锁的操作Select，不会阻塞冲突) > 排他锁 exclusive locks
 // 粒度范围:
 //   1. 表锁: READ [LOCAL] lock + [LOW_PRIORITY] WRITE lock
