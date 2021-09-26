@@ -11,7 +11,8 @@ package mysql_master.transaction;
 public class TransactionSpecification {
 
     // Java JDBC Transaction执行操作
-    // 1. Turn off auto-commit: Connection.setAutoCommit(false);
+    // 1. Turn off auto-commit: 默认是自动提交
+    //    connection.setAutoCommit(false); Select查询同样需要注意事务
     // 2. Perform the SQL Operations
     // 3. If OK, Connection.commit();
     //    Else Connection.rollback();

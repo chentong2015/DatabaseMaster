@@ -1,10 +1,10 @@
 package mysql_master.transaction;
 
-// 并发事务带来的问题，事务失效的场景
-// 1. 脏读: 读到未提交更新的数据
-// 2. 幻读: 读到已提交插入数据                         ===> MVCC机制 + lock_ordinary锁
-// 3. 更新丢失: A事务提交或者撤销时，把B事务更新数据覆盖
-// 4. 不可重复读：一个事务范围内两个查询返回了不同的结果   ===> MySQL设计的效果是"REPEATABLE-READ 可重复读"
+// 并发事务/事务失效的场景:
+// 0. 更新丢失: A事务提交或者撤销时，把B事务更新数据覆盖
+// 1. 脏读: 读到未提交更新的数据(事务commit提交前回滚了)               ===> 需要提高隔离级别 !!
+// 2. 不可重复读：一个事务范围内两个查询返回了不同的结果                 ===> MySQL设计的效果是"REPEATABLE-READ 可重复读"
+// 3. 幻读: 查询表中一条数据，如果不存在就插入，并发时里面有两条相同的数据  ===> MVCC机制 + lock_ordinary锁
 public class TransactionConcurrency {
 
     // MySQL何时生成事务ID
@@ -13,24 +13,25 @@ public class TransactionConcurrency {
 
     // TODO: 事务的4种隔离级别(SQL的标准，适用不同的场景)
     // > set session transaction isolation level read committed; 设置session transaction隔离级别
-    // > select @@tx_isolation;  查看隔离级别
-    //    1.1 可重复读:
-    //        #transaction200       #transaction300        #select100
-    //        begin;                begin;                 begin;
-    //                                                     select...; readview[200,300],300 存储除自己以外的活跃事务ID数组
-    //        update...生成undo log
-    //                              update...追加undo log
-    //                                                     select...; 再次查内存中数据，发现undo log，根据记录的日志来(恢复)回到原始数据
-    //                              commit;
-    //                                                     select...; readview[200],300 根据隔离级别的机制，不会改变
-    //                                                                查询的时候第一次记录的readview始终不变
-    //        update
-    //                                                     select...; readview[200],300
-    //        commit;
-    //    1.2 读可提交：和可重复读类似，每次查询的时候记录的readview都会刷新
-    //                直接判断undo log版本链中的头部的事务id，判断是否执行undo log链
-    //    1.3 读未提交
-    //    1.4 串行化: 使用锁
+    // > select @@tx_isolation; 查看隔离级别
+    //
+    // 1.1 读未提交: 会造成事务的三大问题
+    // 1.2 读可提交: 和可重复读类似，每次查询的时候记录的readview都会刷新
+    //             直接判断undo log版本链中的头部的事务id，判断是否执行undo log链
+    // 1.3 可重复读:
+    //     #transaction200       #transaction300        #select100
+    //     begin;                begin;                 begin;
+    //                                                  select...; readview[200,300],300 存储除自己以外的活跃事务ID数组
+    //     update...生成undo log
+    //                           update...追加undo log
+    //                                                  select...; 再次查内存中数据，发现undo log，根据记录的日志来(恢复)回到原始数据
+    //                           commit;
+    //                                                  select...; readview[200],300 根据隔离级别的机制，不会改变
+    //                                                             查询的时候第一次记录的readview始终不变
+    //     update
+    //                                                  select...; readview[200],300
+    //     commit;
+    // 1.4 串行化: 最高级别的隔离级别，但是不支持并发 ==> 使用锁或者分布式锁
 
     // TODO: Multi-Version Concurrency Control 实现"可重复读"和"读可提交"两种隔离级别
     // TODO: ReadView机制 + Undo回滚链
@@ -38,7 +39,7 @@ public class TransactionConcurrency {
     //    [min_id,,,]max_id; 根据该一致性视图判断数据的可见性(如图)
     // 2. ReadView是针对session级别的，当session中执行select的时候，则会生成这样一个快照
     //    之后所有的select语句的执行都延用这个快照去完成"版本链比对规则"，即使换一张表select也是如此
-
+    //
     // #Transaction100          #Transactions200         #Transactions300            #Select1                                          #Select2
     // begin;                   begin;                   begin;                      begin;                                            begin;
     // update test c1=123
