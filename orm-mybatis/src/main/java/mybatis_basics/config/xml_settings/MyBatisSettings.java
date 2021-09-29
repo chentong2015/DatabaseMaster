@@ -36,7 +36,8 @@ public class MyBatisSettings {
     //    MetaClass metaConfig = MetaClass.forClass(Configuration.class, localReflectorFactory);
     //    for (Object key : props.keySet()) {
     //      if (!metaConfig.hasSetter(String.valueOf(key))) {
-    //        throw new BuilderException("The setting " + key + " is not known.  Make sure you spelled it correctly (case sensitive).");
+    //        throw new BuilderException("The setting " + key + " is not known.
+    //        Make sure you spelled it correctly (case sensitive).");
     //      }
     //    }
     //    return props;

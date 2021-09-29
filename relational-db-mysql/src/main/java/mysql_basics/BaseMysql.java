@@ -1,8 +1,8 @@
 package mysql_basics;
 
-// TODO: 主要数据库开发常见规范
-// MySQL数据库的数据实际存储在安装目录下/data/数据库名称/...(一个库对于一个文件夹)
-// ** Oracle购买的MySQL(限制其发展前景), 首推Oracle DB付费版权数据库 **
+// MySQL数据库：
+// 1. Oracle旗下免费DB
+// 2. MySQL数据实际存储在安装目录下/data/数据库名称/...(一个库对于一个文件夹)
 public class BaseMysql {
 
     // 基本数据类型的理解
@@ -41,7 +41,7 @@ public class BaseMysql {
      * 2. TRUNCATE TABLE old_table_name; 只清空表中的全部数据，并且只写入一次日志信息
      */
 
-    /* 创建View视图，并从视图中查询数据: 视图数据的变化和原表数据的变化相互影响 !!
+    /* 创建View视图，并从视图中查询数据: 视图数据的变化和原表数据的变化相互影响
      * CREATE VIEW view_name AS
      * SELECT column1, column2 ,,,
      * FROM old_table_name;

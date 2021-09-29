@@ -35,8 +35,7 @@ public class MyBatisBasics {
 
     // ${}和#{}的区别
     // 1. ${}是字符串替换，直接把${}替换成变量的值，调用.createStatement()
-    // 2. #{}是预编译，会先替换成?，调用.prepareStatement(query)来赋值
-    // 3. #{}可以防止SQLz注入
+    // 2. #{}是预编译(防止SQLz注入)，会先替换成?，调用.prepareStatement(query)来赋值
 
     // TODO: 访问数据库必须使用连接池, 提供可靠性保护：网络中断自动重连, 连接数限制，定期回收连接，设置超时时间等
     // 1. 必须具有自动重连的功能

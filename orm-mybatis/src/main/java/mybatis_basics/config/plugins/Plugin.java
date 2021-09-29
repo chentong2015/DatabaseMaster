@@ -12,8 +12,8 @@ import java.util.Map;
 import java.util.Set;
 
 // TODO: 插件代理的实现
-//  target被代理对象上调用的方法，会执行到代理类Plugin上的invoke()方法
-//  如果满足method拦截的条件，则会调用自定义拦截器的拦截.intercept()方法
+// target被代理对象上调用的方法，会执行到代理类Plugin上的invoke()方法
+// 如果满足method拦截的条件，则会调用自定义拦截器的拦截.intercept()方法
 public class Plugin implements InvocationHandler {
 
     // 需要被代理的实例: executor执行器

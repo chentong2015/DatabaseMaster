@@ -1,4 +1,4 @@
-package mysql_basics;
+package mysql_basics.explain;
 
 // Explain Tool工具: 提供MySQL执行语句的信息
 // 使用explain可以模拟优化器执行SQL语句，分析查询语句或结构的性能瓶颈
