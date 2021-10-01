@@ -14,7 +14,7 @@ public class LoaderMapperSql {
     //   > XMLConfigBuilder.mapperElement(XNode parent)
     //
     // private void mapperElement(XNode parent) throws Exception {
-    //   // "Package加载的方式"优先级高的原因：能够加载一个包下的多个文件，加载的映射语句更多，方便维护
+    //   "Package加载的方式"优先级高的原因：能够加载一个包下的多个文件，加载的映射语句更多，方便维护
     //   if ("package".equals(child.getName())) {
     //        resource = child.getStringAttribute("name");
     //        this.configuration.addMappers(resource);
@@ -66,7 +66,7 @@ public class LoaderMapperSql {
     //      }
     //  }
     //
-    // 实际操作SQL语句的方法 class XMLStatementBuilder中的方法, 对xml中配置的key的值进行解析
+    // 实际操作SQL语句的方法class XMLStatementBuilder中的方法, 对xml中配置的key的值进行解析
     // public void parseStatementNode() {
     //     String id = this.context.getStringAttribute("id");
     //     String databaseId = this.context.getStringAttribute("databaseId");

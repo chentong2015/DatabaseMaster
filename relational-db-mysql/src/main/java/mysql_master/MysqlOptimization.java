@@ -2,7 +2,7 @@ package mysql_master;
 
 // 基本原则: 满足数据库开发常见规范和约束
 // 基础优化策略：数据库表优化，索引优化，SQL慢查询的优化
-// 高级优化策略: 分布式缓存，CDN，数据库读写分离(CopyOnWrite思想)
+// 高级优化策略: 分布式缓存，CDN，数据库读写分离(CopyOnWrite思想)，换数据库 NoSQL
 public class MysqlOptimization {
 
     // 数据库表优化
