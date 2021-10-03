@@ -1,4 +1,4 @@
-package routing_datasource.annotation;
+package routing_datasource.aspect;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

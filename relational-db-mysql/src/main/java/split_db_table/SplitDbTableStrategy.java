@@ -6,6 +6,7 @@ public class SplitDbTableStrategy {
     // 1. 多库多表 ROUTING_DS_TABLE_STRATEGY  --> RoutingDsAndTbStrategy
     // 2. 多库一表 ROUTING_DS_STRATEGY        --> RoutingDsStrategy
     // 3. 一库多表 ROUTING_TABLE_STRATEGY     --> RoutingTbStrategy
+    
     // 规则类：接口类
     //    IRoutingDbTable {
     //       calDataSourceKey(String routingField) 计算数据落入到那个库中
@@ -20,7 +21,7 @@ public class SplitDbTableStrategy {
     //    }
     // 具体实现类
 
-    // TODO: Spring使用了路由来动态的切换DataSource数据源
+    // TODO: Spring使用路由来动态的切换DataSource数据源
     // 配置多个数据源，并从.properties文件中获取出来
     // @Bean
     // @ConfigurationProperties(prefix="spring.datasource.uid01")

@@ -7,7 +7,6 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import routing_datasource.MultiDataSourceHolder;
-import routing_datasource.annotation.Router;
 
 import java.lang.reflect.Method;
 
@@ -16,7 +15,7 @@ import java.lang.reflect.Method;
 public class RoutingAspect {
 
     // 切点切自定义的注解
-    @Pointcut("@annotation(routing_datasource.annotation.Router)")
+    @Pointcut("@annotation(routing_datasource.aspect.Router)")
     private void pointCut() {
     }
 
