@@ -20,36 +20,14 @@ public class BaseMysql {
     //    varchar保存可变长度的字符串，使用额外的一个或两个字节存储字符串长度
     //    binary保存二进制字符串，它保存的是字节而不是字符
 
-    /* 从一个表中提取数据到另外一个表
-     * 1. SELECT names
-     *    INTO   new_table_name  在默认的file-group位置创建一个新表
-     *    FROM   old_table_name
-     * 2. INSERT INTO new_table_name
-     *    SELECT names           选择出来的列需要和目标新表匹配
-     *    FROM old_table_name
-     */
-
-    /* 如果修改已经建好的Table
-     * 1. ALTER old_table_name
-     *    ADD   column_name datatype;
-     * 2. ALTER old_table_name
-     *    ALTER COLUMN column_name datatype;
-     */
-
-    /* 如何删除已经建好的表
-     * 1. DROP TABLE old_table_name;     将数据和表一同删除
-     * 2. TRUNCATE TABLE old_table_name; 只清空表中的全部数据，并且只写入一次日志信息
-     */
-
-    /* 创建View视图，并从视图中查询数据: 视图数据的变化和原表数据的变化相互影响
-     * CREATE VIEW view_name AS
-     * SELECT column1, column2 ,,,
-     * FROM old_table_name;
-     *
-     * SELECT * FROM view_name; 视图是基于SQL语句结果表上的一个虚拟表
-     * ALTER VIEW view_name;    修改视图
-     * DROP VIEW view_name;     删除视图
-     */
+    // 4. Blob & Clob
+    //    Blob: Binary Large Object
+    //    Clob: Character Large Object, like VARCHAR, only bigger
+    //    NCLOB: like NATIONAL CHAR VARYING, only bigger
+    // 支撑大文本的数据量
+    // CREATE TABLE t (s1 CLOB (1K)) /* size = 1 kilobyte */
+    // CREATE TABLE t (s1 CLOB (1M)) /* size = 1 megabyte */
+    // CREATE TABLE t (s1 CLOB (1G)) /* size = 1 gigabyte */
 
     // TODO: 为什么要禁止多表使用join? 如果join查询没有写好，根据底层表关联的算法，导致运算量非常庞大
     // MySQL表关联常见的两种算法
