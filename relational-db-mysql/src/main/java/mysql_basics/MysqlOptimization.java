@@ -1,4 +1,6 @@
-package mysql_master;
+package mysql_basics;
+
+// Mysql单机支撑的并发大约几百，不到一千
 
 // 基本原则: 满足数据库开发常见规范和约束
 // 基础优化策略：数据库表优化，索引优化，SQL慢查询的优化

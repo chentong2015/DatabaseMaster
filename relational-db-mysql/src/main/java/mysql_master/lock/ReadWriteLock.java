@@ -20,6 +20,9 @@ public class ReadWriteLock {
     // delete: 删除数据时，先对记录加"写锁"，然后再做删除操作(版本链上添加flag)
     // insert: 插入数据时，先加"隐式锁"，在这条插入记录的事务提交前，保证不被被的事务访问到
     // update: 如果更新的列导致存储空间变化，则先加写锁然后修改. 反之先加写锁，删除之后再重新insert记录
+    
+    // 添加行锁，数据库会排队执行线程
+    // update product set stock=stock-1 where id=#{id} and stock > 0;
 
     // TODO: 读锁, 只有和读锁不冲突
     // #Transaction100                           #Transaction
@@ -40,7 +43,7 @@ public class ReadWriteLock {
     //                                           select ...; 可以查询，能直接读，不涉及锁
     // select ... lock in share mode; 不能再加写锁
 
-    // 1. REPEATABLE-READ 可重复读隔离级别  >>  TODO: 锁住查询出来的行数据
+    // 1. REPEATABLE-READ 可重复读隔离级别 TODO: 锁住查询出来的行数据
     //    防止幻读：Session1所操作(查询或更新)的数据范围内，不受到Session2插入数据的影响
     //    2.1 如果操作走索引，则把索引操作范围内的"间隙(索引会排序，出现范围)"锁住  >> 锁和Index的关系
     //    2.2 如果操作不走索引，则把整个表的所用行，同时把所有的间隙都给锁住
@@ -61,7 +64,7 @@ public class ReadWriteLock {
     //                                              由于c不是走的索引，则会把全表的行都锁住，包括间隙的操作
     //    commit;                                   commit;
 
-    // 2. Read Committed 读可提交隔离级别 >> TODO: 只锁住查询出来的行数据
+    // 2. Read Committed 读可提交隔离级别 TODO: 只锁住查询出来的行数据
     //    #Session1                                 #Session2
     //    begin;                                    begin;
     //    select * form t1 where a=1 for update;
