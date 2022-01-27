@@ -10,6 +10,7 @@
         <module name="orm-spring-jdbc" />
         <module name="orm-mybatis" />
         <module name="relational-db-mysql" />
+        <module name="relational-db-h2-database" />
         <module name="orm-hibernate" />
       </profile>
     </annotationProcessing>

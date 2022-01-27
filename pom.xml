@@ -14,6 +14,7 @@
         <module>relational-db-mysql</module>
         <module>distributed-db</module>
         <module>orm-spring-jdbc</module>
+        <module>relational-db-h2-database</module>
     </modules>
 
     <properties>
