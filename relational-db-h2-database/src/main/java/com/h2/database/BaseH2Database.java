@@ -26,13 +26,12 @@ public class BaseH2Database {
 
     public static void main(String[] a) throws Exception {
         Class.forName("org.h2.Driver");
-        // jdbc:h2:tcp://localhost/~/test
-        System.out.println("Application ");
-        Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test", "sa", "sa");
-        // add application code here
-        String sql2 = "Insert into t_test (id, name) values (8, 'item08');";
-
-        String sql = "Insert into t_cpu values (default, '70d0c37e-634e-4ssa68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz');";
+        // 下面两个指的是同一个数据库
+        // "jdbc:h2:~/test"  TODO: 只有一个进程能够连接
+        // jdbc:h2:tcp://localhost/~/test TODO: Application和H2 Console可以同时连接
+        Connection conn = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+        String sql = "Insert into t_test (id, name) values (9, 'item09');";
+        // String sql = "Insert into t_cpu values (default, '70d0c37e-634e-4ssa68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz');";
         conn.createStatement().execute(sql);
         conn.close();
     }

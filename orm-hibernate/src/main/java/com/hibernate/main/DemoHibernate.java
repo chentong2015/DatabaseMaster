@@ -1,3 +1,5 @@
+package com.hibernate.main;
+
 public class DemoHibernate {
 
     // 连接项目所需要的数据库 SQL Server
