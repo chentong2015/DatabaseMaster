@@ -21,8 +21,10 @@ public class BaseH2Database {
     // login: sa, sa
 
     // H2 Database Engine: 创建新的数据库
-    // JDBC URL for H2 Console: jdbc:h2:./murex_retail_experience 创建的连接
-    // Login: admin, admin
+    // JDBC URL for H2 Console: jdbc:h2:./murex_retail_experience
+    //   注意创建的相对位置 创建的连接 relational-db-h2-database/database/murex_retail_experience.mv.db
+    // login: admin
+    // password: admin
 
     public static void main(String[] a) throws Exception {
         Class.forName("org.h2.Driver");
