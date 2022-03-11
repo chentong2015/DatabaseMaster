@@ -15,6 +15,7 @@
         <module>distributed-db</module>
         <module>orm-spring-jdbc</module>
         <module>relational-db-h2-database</module>
+        <module>document-db-mongodb</module>
     </modules>
 
     <properties>
