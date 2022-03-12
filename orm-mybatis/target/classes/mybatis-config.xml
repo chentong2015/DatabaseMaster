@@ -14,9 +14,7 @@
     </properties>
 
     <plugins>
-        <plugin interceptor="mybatis_basics.config.settings.ExamplePlugin">
-            <property name="someProperty" value="100"/>
-        </plugin>
+        <plugin interceptor="BaseInterceptor"/>
     </plugins>
 
     <environments default="development">
@@ -37,13 +35,13 @@
     <mappers>
         <!-- <package name="mybatis_basics.testJavaAnnotation.mapper"/> 首先级更高，加载的映射语句更多 -->
         <mapper resource="BlogMapper.xml"/> <!-- 默认资源路径/resources -->
-        <!-- <mapper class="mybatis_basics.testJavaAnnotation.mapper.BlogMapper"/> -->
+        <!-- <mapper class="BlogMapper"/> -->
         <!-- <mapper url="file:///var/mappers/BlogMapper.xml"/> -->
         <!-- <mapper name="org.mybatis.builder"/> -->
     </mappers>
 
     <!-- MyBatis可以用完整配置参数
-    <settings>
+    <xml_settings>
         <setting name="cacheEnabled" value="true"/> 默认一二级缓存都是开的(二级缓存需要自定义)
         <setting name="lazyLoadingEnabled" value="true"/>
         <setting name="multipleResultSetsEnabled" value="true"/>
@@ -59,7 +57,7 @@
         <setting name="localCacheScope" value="SESSION"/>
         <setting name="jdbcTypeForNull" value="OTHER"/>
         <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
-    </settings>
+    </xml_settings>
     <typeAliases>
         <typeAlias alias="Author" type="domain.blog.Author"/> 设置别名
     </typeAliases>

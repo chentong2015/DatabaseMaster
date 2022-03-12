@@ -14,7 +14,7 @@
     </properties>
 
     <plugins>
-        <plugin interceptor="mybatis_basics.config.plugins.interceptor.BaseInterceptor"/>
+        <plugin interceptor="BaseInterceptor"/>
     </plugins>
 
     <environments default="development">
@@ -35,7 +35,7 @@
     <mappers>
         <!-- <package name="mybatis_basics.testJavaAnnotation.mapper"/> 首先级更高，加载的映射语句更多 -->
         <mapper resource="BlogMapper.xml"/> <!-- 默认资源路径/resources -->
-        <!-- <mapper class="mybatis_basics.testJavaAnnotation.mapper.BlogMapper"/> -->
+        <!-- <mapper class="BlogMapper"/> -->
         <!-- <mapper url="file:///var/mappers/BlogMapper.xml"/> -->
         <!-- <mapper name="org.mybatis.builder"/> -->
     </mappers>

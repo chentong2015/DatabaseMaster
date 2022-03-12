@@ -6,8 +6,10 @@
 <mapper namespace="mybatis_basics.testConfigXml.BlogMapper">
 
     <!-- 返回的类型必须能够通过完整的package路径找到 -->
-    <select id="selectBlog" resultType="mybatis_basics.DataModel.Blog">
-        select * from blog where id = #{id}
+    <select id="selectBlog" resultType="Blog">
+        select *
+        from blog
+        where id = #{id}
     </select>
 
     <!-- resultMap – 描述如何从数据库结果集中加载对象
