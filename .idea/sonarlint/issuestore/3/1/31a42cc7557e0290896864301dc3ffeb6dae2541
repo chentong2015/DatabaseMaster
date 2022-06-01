@@ -1,2 +1,4 @@
 
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“ñß6
+L
+java:S1874$"6Remove this use of "queryForObject"; it is deprecated.(‡™åÂ

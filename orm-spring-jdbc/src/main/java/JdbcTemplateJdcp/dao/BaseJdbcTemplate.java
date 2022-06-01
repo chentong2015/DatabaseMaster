@@ -28,7 +28,7 @@ public class BaseJdbcTemplate implements InformationDao {
         return jdbcTemplate.update(query, args) == 1;
     }
 
-    // 查询数据时，需要提供自定义的RowMapper
+    // 查询数据时，需要提供自定义的RowMapper，将查询出来的ResultSet映射成指定类型的对象实例
     @Override
     public Information getInformation(int id) {
         String query = "SELECT * FROM information where id = ?";

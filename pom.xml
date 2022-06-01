@@ -8,6 +8,7 @@
     <artifactId>DatabaseMaster</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>orm-hibernate</module>
         <module>orm-mybatis</module>
@@ -16,11 +17,8 @@
         <module>orm-spring-jdbc</module>
         <module>relational-db-h2-database</module>
         <module>document-db-mongodb</module>
+        <module>orm-liquibase</module>
+        <module>relational-db-psql</module>
+        <module>object-db-management-system</module>
     </modules>
-
-    <properties>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
-    </properties>
-
 </project>
