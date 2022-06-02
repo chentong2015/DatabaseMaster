@@ -1,18 +1,22 @@
 package com.hibernate.main.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 
 @Entity // Mark a class as an entity 对应到<class/> mapping
 @Table(name = "t_book") // Specifies the table name 默认的名称是BOOK
 public class Book {
 
+    // TODO. GenerationType.IDENTITY 从0开始依次增加, 支持Psql
     @Id
     @Column(name = "id")
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
+    // @GenericGenerator(name = "native", strategy = "native") 随机自动地增加
     private long id;
 
+    // String对应到psql中的类型为character varying可变字符串
     @Column(name = "name")
     private String name;
 

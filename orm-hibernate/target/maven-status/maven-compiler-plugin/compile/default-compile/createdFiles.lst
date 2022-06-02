@@ -1,3 +1,5 @@
-model\DBTable.class
-DemoHibernate.class
-BaseHibernateJPA.class
+com\hibernate\main\DemoHibernate.class
+com\hibernate\main\model\Person.class
+com\hibernate\main\id\generator\MyStoredTableIdGenerator.class
+com\hibernate\main\id\generator\DemoIdGenerator.class
+com\hibernate\main\model\Book.class

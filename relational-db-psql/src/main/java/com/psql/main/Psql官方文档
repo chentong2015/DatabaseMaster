@@ -1,2 +1,22 @@
 加州大学伯克利分校计算机系
 http://www.postgres.cn/docs/13/index.html
+https://www.enterprisedb.com/postgresql-tutorial-resources-training
+
+---------------------------------------------------------------------------
+命令行连接Psql
+C:\PostgreSQL\bin>psql.exe -U postgres
+
+在安装psql之后(指定存储数据的位置)，命令行启动
+C:\PostgreSQL\bin>pg_ctl.exe start -D C:\Program Files\PostgreSQL\14\data
+C:\PostgreSQL\bin>pg_ctl.exe restart -D C:\Program Files\PostgreSQL\14\data
+"services.msc" 在service服务上自动设置启动
+
+
+安装时，设置superuser: postgres的密码
+password: admin
+port: 5432
+PgAdmin Password: admin
+添加连接用户 test:test
+
+
+

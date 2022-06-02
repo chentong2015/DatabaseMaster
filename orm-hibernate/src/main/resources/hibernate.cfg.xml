@@ -1,27 +1,31 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
-<!-- TODO. 这个XML文件的配置是否可以被取代
+<!-- TODO. 这个XML文件的配置是否可以被取代 ??
      hibernate.cfg.xml file defines the Hibernate configuration information. -->
 <hibernate-configuration>
 
     <!-- 必须先设置property属性的值，然后定义table的mappings -->
     <session-factory>
         <!-- Define JDBC connection information -->
-        <property name="connection.url">jdbc:sqlserver://localhost:1433;databaseName=DemoDB</property>
-        <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
-        <property name="connection.username">admin</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.username">postgres</property>
         <property name="connection.password">admin</property>
 
         <!-- 定义连接池中的连接数目的大小
              Configure the number of connections in Hibernate’s built-in connection pool. -->
         <property name="connection.pool_size">100</property>
         <!-- 可以自动将hbm table中的表定义映射到DB中
-             Enables automatic generation of database schemas directly into the database. -->
-        <property name="hbm2ddl.auto">update</property>
+             Enables automatic generation of database schemas directly into the database.
+        <property name="hbm2ddl.auto">update</property> -->
+
+        <!-- Print executed SQL to stdout 显示执行的SQL代码 -->
+        <property name="show_sql">true</property>
 
         <!-- 一个数据表的描述 -->
-        <mapping resource="DBTable.hbm.xml"/>
+        <mapping resource="books.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

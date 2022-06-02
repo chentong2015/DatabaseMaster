@@ -1,3 +1,5 @@
-D:\Software Senior\Database\DatabaseMaster\orm-hibernate\src\main\java\BaseHibernateJPA.java
-D:\Software Senior\Database\DatabaseMaster\orm-hibernate\src\main\java\DemoHibernate.java
-D:\Software Senior\Database\DatabaseMaster\orm-hibernate\src\main\java\model\DBTable.java
+D:\Work My Projects\Database Master\DatabaseMaster\orm-hibernate\src\main\java\com\hibernate\main\id\generator\MyStoredTableIdGenerator.java
+D:\Work My Projects\Database Master\DatabaseMaster\orm-hibernate\src\main\java\com\hibernate\main\DemoHibernate.java
+D:\Work My Projects\Database Master\DatabaseMaster\orm-hibernate\src\main\java\com\hibernate\main\model\Person.java
+D:\Work My Projects\Database Master\DatabaseMaster\orm-hibernate\src\main\java\com\hibernate\main\model\Book.java
+D:\Work My Projects\Database Master\DatabaseMaster\orm-hibernate\src\main\java\com\hibernate\main\id\generator\DemoIdGenerator.java

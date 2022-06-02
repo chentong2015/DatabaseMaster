@@ -59,8 +59,6 @@ t
 Dorm-spring-jdbc/src/main/java/JdbcTemplateJdcp/JdbcTemplateJdcp.java,8\b\8b1591f3a1d3036fdd3455d8a77029f99cb58457
 E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
-J
-relational-db-psql/pom.xml,0\8\0803b786e85ebbacaf43149c28e8ab31a2be5bbb
 r
 Borm-liquibase/src/main/java/com/liquibase/main/Liquibase教程.txt,2\a\2a60026dafe5dbbdc2356053da93db19d57fd936
 S

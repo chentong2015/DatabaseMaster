@@ -1,10 +1,14 @@
 package com.hibernate.main;
 
+import com.hibernate.main.model.Book;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.query.Query;
+
+import java.util.List;
 
 // Java Persistence API (JPA)
 // ORM Hibernate: JPA Implementation 两层架构
@@ -18,31 +22,41 @@ public class DemoHibernate {
 
     public static void main(String[] args) {
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-        try {
-            SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-            Session sessionAttribute = sessionFactory.openSession();
-            testSessionQuery(sessionAttribute);
-            sessionAttribute.close();
-            sessionFactory.close();
-        } catch (Exception e) {
-            // The registry would be destroyed by the SessionFactory,
-            // Destroy it manually when we have trouble building the SessionFactory
-            StandardServiceRegistryBuilder.destroy(registry);
+        // The registry would be destroyed by the SessionFactory,
+        // Destroy it manually when we have trouble building the SessionFactory
+        // StandardServiceRegistryBuilder.destroy(registry);
+
+        SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+        saveObject(sessionFactory);
+        testSessionQuery(sessionFactory);
+        sessionFactory.close();
+    }
+
+    // 手动开启事务，执行数据库的插入操作
+    // 一个Session结束之后，需要关闭执行的操作
+    private static void saveObject(SessionFactory sessionFactory) {
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+            Book newBook = new Book();
+            newBook.setName("Java");
+            newBook.setTitle("The master java title");
+            session.persist(newBook);
+            session.getTransaction().commit();
         }
     }
 
-    // HQL: hibernate query language 一种Hibernate的语言, 一种类似于sql的简化的查询语言
-    private static void testSessionQuery(Session sessionAttribute) {
-        // Book: DB中的Schema表格
-        // form Book: 提取Book表的所有的信息，并映射成指定类型的对象
-        // Query<Book> query = sessionAttribute.createQuery("from Book", Book.class);
-        // List<Book> books = query.getResultList();
-
-        // 手动开启事务，执行数据库的插入操作
-        sessionAttribute.beginTransaction();
-        // Book newBook = new Book();
-        // newBook.setName("Test");
-        // sessionAttribute.save(newBook); 存储新的对象到数据库表
-        sessionAttribute.getTransaction().commit();
+    // HQL: hibernate query language
+    // TODO. 一种Hibernate的语言, 一种类似于sql的简化的查询语言, 不是SQL语言
+    // "Book": DB中的Schema表格 ==> 这里必须使用标记了@Entity类型的名称，对应到DB中的表格
+    // "form Book": 提取Book表的所有的信息，并映射成指定类型的对象
+    private static void testSessionQuery(SessionFactory sessionFactory) {
+        try (Session session = sessionFactory.openSession()) {
+            session.beginTransaction();
+            Query<Book> query = session.createQuery("from Book", Book.class);
+            List<Book> books = query.getResultList();
+            for (Book book : books) {
+                System.out.println(book.getId() + " - " + book.getName() + " - " + book.getTitle());
+            }
+        }
     }
 }
