@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
-<!-- TODO. 这个XML文件的配置是否可以被取代
+<!-- TODO. 这个XML文件的配置是否可以被取代 ??
      hibernate.cfg.xml file defines the Hibernate configuration information. -->
 <hibernate-configuration>
 

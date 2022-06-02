@@ -3,8 +3,7 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<!-- 连接好数据库之后，选择正确的Table进行关联，在这里配置映射的关系(或者自动生成)
-     TODO. 连接Database的User必须要能够操作该table -->
+<!-- 连接好数据库之后，选择正确的Table进行关联，在这里配置映射的关系(或者自动生成) -->
 <hibernate-mapping>
 
     <!-- HBM: mapping metadata to determine load and store objects of the persistent class -->

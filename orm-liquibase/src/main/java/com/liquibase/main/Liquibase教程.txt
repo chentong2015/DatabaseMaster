@@ -1,8 +1,11 @@
-下载按照之后，启动cmd即可运行 > liquibase
-
 https://www.liquibase.org/
-Liquibase is an open-source database schema change management solution
-which enables you to manage revisions of your database changes easily.
-
 https://docs.liquibase.com/install/tutorials/home.html
-https://docs.liquibase.com/install/tutorials/hibernate.html
+   开源数据库架构变更管理解决方案
+   Liquibase is an open-source database schema change management solution
+   which enables you to manage revisions of your database changes easily.
+
+cmd> liquibase 启动运行
+cmd> liquibase registerChangeLog
+cmd> liquibase update              Deploy your database change
+cmd> liquibase rollbackCount 1     Roll back your database last change
+cmd> liquibase registerChangeLog   Register your changelog and view details in Liquibase Hub

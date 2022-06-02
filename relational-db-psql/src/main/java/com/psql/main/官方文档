@@ -3,6 +3,9 @@ http://www.postgres.cn/docs/13/index.html
 https://www.enterprisedb.com/postgresql-tutorial-resources-training
 
 ---------------------------------------------------------------------------
+port: 5432
+PgAdmin Password: admin
+
 命令行连接Psql
 C:\PostgreSQL\bin>psql.exe -U postgres
 
@@ -11,12 +14,5 @@ C:\PostgreSQL\bin>pg_ctl.exe start -D C:\Program Files\PostgreSQL\14\data
 C:\PostgreSQL\bin>pg_ctl.exe restart -D C:\Program Files\PostgreSQL\14\data
 "services.msc" 在service服务上自动设置启动
 
-
-安装时，设置superuser: postgres的密码
-password: admin
-port: 5432
-PgAdmin Password: admin
-添加连接用户 test:test
-
-
-
+管理员用户: postgres, admin
+普通用户 : test, test

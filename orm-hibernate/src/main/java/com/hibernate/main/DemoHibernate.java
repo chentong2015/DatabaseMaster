@@ -3,6 +3,7 @@ package com.hibernate.main;
 import com.hibernate.main.model.Book;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -36,12 +37,12 @@ public class DemoHibernate {
     // 一个Session结束之后，需要关闭执行的操作
     private static void saveObject(SessionFactory sessionFactory) {
         try (Session session = sessionFactory.openSession()) {
-            session.beginTransaction();
+            Transaction transaction = session.beginTransaction();
             Book newBook = new Book();
             newBook.setName("Java");
             newBook.setTitle("The master java title");
             session.persist(newBook);
-            session.getTransaction().commit();
+            transaction.commit();
         }
     }
 
@@ -51,7 +52,6 @@ public class DemoHibernate {
     // "form Book": 提取Book表的所有的信息，并映射成指定类型的对象
     private static void testSessionQuery(SessionFactory sessionFactory) {
         try (Session session = sessionFactory.openSession()) {
-            session.beginTransaction();
             Query<Book> query = session.createQuery("from Book", Book.class);
             List<Book> books = query.getResultList();
             for (Book book : books) {

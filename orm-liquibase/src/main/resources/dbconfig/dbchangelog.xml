@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<databaseChangeLog
-        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
 
-    <changeSet author="BobR" id="myIDNumber123">
-        <createTable tableName="actor">
-            <column autoIncrement="true" name="id" type="INTEGER">
+    <!-- 该文件包含了数据库表的描述信息
+         This file contains information such as table, views, columns, constraints -->
+    <changeSet author="ctong" id="1">
+        <createTable tableName="t_book">
+            <column name="id" autoIncrement="true" type="LONG">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="actor_pkey"/>
             </column>
-            <column name="firstname" type="VARCHAR(255)"/>
-            <column name="lastname" type="VARCHAR(255)"/>
-            <column name="twitter" type="VARCHAR(15)"/>
+            <column name="name" type="VARCHAR(50)"/>
+            <column name="title" type="VARCHAR(50)"/>
         </createTable>
     </changeSet>
 </databaseChangeLog>
