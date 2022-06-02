@@ -5,15 +5,16 @@ import org.hibernate.annotations.Parameter;
 
 import javax.persistence.*;
 
-// 对于数据库中的一个实体表
+// 对于数据库中的一个实体表: 注意DB Table的设计规范
 @Entity
 @Table(name = "PERSON")
 public class Person {
 
     // TODO. 使用自定义的ID主键的生成规则，来自hibernate的扩展
+    @GeneratedValue(generator = "personIdGenerator")
     @GenericGenerator(
             name = "personIdGenerator",
-            strategy = "com.ctong.idgenerator.StoredProcedureIdGenerator",
+            strategy = "com.hibernate.main.id.generator.MyStoredTableIdGenerator",
             parameters = {
                     @Parameter(name = "UID1", value = "STATICS"),
                     @Parameter(name = "UID2", value = "CATEGORY")
@@ -21,7 +22,6 @@ public class Person {
     )
     @Id
     @Column(name = "ID")
-    @GeneratedValue(generator = "personIdGenerator")
     private Long id;
 
     @Column(name = "FIRST_NAME")

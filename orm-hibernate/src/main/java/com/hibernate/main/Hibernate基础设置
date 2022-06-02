@@ -1,3 +1,4 @@
+
  连接项目所需要的数据库 SQL Server
    1. TODO. 连接项目所需要的数据库，走网络端口去要数据
    2. 打开SQL Server的1433默认的端口
@@ -11,7 +12,7 @@
 
 
  将SQL Server Driver Jar添加到项目中：可以使用上一步下载的jar文件     ====> (添加jar)，或者直接通过maven来构建 !!
-   在JDBC的上层加Hibernate                                        ====> (添加插件)，或者直接通过maven来构建 !!
+   在JDBC的上层加Hibernate                                      ====> (添加插件)，或者直接通过maven来构建 !!
    方式 1. Project Settings > Modules > Add Hibernate support
    方式 2. Right Click Project > Add Framework Support > Hibernate (注意: 使用最新的版本, 自定义下载，然后添加required中的jar文件)
    Hibernate必须要有配置文件 > 配置在连接数据库时信息

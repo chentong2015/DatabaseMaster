@@ -57,3 +57,15 @@ X
 (storage-engine/系统设计 存储引擎,5\e\5ec13e5eb8d1fc482288f581b2782b701f45050d
 t
 Dorm-spring-jdbc/src/main/java/JdbcTemplateJdcp/JdbcTemplateJdcp.java,8\b\8b1591f3a1d3036fdd3455d8a77029f99cb58457
+E
+orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
+J
+relational-db-psql/pom.xml,0\8\0803b786e85ebbacaf43149c28e8ab31a2be5bbb
+r
+Borm-liquibase/src/main/java/com/liquibase/main/Liquibase教程.txt,2\a\2a60026dafe5dbbdc2356053da93db19d57fd936
+S
+#object-db-management-system/pom.xml,5\6\56c4a7235aafee5ef8da4bbc1673ae648386a54d
+X
+(object-db-management-system/src/ObjectDB,7\1\711185913c6d2f22b93507732ce90fac8edb9f6c
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
