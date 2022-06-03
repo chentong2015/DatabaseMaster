@@ -11,7 +11,6 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-// Java Persistence API (JPA)
 // ORM Hibernate: JPA Implementation 两层架构
 //   1. Native Hibernate APIs(功能较多): Session, SessionFactory, Transactions,,,
 //   2. Hibernate JPA   API  (功能较少): EntityManagerFactory, EntityManager,,,
@@ -22,15 +21,17 @@ import java.util.List;
 public class DemoHibernate {
 
     public static void main(String[] args) {
-        final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-        // The registry would be destroyed by the SessionFactory,
-        // Destroy it manually when we have trouble building the SessionFactory
-        // StandardServiceRegistryBuilder.destroy(registry);
-
-        SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+        StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
+                .configure().build();
+        SessionFactory sessionFactory = new MetadataSources(registry)
+                .buildMetadata().buildSessionFactory();
         saveObject(sessionFactory);
         testSessionQuery(sessionFactory);
         sessionFactory.close();
+
+        // The registry would be destroyed by the SessionFactory,
+        // Destroy it manually when we have trouble building the SessionFactory
+        // StandardServiceRegistryBuilder.destroy(registry);
     }
 
     // 手动开启事务，执行数据库的插入操作

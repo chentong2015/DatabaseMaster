@@ -15,6 +15,7 @@
         <module name="orm-mybatis" />
         <module name="orm-hibernate" />
         <module name="orm-liquibase" />
+        <module name="java-persistence-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

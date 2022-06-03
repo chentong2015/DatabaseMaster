@@ -53,7 +53,3 @@ x
 Horm-spring-jdbc/src/main/java/JdbcTemplateJdcp/dao/BaseJdbcTemplate.java,3\1\31a42cc7557e0290896864301dc3ffeb6dae2541
 t
 Dorm-spring-jdbc/src/main/java/JdbcTemplateJdcp/JdbcTemplateJdcp.java,8\b\8b1591f3a1d3036fdd3455d8a77029f99cb58457
-S
-#object-db-management-system/pom.xml,5\6\56c4a7235aafee5ef8da4bbc1673ae648386a54d
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
