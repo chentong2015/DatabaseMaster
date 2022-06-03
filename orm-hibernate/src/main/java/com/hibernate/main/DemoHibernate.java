@@ -20,23 +20,23 @@ import java.util.List;
 // 2. 通过@Query("query")自定义SQL语句嵌入到源代码，更新则需要重新编译，不适合于优化SQL的场景
 public class DemoHibernate {
 
-    public static void main(String[] args) {
-        StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-                .configure().build();
-        SessionFactory sessionFactory = new MetadataSources(registry)
-                .buildMetadata().buildSessionFactory();
-        saveObject(sessionFactory);
-        testSessionQuery(sessionFactory);
-        sessionFactory.close();
+    private static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+    private static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
+    public static void main(String[] args) {
+        testPersistObject();
+        testUpdateQuery();
+        testDeleteQuery();
+        testGetQuery();
+        sessionFactory.close();
         // The registry would be destroyed by the SessionFactory,
         // Destroy it manually when we have trouble building the SessionFactory
-        // StandardServiceRegistryBuilder.destroy(registry);
+        StandardServiceRegistryBuilder.destroy(registry);
     }
 
     // 手动开启事务，执行数据库的插入操作
     // 一个Session结束之后，需要关闭执行的操作
-    private static void saveObject(SessionFactory sessionFactory) {
+    private static void testPersistObject() {
         try (Session session = sessionFactory.openSession()) {
             Transaction transaction = session.beginTransaction();
             Book newBook = new Book();
@@ -47,17 +47,38 @@ public class DemoHibernate {
         }
     }
 
-    // HQL: hibernate query language
-    // TODO. 一种Hibernate的语言, 一种类似于sql的简化的查询语言, 不是SQL语言
+    // TODO. HQL: hibernate query language, 一种类似于sql的简化的查询语言, 不是SQL语言
     // "Book": DB中的Schema表格 ==> 这里必须使用标记了@Entity类型的名称，对应到DB中的表格
     // "form Book": 提取Book表的所有的信息，并映射成指定类型的对象
-    private static void testSessionQuery(SessionFactory sessionFactory) {
+    private static void testGetQuery() {
         try (Session session = sessionFactory.openSession()) {
             Query<Book> query = session.createQuery("from Book", Book.class);
             List<Book> books = query.getResultList();
             for (Book book : books) {
                 System.out.println(book.getId() + " - " + book.getName() + " - " + book.getTitle());
             }
+        }
+    }
+
+    private static void testUpdateQuery() {
+        try (Session session = sessionFactory.openSession()) {
+            Transaction tx = session.beginTransaction();
+            String sqlUpdate = "update Book book set book.name = :newName where book.id = 2";
+            int rowAffected = session.createMutationQuery(sqlUpdate)
+                    .setParameter("newName", "java new name")
+                    .executeUpdate();
+            System.out.println(rowAffected);
+            tx.commit();
+        }
+    }
+
+    private static void testDeleteQuery() {
+        try (Session session = sessionFactory.openSession()) {
+            Transaction tx = session.beginTransaction();
+            String sqlUpdate = "delete Book book where book.id = 3";
+            int rowAffected = session.createMutationQuery(sqlUpdate).executeUpdate();
+            System.out.println(rowAffected);
+            tx.commit();
         }
     }
 }

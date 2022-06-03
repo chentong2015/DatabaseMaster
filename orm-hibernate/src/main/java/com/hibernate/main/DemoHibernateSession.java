@@ -18,8 +18,8 @@ public class DemoHibernateSession {
         // 执行一个事务的操作
         Session session = sessionFactory.openSession();
         // TODO. Flush从内存中"冲刷"到磁盘持久层存储
-        // 设置每commit一次便会执行一次flush过程
-        session.setFlushMode(FlushModeType.COMMIT);
+        session.setFlushMode(FlushModeType.COMMIT); // 每次调用commit时则会执行flush过程
+        
         Transaction tx = null;
         try {
             tx = session.beginTransaction();

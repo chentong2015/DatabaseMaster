@@ -19,6 +19,6 @@
         <module>document-db-mongodb</module>
         <module>orm-liquibase</module>
         <module>relational-db-psql</module>
-        <module>java-persistence-api</module>
+        <module>jpa-orm-design</module>
     </modules>
 </project>

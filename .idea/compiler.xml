@@ -14,8 +14,8 @@
         <module name="document-db-mongodb" />
         <module name="orm-mybatis" />
         <module name="orm-hibernate" />
+        <module name="jpa-orm-design" />
         <module name="orm-liquibase" />
-        <module name="java-persistence-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
