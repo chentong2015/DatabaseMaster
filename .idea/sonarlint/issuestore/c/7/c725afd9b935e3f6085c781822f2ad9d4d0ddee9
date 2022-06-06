@@ -1,0 +1,16 @@
+
+`	java:S112X"FDefine and throw a dedicated exception instead of using a generic one.(“áİßûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(äîÜÈşÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Å·¡úÿÿÿÿÿ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(œ¨Âò
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(£Ä±Èùÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(ÅşÇšüÿÿÿÿ
+‰
+java:S11304"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(ô§€Íüÿÿÿÿ
+S	java:S106G"9Replace this use of System.out or System.err by a logger.(üâ‹«ıÿÿÿÿ
+H
+java:S1135K"2Complete the task associated to this TODO comment.(Ë ƒ¹
+S	java:S106k"9Replace this use of System.out or System.err by a logger.(ïä²€úÿÿÿÿ
+]	java:S125u"<This block of commented-out lines of code should be removed.(ş“Ò¢úÿÿÿÿ8´íÄ…“0
+O	java:S106"9Replace this use of System.out or System.err by a logger.(Í…Î®
+N	java:S106™"9Replace this use of System.out or System.err by a logger.(ç†­6

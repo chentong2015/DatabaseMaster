@@ -45,12 +45,8 @@ a
 1orm-hibernate/src/main/java/Hibernate基础设置,e\b\ebe047748385629f8ac99cf2ce092f063c965fa3
 x
 Horm-hibernate/src/main/java/com/hibernate/main/DemoHibernateSession.java,6\4\64ebfdadbd7a7101df6c6850798c5ad461cb5554
-k
-;relational-db-psql/src/main/java/com/psql/main/官方文档,3\1\31723c10a19ff1e946324efe5590494da44035ea
 |
 Lrelational-db-mysql/src/main/java/com/mysql/main/cache/MysqlServerCache.java,3\d\3dc9594d8024553344d26d0040176d2c5689ff99
-s
-Crelational-db-mysql/src/main/java/com/mysql/main/MySqlFunctions.sql,9\6\9605821c983745115d40690b3a00db2be97790a5
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 w
@@ -65,3 +61,13 @@ Brelational-db-mysql/src/main/java/com/mysql/main/MySql基础配置,c\f\cf0b468
 Ljpa-orm-database-design/src/main/java/com/orm/middleware/ORM层 系统设计,1\f\1feeea77ef1f87f57be8c524648616f4e6adc915
 X
 (storage-engine/存储引擎 系统设计,b\7\b726d3a5fc948787936d0354d0f6f0fb30d17699
+�
+Tjpa-orm-database-design/src/main/java/com/orm/middleware/jdbc/PooledConnections.java,c\7\c725afd9b935e3f6085c781822f2ad9d4d0ddee9
+|
+Ljpa-orm-database-design/src/main/java/com/orm/middleware/jdbc/PoolState.java,4\d\4dfa6949a673cb723d7e329e71c4949570843680
+E
+orm-hibernate/pom.xml,c\c\cc998f0bbeefc752efa5325fbbdf3315c713152b
+n
+>orm-hibernate/src/main/java/com/hibernate/main/model/Book.java,b\a\ba7df313bd287eb0f80784c650a00ffe9bb89234
+q
+Aorm-hibernate/src/main/java/com/hibernate/main/DemoSqlServer.java,e\2\e2462ecc4612444500aa6a20f432d836219a2a2b
