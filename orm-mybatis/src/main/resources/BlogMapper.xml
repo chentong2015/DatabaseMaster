@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!-- 定义映射器所在的特定的名称空间 -->
-<mapper namespace="mybatis_basics.testConfigXml.BlogMapper">
+<mapper namespace="com.mybatis.basic.testJavaAnnotation.mapper.BlogMapper">
 
     <!-- 返回的类型必须能够通过完整的package路径找到 -->
     <select id="selectBlog" resultType="Blog">

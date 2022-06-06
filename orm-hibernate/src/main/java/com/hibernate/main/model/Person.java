@@ -11,6 +11,9 @@ import javax.persistence.*;
 public class Person {
 
     // TODO. 使用自定义的ID主键的生成规则，来自hibernate的扩展
+    // UID1: Typically references your module name
+    // UID2: Typically references your table
+    // COUNT (optional): Reserves a number of IDs as specified by the COUNT attribute, by default set to 1.
     @GeneratedValue(generator = "personIdGenerator")
     @GenericGenerator(
             name = "personIdGenerator",

@@ -2,9 +2,14 @@
 http://www.postgres.cn/docs/13/index.html
 https://www.enterprisedb.com/postgresql-tutorial-resources-training
 
+postgresql支持的全部数据类型
+https://www.postgresql.org/docs/current/datatype.html
+
 ---------------------------------------------------------------------------
 port: 5432
 PgAdmin Password: admin
+管理员用户: postgres, admin
+普通用户 : test, test
 
 命令行连接Psql
 C:\PostgreSQL\bin>psql.exe -U postgres
@@ -13,6 +18,3 @@ C:\PostgreSQL\bin>psql.exe -U postgres
 C:\PostgreSQL\bin>pg_ctl.exe start -D C:\Program Files\PostgreSQL\14\data
 C:\PostgreSQL\bin>pg_ctl.exe restart -D C:\Program Files\PostgreSQL\14\data
 "services.msc" 在service服务上自动设置启动
-
-管理员用户: postgres, admin
-普通用户 : test, test

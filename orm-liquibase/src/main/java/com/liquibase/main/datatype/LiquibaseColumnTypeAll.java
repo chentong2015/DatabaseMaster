@@ -1,7 +1,7 @@
-package com.liquibase.main;
+package com.liquibase.main.datatype;
 
 public class LiquibaseColumnTypeAll {
-    
+
     // final LiquibaseColumnType BOOLEAN;
     // final LiquibaseColumnType TINYINT;
     // final LiquibaseColumnType SMALLINT;

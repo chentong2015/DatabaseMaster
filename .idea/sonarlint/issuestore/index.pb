@@ -37,10 +37,6 @@ c
 3orm-mybatis/src/main/java/spring/MyBatisConfig.java,c\5\c564e9413f3f0c593be86563429c177ad15c7e20
 n
 >orm-mybatis/src/main/java/com/mybatis/basic/MyBatisBasics.java,8\d\8d27af13c9dff176a2aaedb55267e60f93a03f1a
-{
-Korm-liquibase/src/main/java/com/liquibase/main/datatype/MyDateTimeType.java,e\7\e74b71e1160b8994d324f29d4e23233a7b1d08c9
-E
-orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
 a
 1orm-hibernate/src/main/java/Hibernate基础设置,e\b\ebe047748385629f8ac99cf2ce092f063c965fa3
 x
@@ -65,9 +61,5 @@ X
 Tjpa-orm-database-design/src/main/java/com/orm/middleware/jdbc/PooledConnections.java,c\7\c725afd9b935e3f6085c781822f2ad9d4d0ddee9
 |
 Ljpa-orm-database-design/src/main/java/com/orm/middleware/jdbc/PoolState.java,4\d\4dfa6949a673cb723d7e329e71c4949570843680
-E
-orm-hibernate/pom.xml,c\c\cc998f0bbeefc752efa5325fbbdf3315c713152b
-n
->orm-hibernate/src/main/java/com/hibernate/main/model/Book.java,b\a\ba7df313bd287eb0f80784c650a00ffe9bb89234
 q
 Aorm-hibernate/src/main/java/com/hibernate/main/DemoSqlServer.java,e\2\e2462ecc4612444500aa6a20f432d836219a2a2b
