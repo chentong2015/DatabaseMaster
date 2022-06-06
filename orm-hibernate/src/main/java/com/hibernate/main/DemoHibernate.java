@@ -24,18 +24,17 @@ public class DemoHibernate {
     private static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
     public static void main(String[] args) {
-        testPersistObject();
-        testUpdateQuery();
-        testDeleteQuery();
-        testGetQuery();
-        sessionFactory.close();
+        // testPersistObject();
+        // testUpdateQuery();
+        // testDeleteQuery();
+        // testGetQuery();
+        // sessionFactory.close();
         // The registry would be destroyed by the SessionFactory,
         // Destroy it manually when we have trouble building the SessionFactory
         StandardServiceRegistryBuilder.destroy(registry);
     }
 
-    // 手动开启事务，执行数据库的插入操作
-    // 一个Session结束之后，需要关闭执行的操作
+    // 手动开启事务，执行数据库的插入操作: 一个Session结束之后，需要关闭执行的操作
     private static void testPersistObject() {
         try (Session session = sessionFactory.openSession()) {
             Transaction transaction = session.beginTransaction();

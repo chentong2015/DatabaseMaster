@@ -8,16 +8,33 @@
 
     <!-- 必须先设置property属性的值，然后定义table的mappings -->
     <session-factory>
-        <!-- Define JDBC connection information -->
+        <!-- PSQL connection information
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
-        <property name="connection.password">admin</property>
+        <property name="connection.password">admin</property>  -->
+
+        <!-- MySQL Connection Properties
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/struts_crud</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property> -->
+
+        <!-- TODO. 注意这里连接的Server的名称 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.connection.url">
+            jdbc:sqlserver://localhost:1433;databaseName=my_database;integratedSecurity=true;
+        </property>
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.username">test</property>
+        <property name="hibernate.connection.password">TCHong16</property>
 
         <!-- 定义连接池中的连接数目的大小
              Configure the number of connections in Hibernate’s built-in connection pool. -->
         <property name="connection.pool_size">100</property>
+
         <!-- 可以自动将hbm table中的表定义映射到DB中
              Enables automatic generation of database schemas directly into the database.
         <property name="hbm2ddl.auto">update</property> -->

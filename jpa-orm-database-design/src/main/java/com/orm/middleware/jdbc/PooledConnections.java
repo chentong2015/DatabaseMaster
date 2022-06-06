@@ -76,6 +76,7 @@ public class PooledConnections {
     public Connection poll() throws Exception {
         Connection conn;
         do {
+            // poll() 从队列中出队
             conn = availableConnections.poll();
             if (conn == null) {
                 synchronized (allConnections) {

@@ -28,16 +28,16 @@
             <version>2.2</version>
         </dependency>
 
-        <!-- 提供特定的数据库Driver支持
-        <dependency>
-            <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>mssql-jdbc</artifactId>
-            <version>8.4.1.jre8</version>
-        </dependency>  -->
+        <!-- 提供特定的数据库Driver支持 -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>42.3.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>11.1.1.jre18-preview</version>
         </dependency>
     </dependencies>
 </project>
