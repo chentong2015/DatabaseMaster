@@ -1,4 +1,4 @@
-package com.hibernate.main;
+package com.hibernate.main.sesssion;
 
 import jakarta.persistence.FlushModeType;
 import org.hibernate.Session;
@@ -19,7 +19,7 @@ public class DemoHibernateSession {
         Session session = sessionFactory.openSession();
         // TODO. Flush从内存中"冲刷"到磁盘持久层存储
         session.setFlushMode(FlushModeType.COMMIT); // 每次调用commit时则会执行flush过程
-        
+
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
