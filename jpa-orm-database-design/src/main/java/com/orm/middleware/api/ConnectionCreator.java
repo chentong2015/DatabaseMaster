@@ -1,10 +1,10 @@
-package com.orm.middleware.jdbc;
+package com.orm.middleware.api;
 
 import java.sql.Connection;
 
-interface ConnectionCreator {
+public interface ConnectionCreator {
 
     String getUrl();
-	
+
     Connection createConnection();
 }

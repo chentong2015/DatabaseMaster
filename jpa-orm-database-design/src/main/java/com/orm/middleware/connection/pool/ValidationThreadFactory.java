@@ -1,4 +1,4 @@
-package com.orm.middleware.jdbc;
+package com.orm.middleware.connection.pool;
 
 import java.util.concurrent.ThreadFactory;
 

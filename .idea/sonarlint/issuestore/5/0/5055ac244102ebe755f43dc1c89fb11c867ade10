@@ -1,0 +1,17 @@
+
+G
+java:S1135"2Complete the task associated to this TODO comment.(éĞÑ
+]	java:S125"<This block of commented-out lines of code should be removed.(£ö¸úÿÿÿÿ8…©¦È“0
+O
+java:S11351"2Complete the task associated to this TODO comment.(ø¾ÏÑ8ÓÄ°È“0
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(«¬—È8ÔÄ°È“0
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(ìˆ¬İ8ÕÄ°È“0
+U	java:S106O"9Replace this use of System.out or System.err by a logger.(ìˆ¬İ8ÖÄ°È“0
+S
+java:S1144&"6Remove this unused private "testPersistObject" method.(øæÇÿ8ÖÄ°È“0
+S
+java:S11444"1Remove this unused private "testGetQuery" method.(ÔÃ„Åüÿÿÿÿ8×Ä°È“0
+V
+java:S1144>"4Remove this unused private "testUpdateQuery" method.(òÍÌ†øÿÿÿÿ8×Ä°È“0
+V
+java:S1144J"4Remove this unused private "testDeleteQuery" method.(ŞµšÜúÿÿÿÿ8×Ä°È“0

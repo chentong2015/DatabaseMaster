@@ -1,4 +1,7 @@
-package com.orm.middleware.jdbc;
+package com.orm.middleware.connection.pool;
+
+import com.orm.middleware.api.ConnectionCreator;
+import com.orm.middleware.api.ConnectionValidator;
 
 import java.sql.Connection;
 import java.sql.SQLException;
