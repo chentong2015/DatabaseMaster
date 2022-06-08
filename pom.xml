@@ -9,6 +9,11 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <maven.compiler.source>15</maven.compiler.source>
+        <maven.compiler.target>15</maven.compiler.target>
+    </properties>
+
     <modules>
         <module>orm-hibernate</module>
         <module>orm-mybatis</module>

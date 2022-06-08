@@ -1,5 +1,12 @@
+com\hibernate\main\model\EntityDemo.class
+master\hibernate\testing\first\MyPojo.class
+master\hibernate\testing\second\MyPojo.class
 com\hibernate\main\DemoHibernate.class
-com\hibernate\main\model\Person.class
 com\hibernate\main\id\generator\MyStoredTableIdGenerator.class
+com\hibernate\main\DemoSqlServer.class
+com\hibernate\main\sesssion\DelegateSession.class
+master\hibernate\testing\MasterHibernate.class
+com\hibernate\main\sesssion\DemoHibernateSession.class
+com\hibernate\main\model\Person.class
 com\hibernate\main\id\generator\DemoIdGenerator.class
 com\hibernate\main\model\Book.class

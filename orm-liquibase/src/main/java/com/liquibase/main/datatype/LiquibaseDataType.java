@@ -1,7 +1,6 @@
 package com.liquibase.main.datatype;
 
 import liquibase.change.core.LoadDataChange;
-import liquibase.datatype.LiquibaseDataType;
 
 // public static enum LOAD_DATA_TYPE {
 //     BOOLEAN,
@@ -18,7 +17,7 @@ import liquibase.datatype.LiquibaseDataType;
 //     UNKNOWN;
 //     private LOAD_DATA_TYPE() {}
 // }
-public class MyLiquibaseDataType extends LiquibaseDataType {
+public class LiquibaseDataType extends liquibase.datatype.LiquibaseDataType {
 
     @Override
     public LoadDataChange.LOAD_DATA_TYPE getLoadTypeName() {

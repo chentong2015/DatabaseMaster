@@ -12,23 +12,23 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 // ORM Hibernate: JPA Implementation 两层架构
-//   1. Native Hibernate APIs(功能较多): Session, SessionFactory, Transactions,,,
-//   2. Hibernate JPA   API  (功能较少): EntityManagerFactory, EntityManager,,,
+// 1. Native Hibernate APIs(功能较多): Session, SessionFactory, Transactions,,,
+// 2. Hibernate JPA   API  (功能较少): EntityManagerFactory, EntityManager,,,
 
 // TODO: https://docs.jboss.org/hibernate/orm/5.4/quickstart/html_single/
 // 1. 将关系型数据库中的行数据映射成一个对象("数据表行" <--> "实体类")
 // 2. 通过@Query("query")自定义SQL语句嵌入到源代码，更新则需要重新编译，不适合于优化SQL的场景
 public class DemoHibernate {
 
-    private static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-    private static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+    static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+    static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
     public static void main(String[] args) {
-        // testPersistObject();
+        testPersistObject();
         // testUpdateQuery();
         // testDeleteQuery();
-        // testGetQuery();
-        // sessionFactory.close();
+        testGetQuery();
+        sessionFactory.close();
         // The registry would be destroyed by the SessionFactory,
         // Destroy it manually when we have trouble building the SessionFactory
         StandardServiceRegistryBuilder.destroy(registry);
