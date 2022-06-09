@@ -1,4 +1,4 @@
-package master.hibernate6.testing;
+package master.hibernate6.testing.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 

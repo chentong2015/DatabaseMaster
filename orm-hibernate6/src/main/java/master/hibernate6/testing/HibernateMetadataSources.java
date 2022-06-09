@@ -16,22 +16,7 @@ import org.hibernate.mapping.PersistentClass;
 import java.util.Iterator;
 import java.util.Properties;
 
-// TODO. 关于实体名称一致造成的mapping问题
-// Retrieve PersistentClass objects without failing mappings with same entity name
-// 1. [first.MyPojo] and [second.MyPojo] entities share the same JPA entity name: [MyPojo]
-//    在使用默认的entity-name名称的情况下，同名的类型使用相同的JpaEntityName
-// 2. If specified in the HBM entity-name attribute
-//    The JPA entity name is set to be the same as the Hibernate entity name
-//       if (StringHelper.isNotEmpty(jaxbEntityMapping.getEntityName())) {
-//          如果设置了EntityName名称，则两者设置成一致的
-//			entityName = jaxbEntityMapping.getEntityName();
-//			jpaEntityName = jaxbEntityMapping.getEntityName();
-//		 } else {
-//          这里在mapping上设置的className是全路径的
-//			entityName = className;
-//			jpaEntityName = StringHelper.unqualify( className );
-//		 }
-public class MasterHibernate {
+public class HibernateMetadataSources {
 
     // TODO. 使用MetadataBuilder来构建SessionFactory，在构建的过程中可以配置自定义 
     public static void main(String[] args) {
@@ -39,6 +24,8 @@ public class MasterHibernate {
         MetadataSources metadataSources = new MetadataSources();
         metadataSources.addAnnotatedClass(master.hibernate6.testing.package1.MyPojo.class);
         metadataSources.addAnnotatedClass(master.hibernate6.testing.package2.MyPojo.class);
+        metadataSources.addPackage("master.hibernate6.testing");
+        metadataSources.addResource("demo.hbm.xml");
 
         // 2. 这里配置的Properties信息必须和指定的数据库对应
         Properties properties = new Properties();

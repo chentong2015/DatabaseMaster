@@ -1,4 +1,4 @@
-package master.hibernate6.testing.operations;
+package master.hibernate6.testing;
 
 import com.hibernate6.main.entity.Book;
 
@@ -8,7 +8,7 @@ import javax.persistence.Persistence;
 import java.util.List;
 
 // EntityManager提供的公共API操作
-public class HibernateOperations {
+public class EntityManagerOperations {
 
     private static final EntityManagerFactory emf;
 
@@ -37,7 +37,7 @@ public class HibernateOperations {
      * hence should handle transactions by ourselves.
      */
     public void saveBook() {
-        EntityManager em = HibernateOperations.getEntityManager();
+        EntityManager em = EntityManagerOperations.getEntityManager();
         em.getTransaction().begin();
         Book book = new Book();
         book.setName("java");
@@ -52,7 +52,7 @@ public class HibernateOperations {
      */
     // TODO. 参数的占位符需要表明数字序号 !!
     public Book queryForBookById() {
-        EntityManager em = HibernateOperations.getEntityManager();
+        EntityManager em = EntityManagerOperations.getEntityManager();
         return (Book) em.createQuery("SELECT book from Book book where book.id = ?1")
                 .setParameter(1, 1L)
                 .getSingleResult();
@@ -63,7 +63,7 @@ public class HibernateOperations {
      * when the result is a list.
      */
     public List<Book> queryForBooks() {
-        EntityManager em = HibernateOperations.getEntityManager();
+        EntityManager em = EntityManagerOperations.getEntityManager();
         return em.createQuery("SELECT book from Book book where book.name = ?1")
                 .setParameter(1, "java")
                 .getResultList();
@@ -74,7 +74,7 @@ public class HibernateOperations {
      */
     // TODO. 根据指定的class类型就能获取到对应的table表中的数据
     public Book getBook(Long bookId) {
-        EntityManager em = HibernateOperations.getEntityManager();
+        EntityManager em = EntityManagerOperations.getEntityManager();
         return em.find(Book.class, bookId);
     }
 
@@ -83,7 +83,7 @@ public class HibernateOperations {
      */
     // 从persistence context持久层上下文中移除和merge更新
     public void mergeBook() {
-        EntityManager em = HibernateOperations.getEntityManager();
+        EntityManager em = EntityManagerOperations.getEntityManager();
         Book book = getBook(1L);
         em.detach(book);
         book.setTitle("new titel");
@@ -96,7 +96,7 @@ public class HibernateOperations {
      * Method to illustrate the usage of remove() function.
      */
     public void removeBook() {
-        EntityManager em = HibernateOperations.getEntityManager();
+        EntityManager em = EntityManagerOperations.getEntityManager();
         em.getTransaction().begin();
         Book book = getBook(1L);
         em.remove(book);
