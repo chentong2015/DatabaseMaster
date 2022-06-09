@@ -7,13 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="orm-spring-jdbc" />
+        <module name="relational-db-sql-server" />
         <module name="relational-db-mysql" />
         <module name="relational-db-h2-database" />
         <module name="relational-db-psql" />
         <module name="distributed-db" />
         <module name="document-db-mongodb" />
+        <module name="orm-hibernate5" />
+        <module name="orm-hibernate6" />
         <module name="orm-mybatis" />
-        <module name="orm-hibernate" />
         <module name="orm-liquibase" />
         <module name="jpa-orm-database-design" />
       </profile>

@@ -1,3 +1,5 @@
+JPA是一种ORM层的规范
+
 如何设计一个ORM层的中间件 ? (参考Hibernate, Mybatis)
 1. public api   提供给用户使用的API, 注明使用文档
 2. enum types   提供操作的枚举类型，定义使用范围

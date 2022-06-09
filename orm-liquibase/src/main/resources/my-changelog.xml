@@ -4,7 +4,8 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
 
     <changeSet author="tchen (generated)" id="1654524418204-1">
-        <createSequence cacheSize="1" cycle="false" dataType="bigint" incrementBy="50" maxValue="9223372036854775807"
+        <createSequence cacheSize="1" cycle="false" dataType="bigint"
+                        incrementBy="50" maxValue="9223372036854775807"
                         minValue="1" sequenceName="t_book_seq" startValue="1"/>
     </changeSet>
 
@@ -14,7 +15,6 @@
     <!-- 该文件包含了数据库表的描述信息，可以执行数据库几乎所有相关的操作
          contains information such as table, views, columns, constraints -->
     <changeSet author="tchen (generated)" id="1654524418204-2">
-
         <!-- TODO. 这里的schemaName可以通过代码来设置，反之则使用database的默认schemaName -->
         <createTable tableName="t_book" schemaName="public">
             <column name="id" type="BIGINT">
