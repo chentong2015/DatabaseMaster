@@ -103,5 +103,3 @@ Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 E
 orm-hibernate/pom.xml,c\c\cc998f0bbeefc752efa5325fbbdf3315c713152b
-n
->orm-hibernate/src/main/java/com/hibernate/main/model/Book.java,b\a\ba7df313bd287eb0f80784c650a00ffe9bb89234

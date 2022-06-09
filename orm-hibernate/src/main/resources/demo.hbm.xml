@@ -4,6 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
+    <!-- TODO. FQCN: fully-qualified class names -->
     <class name="com.hibernate.main.model.EntityDemo" entity-name="my-entity-table">
         <!-- TODO. 指定的类型必须提供指定字段的getter & setter方法 -->
         <id name="id" column="id">

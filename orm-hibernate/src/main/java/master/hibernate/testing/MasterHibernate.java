@@ -25,6 +25,7 @@ import java.util.Properties;
 //			entityName = jaxbEntityMapping.getEntityName();
 //			jpaEntityName = jaxbEntityMapping.getEntityName();
 //		 } else {
+//          这里在mapping上设置的className是全路径的
 //			entityName = className;
 //			jpaEntityName = StringHelper.unqualify( className );
 //		 }
