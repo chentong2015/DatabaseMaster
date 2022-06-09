@@ -14,6 +14,20 @@ import org.hibernate.mapping.PersistentClass;
 import java.util.Iterator;
 import java.util.Properties;
 
+// TODO. 关于实体名称一致造成的mapping问题
+// Retrieve PersistentClass objects without failing mappings with same entity name
+// 1. [first.MyPojo] and [second.MyPojo] entities share the same JPA entity name: [MyPojo]
+//    在使用默认的entity-name名称的情况下，同名的类型使用相同的JpaEntityName
+// 2. If specified in the HBM entity-name attribute
+//    The JPA entity name is set to be the same as the Hibernate entity name
+//       如果设置了EntityName名称，则两者设置成一致的
+//       if (StringHelper.isNotEmpty(jaxbEntityMapping.getEntityName())) {
+//			entityName = jaxbEntityMapping.getEntityName();
+//			jpaEntityName = jaxbEntityMapping.getEntityName();
+//		 } else {
+//			entityName = className;
+//			jpaEntityName = StringHelper.unqualify( className );
+//		 }
 public class MasterHibernate {
 
     public static void main(String[] args) {
@@ -36,7 +50,6 @@ public class MasterHibernate {
         Metadata metadata = metadataBuilder.build();
         Iterator<PersistentClass> classMappings = metadata.getEntityBindings().iterator();
         while (classMappings.hasNext()) {
-            // 注意两者名称的不同
             System.out.printf(classMappings.next().getEntityName());
             System.out.printf(classMappings.next().getJpaEntityName());
         }
