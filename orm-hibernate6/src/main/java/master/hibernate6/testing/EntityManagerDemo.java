@@ -17,7 +17,6 @@ public class EntityManagerDemo {
                 .createEntityManagerFactory("master.hibernate.testing")
                 .createEntityManager();
         entityManager.getTransaction().begin();
-
         CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
 
         // TODO. 创建一个查询的标准，指定要查询的数据类型和Selection返回的字段

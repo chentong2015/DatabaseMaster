@@ -1,4 +1,4 @@
-package base.database.split;
+package master.database.design.split;
 
 // MySQL单表存储约300-500万的数据量
 // 在表的数据量上升到千万级别之后，需要分库分表进行优化处理

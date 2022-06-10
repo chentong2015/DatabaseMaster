@@ -14,7 +14,7 @@ package com.mysql.main.lock;
 //      lock_gap         间隙锁，锁定一个区间范围(行旁边的间隙)，但不包括记录本身。目的是为了防止同一个事务的两次当前读，造成幻读
 //      lock_ordinary    锁定记录本身，并且锁定上下两个间隙区间范围，目的是解决幻读问题
 public class ReadWriteLock {
-
+ 
     // TODO: 锁必须在事务中，事务结束时，锁自动释放掉
     // select: 不加锁，没有锁的冲突，可以直接读
     // delete: 删除数据时，先对记录加"写锁"，然后再做删除操作(版本链上添加flag)

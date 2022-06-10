@@ -1,4 +1,4 @@
-package base.database.split.jdbc_proxy;
+package master.database.design.split.jdbc.proxy;
 
 // Apache ShardingSphere 是一款开源分布式数据库生态项目
 // https://shardingsphere.apache.org/index_zh.html
