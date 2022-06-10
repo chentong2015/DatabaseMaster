@@ -23,6 +23,10 @@ public class EntityDemo {
     @Column(name = "name")
     private String name;
 
+    // TODO: 使用Version来实现乐观锁
+    @Version
+    private Integer version;
+
     // TODO. 必须提供Getter&Setter方法，满足在HBM mapping文件中的属性配置
     public Object getId() {
         return id;

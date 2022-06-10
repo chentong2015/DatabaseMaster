@@ -1,5 +1,5 @@
 
- Hibernate: JPA Implementation 一种实现
+ Hibernate: JPA Implementation 一种JPA实现
  将关系型数据库中的行数据映射成一个对象("数据表行" <--> "实体类Entity")
  1. Native Hibernate APIs(功能较多): Session, SessionFactory, Transactions,,,
  2. Hibernate JPA   API  (功能较少): EntityManagerFactory, EntityManager,,,

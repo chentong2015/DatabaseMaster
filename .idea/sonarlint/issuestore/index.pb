@@ -47,8 +47,6 @@ r
 Borm-liquibase/src/main/java/com/liquibase/main/Liquibase教程.txt,2\a\2a60026dafe5dbbdc2356053da93db19d57fd936
 �
 Yorm-hibernate/src/main/java/com/hibernate/main/id/generator/MyStoredTableIdGenerator.java,7\6\761460ab86e1292d982f8e98cdfb3b904ddc4567
-E
-orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
 k
 ;relational-db-psql/src/main/java/com/psql/main/官方文档,3\1\31723c10a19ff1e946324efe5590494da44035ea
 |
@@ -81,5 +79,3 @@ p
 @orm-hibernate/src/main/java/com/hibernate/main/model/Person.java,4\0\407093e93868269c54411a1ce4c9211bdcee3767
 �
 Uorm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataTypeFactory.java,4\6\4639b98790907f234795c3f0e1d6b48ded601574
-u
-Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
