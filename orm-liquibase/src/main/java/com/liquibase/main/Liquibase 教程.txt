@@ -1,9 +1,11 @@
 
 Liquibase 开源数据库架构变更管理解决方案
-   an open-source database schema change management solution
-   which enables you to manage revisions of your database changes easily.
+   An open-source database schema change management solution.
+   Enables to manage revisions of your database changes easily.
 
+TODO. 支持Commands指令操作和Java代码执行操作
 配置liquibase.properties属性文件, 指定在source和target db之间changelog
+能够实现数据库的迁移和适配schema的变更
 
 Commands
   calculate-checksum            Calculates and prints a checksum for the changeset
@@ -45,7 +47,7 @@ Commands
                                 >liquibase --changeLogFile=mydb_changelog.xml generateChangeLog
 
   history                       List all deployed changesets and their deployment ID
-  init                          Init commands
+  init                          \Init commands
   list-locks                    List the hostname, IP address, and timestamp of the Liquibase lock record
                                 [deprecated: listLocks]
   mark-next-changeset-ran       Marks the next change you apply as executed in your database

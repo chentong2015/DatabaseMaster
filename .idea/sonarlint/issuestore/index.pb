@@ -35,18 +35,10 @@ c
 3orm-mybatis/src/main/java/spring/MyBatisConfig.java,c\5\c564e9413f3f0c593be86563429c177ad15c7e20
 n
 >orm-mybatis/src/main/java/com/mybatis/basic/MyBatisBasics.java,8\d\8d27af13c9dff176a2aaedb55267e60f93a03f1a
-r
-Brelational-db-mysql/src/main/java/com/mysql/main/MySql基础配置,c\f\cf0b4689e11f9307357cc49c1dc2077bffc6484e
 X
 (storage-engine/存储引擎 系统设计,b\7\b726d3a5fc948787936d0354d0f6f0fb30d17699
 w
 Gorm-liquibase/src/main/java/com/liquibase/main/Liquibase Global Options,4\1\416285bdec57fd802557555137e81b71a62c973e
-s
-Crelational-db-mysql/src/main/java/com/mysql/main/MySqlFunctions.sql,9\6\9605821c983745115d40690b3a00db2be97790a5
-r
-Borm-liquibase/src/main/java/com/liquibase/main/Liquibase教程.txt,2\a\2a60026dafe5dbbdc2356053da93db19d57fd936
-�
-Yorm-hibernate/src/main/java/com/hibernate/main/id/generator/MyStoredTableIdGenerator.java,7\6\761460ab86e1292d982f8e98cdfb3b904ddc4567
 k
 ;relational-db-psql/src/main/java/com/psql/main/官方文档,3\1\31723c10a19ff1e946324efe5590494da44035ea
 |
@@ -59,10 +51,6 @@ _orm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/datasource/Prope
 borm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/datasource/MyDataSourceFactory.java,0\7\07b18576e0f249538fdf4659d32451b3e8bee446
 �
 Uorm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/mapper/BlogMapper.java,f\7\f71b119a72055e4aadd9acf0b3f3dd13e328859c
-|
-Lorm-hibernate/src/main/java/com/hibernate/main/sesssion/DelegateSession.java,1\3\135506b5c992367bada66f73e8ff7ec7d9405ae7
-�
-Qorm-hibernate/src/main/java/com/hibernate/main/sesssion/DemoHibernateSession.java,8\e\8e2dce71c77c471eef4e53e04ba403ffe7a8338a
 �
 Sjpa-orm-database-design/src/main/java/com/orm/middleware/api/ConnectionCreator.java,4\e\4e02b4318530e241cc155bb017dce2cf55a80dc2
 �
@@ -75,7 +63,5 @@ z
 Jorm-liquibase/src/main/java/com/liquibase/main/datatype/MyVarcharType.java,b\d\bd8bc3e04d314d87f93c71120bce2709aa0d0577
 ~
 Norm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataType.java,f\7\f72df2a48979850f92e004f2e270357d740a0eb1
-p
-@orm-hibernate/src/main/java/com/hibernate/main/model/Person.java,4\0\407093e93868269c54411a1ce4c9211bdcee3767
 �
 Uorm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataTypeFactory.java,4\6\4639b98790907f234795c3f0e1d6b48ded601574
