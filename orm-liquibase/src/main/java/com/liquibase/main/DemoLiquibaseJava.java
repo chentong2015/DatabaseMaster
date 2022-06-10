@@ -17,24 +17,23 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
-// TODO. 直接在Java Application层面执行指定的DB changelog脚本文件
-//       取消硬编码在Java code中的SQL语句
+// TODO. 直接在Java Application层面执行指定的DB changelog脚本文件, 取消硬编码
 public class DemoLiquibaseJava {
 
+    // 这里的数据库连接信息可以使用ConfigHeler从属性文件中指定获取
     private static String connectionString = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
 
     // TODO. 使用纯JDBC连接到指定的数据库，创建Liquibase Database实例
     // 不提供需要加载的changelog变更文件
     private Database createLiquibaseDatabase() throws SQLException, LiquibaseException {
-        Connection connection;
         try {
-            connection = DriverManager.getConnection(connectionString);
+            Connection connection = DriverManager.getConnection(connectionString);
+            JdbcConnection jdbcConnection = new JdbcConnection(connection);
+            Liquibase liquibase = new Liquibase(null, null, jdbcConnection);
+            return liquibase.getDatabase();
         } catch (SQLException e) {
             throw new SQLException("Error in connection properties." + e, e);
         }
-        JdbcConnection jdbcConnection = new JdbcConnection(connection);
-        Liquibase liquibase = new Liquibase(null, null, jdbcConnection);
-        return liquibase.getDatabase();
     }
 
     // 资源获取的存储器，根据ClassLoader来加载指定文件的资源

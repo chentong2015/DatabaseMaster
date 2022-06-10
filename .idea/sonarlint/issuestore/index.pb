@@ -65,3 +65,7 @@ Jorm-liquibase/src/main/java/com/liquibase/main/datatype/MyVarcharType.java,b\d
 Norm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataType.java,f\7\f72df2a48979850f92e004f2e270357d740a0eb1
 �
 Uorm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataTypeFactory.java,4\6\4639b98790907f234795c3f0e1d6b48ded601574
+E
+orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
+|
+Ljpa-orm-database-design/src/main/java/com/orm/middleware/ORM层 系统设计,1\f\1feeea77ef1f87f57be8c524648616f4e6adc915
