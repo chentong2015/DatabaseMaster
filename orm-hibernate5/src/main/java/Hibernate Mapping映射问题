@@ -1,0 +1,19 @@
+关于实体名称一致造成的mapping问题
+https://hibernate.atlassian.net/browse/HHH-13149?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aall-tabpanel
+
+Retrieve PersistentClass objects without failing mappings with same entity name
+1. [first.MyPojo] and [second.MyPojo] entities share the same JPA entity name: [MyPojo]
+    在使用默认的entity-name名称的情况下，同名的类型使用相同的JpaEntityName
+
+2. If specified in the HBM entity-name attribute
+   The JPA entity name is set to be the same as the Hibernate entity name
+
+    if (StringHelper.isNotEmpty(jaxbEntityMapping.getEntityName())) {
+       // 如果设置了EntityName名称，则两者设置成一致的
+ 	   entityName = jaxbEntityMapping.getEntityName();
+ 	   jpaEntityName = jaxbEntityMapping.getEntityName();
+ 	} else {
+       // 这里在mapping上设置的className是全路径的
+ 	   entityName = className;
+ 	   jpaEntityName = StringHelper.unqualify( className );
+ 	}

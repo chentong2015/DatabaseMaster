@@ -5,11 +5,12 @@
 
     <changeSet id="3" author="tchen">
 
+        <!-- TODO. 这里的类型完全是数据库中table定义的类型 -->
         <createTable tableName="t_sample" schemaName="public">
             <column name="id" type="bigint">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
-            <column name="value" type="real"/> <!-- 对应float的类型 -->
+            <column name="value" type="real"/>
             <column name="label" type="character varying(32)"/>
         </createTable>
     </changeSet>

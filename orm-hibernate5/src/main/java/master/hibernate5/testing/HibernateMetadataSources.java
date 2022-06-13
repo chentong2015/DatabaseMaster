@@ -1,4 +1,4 @@
-package master.hibernate6.testing;
+package master.hibernate5.testing;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -22,8 +22,8 @@ public class HibernateMetadataSources {
     public static void main(String[] args) {
         // 1. 直接在元数据资源中添加指定的持久层class: 使用全路径添加同名的类型
         MetadataSources metadataSources = new MetadataSources();
-        metadataSources.addAnnotatedClass(master.hibernate6.testing.package1.MyPojo.class);
-        metadataSources.addAnnotatedClass(master.hibernate6.testing.package2.MyPojo.class);
+        metadataSources.addAnnotatedClass(master.hibernate5.testing.package1.MyEntity.class);
+        metadataSources.addAnnotatedClass(master.hibernate5.testing.package2.MyEntity.class);
         metadataSources.addPackage("master.hibernate6.testing");
         metadataSources.addResource("demo.hbm.xml");
 

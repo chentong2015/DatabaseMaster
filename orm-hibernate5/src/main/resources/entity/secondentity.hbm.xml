@@ -4,13 +4,10 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="com.hibernate5.main.entity.Book" schema="dbo" table="t_book">
+    <class name="master.hibernate5.testing.package2.MyEntity" schema="dbo" table="t_second_entity">
         <id name="id" column="id">
-            <generator class="increment"/> <!-- 该列的ID会随机自动地增加 -->
+            <generator class="increment"/>
         </id>
         <property name="name" column="name" not-null="true" unique="true"/>
-        <property name="title">
-            <column name="title" sql-type="nvarchar(50)" length="50"/>
-        </property>
     </class>
 </hibernate-mapping>

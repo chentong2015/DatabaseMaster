@@ -17,6 +17,7 @@
     <changeSet author="tchen (generated)" id="1654524418204-2">
         <!-- TODO. 这里的schemaName可以通过代码来设置，反之则使用database的默认schemaName -->
         <createTable tableName="t_book" schemaName="public">
+            <!-- TODO. 注明的type为定义在数据库中的column type(映射类型) -->
             <column name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true" primaryKeyName="t_book_pkey"/>
             </column>

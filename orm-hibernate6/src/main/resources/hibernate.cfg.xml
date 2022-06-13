@@ -44,6 +44,7 @@
 
         <!-- 一个数据表的描述 -->
         <mapping resource="books.hbm.xml"/>
-        <mapping resource="demo.hbm.xml"/>
+        <mapping resource="entity/demo.hbm.xml"/>
+        <mapping resource="entity/master.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
