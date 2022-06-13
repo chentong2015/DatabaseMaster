@@ -1,4 +1,4 @@
-package master.hibernate5.testing.query;
+package com.hibernate5.testing.query;
 
 import org.hibernate.Session;
 import org.hibernate.query.NativeQuery;
@@ -12,7 +12,7 @@ public class SqlRawQuery {
         this.sqlQuery = sqlQuery;
     }
 
-    protected Query getQuery(Session session) {
+    public Query getQuery(Session session) {
         return session.createSQLQuery(sqlQuery);
     }
 

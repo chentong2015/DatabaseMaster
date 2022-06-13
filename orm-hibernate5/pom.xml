@@ -17,6 +17,7 @@
     </properties>
 
     <dependencies>
+        <!-- 测试在Hibernate的不同版本下，mapping映射的问题是一致的 -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>

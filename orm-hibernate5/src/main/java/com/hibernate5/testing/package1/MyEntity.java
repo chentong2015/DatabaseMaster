@@ -1,8 +1,8 @@
-package master.hibernate5.testing.package2;
+package com.hibernate5.testing.package1;
 
 public class MyEntity {
 
-    public String id;
+    private String id;
     private String name;
     private double code;
 
@@ -28,5 +28,14 @@ public class MyEntity {
 
     public void setCode(double code) {
         this.code = code;
+    }
+
+    @Override
+    public String toString() {
+        return "MyEntity{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", code=" + code +
+                '}';
     }
 }

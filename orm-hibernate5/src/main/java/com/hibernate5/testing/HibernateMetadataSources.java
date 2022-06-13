@@ -1,5 +1,6 @@
-package master.hibernate5.testing;
+package com.hibernate5.testing;
 
+import com.hibernate5.testing.package2.MyEntity;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -19,11 +20,11 @@ import java.util.Properties;
 public class HibernateMetadataSources {
 
     // TODO. 使用MetadataBuilder来构建SessionFactory，在构建的过程中可以配置自定义 
-    public static void main(String[] args) {
+    public void testMetadataBuilder() {
         // 1. 直接在元数据资源中添加指定的持久层class: 使用全路径添加同名的类型
         MetadataSources metadataSources = new MetadataSources();
-        metadataSources.addAnnotatedClass(master.hibernate5.testing.package1.MyEntity.class);
-        metadataSources.addAnnotatedClass(master.hibernate5.testing.package2.MyEntity.class);
+        metadataSources.addAnnotatedClass(com.hibernate5.testing.package1.MyEntity.class);
+        metadataSources.addAnnotatedClass(MyEntity.class);
         metadataSources.addPackage("master.hibernate6.testing");
         metadataSources.addResource("demo.hbm.xml");
 
