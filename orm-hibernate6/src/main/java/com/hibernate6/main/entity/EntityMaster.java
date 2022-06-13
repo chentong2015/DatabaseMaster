@@ -1,4 +1,4 @@
-package master.hibernate6.testing.entity;
+package com.hibernate6.main.entity;
 
 import java.util.Date;
 

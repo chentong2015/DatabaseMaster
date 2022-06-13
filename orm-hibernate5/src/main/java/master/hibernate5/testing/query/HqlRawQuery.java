@@ -1,4 +1,4 @@
-package com.hibernate5.main.query;
+package master.hibernate5.testing.query;
 
 import org.hibernate.Session;
 import org.hibernate.query.Query;

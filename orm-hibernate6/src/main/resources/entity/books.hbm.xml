@@ -9,12 +9,15 @@
          schema="dbo" for sql server -->
 <hibernate-mapping>
     <class name="com.hibernate6.main.entity.Book" schema="public" table="t_book">
-        <id name="id" column="id">
+        <!-- TODO. hibernate映射java type数据类型到sql-type数据库中的数据类型 -->
+        <id type="long" name="id">
+            <column name="id" sql-type="bigint"/> <!-- 指定列的信息和约束条件 -->
             <generator class="increment"/> <!-- 该列的ID会随机自动地增加 -->
         </id>
-        <property name="name" column="name" not-null="true" unique="true"/>
+        <property type="string" name="name">
+            <column sql-type="character varying(32)" name="name" not-null="true" unique="true"/>
+        </property>
         <property name="title">
-            <!-- TODO. 映射到数据库的列，名称+数据库中列支持的特定类型 -->
             <column name="title" sql-type="nvarchar(50)" length="50"/>
         </property>
     </class>

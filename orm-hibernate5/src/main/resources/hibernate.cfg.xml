@@ -12,6 +12,7 @@
         <property name="connection.password">admin</property>
 
         <property name="show_sql">true</property>
-        <mapping resource="books.hbm.xml"/>
+        <mapping resource="entity/firstentity.hbm.xml"/>
+        <mapping resource="entity/secondentity.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

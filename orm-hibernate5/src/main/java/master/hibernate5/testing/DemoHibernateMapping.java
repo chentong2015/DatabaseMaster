@@ -1,6 +1,6 @@
 package master.hibernate5.testing;
 
-import com.hibernate5.main.entity.Book;
+import master.hibernate5.testing.package1.MyEntity;
 import org.hibernate.Session;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
@@ -10,14 +10,12 @@ import java.util.List;
 public class DemoHibernateMapping {
 
     public static void main(String[] args) {
-        System.out.println("start...");
         Session session = new Configuration().configure().buildSessionFactory().openSession();
-        Query<Book> query = session.createQuery("from Book", Book.class);
-        List<Book> books = query.getResultList();
-        for (Book book : books) {
-            System.out.println(book.getId() + " - " + book.getName() + " - " + book.getTitle());
+        Query<MyEntity> query = session.createQuery("from MyEntity", MyEntity.class);
+        List<MyEntity> myEntities = query.getResultList();
+        for (MyEntity entity : myEntities) {
+            System.out.println(entity.getId() + " - " + entity.getName() + " - " + entity.getCode());
         }
-        System.out.println("end ");
         session.close();
     }
 

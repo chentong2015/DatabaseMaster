@@ -2,6 +2,8 @@
 
         <!-- Hibernate Mapping DTD.
 
+        TODO. hibernate mapping xml文件, 定义映射的规则和约束
+
         <!DOCTYPE hibernate-mapping PUBLIC
             "-//Hibernate/Hibernate Mapping DTD//EN"
             "http://hibernate.sourceforge.net/hibernate-mapping.dtd">

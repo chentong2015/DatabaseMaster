@@ -1,19 +1,27 @@
-关于实体名称一致造成的mapping问题
+TODO. Hibernate使用规则
+ 使用hibernate mapping xml完成对Java POJO对象的实体映射
+ 无需对Java POJO做任何的annotation注解修饰
+
+
+TODO. 不同的package下面类型的名称可能一致, 在没有设置entity-name的情况下，hibernate默认使用类名
+Retrieve PersistentClass objects without failing mappings with same entity name
 https://hibernate.atlassian.net/browse/HHH-13149?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aall-tabpanel
 
-Retrieve PersistentClass objects without failing mappings with same entity name
-1. [first.MyPojo] and [second.MyPojo] entities share the same JPA entity name: [MyPojo]
-    在使用默认的entity-name名称的情况下，同名的类型使用相同的JpaEntityName
+TODO. 报错的异常信息
+Exception in thread "main" org.hibernate.DuplicateMappingException:
+  The [master.hibernate5.testing.package1.MyEntity] and [master.hibernate5.testing.package2.MyEntity]
+  entities share the same JPA entity name: [MyEntity] which is not allowed!
 
-2. If specified in the HBM entity-name attribute
-   The JPA entity name is set to be the same as the Hibernate entity name
-
-    if (StringHelper.isNotEmpty(jaxbEntityMapping.getEntityName())) {
-       // 如果设置了EntityName名称，则两者设置成一致的
- 	   entityName = jaxbEntityMapping.getEntityName();
- 	   jpaEntityName = jaxbEntityMapping.getEntityName();
- 	} else {
-       // 这里在mapping上设置的className是全路径的
- 	   entityName = className;
- 	   jpaEntityName = StringHelper.unqualify( className );
- 	}
+AbstractEntitySourceImpl.java 源码中的逻辑
+  // If specified HBM entity-name attribute, the JPA entity name is set to be the same
+  if (StringHelper.isNotEmpty(jaxbEntityMapping.getEntityName())) {
+     // 如果设置了EntityName名称，则两者设置成一致的
+     entityName = jaxbEntityMapping.getEntityName();
+     jpaEntityName = jaxbEntityMapping.getEntityName();
+  } else {
+     // 这里在mapping上设置的className(<class name="" >)是全路径的，而jpaEntityName只是取的Class类名
+     // 因此可能存在jpaEntityName名名称的冲突
+     // 可以通过修改源码，将两个名称都设置成全路径来解决 !!
+     entityName = className;
+     jpaEntityName = StringHelper.unqualify(className);
+  }

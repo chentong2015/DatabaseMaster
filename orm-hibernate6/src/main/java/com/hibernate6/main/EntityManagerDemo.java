@@ -1,6 +1,6 @@
-package master.hibernate6.testing;
+package com.hibernate6.main;
 
-import master.hibernate6.testing.package1.MyPojo;
+import com.hibernate6.main.entity.Book;
 
 import javax.persistence.EntityManager;
 import javax.persistence.LockModeType;
@@ -21,8 +21,8 @@ public class EntityManagerDemo {
 
         // TODO. 创建一个查询的标准，指定要查询的数据类型和Selection返回的字段
         //   设置查询时的锁类型，使用锁的策略
-        CriteriaQuery<MyPojo> cq = criteriaBuilder.createQuery(MyPojo.class);
-        Root<MyPojo> root = cq.from(MyPojo.class);
+        CriteriaQuery<Book> cq = criteriaBuilder.createQuery(Book.class);
+        Root<Book> root = cq.from(Book.class);
         cq.select(root.get("id"));
         entityManager.createQuery(cq)
                 .setLockMode(LockModeType.OPTIMISTIC)

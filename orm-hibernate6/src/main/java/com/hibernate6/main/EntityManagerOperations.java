@@ -1,4 +1,4 @@
-package master.hibernate6.testing;
+package com.hibernate6.main;
 
 import com.hibernate6.main.entity.Book;
 

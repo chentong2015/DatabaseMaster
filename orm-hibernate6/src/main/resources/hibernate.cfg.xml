@@ -43,7 +43,7 @@
         <property name="show_sql">true</property>
 
         <!-- 一个数据表的描述 -->
-        <mapping resource="books.hbm.xml"/>
+        <mapping resource="entity/books.hbm.xml"/>
         <mapping resource="entity/demo.hbm.xml"/>
         <mapping resource="entity/master.hbm.xml"/>
     </session-factory>
