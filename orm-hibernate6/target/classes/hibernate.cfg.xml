@@ -25,7 +25,7 @@
         <!-- TODO. 注意这里连接的Server的名称
         <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
         <property name="hibernate.connection.url">
-            jdbc:sqlserver://localhost:1433;databaseName=my_database;integratedSecurity=true;
+            jdbc:sqlserver://LCTON01:1433;Database=my_database;Trusted_Connection=true;
         </property>
         <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
         <property name="hibernate.connection.username">test</property>
@@ -43,7 +43,8 @@
         <property name="show_sql">true</property>
 
         <!-- 一个数据表的描述 -->
-        <mapping resource="books.hbm.xml"/>
-        <mapping resource="demo.hbm.xml"/>
+        <mapping resource="entity/books.hbm.xml"/>
+        <mapping resource="entity/demo.hbm.xml"/>
+        <mapping resource="entity/master.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
