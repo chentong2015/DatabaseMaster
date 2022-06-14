@@ -1,0 +1,17 @@
+
+`
+java:S20953"EUse try-with-resources or close this "Session" in a "finally" clause.(´Ï‚‘ùÿÿÿÿ
+V
+java:S18543";Remove this useless assignment to local variable "session".(´Ï‚‘ùÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(†êĞáşÿÿÿÿ
+T
+java:S1874!"9Remove this use of "PostgreSQLDialect"; it is deprecated.(™ÅŞşÿÿÿÿ
+M
+java:S1135("2Complete the task associated to this TODO comment.(â±Âøÿÿÿÿ
+U
+java:S1874)":Remove this use of "getMetadataBuilder"; it is deprecated.(£ÄÄàûÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(ƒİãÎşÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(»…ßùÿÿÿÿ
+G
+java:S14813",Remove this unused "session" local variable.(´Ï‚‘ùÿÿÿÿ

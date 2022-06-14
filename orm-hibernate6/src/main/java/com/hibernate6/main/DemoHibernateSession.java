@@ -1,4 +1,4 @@
-package com.hibernate6.main.sesssion;
+package com.hibernate6.main;
 
 import jakarta.persistence.FlushModeType;
 import org.hibernate.Session;

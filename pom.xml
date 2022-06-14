@@ -15,6 +15,7 @@
     </properties>
 
     <modules>
+        <module>database-orm-design</module>
         <module>orm-mybatis</module>
         <module>relational-db-mysql</module>
         <module>distributed-db</module>
@@ -23,7 +24,6 @@
         <module>document-db-mongodb</module>
         <module>orm-liquibase</module>
         <module>relational-db-psql</module>
-        <module>jpa-orm-database-design</module>
         <module>orm-hibernate5</module>
         <module>orm-hibernate6</module>
         <module>relational-db-sql-server</module>

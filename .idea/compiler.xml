@@ -17,7 +17,12 @@
         <module name="orm-hibernate6" />
         <module name="orm-mybatis" />
         <module name="orm-liquibase" />
-        <module name="jpa-orm-database-design" />
+      </profile>
+      <profile name="Annotation profile for DatabaseMaster" enabled="true">
+        <sourceOutputDir name="../jpa-orm-database-design/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../jpa-orm-database-design/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="database-orm-design" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
