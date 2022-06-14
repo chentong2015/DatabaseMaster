@@ -12,9 +12,8 @@ public class DemoHibernateMapping {
 
     public static void main(String[] args) {
         Session session = new Configuration().configure().buildSessionFactory().openSession();
-        // TODO. 这里的HQL查询必须使用entity-name名称
-        //   如果自定义设置了，则需要使用全路径com.hibernate5.testing.package2.MyEntity作为查询的引用
-        //
+        // TODO. 这里的HQL查询必须使用entity-name名称，如果自定义修改了
+        //       则必须使用全路径com.hibernate5.testing.package2.MyEntity作为查询的引用
         Query<MyEntity> query = session.createQuery("from com.hibernate5.testing.package2.MyEntity", MyEntity.class);
         List<MyEntity> myEntities = query.getResultList();
         for (MyEntity entity : myEntities) {

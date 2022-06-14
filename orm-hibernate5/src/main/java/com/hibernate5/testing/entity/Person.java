@@ -2,7 +2,7 @@ package com.hibernate5.testing.entity;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "Person")
 @Table(name = "t_person")
 public class Person {
 

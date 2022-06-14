@@ -1,26 +1,26 @@
-TODO. Hibernate使用规范
- 使用hibernate mapping xml完成对Java POJO对象的实体映射，无需在POJO添加annotation注解修饰
+Hibernate使用规范
+  使用hibernate mapping xml完成对Java POJO对象的实体映射，无需在POJO添加annotation注解修饰
 
-TODO. 不同的package下面类型的名称可能一致, 在没有设置entity-name的情况下，hibernate默认使用类名
-Retrieve PersistentClass objects without failing mappings with same entity name
-https://hibernate.atlassian.net/browse/HHH-13149?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aall-tabpanel
+不同的package下面类型的名称可能一致, 在没有设置entity-name的情况下，hibernate默认使用类名
+  Retrieve PersistentClass objects without failing mappings with same entity name
+  https://hibernate.atlassian.net/browse/HHH-13149?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aall-tabpanel
 
-TODO. 报错的异常信息
-Exception in thread "main" org.hibernate.DuplicateMappingException:
+报错的异常信息: JPAEntityName必须全集唯一
+  Exception in thread "main" org.hibernate.DuplicateMappingException:
   The [master.hibernate5.testing.package1.MyEntity] and [master.hibernate5.testing.package2.MyEntity]
   entities share the same JPA entity name: [MyEntity] which is not allowed!
 
-AbstractEntitySourceImpl.java
-TODO. 源码中的entityName和jpaEntityName有什么区别 ?
-      // 这里在mapping上设置的className(<class name="">)是全路径的，而jpaEntityName只取Class类名
-      // 当存在jpaEntityName名称冲突的时候，需要显式指定(<class entity-name="")，确保唯一性
-
-  // If specified HBM entity-name attribute, the JPA entity name is set to be the same
+AbstractEntitySourceImpl.java源码中entityName和jpaEntityName有什么区别 ?
+  1. 两者都是Entity的名称
+  2. className如果是全路径的名称，则全局唯一
+  3. jpaEntityName只取全路径的最后类型名称，可能全局不唯一
   if (StringHelper.isNotEmpty(jaxbEntityMapping.getEntityName())) {
-     // 如果设置了EntityName名称，则两者设置成一致的
+     // 如果设置EntityName名称，则两者设置成一致，都被设置成全路径
      entityName = jaxbEntityMapping.getEntityName();
      jpaEntityName = jaxbEntityMapping.getEntityName();
   } else {
+     // 反之entityName使用className(<class name="">)全路径，jpaEntityName取Class类名
+     // 但是jpaEntityName不能够冲突
      entityName = className;
      jpaEntityName = StringHelper.unqualify(className);
   }
