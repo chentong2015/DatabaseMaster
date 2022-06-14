@@ -3,16 +3,19 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
-    <!-- 必须先设置property属性的值，然后定义table的mappings -->
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgresPlusDialect</property>
         <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">admin</property>
-
         <property name="show_sql">true</property>
+
+        <!-- TODO. hibernate配置文件添加mapping映射的方式：
+                 1. 通过配置hbm.xml映射文件来设置
+                 2. 通过直接指定Entity Class来实现映射 -->
         <mapping resource="entity/firstentity.hbm.xml"/>
         <mapping resource="entity/secondentity.hbm.xml"/>
+        <mapping class="com.hibernate5.testing.entity.Person"/>
     </session-factory>
 </hibernate-configuration>

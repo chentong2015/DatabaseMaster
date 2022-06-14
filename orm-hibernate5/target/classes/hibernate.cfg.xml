@@ -14,5 +14,7 @@
         <property name="show_sql">true</property>
         <mapping resource="entity/firstentity.hbm.xml"/>
         <mapping resource="entity/secondentity.hbm.xml"/>
+
+        <mapping class="com.hibernate5.testing.entity.Person"/>
     </session-factory>
 </hibernate-configuration>

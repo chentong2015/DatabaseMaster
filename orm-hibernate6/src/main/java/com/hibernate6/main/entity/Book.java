@@ -4,11 +4,10 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
-@Entity // Mark a class as an entity 对应到<class/> mapping
-@Table(name = "t_book") // Specifies the table name 默认的名称是BOOK
+@Entity
+@Table(name = "t_book")
 public class Book {
 
-    // TODO. GenerationType.IDENTITY 从0开始依次增加, 支持Psql
     @Id
     @Column(name = "id")
     @GeneratedValue(generator = "increment")
@@ -16,11 +15,11 @@ public class Book {
     // @GenericGenerator(name = "native", strategy = "native") 随机自动地增加
     private long id;
 
-    // String对应到psql中的类型为character varying可变字符串
-    @Column(name = "name")
+    // TODO. 等效于hbm.xml中对于属性的<column>配置, 可以约定默认值(存在适配的问题)
+    @Column(name = "name", columnDefinition = "character varying")
     private String name;
 
-    @Column(name = "title")
+    @Column(name = "title", columnDefinition = "varchar(255) default 'java'")
     private String title;
 
     public Book() {

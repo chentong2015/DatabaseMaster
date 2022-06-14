@@ -10,10 +10,10 @@ import static javax.persistence.GenerationType.SEQUENCE;
 
 // TODO. @GeneratedValue 提供主键值的特殊生成策略
 // GenerationType.AUTO      默认配置的自动增加 > SQLite, H2 Database
-// GenerationType.IDENTITY  部分数据库提供支持 > MySQL, PSQL
+// GenerationType.IDENTITY  部分数据库提供支持 > MySQL, PSQL (从0开始依次增加)
 // GenerationType.SEQUENCE  Oracle数据库通过序列来生成唯一ID
 // GenerationType.TABLE     容器指定用底层的数据表确保唯一
-public class DemoIdGenerator {
+public class IdGeneratorType {
 
     // TODO. @GeneratedValue和@GenericGenerator协同使用，指定id的生成策略
     private long id;

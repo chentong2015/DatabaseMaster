@@ -8,8 +8,8 @@ import org.hibernate.query.Query;
 import java.util.List;
 
 // TODO. HQL: hibernate query language, 一种类似于sql的简化的查询语言, 不是SQL语言
-// "Book": @Entity标记的name名称，或者使用类型作为名称 !!
-// "form Book": 提取Book表的所有的信息，并映射成指定类型的对象
+// "Book": @Entity标记的name名称，默认是和Class的名称一致
+//  Use the java class name and property name of the mapped
 public class HqlQuery {
 
     public static void testGetQuery(SessionFactory sessionFactory) {

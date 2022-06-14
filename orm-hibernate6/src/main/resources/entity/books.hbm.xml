@@ -11,7 +11,7 @@
     <class name="com.hibernate6.main.entity.Book" schema="public" table="t_book">
         <!-- TODO. hibernate映射java type数据类型到sql-type数据库中的数据类型 -->
         <id type="long" name="id">
-            <column name="id" sql-type="bigint"/> <!-- 指定列的信息和约束条件 -->
+            <column name="id" sql-type="bigint"/> <!-- 指定列的信息和约束条件(存在适配的问题) -->
             <generator class="increment"/> <!-- 该列的ID会随机自动地增加 -->
         </id>
         <property type="string" name="name">
