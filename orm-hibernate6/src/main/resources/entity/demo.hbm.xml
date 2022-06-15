@@ -5,7 +5,7 @@
 
 <hibernate-mapping>
     <!-- TODO. FQCN: fully-qualified class names -->
-    <class name="com.hibernate6.main.entity.EntityDemo" entity-name="mt_demo_table">
+    <class name="hibernate.framework.apis.entity.EntityDemo" entity-name="mt_demo_table">
         <!-- TODO. 指定的类型必须提供指定字段的getter & setter方法 -->
         <id name="id" column="id">
             <generator class="increment"/> <!-- 该列的ID会随机自动地增加 -->

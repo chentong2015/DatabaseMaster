@@ -17,5 +17,6 @@
         <mapping resource="entity/firstentity.hbm.xml"/>
         <mapping resource="entity/secondentity.hbm.xml"/>
         <mapping class="com.hibernate5.testing.entity.Person"/>
+        <mapping class="com.hibernate5.testing.entity.Sample"/>
     </session-factory>
 </hibernate-configuration>

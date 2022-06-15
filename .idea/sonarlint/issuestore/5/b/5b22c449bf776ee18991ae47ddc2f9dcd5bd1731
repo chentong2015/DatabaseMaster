@@ -1,7 +1,0 @@
-
-N	java:S106."9Replace this use of System.out or System.err by a logger.(ìˆ¬Ý
-N	java:S1068"9Replace this use of System.out or System.err by a logger.(ìˆ¬Ý
-O
-java:S1144'"4Remove this unused private "testUpdateQuery" method.(òÍÌ†øÿÿÿÿ
-O
-java:S11443"4Remove this unused private "testDeleteQuery" method.(ÞµšÜúÿÿÿÿ

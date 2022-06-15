@@ -8,7 +8,7 @@
          schema="public" for psql
          schema="dbo" for sql server -->
 <hibernate-mapping>
-    <class name="com.hibernate6.main.entity.Book" schema="public" table="t_book">
+    <class name="hibernate.framework.apis.entity.Book" schema="public" table="t_book">
         <!-- TODO. hibernate映射java type数据类型到sql-type数据库中的数据类型 -->
         <id type="long" name="id">
             <column name="id" sql-type="bigint"/> <!-- 指定列的信息和约束条件(存在适配的问题) -->

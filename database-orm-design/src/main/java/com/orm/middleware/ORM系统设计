@@ -20,12 +20,12 @@ JPA是一种ORM层的规范
    9. 执行Engine引擎: 底层基于Java JDBC
 
 2. 如何设计数据库连接池 ?
-  https://cloud.tencent.com/developer/article/1057410
-  如果使用连接池, 如何判断那些线程占用了连接? 那些线程占用了不止一个连接?
-  适用Tomcat Web服务器自带的连接池DBCP, 是否可以使用工具对连接进行监测 ?
+   https://cloud.tencent.com/developer/article/1057410
+   如果使用连接池, 如何判断那些线程占用了连接? 那些线程占用了不止一个连接?
+   适用Tomcat Web服务器自带的连接池DBCP, 是否可以使用工具对连接进行监测 ?
 
 3. 一个数据库连接如何保证只在一个线程中传递 ?
-  使用ThreadLocal<DatasourceEngine>进行封装
+   使用ThreadLocal<DatasourceEngine>进行封装
 
 4. 使用Spring Data JPA作为ORM层，Configuration配置Datasource连接的时，如果同时有多个Datasource，如何设置 ?
-  使用@Qualifier("")注解来区别注入同类型的Datasource的bean，通过不同名称来指定获取
+   使用@Qualifier("")注解来区别注入同类型的Datasource的bean，通过不同名称来指定获取

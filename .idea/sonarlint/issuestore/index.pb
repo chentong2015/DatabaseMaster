@@ -35,8 +35,6 @@ c
 3orm-mybatis/src/main/java/spring/MyBatisConfig.java,c\5\c564e9413f3f0c593be86563429c177ad15c7e20
 n
 >orm-mybatis/src/main/java/com/mybatis/basic/MyBatisBasics.java,8\d\8d27af13c9dff176a2aaedb55267e60f93a03f1a
-X
-(storage-engine/存储引擎 系统设计,b\7\b726d3a5fc948787936d0354d0f6f0fb30d17699
 w
 Gorm-liquibase/src/main/java/com/liquibase/main/Liquibase Global Options,4\1\416285bdec57fd802557555137e81b71a62c973e
 |
@@ -49,10 +47,6 @@ _orm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/datasource/Prope
 borm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/datasource/MyDataSourceFactory.java,0\7\07b18576e0f249538fdf4659d32451b3e8bee446
 �
 Uorm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/mapper/BlogMapper.java,f\7\f71b119a72055e4aadd9acf0b3f3dd13e328859c
-�
-Sjpa-orm-database-design/src/main/java/com/orm/middleware/api/ConnectionCreator.java,4\e\4e02b4318530e241cc155bb017dce2cf55a80dc2
-�
-ejpa-orm-database-design/src/main/java/com/orm/middleware/connection/pool/ValidationThreadFactory.java,2\5\2551502ed8a56dda0ff033f26fe304d5ea395adf
 �
 Porm-liquibase/src/main/java/com/liquibase/main/datatype/Liquibase支持的类型,3\2\325eb1af6508060131aaf395ca7e18a72c58a44f
 {
@@ -65,8 +59,6 @@ Norm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataType.java
 Uorm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataTypeFactory.java,4\6\4639b98790907f234795c3f0e1d6b48ded601574
 E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
-|
-Ljpa-orm-database-design/src/main/java/com/orm/middleware/ORM层 系统设计,1\f\1feeea77ef1f87f57be8c524648616f4e6adc915
 s
 Corm-liquibase/src/main/java/com/liquibase/main/Liquibase 教程.txt,a\0\a0d11eb35a518720a9585be5d266f2994d156da9
 y
@@ -75,12 +67,8 @@ w
 Gorm-liquibase/src/main/java/com/liquibase/main/config/ConfigHelper.java,4\b\4b3b86209a71aa7effc5c72e5a96e8474073c251
 u
 Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
-b
-2orm-hibernate6/src/main/java/Hibernate基础教程,5\3\535e6424d34f06c41f79771f152e492b9991b10e
 k
 ;relational-db-psql/src/main/java/com/psql/main/官方文档,3\1\31723c10a19ff1e946324efe5590494da44035ea
-z
-Jorm-hibernate6/src/main/java/com/hibernate6/main/DemoHibernateSession.java,0\1\013eadb4c379aaef7cf04b0f866c3e2b76c43d20
 F
 orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
 }
@@ -89,8 +77,6 @@ z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/query/HqlRawQuery.java,f\8\f85e100d01f60677ac6ba481afbef504efde47a6
 �
 Qorm-hibernate5/src/main/java/com/hibernate5/testing/HibernateMetadataSources.java,d\6\d69ac46f45658dade1712b2f0ded43187914cacc
-w
-Gorm-hibernate6/src/main/java/com/hibernate6/main/EntityManagerDemo.java,f\b\fbf2cba8107ef86c2089e3a137dde7e055dad0f7
 z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/query/SqlRawQuery.java,7\e\7e45247cee8d549635d91f71f6d7fd33704b547f
 z
@@ -107,30 +93,16 @@ Porm-hibernate6/src/main/java/com/hibernate6/main/id/generator/MyIdGenerator.jav
 Rorm-hibernate6/src/main/java/com/hibernate6/main/id/generator/IdGeneratorType.java,1\e\1e133514b0af010acfdbfe483fc2729dce7a1030
 r
 Borm-hibernate6/src/main/java/com/hibernate6/main/hql/SqlQuery.java,e\6\e6419b24f94154b9989aa4a99ad9d3c06374b461
-z
-Jorm-hibernate5/src/main/java/com/hibernate5/testing/package1/MyEntity.java,7\6\7613a03371e7b903be6715030e3a64f2aa56090c
-|
-Lorm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateEntity.java,2\d\2d113aa6d5e769a889eebe8fa22ef89cb558ed19
-v
-Form-hibernate5/src/main/java/com/hibernate5/testing/entity/Person.java,6\0\6090d3dffd4926571b12a8ebc152d57c84cf6195
-}
-Morm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,6\4\64d66920aa081525ec2688e3388c3ae6b7eabeed
-q
-Aorm-hibernate6/src/main/java/com/hibernate6/main/entity/Book.java,8\e\8ee221b6ccb002ffe7717268573634182478f743
 w
 Gorm-hibernate6/src/main/java/com/hibernate6/main/entity/EntityDemo.java,3\3\33af59cc30b739d6bad6409fc40a1b59cc451e38
 j
 :orm-hibernate5/src/main/java/Hibernate Mapping映射问题,e\a\eaa1e90f250bc087cd35144c4fca5dedf4dd5068
-s
-Corm-hibernate6/src/main/java/com/hibernate6/main/DemoHibernate.java,5\b\5b22c449bf776ee18991ae47ddc2f9dcd5bd1731
 y
 Idatabase-orm-design/src/main/java/storage/engine/存储引擎系统设计,2\3\23bc85534e58d030ec10d4094d86b31b85cc73c7
 �
 Rrelational-db-h2-database/src/main/java/com/h2/database/H2数据库配置和连接,e\9\e9b9ac727e7a8e2abea77b87516c83bc8aed3bf5
 {
 Krelational-db-h2-database/src/main/java/com/h2/database/BaseH2Database.java,c\6\c6dcbb362d26f8b89877ad52051b86e2b390ec18
-}
-Mdatabase-orm-design/src/main/java/master/database/design/Database设计思想,2\c\2cf272b306e27e1647ab3de600cb233d1aad937a
 �
 Vdatabase-orm-design/src/main/java/com/orm/middleware/datamodel/CrossDatabaseModel.java,d\e\defaacbb6928966a2ea65ac2a8acaf842c0e0dd5
 F

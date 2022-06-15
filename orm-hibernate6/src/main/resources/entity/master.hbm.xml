@@ -4,10 +4,10 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="com.hibernate6.main.entity.EntityMaster">
+    <class name="hibernate.framework.apis.entity.EntityMaster">
         <id name="id" type="java.lang.Long" column="M_ID">
             <!-- 使用自定义的id生成器，并且提供参数的值 -->
-            <generator class="com.hibernate6.main.id.generator.MyStoredTableIdGenerator">
+            <generator class="id.MyStoredTableIdGenerator">
                 <param name="segment_value">parameter_value</param>
             </generator>
         </id>
