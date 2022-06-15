@@ -9,7 +9,9 @@
          schema="dbo" for sql server -->
 <hibernate-mapping>
     <class name="hibernate.framework.apis.entity.Book" schema="public" table="t_book">
-        <!-- TODO. hibernate映射java type数据类型到sql-type数据库中的数据类型 -->
+        <!-- TODO. hibernate映射java type数据类型到sql-type数据库中的数据类型
+             type="string" hibernate会自动根据该字段获取类型，可以不用设置
+             column name="title" 如果属性的名称和数据库中表的字段一致，可以不用设置 -->
         <id type="long" name="id">
             <column name="id" sql-type="bigint"/> <!-- 指定列的信息和约束条件(存在适配的问题) -->
             <generator class="increment"/> <!-- 该列的ID会随机自动地增加 -->

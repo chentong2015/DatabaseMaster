@@ -75,8 +75,6 @@ F
 Morm-hibernate6/src/main/java/com/hibernate6/main/EntityManagerOperations.java,8\e\8e1ff5a81cd651766e8e111cc77171580b056a81
 z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/query/HqlRawQuery.java,f\8\f85e100d01f60677ac6ba481afbef504efde47a6
-
-Qorm-hibernate5/src/main/java/com/hibernate5/testing/HibernateMetadataSources.java,d\6\d69ac46f45658dade1712b2f0ded43187914cacc
 z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/query/SqlRawQuery.java,7\e\7e45247cee8d549635d91f71f6d7fd33704b547f
 z

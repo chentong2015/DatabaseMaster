@@ -10,18 +10,16 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
-// Hibernate(JPA Implementation) 一种JPA标准的实现
-// 1. Mapping from Java classes to database tables(from Java data types to SQL data types)
-//   将关系型数据库中的行数据映射成一个对象("数据表行" <--> "实体类Entity")
-// 2. Provides data query and retrieval facilities.
-
-// Native Hibernate APIs(功能较多): Session, SessionFactory, Transactions,,,
-// https://docs.jboss.org/hibernate/orm/5.6/userguide/html_single/Hibernate_User_Guide.html
-// https://blog.csdn.net/tengxing007/article/details/50903167 注解版关联关系映射
+// Native Hibernate APIs(功能较多)
 public class DemoNativeHibernateAPI {
 
-    static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-    static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+    // this.configure("hibernate.cfg.xml")
+    // 默认加载指定的配置文件，可以修改加载的文件和路径
+    static StandardServiceRegistry registry =
+            new StandardServiceRegistryBuilder().configure().build();
+    // 从元信息中获取Session工厂
+    static SessionFactory sessionFactory =
+            new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
     public static void main(String[] args) {
         testPersistObject();

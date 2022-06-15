@@ -10,7 +10,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-// Hibernate JPA API (功能较少): EntityManagerFactory, EntityManager,,,
+// Hibernate JPA API (功能较少, 性能较低)
 // https://www.baeldung.com/hibernate-entitymanager
 public class DemoHibernateJpaAPI {
 

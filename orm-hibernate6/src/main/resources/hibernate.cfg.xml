@@ -8,15 +8,14 @@
 
     <!-- 必须先设置property属性的值，然后定义table的mappings -->
     <session-factory>
-        <!-- PSQL connection information  -->
-        <!-- <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property> -->
+        <!-- TODO. Dialect: 指定hibernate所要converse到某个特定的SQL; HQL -> SQL specific -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">admin</property>
 
-        <!-- MySQL Connection Properties
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/struts_crud</property>
         <property name="hibernate.connection.username">root</property>
@@ -42,7 +41,7 @@
         <!-- Print executed SQL to stdout 显示执行的SQL代码 -->
         <property name="show_sql">true</property>
 
-        <!-- 一个数据表的描述 -->
+        <!-- 一个数据表的描述: 对象的配置文件 -->
         <mapping resource="entity/books.hbm.xml"/>
         <mapping resource="entity/demo.hbm.xml"/>
         <mapping resource="entity/master.hbm.xml"/>

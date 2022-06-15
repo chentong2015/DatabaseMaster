@@ -14,8 +14,8 @@
         <!-- TODO. hibernate配置文件添加mapping映射的方式：
                  1. 通过配置hbm.xml映射文件来设置
                  2. 通过直接指定Entity Class来实现映射 -->
-        <mapping resource="entity/firstentity.hbm.xml"/>
-        <mapping resource="entity/secondentity.hbm.xml"/>
+        <mapping resource="firstentity.hbm.xml"/>
+        <mapping resource="secondentity.hbm.xml"/>
         <mapping class="com.hibernate5.testing.entity.Person"/>
         <mapping class="com.hibernate5.testing.entity.Sample"/>
     </session-factory>
