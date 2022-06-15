@@ -3,7 +3,7 @@ Hibernate 3.x 版本的创建
    SessionFactory sessionFactory = configuration.buildSessionFactory();
    Session session = sessionFactory.openSession();
 
-Hibernate 4.x 版本的创建
+Hibernate 4.x 版本的创建: 提供属性配置的参数
    Configuration configuration = new Configuration().configure();
    Properties properties = new Properties();
    properties.put(key, value);

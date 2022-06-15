@@ -8,18 +8,15 @@ import org.hibernate.Transaction;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.cfg.Configuration;
 
 // Native Hibernate APIs(功能较多)
 public class DemoNativeHibernateAPI {
 
     // this.configure("hibernate.cfg.xml")
     // 默认加载指定的配置文件，可以修改加载的文件和路径
-    static StandardServiceRegistry registry =
-            new StandardServiceRegistryBuilder().configure().build();
+    static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
     // 从元信息中获取Session工厂
-    static SessionFactory sessionFactory =
-            new MetadataSources(registry).buildMetadata().buildSessionFactory();
+    static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
     public static void main(String[] args) {
         testPersistObject();
@@ -30,7 +27,7 @@ public class DemoNativeHibernateAPI {
         StandardServiceRegistryBuilder.destroy(registry);
     }
 
-    // 手动开启事务，执行数据库的插入操作: 一个Session结束之后，需要关闭执行的操作
+    // Hibernate Session: 完成数据库的增删查改的操作
     private static void testPersistObject() {
         try (Session session = sessionFactory.openSession()) {
             Transaction transaction = session.beginTransaction();
@@ -39,17 +36,18 @@ public class DemoNativeHibernateAPI {
             newBook.setTitle("The master java title");
             session.persist(newBook);
             transaction.commit();
+        } catch (Exception exception) {
+            // 这异常情况下，需要执行事务的回滚
+            // transaction.rollback();
         }
     }
 
-    // TODO. Hibernate操作的应该是对象
-    private void testDeleteEntity(Object object) {
-        Session session = new Configuration().configure().buildSessionFactory().openSession();
+    // TODO. Hibernate操作的应该是对象: 在查询的时候，传递的主键id参数
+    private void testGetObject(Session session, Object object) {
+        session.get(Book.class, 1);
         session.getTransaction().begin();
-        // 直接传递实体对象完成数据库操作，无需查询语句
         session.remove(object);
         session.getTransaction().commit();
-        session.close();
     }
 
     // 使用named parameters(:namedParam)具名参数来传递参数值

@@ -16,9 +16,9 @@ import org.hibernate.mapping.PersistentClass;
 import java.util.Iterator;
 import java.util.Properties;
 
+// TODO. 使用MetadataBuilder来构建SessionFactory，在构建的过程中可以配置自定义 
 public class HibernateMetadataSources {
-
-    // TODO. 使用MetadataBuilder来构建SessionFactory，在构建的过程中可以配置自定义 
+    
     public void testMetadataBuilder() {
         // 配置Properties信息必须和指定的数据库对应
         Properties properties = new Properties();

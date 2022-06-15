@@ -4,9 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <!-- HBM: mapping metadata to determine load and store objects of the persistent class
-         TODO. 不同的数据库，注意使用schema的区别: 这个schema的名称可以写在@Table注解的类型上
-         schema="public" for psql
-         schema="dbo" for sql server -->
+         TODO. 不同的数据库，注意使用schema的区别: 这个schema的名称可以写在@Table注解的类型上 -->
 <hibernate-mapping>
     <class name="hibernate.framework.apis.entity.Book" schema="public" table="t_book">
         <!-- TODO. hibernate映射java type数据类型到sql-type数据库中的数据类型

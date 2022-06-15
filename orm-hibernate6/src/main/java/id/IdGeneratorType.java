@@ -11,7 +11,7 @@ import static javax.persistence.GenerationType.SEQUENCE;
 // TODO. @GeneratedValue 提供主键值的特殊生成策略
 // GenerationType.AUTO      默认配置的自动增加 > SQLite, H2 Database
 // GenerationType.IDENTITY  部分数据库提供支持 > MySQL, PSQL (从0开始依次增加)
-// GenerationType.SEQUENCE  Oracle数据库通过序列来生成唯一ID
+// GenerationType.SEQUENCE  通过序列来生成ID  > Oracle, PSQL
 // GenerationType.TABLE     容器指定用底层的数据表确保唯一
 public class IdGeneratorType {
 
@@ -27,6 +27,7 @@ public class IdGeneratorType {
         return id;
     }
 
+    // @GenericGenerator(name = "native", strategy = "native") 随机自动地增加
 
     // 不建议使用UUID做主键
     // https://www.baeldung.com/jpa-strategies-when-set-primary-key

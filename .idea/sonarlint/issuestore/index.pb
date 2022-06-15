@@ -69,8 +69,6 @@ u
 Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
 k
 ;relational-db-psql/src/main/java/com/psql/main/官方文档,3\1\31723c10a19ff1e946324efe5590494da44035ea
-F
-orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
 }
 Morm-hibernate6/src/main/java/com/hibernate6/main/EntityManagerOperations.java,8\e\8e1ff5a81cd651766e8e111cc77171580b056a81
 z
@@ -103,8 +101,6 @@ Rrelational-db-h2-database/src/main/java/com/h2/database/H2数据库配置和连
 Krelational-db-h2-database/src/main/java/com/h2/database/BaseH2Database.java,c\6\c6dcbb362d26f8b89877ad52051b86e2b390ec18
 �
 Vdatabase-orm-design/src/main/java/com/orm/middleware/datamodel/CrossDatabaseModel.java,d\e\defaacbb6928966a2ea65ac2a8acaf842c0e0dd5
-F
-orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 C

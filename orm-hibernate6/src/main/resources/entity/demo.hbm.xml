@@ -11,11 +11,11 @@
         <id name="id" column="id">
             <generator class="increment"/> <!-- 该列的ID会随机自动地增加 -->
         </id>
-
         <!-- 设置ID的生成器: 主键自增策略
         <id type="double" name="reference" column="M_REFERENCE">
-           <generator class="native" />
+           <generator class="native" /> 从三种自增策中选择一个
         </id> -->
+
         <!-- 联合ID
         <composite-id name="id" class="CompositeIdId">
             <key-property type="string" name="label" column="M_LABEL"/>

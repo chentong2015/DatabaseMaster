@@ -15,13 +15,9 @@ public class MyIdGenerator {
     // COUNT (optional): Reserves a number of IDs as specified by the COUNT attribute,
     //       by default set to 1.
     @GeneratedValue(generator = "personIdGenerator")
-    @GenericGenerator(
-            name = "personIdGenerator",
+    @GenericGenerator(name = "personIdGenerator",
             strategy = "com.hibernate.main.id.generator.MyStoredTableIdGenerator",
-            parameters = {
-                    @Parameter(name = "UID1", value = "STATICS"),
-                    @Parameter(name = "UID2", value = "CATEGORY")
-            }
+            parameters = {@Parameter(name = "UID1", value = "STATICS"), @Parameter(name = "UID2", value = "CATEGORY")}
     )
     @Id
     @Column(name = "ID")

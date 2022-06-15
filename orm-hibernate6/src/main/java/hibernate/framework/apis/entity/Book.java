@@ -12,7 +12,6 @@ public class Book {
     @Column(name = "id")
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    // @GenericGenerator(name = "native", strategy = "native") 随机自动地增加
     private long id;
 
     // TODO. 等效于hbm.xml中对于属性的<column>配置, 可以约定默认值(存在适配的问题)
