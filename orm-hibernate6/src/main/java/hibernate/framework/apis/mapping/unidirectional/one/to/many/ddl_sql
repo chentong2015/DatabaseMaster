@@ -1,0 +1,77 @@
+// 1. 先建立数据表
+Hibernate:
+    create table public.t_grade_1 (
+       id integer not null,
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate:
+    create table public.t_student_1 (
+       id integer not null,
+        name varchar(255),
+        age integer,
+        grade_id integer,
+        primary key (id)
+    )
+
+// 2. 插入one-端的数据
+Hibernate:
+    insert
+    into
+        public.t_grade_1
+        (name, id)
+    values
+        (?, ?)
+Hibernate:
+    insert
+    into
+        public.t_grade_1
+        (name, id)
+    values
+        (?, ?)
+
+// 3. 插入Many-端的数据
+Hibernate:
+    insert
+    into
+        public.t_student_1
+        (age, name, id)
+    values
+        (?, ?, ?)
+Hibernate:
+    insert
+    into
+        public.t_student_1
+        (age, name, id)
+    values
+        (?, ?, ?)
+Hibernate:
+    insert
+    into
+        public.t_student_1
+        (age, name, id)
+    values
+        (?, ?, ?)
+
+// 4. 再更新Many-端的外键(关联One端的id)
+Hibernate:
+    update
+        public.t_student_1
+    set
+        grade_id=?
+    where
+        id=?
+Hibernate:
+    update
+        public.t_student_1
+    set
+        grade_id=?
+    where
+        id=?
+Hibernate:
+    update
+        public.t_student_1
+    set
+        grade_id=?
+    where
+        id=?

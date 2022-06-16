@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hibernate.framework.apis.mapping.unidirectional.one.to.many">
+    <class name="Grade" schema="public" table="t_grade_1">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name"/>
+
+        <!-- TODO. 设置对应的集合映射 Set List Map
+             name: 属性的名称
+             key: 外键, Student端表中的外键名称
+             foreign-key: 生成外键约束的名称，默认是随机的
+             one-to-many: 属性所对应的类型 -->
+        <set name="students">
+            <key column="grade_id" foreign-key="foreign_key"/>
+            <one-to-many class="hibernate.framework.apis.mapping.bidirectional.one.to.many.Student"/>
+        </set>
+    </class>
+</hibernate-mapping>

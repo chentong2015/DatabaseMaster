@@ -14,7 +14,13 @@
         <!-- TODO. 使用特定的多对一的标签
              name: 对应的字段名称
              class: 映射关系的类型(必须使用类型的全路径)
-             column: 自定义的外键列名 -->
-        <many-to-one name="grade" class="Grade" column="grade_id" not-null="true"/>
+             column: 自定义的外键列名
+             foreign-key: 外键的约束名称，不使用自动生成的=fkkdu5ea5x79eggopv6jknfi8o4
+             not-null: 在操作时必须提供非空的属性值，需要先存储外键的一端 -->
+        <many-to-one name="grade"
+                     class="Grade"
+                     column="grade_id"
+                     foreign-key="foreign_key"
+                     not-null="true"/> <!-- 不要设置非空 -->
     </class>
 </hibernate-mapping>

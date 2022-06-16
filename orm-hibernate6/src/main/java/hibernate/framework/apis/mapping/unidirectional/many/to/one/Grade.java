@@ -7,6 +7,9 @@ public class Grade implements Serializable {
     private int id;
     protected String name;
 
+    public Grade() {
+    }
+
     public Grade(String name) {
         this.name = name;
     }
@@ -25,13 +28,5 @@ public class Grade implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public String toString() {
-        return "Grade{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
     }
 }

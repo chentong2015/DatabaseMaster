@@ -1,4 +1,4 @@
-package hibernate.framework.apis.mapping.unidirectional.many.to.one;
+package hibernate.framework.apis.mapping.bidirectional.one.to.many;
 
 import java.io.Serializable;
 
@@ -7,16 +7,14 @@ public class Student implements Serializable {
     private int id;
     private String name;
     private int age;
-    // many-to-one 用于外键映射关系的字段
     private Grade grade;
 
     public Student() {
     }
 
-    public Student(String name, int age, Grade grade) {
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
-        this.grade = grade;
     }
 
     public int getId() {

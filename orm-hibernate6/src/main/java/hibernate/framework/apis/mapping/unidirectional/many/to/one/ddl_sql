@@ -1,3 +1,4 @@
+// 1. 先创建数据表
 Hibernate:
     create table public.t_grade (
        id integer not null,
@@ -12,6 +13,8 @@ Hibernate:
         grade_id integer not null,
         primary key (id)
     )
+
+// 2. 在插入One-端的数据
 Hibernate:
     insert
     into
@@ -26,6 +29,8 @@ Hibernate:
         (name, id)
     values
         (?, ?)
+
+// 3. 最后插入Many-端的数据: 直接设置外键的值，无需update操作
 Hibernate:
     insert
     into
