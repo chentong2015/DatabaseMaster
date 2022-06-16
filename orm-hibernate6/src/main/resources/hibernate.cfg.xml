@@ -50,7 +50,5 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
 
         <!-- 一个数据表的描述: 对象的配置文件 -->
         <mapping resource="books.hbm.xml"/>
-        <mapping resource="entity/demo.hbm.xml"/>
-        <mapping resource="entity/master.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

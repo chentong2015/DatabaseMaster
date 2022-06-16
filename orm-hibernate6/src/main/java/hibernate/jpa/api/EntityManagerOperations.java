@@ -1,6 +1,6 @@
 package hibernate.jpa.api;
 
-import hibernate.framework.apis.entity.Book;
+import hibernate.framework.apis.datamodel.Book;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

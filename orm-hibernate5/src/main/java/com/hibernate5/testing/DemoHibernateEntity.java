@@ -1,7 +1,7 @@
 package com.hibernate5.testing;
 
-import com.hibernate5.testing.entity.Person;
-import com.hibernate5.testing.entity.Sample;
+import com.hibernate5.testing.datamodel.Person;
+import com.hibernate5.testing.datamodel.Sample;
 import com.hibernate5.testing.query.SqlRawQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

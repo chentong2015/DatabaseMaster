@@ -1,6 +1,6 @@
 package hibernate.framework.apis.query;
 
-import hibernate.framework.apis.entity.Book;
+import hibernate.framework.apis.datamodel.Book;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;

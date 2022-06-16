@@ -1,6 +1,6 @@
 package hibernate.framework.apis;
 
-import hibernate.framework.apis.entity.Book;
+import hibernate.framework.apis.datamodel.Book;
 import hibernate.framework.apis.query.HqlQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -42,9 +42,12 @@ public class DemoNativeHibernateAPI {
         }
     }
 
-    // TODO. Hibernate操作的应该是对象: 在查询的时候，传递的主键id参数
+    // TODO. Hibernate操作对象:
+    // 1. 在查询的时候，传递的主键id参数; 查询时必须
+    // 2.
     private void testGetObject(Session session, Object object) {
         session.get(Book.class, 1);
+
         session.getTransaction().begin();
         session.remove(object);
         session.getTransaction().commit();

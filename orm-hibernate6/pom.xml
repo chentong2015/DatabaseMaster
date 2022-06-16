@@ -38,7 +38,7 @@
             <version>9.3.0.jre15-preview</version>
         </dependency>
 
-        <!-- 配置完整的日志输出的依赖 -->
+        <!-- 配置完整的日志输出的依赖
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -53,6 +53,6 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
-        </dependency>
+        </dependency> -->
     </dependencies>
 </project>

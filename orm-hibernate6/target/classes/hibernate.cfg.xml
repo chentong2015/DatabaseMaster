@@ -1,22 +1,23 @@
-<?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
-        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<?xml version='1.0' encoding='utf-8'?> <!-- 这个xml格式的声明必须写在首行 -->
+<!DOCTYPE hibernate-configuration
+        PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">  <!-- 加载DTD格式文件 -->
 
 <!-- TODO. 这个XML文件的配置是否可以被取代 ??
-     hibernate.cfg.xml file defines the Hibernate configuration information. -->
+hibernate.cfg.xml file defines the Hibernate configuration information. -->
 <hibernate-configuration>
 
     <!-- 必须先设置property属性的值，然后定义table的mappings -->
     <session-factory>
-        <!-- PSQL connection information  -->
-        <!-- <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property> -->
+        <!-- TODO. Dialect: 指定hibernate所要converse到某个特定的SQL; HQL -> SQL specific -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
         <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">admin</property>
 
-        <!-- MySQL Connection Properties
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/struts_crud</property>
         <property name="hibernate.connection.username">root</property>
@@ -36,15 +37,18 @@
         <property name="connection.pool_size">100</property>
 
         <!-- 可以自动将hbm table中的表定义映射到DB中
-             Enables automatic generation of database schemas directly into the database.
-        <property name="hbm2ddl.auto">update</property> -->
+             Enables automatic generation of database schemas directly into the database
+             update:      Update the database schema.  没有则创建表，有则执行更新的操作
+             create-drop: Drop the schema and recreate it on SessionFactory startup
+             create:      Database creation will be generated. 删除原表再创建
+             validate:    Validate the database schema  如果有错将会报错 -->
+        <property name="hbm2ddl.auto">update</property>
 
-        <!-- Print executed SQL to stdout 显示执行的SQL代码 -->
+        <!-- Print executed SQL to stdout 显示执行的SQL代码, 并且格式化 -->
         <property name="show_sql">true</property>
+        <!-- <property name="format_sql">true</property> -->
 
-        <!-- 一个数据表的描述 -->
-        <mapping resource="entity/books.hbm.xml"/>
-        <mapping resource="entity/demo.hbm.xml"/>
-        <mapping resource="entity/master.hbm.xml"/>
+        <!-- 一个数据表的描述: 对象的配置文件 -->
+        <mapping resource="books.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

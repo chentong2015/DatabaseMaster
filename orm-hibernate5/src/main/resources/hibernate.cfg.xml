@@ -17,7 +17,7 @@
                  2. 通过直接指定Entity Class来实现映射 -->
         <mapping resource="firstentity.hbm.xml"/>
         <mapping resource="secondentity.hbm.xml"/>
-        <mapping class="com.hibernate5.testing.entity.Person"/>
-        <mapping class="com.hibernate5.testing.entity.Sample"/>
+        <mapping class="com.hibernate5.testing.datamodel.Person"/>
+        <mapping class="com.hibernate5.testing.datamodel.Sample"/>
     </session-factory>
 </hibernate-configuration>
