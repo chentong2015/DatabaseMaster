@@ -1,4 +1,4 @@
-package config;
+package hibernate.framework.apis.config;
 
 import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.cfg.Configuration;
