@@ -46,9 +46,11 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
 
         <!-- Print executed SQL to stdout 显示执行的SQL代码, 并且格式化 -->
         <property name="show_sql">true</property>
-        <!-- <property name="format_sql">true</property> -->
+        <property name="format_sql">true</property>
 
         <!-- 一个数据表的描述: 对象的配置文件 -->
         <mapping resource="books.hbm.xml"/>
+        <mapping resource="mapping/unidirectional.many.to.one/student.hbm.xml"/>
+        <mapping resource="mapping/unidirectional.many.to.one/grade.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

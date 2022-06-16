@@ -33,8 +33,6 @@ t
 Dorm-spring-jdbc/src/main/java/JdbcTemplateJdcp/JdbcTemplateJdcp.java,8\b\8b1591f3a1d3036fdd3455d8a77029f99cb58457
 c
 3orm-mybatis/src/main/java/spring/MyBatisConfig.java,c\5\c564e9413f3f0c593be86563429c177ad15c7e20
-n
->orm-mybatis/src/main/java/com/mybatis/basic/MyBatisBasics.java,8\d\8d27af13c9dff176a2aaedb55267e60f93a03f1a
 w
 Gorm-liquibase/src/main/java/com/liquibase/main/Liquibase Global Options,4\1\416285bdec57fd802557555137e81b71a62c973e
 |
@@ -93,10 +91,6 @@ v
 Form-hibernate5/src/main/java/com/hibernate5/testing/entity/Sample.java,9\4\945035d61d4c400983dd28708104c79b108d202a
 v
 Form-hibernate5/src/main/java/com/hibernate5/testing/entity/Person.java,6\0\6090d3dffd4926571b12a8ebc152d57c84cf6195
-t
-Ddatabase-orm-design/src/main/java/com/orm/middleware/ORM系统设计,6\7\672a930af7804e03733e623738fe7d96209a9298
-}
-Mdatabase-orm-design/src/main/java/master/database/design/Database设计思想,2\c\2cf272b306e27e1647ab3de600cb233d1aad937a
 {
 Korm-hibernate6/src/main/java/hibernate/jpa/api/EntityManagerOperations.java,8\3\83a9f67949e3fef3580ace0cadb3afe4969665a9
 y
@@ -109,8 +103,6 @@ Arelational-db-mysql/src/main/java/storage/engine/InnoDBBasic.java,a\e\aef510c4
 [orm-hibernate6/src/main/java/hibernate/framework/apis/session/HibernateSessionCallback.java,3\c\3ccfd3add747458845b055ccd2590dbefb325068
 i
 9orm-hibernate6/src/main/java/config/Hibernate基础配置,0\9\093f97d21deac507b68ea9d1d92a0051949c6c87
-�
-Porm-hibernate6/src/main/java/hibernate/framework/apis/SessionFactory创建方式,f\a\fad569741f0ab9f8778c256593bdc0db457fdeef
 w
 Gorm-hibernate6/src/main/java/hibernate/jpa/api/DemoHibernateJpaAPI.java,c\5\c577e44e9708ed2159c554e6c0d6b039368dec27
 �

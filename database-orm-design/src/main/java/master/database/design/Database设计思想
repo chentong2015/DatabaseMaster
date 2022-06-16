@@ -1,3 +1,9 @@
 Dialect 针对不同数据库的"方言": 可移植性
 JDBC Connection.createStatement(); 相当于是在数据库的上层创建的一个Dialect
 JDBC Statement 无法适配不同的数据库之间的区别，在执行上面需要硬编码
+
+
+TODO：SQL改写，语法引擎(SQL必须符合引擎所规定的语法)
+A系统传递给B系统一条SQL, B系统如何检测判断这条SQL正确性 ?
+select * from t_blog where id=#{id};  JDBC无法执行
+select * from t_blog where id=?;      MyBatis需要对其进行改写

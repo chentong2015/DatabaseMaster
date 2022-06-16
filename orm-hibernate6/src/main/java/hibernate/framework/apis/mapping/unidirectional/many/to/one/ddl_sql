@@ -1,0 +1,49 @@
+Hibernate:
+    create table public.t_grade (
+       id integer not null,
+        name varchar(255),
+        primary key (id)
+    )
+Hibernate:
+    create table public.t_student (
+       id integer not null,
+        name varchar(255),
+        age integer,
+        grade_id integer not null,
+        primary key (id)
+    )
+Hibernate:
+    insert
+    into
+        public.t_grade
+        (name, id)
+    values
+        (?, ?)
+Hibernate:
+    insert
+    into
+        public.t_grade
+        (name, id)
+    values
+        (?, ?)
+Hibernate:
+    insert
+    into
+        public.t_student
+        (age, grade_id, name, id)
+    values
+        (?, ?, ?, ?)
+Hibernate:
+    insert
+    into
+        public.t_student
+        (age, grade_id, name, id)
+    values
+        (?, ?, ?, ?)
+Hibernate:
+    insert
+    into
+        public.t_student
+        (age, grade_id, name, id)
+    values
+        (?, ?, ?, ?)

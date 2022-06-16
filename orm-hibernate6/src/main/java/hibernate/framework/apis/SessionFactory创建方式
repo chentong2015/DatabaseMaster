@@ -13,5 +13,5 @@ Hibernate 4.x 版本的创建: 提供属性配置的参数
    SessionFactory sessionFactory = configuration.buildSessionFactory(standardServiceRegistry);
 
 Hibernate 5.x 版本之后的创建: 从元信息中获取Session工厂
-   static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-   static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+   StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+   SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();

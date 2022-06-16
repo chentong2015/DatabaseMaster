@@ -37,3 +37,22 @@
            name=?, title=?
        where
            id=?
+
+4. session.get(Book.class, 2) 根据指定的table主键来获取
+   Hibernate:
+       select
+           b1_0.id,
+           b1_0.name,
+           b1_0.title
+       from
+           public.t_book b1_0
+       where
+           b1_0.id=?
+
+5. session.remove(book);
+   Hibernate:
+       delete
+       from
+           public.t_book
+       where
+           id=?
