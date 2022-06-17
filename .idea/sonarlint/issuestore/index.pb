@@ -91,18 +91,12 @@ Arelational-db-mysql/src/main/java/storage/engine/InnoDBBasic.java,a\e\aef510c4
 [orm-hibernate6/src/main/java/hibernate/framework/apis/session/HibernateSessionCallback.java,3\c\3ccfd3add747458845b055ccd2590dbefb325068
 ‡
 Worm-hibernate6/src/main/java/hibernate/framework/apis/session/DemoHibernateSession.java,7\d\7de6d8227e79aea6cbcd14409e21c1732f40443e
-|
-Lorm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateEntity.java,2\d\2d113aa6d5e769a889eebe8fa22ef89cb558ed19
 
 Qorm-hibernate5/src/main/java/com/hibernate5/testing/HibernateMetadataSources.java,d\6\d69ac46f45658dade1712b2f0ded43187914cacc
-}
-Morm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,6\4\64d66920aa081525ec2688e3388c3ae6b7eabeed
 F
 orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
 `
 0relational-db-sql-server/SQL Server é…ç½®æ“ä½œ,b\9\b97a83d2ff239f5ff20d61176a63ceaee89044f9
-c
-3relational-db-sql-server/SQL Server æŒ‡ä»¤å…¨é›†.md,2\0\20577c451ae2a2868c233faff983358517aca3f6
 u
 Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
 ‡
@@ -119,25 +113,15 @@ h
 8orm-hibernate6/src/main/java/jpa/api/entity/demo.hbm.xml,b\c\bc4bf902a3e6115c77e9084e87cab42dc4463ea2
 t
 Ddatabase-orm-design/src/main/java/com/orm/middleware/ORMç³»ç»Ÿè®¾è®¡,6\7\672a930af7804e03733e623738fe7d96209a9298
-m
-=orm-hibernate6/src/main/java/id/geneator/IdGeneratorType.java,c\3\c3fb59344fdaad9d37e09430c4e9c54af3353eaa
-v
-Form-hibernate6/src/main/java/id/geneator/MyStoredTableIdGenerator.java,e\3\e30fffcf149f5bc6de0e132276a44d1bf3bac4af
 k
 ;orm-hibernate6/src/main/java/id/geneator/MyIdGenerator.java,0\2\0227e74ee11c8e59bb67c446f7bb3a8a8795d63b
-F
-orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
 
 `orm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/many/to/one/ddl_sql,5\1\51c832c6c80f1d2d87454cf0574ab3a7561d4be4
-
-`orm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/one/to/many/ddl_sql,9\5\9538dafab3cd72eed144cdfc22e9586996e5da8d
 
 ]orm-hibernate6/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,d\f\df228e8455f37e6986f4a7d266a230e12ab2ef76
 “
 corm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/one/to/many/Grade.java,1\b\1b83a2808adb083015302837b8ab552e546c44f0
 •
 eorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/one/to/many/Student.java,f\a\fafba40b31e1167a4e924caceb7a82f31246ae1d
-£
-sorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/bidirectional/one/to/many/BidirectionalOneToMany.java,4\9\4958431ba36b3e4c65d5ea5e67147e565ada7e50
 }
 Mdatabase-orm-design/src/main/java/master/database/design/Databaseè®¾è®¡æ€æƒ³,2\c\2cf272b306e27e1647ab3de600cb233d1aad937a

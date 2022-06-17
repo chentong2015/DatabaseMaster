@@ -5,6 +5,7 @@ Hibernate:
         name varchar(255),
         primary key (id)
     )
+
 Hibernate:
     create table public.t_student_1 (
        id integer not null,

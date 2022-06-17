@@ -1,0 +1,86 @@
+Hibernate:
+    create table public.t_event (
+       M_REFERENCE float8 not null,
+        M_OBJ_ID float8 not null,
+        M_OBJ_VERSION int4 not null,
+        M_CLASS_ID varchar(255),
+        primary key (M_REFERENCE)
+    )
+Hibernate:
+    create table public.t_fees (
+       M_REFERENCE float8 not null,
+        M_CURRENCY varchar(255),
+        primary key (M_REFERENCE)
+    )
+
+// 生成t_event和t_fees表之间的关联和约束
+Hibernate:
+    alter table public.t_event
+       drop constraint UKexpggn9suof8rltgop15mr5by
+Hibernate:
+    alter table public.t_event
+       add constraint UKexpggn9suof8rltgop15mr5by unique (M_OBJ_ID, M_OBJ_VERSION)
+
+// 创建t_fee表，并建立和t_fees表之间的外键约束
+Hibernate:
+    create table t_fee (
+       fee_id float8 not null,
+        M_LABEL varchar(255),
+        M_AMOUNT float8
+    )
+Hibernate:
+    alter table t_fee
+       add constraint FK2ginsmxvwpqhcjrlf7lqbhnsw
+       foreign key (fee_id)
+       references public.t_fees
+
+// 根据cascade="all"的设置，会执行级联的插入操作
+Hibernate:
+    insert
+    into
+        public.t_event
+        (M_OBJ_ID, M_OBJ_VERSION, M_CLASS_ID, M_REFERENCE)
+    values
+        (?, ?, ?, ?)
+Hibernate:
+    insert
+    into
+        public.t_fees
+        (M_CURRENCY, M_REFERENCE)
+    values
+        (?, ?)
+Hibernate:
+    insert
+    into
+        t_fee
+        (fee_id, M_LABEL, M_AMOUNT)
+    values
+        (?, ?, ?)
+Hibernate:
+    insert
+    into
+        t_fee
+        (fee_id, M_LABEL, M_AMOUNT)
+    values
+        (?, ?, ?)
+
+// 根据自定义的<natural-id> M_OBJ_ID & M_OBJ_VERSION来对数据进行查询 !!
+Hibernate:
+    select
+        event0_.M_REFERENCE as m_refere1_0_1_,
+        event0_.M_OBJ_ID as m_obj_id2_0_1_,
+        event0_.M_OBJ_VERSION as m_obj_ve3_0_1_,
+        event0_.M_CLASS_ID as m_class_4_0_1_,
+        fees1_.M_REFERENCE as m_refere1_1_0_,
+        fees1_.M_CURRENCY as m_curren2_1_0_
+    from
+        public.t_event event0_
+    left outer join
+        public.t_fees fees1_
+    on
+        event0_.M_REFERENCE=fees1_.M_REFERENCE
+    where
+        event0_.M_OBJ_ID=?
+    and
+        event0_.M_OBJ_VERSION=?
+Event{id=0.0, underlyingId=1.0, underlyingVersion='1', classId=1.0, fees=currency 01}

@@ -24,7 +24,7 @@ public class DemoHibernateEntity {
         for (Person person : personList) {
             System.out.println(person);
         }
-
+        
         SqlRawQuery sqlRawQuery = new SqlRawQuery("Select firstname from t_person");
         Query sqlQuery = sqlRawQuery.getQuery(session);
         List<String> firstnameList = sqlQuery.getResultList();

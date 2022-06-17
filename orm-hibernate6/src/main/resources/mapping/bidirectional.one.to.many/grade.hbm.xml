@@ -12,7 +12,7 @@
 
         <set name="students">
             <key column="grade_id" foreign-key="foreign_key"/>
-            <one-to-many class="hibernate.framework.apis.mapping.bidirectional.one.to.many.Student"/>
+            <one-to-many class="Student"/>
         </set>
     </class>
 </hibernate-mapping>

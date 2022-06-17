@@ -5,18 +5,28 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgresPlusDialect</property>
+
         <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">admin</property>
+
+        <!-- 设置在第一次插入表格时会自动执行建表的ddl sql -->
+        <property name="hbm2ddl.auto">update</property>
+
         <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
 
         <!-- TODO. hibernate配置文件添加mapping映射的方式：
                  1. 通过配置hbm.xml映射文件来设置
                  2. 通过直接指定Entity Class来实现映射 -->
-        <mapping resource="entity/firstentity.hbm.xml"/>
-        <mapping resource="entity/secondentity.hbm.xml"/>
-        <mapping class="com.hibernate5.testing.entity.Person"/>
-        <mapping class="com.hibernate5.testing.entity.Sample"/>
+        <mapping resource="package/firstentity.hbm.xml"/>
+        <mapping resource="package/secondentity.hbm.xml"/>
+
+        <mapping resource="mapping/event.hbm.xml"/>
+        <mapping resource="mapping/fees.hbm.xml"/>
+
+        <mapping class="com.hibernate5.testing.datamodel.Person"/>
+        <mapping class="com.hibernate5.testing.datamodel.Sample"/>
     </session-factory>
 </hibernate-configuration>
