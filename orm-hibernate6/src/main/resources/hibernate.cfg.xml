@@ -57,9 +57,15 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
         <mapping resource="mapping/unidirectional.many.to.one/grade.hbm.xml"/>
 
         <mapping resource="mapping/bidirectional.one.to.many/student.hbm.xml"/>
-        <mapping resource="mapping/bidirectional.one.to.many/grade.hbm.xml"/> -->
+        <mapping resource="mapping/bidirectional.one.to.many/grade.hbm.xml"/>
 
-        <mapping resource="mapping/foreign.key.one.to.one.unidirectional/idcard.hbm.xml"/>
-        <mapping resource="mapping/foreign.key.one.to.one.unidirectional/person.hbm.xml"/>
+        <mapping resource="mapping/foreign.key.one.to.one.bidirectional/idcard.hbm.xml"/>
+        <mapping resource="mapping/foreign.key.one.to.one.bidirectional/person.hbm.xml"/>
+
+         <mapping resource="mapping/foreign.key.one.to.one.unidirectional/idcard.hbm.xml"/>
+        <mapping resource="mapping/foreign.key.one.to.one.unidirectional/person.hbm.xml"/> -->
+
+        <mapping resource="mapping/primary.key.one.to.one/idcard.hbm.xml"/>
+        <mapping resource="mapping/primary.key.one.to.one/person.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

@@ -1,13 +1,18 @@
-package hibernate.framework.apis.mapping.foreign.key.one.to.one.unidirectional;
+package hibernate.framework.apis.mapping.primary.key.one.to.one;
 
 import hibernate.framework.apis.session.HibernateSessionUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-// 单向一对一的关系，只能从Person对象上(基于DB中外键)获取到IdCard
-public class FkUnidirectionalOneToOne {
+// 双向一个对，可以从两端(基于DB中外键)来获取
+public class PkUnidirectionalOneToOne {
 
     public static void main(String[] args) {
+        testSaveObjects();
+        testGetObject();
+    }
+
+    private static void testSaveObjects() {
         Session session = null;
         Transaction transaction = null;
         try {
@@ -18,8 +23,6 @@ public class FkUnidirectionalOneToOne {
             idCard1.setCode("102023");
             IdCard idCard2 = new IdCard();
             idCard2.setCode("203991");
-            session.persist(idCard1);
-            session.persist(idCard2);
 
             Person person1 = new Person();
             person1.setName("person 1");
@@ -29,6 +32,8 @@ public class FkUnidirectionalOneToOne {
             person2.setName("person 2");
             person2.setAge(30);
             person2.setIdCard(idCard2);
+
+            // 由于双向级联设置成save-update, 只需要存储一端的数据
             session.persist(person1);
             session.persist(person2);
 
@@ -36,6 +41,19 @@ public class FkUnidirectionalOneToOne {
         } catch (Exception exception) {
             exception.printStackTrace();
             transaction.rollback();
+        } finally {
+            HibernateSessionUtil.closeSession();
+        }
+    }
+
+    private static void testGetObject() {
+        Session session = null;
+        try {
+            session = HibernateSessionUtil.getSession();
+            Person person = session.get(Person.class, 1);
+            System.out.println(person.getName() + "--" + person.getIdCard().getCode());
+        } catch (Exception exception) {
+            exception.printStackTrace();
         } finally {
             HibernateSessionUtil.closeSession();
         }

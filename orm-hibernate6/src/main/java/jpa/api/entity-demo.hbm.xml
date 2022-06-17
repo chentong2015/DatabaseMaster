@@ -13,12 +13,13 @@
             <generator class="increment"/> <!-- 该列的ID会随机自动地增加 -->
         </id>
         <!-- 设置ID的生成器: 主键自增策略
+             "native": 从三种自增策中选择一个, 插入时增长的id值不是连续的
         <id type="double" name="reference" column="M_REFERENCE">
-           <generator class="native" /> 从三种自增策中选择一个
+           <generator class="native" />
         </id> -->
 
-        <!-- 联合ID
-        <composite-id name="id" class="CompositeIdId">
+        <!-- 联合ID: 将多个属性组合成一个类型，作为联合的主键
+        <composite-id name="id" class="CompositeId">
             <key-property type="string" name="label" column="M_LABEL"/>
             <key-property type="int" name="type" column="M_TYPE"/>
         </composite-id> -->
