@@ -3,11 +3,8 @@ TODO. Hibernate(JPA Implementation) 一种JPA标准的实现
 1. Mapping from Java classes to database tables(from Java data types to SQL data types)
    将关系型数据库中的行数据映射成一个对象("数据表行" <--> "实体类Entity")
 2. Provides data query and retrieval facilities
-3. Hibernate功能完善，但是会导致相应的.hbm.xml映射文件会不断的增多 !!
+3. Hibernate功能完善，但是会导致相应的.hbm.xml映射文件会不断的增多
 
 https://docs.jboss.org/hibernate/orm/current/quickstart/html_single
 https://docs.jboss.org/hibernate/orm/5.6/userguide/html_single/Hibernate_User_Guide.html
 https://docs.jboss.org/hibernate/orm/6.0/userguide/html_single/Hibernate_User_Guide.html
-
-https://www.bilibili.com/video/BV1Gv411a7SA 快速入门视频教程
-https://blog.csdn.net/tengxing007/article/details/50903167 注解版关联关系映射
