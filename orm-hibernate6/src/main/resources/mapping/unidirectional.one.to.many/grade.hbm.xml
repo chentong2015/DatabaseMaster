@@ -14,10 +14,15 @@
              name: 属性的名称
              key: 外键, Student端表中的外键名称
              foreign-key: 生成外键约束的名称，默认是随机的
-             one-to-many: 属性所对应的类型 -->
-        <set name="students">
+             one-to-many: 属性所对应的类型
+             cascade: 级联操作，存储grade时相关联的Student数据都会存储进来
+                      save-update: 在插入时级联
+                      none: 默认是不使用级联
+                      all: 全部操作都使用级联
+             inverse: true 表示由对方(One-)端来维护关系 -->
+        <set name="students" cascade="save-update" inverse="true">
             <key column="grade_id" foreign-key="foreign_key"/>
-            <one-to-many class="hibernate.framework.apis.mapping.bidirectional.one.to.many.Student"/>
+            <one-to-many class="Student"/>
         </set>
     </class>
 </hibernate-mapping>
