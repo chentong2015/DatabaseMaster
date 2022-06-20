@@ -29,9 +29,11 @@ public class DemoHibernateMapping {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        String hqlQuery = "from com.hibernate5.testing.package2.MyEntity";
+        // 使用class name来取类型的全路径名称(具有唯一性)
+        String hqlQuery = "from " + MyEntity.class.getName();
+        System.out.println(hqlQuery);
 
-        Query<MyEntity> query = session.createQuery("from " + MyEntity.class.getSimpleName(), MyEntity.class);
+        Query<MyEntity> query = session.createQuery(hqlQuery, MyEntity.class);
         List<MyEntity> myEntities = query.getResultList();
         for (MyEntity entity : myEntities) {
             System.out.println(entity);
