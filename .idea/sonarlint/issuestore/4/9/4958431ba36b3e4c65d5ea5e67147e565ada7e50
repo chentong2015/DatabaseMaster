@@ -1,0 +1,18 @@
+
+d
+java:S2259%"IA "NullPointerException" could be thrown; "transaction" is nullable here.(ì‚—ôúÿÿÿÿ
+W
+java:S1118
+":Add a private constructor to hide the implicit public one.(‡Ó•ş8¬àµë–0
+M
+java:S1135	"2Complete the task associated to this TODO comment.(ÉŸôõúÿÿÿÿ
+N	java:S1061"9Replace this use of System.out or System.err by a logger.(ùÉôÆ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(¹’»Ø
+N	java:S106="9Replace this use of System.out or System.err by a logger.(¹’»Ø
+U	java:S106A"9Replace this use of System.out or System.err by a logger.(ùÉôÆ8µœ¯ë–0
+L
+java:S1144"1Remove this unused private "testSaveData" method.(ƒÖÛ‹üÿÿÿÿ
+X
+java:S1144+"<Remove this unused private "testGetDataFromManySide" method.(æô‡o8²àµë–0
+]
+java:S11448";Remove this unused private "testGetDataFromOneSide" method.(ÂëÑşÿÿÿÿ8ßŞ®ë–0

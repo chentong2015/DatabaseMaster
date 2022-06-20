@@ -86,7 +86,7 @@ public class EntityManagerOperations {
         EntityManager em = EntityManagerOperations.getEntityManager();
         Book book = getBook(1L);
         em.detach(book);
-        book.setTitle("new titel");
+        book.setTitle("new title");
         em.getTransaction().begin();
         em.merge(book);
         em.getTransaction().commit();

@@ -11,16 +11,27 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
+// TODO. Hibernate Mapping映射问题
+// 1. Hibernate v5.3.9
+//    1.1 没有设置entity-name名称，HQL可以使用默认的class名称或全路径名称
+//    1.2 如果设置entity-name名称，则必须使用设置的名称(名称中不能含有特殊的符号) !!
+// 2. Hibernate v5.6.9
+//    2.1 没有设置entity-name名称，HQL中如果有重名的POJO class名称，则报错 !!
+//    2.2 如果设置entity-name名称，则必须使用设置的名称
 public class DemoHibernateMapping {
 
-    static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-    static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+    static StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
+            .configure("hibernate.cfg.xml")
+            .build();
+    static SessionFactory sessionFactory = new MetadataSources(registry)
+            .buildMetadata()
+            .buildSessionFactory();
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        // TODO. 这里的HQL查询必须使用entity-name名称，如果自定义修改了
-        //       则必须使用全路径com.hibernate5.testing.package2.MyEntity作为查询的引用
-        Query<MyEntity> query = session.createQuery("from com.hibernate5.testing.package2.MyEntity", MyEntity.class);
+        String hqlQuery = "from com.hibernate5.testing.package2.MyEntity";
+
+        Query<MyEntity> query = session.createQuery("from " + MyEntity.class.getSimpleName(), MyEntity.class);
         List<MyEntity> myEntities = query.getResultList();
         for (MyEntity entity : myEntities) {
             System.out.println(entity);

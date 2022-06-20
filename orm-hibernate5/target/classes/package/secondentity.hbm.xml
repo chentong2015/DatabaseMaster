@@ -5,7 +5,6 @@
 
 <hibernate-mapping>
     <class name="com.hibernate5.testing.package2.MyEntity"
-           entity-name="com.hibernate5.testing.package2.MyEntity"
            schema="public"
            table="t_second_entity">
         <id name="id">

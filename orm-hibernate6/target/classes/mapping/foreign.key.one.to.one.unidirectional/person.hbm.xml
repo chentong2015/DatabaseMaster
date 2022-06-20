@@ -17,8 +17,5 @@
                      column="card_id"
                      unique="true"
                      foreign-key="person_id_card"/>
-
-        <!-- one-to-one没有办法实现外键的一对一关联
-        <one-to-one name="idCard" class="IdCard" cascade="save-update" foreign-key="person_id_card"/> -->
     </class>
 </hibernate-mapping>
