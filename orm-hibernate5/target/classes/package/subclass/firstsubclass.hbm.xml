@@ -4,9 +4,10 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <!-- 从super class类型继承字段和属性 -->
+    <!-- 从super class类型继承字段和属性
+         discriminator-value="subclass" 设置类型区分的值 -->
     <subclass name="com.hibernate5.testing.package1.SubClass"
               entity-name="com.hibernate5.testing.package1.SubClass"
-              extends="com.hibernate5.testing.datamodel.AbstractSuperClass"
+              extends="com.hibernate5.testing.basemodel.AbstractSuperClass"
               discriminator-value="subclass"/>
 </hibernate-mapping>

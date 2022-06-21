@@ -6,6 +6,6 @@
 <hibernate-mapping>
     <subclass name="com.hibernate5.testing.package2.SubClass"
               entity-name="com.hibernate5.testing.package2.SubClass"
-              extends="com.hibernate5.testing.datamodel.AbstractSuperClass"
+              extends="com.hibernate5.testing.basemodel.AbstractSuperClass"
               discriminator-value="subclassplus"/>
 </hibernate-mapping>

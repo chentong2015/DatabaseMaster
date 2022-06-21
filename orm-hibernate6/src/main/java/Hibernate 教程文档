@@ -12,5 +12,3 @@ https://docs.jboss.org/hibernate/orm/6.0/userguide/html_single/Hibernate_User_Gu
 
 设置Natural-Id附加的Id作为查询
 https://docs.jboss.org/hibernate/orm/5.0/mappingGuide/en-US/html/ch07.html
-关于Inheritance mapping继承关系表的设计
-https://docs.jboss.org/hibernate/core/3.3/reference/fr-FR/html/inheritance.html

@@ -3,9 +3,11 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
+<!-- 这里的抽象类会在数据库中建立表格 -->
 <hibernate-mapping>
-    <class name="com.hibernate5.testing.datamodel.AbstractSuperClass" abstract="true">
+    <class name="com.hibernate5.testing.basemodel.AbstractSuperClass" abstract="true">
         <id type="double" name="reference"/>
+        <!-- TODO. 设置列名称用于区分子类的类型 -->
         <discriminator column="super_class"/>
     </class>
 </hibernate-mapping>

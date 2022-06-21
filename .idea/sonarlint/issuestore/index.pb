@@ -199,11 +199,21 @@ Iorm-hibernate6/src/main/java/hibernate/framework/apis/query/HqlQuery.java,6\d\
 Lorm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateEntity.java,2\d\2d113aa6d5e769a889eebe8fa22ef89cb558ed19
 F
 orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
-j
-:orm-hibernate5/src/main/java/Hibernate Mapping映射问题,e\a\eaa1e90f250bc087cd35144c4fca5dedf4dd5068
 y
 Iorm-hibernate5/src/main/java/com/hibernate5/testing/datamodel/Person.java,c\3\c3f750d7a81af738bd95f3fa11d129cf829b2d58
 y
 Iorm-hibernate5/src/main/java/com/hibernate5/testing/datamodel/Sample.java,8\d\8dc02c2f016e768f014c7fbc8248bbccc770ebe7
 �
 Qorm-hibernate5/src/main/java/com/hibernate5/testing/HibernateMetadataSources.java,d\6\d69ac46f45658dade1712b2f0ded43187914cacc
+z
+Jorm-hibernate5/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\d\9dfd8e298931c8043095ba3add5b9679ebcd650f
+z
+Jorm-hibernate5/src/main/java/com/hibernate5/testing/package1/MyEntity.java,7\6\7613a03371e7b903be6715030e3a64f2aa56090c
+z
+Jorm-hibernate5/src/main/java/com/hibernate5/testing/package2/SubClass.java,e\b\ebb20bb7f113036d5f19f4bbc96116f9f949d61c
+z
+Jorm-hibernate5/src/main/java/com/hibernate5/testing/package1/SubClass.java,2\4\245cd614da901b59e5088eb94900315dcad1fef6
+F
+orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
+~
+Norm-hibernate5/src/main/java/com/hibernate5/testing/package2/SubClassPlus.java,4\7\472d68c8ba5ad3254615e182434ffded13516d7b

@@ -1,4 +1,4 @@
-package com.hibernate5.testing.datamodel;
+package com.hibernate5.testing.basemodel;
 
 public abstract class AbstractSuperClass {
 
