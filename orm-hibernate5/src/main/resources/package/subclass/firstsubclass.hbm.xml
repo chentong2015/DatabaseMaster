@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <!-- 从super class类型继承字段和属性 -->
+    <subclass name="com.hibernate5.testing.package1.SubClass"
+              entity-name="com.hibernate5.testing.package1.SubClass"
+              extends="com.hibernate5.testing.datamodel.AbstractSuperClass"
+              discriminator-value="subclass"/>
+</hibernate-mapping>

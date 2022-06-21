@@ -63,8 +63,6 @@ z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/query/HqlRawQuery.java,f\8\f85e100d01f60677ac6ba481afbef504efde47a6
 z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/query/SqlRawQuery.java,7\e\7e45247cee8d549635d91f71f6d7fd33704b547f
-z
-Jorm-hibernate5/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\d\9dfd8e298931c8043095ba3add5b9679ebcd650f
 y
 Idatabase-orm-design/src/main/java/storage/engine/存储引擎系统设计,2\3\23bc85534e58d030ec10d4094d86b31b85cc73c7
 �
@@ -195,3 +193,17 @@ q
 Aorm-hibernate6/src/main/java/jpa/api/EntityManagerOperations.java,a\f\af169c9a414148d6a9789bce0df6dc4051f04c4a
 m
 =orm-hibernate6/src/main/java/jpa/api/HibernateJpaApiDemo.java,c\d\cd2b69413ff7e7baef1642976f8ff45791595f4e
+y
+Iorm-hibernate6/src/main/java/hibernate/framework/apis/query/HqlQuery.java,6\d\6da2a7c5b9a4f8af1cf78275fb7c4286a73da6ec
+|
+Lorm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateEntity.java,2\d\2d113aa6d5e769a889eebe8fa22ef89cb558ed19
+F
+orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
+j
+:orm-hibernate5/src/main/java/Hibernate Mapping映射问题,e\a\eaa1e90f250bc087cd35144c4fca5dedf4dd5068
+y
+Iorm-hibernate5/src/main/java/com/hibernate5/testing/datamodel/Person.java,c\3\c3f750d7a81af738bd95f3fa11d129cf829b2d58
+y
+Iorm-hibernate5/src/main/java/com/hibernate5/testing/datamodel/Sample.java,8\d\8dc02c2f016e768f014c7fbc8248bbccc770ebe7
+�
+Qorm-hibernate5/src/main/java/com/hibernate5/testing/HibernateMetadataSources.java,d\6\d69ac46f45658dade1712b2f0ded43187914cacc

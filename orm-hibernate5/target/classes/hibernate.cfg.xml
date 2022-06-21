@@ -23,6 +23,12 @@
         <mapping resource="package/firstentity.hbm.xml"/>
         <mapping resource="package/secondentity.hbm.xml"/>
 
+        <!-- TODO. 测试继承链上的class名称是否允许重复 -->
+        <mapping resource="package/subclass/abstractsuperclass.hbm.xml"/>
+        <!-- 设置的文件在添加mapping绑定的时候，如果有jpaEntityName重复则报错 !! -->
+        <mapping resource="package/subclass/firstsubclass.hbm.xml"/>
+        <mapping resource="package/subclass/secondsubclass.hbm.xml"/>
+
         <mapping resource="mapping/event.hbm.xml"/>
         <mapping resource="mapping/fees.hbm.xml"/>
 

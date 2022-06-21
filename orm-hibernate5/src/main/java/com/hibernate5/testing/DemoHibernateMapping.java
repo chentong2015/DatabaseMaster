@@ -18,6 +18,7 @@ import java.util.List;
 // 2. Hibernate v5.6.9
 //    2.1 没有设置entity-name名称，HQL中如果有重名的POJO class名称，则报错 !!
 //    2.2 如果设置entity-name名称，则必须使用设置的名称
+//        如果这里设置的是全路径的名称，则class.getSimpleName()或者class.getName()都能查询
 public class DemoHibernateMapping {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
@@ -30,7 +31,7 @@ public class DemoHibernateMapping {
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
         // 使用class name来取类型的全路径名称(具有唯一性)
-        String hqlQuery = "from " + MyEntity.class.getName();
+        String hqlQuery = "from " + MyEntity.class.getSimpleName();
         System.out.println(hqlQuery);
 
         Query<MyEntity> query = session.createQuery(hqlQuery, MyEntity.class);
