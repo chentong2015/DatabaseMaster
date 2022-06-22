@@ -10,5 +10,9 @@ https://docs.jboss.org/hibernate/orm/current/quickstart/html_single
 https://docs.jboss.org/hibernate/orm/5.6/userguide/html_single/Hibernate_User_Guide.html
 https://docs.jboss.org/hibernate/orm/6.0/userguide/html_single/Hibernate_User_Guide.html
 
+TODO. Hibernate v6和Hibernate v5版本之间的差异较大
+https://docs.jboss.org/hibernate/orm/6.0/javadocs/deprecated-list.html
+https://github.com/hibernate/hibernate-orm/wiki/Migration-Guides
+
 设置Natural-Id附加的Id作为查询
 https://docs.jboss.org/hibernate/orm/5.0/mappingGuide/en-US/html/ch07.html

@@ -42,9 +42,8 @@ public class DemoNativeHibernateAPI {
         }
     }
 
-    // TODO. Hibernate操作对象:
-    // 1. 在查询的时候，传递的主键id参数; 查询时必须
-    // 2.
+    // TODO. Hibernate操作对象
+    // 查询时必须执行指定类型的主键值，满足java id的类型
     private void testGetObject(Session session, Object object) {
         session.get(Book.class, 1);
 

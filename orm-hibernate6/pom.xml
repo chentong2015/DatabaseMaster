@@ -12,7 +12,6 @@
     <artifactId>orm-hibernate</artifactId>
 
     <dependencies>
-        <!-- TODO. 6.0.2.Final最新版本和5.6版本之间的差异较大 -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>

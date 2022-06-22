@@ -1,4 +1,4 @@
-package com.hibernate5.testing.datamodel;
+package jpa.api;
 
 import javax.persistence.*;
 

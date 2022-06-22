@@ -1,7 +1,5 @@
-package com.hibernate5.testing;
+package jpa.api;
 
-import com.hibernate5.testing.datamodel.Person;
-import com.hibernate5.testing.datamodel.Sample;
 import com.hibernate5.testing.query.SqlRawQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -12,7 +10,7 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class DemoHibernateEntity {
+public class HibernateJpaEntityDemo {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
     static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
@@ -24,7 +22,7 @@ public class DemoHibernateEntity {
         for (Person person : personList) {
             System.out.println(person);
         }
-        
+
         SqlRawQuery sqlRawQuery = new SqlRawQuery("Select firstname from t_person");
         Query sqlQuery = sqlRawQuery.getQuery(session);
         List<String> firstnameList = sqlQuery.getResultList();

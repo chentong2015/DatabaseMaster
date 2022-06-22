@@ -12,8 +12,7 @@
         <joined-subclass name="com.hibernate5.testing.package1.SubSuperClass"
                          entity-name="com.hibernate5.testing.package1.SubSuperClass"
                          table="t_super_subclass1">
-            <!-- 这里的id要和super class的主键一致 -->
-            <key column="index"/>
+            <key column="index"/> <!-- 必须和super class主键的名称一致 -->
             <property type="string" name="subName1" column="sub_name1"/>
         </joined-subclass>
 
