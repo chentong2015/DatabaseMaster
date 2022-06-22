@@ -10,6 +10,9 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
+// TODO. Hibernate Jpa annotation Mapping映射问题
+// 1. @Entity() 如果没有设置名称，使用默认的类型名称
+// 2. @Entity(name = "entity-name") 如果设置名称为全路径，则必须使用相同的值 ?
 public class HibernateJpaEntityDemo {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
@@ -17,7 +20,8 @@ public class HibernateJpaEntityDemo {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        Query<Person> query = session.createQuery("from Person", Person.class);
+        String hqlQuery = "From " + Person.class.getName();
+        Query<Person> query = session.createQuery(hqlQuery, Person.class);
         List<Person> personList = query.getResultList();
         for (Person person : personList) {
             System.out.println(person);

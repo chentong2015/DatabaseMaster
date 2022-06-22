@@ -1,20 +1,25 @@
-package jpa.api;
+package jpa.api.package1;
 
 import javax.persistence.*;
 
-// TODO. 可以将@Column注解写在getter方法, 而不需要标注在属性上
 @Entity
-@Table(name = "t_person")
-public class Sample {
-
-    private int id;
-    private String firstname;
-    private String lastname;
-    private String twitter;
+@Table(name = "t_person_1")
+public class Person {
 
     @Id
     @Column(name = "id")
     @GeneratedValue(generator = "increment")
+    private int id;
+
+    @Column(name = "firstname", length = 255)
+    private String firstname;
+
+    @Column(name = "lastname", length = 255)
+    private String lastname;
+
+    @Column(name = "twitter", length = 15)
+    private String twitter;
+
     public int getId() {
         return id;
     }
@@ -23,7 +28,6 @@ public class Sample {
         this.id = id;
     }
 
-    @Column(name = "firstname", length = 255)
     public String getFirstname() {
         return firstname;
     }
@@ -32,7 +36,6 @@ public class Sample {
         this.firstname = firstname;
     }
 
-    @Column(name = "lastname", length = 255)
     public String getLastname() {
         return lastname;
     }
@@ -41,7 +44,6 @@ public class Sample {
         this.lastname = lastname;
     }
 
-    @Column(name = "twitter", length = 15)
     public String getTwitter() {
         return twitter;
     }
@@ -52,7 +54,7 @@ public class Sample {
 
     @Override
     public String toString() {
-        return "Sample{" +
+        return "Person{" +
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +

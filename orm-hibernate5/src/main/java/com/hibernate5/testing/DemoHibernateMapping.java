@@ -11,7 +11,7 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-// TODO. Hibernate Mapping映射问题
+// TODO. Hibernate xml Mapping映射问题
 // 1. Hibernate v5.3.9
 //    1.1 没有设置entity-name名称，HQL可以使用默认的class名称或全路径名称
 //    1.2 如果设置entity-name名称，则必须使用设置的名称(名称中不能含有特殊的符号) !!

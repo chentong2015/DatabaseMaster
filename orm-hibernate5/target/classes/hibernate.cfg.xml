@@ -37,7 +37,8 @@
         <mapping resource="mapping/fees.hbm.xml"/>
 
         <!-- 指定映射的类型Entity Class -->
-        <mapping class="com.hibernate5.testing.datamodel.Person"/>
-        <mapping class="com.hibernate5.testing.datamodel.Sample"/>
+        <mapping class="jpa.api.Person"/>
+        <mapping class="jpa.api.package1.Person"/>
+        <mapping class="jpa.api.Sample"/>
     </session-factory>
 </hibernate-configuration>

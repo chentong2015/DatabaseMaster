@@ -33,11 +33,12 @@
         <mapping resource="package/union.subclass/superclass.hbm.xml"/>
         <mapping resource="package/union.subclass/superclass2.hbm.xml"/> -->
 
-        <mapping resource="jpa.api/event.hbm.xml"/>
-        <mapping resource="jpa.api/fees.hbm.xml"/>
+        <mapping resource="mapping/event.hbm.xml"/>
+        <mapping resource="mapping/fees.hbm.xml"/>
 
         <!-- 指定映射的类型Entity Class -->
         <mapping class="jpa.api.Person"/>
+        <mapping class="jpa.api.package1.Person"/>
         <mapping class="jpa.api.Sample"/>
     </session-factory>
 </hibernate-configuration>
