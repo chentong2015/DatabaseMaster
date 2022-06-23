@@ -27,8 +27,7 @@ public class HibernateJpaEntityDemo {
         for (Person person : personList) {
             System.out.println(person);
         }
-
-        // Check this
+        
         String hqlQuery = "Select p.firstname FROM" + Person.class.getName() + " p where p.id = :id";
         Optional<Person> query1 = session.createQuery(hqlQuery, Person.class)
                 .setParameter("id", 4)
