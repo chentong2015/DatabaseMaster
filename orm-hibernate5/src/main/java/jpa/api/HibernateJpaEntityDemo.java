@@ -9,6 +9,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.query.Query;
 
 import java.util.List;
+import java.util.Optional;
 
 // TODO. Hibernate Jpa annotation Mapping映射问题
 // 1. @Entity() 如果没有设置名称，使用默认的类型名称
@@ -20,12 +21,18 @@ public class HibernateJpaEntityDemo {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        String hqlQuery = "From " + Person.class.getName();
-        Query<Person> query = session.createQuery(hqlQuery, Person.class);
+
+        Query<Person> query = session.createQuery("From " + Person.class.getName(), Person.class);
         List<Person> personList = query.getResultList();
         for (Person person : personList) {
             System.out.println(person);
         }
+
+        // Check this
+        String hqlQuery = "Select p.firstname FROM" + Person.class.getName() + " p where p.id = :id";
+        Optional<Person> query1 = session.createQuery(hqlQuery, Person.class)
+                .setParameter("id", 4)
+                .stream().findFirst();
 
         SqlRawQuery sqlRawQuery = new SqlRawQuery("Select firstname from t_person");
         Query sqlQuery = sqlRawQuery.getQuery(session);
@@ -34,6 +41,7 @@ public class HibernateJpaEntityDemo {
             System.out.println(firstname);
         }
         session.close();
+        sessionFactory.close();
     }
 
     private void testGetSampleData() {
@@ -46,3 +54,5 @@ public class HibernateJpaEntityDemo {
         session.close();
     }
 }
+
+

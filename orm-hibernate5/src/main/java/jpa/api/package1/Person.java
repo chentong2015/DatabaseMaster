@@ -2,7 +2,7 @@ package jpa.api.package1;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "jpa.api.package1.Person")
 @Table(name = "t_person_1")
 public class Person {
 

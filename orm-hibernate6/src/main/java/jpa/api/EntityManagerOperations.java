@@ -102,4 +102,12 @@ public class EntityManagerOperations {
         em.remove(book);
         em.getTransaction().commit();
     }
+
+    // 创建HQL查询语言
+    // String selectProfiles = "DELETE FROM " + MyClass.class.getSimpleName() + " p WHERE p.name = :name";
+    // try {
+    //     entityManager.createQuery(selectProfiles)
+    //            .setParameter("name", groupName)
+    //            .executeUpdate();
+    // }
 }

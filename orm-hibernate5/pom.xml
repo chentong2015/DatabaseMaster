@@ -12,8 +12,8 @@
     <artifactId>orm-hibernate5</artifactId>
 
     <dependencies>
-        <!-- TODO. 在低版本5.3.9.Final测试条件下，不会抛出DuplicateMappingException的问题 !!
-                需要補充jaxb-api xml等相关的依赖 -->
+        <!-- TODO. 在版本5.3.9.Final测试条件下，需要補充jaxb-api xml等相关的依赖
+                   不会抛出DuplicateMappingException的问题 !!-->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>

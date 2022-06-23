@@ -16,19 +16,32 @@ public class UnidirectionalManyToOne {
             session = HibernateSessionUtil.getSession();
             transaction = session.beginTransaction();
 
-            Grade grade1 = new Grade("basic");
-            Grade grade2 = new Grade("master");
+            // 先存储One-端的数据，Many-端外键指向的数据
+            Grade grade1 = new Grade("basic 1");
+            Grade grade2 = new Grade("master 1");
             session.persist(grade1);
             session.persist(grade2);
-            Student student1 = new Student("name1", 10, grade1);
-            Student student2 = new Student("name2", 20, grade1);
-            Student student3 = new Student("name3", 30, grade2);
+            hibernate.framework.apis.mapping.unidirectional.many.to.one.package1.Grade grade11 =
+                    new hibernate.framework.apis.mapping.unidirectional.many.to.one.package1.Grade("basic 11");
+            hibernate.framework.apis.mapping.unidirectional.many.to.one.package1.Grade grade22 =
+                    new hibernate.framework.apis.mapping.unidirectional.many.to.one.package1.Grade("master 11");
+            session.persist(grade11);
+            session.persist(grade22);
+
+            // 再存储Many-端的对象，设置对象属性的值
+            Student student1 = new Student("name11", 15, grade1);
+            student1.setGrade1(grade11);
+            Student student2 = new Student("name22", 25, grade1);
+            student2.setGrade1(grade22);
+            Student student3 = new Student("name33", 35, grade2);
+            student3.setGrade1(grade22);
             session.persist(student1);
             session.persist(student2);
             session.persist(student3);
 
             transaction.commit();
         } catch (Exception exception) {
+            exception.printStackTrace();
             transaction.rollback();
         } finally {
             HibernateSessionUtil.closeSession();

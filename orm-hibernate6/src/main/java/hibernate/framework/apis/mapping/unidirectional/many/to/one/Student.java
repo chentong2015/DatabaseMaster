@@ -9,6 +9,7 @@ public class Student implements Serializable {
     private int age;
     // many-to-one 用于外键映射关系的字段
     private Grade grade;
+    private hibernate.framework.apis.mapping.unidirectional.many.to.one.package1.Grade grade1;
 
     public Student() {
     }
@@ -49,5 +50,13 @@ public class Student implements Serializable {
 
     public void setGrade(Grade grade) {
         this.grade = grade;
+    }
+
+    public hibernate.framework.apis.mapping.unidirectional.many.to.one.package1.Grade getGrade1() {
+        return grade1;
+    }
+
+    public void setGrade1(hibernate.framework.apis.mapping.unidirectional.many.to.one.package1.Grade grade1) {
+        this.grade1 = grade1;
     }
 }
