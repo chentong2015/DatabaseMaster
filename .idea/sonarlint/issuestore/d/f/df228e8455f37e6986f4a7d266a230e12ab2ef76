@@ -1,0 +1,27 @@
+
+d
+java:S2259^"IA "NullPointerException" could be thrown; "transaction" is nullable here.(ì‚—ôúÿÿÿÿ
+d
+java:S2259 "IA "NullPointerException" could be thrown; "transaction" is nullable here.(ì‚—ôúÿÿÿÿ
+d
+java:S2259u"IA "NullPointerException" could be thrown; "transaction" is nullable here.(ì‚—ôúÿÿÿÿ
+M
+java:S1135&"2Complete the task associated to this TODO comment.(×‰ûíüÿÿÿÿ
+O
+java:S1854?"9Remove this useless assignment to local variable "book1".(Ê¥Ü’
+H
+java:S1135<"2Complete the task associated to this TODO comment.(–»
+H
+java:S1135>"2Complete the task associated to this TODO comment.(äÇ‹‘
+B
+java:S1874?",Remove this use of "load"; it is deprecated.(Ê¥Ü’
+@
+java:S1481?"*Remove this unused "book1" local variable.(Ê¥Ü’
+T
+java:S1135M"2Complete the task associated to this TODO comment.(»…‘Ëúÿÿÿÿ8ç°Ìæ–0
+N
+java:S1144"9Remove this unused private "testSaveUpdateObject" method.(©Ö¢
+U
+java:S11448"8Remove this unused private "testLoadClearObject" method.(Ï¦ß8İ°Ôæ–0
+P
+java:S1144P"5Remove this unused private "testUpdateObject" method.(àÉ‚¯ûÿÿÿÿ

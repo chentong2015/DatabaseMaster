@@ -1,6 +1,6 @@
 package jpa.api;
 
-import com.hibernate5.testing.query.SqlRawQuery;
+import jpa.api.query.HqlRawQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -9,10 +9,9 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.query.Query;
 
 import java.util.List;
-import java.util.Optional;
 
 // TODO. Hibernate Jpa annotation Mapping映射问题
-// 1. @Entity() 如果没有设置名称，使用默认的类型名称
+// 1. @Entity() 没有设置名称，使用默认类型名称或者全路径都能查询 !!
 // 2. @Entity(name = "entity-name") 如果设置名称为全路径，则必须使用全路径来查询 !!
 public class HibernateJpaEntityDemo {
 
@@ -21,28 +20,14 @@ public class HibernateJpaEntityDemo {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-
-        Query<Person> query = session.createQuery("From " + Person.class.getName(), Person.class);
-        List<Person> personList = query.getResultList();
-        for (Person person : personList) {
-            System.out.println(person);
-        }
-        
-        String hqlQuery = "Select p.firstname FROM" + Person.class.getName() + " p where p.id = :id";
-        Optional<Person> query1 = session.createQuery(hqlQuery, Person.class)
-                .setParameter("id", 4)
-                .stream().findFirst();
-
-        SqlRawQuery sqlRawQuery = new SqlRawQuery("Select firstname from t_person");
-        Query sqlQuery = sqlRawQuery.getQuery(session);
-        List<String> firstnameList = sqlQuery.getResultList();
-        for (String firstname : firstnameList) {
-            System.out.println(firstname);
-        }
+        HqlRawQuery.testHqlQuery(session);
+        // testSqlQuery(session);
         session.close();
         sessionFactory.close();
     }
 
+  
+    // 测试不同的Entity注解的标注方式，也能查询到数据
     private void testGetSampleData() {
         Session session = sessionFactory.openSession();
         Query<Sample> query = session.createQuery("from Sample", Sample.class);

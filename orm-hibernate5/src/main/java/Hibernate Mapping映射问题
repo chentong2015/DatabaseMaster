@@ -5,10 +5,11 @@ Hibernate使用规范
   Retrieve PersistentClass objects without failing mappings with same entity name
   https://hibernate.atlassian.net/browse/HHH-13149?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aall-tabpanel
 
-报错的异常信息: JPAEntityName必须全集唯一
-  Exception in thread "main" org.hibernate.DuplicateMappingException:
-  The [master.hibernate5.testing.package1.MyEntity] and [master.hibernate5.testing.package2.MyEntity]
-  entities share the same JPA entity name: [MyEntity] which is not allowed!
+TODO. Hibernate Mapping Entity名称映射重复解决方案
+DuplicationMappingException: entities share the same JPA entity name
+// 1. HQL: 无论设没设置entity-name为全路径，都推荐使用entity的全路径来查询
+// 2. SQL: 使用entity对应的table名称(具有唯一性)来查询 =================================
+
 
 TODO. entityName和jpaEntityName有什么区别? (AbstractEntitySourceImpl.java源码)
 1. 两者都是Entity的名称

@@ -43,11 +43,10 @@ public class HibernateJpaApiDemo {
         List<Object[]> bookList = entityManager.createNativeQuery("SELECT id, name FROM Person")
                 .getResultList();
 
-        // 提供实体的类型
-        List<Book> books1 = entityManager.createNativeQuery("SELECT * FROM Person", Book.class)
-                .getResultList();
-        List<Book> bookList1 = entityManager.createNativeQuery(
-                        "SELECT id, name, nickName, address, createdOn, version " + "FROM Person", Book.class)
-                .getResultList();
+        // TODO. 提供查询出来的结果对应的类型，如果是原实体类型，则必须查询出所有的字段
+        String sql = "SELECT * FROM Person";
+        List<Book> books1 = entityManager.createNativeQuery(sql, Book.class).getResultList();
+        String sqlString = "SELECT id, name, nickName, address, createdOn, version " + "FROM Person";
+        List<Book> bookList1 = entityManager.createNativeQuery(sqlString, Book.class).getResultList();
     }
 }

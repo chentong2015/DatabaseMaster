@@ -7,7 +7,7 @@ import java.util.List;
 
 public class EntityNamedService {
 
-    // TODO. JPA使用实体类型上定义的NamedQuery具名查询来查询数据
+    // TODO. 纯JPA的使用方式: 通过实体类型上定义的NamedQuery具名查询来查询数据
     public List<EntityNamedQuery> findAllEntitiesNamed() {
         EntityManagerFactory managerFactory = Persistence.createEntityManagerFactory("unit name");
         EntityManager entityManager = managerFactory.createEntityManager();

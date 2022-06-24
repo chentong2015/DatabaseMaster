@@ -1,4 +1,4 @@
-package jpa.api;
+package jpa.api.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 

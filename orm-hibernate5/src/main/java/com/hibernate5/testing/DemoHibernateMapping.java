@@ -1,7 +1,7 @@
 package com.hibernate5.testing;
 
 import com.hibernate5.testing.package2.MyEntity;
-import com.hibernate5.testing.query.SqlRawQuery;
+import jpa.api.query.SqlRawQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -16,13 +16,12 @@ import java.util.List;
 //    1.1 没有设置entity-name名称，HQL可以使用默认的class名称或全路径名称
 //    1.2 如果设置entity-name名称，则必须使用设置的名称(名称中不能含有特殊的符号) !!
 // 2. Hibernate v5.6.9
-//    2.1 没有设置entity-name名称，HQL中如果有重名的POJO class名称，则报错: DuplicationMappingException
-//        class.getSimpleName()或者class.getName()都能查询 !!
+//    2.1 没有设置entity-name名称
+//        HQL中如果有重名的POJO class名称，则报错: DuplicationMappingException: entities share the same JPA entity name
+//        SomeClass.class.getName()或者class.getSimpleName()都能查询 !!
 //    2.2 如果设置entity-name名称，则必须使用设置的名称
-//        如果设置为全路径，则class.getSimpleName()或者class.getName()都能查询
-//           如果有重名的POJO class名称，在使用HQL getSimpleName()时会报错: TypedQuery is incompatible
-// TODO. 除非使用JPA @Entity的形式，否则代码中需要使用.getName()全路径的形式
-//       对于通常的SQL查询方式，直接使用entity对应的table名称(具有唯一性)来查询 !!
+//        如果有重名的POJO class名称，在使用HQL getSimpleName()时会报错: TypedQuery is incompatible
+//        如果设置为全路径，则class.getSimpleName()或者class.getName()都能查询 !!
 public class DemoHibernateMapping {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
