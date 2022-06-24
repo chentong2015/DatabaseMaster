@@ -154,8 +154,6 @@ Form-hibernate6/src/main/java/id/geneator/MyStoredTableIdGenerator.java,e\3\e30
 
 Qorm-hibernate5/src/main/java/com/hibernate5/testing/HibernateMetadataSources.java,d\6\d69ac46f45658dade1712b2f0ded43187914cacc
 z
-Jorm-hibernate5/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\d\9dfd8e298931c8043095ba3add5b9679ebcd650f
-z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/package1/MyEntity.java,7\6\7613a03371e7b903be6715030e3a64f2aa56090c
 z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/package2/SubClass.java,e\b\ebb20bb7f113036d5f19f4bbc96116f9f949d61c

@@ -1,7 +1,6 @@
 package com.hibernate5.testing;
 
 import com.hibernate5.testing.package2.MyEntity;
-import jpa.api.query.SqlRawQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -33,23 +32,30 @@ public class DemoHibernateMapping {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        // 使用class name来取类型的全路径名称(具有唯一性)
+        testHqlQuery(session);
+        testSqlRawQuery(session);
+        session.close();
+    }
+
+    // 使用class name来取类型的全路径名称(具有唯一性)
+    private static void testHqlQuery(Session session) {
         String hqlQuery = "from " + MyEntity.class.getSimpleName();
         System.out.println(hqlQuery);
-
         Query<MyEntity> query = session.createQuery(hqlQuery, MyEntity.class);
         List<MyEntity> myEntities = query.getResultList();
         for (MyEntity entity : myEntities) {
             System.out.println(entity);
         }
+    }
 
-        // 测试SqlQuery查询: 自定义返回的字段, 使用映射到数据库的table名称
-        SqlRawQuery sqlRawQuery = new SqlRawQuery("Select name from t_second_entity");
-        Query sqlQuery = sqlRawQuery.getQuery(session);
-        List<String> names = sqlQuery.getResultList();
+    // 测试SqlQuery查询: 是否只能使用DB table的名称来做查询 ?
+    // 自定义返回的字段, 使用映射到数据库的table名称
+    private static void testSqlRawQuery(Session session) {
+        String sql = "Select name from t_second_entity";
+        String sqlQuery = "Select name from " + MyEntity.class.getName();
+        List<String> names = session.createSQLQuery(sqlQuery).getResultList();
         for (String name : names) {
-            System.out.println(name);
+            System.out.println("Found name: " + name);
         }
-        session.close();
     }
 }

@@ -1,13 +1,14 @@
 package jpa.api.query;
 
-import jpa.api.Person;
 import org.hibernate.Session;
 import org.hibernate.query.NativeQuery;
 import org.hibernate.query.Query;
 
 import java.util.List;
+import java.util.Optional;
 
-// 创建原始的SQL查询语句 => 区别于HQL
+// TODO. 创建原始的SQL查询语句, 使用的表名必须是映射出来的DB中的table名称 !!
+// SQL语法异常: org.hibernate.exception.SQLGrammarException
 // session.createNativeQuery(sqlQuery)
 // session.createSQLQuery(sqlQuery)
 public class SqlRawQuery {
@@ -35,13 +36,18 @@ public class SqlRawQuery {
     // TODO. 测试复杂的查询语句和Entity Name的关系
     public static void testSqlQuery(Session session) {
         String sql = "Select firstname from t_person";
-        String sqlQuery = "Select firstname from " + Person.class.getSimpleName();
-
-        Query query = session.createSQLQuery(sqlQuery);
-        List<String> firstnameList = query.getResultList();
+        List<String> firstnameList = session.createSQLQuery(sql).getResultList();
         for (String firstname : firstnameList) {
             System.out.println(firstname);
         }
-        
+
+        String sqlQuery = "Select p.firstname from t_person p where p.id=:id";
+        Optional firstname = session.createSQLQuery(sqlQuery)
+                .setParameter("id", 4)
+                .getResultStream()
+                .findFirst();
+        if (firstname.isPresent()) {
+            System.out.println("Found name: " + firstname.get());
+        }
     }
 }

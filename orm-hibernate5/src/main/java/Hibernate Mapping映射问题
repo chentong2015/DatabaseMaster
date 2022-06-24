@@ -7,8 +7,8 @@ Hibernate使用规范
 
 TODO. Hibernate Mapping Entity名称映射重复解决方案
 DuplicationMappingException: entities share the same JPA entity name
-// 1. HQL: 无论设没设置entity-name为全路径，都推荐使用entity的全路径来查询
-// 2. SQL: 使用entity对应的table名称(具有唯一性)来查询 =================================
+1. HQL: 无论有没有设置entity-name为全路径，都推荐使用entity的全路径来查询
+2. SQL: 必须使用entity对应的数据库中table名称(具有唯一性)来查询
 
 
 TODO. entityName和jpaEntityName有什么区别? (AbstractEntitySourceImpl.java源码)

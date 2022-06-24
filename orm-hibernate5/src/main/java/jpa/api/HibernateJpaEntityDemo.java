@@ -1,6 +1,6 @@
 package jpa.api;
 
-import jpa.api.query.HqlRawQuery;
+import jpa.api.query.SqlRawQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -20,13 +20,12 @@ public class HibernateJpaEntityDemo {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        HqlRawQuery.testHqlQuery(session);
-        // testSqlQuery(session);
+        // HqlRawQuery.testHqlQuery(session);
+        SqlRawQuery.testSqlQuery(session);
         session.close();
         sessionFactory.close();
     }
 
-  
     // 测试不同的Entity注解的标注方式，也能查询到数据
     private void testGetSampleData() {
         Session session = sessionFactory.openSession();
