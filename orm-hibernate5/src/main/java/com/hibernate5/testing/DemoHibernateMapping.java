@@ -33,7 +33,7 @@ public class DemoHibernateMapping {
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
         testHqlQuery(session);
-        testSqlRawQuery(session);
+        // testSqlRawQuery(session);
         session.close();
     }
 

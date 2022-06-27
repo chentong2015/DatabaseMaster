@@ -187,8 +187,6 @@ k
 ;orm-hibernate6/src/main/java/jpa/api/entity/EntityDemo.java,a\7\a7348b045af6dca0d07cd08a4e231eb5c780c6ed
 Å
 Qorm-hibernate6/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,d\b\db69bb0ed714b875fa3e69b2b804db5dd6b2786b
-F
-orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
 ì
 corm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/many/to/one/Grade.java,0\e\0e9fd4f702d1905e14420ce479ea6a6f93186b43
 ú
@@ -223,3 +221,23 @@ x
 Horm-hibernate6/src/main/java/jpa/api/named/query/EntityNamedService.java,4\5\45c94bffaee49ad391ddd9b617d2e1af511fc5af
 v
 Form-hibernate6/src/main/java/jpa/api/named/query/EntityNamedQuery.java,1\6\16bc9bc342505e0cf288480151d3503b28b662b1
+`
+0orm-hibernate5/src/main/java/jpa/api/Sample.java,3\a\3ad27584efa3305119db8ae3d6f4d42cc73a9f1a
+q
+Aorm-hibernate6/src/main/java/jpa/api/EntityManagerOperations.java,a\f\af169c9a414148d6a9789bce0df6dc4051f04c4a
+m
+=orm-hibernate6/src/main/java/jpa/api/HibernateJpaApiDemo.java,c\d\cd2b69413ff7e7baef1642976f8ff45791595f4e
+z
+Jorm-hibernate5/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\d\9dfd8e298931c8043095ba3add5b9679ebcd650f
+j
+:orm-hibernate5/src/main/java/Hibernate MappingÊò†Â∞ÑÈóÆÈ¢ò,e\a\eaa1e90f250bc087cd35144c4fca5dedf4dd5068
+k
+;orm-hibernate5/src/main/java/jpa/api/query/SqlRawQuery.java,5\d\5d3b83fa262518eeadb4ea4a87840831a09405bc
+F
+orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
+`
+0orm-hibernate5/src/main/java/jpa/api/Person.java,d\a\da3b09e0b7758a537ed3de723ffd8c808cb9cabe
+k
+;orm-hibernate5/src/main/java/jpa/api/query/HqlRawQuery.java,9\8\98e3253a33df8407d4c94eddc51372d775d154dd
+p
+@orm-hibernate5/src/main/java/jpa/api/HibernateJpaEntityDemo.java,6\3\63589a6c3ae8bcd3f3c8aed437d64ae95d4b4866
