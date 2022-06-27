@@ -1,6 +1,6 @@
 package jpa.api;
 
-import jpa.api.query.SqlRawQuery;
+import jpa.api.query.HqlRawQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -20,8 +20,8 @@ public class HibernateJpaEntityDemo {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        // HqlRawQuery.testHqlQuery(session);
-        SqlRawQuery.testSqlQuery(session);
+        HqlRawQuery.testHqlQuery(session);
+        // SqlRawQuery.testSqlQuery(session);
         session.close();
         sessionFactory.close();
     }

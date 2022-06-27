@@ -3,9 +3,15 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
+<!-- TODO. 如果Super Class设置了entity-name标签的值，则它的所有SubClass都必须在extends=""使用改名称来查找
+           如果Super Class没有设置，则SubClass子类extends=""使用母类的全路径来查找 !!
+     HibernateException: Not all named super-types (extends) were found -->
+
 <!-- 这里的抽象类会在数据库中建立表格 -->
 <hibernate-mapping>
-    <class name="com.hibernate5.testing.basemodel.AbstractSuperClass" abstract="true">
+    <class name="com.hibernate5.testing.basemodel.AbstractSuperClass"
+           entity-name="com.hibernate5.testing.basemodel.AbstractSuperClassTest"
+           abstract="true">
         <id type="double" name="reference"/>
         <!-- TODO. 设置列名称用于区分子类的类型 -->
         <discriminator column="super_class"/>

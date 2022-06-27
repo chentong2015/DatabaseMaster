@@ -6,7 +6,8 @@
 <!-- TODO. 设置的entity-name的值是为了区别同名的POJO Class, 推荐使用全路径名称(保证唯一性)
      如果设置了package包的名称，则同样必须设置成全路径的形式 -->
 <hibernate-mapping package="com.hibernate5.testing.package1">
-    <class name='MyEntity'
+    <!-- 这里name名称，单引号和双引号都可以 -->
+    <class name="MyEntity"
            entity-name="com.hibernate5.testing.package1.MyEntity"
            schema="public"
            table="t_first_entity">

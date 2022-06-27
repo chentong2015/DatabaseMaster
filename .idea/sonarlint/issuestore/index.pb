@@ -151,8 +151,6 @@ k
 ;orm-hibernate6/src/main/java/id/geneator/MyIdGenerator.java,0\2\0227e74ee11c8e59bb67c446f7bb3a8a8795d63b
 v
 Form-hibernate6/src/main/java/id/geneator/MyStoredTableIdGenerator.java,e\3\e30fffcf149f5bc6de0e132276a44d1bf3bac4af
-�
-Qorm-hibernate5/src/main/java/com/hibernate5/testing/HibernateMetadataSources.java,d\6\d69ac46f45658dade1712b2f0ded43187914cacc
 z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/package1/MyEntity.java,7\6\7613a03371e7b903be6715030e3a64f2aa56090c
 z
@@ -179,8 +177,6 @@ Iorm-hibernate6/src/main/java/hibernate/framework/apis/datamodel/Book.java,c\e\
 Oorm-hibernate5/src/main/java/com/hibernate5/testing/package1/SubSuperClass.java,2\1\21d3dbd1eedebc167373dea3696a8d09ebadfb27
 F
 orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
-�
-Xorm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateInheritanceMapping.java,d\7\d799752b4195ec37c49ae98ff14b11e3e0885113
 y
 Iorm-hibernate6/src/main/java/hibernate/framework/apis/query/HqlQuery.java,6\d\6da2a7c5b9a4f8af1cf78275fb7c4286a73da6ec
 k
@@ -223,21 +219,11 @@ v
 Form-hibernate6/src/main/java/jpa/api/named/query/EntityNamedQuery.java,1\6\16bc9bc342505e0cf288480151d3503b28b662b1
 `
 0orm-hibernate5/src/main/java/jpa/api/Sample.java,3\a\3ad27584efa3305119db8ae3d6f4d42cc73a9f1a
-q
-Aorm-hibernate6/src/main/java/jpa/api/EntityManagerOperations.java,a\f\af169c9a414148d6a9789bce0df6dc4051f04c4a
-m
-=orm-hibernate6/src/main/java/jpa/api/HibernateJpaApiDemo.java,c\d\cd2b69413ff7e7baef1642976f8ff45791595f4e
 z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\d\9dfd8e298931c8043095ba3add5b9679ebcd650f
 j
 :orm-hibernate5/src/main/java/Hibernate Mapping映射问题,e\a\eaa1e90f250bc087cd35144c4fca5dedf4dd5068
-k
-;orm-hibernate5/src/main/java/jpa/api/query/SqlRawQuery.java,5\d\5d3b83fa262518eeadb4ea4a87840831a09405bc
 F
 orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
 `
 0orm-hibernate5/src/main/java/jpa/api/Person.java,d\a\da3b09e0b7758a537ed3de723ffd8c808cb9cabe
-k
-;orm-hibernate5/src/main/java/jpa/api/query/HqlRawQuery.java,9\8\98e3253a33df8407d4c94eddc51372d775d154dd
-p
-@orm-hibernate5/src/main/java/jpa/api/HibernateJpaEntityDemo.java,6\3\63589a6c3ae8bcd3f3c8aed437d64ae95d4b4866

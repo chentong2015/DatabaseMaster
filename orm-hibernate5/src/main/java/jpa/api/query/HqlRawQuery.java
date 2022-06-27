@@ -7,8 +7,7 @@ import org.hibernate.query.Query;
 import java.util.List;
 import java.util.Optional;
 
-// 创建的是hibernate query查询语句
-// session.createQuery(hqlQuery)
+// session.createQuery(hqlQuery) 创建hibernate query查询语句
 public class HqlRawQuery {
 
     private final String hqlQuery;

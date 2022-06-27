@@ -8,6 +8,6 @@
          discriminator-value="subclass" 设置类型区分的值 -->
     <subclass name="com.hibernate5.testing.package1.SubClass"
               entity-name="com.hibernate5.testing.package1.SubClass"
-              extends="com.hibernate5.testing.basemodel.AbstractSuperClass"
+              extends="com.hibernate5.testing.basemodel.AbstractSuperClassTest"
               discriminator-value="subclass"/>
 </hibernate-mapping>

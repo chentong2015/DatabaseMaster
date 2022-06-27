@@ -19,9 +19,9 @@ public class DemoHibernateInheritanceMapping {
     static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
     public static void main(String[] args) {
-        // testTablePerClassHierarchy();
+        testTablePerClassHierarchy();
         // testTablePerSubclassAndPerConcreteClass();
-        testGetObjectsFromJoinedTable();
+        // testGetObjectsFromJoinedTable();
     }
 
     // TODO. 1. <subclass> 整个继承链只有一个数据表
@@ -30,11 +30,11 @@ public class DemoHibernateInheritanceMapping {
         Transaction transaction = session.beginTransaction();
 
         AbstractSuperClass superClass1 = new com.hibernate5.testing.package1.SubClass();
-        superClass1.setReference(10.0);
+        superClass1.setReference(12.0);
         AbstractSuperClass superClass2 = new com.hibernate5.testing.package1.SubClass();
-        superClass2.setReference(20.0);
+        superClass2.setReference(22.0);
         AbstractSuperClass superClass3 = new com.hibernate5.testing.package2.SubClass();
-        superClass3.setReference(30.0);
+        superClass3.setReference(32.0);
 
         session.persist(superClass1);
         session.persist(superClass2);
@@ -53,20 +53,20 @@ public class DemoHibernateInheritanceMapping {
         Transaction transaction = session.beginTransaction();
 
         SuperClass superClass = new SuperClass();
-        superClass.setReference(10.0);
+        superClass.setReference(11.0);
         superClass.setName("super class");
         com.hibernate5.testing.package1.SubSuperClass subSuperClass = new com.hibernate5.testing.package1.SubSuperClass();
-        subSuperClass.setReference(20.0);
+        subSuperClass.setReference(21.0);
         subSuperClass.setName("sub super class 1");
         subSuperClass.setSubName1("sub name 1");
         session.persist(superClass);
         session.persist(subSuperClass);
 
         SuperClass2 superClass2 = new SuperClass2();
-        superClass2.setReference(10.0);
+        superClass2.setReference(11.0);
         superClass2.setName("super class 2");
         com.hibernate5.testing.package2.SubSuperClass subSuperClass2 = new com.hibernate5.testing.package2.SubSuperClass();
-        subSuperClass2.setReference(20.0);
+        subSuperClass2.setReference(21.0);
         subSuperClass2.setName("sub super class 2");
         subSuperClass2.setSubName2("sub name 2");
         session.persist(superClass2);
