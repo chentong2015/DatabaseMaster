@@ -7,7 +7,9 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-// TODO. HQL: hibernate query language, 一种类似于sql的简化的查询语言
+// HQL: hibernate query language
+// 一种类似于sql的简化的查询语言
+// 必须满足特定的语句描述规则, 主要看查询时使用的JPA Entity Name名称
 public class HqlQuery {
 
     // "Book": @Entity标记的name名称，默认是和Class的名称一致

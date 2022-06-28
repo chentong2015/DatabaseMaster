@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <!-- 直接在映射文件中配置HQL查询的语句，注意使用的名称 -->
+    <query name="selectTest">from MyEntity entity where entity.name='test'</query>
+
+</hibernate-mapping>

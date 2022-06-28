@@ -1,5 +1,6 @@
 package com.hibernate5.testing;
 
+import org.hibernate.MappingException;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataBuilder;
@@ -13,12 +14,15 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.dialect.PostgresPlusDialect;
 import org.hibernate.mapping.PersistentClass;
 
+import java.io.File;
 import java.util.Iterator;
 import java.util.Properties;
 
 // TODO. 使用MetadataBuilder来构建SessionFactory，在构建的过程中可以配置自定义 
 public class HibernateMetadataSources {
-    
+
+    private MetadataSources metadataSources;
+
     public void testMetadataBuilder() {
         // 配置Properties信息必须和指定的数据库对应
         Properties properties = new Properties();
@@ -32,9 +36,8 @@ public class HibernateMetadataSources {
         Configuration configuration = new Configuration().configure();
         SessionFactory sessionFactory = configuration.buildSessionFactory(standardServiceRegistry);
 
-
         // 元数据资源中添加指定的持久层class: 使用全路径添加同名的类型
-        MetadataSources metadataSources = new MetadataSources(standardServiceRegistry);
+        metadataSources = new MetadataSources(standardServiceRegistry);
         metadataSources.addAnnotatedClass(com.hibernate5.testing.package1.MyEntity.class);
         metadataSources.addAnnotatedClass(com.hibernate5.testing.package2.MyEntity.class);
         metadataSources.addPackage("master.hibernate6.testing");
@@ -51,5 +54,26 @@ public class HibernateMetadataSources {
 
         // TODO. 2. 从Metadata中获取session factory
         SessionFactory sessionFactory1 = metadata.buildSessionFactory();
+    }
+
+    /**
+     * Add HBM files to the metadata sources
+     *
+     * @param mappingFiles HBM files or directories/jars containing HBM files
+     */
+    public void addHBMEntities(File... mappingFiles) {
+        for (File mappingFile : mappingFiles) {
+            try {
+                if (mappingFile.getName().endsWith(".jar")) {
+                    metadataSources.addJar(mappingFile);
+                } else if (mappingFile.isDirectory()) {
+                    metadataSources.addDirectory(mappingFile);
+                } else {
+                    metadataSources.addFile(mappingFile);
+                }
+            } catch (MappingException e) {
+                throw new MappingException("Error with : " + mappingFile.getAbsolutePath(), e);
+            }
+        }
     }
 }
