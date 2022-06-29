@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.hibernate5.testing.any.model2.ClassModel2" table="t_class_model2">
+        <id type="double" name="id" column="id"/>
+        <property type="java.lang.String" name="name2" column="name2"/>
+    </class>
+</hibernate-mapping>

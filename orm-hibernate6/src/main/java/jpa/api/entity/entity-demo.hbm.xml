@@ -8,10 +8,15 @@
                由于上面没有提供package包的路径，class name名称需要使用完全限定名称
                entity-name="t_demo_table"，这里提供的名称必须和注解上提供的名称一致(只需要设置一处) -->
     <class name="jpa.api.entity.EntityDemo" entity-name="t_demo_table">
-        <!-- TODO. 指定的类型必须提供指定字段的getter & setter方法 -->
+
+        <!-- TODO. 指定的类型必须提供指定字段的getter & setter方法
+               如何设置了id的自动生成策略，则存储的对象不需要手动设置id的值 -->
         <id name="id" column="id">
-            <generator class="increment"/> <!-- 该列的ID会随机自动地增加 -->
+            <!-- 该列的ID会随机自动地增加
+                 这里的id会使用特定的算法来增加值，而不需要手动设置值来存储 -->
+            <generator class="increment"/>
         </id>
+
         <!-- 设置ID的生成器: 主键自增策略
              "native": 从三种自增策中选择一个, 插入时增长的id值不是连续的
         <id type="double" name="reference" column="M_REFERENCE">

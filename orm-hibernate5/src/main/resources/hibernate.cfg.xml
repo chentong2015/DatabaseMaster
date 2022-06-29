@@ -36,6 +36,11 @@
         <mapping resource="mapping/event.hbm.xml"/>
         <mapping resource="mapping/fees.hbm.xml"/>
 
+        <!-- 测试mapping中的any和component关联: 要存储的表都需要添加关联 -->
+        <mapping resource="any/myanyclass.hbm.xml"/>
+        <mapping resource="any/classmodel1.hbm.xml"/>
+        <mapping resource="any/classmodel2.hbm.xml"/>
+
         <!-- 指定映射的类型Entity Class -->
         <mapping class="jpa.api.Person"/>
         <mapping class="jpa.api.package1.Person"/>

@@ -17,7 +17,7 @@
             </generator>
         </id>
 
-        <!-- 设置natural-id，可以使用session根据natural-id来查询数据 -->
+        <!-- 设置natural-id，可以使用session.byNaturalId()来查询数据 -->
         <natural-id>
             <property type="java.lang.Double" name="underlyingId" column="M_OBJ_ID"/>
             <property type="java.lang.Integer" name="underlyingVersion" column="M_OBJ_VERSION"/>

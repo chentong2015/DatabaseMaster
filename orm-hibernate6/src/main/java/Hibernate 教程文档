@@ -10,6 +10,9 @@ https://docs.jboss.org/hibernate/orm/current/quickstart/html_single
 https://docs.jboss.org/hibernate/orm/5.6/userguide/html_single/Hibernate_User_Guide.html
 https://docs.jboss.org/hibernate/orm/6.0/userguide/html_single/Hibernate_User_Guide.html
 
+对象/关系数据库映射基础
+https://docs.jboss.org/hibernate/orm/3.5/reference/zh-CN/html/mapping.html#mapping-types-anymapping
+
 TODO. Hibernate v6和Hibernate v5版本之间的差异较大
 https://docs.jboss.org/hibernate/orm/6.0/javadocs/deprecated-list.html
 https://github.com/hibernate/hibernate-orm/wiki/Migration-Guides

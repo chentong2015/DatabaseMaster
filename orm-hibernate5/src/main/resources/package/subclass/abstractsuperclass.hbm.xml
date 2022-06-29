@@ -4,14 +4,17 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <!-- TODO. 推荐将Super Class的entity-name标签值设置成class的全路径
-     否则Sub Class在定义extends=""值时，可能报错 HibernateException: Not all named super-types (extends) were found -->
+     否则Sub Class在定义extends=""值可能报错HibernateException:
+        Not all named super-types (extends) were found -->
 
 <!-- 这里的抽象类会在数据库中建立表格 -->
 <hibernate-mapping>
     <class name="com.hibernate5.testing.basemodel.AbstractSuperClass"
-           entity-name="com.hibernate5.testing.basemodel.AbstractSuperClassTest"
-           abstract="true">
+           entity-name="com.hibernate5.testing.basemodel.AbstractSuperClass"
+           abstract="true"
+           table="t_abstract_class">
         <id type="double" name="reference"/>
+
         <!-- TODO. 设置列名称用于区分子类的类型 -->
         <discriminator column="super_class"/>
     </class>
