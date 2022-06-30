@@ -129,8 +129,6 @@ Sorm-hibernate6/src/main/java/hibernate/framework/apis/datamodel/entity-meta.hbm
 Oorm-hibernate6/src/main/java/hibernate/framework/apis/datamodel/EntityMeta.java,b\f\bfbe20a6bf44e56616eb73b517eacfeade2ec47f
 …
 Uorm-hibernate6/src/main/java/hibernate/framework/apis/datamodel/entity-master.hbm.xml,1\8\18fb1e5a778138dc8a9b5b542ef39658533b7851
-…
-Uorm-hibernate5/src/main/java/com/hibernate5/testing/session/HibernateSessionUtil.java,d\3\d30752390024f55a32724f0c902b5e74ed9b53a2
 c
 3relational-db-sql-server/SQL Server æŒ‡ä»¤å…¨é›†.md,2\0\20577c451ae2a2868c233faff983358517aca3f6
 k
@@ -183,10 +181,6 @@ Norm-hibernate6/src/main/java/hibernate/framework/apis/typedef/MyTypeClass.java
 Oorm-hibernate6/src/main/java/hibernate/framework/apis/typedef/TemplateType.java,a\f\af7ea21b28d4cd2fac6241d9d0af4c99f505d1b0
 ¥
 uorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/many/to/one/UnidirectionalManyToOne.java,6\3\6366ba0be5065a90905c9765668f659688ff94f7
-x
-Horm-hibernate6/src/main/java/jpa/api/named/query/EntityNamedService.java,4\5\45c94bffaee49ad391ddd9b617d2e1af511fc5af
-v
-Form-hibernate6/src/main/java/jpa/api/named/query/EntityNamedQuery.java,1\6\16bc9bc342505e0cf288480151d3503b28b662b1
 j
 :orm-hibernate5/src/main/java/Hibernate Mappingæ˜ å°„é—®é¢˜,e\a\eaa1e90f250bc087cd35144c4fca5dedf4dd5068
 F
@@ -246,10 +240,28 @@ Worm-hibernate5/src/main/java/com/hibernate5/testing/metadata/type/DisplayLabelT
 €
 Porm-hibernate6/src/main/java/hibernate/framework/apis/SessionFactoryåˆ›å»ºæ–¹å¼,f\a\fad569741f0ab9f8778c256593bdc0db457fdeef
 z
-Jorm-hibernate5/src/main/java/com/hibernate5/testing/package1/MyEntity.java,7\6\7613a03371e7b903be6715030e3a64f2aa56090c
-z
 Jorm-hibernate5/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\d\9dfd8e298931c8043095ba3add5b9679ebcd650f
 …
 Uorm-hibernate5/src/main/java/com/hibernate5/testing/metadata/entity/BaseMetadata.java,0\4\04be999d1a366292d2d032c21cc694232a1a7ffb
 ˆ
 Xorm-hibernate5/src/main/java/com/hibernate5/testing/metadata/entity/BaseJpaMetadata.java,7\2\72e485be295c6df1c36c40bb7562dec34d81f79d
+Š
+Zorm-hibernate5/src/main/java/com/hibernate5/testing/metadata/HibernateMetadataSources.java,8\a\8a969a4c8d1e3cbe8087459826a6a2f3abf08526
+m
+=orm-hibernate6/src/main/java/id/geneator/IdGeneratorType.java,c\3\c3fb59344fdaad9d37e09430c4e9c54af3353eaa
+‡
+Worm-hibernate5/src/main/java/com/hibernate5/testing/metadata/MetadataSourcesHelper.java,b\7\b739fff713c03a7b21851040712aeb1f0bb2794c
+…
+Uorm-hibernate5/src/main/java/com/hibernate5/testing/basemodel/AbstractSuperClass.java,e\3\e3bf76724786f5f41e41bf6f017a879e4a93fec8
+k
+;orm-hibernate5/src/main/java/jpa/api/query/HqlRawQuery.java,9\8\98e3253a33df8407d4c94eddc51372d775d154dd
+`
+0orm-hibernate5/src/main/java/jpa/api/Person.java,d\a\da3b09e0b7758a537ed3de723ffd8c808cb9cabe
+`
+0orm-hibernate5/src/main/java/jpa/api/Sample.java,3\a\3ad27584efa3305119db8ae3d6f4d42cc73a9f1a
+y
+Iorm-hibernate6/src/main/java/hibernate/framework/apis/datamodel/Book.java,c\e\ce76532666675e756f0d71bb1438735b2a81d2d1
+p
+@orm-hibernate5/src/main/java/jpa/api/HibernateJpaEntityDemo.java,6\3\63589a6c3ae8bcd3f3c8aed437d64ae95d4b4866
+
+Qorm-hibernate6/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,d\b\db69bb0ed714b875fa3e69b2b804db5dd6b2786b

@@ -24,7 +24,9 @@ public class HibernateSessionUtil {
         }
     }
 
-    private HibernateSessionUtil() {
+    private static void initSessionFactory() {
+        registry = new StandardServiceRegistryBuilder().configure().build();
+        sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
     }
 
     // TODO. 获取时判断初始化SessionFactory是否成功，以及再次初始化是否成功 !!
@@ -38,11 +40,6 @@ public class HibernateSessionUtil {
             threadLocalSession.set(session);
         }
         return session;
-    }
-
-    private static void initSessionFactory() {
-        registry = new StandardServiceRegistryBuilder().configure().build();
-        sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
     }
 
     // TODO. 使用工具类来统一管理线程的Session的关闭

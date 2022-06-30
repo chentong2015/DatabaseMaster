@@ -41,6 +41,9 @@
         <mapping resource="any/classmodel1.hbm.xml"/>
         <mapping resource="any/classmodel2.hbm.xml"/>
 
+        <!-- 使用Mapping文件中定义的查询语句 -->
+        <mapping resource="query/queries.hbm.xml"/>
+
         <!-- 指定映射的类型Entity Class -->
         <mapping class="jpa.api.Person"/>
         <mapping class="jpa.api.package1.Person"/>

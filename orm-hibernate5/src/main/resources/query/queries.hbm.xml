@@ -5,7 +5,9 @@
 
 <hibernate-mapping>
 
-    <!-- 直接在映射文件中配置HQL查询的语句，注意使用的名称 -->
-    <query name="selectTest">from MyEntity entity where entity.name='test'</query>
+    <!-- TODO. 配置Hibernate NamedQuery 查询语句，通过指定的名称来执行 ==> 对应使用JPA @NamedQuery
+         注意使用Jpa Entity Name(名称必须存在)来构建HQL查询的语句 -->
+    <query name="selectTestEntity">from com.hibernate5.testing.package1.MyEntity entity where entity.name ='test'
+    </query>
 
 </hibernate-mapping>
