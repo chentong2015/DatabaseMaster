@@ -9,6 +9,7 @@
 
 <!-- 这里的抽象类会在数据库中建立表格 -->
 <hibernate-mapping>
+    <!-- abstract="true" 表示该实体类型是一个抽象类，不能创建实例对象 -->
     <class name="com.hibernate5.testing.basemodel.AbstractSuperClass"
            entity-name="com.hibernate5.testing.basemodel.AbstractSuperClass"
            abstract="true"

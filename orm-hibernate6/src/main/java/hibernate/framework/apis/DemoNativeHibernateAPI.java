@@ -1,7 +1,6 @@
 package hibernate.framework.apis;
 
 import hibernate.framework.apis.datamodel.Book;
-import hibernate.framework.apis.query.HqlQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -20,7 +19,7 @@ public class DemoNativeHibernateAPI {
 
     public static void main(String[] args) {
         testPersistObject();
-        HqlQuery.testGetQuery(sessionFactory);
+        // HqlQuery.testGetQuery(sessionFactory);
         sessionFactory.close();
         // The registry would be destroyed by the SessionFactory,
         // Destroy it manually when we have trouble building the SessionFactory
@@ -29,16 +28,21 @@ public class DemoNativeHibernateAPI {
 
     // Hibernate Session: 完成数据库的增删查改的操作
     private static void testPersistObject() {
+        Transaction transaction = null;
         try (Session session = sessionFactory.openSession()) {
-            Transaction transaction = session.beginTransaction();
+            transaction = session.beginTransaction();
             Book newBook = new Book();
-            newBook.setName("Java");
-            newBook.setTitle("The master java title");
-            session.persist(newBook);
+            newBook.setName("new java 1");
+            newBook.setTitle("new title 1");
+            // session.persist(newBook);
+            session.save(newBook);
             transaction.commit();
         } catch (Exception exception) {
+            exception.printStackTrace();
             // 这异常情况下，需要执行事务的回滚
-            // transaction.rollback();
+            if (transaction != null) {
+                transaction.rollback();
+            }
         }
     }
 
