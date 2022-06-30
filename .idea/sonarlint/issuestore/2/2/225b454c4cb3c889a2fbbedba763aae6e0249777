@@ -1,0 +1,7 @@
+
+d
+java:S2259$"IA "NullPointerException" could be thrown; "transaction" is nullable here.(ì‚—ôúÿÿÿÿ
+]	java:S125"<This block of commented-out lines of code should be removed.(Îßªøÿÿÿÿ8¥÷‘’—0
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(‹½˜‘úÿÿÿÿ
+X
+java:S1144*";Remove this unused private "testGetDataByNaturalId" method.(Ùñò·8¨÷‘’—0

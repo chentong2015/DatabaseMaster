@@ -3,6 +3,7 @@ Hibernate 3.x 版本的创建
    SessionFactory sessionFactory = configuration.buildSessionFactory();
    Session session = sessionFactory.openSession();
 
+
 Hibernate 4.x 版本的创建: 提供属性配置的参数
    Configuration configuration = new Configuration().configure();
    Properties properties = new Properties();
@@ -12,6 +13,33 @@ Hibernate 4.x 版本的创建: 提供属性配置的参数
       .build();
    SessionFactory sessionFactory = configuration.buildSessionFactory(standardServiceRegistry);
 
+
 Hibernate 5.x 版本之后的创建: 从元信息中获取Session工厂
-   StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-   SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+   // 1. 简单方式
+     StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+     SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+
+   // 2. 复杂方式: 支持自定义配置Properties, MetadataSources提供丰富的Metadata源数据注入,
+     this.bootstrapServiceRegistry = new BootstrapServiceRegistryBuilder()
+                                         .applyClassLoader(classLoader)
+                                         .build();
+     this.standardServiceRegistryBuilder = new StandardServiceRegistryBuilder(bootstrapServiceRegistry);
+     if (configFile != null) {
+        standardServiceRegistryBuilder.configure(configFile);
+        properties.putAll(standardServiceRegistryBuilder.getSettings());
+     }
+     standardServiceRegistryBuilder.applySettings(properties);
+     StandardServiceRegistry standardServiceRegistry = standardServiceRegistryBuilder.build();
+
+     MetadataSources metadataSources = new MetadataSources();
+     MetadataBuilder metadataBuilder = metadataSources.getMetadataBuilder(standardServiceRegistry);
+     for (BasicType murexType : getMurexTypes()) {
+        metadataBuilder.applyBasicType(murexType);
+     }
+
+     Metadata metadata = metadataBuilder.build();
+     SessionFactory sessionFactory1 = metadata.buildSessionFactory();
+
+
+
+

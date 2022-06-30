@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="jpa.api.any.MyAnyClass" table="t_my_any_class">
+    <class name="com.hibernate5.testing.any.MyAnyClass" table="t_my_any_class">
         <id type="long" name="id" column="id"/>
         <property type="java.lang.String" name="name" column="name"/>
 
@@ -18,8 +18,8 @@
              optimistic-lock(可选 — 默认是 true)：表明更新此组件是否需要获取乐观锁，当属性变脏时，是否增加版本号Version-->
         <any id-type="double" name="anyClassModel" meta-type="string">
             <!-- 将指定的字段赋值给"anyClassModel"属性名称，则会存储指定value值 -->
-            <meta-value value="value1" class="jpa.api.any.model1.ClassModel1"/>
-            <meta-value value="value2" class="jpa.api.any.model2.ClassModel2"/>
+            <meta-value value="value1" class="com.hibernate5.testing.any.model1.ClassModel1"/>
+            <meta-value value="value2" class="com.hibernate5.testing.any.model2.ClassModel2"/>
 
             <!-- DB Table中会添加的两个列字段:
                  m_type使用字符串区别类型
@@ -30,7 +30,7 @@
 
         <!-- TODO. component是属于一个实体内的组件，不会创建Component的table数据表
              not an entity reference 不是一种实体引用的关系 -->
-        <component name="component" class="jpa.api.any.Component">
+        <component name="component" class="com.hibernate5.testing.any.Component">
             <!-- 包含组件的全部列字段 -->
             <property type="java.lang.String" name="name" column="component_name"/>
             <property type="java.lang.Double" name="price" column="component_price"/>

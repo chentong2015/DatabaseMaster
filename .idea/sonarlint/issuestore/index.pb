@@ -83,8 +83,6 @@ u
 Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
 �
 Xorm-hibernate6/src/main/java/hibernate/framework/apis/lifecycle/HibernateSQL执行代码,9\d\9d99cdb14875fab215d6eea4e724acc20bef08e6
-�
-Porm-hibernate6/src/main/java/hibernate/framework/apis/SessionFactory创建方式,f\a\fad569741f0ab9f8778c256593bdc0db457fdeef
 �
 \orm-hibernate6/src/main/java/hibernate/framework/apis/hbm2ddl/HibernateSchemaExportDemo.java,e\6\e641c21a13a7af2a4671469e4de429d3c0ce04bd
 t
@@ -195,8 +193,6 @@ x
 Horm-hibernate6/src/main/java/jpa/api/named/query/EntityNamedService.java,4\5\45c94bffaee49ad391ddd9b617d2e1af511fc5af
 v
 Form-hibernate6/src/main/java/jpa/api/named/query/EntityNamedQuery.java,1\6\16bc9bc342505e0cf288480151d3503b28b662b1
-z
-Jorm-hibernate5/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\d\9dfd8e298931c8043095ba3add5b9679ebcd650f
 j
 :orm-hibernate5/src/main/java/Hibernate Mapping映射问题,e\a\eaa1e90f250bc087cd35144c4fca5dedf4dd5068
 F
@@ -217,8 +213,6 @@ m
 =orm-hibernate6/src/main/java/id/geneator/IdGeneratorType.java,c\3\c3fb59344fdaad9d37e09430c4e9c54af3353eaa
 s
 Corm-hibernate5/src/main/java/com/hibernate5/testing/mapping/ddl_sql,d\f\df5c62b8fd30fca78de5a76121a54a5307c65824
-�
-Qorm-hibernate5/src/main/java/com/hibernate5/testing/HibernateMetadataSources.java,d\6\d69ac46f45658dade1712b2f0ded43187914cacc
 �
 Rorm-hibernate6/src/main/java/hibernate/framework/apis/config/Hibernate基础配置,2\2\228e3f22c440e08062c1938b55eafa9be81dd74a
 �
@@ -229,5 +223,39 @@ u
 Eorm-hibernate5/src/main/java/com/hibernate5/testing/mapping/Fees.java,d\9\d9776fce45588838230ed091e8d9c69169527474
 v
 Form-hibernate5/src/main/java/com/hibernate5/testing/mapping/Event.java,b\f\bf122a17ddd31935bcbdfb27e682df925a77ba2f
-z
-Jorm-hibernate5/src/main/java/com/hibernate5/testing/package1/MyEntity.java,7\6\7613a03371e7b903be6715030e3a64f2aa56090c
+c
+3orm-hibernate6/src/main/java/Hibernate 教程文档,0\2\0297d9b61e2a734ef0768ec2c4b740466c641f7c
+k
+;orm-hibernate6/src/main/java/jpa/api/entity/EntityDemo.java,a\7\a7348b045af6dca0d07cd08a4e231eb5c780c6ed
+`
+0orm-hibernate5/src/main/java/jpa/api/Sample.java,3\a\3ad27584efa3305119db8ae3d6f4d42cc73a9f1a
+�
+Uorm-hibernate5/src/main/java/com/hibernate5/testing/mapping/DemoHibernateMapping.java,2\2\225b454c4cb3c889a2fbbedba763aae6e0249777
+p
+@orm-hibernate5/src/main/java/jpa/api/HibernateJpaEntityDemo.java,6\3\63589a6c3ae8bcd3f3c8aed437d64ae95d4b4866
+j
+:orm-hibernate5/src/main/java/jpa/api/any/model/Person.java,c\2\c2c7eac55aaeda9529ae99f9a6e576df1b20bf8f
+i
+9orm-hibernate5/src/main/java/jpa/api/package1/Person.java,6\c\6ce43eb1d7c3163852f03266efb3c85d30fb0efa
+p
+@orm-hibernate5/src/main/java/jpa/api/any/model/VehicleOwner.java,d\2\d2162c64e167eef0a20dea6b64d6ed30043e2fcd
+k
+;orm-hibernate5/src/main/java/jpa/api/any/model/Company.java,c\4\c42c7ebab521ed5ce9fcd33cc9bd43f32f04789e
+�
+Xorm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateInheritanceMapping.java,d\7\d799752b4195ec37c49ae98ff14b11e3e0885113
+k
+;orm-hibernate5/src/main/java/jpa/api/any/model/Vehicle.java,d\2\d29d508245edbf15ad1a11202d68e32419833c6f
+o
+?orm-hibernate6/src/main/java/jpa/api/entity/entity-demo.hbm.xml,1\e\1eaddba52a95eb7999044d6e19aa25182581fc4f
+�
+Vorm-hibernate5/src/main/java/com/hibernate5/testing/any/HibernateAnyComponentDemo.java,f\9\f92680c9c50e0fa13e02d572bee44a189fc730b1
+v
+Form-hibernate5/src/main/java/com/hibernate5/testing/any/Component.java,5\5\55c2e6b136b6fd7ed60b6297157aa708a4e17fba
+
+Oorm-hibernate5/src/main/java/com/hibernate5/testing/any/model2/ClassModel2.java,d\d\dd42fe9bac4737e2a0e6b7f0101d39f59ce7c988
+w
+Gorm-hibernate5/src/main/java/com/hibernate5/testing/any/MyAnyClass.java,3\5\35a3889d4d2a3524e0e98305bef7e085bf536320
+
+Oorm-hibernate5/src/main/java/com/hibernate5/testing/any/model1/ClassModel1.java,c\9\c9d0eaf8b39e04660e8b7b985c7f728e53c708e8
+}
+Morm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,6\4\64d66920aa081525ec2688e3388c3ae6b7eabeed
