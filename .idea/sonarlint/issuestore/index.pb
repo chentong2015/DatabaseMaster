@@ -9,8 +9,6 @@ K
 document-db-mongodb/pom.xml,4\9\49f32a047960359b6162aaa6fe8f76be14f9fcc5
 Z
 *distributed-db/src/main/java/BaseTiDB.java,0\1\01da1135333f0f61f97dd215d311f40f29f37770
-s
-Cdocument-db-mongodb/src/main/java/com/mongodb/main/BaseMongoDB.java,b\6\b614e1a4278571422ae35ef3b0faa9b276ac7fe2
 G
 orm-spring-jdbc/pom.xml,e\3\e3d4bbe1f3fbf130db88f73f247b5d0004e785cb
 t
@@ -43,20 +41,6 @@ borm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/datasource/MyDat
 Uorm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/mapper/BlogMapper.java,f\7\f71b119a72055e4aadd9acf0b3f3dd13e328859c
 �
 Porm-liquibase/src/main/java/com/liquibase/main/datatype/Liquibase支持的类型,3\2\325eb1af6508060131aaf395ca7e18a72c58a44f
-{
-Korm-liquibase/src/main/java/com/liquibase/main/datatype/MyDateTimeType.java,e\7\e74b71e1160b8994d324f29d4e23233a7b1d08c9
-z
-Jorm-liquibase/src/main/java/com/liquibase/main/datatype/MyVarcharType.java,b\d\bd8bc3e04d314d87f93c71120bce2709aa0d0577
-~
-Norm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataType.java,f\7\f72df2a48979850f92e004f2e270357d740a0eb1
-�
-Uorm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataTypeFactory.java,4\6\4639b98790907f234795c3f0e1d6b48ded601574
-E
-orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
-y
-Iorm-liquibase/src/main/java/com/liquibase/main/config/DatabaseConfig.java,1\9\19bfc72515846024633c4ba3161e8a2ff0a0be74
-w
-Gorm-liquibase/src/main/java/com/liquibase/main/config/ConfigHelper.java,4\b\4b3b86209a71aa7effc5c72e5a96e8474073c251
 k
 ;relational-db-psql/src/main/java/com/psql/main/官方文档,3\1\31723c10a19ff1e946324efe5590494da44035ea
 y
@@ -79,8 +63,6 @@ Arelational-db-mysql/src/main/java/storage/engine/InnoDBBasic.java,a\e\aef510c4
 [orm-hibernate6/src/main/java/hibernate/framework/apis/session/HibernateSessionCallback.java,3\c\3ccfd3add747458845b055ccd2590dbefb325068
 `
 0relational-db-sql-server/SQL Server 配置操作,b\9\b97a83d2ff239f5ff20d61176a63ceaee89044f9
-u
-Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
 �
 Xorm-hibernate6/src/main/java/hibernate/framework/apis/lifecycle/HibernateSQL执行代码,9\d\9d99cdb14875fab215d6eea4e724acc20bef08e6
 �
@@ -153,8 +135,6 @@ Worm-hibernate6/src/main/java/hibernate/framework/apis/session/HibernateSessionU
 ]orm-hibernate6/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,d\f\df228e8455f37e6986f4a7d266a230e12ab2ef76
 
 Oorm-hibernate5/src/main/java/com/hibernate5/testing/package1/SubSuperClass.java,2\1\21d3dbd1eedebc167373dea3696a8d09ebadfb27
-F
-orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
 �
 corm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/many/to/one/Grade.java,0\e\0e9fd4f702d1905e14420ce479ea6a6f93186b43
 �
@@ -183,8 +163,6 @@ Oorm-hibernate6/src/main/java/hibernate/framework/apis/typedef/TemplateType.java
 uorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/many/to/one/UnidirectionalManyToOne.java,6\3\6366ba0be5065a90905c9765668f659688ff94f7
 j
 :orm-hibernate5/src/main/java/Hibernate Mapping映射问题,e\a\eaa1e90f250bc087cd35144c4fca5dedf4dd5068
-F
-orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
 q
 Aorm-hibernate6/src/main/java/jpa/api/EntityManagerOperations.java,a\f\af169c9a414148d6a9789bce0df6dc4051f04c4a
 m
@@ -265,3 +243,17 @@ p
 @orm-hibernate5/src/main/java/jpa/api/HibernateJpaEntityDemo.java,6\3\63589a6c3ae8bcd3f3c8aed437d64ae95d4b4866
 �
 Qorm-hibernate6/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,d\b\db69bb0ed714b875fa3e69b2b804db5dd6b2786b
+�
+Uorm-hibernate5/src/main/java/com/hibernate5/testing/session/HibernateSessionUtil.java,d\3\d30752390024f55a32724f0c902b5e74ed9b53a2
+}
+Morm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,6\4\64d66920aa081525ec2688e3388c3ae6b7eabeed
+z
+Jorm-hibernate5/src/main/java/com/hibernate5/testing/package1/MyEntity.java,7\6\7613a03371e7b903be6715030e3a64f2aa56090c
+x
+Horm-hibernate6/src/main/java/jpa/api/named/query/EntityNamedService.java,4\5\45c94bffaee49ad391ddd9b617d2e1af511fc5af
+v
+Form-hibernate6/src/main/java/jpa/api/named/query/EntityNamedQuery.java,1\6\16bc9bc342505e0cf288480151d3503b28b662b1
+�
+Xorm-hibernate5/src/main/java/com/hibernate5/testing/query/DemoHibernateNamedQueries.java,e\f\efb41b2347b0c29efabf6dbb2642577ea0a48882
+s
+Cdocument-db-mongodb/src/main/java/com/mongodb/main/BaseMongoDB.java,b\6\b614e1a4278571422ae35ef3b0faa9b276ac7fe2

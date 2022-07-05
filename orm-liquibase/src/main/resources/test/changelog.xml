@@ -3,10 +3,13 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
 
-    <changeSet id="3" author="tchen">
+    <!-- 执行的id序号不能冲突 -->
+    <changeSet id="2" author="tchen">
 
-        <!-- TODO. 这里的类型完全是数据库中table定义的类型 -->
-        <createTable tableName="t_sample" schemaName="public">
+        <!-- 不同的数据库的Table对应的schemaName是不同的 -->
+        <createTable tableName="t_sample_test" schemaName="public">
+
+            <!-- 这里的type类型完全是数据库中table定义的类型 -->
             <column name="id" type="bigint">
                 <constraints nullable="false" primaryKey="true"/>
             </column>

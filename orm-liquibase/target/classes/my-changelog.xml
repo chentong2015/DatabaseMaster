@@ -1,0 +1,30 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+
+    <changeSet author="tchen (generated)" id="1654524418204-1">
+        <createSequence cacheSize="1" cycle="false" dataType="bigint"
+                        incrementBy="50" maxValue="9223372036854775807"
+                        minValue="1" sequenceName="t_book_seq" startValue="1"/>
+    </changeSet>
+
+    <!-- 引入指定的文件的changeSet -->
+    <include file="test/changelog.xml"/>
+
+    <!-- 该文件包含了数据库表的描述信息，可以执行数据库几乎所有相关的操作
+         contains information such as table, views, columns, constraints -->
+    <changeSet author="tchen (generated)" id="1654524418204-2">
+        <!-- TODO. 这里的schemaName可以通过代码来设置，反之则使用database的默认schemaName -->
+        <createTable tableName="t_book" schemaName="public">
+            <!-- TODO. 注明的type为定义在数据库中的column type(映射类型) -->
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="t_book_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR">
+                <constraints nullable="false"/>
+            </column>
+            <column name="title" type="VARCHAR"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
