@@ -268,8 +268,6 @@ Jorm-liquibase/src/main/java/com/liquibase/main/datatype/MyVarcharType.java,b\d
 {
 Korm-liquibase/src/main/java/com/liquibase/main/datatype/MyDateTimeType.java,e\7\e74b71e1160b8994d324f29d4e23233a7b1d08c9
 w
-Gorm-liquibase/src/main/java/com/liquibase/main/database/MyDatabase.java,9\5\95fcf2170a5dfb627d2f288fe0f0e914c06f247e
-w
 Gorm-liquibase/src/main/java/com/liquibase/main/DemoDatabaseFactory.java,5\5\55b42d8122ac4b410ac8ab972d5550518bcb0279
 F
 orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
@@ -277,3 +275,5 @@ F
 orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
 E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
+ç
+]orm-hibernate6/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,d\f\df228e8455f37e6986f4a7d266a230e12ab2ef76

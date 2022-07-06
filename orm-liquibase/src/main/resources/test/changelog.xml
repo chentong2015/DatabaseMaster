@@ -15,4 +15,15 @@
         </createTable>
     </changeSet>
 
+    <!-- 每一个change set集合中可以执行多个DB操作(补充相应的配置) -->
+    <changeSet id="20" author="tchen">
+        <comment>Add column number</comment>
+        <addColumn tableName="t_sample_test">
+            <column name="m_number" type="integer"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="200" author="tchen">
+        <dropColumn tableName="t_sample_test" columnName="label"/>
+    </changeSet>
 </databaseChangeLog>
