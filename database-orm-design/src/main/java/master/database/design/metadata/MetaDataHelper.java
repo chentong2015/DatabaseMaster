@@ -1,4 +1,4 @@
-package com.liquibase.main.database;
+package master.database.design.metadata;
 
 import java.sql.*;
 
@@ -7,8 +7,11 @@ import java.sql.*;
 // getTables is not case sensitive for sql server 字符大小写均可以查询
 public class MetaDataHelper {
 
+    private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
+    private static String sqlServerConnectStr = "jdbc:sqlserver://LCTON01:1433;databaseName=my_database;Trusted_Connection=true;user=test;password=TCHong16";
+
     public static void main(String[] args) {
-        try (Connection connection = DriverManager.getConnection(DbConnectionString.sqlServerConnectStr)) {
+        try (Connection connection = DriverManager.getConnection(sqlServerConnectStr)) {
             dropTableIfExist(connection, "t_book");
         } catch (SQLException exception) {
             exception.printStackTrace();
@@ -36,7 +39,7 @@ public class MetaDataHelper {
 
     // 不同的数据库删除Function和Procedure的方式不同
     public void dropProcedure(MyDatabaseType dbType, String procedureName) throws SQLException {
-        Connection connection = DriverManager.getConnection(DbConnectionString.sqlServerConnectStr);
+        Connection connection = DriverManager.getConnection(sqlServerConnectStr);
         if (dbType == MyDatabaseType.ORACLE) {
             try (Statement statement = connection.createStatement()) {
                 statement.execute("DROP FUNCTION " + formatProcedureName(procedureName));

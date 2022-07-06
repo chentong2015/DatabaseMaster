@@ -1,6 +1,5 @@
 package com.liquibase.main;
 
-import com.liquibase.main.database.DbConnectionString;
 import liquibase.Contexts;
 import liquibase.LabelExpression;
 import liquibase.Liquibase;
@@ -22,12 +21,14 @@ import java.util.Map;
 // 2. 将JdbcConnection和Database包装到自定义的辅助类型LiquibaseHelper中, 控制其生命周期
 public class DemoLiquibaseJava {
 
+    private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
+
     // 资源获取的存储器，根据ClassLoader来加载指定文件的资源
     public static void main(String[] args) throws Exception {
         Map<String, Object> config = new HashMap<>();
         config.put("liquibase.pro.licenseKey", "YOUR_PRO_KEY");
         Scope.child(config, () -> {
-            Connection connection = DriverManager.getConnection(DbConnectionString.psqlConnectStr);
+            Connection connection = DriverManager.getConnection(psqlConnectStr);
             JdbcConnection jdbcConnection = new JdbcConnection(connection);
             Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
             database.setDefaultSchemaName("default schema name");

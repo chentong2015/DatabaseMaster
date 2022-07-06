@@ -1,4 +1,4 @@
-package com.liquibase.main.database;
+package master.database.design.metadata;
 
 public enum MyDatabaseType {
 
