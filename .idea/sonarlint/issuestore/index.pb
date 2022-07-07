@@ -75,8 +75,6 @@ Ddatabase-orm-design/src/main/java/com/orm/middleware/ORMç³»ç»Ÿè®¾è®¡,6\7\672a9
 corm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/one/to/many/Grade.java,1\b\1b83a2808adb083015302837b8ab552e546c44f0
 •
 eorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/one/to/many/Student.java,f\a\fafba40b31e1167a4e924caceb7a82f31246ae1d
-}
-Mdatabase-orm-design/src/main/java/master/database/design/Databaseè®¾è®¡æ€æƒ³,2\c\2cf272b306e27e1647ab3de600cb233d1aad937a
 ›
 korm-hibernate6/src/main/java/hibernate/framework/apis/mapping/foreign/key/one/to/one/unidirectional/ddl_sql,3\0\3046fab1b6ab947f4fef35b3b40eed793e5cc321
 Ÿ
@@ -275,3 +273,13 @@ F
 orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
 
 ]orm-hibernate6/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,d\f\df228e8455f37e6986f4a7d266a230e12ab2ef76
+…
+Udatabase-orm-design/src/main/java/master/database/design/metadata/MyDatabaseType.java,2\f\2f117a25c1941299b386e399e3820db54f877396
+E
+orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
+w
+Gorm-liquibase/src/main/java/com/liquibase/main/database/MyDatabase.java,9\5\95fcf2170a5dfb627d2f288fe0f0e914c06f247e
+K
+database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
+u
+Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917

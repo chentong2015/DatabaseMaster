@@ -15,3 +15,8 @@ TODO：SQL改写，语法引擎(SQL必须符合引擎所规定的语法)
 A系统传递给B系统一条SQL, B系统如何检测判断这条SQL正确性 ?
 select * from t_blog where id=#{id};  JDBC无法执行
 select * from t_blog where id=?;      MyBatis需要对其进行改写
+
+
+TODO. 数据库的版本查询问题
+>select version()  支持Psql
+>SELECT @@VERSION  支持Sql Server
