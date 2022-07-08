@@ -4,7 +4,6 @@ import com.hibernate5.testing.metadata.entity.BaseJpaMetadata;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
-import org.hibernate.boot.MetadataBuilder;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.BootstrapServiceRegistry;
 import org.hibernate.boot.registry.BootstrapServiceRegistryBuilder;
@@ -25,21 +24,22 @@ public class HibernateMetadataSources {
                 .configure()
                 .build();
 
-        // 元数据资源中添加指定的持久层class: 使用全路径添加同名的类型
+        // TODO. MetadataSources只是提供一个资源的容器
         MetadataSources metadataSources = new MetadataSources(standardServiceRegistry);
+        // 1. 类型名称如果冲突，需要使用全路径形式
         metadataSources.addAnnotatedClass(BaseJpaMetadata.class);
+        // 2. 添加到xmlBindings列表中
         InputStream inputStream = HibernateMetadataSources.class.getResourceAsStream("/metadata/metadata.hbm.xml");
         metadataSources.addInputStream(inputStream);
 
-        // 使用Metadata来检索PersistentClass持久层对象
-        MetadataBuilder metadataBuilder = metadataSources.getMetadataBuilder();
-        Metadata metadata = metadataBuilder.build();
-
-        // PersistentClass Hibernate持久层的对象的两个属性在加载时会被赋值
+        // TODO. 使用MetadataBuilder构造Metadata配置的源数据信息
+        // 使用Metadata来检索PersistentClass持久层对象: 其两个属性在加载时会被赋值 !!
+        Metadata metadata = metadataSources.getMetadataBuilder().build();
         Iterator<PersistentClass> classMappings = metadata.getEntityBindings().iterator();
         while (classMappings.hasNext()) {
             PersistentClass persistentClass = classMappings.next();
-            System.out.println(persistentClass.getEntityName() + "--" + persistentClass.getJpaEntityName());
+            System.out.println(persistentClass.getEntityName());
+            System.out.println(persistentClass.getJpaEntityName());
         }
     }
 

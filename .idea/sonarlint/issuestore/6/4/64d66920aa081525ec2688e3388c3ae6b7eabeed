@@ -1,13 +1,0 @@
-
-M
-java:S1135"2Complete the task associated to this TODO comment.(²Ò¶¥ώÿÿÿÿ
-]	java:S125$"<This block of commented-out lines of code should be removed.(Έµο°ώÿÿÿÿ8ÿΰά‚›0
-N	java:S106+"9Replace this use of System.out or System.err by a logger.(σ¦ί°
-S	java:S106/"9Replace this use of System.out or System.err by a logger.(€Ή•τύÿÿÿÿ
-M
-java:S18546"7Remove this useless assignment to local variable "sql".(υΏτ§
->
-java:S14816"(Remove this unused "sql" local variable.(υΏτ§
-N	java:S106:"9Replace this use of System.out or System.err by a logger.(ωπήΰ
-J
-java:S11445"4Remove this unused private "testSqlRawQuery" method.(Π΄η‰
