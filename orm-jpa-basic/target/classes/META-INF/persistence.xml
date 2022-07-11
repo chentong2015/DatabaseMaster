@@ -4,16 +4,17 @@
     <!-- Hibernate JPA持久层配置文件 -->
     <persistence-unit name="base.jpa.snapshot" transaction-type="RESOURCE_LOCAL">
         <!-- <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
-        <!-- 旧版本的配置: 该provider已经被废弃 -->
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <!-- 旧版本的配置: 该provider已经被废弃
+        <provider>org.hibernate.ejb.HibernatePersistence</provider> -->
 
+        <description>Hibernate EntityManager Demo</description>
         <!-- 注入指定的Entity Class -->
-        <class>com.jpa.basic.entity.Sample</class>
-        <!-- 数据库连接相关的配置文件 -->
+        <class>com.hibernate.entity.manager.entity.Sample</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgresPlusDialect"/>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/my_database"/>
             <property name="hibernate.connection.username" value="postgres"/>
             <property name="hibernate.connection.password" value="admin"/>
