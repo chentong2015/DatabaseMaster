@@ -1,6 +1,6 @@
-package jpa.api;
+package com.jpa.basic;
 
-import hibernate.framework.apis.datamodel.Book;
+import com.jpa.basic.entity.Book;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -10,16 +10,11 @@ import java.util.List;
 // EntityManager提供的公共API操作
 public class EntityManagerOperations {
 
-    private static final EntityManagerFactory emf;
-
-    /**
-     * Static block for creating EntityManagerFactory.
-     * The Persistence class looks for META-INF/persistence.xml in the classpath.
-     */
-    static {
-        String persistenceUnitName = "master.hibernate.testing.operations";
-        emf = Persistence.createEntityManagerFactory(persistenceUnitName);
-    }
+    // TODO. 必须使用persistence.xml文件中配置的持久层单元名称
+    // The Persistence class looks for META-INF/persistence.xml in the classpath.
+    // Exception in thread "main" java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+    private static EntityManagerFactory emf =
+            Persistence.createEntityManagerFactory("base.jpa.snapshot");
 
     /**
      * Static method returning EntityManager.
@@ -102,12 +97,4 @@ public class EntityManagerOperations {
         em.remove(book);
         em.getTransaction().commit();
     }
-
-    // 创建HQL查询语言
-    // String selectProfiles = "DELETE FROM " + MyClass.class.getSimpleName() + " p WHERE p.name = :name";
-    // try {
-    //     entityManager.createQuery(selectProfiles)
-    //            .setParameter("name", groupName)
-    //            .executeUpdate();
-    // }
 }

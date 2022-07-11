@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <!-- Hibernate JPA持久层配置文件 -->
+    <persistence-unit name="base.jpa.snapshot" transaction-type="RESOURCE_LOCAL">
+        <!-- <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider> -->
+        <!-- 旧版本的配置: 该provider已经被废弃 -->
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+
+        <!-- 注入指定的Entity Class -->
+        <class>com.jpa.basic.entity.Sample</class>
+        <!-- 数据库连接相关的配置文件 -->
+        <properties>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/my_database"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+            <property name="hibernate.connection.password" value="admin"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
+

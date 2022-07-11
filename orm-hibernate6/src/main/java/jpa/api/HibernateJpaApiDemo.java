@@ -15,7 +15,7 @@ import java.util.List;
 public class HibernateJpaApiDemo {
 
     // TODO. 创建一个查询的标准，指定要查询的数据类型和Selection返回的字段
-    //  同时可以指定在执行查询时的锁策略
+    //       同时可以指定在执行查询时的锁策略
     public void testCriteriaQueries() {
         EntityManager entityManager = Persistence
                 .createEntityManagerFactory("hibernate.jpa.api")
@@ -38,10 +38,8 @@ public class HibernateJpaApiDemo {
 
     // 提供Jpa native sql原生的sql查询语句
     public void testNativeSqlQueries(EntityManager entityManager) {
-        List<Object[]> books = entityManager.createNativeQuery("SELECT * FROM Book")
-                .getResultList();
-        List<Object[]> bookList = entityManager.createNativeQuery("SELECT id, name FROM Person")
-                .getResultList();
+        List<Object[]> books = entityManager.createNativeQuery("SELECT * FROM Book").getResultList();
+        List<Object[]> bookList = entityManager.createNativeQuery("SELECT id, name FROM Person").getResultList();
 
         // TODO. 提供查询出来的结果对应的类型，如果是原实体类型，则必须查询出所有的字段
         String sql = "SELECT * FROM Person";

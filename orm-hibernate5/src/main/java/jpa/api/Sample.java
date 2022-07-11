@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 // TODO. 可以将@Column注解写在getter方法, 而不需要标注在属性上
 @Entity
-@Table(name = "t_person")
+@Table(name = "t_sample")
 public class Sample {
 
     private int id;

@@ -27,5 +27,6 @@
         <module>orm-hibernate5</module>
         <module>orm-hibernate6</module>
         <module>relational-db-sql-server</module>
+        <module>orm-jpa-basic</module>
     </modules>
 </project>
