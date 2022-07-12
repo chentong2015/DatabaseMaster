@@ -291,3 +291,7 @@ F
 orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
 y
 Iorm-hibernate6/src/main/java/hibernate/framework/apis/query/HqlQuery.java,6\d\6da2a7c5b9a4f8af1cf78275fb7c4286a73da6ec
+‚
+Rorm-hibernate5/src/main/java/com/hibernate5/testing/query/DemoQueryTranslator.java,0\e\0e0afaa9d8093fbcd1f1e3d6a7713a6e3eb7feaf
+{
+Korm-jpa-basic/src/main/java/com/hibernate/entity/manager/entity/Sample.java,4\3\433f08bd7b115ce149999b1f8875815ac6e86a25
