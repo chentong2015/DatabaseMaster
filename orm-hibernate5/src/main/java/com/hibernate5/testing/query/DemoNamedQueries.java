@@ -4,7 +4,7 @@ import com.hibernate5.testing.package1.MyEntity;
 import com.hibernate5.testing.session.HibernateSessionUtil;
 import org.hibernate.Session;
 
-public class DemoHibernateNamedQueries {
+public class DemoNamedQueries {
 
     public static void main(String[] args) {
         Session session = HibernateSessionUtil.getSession();

@@ -1,56 +1,0 @@
-
-e
-java:S1192"HDefine a constant instead of duplicating this literal ", City:" 3 times.(ÆÔÉš8§Ô™ì0
-c
-java:S1192"FDefine a constant instead of duplicating this literal "Name:" 5 times.(ÆÔÉš8§–šì0
-H
-java:S1172	"+Remove this unused method parameter "args".(‹——’8ÉÀ—ì0
->
-java:S2129"!Remove this "Integer" constructor(ÙÇ¤8Õ¨˜ì0
-L
-java:S1874"/Remove this use of "Integer"; it is deprecated.(ÙÇ¤8Ö¨˜ì0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ÆÔÉš8Ô„—ì0
-T	java:S106"9Replace this use of System.out or System.err by a logger.(Çğõ"8Õ„—ì0
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(É‰âˆşÿÿÿÿ8Ö„—ì0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ğ¬ó€8ÉÀ—ì0
-T	java:S106"9Replace this use of System.out or System.err by a logger.(Çğõ"8ÊÀ—ì0
-M
-java:S1172"+Remove this unused method parameter "args".(À»Áùÿÿÿÿ8Ô¨˜ì0
-T	java:S106"9Replace this use of System.out or System.err by a logger.(”ÄËH8ÊÀ—ì0
-U	java:S106""9Replace this use of System.out or System.err by a logger.(°±ø„8Ö¨˜ì0
-U	java:S106%"9Replace this use of System.out or System.err by a logger.(¿Ë‡¶8×¨˜ì0
-M
-java:S1172("+Remove this unused method parameter "args".(üÎÆıÿÿÿÿ8ˆä˜ì0
->
-java:S2129+"!Remove this "Integer" constructor(ÙÇ¤8‰ä˜ì0
-L
-java:S1874+"/Remove this use of "Integer"; it is deprecated.(ÙÇ¤8‰ä˜ì0
-U	java:S106,"9Replace this use of System.out or System.err by a logger.(ßÉÖÌ8×¨˜ì0
-T	java:S106-"9Replace this use of System.out or System.err by a logger.(”ÄËH8Ø¨˜ì0
-U	java:S1060"9Replace this use of System.out or System.err by a logger.(°±ø„8Ù¨˜ì0
-Z	java:S1067"9Replace this use of System.out or System.err by a logger.(¤§’Öÿÿÿÿÿ8Ú¨˜ì0
-U	java:S1068"9Replace this use of System.out or System.err by a logger.(ßÉÖÌ8Šä˜ì0
-Z	java:S106;"9Replace this use of System.out or System.err by a logger.(øçıüÿÿÿÿÿ8ÊÔ™ì0
-H
-java:S1172>"+Remove this unused method parameter "args".(¸ó€Æ8ËÔ™ì0
->
-java:S2129@"!Remove this "Integer" constructor(ÙÇ¤8ËÔ™ì0
-L
-java:S1874@"/Remove this use of "Integer"; it is deprecated.(ÙÇ¤8ÌÔ™ì0
-U	java:S106G"9Replace this use of System.out or System.err by a logger.(Óñâ8ÖÔ™ì0
-H
-java:S1172J"+Remove this unused method parameter "args".(Ú¼Øú8§­šì0
->
-java:S2129L"!Remove this "Integer" constructor(ÙÇ¤8Å–šì0
-L
-java:S1874L"/Remove this use of "Integer"; it is deprecated.(ÙÇ¤8Æ–šì0
-U	java:S106M"9Replace this use of System.out or System.err by a logger.(ÆÔÉš8Æ–šì0
->
-java:S2129S"!Remove this "Integer" constructor(€Ëùâ8Ç–šì0
-L
-java:S1874S"/Remove this use of "Integer"; it is deprecated.(€Ëùâ8Ç–šì0
-U	java:S106V"9Replace this use of System.out or System.err by a logger.(ÆÔÉš8Ç–šì0
-U	java:S106W"9Replace this use of System.out or System.err by a logger.(ïé±ù8È–šì0
-H
-java:S1172Z"+Remove this unused method parameter "args".(’Èî8Ê ›ì0
-U	java:S106b"9Replace this use of System.out or System.err by a logger.(êÌ±Á8±ƒ›ì0

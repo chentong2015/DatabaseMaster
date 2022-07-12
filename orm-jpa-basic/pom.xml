@@ -17,7 +17,6 @@
              <artifactId>hibernate-core</artifactId>
              <version>6.0.2.Final</version>
          </dependency>
-
          <dependency>
              <groupId>javax.persistence</groupId>
              <artifactId>javax.persistence-api</artifactId>
@@ -27,7 +26,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.4.0.Final</version>
+            <version>5.4.24.Final</version>
         </dependency>
 
         <!-- 提供特定的数据库Driver支持 -->

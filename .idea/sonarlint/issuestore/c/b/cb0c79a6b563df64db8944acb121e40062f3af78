@@ -1,0 +1,19 @@
+
+S
+java:S1854+"=Remove this useless assignment to local variable "bookList1".(Ëú‘œ
+P
+java:S1854)":Remove this useless assignment to local variable "books1".(¿˜ûë
+W
+java:S1854'"<Remove this useless assignment to local variable "bookList".(ŠÑÓâûÿÿÿÿ
+O
+java:S1854&"9Remove this useless assignment to local variable "books".(½öÌ¼
+T
+java:S1135$"2Complete the task associated to this TODO comment.(Šì‘Óúÿÿÿÿ8¦¬°¨™0
+@
+java:S1481&"*Remove this unused "books" local variable.(½öÌ¼
+H
+java:S1481'"-Remove this unused "bookList" local variable.(ŠÑÓâûÿÿÿÿ
+A
+java:S1481)"+Remove this unused "books1" local variable.(¿˜ûë
+D
+java:S1481+".Remove this unused "bookList1" local variable.(Ëú‘œ
