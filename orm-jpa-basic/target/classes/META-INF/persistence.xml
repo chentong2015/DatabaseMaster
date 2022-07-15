@@ -10,7 +10,9 @@
         <description>Hibernate EntityManager Demo</description>
         <!-- 注入指定的Entity Class -->
         <class>com.hibernate.entity.manager.entity.Sample</class>
+        <class>com.hibernate.entity.manager.entity.NamedQueryEntity</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
         <properties>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>

@@ -68,7 +68,5 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
 
         <mapping resource="mapping/primary.key.one.to.one/idcard.hbm.xml"/>
         <mapping resource="mapping/primary.key.one.to.one/person.hbm.xml"/>
-
-        <mapping class="Sample"/>
     </session-factory>
 </hibernate-configuration>

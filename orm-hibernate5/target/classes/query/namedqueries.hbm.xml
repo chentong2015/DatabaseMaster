@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <!-- TODO. Named Query (HQL Query)，必须使用Jpa Entity Name(名称必须存在)来构建HQL
+         1. Entity Class对应使用@NamedQuery()注解
+         2. XML mapping配置<query>来指定查询 -->
+    <query name="hqlNamedQuerySelectEntity">
+        from com.hibernate5.testing.package1.MyEntity entity where entity.name ='test'
+    </query>
+
+    <!-- TODO. Named Native Query (SQL query)，必须使用数据库table名称，指定返回的Object类型
+         1. Entity Class对应使用@NamedNativeQuery()注解
+         2. XML mapping配置<sql-query>来指定查询  -->
+    <sql-query name="sqlNamedQuerySelectEntity">
+        <return class="com.hibernate5.testing.package1.MyEntity"/>
+        SELECT * FROM t_first_entity t WHERE t.name='test'
+    </sql-query>
+
+</hibernate-mapping>

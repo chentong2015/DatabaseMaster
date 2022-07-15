@@ -7,6 +7,9 @@ import org.hibernate.Transaction;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.query.Query;
+
+import java.util.List;
 
 // Native Hibernate APIs(功能较多)
 public class DemoNativeHibernateAPI {
@@ -19,7 +22,18 @@ public class DemoNativeHibernateAPI {
 
     public static void main(String[] args) {
         testPersistObject();
-        // HqlQuery.testGetQuery(sessionFactory);
+        try (Session session = sessionFactory.openSession()) {
+            String fullNamePath = Book.class.getName();  // 全路径
+            String entityNameByDefault = Book.class.getSimpleName(); // 只取类的名称
+            Query<Book> query = session.createQuery("FROM " + entityNameByDefault, Book.class);
+            List<Book> books = query.getResultList();
+            for (Book book : books) {
+                System.out.println(book.getId() + " - " + book.getName() + " - " + book.getTitle());
+            }
+
+            // session.getEntityManagerFactory()
+        }
+
         sessionFactory.close();
         // The registry would be destroyed by the SessionFactory,
         // Destroy it manually when we have trouble building the SessionFactory
