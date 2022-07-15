@@ -203,8 +203,6 @@ Worm-hibernate5/src/main/java/com/hibernate5/testing/metadata/MetadataSourcesHel
 Uorm-hibernate5/src/main/java/com/hibernate5/testing/basemodel/AbstractSuperClass.java,e\3\e3bf76724786f5f41e41bf6f017a879e4a93fec8
 …
 Uorm-hibernate5/src/main/java/com/hibernate5/testing/session/HibernateSessionUtil.java,d\3\d30752390024f55a32724f0c902b5e74ed9b53a2
-z
-Jorm-hibernate5/src/main/java/com/hibernate5/testing/package1/MyEntity.java,7\6\7613a03371e7b903be6715030e3a64f2aa56090c
 s
 Cdocument-db-mongodb/src/main/java/com/mongodb/main/BaseMongoDB.java,b\6\b614e1a4278571422ae35ef3b0faa9b276ac7fe2
 y
@@ -277,16 +275,12 @@ k
 ;orm-hibernate6/src/main/java/jpa/api/entity/EntityDemo.java,a\7\a7348b045af6dca0d07cd08a4e231eb5c780c6ed
 y
 Iorm-jpa-basic/src/main/java/com/hibernate/entity/manager/entity/Book.java,a\a\aac10d91a17cdeb16ab4d599f047aae64ec0a407
-…
-Uorm-jpa-basic/src/main/java/com/hibernate/entity/manager/EntityManagerOperations.java,f\6\f6dca09983b195e1d1260a8048296c45164b8925
 g
 7orm-jpa-basic/src/main/java/demo/JPAUtilityHandler.java,c\3\c3599500e661dca5a0424542fcfbf7e6d5516995
 g
 7orm-jpa-basic/src/main/java/demo/TestEntityManager.java,1\8\18ca91031ec08d722e8ebfd4f0c02c556b15aa2a
 E
 orm-jpa-basic/pom.xml,e\2\e29d28da5233b2af162975c209c664c6ea879832
-
-Oorm-hibernate5/src/main/java/com/hibernate5/testing/query/DemoNamedQueries.java,8\f\8fd20f87c89dba860554a190724a81a6bb74c59a
 F
 orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
 y

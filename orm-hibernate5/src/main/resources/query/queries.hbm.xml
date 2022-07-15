@@ -5,9 +5,15 @@
 
 <hibernate-mapping>
 
-    <!-- TODO. 配置Hibernate NamedQuery 查询语句，通过指定的名称来执行 ==> 对应使用JPA @NamedQuery
-         注意使用Jpa Entity Name(名称必须存在)来构建HQL查询的语句 -->
+    <!-- TODO. Named Query (HQL Query)，必须使用Jpa Entity Name(名称必须存在)来构建HQL
+         1. Entity Class对应使用@NamedQuery()注解
+         2. XML mapping配置<query>来指定查询 -->
     <query name="selectTestEntity">from com.hibernate5.testing.package1.MyEntity entity where entity.name ='test'
     </query>
+
+    <!-- TODO. Native Query (SQL query)，直接使用数据库中table的名称来构建SQL
+         1. Entity Class对应使用@NamedNativeQuery()注解
+         2. XML mapping配置<sql-query>来指定查询  -->
+    <sql-query name="selectMyEntities">SELECT * FROM t_first_entity t WHERE t.name='test'</sql-query>
 
 </hibernate-mapping>
