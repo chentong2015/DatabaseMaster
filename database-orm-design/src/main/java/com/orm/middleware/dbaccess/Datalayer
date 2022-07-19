@@ -1,0 +1,4 @@
+Data Access层封装Application对DB访问的中间层支持
+- Database connection连接池
+- JDBC Statement 代理
+- Database Configs相关配置(详细参数)
