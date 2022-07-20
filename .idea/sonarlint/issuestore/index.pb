@@ -183,8 +183,6 @@ u
 Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
 …
 Udatabase-orm-design/src/main/java/master/database/design/metadata/MetaDataHelper.java,5\5\552cfef53a62ff10a20b60b8b64712108f37dd5b
-}
-Morm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,6\4\64d66920aa081525ec2688e3388c3ae6b7eabeed
 E
 orm-jpa-basic/pom.xml,e\2\e29d28da5233b2af162975c209c664c6ea879832
 F

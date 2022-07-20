@@ -32,7 +32,7 @@ public class MetadataSourcesHelper {
     private ClassLoader classLoader;
     private File configFile;
 
-    // TODO. 将所有加载的Entity提取到Map<>: classname -> PersistentClass持久层实例对象
+    // TODO. 从Metadata中获取所有的加载的PersistentClass持久层实例对象
     protected Map<String, PersistentClass> getMappings() {
         mappings = new HashMap<>();
         Metadata innerMetadata = getMetadata();
