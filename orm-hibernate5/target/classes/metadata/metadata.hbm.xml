@@ -4,8 +4,8 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="com.hibernate5.testing.metadata.entity.BaseMetadata"
-           entity-name="com.hibernate5.testing.metadata.entity.BaseMetadata"
+    <class name="hibernate.metadata.source.entity"
+           entity-name="hibernate.metadata.source.entity.BaseMetadata"
            table="t_metadata">
         <id type="long" name="id" column="id"/>
         <property type="java.lang.String" name="name" column="name"/>

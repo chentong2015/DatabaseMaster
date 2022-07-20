@@ -1,15 +1,0 @@
-
-}
-java:S1450"gRemove the "bootstrapServiceRegistry" field and declare it as a local variable in the relevant methods.(úÚ¨«
-t
-java:S1450"WRemove the "mappings" field and declare it as a local variable in the relevant methods.(Šíªä8Ë¡¤ ›0
-ƒ
-java:S1450"mRemove the "standardServiceRegistryBuilder" field and declare it as a local variable in the relevant methods.(µÅõ‰
-O
-java:S1135#"2Complete the task associated to this TODO comment.(¿ùõµ8º¢ ›0
-N
-java:S11351"2Complete the task associated to this TODO comment.(¤–Ø&8Ë¡ ›0
-\
-java:S1874B":Remove this use of "getMetadataBuilder"; it is deprecated.(£ÄÄàûÿÿÿÿ8ƒØŒ ›0
-K
-java:S1874m"0Remove this use of "addClass"; it is deprecated.(‡—Šøüÿÿÿÿ
