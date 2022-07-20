@@ -21,7 +21,7 @@ import java.util.Properties;
 
 // 1. 注入Java Entity Class成PersistentClass持久层的对象
 // 2. 注入Xml Entity Mapping文件中的成PersistentClass持久层的对象
-public class HibernateMetadataSources {
+public class DemoMetadataSources {
 
     public static void main(String[] args) {
         BootstrapServiceRegistry bootstrapServiceRegistry = new BootstrapServiceRegistryBuilder().build();
@@ -35,7 +35,7 @@ public class HibernateMetadataSources {
         // 1. 类型名称如果冲突，需要使用全路径形式
         metadataSources.addAnnotatedClass(BaseJpaMetadata.class);
         // 2. 添加到xmlBindings列表中
-        InputStream inputStream = HibernateMetadataSources.class.getResourceAsStream("/metadata/metadata.hbm.xml");
+        InputStream inputStream = DemoMetadataSources.class.getResourceAsStream("/metadata/metadata.hbm.xml");
         metadataSources.addInputStream(inputStream);
 
         // TODO. 使用MetadataBuilder构造Metadata配置的源数据信息
@@ -52,11 +52,14 @@ public class HibernateMetadataSources {
     // TODO. 完全等效于hibernate xml config文件的配置, 同时去掉entity xml mapping文件 !!
     private static Properties getDbSettings() {
         Properties properties = new Properties();
+        // DB连接的信息
         properties.setProperty(AvailableSettings.URL, "");
         properties.setProperty(AvailableSettings.USER, "");
         properties.setProperty(AvailableSettings.PASS, "");
+        // 配置：根据注入的entity class来自动创建DB中的tables
+        properties.setProperty(AvailableSettings.HBM2DDL_AUTO, "create");
 
-        //Allow the use of getCurrentSession()
+        // Allow the use of getCurrentSession()
         properties.setProperty(AvailableSettings.CURRENT_SESSION_CONTEXT_CLASS, ThreadLocalSessionContext.class.getName());
         properties.setProperty(AvailableSettings.AUTOCOMMIT, "false");
         properties.setProperty(AvailableSettings.USE_NEW_ID_GENERATOR_MAPPINGS, "false");
