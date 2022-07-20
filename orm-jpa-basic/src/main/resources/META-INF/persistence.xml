@@ -8,13 +8,16 @@
         <provider>org.hibernate.ejb.HibernatePersistence</provider> -->
 
         <description>Hibernate EntityManager Demo</description>
-        <!-- 注入指定的Entity Class -->
+        <!-- 注入指定的Entity Class或者选择批量注入 -->
         <class>com.hibernate.entity.manager.entity.Sample</class>
         <class>com.hibernate.entity.manager.entity.NamedQueryEntity</class>
+        <!-- <class>com.hibernate.entity.manager.entity.*</class> -->
+
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
         <properties>
             <property name="hibernate.show_sql" value="true"/>
+            <!-- 设置ddl的执行模式，在注入entity后自动更新 -->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgresPlusDialect"/>
             <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/my_database"/>
