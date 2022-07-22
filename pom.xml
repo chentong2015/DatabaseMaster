@@ -18,7 +18,7 @@
         <module>database-orm-design</module>
         <module>orm-mybatis</module>
         <module>relational-db-mysql</module>
-        <module>distributed-db</module>
+        <module>distributed-database</module>
         <module>orm-spring-jdbc</module>
         <module>relational-db-h2-database</module>
         <module>document-db-mongodb</module>

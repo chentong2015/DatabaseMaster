@@ -17,7 +17,7 @@ public class DemoJpaEntity {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        HqlRawQuery.testHqlWithJoin(session);
+        HqlRawQuery.testGetSampleData(session);
         session.close();
         sessionFactory.close();
     }

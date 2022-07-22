@@ -48,5 +48,8 @@
         <mapping class="jpa.annotations.entity.entity.Person"/>
         <mapping class="jpa.annotations.entity.package1.Person"/>
         <mapping class="jpa.annotations.entity.entity.Sample"/>
+
+        <mapping class="jpa.annotations.entity.inheritance.SuperClassEntity"/>
+        <mapping class="jpa.annotations.entity.inheritance.BaseClassEntity"/>
     </session-factory>
 </hibernate-configuration>

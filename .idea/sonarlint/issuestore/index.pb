@@ -7,8 +7,6 @@ t
 Ddocument-db-mongodb/src/main/java/com/mongodb/main/model/Person.java,c\d\cde24ed5015dfdcaa09adffe48dba0dc2575e99d
 K
 document-db-mongodb/pom.xml,4\9\49f32a047960359b6162aaa6fe8f76be14f9fcc5
-Z
-*distributed-db/src/main/java/BaseTiDB.java,0\1\01da1135333f0f61f97dd215d311f40f29f37770
 G
 orm-spring-jdbc/pom.xml,e\3\e3d4bbe1f3fbf130db88f73f247b5d0004e785cb
 t
@@ -51,8 +49,6 @@ Rrelational-db-h2-database/src/main/java/com/h2/database/H2Êï∞ÊçÆÂ∫ìÈÖçÁΩÆÂíåËøû
 Krelational-db-h2-database/src/main/java/com/h2/database/BaseH2Database.java,c\6\c6dcbb362d26f8b89877ad52051b86e2b390ec18
 Ü
 Vdatabase-orm-design/src/main/java/com/orm/middleware/datamodel/CrossDatabaseModel.java,d\e\defaacbb6928966a2ea65ac2a8acaf842c0e0dd5
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 C
 orm-mybatis/pom.xml,1\2\12f2ebabb2a1e56c10b3648c6c0e2a1b19f9e084
 q
@@ -261,8 +257,6 @@ gorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/many/to/many/Bidi
 Worm-hibernate6/src/main/java/hibernate/framework/apis/session/HibernateSessionUtil.java,c\8\c8274734f150538d5ec59f4dde60619781cea7e7
 á
 Worm-hibernate6/src/main/java/hibernate/framework/apis/session/DemoHibernateSession.java,7\d\7de6d8227e79aea6cbcd14409e21c1732f40443e
-à
-Xorm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateInheritanceMapping.java,d\7\d799752b4195ec37c49ae98ff14b11e3e0885113
 Å
 Qorm-hibernate5/src/main/java/hibernate/metadata/source/type/DisplayLabelType.java,5\7\579442fd5ecc4dfb9f1ace9ec76a55fb1fa8dbfb
 Ç
@@ -305,3 +299,9 @@ v
 Form-hibernate5/src/main/java/jpa/annotations/entity/entity/Sample.java,c\8\c8329fe0c82412db8d316e929f53d5aff741f66c
 
 Oorm-hibernate5/src/main/java/jpa/annotations/entity/entity/SelectionResult.java,9\9\992bea9c4c83fca2456dc8b6216560566bdb6d81
+z
+Jorm-hibernate5/src/main/java/jpa/annotations/entity/query/HqlRawQuery.java,2\1\21d390d564aa4f84061be84e9a731e955737e830
+v
+Form-hibernate5/src/main/java/jpa/annotations/entity/entity/Person.java,6\4\6455d0ec0a6d43042451e4507a4b48a692588b51
+
+Oorm-hibernate5/src/main/java/com/hibernate5/testing/DemoInheritanceMapping.java,e\8\e85f1fc539038c72c240e0290d329237e1a7b17e

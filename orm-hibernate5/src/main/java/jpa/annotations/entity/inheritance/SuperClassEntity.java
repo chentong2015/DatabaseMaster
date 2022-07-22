@@ -3,10 +3,15 @@ package jpa.annotations.entity.inheritance;
 import javax.persistence.*;
 
 // TODO. JPA设置Entity Class之间的继承关系 => 替代xml文件配置的继承关系
-// 1. SINGLE_TABLE: A single table per class hierarchy
-// 2. TABLE_PER_CLASS: A table per concrete entity class
-// 3. JOINED: 继承链上公共的数据会存储到separate table, a join is performed to instantiate the subclass
+// https://www.baeldung.com/hibernate-inheritance
+// 1. SINGLE_TABLE:
+//    The records for all entities will be in the same table 需要discriminator来区分不同类型
+// 2. TABLE_PER_CLASS:
+//    A table per concrete entity class, maps each entity to its table
+// 3. JOINED:
+//    继承链上公共的数据会存储到separate table, 在实例化subclass的时候需要执行join操作
 @Entity
+@Table(name = "t_super_inheritance_table")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class SuperClassEntity {
 

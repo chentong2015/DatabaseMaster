@@ -3,6 +3,9 @@ package jpa.annotations.entity.inheritance;
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
+// @MappedSuperclass: 没有@Entity annotation, 该类型的数据不会持久化到数据库中
+// No table exists for the mapped superclass itself.
+// It won't be persisted in the database by itself.
 @MappedSuperclass
 public class BaseClassEntity extends SuperClassEntity {
 
