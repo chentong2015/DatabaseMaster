@@ -15,7 +15,7 @@ public class DemoNamedQueries {
         // session.createNamedQuery("hqlNamedQuerySelectEntity", MyEntity.class).getSingleResult();
         MyEntity entity = (MyEntity) session.getNamedQuery("hqlNamedQuerySelectEntity").getSingleResult();
         System.out.println(entity);
-
+ 
         // session.createNativeQuery("sqlNamedQuerySelectEntity").getResultList();
         List<MyEntity> entityList = session.getNamedNativeQuery("sqlNamedQuerySelectEntity").getResultList();
         for (MyEntity entity1 : entityList) {

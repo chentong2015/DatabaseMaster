@@ -1,6 +1,8 @@
 package jpa.annotations.entity.query;
 
-import jpa.annotations.entity.Person;
+import jpa.annotations.entity.entity.Person;
+import jpa.annotations.entity.entity.Sample;
+import jpa.annotations.entity.entity.SelectionResult;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
@@ -10,29 +12,14 @@ import java.util.Optional;
 // HQL: hibernate query language
 // 一种类似于sql的简化的查询语言
 // 必须满足特定的语句描述规则, 主要看查询时使用的JPA Entity Name名称
-
-// session.createQuery(hqlQuery) 创建hibernate query查询语句
 public class HqlRawQuery {
-
-    private final String hqlQuery;
-
-    public HqlRawQuery(String hqlQuery) {
-        this.hqlQuery = hqlQuery;
-    }
-
-    protected Query getQuery(Session session) {
-        return session.createQuery(hqlQuery);
-    }
-
-    protected <T> Query<T> getQuery(Session session, Class<T> clazz) {
-        return session.createQuery(hqlQuery, clazz);
-    }
 
     // TODO. 测试复杂的HQL查询语句的构造
     // 1. .createQuery(query, String.class)   提供的是查询返回的结果类型 The type of the query result
     // 2. .createQuery(query).executeUpdate() 如果是更新的语句，则不需要提供查询结果的类型
     //    执行更新和修改的语句时，需要使用transaction事务
     public static void testHqlQuery(Session session) {
+        // 表示选择指定的table的所有字段
         String hqlQuery = "From " + Person.class.getName();
         Query<Person> query = session.createQuery(hqlQuery, Person.class);
         List<Person> personList = query.getResultList();
@@ -53,5 +40,33 @@ public class HqlRawQuery {
         String hqlQuery2 = "Delete from " + Person.class.getName() + " p where p.id = 3";
         session.createQuery(hqlQuery2).executeUpdate();
         session.getTransaction().commit();
+    }
+
+    // TODO. HQL支持将查询出来的Result构建成新的对象(非entity class)
+    public static void testHqlWithJoin(Session session) {
+        String query = "SELECT new jpa.annotations.entity.entity.SelectionResult(person, sample)" +
+                "FROM %s person " +
+                "JOIN jpa.annotations.entity.entity.Sample sample " +
+                "ON person.id = sample.id";
+        // 这里必须使用entity name的全路径
+        String entityName = "jpa.annotation.entity.entity.Person";
+        String hqlQuery = String.format(query, entityName);
+
+        // 指定ResultSet返回的结果数据类型
+        Query<SelectionResult> resultQuery = session.createQuery(hqlQuery, SelectionResult.class);
+        List<SelectionResult> resultList = resultQuery.getResultList();
+        for (SelectionResult result : resultList) {
+            System.out.println(result);
+        }
+    }
+
+    // 测试不同的Entity注解的标注方式，也能查询到数据
+    public static void testGetSampleData(Session session) {
+        Query<Sample> query = session.createQuery("FROM " + Sample.class.getName(), Sample.class);
+        List<Sample> samples = query.getResultList();
+        for (Sample sample : samples) {
+            System.out.println(sample);
+        }
+        session.close();
     }
 }
