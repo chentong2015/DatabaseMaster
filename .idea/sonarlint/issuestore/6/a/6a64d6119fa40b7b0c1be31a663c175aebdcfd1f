@@ -1,0 +1,7 @@
+
+R
+java:S1854"7Remove this useless assignment to local variable "row".(îÍÜÂúÿÿÿÿ
+Q
+java:S1874"6Remove this use of "createCriteria"; it is deprecated.(ÀĞóûÿÿÿÿ
+C
+java:S1481"(Remove this unused "row" local variable.(îÍÜÂúÿÿÿÿ

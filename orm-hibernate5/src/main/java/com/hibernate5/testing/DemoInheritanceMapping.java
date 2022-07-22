@@ -13,7 +13,7 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class DemoHibernateInheritanceMapping {
+public class DemoInheritanceMapping {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
     static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
@@ -46,6 +46,7 @@ public class DemoHibernateInheritanceMapping {
 
     // TODO. 2. <joined-subclass> 根据继承链创建多个表
     // 在存储SubSuperClass继承类的实例对象时，会同时在SuperClass上存储指定字段的数据 !!
+
     // TODO. 3. <union-subclass>
     // 会在子表上存储全部的信息，不需要再级联查询
     public static void testTablePerSubclassAndPerConcreteClass() {
