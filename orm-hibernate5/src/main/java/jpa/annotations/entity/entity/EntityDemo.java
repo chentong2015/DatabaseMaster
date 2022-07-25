@@ -17,7 +17,7 @@ public class EntityDemo {
     @Column(name = "id")
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
-    private Object id;
+    private int id;
 
     // TODO. 等效于hbm.xml中对于属性的<column>配置, 可以约定默认值(存在适配的问题)
     @Column(name = "name", columnDefinition = "character varying")
@@ -28,11 +28,11 @@ public class EntityDemo {
     private Integer version;
 
     // TODO. 必须提供Getter&Setter方法，满足在HBM mapping文件中的属性配置
-    public Object getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Object id) {
+    public void setId(int id) {
         this.id = id;
     }
 

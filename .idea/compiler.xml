@@ -15,7 +15,6 @@
         <module name="relational-db-mysql" />
         <module name="relational-db-h2-database" />
         <module name="relational-db-psql" />
-        <module name="distributed-db" />
         <module name="orm-mybatis" />
         <module name="orm-liquibase" />
         <module name="orm-jpa-basic" />
@@ -23,6 +22,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="distributed-database" target="15" />
+      <module name="distributed-db" target="15" />
       <module name="object-db-management-system" target="1.5" />
     </bytecodeTargetLevel>
   </component>

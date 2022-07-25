@@ -6,7 +6,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/orm-hibernate6/pom.xml" />
-        <option value="$PROJECT_DIR$/distributed-database/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
