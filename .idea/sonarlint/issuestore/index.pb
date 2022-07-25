@@ -73,10 +73,6 @@ oorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/foreign/key/one/t
 norm-hibernate6/src/main/java/hibernate/framework/apis/mapping/foreign/key/one/to/one/bidirectional/IdCard.java,7\7\777134d388bdd5e278fa54a0fead870a99a5ef05
 û
 norm-hibernate6/src/main/java/hibernate/framework/apis/mapping/foreign/key/one/to/one/bidirectional/Person.java,d\c\dca31625fbf71d25ba3a0790ce8687e99c9e2183
-ê
-`orm-hibernate6/src/main/java/hibernate/framework/apis/mapping/primary/key/one/to/one/Person.java,c\4\c487406172235961d7d0274e31bc02d8b5a7d82b
-ê
-`orm-hibernate6/src/main/java/hibernate/framework/apis/mapping/primary/key/one/to/one/IdCard.java,3\4\34e0aea237997bb9c843f51571679d90501ac52f
 d
 4orm-liquibase/src/main/java/Liquibase Global Options,9\1\91a4bcd8855351af910c5ca0b21915aecdb88b1d
 `
@@ -305,3 +301,13 @@ v
 Form-hibernate5/src/main/java/jpa/annotations/entity/entity/Person.java,6\4\6455d0ec0a6d43042451e4507a4b48a692588b51
 
 Oorm-hibernate5/src/main/java/com/hibernate5/testing/DemoInheritanceMapping.java,e\8\e85f1fc539038c72c240e0290d329237e1a7b17e
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+}
+Morm-hibernate5/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,6\4\64d66920aa081525ec2688e3388c3ae6b7eabeed
+Ñ
+Torm-hibernate5/src/main/java/jpa/annotations/entity/inheritance/BaseClassEntity.java,4\c\4c0166f3d7175800026711c838dbe850789d1817
+Ö
+Uorm-hibernate5/src/main/java/jpa/annotations/entity/inheritance/SuperClassEntity.java,9\9\991ef75401611a3ca53ef1fae1ee25606c803895
+v
+Form-hibernate5/src/main/java/jpa/annotations/entity/DemoJpaEntity.java,4\5\459df2bfc035506db4be37e2d31dbe25873e00a8

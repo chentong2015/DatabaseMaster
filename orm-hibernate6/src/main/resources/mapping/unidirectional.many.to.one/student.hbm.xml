@@ -24,8 +24,7 @@
                      column="grade_id"
                      foreign-key="foreign_key"/>
 
-        <!-- TODO. 只需要在Class xml文件配置级别上设置entity-name
-                   而不需要重复设置在此级联关系上 -->
+        <!-- TODO. 可以设置多个<many-to-one的关系，注意这里JPA Entity Name的重复问题 -->
         <many-to-one name="grade1"
                      class="hibernate.framework.apis.mapping.unidirectional.many.to.one.package1.Grade"
                      column="grade_id_1"
