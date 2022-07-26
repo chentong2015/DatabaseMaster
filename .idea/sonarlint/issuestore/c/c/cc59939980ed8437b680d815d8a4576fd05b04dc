@@ -1,6 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÀ—®øÿÿÿÿ8Î•¥öš0
-o	java:S116
-"SRename this field "owner_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÏíÆ®8ÖØ¥öš0
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âù¦øúÿÿÿÿ8Ñ•¥öš0
-o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÀ—®øÿÿÿÿ8Ò•¥öš0

@@ -8,13 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="database-orm-design" />
         <module name="orm-spring-jdbc" />
-        <module name="document-db-mongodb" />
-        <module name="orm-hibernate5" />
-        <module name="orm-hibernate6" />
         <module name="relational-db-sql-server" />
         <module name="relational-db-mysql" />
         <module name="relational-db-h2-database" />
         <module name="relational-db-psql" />
+        <module name="document-db-mongodb" />
+        <module name="orm-hibernate5" />
+        <module name="orm-hibernate6" />
         <module name="orm-mybatis" />
         <module name="orm-liquibase" />
         <module name="orm-jpa-basic" />

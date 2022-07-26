@@ -10,7 +10,8 @@ import static javax.persistence.GenerationType.SEQUENCE;
 
 // TODO. @GeneratedValue 提供主键值的特殊生成策略
 // GenerationType.AUTO      默认配置的自动增加 > SQLite, H2 Database
-// GenerationType.IDENTITY  部分数据库提供支持 > MySQL, PSQL (从0开始依次增加)
+//    如果是自动增加的策略，如何设置成null会出错，必须非空并且保证一个默认的有效值
+// GenerationType.IDENTITY  部分数据库提供支持 > MySQL, PSQL(从0开始依次增加)
 // GenerationType.SEQUENCE  通过序列来生成ID  > Oracle, PSQL
 // GenerationType.TABLE     容器指定用底层的数据表确保唯一
 public class IdGeneratorType {
@@ -18,8 +19,10 @@ public class IdGeneratorType {
     // TODO. @GeneratedValue和@GenericGenerator协同使用，指定id的生成策略
     private long id;
 
-    // 1. @GeneratedValue indicates generator to use on your attribute by referencing the name of the generator to use.
-    // 2. @GenericGenerator Use Hibernate’s increment generation strategy for this entity’s identifier values
+    // @GeneratedValue indicates generator to use on your attribute
+    //   by referencing the name of the generator to use.
+    // @GenericGenerator Use Hibernate’s increment generation strategy
+    //   for this entity’s identifier values
     @Id
     @GeneratedValue(generator = "increment") // 通过名称来指定使用什么生成器，名称保持一致，名称不会在DB中存储
     @GenericGenerator(name = "increment", strategy = "increment") // 定义生成器的名称和特殊的策略

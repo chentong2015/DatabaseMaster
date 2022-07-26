@@ -51,8 +51,6 @@ Arelational-db-mysql/src/main/java/storage/engine/InnoDBBasic.java,a\e\aef510c4
 0relational-db-sql-server/SQL Server é…ç½®æ“ä½œ,b\9\b97a83d2ff239f5ff20d61176a63ceaee89044f9
 ˆ
 Xorm-hibernate6/src/main/java/hibernate/framework/apis/lifecycle/HibernateSQLæ‰§è¡Œä»£ç ,9\d\9d99cdb14875fab215d6eea4e724acc20bef08e6
-Œ
-\orm-hibernate6/src/main/java/hibernate/framework/apis/hbm2ddl/HibernateSchemaExportDemo.java,e\6\e641c21a13a7af2a4671469e4de429d3c0ce04bd
 
 `orm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/many/to/one/ddl_sql,5\1\51c832c6c80f1d2d87454cf0574ab3a7561d4be4
 ›
@@ -65,10 +63,6 @@ oorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/foreign/key/one/t
 norm-hibernate6/src/main/java/hibernate/framework/apis/mapping/foreign/key/one/to/one/bidirectional/IdCard.java,7\7\777134d388bdd5e278fa54a0fead870a99a5ef05
 
 norm-hibernate6/src/main/java/hibernate/framework/apis/mapping/foreign/key/one/to/one/bidirectional/Person.java,d\c\dca31625fbf71d25ba3a0790ce8687e99c9e2183
-d
-4orm-liquibase/src/main/java/Liquibase Global Options,9\1\91a4bcd8855351af910c5ca0b21915aecdb88b1d
-`
-0orm-liquibase/src/main/java/Liquibase æ•™ç¨‹.txt,6\8\68db7d7367e44b2b616f97d1dcf45b808fe48a90
 c
 3orm-mybatis/src/main/java/spring/MyBatisConfig.java,c\5\c564e9413f3f0c593be86563429c177ad15c7e20
 ”
@@ -111,10 +105,6 @@ j
 :orm-hibernate5/src/main/java/Hibernate Mappingæ˜ å°„é—®é¢˜,e\a\eaa1e90f250bc087cd35144c4fca5dedf4dd5068
 s
 Corm-hibernate5/src/main/java/com/hibernate5/testing/mapping/ddl_sql,d\f\df5c62b8fd30fca78de5a76121a54a5307c65824
-‚
-Rorm-hibernate6/src/main/java/hibernate/framework/apis/config/HibernateåŸºç¡€é…ç½®,2\2\228e3f22c440e08062c1938b55eafa9be81dd74a
-‹
-[orm-hibernate6/src/main/java/hibernate/framework/apis/config/HibernateConfigProperties.java,6\f\6f70fa059a95a0440b4c3fd2041df2d5a1f2efa8
 t
 Dorm-hibernate5/src/main/java/com/hibernate5/testing/mapping/Fee.java,e\1\e158a996ab60bd6f25790ecdb532174b18af0fe3
 u
@@ -151,8 +141,6 @@ Jorm-liquibase/src/main/java/com/liquibase/main/datatype/MyVarcharType.java,b\d
 Korm-liquibase/src/main/java/com/liquibase/main/datatype/MyDateTimeType.java,e\7\e74b71e1160b8994d324f29d4e23233a7b1d08c9
 w
 Gorm-liquibase/src/main/java/com/liquibase/main/DemoDatabaseFactory.java,5\5\55b42d8122ac4b410ac8ab972d5550518bcb0279
-F
-orm-hibernate5/pom.xml,9\c\9c84cdd4e729b74363a0642d60e77c1e297815b1
 …
 Udatabase-orm-design/src/main/java/master/database/design/metadata/MyDatabaseType.java,2\f\2f117a25c1941299b386e399e3820db54f877396
 w
@@ -161,34 +149,12 @@ K
 database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
 …
 Udatabase-orm-design/src/main/java/master/database/design/metadata/MetaDataHelper.java,5\5\552cfef53a62ff10a20b60b8b64712108f37dd5b
-E
-orm-jpa-basic/pom.xml,e\2\e29d28da5233b2af162975c209c664c6ea879832
-F
-orm-hibernate6/pom.xml,5\9\59b3a61b7f84f37370b4d3c740f163da739a9601
-v
-Form-hibernate5/src/main/java/jpa/annotations/entity/model/Company.java,2\2\22a8baad5b72eb5371b5b1b79b59b7e72387ad2c
-u
-Eorm-hibernate5/src/main/java/jpa/annotations/entity/model/Person.java,2\1\21d9c0ed08ef01dafcd015b4f0aaab573b98f260
-v
-Form-hibernate5/src/main/java/jpa/annotations/entity/model/Vehicle.java,b\1\b1ee8d3499fbdf5a5fdde96999cc4e25996a838e
-{
-Korm-hibernate5/src/main/java/jpa/annotations/entity/model/VehicleOwner.java,c\c\cc59939980ed8437b680d815d8a4576fd05b04dc
-
-Qorm-hibernate6/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,d\b\db69bb0ed714b875fa3e69b2b804db5dd6b2786b
-†
-Vorm-hibernate6/src/main/java/hibernate/framework/apis/geneator/id/IdGeneratorType.java,1\c\1c87f5a4b7f1f70e34d07288a376cd388dd71711
 ˆ
 Xorm-hibernate6/src/main/java/hibernate/framework/apis/geneator/id/Natural-Idç”Ÿæˆç­–ç•¥,4\4\44c7c2b25e76c4bc4952fa48bc85e4647bb52660
 z
 Jorm-hibernate5/src/main/java/jpa/annotations/entity/query/SqlRawQuery.java,c\7\c72720f209ccc10b8783b4e953a7cde93fd54c38
 ‚
 Rorm-hibernate5/src/main/java/com/hibernate5/testing/query/DemoQueryTranslator.java,0\e\0e0afaa9d8093fbcd1f1e3d6a7713a6e3eb7feaf
-~
-Norm-hibernate6/src/main/java/hibernate/framework/apis/typedef/MyTypeClass.java,c\9\c9e21f1b3cb0d3a3b1a13134e4c10b9ef388d75d
-
-Oorm-hibernate6/src/main/java/hibernate/framework/apis/typedef/TemplateType.java,a\f\af7ea21b28d4cd2fac6241d9d0af4c99f505d1b0
-…
-Uorm-jpa-basic/src/main/java/com/hibernate/entity/manager/entity/NamedQueryEntity.java,7\b\7bfeedcc34c3c9962e5db0d37c2a3fd6b9805e8b
 {
 Korm-jpa-basic/src/main/java/com/hibernate/entity/manager/entity/Sample.java,4\3\433f08bd7b115ce149999b1f8875815ac6e86a25
 …
@@ -225,8 +191,6 @@ eorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/on
 corm-hibernate6/src/main/java/hibernate/framework/apis/mapping/unidirectional/one/to/many/Grade.java,1\b\1b83a2808adb083015302837b8ab552e546c44f0
 ˆ
 Xorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/many/to/many/Typology.java,b\9\b9d29be0a793c927f08d64d925b1fb5de5df739c
-ˆ
-Xorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/many/to/many/Strategy.java,3\4\34287ee494f2703f5e97fb52434e920286c896f4
 ‚
 Rorm-hibernate6/src/main/java/hibernate/framework/apis/mapping/many/to/many/ddl_sql,2\1\2145b5277f8747f7503c544ad229ec9686fc662c
 —
@@ -247,14 +211,8 @@ E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
 u
 Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
-
-Qorm-hibernate5/src/main/java/hibernate/metadata/source/MetadataSourcesHelper.java,0\3\03f0e4e623bd98513fa3545404e99cf4c4d054e1
 }
 Morm-jpa-basic/src/main/java/com/hibernate/entity/manager/JpqlQueryRunner.java,b\a\ba4e677005b91a9485c48a361207c0b93425bc08
-‚
-Rorm-jpa-basic/src/main/java/com/hibernate/entity/manager/EntityManagerHandler.java,3\c\3cada3a52a3bb791ab163343cc8771478fe0c096
-…
-Uorm-jpa-basic/src/main/java/com/hibernate/entity/manager/JpaEntityManagerQueries.java,1\0\10419a8e225fa328f7d56d216d118b3828d39519
 {
 Korm-hibernate5/src/main/java/jpa/annotations/entity/query/HqlQueryUtil.java,d\4\d4cef06654b0f172248fcb7d0c9e07459f97c787
 ‚
@@ -283,3 +241,33 @@ Form-hibernate5/src/main/java/jpa/annotations/entity/DemoJpaEntity.java,4\5\459
 `orm-hibernate6/src/main/java/hibernate/framework/apis/mapping/primary/key/one/to/one/IdCard.java,3\4\34e0aea237997bb9c843f51571679d90501ac52f
 
 `orm-hibernate6/src/main/java/hibernate/framework/apis/mapping/primary/key/one/to/one/Person.java,c\4\c487406172235961d7d0274e31bc02d8b5a7d82b
+~
+Norm-hibernate5/src/main/java/jpa/annotations/entity/entity/entity-demo.hbm.xml,b\2\b238c7f08bdbfe20736b73798623efc62e4aef71
+z
+Jorm-hibernate5/src/main/java/jpa/annotations/entity/entity/EntityDemo.java,b\f\bfd05d2f9d1de2088dcd952b0cf373d545c0eb2a
+„
+Torm-hibernate5/src/main/java/jpa/annotations/entity/inheritance/BaseClassEntity.java,4\c\4c0166f3d7175800026711c838dbe850789d1817
+…
+Uorm-hibernate5/src/main/java/jpa/annotations/entity/inheritance/SuperClassEntity.java,9\9\991ef75401611a3ca53ef1fae1ee25606c803895
+„
+Torm-hibernate5/src/main/java/hibernate/metadata/source/config/MyDialectResolver.java,1\e\1eb6c577c37865ffd378bb128e6792f583bd332f
+‹
+[orm-hibernate5/src/main/java/hibernate/metadata/source/config/MyPhysicalNamingStrategy.java,b\3\b39896f609810533a3bdf2bbc062e59b46b5b76c
+
+]orm-hibernate6/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,d\f\df228e8455f37e6986f4a7d266a230e12ab2ef76
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+s
+Cdocument-db-mongodb/src/main/java/com/mongodb/main/BaseMongoDB.java,b\6\b614e1a4278571422ae35ef3b0faa9b276ac7fe2
+K
+document-db-mongodb/pom.xml,4\9\49f32a047960359b6162aaa6fe8f76be14f9fcc5
+ƒ
+Sdocument-db-mongodb/src/main/java/com/mongodb/main/repository/PersonRepository.java,f\3\f31b72bff10320daa7c62705e54fc2955ca78f85
+t
+Ddocument-db-mongodb/src/main/java/com/mongodb/main/model/Person.java,c\d\cde24ed5015dfdcaa09adffe48dba0dc2575e99d
+
+Odatabase-orm-design/src/main/java/master/database/design/TiDBåˆ†å¸ƒå¼æ•°æ®åº“,2\b\2b5a08ed634724b1c3b0784ac0d1fdc0bd09ed96
+}
+Mdatabase-orm-design/src/main/java/master/database/design/Databaseè®¾è®¡æ€æƒ³,2\c\2cf272b306e27e1647ab3de600cb233d1aad937a
+t
+Ddatabase-orm-design/src/main/java/com/orm/middleware/ORMç³»ç»Ÿè®¾è®¡,6\7\672a930af7804e03733e623738fe7d96209a9298

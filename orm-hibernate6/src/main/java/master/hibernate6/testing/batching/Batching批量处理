@@ -1,0 +1,5 @@
+Batching在批量持久化和读取数据时，需要控制缓冲池的大小
+// control the size of the first-level cache 释放一级缓存的大小
+// flush a batch of inserts and release memory
+entityManager.flush();
+entityManager.clear();

@@ -1,0 +1,14 @@
+Fetching:
+从数据库中抓取数据到Application
+The process of grabbing data from the db and making it available to the application.
+- Fetching too much data adds overhead in terms of both JDBC communication and ResultSet processing.
+- Fetching too little data might cause additional fetching to be needed.
+
+Fetching主要提供两种类型:
+- static 支持EAGER或者LAZY两种模式
+- dynamic
+
+FetchMode: 抓取的方式 => 转换成底层执行的SQL有所不同
+- FetchMode.SELECT
+- FetchMode.SUBSELECT
+- FetchMode.JOIN
