@@ -50,6 +50,5 @@
         <mapping class="jpa.annotations.entity.entity.Sample"/>
 
         <mapping class="jpa.annotations.entity.inheritance.SuperClassEntity"/>
-        <mapping class="jpa.annotations.entity.inheritance.BaseClassEntity"/>
     </session-factory>
 </hibernate-configuration>

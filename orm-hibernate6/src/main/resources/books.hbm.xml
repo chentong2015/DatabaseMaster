@@ -12,8 +12,13 @@
              type="string"       hibernate会自动根据该字段获取类型，可以不用设置
              column name="title" 如果属性的名称和数据库中表的字段一致，可以不用设置 -->
         <id type="long" name="id">
-            <column name="id" sql-type="bigint"/> <!-- 指定列的信息和约束条件(存在适配的问题) -->
-            <generator class="increment"/>        <!-- 该列的ID会随机自动地增加 -->
+            <!-- 指定列的信息和约束条件(存在适配的问题)
+                 将Java long类型的id映射成数据库中bigint
+                 将Java String类型的id映射成数据库中bigint，可能会造成存值时类型转换的问题 !! -->
+            <column name="id" sql-type="bigint"/>
+
+            <!-- 该列的ID会随机自动地增加 -->
+            <generator class="increment"/>
         </id>
 
         <property type="string" name="name">

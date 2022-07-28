@@ -8,6 +8,7 @@ import org.hibernate.hql.spi.QueryTranslator;
 import java.util.Collections;
 import java.util.Map;
 
+// TODO. Hibernate提供了QueryTranslatorImpl转换器的实现
 // 使用QueryTranslator将HQL转成SQL的标准格式, 以下为支持的版本 -> HqlTranslator v6版本
 // - org.hibernate:hibernate-core:v5.6.9.Final
 // - org.hibernate:hibernate-core:v5.4.24.Final
@@ -26,7 +27,8 @@ public class DemoQueryTranslator {
     }
 
     public String toSQL(Map<String, String> replacements) {
-        QueryTranslator translator = new QueryTranslatorImpl(null, hqlQuery, Collections.EMPTY_MAP, sessionFactory);
+        QueryTranslator translator = new QueryTranslatorImpl(
+                null, hqlQuery, Collections.EMPTY_MAP, sessionFactory);
         translator.compile(replacements, true);
         String sqlQuery = translator.getSQLString();
         String[][] columnNames = translator.getColumnNames();

@@ -1,4 +1,4 @@
-package com.hibernate5.testing.query;
+package com.hibernate5.testing.session;
 
 import org.hibernate.Criteria;
 import org.hibernate.FlushMode;
@@ -6,9 +6,9 @@ import org.hibernate.LockMode;
 import org.hibernate.Session;
 import org.hibernate.criterion.Order;
 
-public class DemoSessionCriteria {
+public class HibernateSessionCriteria {
 
-    // 设置Session在执行数据库操作时的相关配置 => 相当于执行一个CriteriaQuery标准查询
+    // 设置Session在执行数据库操作时的相关配置
     protected Criteria getCriteria(Session session, Class<?> fromClass) {
         Criteria criteria = session.createCriteria(fromClass);
         criteria.setLockMode(LockMode.OPTIMISTIC);

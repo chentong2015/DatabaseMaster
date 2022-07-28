@@ -4,9 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="com.hibernate5.testing.package2">
-    <class name="MyEntity"
-           entity-name="com.hibernate5.testing.package2.MyEntity"
-           schema="public"
+    <class name="MyEntity" entity-name="com.hibernate5.testing.package2.MyEntity" schema="public"
            table="t_second_entity">
         <id name="id">
             <column name="id" sql-type="bigint"/>

@@ -3,12 +3,31 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
+<!-- NamedQuery具名参数一般写在有Class声明的Mapping中，执行相关于该class的操作逻辑 -->
 <hibernate-mapping>
     <!-- TODO. Named Query (HQL Query)，必须使用Jpa Entity Name(名称必须存在)来构建HQL
          1. Entity Class对应使用@NamedQuery()注解
          2. XML mapping配置<query>来指定查询 -->
     <query name="hqlNamedQuerySelectEntity">
         from com.hibernate5.testing.package1.MyEntity entity where entity.name ='test'
+    </query>
+
+    <!-- 测试别名为关键字: 转换成SQL之后不会受到影响
+          select
+              myentity0_.id as id1_2_,
+              myentity0_.name as name2_2_,
+              myentity0_.code as code3_2_
+          from
+              public.t_first_entity myentity0_
+          where
+              myentity0_.name='test' -->
+    <query name="hqlSelectWithAlias">
+        from com.hibernate5.testing.package1.MyEntity index where index.name ='test'
+    </query>
+
+    <!-- 测试含参数的NamedQuery -->
+    <query name="hqlSelectWithParameter">
+        from com.hibernate5.testing.package1.MyEntity index where index.name =?1 and index.code = ?2
     </query>
 
     <!-- TODO. Named Native Query (SQL query)，必须使用数据库table名称，指定返回的Object类型

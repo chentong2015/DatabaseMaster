@@ -8,11 +8,10 @@
       2. 这里class name名称，单引号和双引号都可以
       3. entity-name名称必须严格的保证是Class的全路径，否则无法找到 !! -->
 <hibernate-mapping package="com.hibernate5.testing.package1">
-    <class name="MyEntity"
-           entity-name="com.hibernate5.testing.package1.MyEntity"
-           schema="public"
+    <class name="MyEntity" entity-name="com.hibernate5.testing.package1.MyEntity" schema="public"
            table="t_first_entity">
         <id name="id">
+            <!-- 将Java String类型的id映射成数据库中sql-type -->
             <column name="id" sql-type="bigint"/>
             <generator class="increment"/>
         </id>
