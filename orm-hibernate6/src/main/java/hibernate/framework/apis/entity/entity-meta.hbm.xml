@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!--
+ Hibernate Mapping meta对应到class类型上设置的信息
+
+ Attribute	        Description
+ class-description	inserted into the javadoc for classes
+ field-description	inserted into the javadoc for fields/properties
+ interface	        If true, an interface is generated instead of an class.
+ implements	        interface the class should implement
+ extends	        class that the current class should extend (ignored for subclasses)
+ generated-class	overrule the name of the actual class generated
+ scope-class	    scope for class
+ scope-set	        scope for setter method
+ scope-get	        scope for getter method
+ scope-field	    scope for actual field
+ default-value	    default initialization value for a field
+ use-in-tostring	include this property in the toString()
+ use-in-equals	    include this property in the equals() and hashCode() method. If no use-in-equals is specified, no equals/hashcode will be generated.
+ gen-property	    property will not be generated if false (use with care)
+ property-type	    Overrides the default type of property. Use this with any tag's to specify the concrete type instead of just Object.
+ class-code	        Extra code that will inserted at the end of the class
+ extra-import	    Extra import that will inserted at the end of all other imports -->
+<hibernate-mapping>
+    <class name="hibernate.framework.apis.entity.EntityMeta">
+        <meta attribute="class-description">
+            JavaDoc for EntityMeta Class
+            @author Frodo
+        </meta>
+        <meta attribute="implements">IAuditable</meta>
+        <id name="id" type="long">
+            <meta attribute="scope-set">protected</meta>
+            <generator class="increment"/>
+        </id>
+        <property name="name" type="string">
+            <meta attribute="field-description">The name of the entity meta</meta>
+        </property>
+    </class>
+</hibernate-mapping>

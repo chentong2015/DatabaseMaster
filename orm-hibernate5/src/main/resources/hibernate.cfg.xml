@@ -21,20 +21,20 @@
 
         <!-- TODO. 1. table per class hierarchy 只有一个数据表
              设置的文件在添加mapping绑定的时候，如果有jpaEntityName重复则报错 -->
-        <mapping resource="package/subclass/abstractsuperclass.hbm.xml"/>
-        <mapping resource="package/subclass/firstsubclass.hbm.xml"/>
-        <mapping resource="package/subclass/secondsubclass.hbm.xml"/>
+        <mapping resource="subclass/subclass/abstractsuperclass.hbm.xml"/>
+        <mapping resource="subclass/subclass/firstsubclass.hbm.xml"/>
+        <mapping resource="subclass/subclass/secondsubclass.hbm.xml"/>
 
         <!-- TODO. 2. table per subclass Super数据表和subclass表使用index来级联 -->
-        <mapping resource="package/joined.subclass/superclass.hbm.xml"/>
-        <mapping resource="package/joined.subclass/superclass2.hbm.xml"/>
+        <mapping resource="subclass/joined.subclass/superclass.hbm.xml"/>
+        <mapping resource="subclass/joined.subclass/superclass2.hbm.xml"/>
 
         <!-- TODO. 3. table per concrete class 子表包含全部的信息
         <mapping resource="package/union.subclass/superclass.hbm.xml"/>
         <mapping resource="package/union.subclass/superclass2.hbm.xml"/> -->
 
-        <mapping resource="mapping/event.hbm.xml"/>
-        <mapping resource="mapping/fees.hbm.xml"/>
+        <mapping resource="testing/event.hbm.xml"/>
+        <mapping resource="testing/fees.hbm.xml"/>
 
         <!-- 测试mapping中的any和component关联: 要存储的表都需要添加关联 -->
         <mapping resource="any/myanyclass.hbm.xml"/>

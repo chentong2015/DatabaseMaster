@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernate5.testing.testing">
+    <class name="Fees" schema="public" table="t_fees">
+        <id type="java.lang.Double" name="id" column="M_REFERENCE">
+            <generator class="assigned">
+                <param name="label1">item1</param>
+                <param name="label2">item2</param>
+            </generator>
+        </id>
+        <property type="java.lang.String" name="currency" column="M_CURRENCY"/>
+
+        <!-- 单向的One-To-Many端，包含Set集合
+             table="t_fee"     创建Many-多端存储的数据表
+             cascade="all"     设置级联，同步存储Many-多端的数据
+             column="fees_id"  表示Many-多端上的外键名称，是放置在Many-端上的外键名称  -->
+        <set name="fees" table="t_fee" cascade="all">
+            <key column="fees_id" foreign-key="fk_fee"/>
+
+            <!-- 设置集合中组合的元素Class => 没有第三个.hbm.xml映射表 -->
+            <composite-element class="Fee">
+                <property type="java.lang.String" name="label" column="M_LABEL"/>
+                <property type="java.lang.Double" name="amount" column="M_AMOUNT"/>
+            </composite-element>
+        </set>
+    </class>
+</hibernate-mapping>

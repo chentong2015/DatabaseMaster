@@ -1,8 +1,8 @@
 package com.hibernate5.testing;
 
-import com.hibernate5.testing.basemodel.AbstractSuperClass;
-import com.hibernate5.testing.basemodel.SuperClass;
-import com.hibernate5.testing.basemodel.SuperClass2;
+import com.hibernate5.testing.subclass.AbstractSuperClass;
+import com.hibernate5.testing.subclass.SuperClass;
+import com.hibernate5.testing.subclass.SuperClass2;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

@@ -8,7 +8,7 @@
 
     <!-- TODO. 不同的数据库区别schema的不同: 这个schema的名称可以写在@Table注解的类型上 -->
     <!-- table="t_book" 如果不设置映射的table名称，hibernate会自动使用类的名称来创建 -->
-    <class name="hibernate.framework.apis.datamodel.Book" schema="public" table="t_book">
+    <class name="hibernate.framework.apis.entity.Book" schema="public" table="t_book">
         <!-- TODO. hibernate映射java type数据类型到sql-type数据库中的数据类型
              type="string"       hibernate会自动根据该字段获取类型，可以不用设置
              column name="title" 如果属性的名称和数据库中表的字段一致，可以不用设置 -->

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.hibernate5.testing.subclass.SuperClass2" table="t_super_class_2">
+        <id type="double" name="reference" column="index"/>
+        <property type="string" name="name" column="name"/>
+
+        <joined-subclass name="com.hibernate5.testing.package2.SubSuperClass"
+                         entity-name="com.hibernate5.testing.package2.SubSuperClass"
+                         table="t_super_subclass2_2">
+            <key column="index"/>
+            <property type="string" name="subName2" column="sub_name2"/>
+        </joined-subclass>
+    </class>
+</hibernate-mapping>

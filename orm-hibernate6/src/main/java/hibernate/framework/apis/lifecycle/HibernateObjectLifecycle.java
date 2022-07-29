@@ -1,6 +1,6 @@
 package hibernate.framework.apis.lifecycle;
 
-import hibernate.framework.apis.datamodel.Book;
+import hibernate.framework.apis.entity.Book;
 import hibernate.framework.apis.session.HibernateSessionUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
