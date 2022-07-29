@@ -27,13 +27,5 @@
             <column name="m_type"/>
             <column name="m_ref"/>
         </any>
-
-        <!-- TODO. component是属于一个实体内的组件，不会创建Component的table数据表
-             not an entity reference 不是一种实体引用的关系 -->
-        <component name="component" class="com.hibernate5.testing.any.Component">
-            <!-- 包含组件的全部列字段 -->
-            <property type="java.lang.String" name="name" column="component_name"/>
-            <property type="java.lang.Double" name="price" column="component_price"/>
-        </component>
     </class>
 </hibernate-mapping>

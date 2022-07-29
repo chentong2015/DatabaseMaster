@@ -1,8 +1,8 @@
 package jpa.annotations.entity.query;
 
-import jpa.annotations.entity.entity.Person;
-import jpa.annotations.entity.entity.Sample;
-import jpa.annotations.entity.entity.SelectionResult;
+import jpa.annotations.entity.base.entity.Person;
+import jpa.annotations.entity.base.entity.Sample;
+import jpa.annotations.entity.base.entity.SelectionResult;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 

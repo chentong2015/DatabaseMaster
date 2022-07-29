@@ -5,16 +5,14 @@ public class MyAnyClass {
     private long id;
     private String name;
     private Object anyClassModel;
-    private Component component;
 
     public MyAnyClass() {
     }
-
-    public MyAnyClass(long id, String name, Object anyClassModel, Component component) {
+ 
+    public MyAnyClass(long id, String name, Object anyClassModel) {
         this.id = id;
         this.name = name;
         this.anyClassModel = anyClassModel;
-        this.component = component;
     }
 
     public long getId() {
@@ -39,13 +37,5 @@ public class MyAnyClass {
 
     public void setAnyClassModel(Object anyClassModel) {
         this.anyClassModel = anyClassModel;
-    }
-
-    public Component getComponent() {
-        return component;
-    }
-
-    public void setComponent(Component component) {
-        this.component = component;
     }
 }

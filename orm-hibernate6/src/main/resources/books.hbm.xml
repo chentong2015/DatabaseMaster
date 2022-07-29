@@ -3,9 +3,10 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<!-- HBM: mapping metadata to determine load and store objects of the persistent class
-         TODO. 不同的数据库，注意使用schema的区别: 这个schema的名称可以写在@Table注解的类型上 -->
+<!-- HBM: mapping metadata to determine load and store objects of the persistent class -->
 <hibernate-mapping>
+
+    <!-- TODO. 不同的数据库区别schema的不同: 这个schema的名称可以写在@Table注解的类型上 -->
     <!-- table="t_book" 如果不设置映射的table名称，hibernate会自动使用类的名称来创建 -->
     <class name="hibernate.framework.apis.datamodel.Book" schema="public" table="t_book">
         <!-- TODO. hibernate映射java type数据类型到sql-type数据库中的数据类型
@@ -24,7 +25,6 @@
         <property type="string" name="name">
             <column sql-type="character varying(32)" name="name" not-null="true" unique="true"/>
         </property>
-
         <property name="title">
             <column name="title" sql-type="nvarchar(50)" length="50"/>
         </property>

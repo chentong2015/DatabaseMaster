@@ -45,10 +45,11 @@
         <mapping resource="query/namedqueries.hbm.xml"/>
 
         <!-- 指定映射的类型Entity Class: 类型的全路径中不能包含特殊单词 -->
-        <mapping class="jpa.annotations.entity.entity.Person"/>
-        <mapping class="jpa.annotations.entity.package1.Person"/>
-        <mapping class="jpa.annotations.entity.entity.Sample"/>
+        <mapping class="jpa.annotations.entity.base.entity.Person"/>
+        <mapping class="jpa.annotations.entity.base.entity.package1.Person"/>
+        <mapping class="jpa.annotations.entity.base.entity.Sample"/>
 
+        <mapping class="jpa.annotations.entity.embeded.component.Staff"/>
         <mapping class="jpa.annotations.entity.inheritance.SuperClassEntity"/>
     </session-factory>
 </hibernate-configuration>

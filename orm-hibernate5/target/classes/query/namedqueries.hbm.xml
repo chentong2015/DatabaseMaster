@@ -27,7 +27,7 @@
 
     <!-- 测试含参数的NamedQuery -->
     <query name="hqlSelectWithParameter">
-        from com.hibernate5.testing.package1.MyEntity index where index.id =?1 and index.code = ?2
+        from com.hibernate5.testing.package1.MyEntity index where index.name =?1 and index.code = ?2
     </query>
 
     <!-- TODO. Named Native Query (SQL query)，必须使用数据库table名称，指定返回的Object类型

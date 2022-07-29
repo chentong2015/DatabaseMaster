@@ -14,7 +14,7 @@ import spring.base.MyDataSource;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScan(basePackages = {"mybatis.spring"})
+@ComponentScan(basePackages = {"spring"})
 @EnableTransactionManagement
 @MapperScan(basePackages = {"mybatis.spring.dao"})
 public class MyBatisConfig {
