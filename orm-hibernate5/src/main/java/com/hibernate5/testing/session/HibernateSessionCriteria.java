@@ -17,4 +17,14 @@ public class HibernateSessionCriteria {
         Object row = criteria.uniqueResult();
         return criteria;
     }
+    
+    public void testSessionCriteria() {
+        // session.createCriteria(Audit.class)
+        //        .addOrder(Order.desc("id"))
+        //        .setMaxResults(1)
+        //        .uniqueResult();
+        // session.createCriteria(Trade.class)
+        //        .setProjection(Projections.rowCount())
+        //        .uniqueResult();
+    }
 }

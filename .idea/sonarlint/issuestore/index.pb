@@ -189,8 +189,6 @@ Torm-hibernate6/src/main/java/master/hibernate6/testing/batching/Batchingæ‰¹é‡å
 Oorm-hibernate5/src/main/java/com/hibernate5/testing/query/DemoNamedQueries.java,8\f\8fd20f87c89dba860554a190724a81a6bb74c59a
 …
 Uorm-hibernate5/src/main/java/com/hibernate5/testing/session/HibernateSessionUtil.java,d\3\d30752390024f55a32724f0c902b5e74ed9b53a2
-‰
-Yorm-hibernate5/src/main/java/com/hibernate5/testing/session/HibernateSessionCriteria.java,f\b\fbfd16c90e54f18eb9468125ae6df1878980d2ef
 ‚
 Rorm-hibernate5/src/main/java/com/hibernate5/testing/query/DemoQueryTranslator.java,0\e\0e0afaa9d8093fbcd1f1e3d6a7713a6e3eb7feaf
 ~
