@@ -87,8 +87,6 @@ w
 Gorm-liquibase/src/main/java/com/liquibase/main/database/MyDatabase.java,9\5\95fcf2170a5dfb627d2f288fe0f0e914c06f247e
 K
 database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
-�
-Udatabase-orm-design/src/main/java/master/database/design/metadata/MetaDataHelper.java,5\5\552cfef53a62ff10a20b60b8b64712108f37dd5b
 �
 Xorm-hibernate6/src/main/java/hibernate/framework/apis/geneator/id/Natural-Id生成策略,4\4\44c7c2b25e76c4bc4952fa48bc85e4647bb52660
 z
@@ -149,8 +147,6 @@ t
 Ddocument-db-mongodb/src/main/java/com/mongodb/main/model/Person.java,c\d\cde24ed5015dfdcaa09adffe48dba0dc2575e99d
 
 Odatabase-orm-design/src/main/java/master/database/design/TiDB分布式数据库,2\b\2b5a08ed634724b1c3b0784ac0d1fdc0bd09ed96
-}
-Mdatabase-orm-design/src/main/java/master/database/design/Database设计思想,2\c\2cf272b306e27e1647ab3de600cb233d1aad937a
 t
 Ddatabase-orm-design/src/main/java/com/orm/middleware/ORM系统设计,6\7\672a930af7804e03733e623738fe7d96209a9298
 d
@@ -253,3 +249,7 @@ Morm-hibernate5/src/main/java/com/hibernate5/testing/subclass/SuperClass2.java,
 Torm-hibernate5/src/main/java/com/hibernate5/testing/subclass/AbstractSuperClass.java,5\f\5f88fef31a47c3c29c63bf159e15f781d4881047
 |
 Lorm-hibernate5/src/main/java/com/hibernate5/testing/subclass/SuperClass.java,e\f\ef8a50acffbff93521648a990ddc8f6c7db1854e
+g
+7orm-hibernate6/src/main/java/SessionFactory创建方式,2\5\254974b5cf961b2eddfa9f54b94c91af7830aa95
+�
+Yorm-hibernate5/src/main/java/com/hibernate5/testing/session/HibernateSessionCriteria.java,f\b\fbfd16c90e54f18eb9468125ae6df1878980d2ef
