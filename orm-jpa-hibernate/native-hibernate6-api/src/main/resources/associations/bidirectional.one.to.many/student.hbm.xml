@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hibernate.framework.apis.associations.bidirectional.one.to.many">
+    <class name="Student" schema="public" table="t_student_2">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="name" column="name"/>
+        <property name="age" column="age"/>
+
+        <!-- TODO. column="grade_id"外键是放在Student One一端的 -->
+        <many-to-one name="grade" class="Grade" column="grade_id" foreign-key="foreign_key"/>
+    </class>
+</hibernate-mapping>

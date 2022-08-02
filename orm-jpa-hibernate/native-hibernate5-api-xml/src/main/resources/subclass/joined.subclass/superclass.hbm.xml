@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.hibernate5.testing.subclass.SuperClass" table="t_super_class">
+        <id type="double" name="reference" column="index"/>
+        <property type="string" name="name" column="name"/>
+
+        <!-- TODO. 表明生成继承类数据包的方式(join使用key主键来做表的联合查询)　-->
+        <joined-subclass name="com.hibernate5.testing.package1.SubSuperClass"
+                         entity-name="com.hibernate5.testing.package1.SubSuperClass"
+                         table="t_super_subclass1">
+            <key column="index"/> <!-- 必须和super class主键的名称一致 -->
+            <property type="string" name="subName1" column="sub_name1"/>
+        </joined-subclass>
+
+        <!--　同名的Class名称不能设置在同一个<class标签下面
+        <joined-subclass name="com.hibernate5.testing.package2.SubSuperClass"
+                         entity-name="com.hibernate5.testing.package2.SubSuperClass"
+                         table="t_super_subclass2">
+            <key column="index"/>
+            <property type="string" name="subName2" column="sub_name2"/>
+        </joined-subclass> -->
+    </class>
+</hibernate-mapping>

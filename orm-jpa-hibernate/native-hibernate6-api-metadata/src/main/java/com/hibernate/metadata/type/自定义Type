@@ -1,0 +1,16 @@
+import org.hibernate.type.AbstractSingleColumnStandardBasicType;
+
+// 自定义的列类型，使用v5低版本的类型
+public class DisplayLabelType extends AbstractSingleColumnStandardBasicType<String> {
+
+    public static final DisplayLabelType INSTANCE = new DisplayLabelType();
+
+    private DisplayLabelType() {
+        super(StringColumnTypeDescriptor.INSTANCE, StringTypeDescriptor.INSTANCE);
+    }
+
+    @Override
+    public String getName() {
+        return "display-label";
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hibernate.framework.apis.associations.foreign.key.one.to.one.unidirectional">
+    <class name="IdCard" schema="public" table="t_fk_idcard">
+        <id name="id" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="code" column="code"/>
+    </class>
+</hibernate-mapping>

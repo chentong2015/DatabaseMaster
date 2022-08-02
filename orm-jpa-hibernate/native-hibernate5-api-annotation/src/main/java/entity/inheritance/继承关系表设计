@@ -1,0 +1,8 @@
+TODO. 关于Inheritance mapping继承关系表的设计(三种模式)
+https://docs.jboss.org/hibernate/core/3.3/reference/fr-FR/html/inheritance.html
+1. table per class hierarchy
+   https://www.geeksforgeeks.org/hibernate-table-per-hierarchy-using-xml-file/
+2. table per subclass
+   https://www.geeksforgeeks.org/hibernate-table-per-subclass-example-using-xml-file/
+3. table per concrete class
+   https://www.geeksforgeeks.org/hibernate-table-per-concrete-class-using-xml-file/

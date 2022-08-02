@@ -1,0 +1,27 @@
+1. Cannot invoke "org.hibernate.mapping.PersistentClass.getIdentifier()"
+   because "entityBinding" is null
+   异常原因：配置xml mapping文件时，配置的class=""名称无法唯一定位到指定的类型
+
+2. Caused by: org.hibernate.QueryException:
+   could not resolve property: property of: com.xxx.entities.Contact
+   异常原因：在执行HQL查询时，使用错误的Entity Class(没有包含指定的属性名称)
+           实体类型的属性名称大小写敏感 ?!
+
+3. org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null
+   异常原因：Hibernate没有解析到特定的数据库Dialect方言
+           当连接到正确的数据库时，Hibernate会自动判断指定的Dialect方言
+           Hibernate can determine the correct dialect to use automatically !
+   三种方式均可完成手动配置
+   3.1 cfg.xml文件
+       <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+   3.3 metadata源代码属性配置
+       properties.put(AvailableSettings.DIALECT, PostgresPlusDialect.class.getName());
+   3.2 Spring application.properties属性配置
+       spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+       spring.jpa.show-sql=true
+       spring.jpa.hibernate.ddl-auto=update
+
+
+
+
+

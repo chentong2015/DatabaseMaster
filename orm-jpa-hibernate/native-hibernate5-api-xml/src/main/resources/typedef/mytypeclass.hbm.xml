@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.hibernate5.testing.typedef">
+
+    <!-- TODO. 使用<typedef name="TemplateType"添加类型预定义, 作为类型的缩略名称(定义一个简称)
+         Typedefs 为一自定义类型赋予一个名称，并且如果此类型是参数化的，还可以包含一系列默认的参数值
+         Use a certain UserType very often, it may be useful to define a shorter name for it.
+         Typedefs assign a name to a custom type, may contain a list of default parameter values if the type is parameterized.-->
+    <typedef class="TemplateType" name="templateType">
+        <param name="default">NULL</param>
+    </typedef>
+
+    <class name="MyTypeClass">
+        <id type="double" name="reference" column="id">
+            <generator class="native"/>
+        </id>
+        <!-- 使用typedef的类型 -->
+        <property type="templateType" name="type" column="type"/>
+    </class>
+
+</hibernate-mapping>

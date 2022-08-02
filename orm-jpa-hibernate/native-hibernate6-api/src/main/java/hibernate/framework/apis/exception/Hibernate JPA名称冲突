@@ -1,0 +1,23 @@
+TODO. Hibernate Mapping Entity名称映射重复解决方案
+DuplicationMappingException: entities share the same JPA entity name
+1. HQL: 无论有没有设置entity-name为全路径，都推荐使用entity的全路径来查询
+2. SQL: 必须使用entity对应的数据库中table名称(具有唯一性)来查询
+
+不同的package下面类型的名称可能一致, 在没有设置entity-name的情况下，hibernate默认使用类名
+Retrieve PersistentClass objects without failing mappings with same entity name
+https://hibernate.atlassian.net/browse/HHH-13149?page=com.atlassian.jira.plugin.system.issuetabpanels%3Aall-tabpanel
+
+TODO. entityName和jpaEntityName有什么区别? (AbstractEntitySourceImpl.java源码)
+1. 两者都是Entity的名称
+2. className如果是全路径的名称，则全局唯一
+3. jpaEntityName只取全路径的最后类型名称，可能全局不唯一
+if (StringHelper.isNotEmpty(jaxbEntityMapping.getEntityName())) {
+   // 如果设置EntityName名称，则两者设置成一致，都被设置成全路径
+   entityName = jaxbEntityMapping.getEntityName();
+   jpaEntityName = jaxbEntityMapping.getEntityName();
+} else {
+   // 反之entityName使用className(<class name="">)全路径，jpaEntityName取Class类名
+   // 但是jpaEntityName不能够冲突
+   entityName = className;
+   jpaEntityName = StringHelper.unqualify(className);
+}

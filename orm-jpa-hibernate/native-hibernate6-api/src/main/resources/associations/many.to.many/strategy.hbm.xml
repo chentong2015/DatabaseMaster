@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="hibernate.framework.apis.associations.many.to.many">
+    <class name="Strategy" schema="public" table="t_strategy">
+        <id name="id" column="id"/>
+        <property name="name" column="name"/>
+
+        <set name="typologies" table="t_strategy_set_typologies">
+            <key column="m_key_strategy"/>
+            <many-to-many outer-join="auto" class="Typology" column="m_key_typology"/>
+        </set>
+    </class>
+</hibernate-mapping>

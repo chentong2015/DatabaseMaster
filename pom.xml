@@ -23,9 +23,7 @@
         <module>document-db-mongodb</module>
         <module>orm-liquibase</module>
         <module>relational-db-psql</module>
-        <module>orm-hibernate5</module>
-        <module>orm-hibernate6</module>
         <module>relational-db-sql-server</module>
-        <module>orm-jpa-basic</module>
+        <module>orm-jpa-hibernate</module>
     </modules>
 </project>
