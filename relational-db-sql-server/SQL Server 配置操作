@@ -1,21 +1,20 @@
-终端指令的操作
-https://www.sqlshack.com/working-sql-server-command-line-sqlcmd/
+SQL Server v10.2 兼容JDK17
 
+TODO. https://www.sqlshack.com/working-sql-server-command-line-sqlcmd/ 命令行操作
 连接Sql Server, 每个指令都需要使用go来执行
-sqlcmd -S DESKTOP-SO1J50J\SQLEXPRESS -E
-sqlcmd -S localhost -U SA -P '123456';
-sqlcmd -S localhost -U SA -P '123456' -i /root/dbo.sql;
-  1> select DB_NAME()
-  2> go
-  1> select name from master.sys.databases
-  2> go
-  1> use ApplicationWebServer
-  2> go
-  1> select * from sys.tables; 查看指定数据库下所有的表
-  2> go
-  1> select * from [table_name]
-  2> go
-
+   sqlcmd -S DESKTOP-SO1J50J\SQLEXPRESS -E
+   sqlcmd -S localhost -U SA -P '123456';
+   sqlcmd -S localhost -U SA -P '123456' -i /root/dbo.sql;
+   1> select DB_NAME()
+   2> go
+   1> select name from master.sys.databases
+   2> go
+   1> use ApplicationWebServer
+   2> go
+   1> select * from sys.tables; 查看指定数据库下所有的表
+   2> go
+   1> select * from [table_name]
+   2> go
 
 1.1	启动SQL Server：自动或者手动 > services 服务端自动查看
     Hostname / 打开 选择属性，找到计算机的名称
@@ -38,13 +37,13 @@ sqlcmd -S localhost -U SA -P '123456' -i /root/dbo.sql;
        Name varchar(20) not null,
        Credit int );
 
-
-Microsoft.PowerShell.Management
-https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7
-1.3	允许SQL脚本  使用Powershell > New-Item> Type 或者是改变扩展名称
+1.3	允许SQL脚本 使用Powershell > New-Item> Type 或者是改变扩展名称
     > use TestDB;
     > GO
     > Select * FROM Users;
     > GO
     > > type test.sql
     > sqlcmd -S myServer\instanceName -i C:\myScript.sql -o C:\EmpAdds.txt
+
+Microsoft.PowerShell.Management
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7
