@@ -1,4 +1,4 @@
-package com.orm.middleware.api;
+package orm.middleware.design.api;
 
 import java.sql.Connection;
 import java.sql.SQLException;

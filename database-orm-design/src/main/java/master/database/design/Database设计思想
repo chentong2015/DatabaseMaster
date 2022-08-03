@@ -3,7 +3,7 @@ JDBC Connection.createStatement(); 相当于是在数据库的上层创建的一
 JDBC Statement 无法适配不同的数据库之间的区别，在执行上面需要硬编码
 
 TODO. JDBC AutoCommit自动提交
-      org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
+org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
 JDBC Connection默认是开启AutoCommit, 不能再调用connection.commit()显式提交
 Transaction在开启事务的情况下，才能调用connection.commit()或者connection.rollback();
 
