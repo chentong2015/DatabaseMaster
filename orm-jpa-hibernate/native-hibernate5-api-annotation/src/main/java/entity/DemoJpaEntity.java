@@ -1,6 +1,6 @@
 package entity;
 
-import entity.query.HqlRawQuery;
+import entity.join.DemoJoinFetching;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -17,7 +17,8 @@ public class DemoJpaEntity {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        HqlRawQuery.testGetSampleData(session);
+        // DemoJoinFetching.testFetching(session);
+        DemoJoinFetching.testSubSelectFetchMode(session);
         session.close();
         sessionFactory.close();
     }

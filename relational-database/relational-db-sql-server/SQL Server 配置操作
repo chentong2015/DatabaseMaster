@@ -1,4 +1,5 @@
-SQL Server v10.2 兼容JDK17
+SQL Server v10.2   兼容JDK17
+>SELECT @@VERSION  Sql Server版本查询
 
 TODO. https://www.sqlshack.com/working-sql-server-command-line-sqlcmd/ 命令行操作
 连接Sql Server, 每个指令都需要使用go来执行

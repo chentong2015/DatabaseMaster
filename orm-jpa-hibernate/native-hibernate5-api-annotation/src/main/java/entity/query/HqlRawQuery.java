@@ -9,8 +9,7 @@ import org.hibernate.query.Query;
 import java.util.List;
 import java.util.Optional;
 
-// HQL: hibernate query language
-// 一种类似于sql的简化的查询语言
+// HQL: hibernate query language 类似sql的简化查询语言
 // 必须满足特定的语句描述规则, 主要看查询时使用的JPA Entity Name名称
 public class HqlRawQuery {
 

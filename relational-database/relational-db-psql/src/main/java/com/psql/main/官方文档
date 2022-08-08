@@ -18,3 +18,5 @@ C:\PostgreSQL\bin>psql.exe -U postgres
 C:\PostgreSQL\bin>pg_ctl.exe start -D C:\Program Files\PostgreSQL\14\data
 C:\PostgreSQL\bin>pg_ctl.exe restart -D C:\Program Files\PostgreSQL\14\data
 "services.msc" 在service服务上自动设置启动
+
+>select version() Psql版本查询(区别别的DB)

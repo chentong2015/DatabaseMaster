@@ -21,7 +21,16 @@
        spring.jpa.show-sql=true
        spring.jpa.hibernate.ddl-auto=update
 
+4. java.lang.IllegalArgumentException: Unknown entity: com.exmaple.MyEntity
+   @OneToOne or @ManyToOne on com.example.MyEntity.type references an unknown entity
+   异常原因：没有将@Entity注入到Hibernate中
 
+5. Unable to find column with logical name: columnName in xxx.Table and its related supertables and secondary tables
+   异常原因：应该使用映射出来的column名称，而不是类型的字段名称(两者不一致)
 
+6. class entity.join.column.Country cannot be cast to class java.io.Serializable
+   (entity.join.column.Country is in unnamed module of loader 'app';
+    java.io.Serializable is in module java.base of loader 'bootstrap')
+   异常原因：设置的Entity Class没有实现Serializable，实体类型是不可以序列化的
 
 

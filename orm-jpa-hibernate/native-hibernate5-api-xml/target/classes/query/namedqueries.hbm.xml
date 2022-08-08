@@ -3,7 +3,8 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<!-- NamedQuery具名参数一般写在有Class声明的Mapping中，执行相关于该class的操作逻辑 -->
+<!-- TODO. NamedQuery具名查询规范
+      一般声明在Class Entity Mapping映射文件中，执行entity class相关的操作 -->
 <hibernate-mapping>
     <!-- TODO. Named Query (HQL Query)，必须使用Jpa Entity Name(名称必须存在)来构建HQL
          1. Entity Class对应使用@NamedQuery()注解

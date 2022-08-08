@@ -9,8 +9,8 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
 
     <!-- 必须先设置property属性的值，然后定义table的mappings -->
     <session-factory>
-        <!-- TODO. Dialect: 指定hibernate所要converse到某个特定的SQL; HQL -> SQL specific
-        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property> -->
+        <!-- TODO. Dialect: 指定hibernate所要converse到某个特定的SQL; HQL -> SQL specific -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 
         <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>

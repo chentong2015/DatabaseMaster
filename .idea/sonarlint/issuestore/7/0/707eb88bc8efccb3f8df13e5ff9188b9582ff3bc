@@ -1,16 +1,0 @@
-
-P
-java:S1118
-":Add a private constructor to hide the implicit public one.(‡Ó•ş
-M
-java:S1135	"2Complete the task associated to this TODO comment.(ÉŸôõúÿÿÿÿ
-N	java:S1063"9Replace this use of System.out or System.err by a logger.(ùÉôÆ
-N	java:S1064"9Replace this use of System.out or System.err by a logger.(¹’»Ø
-N	java:S106?"9Replace this use of System.out or System.err by a logger.(¹’»Ø
-N	java:S106C"9Replace this use of System.out or System.err by a logger.(ùÉôÆ
-L
-java:S1144"1Remove this unused private "testSaveData" method.(ƒÖÛ‹üÿÿÿÿ
-Q
-java:S1144-"<Remove this unused private "testGetDataFromManySide" method.(æô‡o
-V
-java:S1144:";Remove this unused private "testGetDataFromOneSide" method.(ÂëÑşÿÿÿÿ
