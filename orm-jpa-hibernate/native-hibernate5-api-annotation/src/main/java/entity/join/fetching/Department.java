@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name = "entity.join.fetching.Department")
-@Table(name = "t_department_1")
+@Table(name = "t_department_2")
 public class Department {
 
     @Id
@@ -23,7 +23,7 @@ public class Department {
     // The association is going to be fetched using a secondary select for each individual entity
     // This mode can be used for either FetchType.EAGER or FetchType.LAZY
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
-    // @Fetch(FetchMode.SELECT)
+    // @Fetch(FetchMode.SELECT) 这里需要重新建表才能生效
     @Fetch(FetchMode.SUBSELECT)
     private List<Employee> employees = new ArrayList<>();
 

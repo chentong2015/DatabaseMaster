@@ -31,6 +31,9 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
+        <!-- 设置缓存属性 -->
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+
         <!-- 一个数据表的描述: 对象的配置文件 -->
         <mapping resource="entity/books.hbm.xml"/>
 

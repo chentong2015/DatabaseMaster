@@ -5,7 +5,7 @@ import org.hibernate.annotations.NaturalId;
 import javax.persistence.*;
 
 @Entity(name = "entity.join.fetching.Employee")
-@Table(name = "t_employee_1")
+@Table(name = "t_employee_2")
 public class Employee {
 
     @Id

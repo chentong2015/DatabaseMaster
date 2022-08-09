@@ -17,7 +17,7 @@ public class DemoJpaEntity {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        // DemoJoinFetching.testFetching(session);
+        DemoJoinFetching.initTables(session);
         DemoJoinFetching.testSubSelectFetchMode(session);
         session.close();
         sessionFactory.close();
