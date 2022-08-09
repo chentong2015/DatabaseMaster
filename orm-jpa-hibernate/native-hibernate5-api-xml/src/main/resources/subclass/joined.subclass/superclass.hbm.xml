@@ -16,7 +16,7 @@
             <property type="string" name="subName1" column="sub_name1"/>
         </joined-subclass>
 
-        <!--　同名的Class名称不能设置在同一个<class标签下面
+        <!-- 同Class类型名称不能设置在同一个<class标签下面
         <joined-subclass name="com.hibernate5.testing.package2.SubSuperClass"
                          entity-name="com.hibernate5.testing.package2.SubSuperClass"
                          table="t_super_subclass2">

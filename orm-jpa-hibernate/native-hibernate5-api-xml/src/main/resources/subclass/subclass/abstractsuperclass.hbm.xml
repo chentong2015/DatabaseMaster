@@ -3,13 +3,10 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
-<!-- TODO. 推荐将Super Class的entity-name标签值设置成class的全路径
-     否则Sub Class在定义extends=""值可能报错HibernateException:
-        Not all named super-types (extends) were found -->
-
 <!-- 这里的抽象类会在数据库中建立表格 -->
 <hibernate-mapping>
-    <!-- abstract="true" 表示该实体类型是一个抽象类，不能创建实例对象 -->
+    <!-- entity-name=""  需要设置成全路径，避免SubClass在声明extends=""时报错HibernateException: Not all named super-types (extends) were found
+         abstract="true" 表示该实体类型是一个抽象类，不能创建实例对象 -->
     <class name="com.hibernate5.testing.subclass.AbstractSuperClass"
            entity-name="com.hibernate5.testing.subclass.AbstractSuperClass"
            abstract="true"
