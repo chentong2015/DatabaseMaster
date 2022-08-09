@@ -2,16 +2,17 @@ package entity.base.entity;
 
 import javax.persistence.*;
 
-// TODO. 可以将@Column注解写在getter方法, 而不需要标注在属性上
+// TODO. Entity Class并不需要设置成public，同样能够完成class mapping映射
 @Entity(name = "jpa.annotations.entity.entity.Sample")
 @Table(name = "t_sample")
-public class Sample {
+class Sample {
 
     private int id;
     private String firstname;
     private String lastname;
     private String twitter;
 
+    // TODO. 等效于将注解写在getter方法上
     @Id
     @Column(name = "id")
     @GeneratedValue(generator = "increment")

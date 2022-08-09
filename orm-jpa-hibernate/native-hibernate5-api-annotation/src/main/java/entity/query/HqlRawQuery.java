@@ -1,7 +1,6 @@
 package entity.query;
 
 import entity.base.entity.Person;
-import entity.base.entity.Sample;
 import entity.base.entity.SelectionResult;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
@@ -57,15 +56,5 @@ public class HqlRawQuery {
         for (SelectionResult result : resultList) {
             System.out.println(result);
         }
-    }
-
-    // 测试不同的Entity注解的标注方式，也能查询到数据
-    public static void testGetSampleData(Session session) {
-        Query<Sample> query = session.createQuery("FROM " + Sample.class.getName(), Sample.class);
-        List<Sample> samples = query.getResultList();
-        for (Sample sample : samples) {
-            System.out.println(sample);
-        }
-        session.close();
     }
 }

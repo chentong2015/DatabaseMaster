@@ -23,5 +23,3 @@ public class DemoJpaEntity {
         sessionFactory.close();
     }
 }
-
-

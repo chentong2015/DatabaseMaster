@@ -117,8 +117,6 @@ oorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/embeded
 dorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/embeded/component/Staff.java,3\0\3081491faa6a9b4657036ecb9b5baa2386cbdd09
 
 _orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/query/HqlQueryUtil.java,7\5\75249440d34b5ffee45295e193ac79379eed76d0
-
-_orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/base/entity/Sample.java,f\6\f60722ecb54df99f84be2796e365f17cc730f04e
 ¦
 vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/associations/many/to/many/Typology.java,7\f\7f87c664ba823357c03007c66cf756281b7303d1
 ¦
@@ -219,8 +217,6 @@ _orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/one/to/
 ‚orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/associations/bidirectional/one/to/many/Student.java,a\c\ac63cb3caed7ecd192652f97e31dd5f439f5b12a
 Â
 ‘orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/associations/bidirectional/one/to/many/BidirectionalOneToMany.java,7\0\707eb88bc8efccb3f8df13e5ff9188b9582ff3bc
-
-^orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/query/HqlRawQuery.java,e\0\e057be04020259c453a07b313cca69fb4b1c5afa
 ¦
 vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,f\d\fd4e4a8ced05e9a3040438ffca88b6d44dafaae2
 
@@ -255,12 +251,8 @@ t
 Drelational-database/relational-db-sql-server/SQL Server é…ç½®æ“ä½œ,7\2\72c8f70e3111290fea4ff95b8c61f4bd6ecd7227
 }
 Mdatabase-orm-design/src/main/java/master/database/design/Databaseè®¾è®¡æ€æƒ³,2\c\2cf272b306e27e1647ab3de600cb233d1aad937a
-”
-dorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/fetching/FetchingåŸºç¡€,1\5\15c963394c9898897ddf2b62c8f275563340d8fc
 ’
 borm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/DemoJoinFetching.java,8\1\81036040192ff4e3bd5a2e208ab6d76d9e58cc3f
-Š
-Zorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/DemoJpaEntity.java,8\9\89a800cba1013efcd65fde65f31a3778d3d6df9e
 •
 eorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/fetching/Department.java,2\c\2c340c7785feaea13c0a3725cc628fd57b8f354a
 

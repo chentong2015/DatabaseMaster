@@ -12,5 +12,3 @@ https://docs.jboss.org/hibernate/orm/
 TODO. Hibernate版本升级
 https://github.com/hibernate/hibernate-orm/wiki/Migration-Guides
 https://docs.jboss.org/hibernate/orm/6.0/javadocs/deprecated-list.html
-
-TODO. Hibernate中的Entity Class是否必须是public ?
