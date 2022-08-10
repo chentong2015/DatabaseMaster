@@ -22,6 +22,5 @@
         <module>orm-liquibase</module>
         <module>orm-jpa-hibernate</module>
         <module>relational-database</module>
-        <module>orm-jpa-hibernate/entity-class-parser</module>
     </modules>
 </project>

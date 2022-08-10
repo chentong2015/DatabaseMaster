@@ -121,8 +121,6 @@ vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/associations/unidirectional/one/to/many/Grade.java,f\f\ffce3e2fbc98069a7c2e1a0413a1167d94b5b238
 Ÿ
 oorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/geneator/id/IdGeneratorType.java,8\0\8063971a7bcbd0f9081b6b54b581b99ddb0cfeeb
- 
-porm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/DemoHibernateSession.java,d\7\d7d56d1abacbaf4e56cd3d84536100a5bbf33bc5
 ¤
 torm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/HibernateSessionCallback.java,5\6\567f07d943954ef131243ce96ce5418e5ed74f98
 ¥
@@ -175,8 +173,6 @@ iorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testin
 sorm-jpa-hibernate/native-hibernate6-api-metadata/src/main/java/com/hibernate/metadata/config/MyDialectResolver.java,8\3\83bd0ced668c0845492380a90e07618587726107
 ª
 zorm-jpa-hibernate/native-hibernate6-api-metadata/src/main/java/com/hibernate/metadata/config/MyPhysicalNamingStrategy.java,9\8\98ac34f083715e2c72cd18891925eebb9ba3636e
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 K
 relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
 
@@ -227,8 +223,6 @@ h
 eorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/many/to/one/WebPage.java,9\3\93f4e98e9b7d2df773024aae89b0e9d34bda87e7
 ’
 borm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/many/to/one/Type.java,9\3\9349c63e1364096e6738e77727688f0646121500
-I
-orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 _
 /orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
 š
@@ -245,12 +239,8 @@ Drelational-database/relational-db-sql-server/SQL Server é…ç½®æ“ä½œ,7\2\72c8f
 Mdatabase-orm-design/src/main/java/master/database/design/Databaseè®¾è®¡æ€æƒ³,2\c\2cf272b306e27e1647ab3de600cb233d1aad937a
 ’
 borm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/DemoJoinFetching.java,8\1\81036040192ff4e3bd5a2e208ab6d76d9e58cc3f
-•
-eorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/fetching/Department.java,2\c\2c340c7785feaea13c0a3725cc628fd57b8f354a
 
 morm-jpa-hibernate/native-hibernate6-api/src/main/java/master/hibernate6/testing/batching/Batchingæ‰¹é‡å¤„ç†,3\7\379baaa44de65787cedc127b6c8da391cd09aa71
-“
-corm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/fetching/Employee.java,8\4\84a640c78622f9b638b3e1108f3e79dc1c0fad95
 ^
 .orm-jpa-hibernate/java-persistence-api/pom.xml,2\7\27afb29918834e0e07b025c42ad841e78d44dbfd
 œ

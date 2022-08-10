@@ -15,10 +15,12 @@
         <module name="relational-db-h2-database" />
         <module name="native-hibernate5-api-xml" />
         <module name="relational-db-psql" />
+        <module name="sample-mapping-annotation" />
         <module name="entity-class-parser" />
         <module name="orm-mybatis" />
         <module name="native-hibernate6-api" />
         <module name="native-hibernate6-api-metadata" />
+        <module name="sample-mapping-xml" />
         <module name="orm-liquibase" />
         <module name="java-persistence-api" />
       </profile>
