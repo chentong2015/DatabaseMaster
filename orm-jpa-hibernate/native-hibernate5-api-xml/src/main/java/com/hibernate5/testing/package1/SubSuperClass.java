@@ -1,6 +1,6 @@
 package com.hibernate5.testing.package1;
 
-import com.hibernate5.testing.subclass.SuperClass;
+import com.hibernate5.testing.inheritance.SuperClass;
 
 public class SubSuperClass extends SuperClass {
 

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.hibernate5.testing.inheritance.SuperClass" table="t_super_class_union">
+        <id type="double" name="reference" column="index"/>
+        <property type="string" name="name" column="name"/>
+
+        <!-- TODO. 表明生成继承类数据包的方式(Union继承来全部的字段) -->
+        <union-subclass name="com.hibernate5.testing.package1.SubSuperClass"
+                        entity-name="com.hibernate5.testing.package1.SubSuperClass"
+                        table="t_super_subclass1_union">
+            <!-- TODO. 由于union的table数据表会存储父类的全部信息，因此不需要index主键来join
+            <key column="index"/> -->
+            <property type="string" name="subName1" column="sub_name1"/>
+        </union-subclass>
+
+        <!-- 同名的Class名称不能设置在同一个<class标签下面
+        <union-subclass name="com.hibernate5.testing.package2.SubSuperClass"
+                        table="t_super_subclass2_union">
+            <property type="string" name="subName2" column="sub_name2"/>
+        </union-subclass> -->
+    </class>
+</hibernate-mapping>

@@ -31,5 +31,13 @@
                      class="hibernate.framework.apis.associations.unidirectional.many.to.one.package1.Grade"
                      column="grade_id_1"
                      foreign-key="foreign_key_1"/>
+
+        <!-- TODO. 可以讲多对一的关系存储到额外Join的关联表 -->
+        <join table="t_student_address">
+            <key column="student_id" unique="true"/>
+            <!-- 多个Student可能住在同一个地址 -->
+            <many-to-one name="address" class="StudentAddress" column="addressId" not-null="true"/>
+        </join>
+
     </class>
 </hibernate-mapping>

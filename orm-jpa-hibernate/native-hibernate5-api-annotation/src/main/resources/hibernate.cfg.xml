@@ -24,8 +24,8 @@
         <mapping class="entity.base.entity.package1.Person"/>
         <mapping class="entity.base.entity.Sample"/>
 
-        <mapping class="entity.embeded.component.Staff"/>
-        <mapping class="entity.inheritance.SuperClassEntity"/>
+        <mapping class="entity.component.Staff"/>
+        <mapping class="entity.inheritance.table.per.clazz.SuperClassEntity"/>
 
         <mapping class="entity.join.many.to.one.WebPage"/>
         <mapping class="entity.join.many.to.one.Type"/>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernate5.testing.component.collections">
+    <class name="Developer" table="t_developer">
+        <id type="java.lang.Long" name="id" column="id"/>
+        <property type="java.lang.String" name="name" column="name"/>
+
+        <!-- TODO. Set of Component配置集合组件, Component组件本身不会创建数据库表
+             table=""        定义集合组件存储的表
+             key column="id" 定义表的主键(作为外键reference到外表)
+             class="Name"    设置组件元素的类型  -->
+        <set name="someNames" table="t_developer_some_names" lazy="true">
+            <key column="id"/>
+            <composite-element class="Name">
+                <property name="initial"/>
+                <property name="first"/>
+                <property name="last"/>
+                <!-- <many-to-one name="" class="" /> 组件中还可以配置对多对一的关系 -->
+            </composite-element>
+        </set>
+    </class>
+</hibernate-mapping>

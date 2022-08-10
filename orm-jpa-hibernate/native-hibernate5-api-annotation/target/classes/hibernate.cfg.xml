@@ -16,14 +16,16 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <!-- 指定映射的类型Entity Class: 类型的全路径中不能包含特殊单词 -->
+        <!-- 指定映射的类型Entity Class:
+             1. 类型的全路径中不能包含特殊单词
+             2. 类型并不要求设置成public -->
         <mapping class="entity.base.entity.MyEntity"/>
         <mapping class="entity.base.entity.Person"/>
         <mapping class="entity.base.entity.package1.Person"/>
         <mapping class="entity.base.entity.Sample"/>
 
-        <mapping class="entity.embeded.component.Staff"/>
-        <mapping class="entity.inheritance.SuperClassEntity"/>
+        <mapping class="entity.component.Staff"/>
+        <mapping class="entity.inheritance.table.per.clazz.SuperClassEntity"/>
 
         <mapping class="entity.join.many.to.one.WebPage"/>
         <mapping class="entity.join.many.to.one.Type"/>

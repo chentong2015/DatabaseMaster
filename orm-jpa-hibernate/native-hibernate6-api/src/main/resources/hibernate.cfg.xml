@@ -10,7 +10,7 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
     <!-- 必须先设置property属性的值，然后定义table的mappings -->
     <session-factory>
         <!-- TODO. Dialect: 指定hibernate所要converse到某个特定的SQL; HQL -> SQL specific -->
-        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgresPlusDialect</property>
 
         <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
@@ -39,16 +39,8 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
 
         <mapping resource="associations/unidirectional.many.to.one/student.hbm.xml"/>
         <mapping resource="associations/unidirectional.many.to.one/grade.hbm.xml"/>
+        <mapping resource="associations/unidirectional.many.to.one/studentAddress.hbm.xml"/>
         <mapping resource="associations/unidirectional.many.to.one/package1/grade.hbm.xml"/>
-
-        <!-- <mapping resource="associations/bidirectional.one.to.many/student.hbm.xml"/>
-        <mapping resource="associations/bidirectional.one.to.many/grade.hbm.xml"/>
-
-        <mapping resource="associations/foreign.key.one.to.one.bidirectional/idcard.hbm.xml"/>
-        <mapping resource="associations/foreign.key.one.to.one.bidirectional/person.hbm.xml"/>
-
-        <mapping resource="associations/foreign.key.one.to.one.unidirectional/idcard.hbm.xml"/>
-        <mapping resource="associations/foreign.key.one.to.one.unidirectional/person.hbm.xml"/> -->
 
         <mapping resource="associations/primary.key.one.to.one/idcard.hbm.xml"/>
         <mapping resource="associations/primary.key.one.to.one/person.hbm.xml"/>

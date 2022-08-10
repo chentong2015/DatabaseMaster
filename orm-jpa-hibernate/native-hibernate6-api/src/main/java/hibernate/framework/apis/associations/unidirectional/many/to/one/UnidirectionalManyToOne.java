@@ -28,13 +28,22 @@ public class UnidirectionalManyToOne {
             session.persist(grade11);
             session.persist(grade22);
 
+            StudentAddress address1 = new StudentAddress("my home 1");
+            StudentAddress address2 = new StudentAddress("my home 2");
+            session.persist(address1);
+            session.persist(address2);
+
             // 再存储Many-端的对象，设置对象属性的值
             Student student1 = new Student("name11", 15, grade1);
             student1.setGrade1(grade11);
+            student1.setAddress(address1);
             Student student2 = new Student("name22", 25, grade1);
             student2.setGrade1(grade22);
+            student2.setAddress(address1);
             Student student3 = new Student("name33", 35, grade2);
             student3.setGrade1(grade22);
+            student3.setAddress(address2);
+
             session.persist(student1);
             session.persist(student2);
             session.persist(student3);
