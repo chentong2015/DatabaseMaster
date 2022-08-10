@@ -179,8 +179,6 @@ zorm-jpa-hibernate/native-hibernate6-api-metadata/src/main/java/com/hibernate/me
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 K
 relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
-\
-,orm-jpa-hibernate/SessionFactoryåˆ›å»ºæ–¹å¼,a\8\a82a55165ebf9a71b92ec2bb726d159af34cf7d6
 
 ^orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/query/SqlRawQuery.java,e\1\e1cf9c1e32fe0d550d84841186d47d6cb1d2db17
 —
@@ -281,8 +279,6 @@ eorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/base/en
 _orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/base/entity/Sample.java,f\6\f60722ecb54df99f84be2796e365f17cc730f04e
 ”
 dorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/fetching/FetchingåŸºç¡€,1\5\15c963394c9898897ddf2b62c8f275563340d8fc
-N
-orm-jpa-hibernate/åŸºç¡€æ•™ç¨‹,1\f\1f0f76b6a2cbe5534413231edcd40fa7a7f2c4c4
 
 _orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/query/HqlQueryUtil.java,7\5\75249440d34b5ffee45295e193ac79379eed76d0
 
@@ -293,3 +289,7 @@ oorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testin
 lorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/query/DemoNamedQueries.java,2\6\26b97e12e1d96d119bb5f2ed285270918d569237
 Š
 Zorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/DemoJpaEntity.java,8\9\89a800cba1013efcd65fde65f31a3778d3d6df9e
+
+norm-jpa-hibernate/java-persistence-api/src/main/java/com/hibernate/entity/manager/JpaEntityManagerQueries.java,1\0\10e09c6b8412964dc9f67f8d8cfe43b49b195a8d
+™
+iorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/inheritance/sample/CEmployee.java,1\0\10eb303bd60d9b1d46784b3e88dbf99e2e40be7e
