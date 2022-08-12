@@ -1,0 +1,5 @@
+
+m	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•’Íô8¯à´î§0
+o	java:S116"SRename this field "_default" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÂüâÒ8ºÏ“î§0
+£
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(”ñªÛþÿÿÿÿ8Ô¦³î§0
