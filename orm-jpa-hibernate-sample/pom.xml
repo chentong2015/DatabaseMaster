@@ -6,12 +6,10 @@
         <artifactId>DatabaseMaster</artifactId>
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
 
-    <artifactId>orm-jpa-hibernate</artifactId>
+    <artifactId>orm-jpa-hibernate-sample</artifactId>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
@@ -19,12 +17,7 @@
     </properties>
 
     <modules>
-        <module>entity-class-parser</module>
-        <module>java-persistence-api</module>
-        <module>native-hibernate5-api-annotation</module>
-        <module>native-hibernate5-api-xml</module>
-        <module>native-hibernate6-api</module>
-        <module>native-hibernate6-api-master</module>
-        <module>native-hibernate6-api-metadata</module>
+        <module>sample-mapping-annotation</module>
+        <module>sample-mapping-xml</module>
     </modules>
 </project>

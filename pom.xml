@@ -22,5 +22,7 @@
         <module>orm-liquibase</module>
         <module>orm-jpa-hibernate</module>
         <module>relational-database</module>
+        <module>orm-jpa-hibernate-sample</module>
+        <module>orm-jpa-hibernate/native-hibernate6-api-master</module>
     </modules>
 </project>

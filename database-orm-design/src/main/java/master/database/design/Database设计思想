@@ -7,12 +7,10 @@ org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
 JDBC Connection默认是开启AutoCommit, 不能再调用connection.commit()显式提交
 Transaction在开启事务的情况下，才能调用connection.commit()或者connection.rollback();
 
-
 TODO. 如何联合查询数据库的多张表 ?
 1. SELECT    查询完一张表，再使用查询的结果执行另一个sql(select查询另外一张表)
 2. SUBSELECT 在同一个sql查询中将select子查询放置到where条件查询中
 3. JOIN      在同一个sql查询中使用join on联合多张表
-
 
 TODO. 为什么数据库中的表在设计是有外键约束的，但实际建表操作时却可以删除外键 ?
 1. 没有外键对于一条需要匹配外键的查询语句而言并不影响，可以基于数据的值来搜索

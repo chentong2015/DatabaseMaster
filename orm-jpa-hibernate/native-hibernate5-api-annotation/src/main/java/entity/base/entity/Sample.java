@@ -2,10 +2,12 @@ package entity.base.entity;
 
 import javax.persistence.*;
 
-// TODO. Entity Class并不需要设置成public，同样能够完成class mapping映射
+// 1. Entity Class并不需要设置成public
+// 2. Entity Class可以设置成final class
+// 3. Entity Class可以设置成abstract class 用于继承关系
 @Entity(name = "jpa.annotations.entity.entity.Sample")
 @Table(name = "t_sample")
-class Sample {
+final class Sample {
 
     private int id;
     private String firstname;

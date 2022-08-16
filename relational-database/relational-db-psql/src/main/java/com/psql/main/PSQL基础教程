@@ -1,0 +1,16 @@
+http://www.postgres.cn/docs/13/index.html
+https://www.enterprisedb.com/postgresql-tutorial-resources-training
+https://www.postgresql.org/docs/current/datatype.html 支持数据类型
+
+命令行连接Psql
+  C:\PostgreSQL\bin>psql.exe -U postgres
+
+在安装psql之后(指定存储数据的位置)，命令行启动
+  C:\PostgreSQL\bin>pg_ctl.exe start -D C:\Program Files\PostgreSQL\14\data
+  C:\PostgreSQL\bin>pg_ctl.exe restart -D C:\Program Files\PostgreSQL\14\data
+  "services.msc" 在service服务上自动设置启动
+
+>select version() Psql版本查询(区别别的DB)
+>SELECT * FROM public.t_citizen t where trim(t.language) LIKE '%.US';
+ 对数据表的字段使用function, 再进行模糊查询, like匹配的字段区分大小写
+

@@ -1,4 +1,4 @@
-package hibernate.framework.apis.export;
+package com.hibernate.metadata.export;
 
 // 使用代码自动创建表, 相当于.cfg.xml中的配置属性
 // <property name="hbm2ddl.auto">update</property>

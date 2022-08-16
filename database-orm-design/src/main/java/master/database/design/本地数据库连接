@@ -1,0 +1,17 @@
+ PgAdmin Tool: admin
+ PSQL Admin : postgres, admin
+ PSQL User  : test, test
+
+ <property name=".dialect">org.hibernate.dialect.MySQLDialect</property>
+ <property name=".connection.driver_class">com.mysql.jdbc.Driver</property>
+ <property name=".connection.url">jdbc:mysql://localhost:3306/test</property>
+ <property name=".connection.username">root</property>
+ <property name=".connection.password">admin</property> -->
+
+ 使用数据库Server的名称进行连接
+ <property name=".dialect">org.hibernate.dialect.SQLServerDialect</property>
+ <property name=".connection.url">jdbc:sqlserver://LCTON01:1433;Database=my_database;Trusted_Connection=true;</property>
+ <property name=".connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+ <property name=".connection.username">test</property>
+ <property name=".connection.password">TCHong16</property>
+
