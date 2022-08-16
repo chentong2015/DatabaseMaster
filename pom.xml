@@ -16,13 +16,12 @@
 
     <modules>
         <module>database-orm-design</module>
+        <module>document-db-mongodb</module>
+        <module>orm-jpa-hibernate</module>
+        <module>orm-jpa-hibernate-sample</module>
+        <module>orm-liquibase</module>
         <module>orm-mybatis</module>
         <module>orm-spring-jdbc</module>
-        <module>document-db-mongodb</module>
-        <module>orm-liquibase</module>
-        <module>orm-jpa-hibernate</module>
         <module>relational-database</module>
-        <module>orm-jpa-hibernate-sample</module>
-        <module>orm-jpa-hibernate/native-hibernate6-api-master</module>
     </modules>
 </project>

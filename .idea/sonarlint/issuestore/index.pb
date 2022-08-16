@@ -49,16 +49,10 @@ Gorm-liquibase/src/main/java/com/liquibase/main/DemoDatabaseFactory.java,5\5\55
 Udatabase-orm-design/src/main/java/master/database/design/metadata/MyDatabaseType.java,2\f\2f117a25c1941299b386e399e3820db54f877396
 w
 Gorm-liquibase/src/main/java/com/liquibase/main/database/MyDatabase.java,9\5\95fcf2170a5dfb627d2f288fe0f0e914c06f247e
-K
-database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
-E
-orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
 u
 Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
 s
 Cdocument-db-mongodb/src/main/java/com/mongodb/main/BaseMongoDB.java,b\6\b614e1a4278571422ae35ef3b0faa9b276ac7fe2
-K
-document-db-mongodb/pom.xml,4\9\49f32a047960359b6162aaa6fe8f76be14f9fcc5
 É
 Sdocument-db-mongodb/src/main/java/com/mongodb/main/repository/PersonRepository.java,f\3\f31b72bff10320daa7c62705e54fc2955ca78f85
 t
@@ -139,8 +133,6 @@ dorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/typedef
 jorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/typedef/TemplateType.java,e\a\ea225d9df15f423f7020817697e7d8ad4dce4549
 ô
 iorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/typedef/MyTypeClass.java,6\2\6271eff5b66ef7107c2e4f8ece938ea178531d79
-K
-relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
 é
 ^orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/query/SqlRawQuery.java,e\1\e1cf9c1e32fe0d550d84841186d47d6cb1d2db17
 è
@@ -159,14 +151,8 @@ _orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/one/to/
 vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,f\d\fd4e4a8ced05e9a3040438ffca88b6d44dafaae2
 û
 norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/HibernateÂ∏∏ËßÅÂºÇÂ∏∏,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
-j
-:orm-jpa-hibernate/native-hibernate5-api-annotation/pom.xml,8\4\84ecec8d05247655040c5b291dca2719c777eab5
-h
-8orm-jpa-hibernate/native-hibernate6-api-metadata/pom.xml,1\4\14e5e90ebc4336f0f780388d842496d2fb480ede
 í
 borm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/DemoJoinFetching.java,8\1\81036040192ff4e3bd5a2e208ab6d76d9e58cc3f
-^
-.orm-jpa-hibernate/java-persistence-api/pom.xml,2\7\27afb29918834e0e07b025c42ad841e78d44dbfd
 ú
 lorm-jpa-hibernate/native-hibernate6-api-metadata/src/main/java/com/hibernate/metadata/DAO EngineÂºïÊìéÊ°ÜÊû∂,4\d\4d83aa3aeb1f7006f02c158984436aa2577d2fa2
 †
@@ -177,8 +163,6 @@ Worm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/entity/Per
 Yorm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/entity/Customer.java,6\3\6361f6894d67627df78d1e1d3142aa7ddeadfcd5
 á
 Worm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/dao/Component.java,8\0\8045545c23bc01302b8fdb40c046c930f9bb9d08
-]
--orm-jpa-hibernate/entity-class-parser/pom.xml,6\d\6d08a4622b47d57c8d039916d3f397d2aa83f9e1
 í
 borm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/JpaEntityLocationsParser.java,1\1\116e9fb2344e03f1ccbb799aaba6533c869cb3d4
 å
@@ -275,10 +259,6 @@ porm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 jorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,8\a\8a6922ce6bb2f0aa586e6509a6102cffa0fdd98e
 ƒ
 ìorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/associations/unidirectional/many/to/one/UnidirectionalManyToOne.java,c\7\c77df231bcca5c636036dc43f094714eb64cc957
-c
-3orm-jpa-hibernate/native-hibernate5-api-xml/pom.xml,0\2\02388decd075ed563490436bf52e3005825756ed
-_
-/orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
 ï
 eorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/entity/join/fetching/Department.java,2\c\2c340c7785feaea13c0a3725cc628fd57b8f354a
 ï

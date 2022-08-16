@@ -30,7 +30,6 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\unidirectional\one\to\many\Grade.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\geneator\id\IdGeneratorType.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\foreign\key\one\to\one\unidirectional\FkUnidirectionalOneToOne.java
-D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\export\HibernateSchemaExportDemo.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\primary\key\one\to\one\PkUnidirectionalOneToOne.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\unidirectional\one\to\many\Student.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\lifecycle\HibernateObjectLifecycle.java
