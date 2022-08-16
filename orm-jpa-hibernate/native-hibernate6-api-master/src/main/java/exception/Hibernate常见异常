@@ -33,4 +33,12 @@
     java.io.Serializable is in module java.base of loader 'bootstrap')
    异常原因：设置的Entity Class没有实现Serializable，实体类型是不可以序列化的
 
+7. org.hibernate.cache.CacheException: Caching was explicitly requested, but no RegionFactory was defined and there is not a single registered RegionFactory
+   at org.hibernate.cache.internal.RegionFactoryInitiator.resolveRegionFactory(RegionFactoryInitiator.java:87)
+   at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:47)
+   at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:32)
+   at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+   at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+   ... 8 more
+   异常原因：显式开启了缓存，但是没有配置指定的.region.factory_class接口的具体实现)
 
