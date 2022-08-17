@@ -15,7 +15,7 @@
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
         <properties>
-            <property name="hibernate.show_sql" value="true"/>
+            <!-- <property name="hibernate.show_sql" value="true"/> -->
             <!-- 设置ddl的执行模式，在注入entity后自动更新 -->
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <!-- 必须指定数据库的Dialect方言 -->

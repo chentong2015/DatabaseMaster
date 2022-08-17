@@ -1,8 +1,8 @@
 package com.hibernate.entity.manager.query;
 
 import com.hibernate.entity.manager.EntityManagerHandler;
-import com.hibernate.entity.manager.query.entity.NamedQueryEntity;
-import com.hibernate.entity.manager.query.entity.Sample;
+import com.hibernate.entity.manager.entity.NamedQueryEntity;
+import com.hibernate.entity.manager.entity.Sample;
 
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaBuilder;
