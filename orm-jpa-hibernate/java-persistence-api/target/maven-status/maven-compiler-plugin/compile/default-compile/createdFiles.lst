@@ -1,5 +1,5 @@
+com\hibernate\entity\manager\query\JpqlQueryRunner.class
 com\hibernate\entity\manager\test\Employee.class
-com\hibernate\entity\manager\JpqlQueryRunner.class
 com\hibernate\entity\manager\test\Book.class
 com\hibernate\entity\manager\entity\NamedQueryEntity.class
 com\hibernate\entity\manager\entity\Sample.class

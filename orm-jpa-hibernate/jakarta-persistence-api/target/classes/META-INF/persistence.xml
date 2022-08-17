@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <!-- 每一个persistence-unit单元的名称必须唯一 -->
+    <persistence-unit name="base.jpa.demo" transaction-type="RESOURCE_LOCAL">
+        <description>Jakarta Persistence API Demo</description>
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.hibernate.entity.manager.entity.Sample</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgresPlusDialect"/>
+
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/my_database"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+            <property name="hibernate.connection.password" value="admin"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
+

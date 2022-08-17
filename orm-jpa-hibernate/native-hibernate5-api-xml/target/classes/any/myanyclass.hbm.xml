@@ -21,11 +21,11 @@
             <meta-value value="value1" class="com.hibernate5.testing.any.model1.ClassModel1"/>
             <meta-value value="value2" class="com.hibernate5.testing.any.model2.ClassModel2"/>
 
-            <!-- DB Table中会添加的两个列字段:
-                 m_type使用字符串区别类型
-                 m_ref 具体类型的主键id, 根据id-type设置的主键类型 -->
-            <column name="m_type"/>
+            <!-- 在Table数据表中会添加两列字段:
+                 m_ref 具体类型的主键id, 根据id-type设置的主键类型
+                 m_type使用字符串区别类型 -->
             <column name="m_ref"/>
+            <column name="m_type"/>
         </any>
     </class>
 </hibernate-mapping>

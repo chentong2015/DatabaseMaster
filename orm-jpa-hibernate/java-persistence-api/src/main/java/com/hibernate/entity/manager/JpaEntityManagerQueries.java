@@ -16,6 +16,10 @@ import java.util.List;
 // https://www.baeldung.com/hibernate-entitymanager
 public class JpaEntityManagerQueries {
 
+    public static void main(String[] args) {
+        testNativeSqlQueries();
+    }
+
     // TODO. 在添加完@Entity(name="")名称之后，这里的HQL查询语句必须使用全路径名称
     private static void testHqlQuery() {
         EntityManager entityManager = EntityManagerHandler.getEntityManager();
@@ -69,10 +73,5 @@ public class JpaEntityManagerQueries {
             System.out.println(entity);
         }
         entityManager.close();
-    }
-
-    public static void main(String[] args) {
-        testNativeSqlQueries();
-        testNamedQueries();
     }
 }

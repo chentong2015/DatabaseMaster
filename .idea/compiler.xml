@@ -11,6 +11,7 @@
         <module name="native-hibernate5-api-annotation" />
         <module name="document-db-mongodb" />
         <module name="native-hibernate6-api-master" />
+        <module name="jakarta-persistence-api" />
         <module name="relational-db-sql-server" />
         <module name="relational-db-mysql" />
         <module name="relational-db-h2-database" />

@@ -9,7 +9,6 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\one\to\one\User.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\inheritance\single\table\CEmployee.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\query\SqlRawQuery.java
-D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\any\VehicleOwner.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\join\fetching\Department.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\component\ComponentPersonName.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\query\HqlQueryUtil.java
@@ -18,9 +17,7 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\base\entity\SelectionResult.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\inheritance\single\table\PEmployee.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\inheritance\table\per\clazz\SuperClassEntity.java
-D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\any\Vehicle.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\typedef\CharStringType.java
-D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\any\Person.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\base\entity\package1\Person.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\join\DemoJoinFetching.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\typedef\MyTypeDefEntity.java
@@ -28,7 +25,6 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\base\entity\Sample.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\inheritance\single\table\Employee.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\query\HqlRawQuery.java
-D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\any\Company.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\join\DemoJoinColumn.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\join\many\to\one\WebPage.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\entity\component\ComponentAddress.java

@@ -16,4 +16,12 @@
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <!-- TODO. SQL Server依赖的版本必须对应JRE版本 -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>9.3.0.jre15-preview</version>
+        </dependency>
+    </dependencies>
 </project>

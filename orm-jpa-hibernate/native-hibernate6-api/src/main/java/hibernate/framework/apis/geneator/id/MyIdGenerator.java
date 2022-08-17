@@ -1,9 +1,8 @@
 package hibernate.framework.apis.geneator.id;
 
+import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
-
-import javax.persistence.*;
 
 @Entity
 @Table(name = "t_base_entity")

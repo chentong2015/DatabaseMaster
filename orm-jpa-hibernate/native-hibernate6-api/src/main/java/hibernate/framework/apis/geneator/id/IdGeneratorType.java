@@ -1,12 +1,11 @@
 package hibernate.framework.apis.geneator.id;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-import static javax.persistence.GenerationType.SEQUENCE;
+import static jakarta.persistence.GenerationType.SEQUENCE;
 
 // TODO. @GeneratedValue 提供主键值的特殊生成策略
 // GenerationType.AUTO      默认配置的自动增加 > SQLite, H2 Database

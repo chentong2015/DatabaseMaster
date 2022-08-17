@@ -20,6 +20,7 @@
 
     <modules>
         <module>entity-class-parser</module>
+        <module>jakarta-persistence-api</module>
         <module>java-persistence-api</module>
         <module>native-hibernate5-api-annotation</module>
         <module>native-hibernate5-api-xml</module>

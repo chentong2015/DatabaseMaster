@@ -1,9 +1,10 @@
 package com.hibernate.metadata.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity // (name = "hibernate.metadata.com.hibernate.metadata.entity.BaseJpaMetadata")
 @Table(name = "t_jpa_metadata")

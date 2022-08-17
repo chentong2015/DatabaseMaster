@@ -1,8 +1,8 @@
 package hibernate.framework.apis.entity;
 
+import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.*;
 
 // TODO. 注解@Entity指明这个类是遵循orm映射的类, 一个实体Bean, 每个实例代表数据表中的一行数据
 //       注解@Table指定Entity所要映射带数据库表, 默认采用"类名"作为映射表的表名 !!
