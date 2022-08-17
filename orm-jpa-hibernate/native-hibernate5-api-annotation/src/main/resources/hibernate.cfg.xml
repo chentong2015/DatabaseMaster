@@ -16,9 +16,7 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <!-- 指定映射的类型Entity Class:
-             1. 类型的全路径中不能包含特殊单词
-             2. 类型并不要求设置成public -->
+        <!-- 指定映射的类型Entity Class: 全路径中不能包含特殊单词 -->
         <mapping class="entity.base.entity.MyEntity"/>
         <mapping class="entity.base.entity.Person"/>
         <mapping class="entity.base.entity.package1.Person"/>
@@ -36,5 +34,9 @@
 
         <mapping class="entity.one.to.one.User"/>
         <mapping class="entity.one.to.one.Address"/>
+
+        <mapping class="entity.any.model.IntegerProperty"/>
+        <mapping class="entity.any.model.StringProperty"/>
+        <mapping class="entity.any.PropertyHolder"/>
     </session-factory>
 </hibernate-configuration>

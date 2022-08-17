@@ -13,13 +13,8 @@
     <artifactId>java-persitence-api</artifactId>
 
     <dependencies>
-        <!-- JPA2.2 低版本的API -->
-        <dependency>
-            <groupId>javax.persistence</groupId>
-            <artifactId>javax.persistence-api</artifactId>
-            <version>2.2</version>
-        </dependency>
-        <!-- TODO. Persistence Provider的具体实现，以及具体数据库Dialect -->
+        <!-- TODO. 包含JPA 2.2，同时兼容JPA 3.0版本
+                  Persistence Provider的具体实现，以及具体数据库Dialect -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>

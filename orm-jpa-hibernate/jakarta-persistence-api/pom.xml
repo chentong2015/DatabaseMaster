@@ -13,18 +13,11 @@
     <artifactId>jakarta-persistence-api</artifactId>
 
     <dependencies>
-        <!-- jakarta.persistence-api v3.0高版本JPA -->
-        <dependency>
-            <groupId>jakarta.persistence</groupId>
-            <artifactId>jakarta.persistence-api</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        <!-- hibernate v5.6 自带JPA2.2版本
-             只能兼容Jakarta Persistence V3.0版本-->
+        <!-- TODO. hibernate v6.1包含JPA3.0, 同时兼容Jakarta Persistence V3.1版本-->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.6.9.Final</version>
+            <version>6.1.1.Final</version>
         </dependency>
 
         <dependency>

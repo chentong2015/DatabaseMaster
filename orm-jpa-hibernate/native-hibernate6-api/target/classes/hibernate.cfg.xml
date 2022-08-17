@@ -44,5 +44,9 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
 
         <mapping resource="associations/many.to.many/strategy.hbm.xml"/>
         <mapping resource="associations/many.to.many/typology.hbm.xml"/>
+
+        <mapping class="hibernate.framework.apis.any.model.IntegerProperty"/>
+        <mapping class="hibernate.framework.apis.any.model.StringProperty"/>
+        <mapping class="hibernate.framework.apis.any.PropertyHolder"/>
     </session-factory>
 </hibernate-configuration>

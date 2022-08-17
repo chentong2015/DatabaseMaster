@@ -2,8 +2,10 @@ entity\base\entity\Sample.class
 entity\one\to\one\User.class
 entity\join\fetching\Employee.class
 entity\query\HqlQueryUtil.class
+entity\any\DemoAnyMapping.class
 entity\join\DemoJoinColumn.class
 entity\typedef\CharStringType.class
+entity\any\model\StringProperty.class
 entity\join\DemoJoinFetching.class
 entity\query\HqlRawQuery.class
 entity\inheritance\single\table\Employee.class
@@ -12,9 +14,11 @@ entity\join\column\Citizen.class
 entity\base\entity\Person.class
 entity\component\ComponentAddress.class
 entity\inheritance\single\table\CEmployee.class
+entity\any\model\MyProperty.class
 entity\component\ComponentPersonName.class
 entity\typedef\MyTypeDefEntity.class
 entity\base\entity\SelectionResult.class
+entity\any\model\IntegerProperty.class
 entity\inheritance\mapper\superclass\Account.class
 entity\inheritance\single\table\PEmployee.class
 entity\component\Staff.class
@@ -27,6 +31,7 @@ entity\join\fetching\Department.class
 entity\DemoJpaEntity.class
 entity\join\many\to\one\Type.class
 entity\inheritance\mapper\superclass\DebitAccount.class
+entity\any\PropertyHolder.class
 entity\inheritance\mapper\superclass\CreditAccount.class
 entity\inheritance\table\per\clazz\SuperClassEntity.class
 entity\join\many\to\one\WebPage.class

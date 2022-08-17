@@ -15,7 +15,7 @@
              meta-type(可选 默认string)：允许辨别标志(discriminator)映射的任何类型
              cascade(可选 默认none)：级联的类型
              access(可选 默认property)：Hibernate 用来访问属性值的策略
-             optimistic-lock(可选 — 默认是 true)：表明更新此组件是否需要获取乐观锁，当属性变脏时，是否增加版本号Version-->
+             optimistic-lock(可选—默认true)：表明更新此组件是否需要获取乐观锁，当属性变脏时，是否增加版本号Version-->
         <any id-type="double" name="anyClassModel" meta-type="string">
             <!-- 将指定的字段赋值给"anyClassModel"属性名称，则会存储指定value值 -->
             <meta-value value="value1" class="com.hibernate5.testing.any.model1.ClassModel1"/>

@@ -21,13 +21,13 @@ hibernate\framework\apis\geneator\id\MyStoredTableIdGenerator.class
 hibernate\framework\apis\associations\bidirectional\one\to\many\Student.class
 hibernate\framework\apis\associations\bidirectional\one\to\many\Grade.class
 hibernate\framework\apis\associations\foreign\key\one\to\one\unidirectional\IdCard.class
-hibernate\framework\apis\any\model\Property.class
 hibernate\framework\apis\associations\many\to\many\BidirectionalManyToMany.class
 hibernate\framework\apis\associations\unidirectional\many\to\one\UnidirectionalManyToOne.class
 hibernate\framework\apis\associations\unidirectional\one\to\many\Student.class
 hibernate\framework\apis\geneator\id\IdGeneratorType.class
 hibernate\framework\apis\associations\unidirectional\many\to\one\Grade.class
 hibernate\framework\apis\associations\many\to\many\Strategy.class
+hibernate\framework\apis\any\model\MyProperty.class
 hibernate\framework\apis\associations\unidirectional\many\to\one\StudentAddress.class
 hibernate\framework\apis\entity\Book.class
 hibernate\framework\apis\associations\primary\key\one\to\one\Person.class

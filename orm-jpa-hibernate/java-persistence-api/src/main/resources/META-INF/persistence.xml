@@ -10,8 +10,8 @@
 
         <!-- TODO. 这里不能在程序上动态的注入mapping的entity class
              <class>com.hibernate.entity.manager.entity.*</class> 注入指定的Entity Class或者选择批量注入 -->
-        <class>com.hibernate.entity.manager.entity.Sample</class>
-        <class>com.hibernate.entity.manager.entity.NamedQueryEntity</class>
+        <class>com.hibernate.entity.manager.query.entity.Sample</class>
+        <class>com.hibernate.entity.manager.query.entity.NamedQueryEntity</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
         <properties>

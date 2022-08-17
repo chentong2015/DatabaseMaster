@@ -2,6 +2,7 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\unidirectional\many\to\one\Grade.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\session\DemoHibernateSession.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\entity\EntityDemo.java
+D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\any\model\MyProperty.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\any\PropertyHolder.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\foreign\key\one\to\one\bidirectional\IdCard.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\many\to\many\Typology.java
@@ -18,7 +19,6 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\foreign\key\one\to\one\bidirectional\FkBidirectionalOneToOne.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\entity\EntityMaster.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\primary\key\one\to\one\Person.java
-D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\any\model\Property.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\unidirectional\many\to\one\Student.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\unidirectional\many\to\one\package1\Grade.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\entity\Book.java

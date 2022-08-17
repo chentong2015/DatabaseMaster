@@ -6,8 +6,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "string_property")
-public class StringProperty implements Property<String> {
+@Table(name = "t_property_string")
+public class StringProperty implements MyProperty<String> {
 
     @Id
     private Long id;

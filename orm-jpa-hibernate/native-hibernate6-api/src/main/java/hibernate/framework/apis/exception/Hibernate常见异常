@@ -1,0 +1,50 @@
+1. Cannot invoke "org.hibernate.mapping.PersistentClass.getIdentifier()"
+   because "entityBinding" is null
+   异常原因：配置xml mapping文件时，配置的class=""名称无法唯一定位到指定的类型
+
+2. Caused by: org.hibernate.QueryException:
+   could not resolve property: property of: com.xxx.entities.Contact
+   异常原因：在执行HQL查询时，使用错误的Entity Class(没有包含指定的属性名称)
+           实体类型的属性名称大小写敏感 ?!
+
+3. org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null
+   异常原因：Hibernate没有解析到特定的数据库Dialect方言
+           当连接到正确的数据库时，Hibernate会自动判断指定的Dialect方言
+           Hibernate can determine the correct dialect to use automatically !
+   三种方式均可完成手动配置
+   3.1 cfg.xml文件
+       <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+   3.3 metadata源代码属性配置
+       properties.put(AvailableSettings.DIALECT, PostgresPlusDialect.class.getName());
+   3.2 Spring application.properties属性配置
+       spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+       spring.jpa.show-sql=true
+       spring.jpa.hibernate.ddl-auto=update
+
+4. java.lang.IllegalArgumentException: Unknown entity: com.exmaple.MyEntity
+   @OneToOne or @ManyToOne on com.example.MyEntity.type references an unknown entity
+   异常原因：没有将@Entity注入到Hibernate中
+
+   Exception in thread "main" java.lang.IllegalArgumentException: Unable to locate persister: hibernate.framework.apis.any.model.IntegerProperty
+   	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:734)
+   	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:715)
+   	at hibernate.framework.apis.any.DemoAnyMapping.persist(DemoAnyMapping.java:24)
+   异常原因：没有配置Entity的映射mapping
+
+5. Unable to find column with logical name: columnName in xxx.Table and its related supertables and secondary tables
+   异常原因：应该使用映射出来的column名称，而不是类型的字段名称(两者不一致)
+
+6. class entity.join.column.Country cannot be cast to class java.io.Serializable
+   (entity.join.column.Country is in unnamed module of loader 'app';
+    java.io.Serializable is in module java.base of loader 'bootstrap')
+   异常原因：设置的Entity Class没有实现Serializable，实体类型是不可以序列化的
+
+7. org.hibernate.cache.CacheException: Caching was explicitly requested, but no RegionFactory was defined and there is not a single registered RegionFactory
+   at org.hibernate.cache.internal.RegionFactoryInitiator.resolveRegionFactory(RegionFactoryInitiator.java:87)
+   at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:47)
+   at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:32)
+   at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+   at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+   ... 8 more
+   异常原因：显式开启了缓存，但是没有配置指定的.region.factory_class接口的具体实现)
+

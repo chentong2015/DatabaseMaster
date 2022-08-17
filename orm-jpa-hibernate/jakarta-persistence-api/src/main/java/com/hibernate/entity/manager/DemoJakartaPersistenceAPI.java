@@ -9,9 +9,8 @@ import java.util.List;
 
 public class DemoJakartaPersistenceAPI {
 
-    private static EntityManagerFactory emf = Persistence.createEntityManagerFactory("base.jpa.demo");
-
     public static void main(String[] args) {
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("base.jpa.demo");
         EntityManager entityManager = emf.createEntityManager();
         String sqlString = "SELECT * FROM t_sample_entity";
         List<Sample> sampleList = entityManager.createNativeQuery(sqlString, Sample.class).getResultList();
@@ -19,5 +18,6 @@ public class DemoJakartaPersistenceAPI {
             System.out.println(sample);
         }
         entityManager.close();
+        emf.close();
     }
 }
