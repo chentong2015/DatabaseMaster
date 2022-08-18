@@ -1,10 +1,0 @@
-
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬Ø±´ûÿÿÿÿ
-f	java:S117%"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ÐÖÒ
-P
-java:S1118	":Add a private constructor to hide the implicit public one.(×¬ƒß
-M
-java:S1135"2Complete the task associated to this TODO comment.(ô™õ©ÿÿÿÿÿ
-V	java:S125"<This block of commented-out lines of code should be removed.(ñ€Æ›ùÿÿÿÿ
-S	java:S106L"9Replace this use of System.out or System.err by a logger.(ˆ°³Òúÿÿÿÿ
-U	java:S106O"9Replace this use of System.out or System.err by a logger.(çÔ“Ü8£ßÖî§0

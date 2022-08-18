@@ -1,6 +1,6 @@
 package com.hibernate5.annotation;
 
-import com.hibernate5.annotation.join.DemoJoinFetching;
+import com.hibernate5.annotation.join.JoinColumn.OneToMany.DemoJoinColumnOneToMany;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -17,8 +17,7 @@ public class DemoJpaEntity {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        // DemoJoinFetching.initTables(session);
-        DemoJoinFetching.testSubSelectFetchMode(session);
+        DemoJoinColumnOneToMany.initTable(session);
         session.close();
         sessionFactory.close();
     }

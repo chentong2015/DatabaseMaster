@@ -20,17 +20,21 @@
         <mapping class="com.hibernate5.annotation.entity.MyEntity"/>
         <mapping class="com.hibernate5.annotation.entity.Person"/>
         <mapping class="com.hibernate5.annotation.entity.package1.Person"/>
-        <mapping class="Sample"/>
+        <mapping class="com.hibernate5.annotation.entity.non.publiz.entity.Sample"/>
 
         <mapping class="com.hibernate5.annotation.component.Staff"/>
         <mapping class="com.hibernate5.annotation.inheritance.table.per.clazz.SuperClassEntity"/>
 
-        <mapping class="com.hibernate5.annotation.join.JoinColumn.WebPage"/>
-        <mapping class="com.hibernate5.annotation.join.JoinColumn.Type"/>
-        <mapping class="com.hibernate5.annotation.join.JoinColumnOrFormula.Citizen"/>
-        <mapping class="com.hibernate5.annotation.join.JoinColumnOrFormula.Country"/>
         <mapping class="com.hibernate5.annotation.join.fetching.Employee"/>
         <mapping class="com.hibernate5.annotation.join.fetching.Department"/>
+
+        <mapping class="com.hibernate5.annotation.join.JoinColumn.ManyToOne.WebPage"/>
+        <mapping class="com.hibernate5.annotation.join.JoinColumn.ManyToOne.Type"/>
+        <mapping class="com.hibernate5.annotation.join.JoinColumn.OneToMany.Software"/>
+        <mapping class="com.hibernate5.annotation.join.JoinColumn.OneToMany.Computer"/>
+
+        <mapping class="com.hibernate5.annotation.join.JoinColumnOrFormula.Citizen"/>
+        <mapping class="com.hibernate5.annotation.join.JoinColumnOrFormula.Country"/>
 
         <mapping class="com.hibernate5.annotation.one.to.one.User"/>
         <mapping class="com.hibernate5.annotation.one.to.one.Address"/>
