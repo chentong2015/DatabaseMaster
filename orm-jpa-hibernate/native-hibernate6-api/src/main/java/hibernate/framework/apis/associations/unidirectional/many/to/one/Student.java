@@ -7,11 +7,11 @@ public class Student implements Serializable {
     private int id;
     private String name;
     private int age;
-    private StudentAddress address;
-
-    // many-to-one 用于外键映射关系的字段
     private Grade grade;
+
+    // 额外添加的测试字段
     private hibernate.framework.apis.associations.unidirectional.many.to.one.package1.Grade grade1;
+    private StudentAddress address;
 
     public Student() {
     }

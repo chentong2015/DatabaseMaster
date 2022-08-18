@@ -28,6 +28,7 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\session\HibernateSessionUtil.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\foreign\key\one\to\one\unidirectional\IdCard.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\many\to\many\Strategy.java
+D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\any\DemoAnyMapping.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\bidirectional\one\to\many\Student.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\foreign\key\one\to\one\bidirectional\Person.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\associations\unidirectional\one\to\many\Grade.java

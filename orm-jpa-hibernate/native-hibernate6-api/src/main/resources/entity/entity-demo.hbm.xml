@@ -26,6 +26,9 @@
            <generator class="native" />
         </id> -->
 
+        <!-- 这里还可以设置natural-id，通过设置的id来Query查询
+        <natural-id> -->
+
         <!-- 联合ID: 将多个属性组合成一个类型，作为联合的主键
         <composite-id name="id" class="CompositeId">
             <key-property type="string" name="label" column="M_LABEL"/>

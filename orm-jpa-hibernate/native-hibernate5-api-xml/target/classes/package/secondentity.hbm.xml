@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.hibernate5.testing.package2">
+    <class name="MyEntity" entity-name="com.hibernate5.testing.package2.MyEntity" schema="public"
+           table="t_second_entity">
+        <id name="id">
+            <column name="id" sql-type="bigint"/>
+            <generator class="increment"/>
+        </id>
+        <property type="string" name="name">
+            <column sql-type="character varying(32)" name="name" not-null="true" unique="true"/>
+        </property>
+        <property type="double" name="code">
+            <column sql-type="double precision" name="code"/>
+        </property>
+    </class>
+</hibernate-mapping>

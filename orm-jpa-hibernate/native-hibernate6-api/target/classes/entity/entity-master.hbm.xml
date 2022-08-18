@@ -4,7 +4,9 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="hibernate.framework.apis.entity.EntityMaster" schema="public" table="t_book">
+    <!-- TODO. 附加的SQL WHERE条件, 在从DB中提取这个类型的对象时会增加这个约束条件 -->
+    <class name="hibernate.framework.apis.entity.EntityMaster" table="t_book"
+           where="version > 5 and label='master'">
         <id name="id" type="java.lang.Long" column="m_id">
             <!-- 使用自定义的id生成器，并且提供参数的值  -->
             <generator class="hibernate.framework.apis.geneator.id.MyStoredTableIdGenerator">

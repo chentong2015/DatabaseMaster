@@ -28,6 +28,7 @@ hibernate\framework\apis\geneator\id\IdGeneratorType.class
 hibernate\framework\apis\associations\unidirectional\many\to\one\Grade.class
 hibernate\framework\apis\associations\many\to\many\Strategy.class
 hibernate\framework\apis\any\model\MyProperty.class
+hibernate\framework\apis\any\DemoAnyMapping.class
 hibernate\framework\apis\associations\unidirectional\many\to\one\StudentAddress.class
 hibernate\framework\apis\entity\Book.class
 hibernate\framework\apis\associations\primary\key\one\to\one\Person.class

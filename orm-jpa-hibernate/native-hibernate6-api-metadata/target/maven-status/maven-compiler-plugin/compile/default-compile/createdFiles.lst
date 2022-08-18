@@ -1,0 +1,7 @@
+com\hibernate\metadata\config\MyDialectResolver.class
+com\hibernate\metadata\MetadataSourcesHelper.class
+com\hibernate\metadata\config\MyPhysicalNamingStrategy.class
+com\hibernate\metadata\export\HibernateSchemaExportDemo.class
+com\hibernate\metadata\entity\BaseJpaMetadata.class
+com\hibernate\metadata\entity\BaseMetadata.class
+com\hibernate\metadata\DemoMetadataSources.class

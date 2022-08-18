@@ -9,7 +9,6 @@ public class EntityMaster {
     private String label;
     private Date date;
     private Integer version;
-    private String description;
     private Long code;
 
     public Long getId() {
@@ -43,15 +42,7 @@ public class EntityMaster {
     public void setVersion(Integer version) {
         this.version = version;
     }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
+    
     public Long getCode() {
         return code;
     }

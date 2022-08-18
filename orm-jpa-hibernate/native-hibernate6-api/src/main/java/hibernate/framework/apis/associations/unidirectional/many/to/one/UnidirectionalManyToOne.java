@@ -21,6 +21,7 @@ public class UnidirectionalManyToOne {
             Grade grade2 = new Grade("master 1");
             session.persist(grade1);
             session.persist(grade2);
+
             hibernate.framework.apis.associations.unidirectional.many.to.one.package1.Grade grade11 =
                     new hibernate.framework.apis.associations.unidirectional.many.to.one.package1.Grade("basic 11");
             hibernate.framework.apis.associations.unidirectional.many.to.one.package1.Grade grade22 =
@@ -34,13 +35,13 @@ public class UnidirectionalManyToOne {
             session.persist(address2);
 
             // 再存储Many-端的对象，设置对象属性的值
-            Student student1 = new Student("name11", 15, grade1);
+            Student student1 = new Student("student name 11", 15, grade1);
             student1.setGrade1(grade11);
             student1.setAddress(address1);
-            Student student2 = new Student("name22", 25, grade1);
+            Student student2 = new Student("student name 22", 25, grade1);
             student2.setGrade1(grade22);
             student2.setAddress(address1);
-            Student student3 = new Student("name33", 35, grade2);
+            Student student3 = new Student("student name 33", 35, grade2);
             student3.setGrade1(grade22);
             student3.setAddress(address2);
 
