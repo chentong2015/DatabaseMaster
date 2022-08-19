@@ -1,0 +1,60 @@
+TODO. 上层调用Hibernate API, 框架的底层会将其处理成QUERY, 将SQL发送给数据库服务器进行执行
+
+1. session.persist(book); 由于设置了主键自增，因此会查询table中现有的最大值
+   Hibernate:
+       select
+           max(id)
+       from
+           t_book
+   Hibernate:
+       insert into
+           public.t_book (name, title, id)
+       values
+           (?, ?, ?)
+
+2. session.refresh(book);
+   Hibernate:
+       select
+           b1_0.id,
+           b1_0.name,
+           b1_0.title
+       from
+           public.t_book b1_0
+       where
+           b1_0.id=?
+
+3. session.merge(book) 在刷新的时候，根据id来查询并且更新
+   <T> T merge(String entityName, T object) 或者指定entityName来进行更新
+   Hibernate:
+       select
+           b1_0.id,b1_0.name,b1_0.title
+       from
+           public.t_book b1_0
+       where
+           b1_0.id=?
+   Hibernate:
+       update
+           public.t_book
+       set
+           name=?, title=?
+       where
+           id=?
+
+4. session.get(Book.class, 2) 根据指定的table主键来获取
+   Hibernate:
+       select
+           b1_0.id,
+           b1_0.name,
+           b1_0.title
+       from
+           public.t_book b1_0
+       where
+           b1_0.id=?
+
+5. session.remove(book);
+   Hibernate:
+       delete
+       from
+           public.t_book
+       where
+           id=?

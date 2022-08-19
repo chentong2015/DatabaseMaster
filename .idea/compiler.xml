@@ -10,6 +10,7 @@
         <module name="orm-spring-jdbc" />
         <module name="native-hibernate5-api-annotation" />
         <module name="document-db-mongodb" />
+        <module name="native-hibernate6-api-master" />
         <module name="jakarta-persistence-api" />
         <module name="relational-db-sql-server" />
         <module name="relational-db-mysql" />
@@ -20,7 +21,6 @@
         <module name="entity-class-parser" />
         <module name="orm-mybatis" />
         <module name="native-hibernate6-api" />
-        <module name="native-hibernate6-api-metadata" />
         <module name="sample-mapping-xml" />
         <module name="orm-liquibase" />
         <module name="java-persistence-api" />
@@ -29,7 +29,7 @@
     <bytecodeTargetLevel>
       <module name="distributed-database" target="15" />
       <module name="distributed-db" target="15" />
-      <module name="native-hibernate6-api-master" target="15" />
+      <module name="native-hibernate6-api-metadata" target="15" />
       <module name="object-db-management-system" target="1.5" />
     </bytecodeTargetLevel>
   </component>

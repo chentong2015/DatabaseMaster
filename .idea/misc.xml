@@ -11,8 +11,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
-        <option value="$PROJECT_DIR$/object-db-management-system/pom.xml" />
-        <option value="$PROJECT_DIR$/orm-jpa-hibernate/native-hibernate6-api-master/pom.xml" />
+        <option value="$PROJECT_DIR$/orm-jpa-hibernate/native-hibernate6-api-metadata/pom.xml" />
       </set>
     </option>
   </component>

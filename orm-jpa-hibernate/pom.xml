@@ -25,6 +25,6 @@
         <module>native-hibernate5-api-annotation</module>
         <module>native-hibernate5-api-xml</module>
         <module>native-hibernate6-api</module>
-        <module>native-hibernate6-api-metadata</module>
+        <module>native-hibernate6-api-master</module>
     </modules>
 </project>

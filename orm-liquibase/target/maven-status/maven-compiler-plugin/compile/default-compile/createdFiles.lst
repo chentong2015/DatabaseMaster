@@ -1,0 +1,10 @@
+com\liquibase\main\datatype\LiquibaseDataTypeFactory.class
+com\liquibase\main\config\ConfigHelper.class
+com\liquibase\main\datatype\MyDateTimeType.class
+com\liquibase\main\logger\LiquibaseLogger.class
+com\liquibase\main\config\DatabaseConfig.class
+com\liquibase\main\DemoDatabaseFactory.class
+com\liquibase\main\database\MyDatabase.class
+com\liquibase\main\datatype\MyVarcharType.class
+com\liquibase\main\datatype\LiquibaseDataType.class
+com\liquibase\main\DemoLiquibaseJava.class

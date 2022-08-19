@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="metadata.entity.BaseMetadata" entity-name="metadata.entity.BaseMetadata"
+           table="t_metadata">
+        <!-- 没有设置id自增策略，在存储数据时需要设置id的值 -->
+        <id type="long" name="id" column="id"/>
+        <property type="java.lang.String" name="name" column="name"/>
+    </class>
+</hibernate-mapping>
