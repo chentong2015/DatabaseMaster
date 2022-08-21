@@ -24,7 +24,7 @@
             <column sql-type="character varying(32)" name="name" not-null="true" unique="true"/>
         </property>
         <property name="title">
-            <column name="title" sql-type="nvarchar(50)" length="50"/>
+            <column name="title" sql-type="character varying(50)" length="50"/>
         </property>
     </class>
 </hibernate-mapping>

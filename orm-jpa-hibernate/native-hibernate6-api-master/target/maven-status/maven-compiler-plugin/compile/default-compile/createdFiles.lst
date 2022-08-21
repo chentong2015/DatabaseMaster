@@ -1,7 +1,12 @@
-dialect\MyDialectResolver.class
-export\HibernateSchemaExportDemo.class
+statistics\HibernateStatistics.class
+caching\entity\SecondCacheEntity.class
 metadata\entity\BaseMetadata.class
 metadata\MetadataSourcesHelper.class
-naming\strategies\MyPhysicalNamingStrategy.class
 metadata\DemoMetadataSources.class
+caching\second\level\DemoSecondLevelCache.class
 metadata\entity\BaseJpaMetadata.class
+caching\entity\CacheEntity.class
+dialect\MyDialectResolver.class
+export\HibernateSchemaExportDemo.class
+naming\strategies\MyPhysicalNamingStrategy.class
+caching\first\level\DemoFistLevelCache.class

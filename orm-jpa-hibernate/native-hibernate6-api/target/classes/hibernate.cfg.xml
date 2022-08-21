@@ -12,7 +12,7 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
         <!-- TODO. Dialect: 指定hibernate所要converse到某个特定的SQL; HQL -> SQL specific -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgresPlusDialect</property>
 
-        <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/hibernate_demo</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">admin</property>
@@ -38,6 +38,9 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
         <mapping resource="associations/unidirectional.many.to.one/grade.hbm.xml"/>
         <mapping resource="associations/unidirectional.many.to.one/studentAddress.hbm.xml"/>
         <mapping resource="associations/unidirectional.many.to.one/package1/grade.hbm.xml"/>
+
+        <mapping resource="associations/unidirectional.one.to.many/grade.hbm.xml"/>
+        <mapping resource="associations/unidirectional.one.to.many/student.hbm.xml"/>
 
         <mapping resource="associations/primary.key.one.to.one/idcard.hbm.xml"/>
         <mapping resource="associations/primary.key.one.to.one/person.hbm.xml"/>

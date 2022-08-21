@@ -25,8 +25,8 @@
         <mapping class="com.hibernate5.annotation.component.Staff"/>
         <mapping class="com.hibernate5.annotation.inheritance.table.per.clazz.SuperClassEntity"/>
 
-        <mapping class="com.hibernate5.annotation.join.fetching.Employee"/>
-        <mapping class="com.hibernate5.annotation.join.fetching.Department"/>
+        <mapping class="com.hibernate5.annotation.fetching.subselect.Employee"/>
+        <mapping class="com.hibernate5.annotation.fetching.subselect.Department"/>
 
         <mapping class="com.hibernate5.annotation.join.JoinColumn.ManyToOne.WebPage"/>
         <mapping class="com.hibernate5.annotation.join.JoinColumn.ManyToOne.Type"/>

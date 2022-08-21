@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd"
+         updateCheck="true" monitoring="autodetect" dynamicConfig="true">
+
+    <!-- 当memory内存存储不下缓存时，定义存储的file system的文件路径 -->
+    <diskStore path="java.io.tmpdir/ehcache"/>
+
+    <!-- 必须设置默认的缓存Region -->
+    <defaultCache maxEntriesLocalHeap="10000" eternal="false"
+                  timeToIdleSeconds="120" timeToLiveSeconds="120" diskSpoolBufferSizeMB="30"
+                  maxEntriesLocalDisk="10000000" diskExpiryThreadIntervalSeconds="120"
+                  memoryStoreEvictionPolicy="LRU" statistics="true">
+        <persistence strategy="localTempSwap"/>
+    </defaultCache>
+
+    <!-- Define the region and it’s configurations
+         配置二级缓存使用的region区, 为实体添加@Cache缓存注解时需要指定region的名称
+         配置region的相关信息，在本地堆中最大的实体数目，eternal是否始终存在 -->
+    <cache name="second_entity_cache" maxEntriesLocalHeap="10000" eternal="false" timeToIdleSeconds="5"
+           timeToLiveSeconds="10">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+    <!-- 下面两个Cache的配置解决EHCache warning -->
+    <cache name="org.hibernate.cache.internal.StandardQueryCache" maxEntriesLocalHeap="5" eternal="false"
+           timeToLiveSeconds="120">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+    <cache name="org.hibernate.cache.spi.UpdateTimestampsCache" maxEntriesLocalHeap="5000" eternal="true">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+</ehcache>

@@ -4,14 +4,17 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="hibernate.framework.apis.associations.unidirectional.many.to.one">
-    <class name="Student" schema="public" table="t_student">
+    <class name="Student"
+           entity-name="hibernate.framework.apis.associations.unidirectional.many.to.one.Student"
+           schema="public"
+           table="t_student">
         <id name="id" column="id">
             <generator class="native"/>
         </id>
         <property name="name" column="name"/>
         <property name="age" column="age"/>
 
-        <!-- TODO. 使用特定的多对一的标签 => 始终在Many-端维护级联操作
+        <!-- TODO. 没有inverse设置，希望始终在这一端(Many-端)来维护级联关系 !!
              name: 当前class类型中字段的名称
              class: 映射关系的类型(必须使用类型的全路径)
              column: 自定义的外键列名
@@ -32,7 +35,7 @@
                      column="grade_id_1"
                      foreign-key="foreign_key_1"/>
 
-        <!-- TODO. join 将多对一的关系存储到额外的关联表 -->
+        <!-- TODO. join 将多对一的关系存储到额外的关联表 => 等效于@JoinTable()注解的作用 -->
         <join table="t_student_address">
             <key column="student_id" unique="true"/>
             <!-- 多个Student可能住在同一个地址 -->

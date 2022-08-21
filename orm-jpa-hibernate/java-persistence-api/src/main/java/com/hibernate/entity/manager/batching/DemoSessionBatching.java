@@ -36,7 +36,7 @@ public class DemoSessionBatching {
 
     private static void persistPerBatch() {
         int batchSize = 25;
-        for (int i = 10; i < 1000; i++) {
+        for (int i = 10; i < 100000; i++) {
             // 按批次执行数据库的插入操作，避免内存溢出，减少事务的运行时间
             if (i > 0 && i % batchSize == 0) {
                 // flush a batch of inserts and release memory

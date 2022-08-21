@@ -1,0 +1,9 @@
+WARN: HHH90001007: Using legacy cache name [org.hibernate.cache.spi.UpdateTimestampsCache] because configuration could not be found for cache [default-update-timestamps-region].
+Update your configuration to rename cache [org.hibernate.cache.spi.UpdateTimestampsCache] to [default-update-timestamps-region].
+
+Aug 21, 2022 8:27:24 PM org.hibernate.cache.ehcache.internal.EhcacheRegionFactory defaultRegionName
+WARN: HHH90001007: Using legacy cache name [org.hibernate.cache.internal.StandardQueryCache] because configuration could not be found for cache [default-query-results-region].
+Update your configuration to rename cache [org.hibernate.cache.internal.StandardQueryCache] to [default-query-results-region].
+
+Aug 21, 2022 8:27:24 PM org.hibernate.cache.spi.support.EntityReadOnlyAccess <init>
+WARN: HHH90001003: Read-only caching was requested for mutable entity [NavigableRole[caching.entity.SecondCacheEntity]]

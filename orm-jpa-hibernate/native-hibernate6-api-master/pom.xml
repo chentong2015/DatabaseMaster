@@ -18,11 +18,34 @@
     </properties>
 
     <dependencies>
+        <!-- <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.0.0.Alpha7</version>
+         </dependency>
+         <dependency>
+           <groupId>org.hibernate.orm</groupId>
+           <artifactId>hibernate-ehcache</artifactId>
+           <version>6.0.0.Alpha7</version>
+         </dependency> -->
+
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>6.0.1.Final</version>
+            <version>6.1.2.Final</version>
         </dependency>
+        <!-- EhCache Core API 3.x -->
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-jcache</artifactId>
+            <version>6.1.2.Final</version>
+        </dependency>
+
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>

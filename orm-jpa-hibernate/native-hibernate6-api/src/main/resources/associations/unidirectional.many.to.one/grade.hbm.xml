@@ -5,8 +5,10 @@
 
 <!-- 在类名称层级上需要添加entity-name=""避免JPA entity name名称冲突 -->
 <hibernate-mapping package="hibernate.framework.apis.associations.unidirectional.many.to.one">
-    <class name="Grade" entity-name="hibernate.framework.apis.associations.unidirectional.many.to.one.Grade"
-           schema="public" table="t_grade">
+    <class name="Grade"
+           entity-name="hibernate.framework.apis.associations.unidirectional.many.to.one.Grade"
+           schema="public"
+           table="t_grade">
         <id name="id" column="id">
             <generator class="native"/>
         </id>

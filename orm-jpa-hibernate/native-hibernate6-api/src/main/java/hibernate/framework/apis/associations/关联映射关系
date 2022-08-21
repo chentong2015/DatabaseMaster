@@ -3,9 +3,13 @@ Cascade
 1. 在数据库中存储数据时，连带着相关联的数据(外键指向)都一起存储
 2. 在数据库中删除数据时，连带者相关联的数据(外键指向)都一起删除 => 不建议使用
 
-TODO. 经过测试，始终由Many-端维护关系效率高，One-方维护效率低(需要额外的update操作)
-mappedBy="" & inverse="true" 指定关联的双方由那一端来维护关系
-1. inverse是一个boolean值，只能在其中一端设置
-2. inverse如果在映射文件中设置成true，说明映射关系中由对方来维护关系
-3. inverse默认为false，表示双方都可以维护关系
+TODO. 始终由Many-端维护关系效率高，One-方维护效率低(需要额外的update操作)
+mappedBy="" 等效于设置反向侧为自身，由对方来维护关系
+Every bidirectional association must have one owning side only (the child side)
+the other one being referred to as the inverse (or the mappedBy) side.
 
+TODO. 只会声明在<one-to-many或者<many-to-many关系中
+inverse="true" 指定关联的双方由那一端来维护关系(which side is the owner to maintain the relationship)
+1. inverse boolean值，只能在其中一端设置
+2. inverse 默认为false，表示双方都可以维护关系
+3. inverse 如果设置成true，说明由映射关系中的对方来维护关系

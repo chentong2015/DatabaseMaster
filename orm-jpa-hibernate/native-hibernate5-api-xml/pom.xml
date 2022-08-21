@@ -20,7 +20,7 @@
         </dependency>
 
         <!-- TODO. 在版本5.3.9.Final测试条件下，需要補充jaxb-api xml等相关的依赖
-                  不会抛出DuplicateMappingException的问题 !!-->
+                  不会抛出DuplicateMappingException的问题 !!
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
@@ -35,7 +35,7 @@
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-core</artifactId>
             <version>2.3.0</version>
-        </dependency>
+        </dependency> -->
 
         <dependency>
             <groupId>org.postgresql</groupId>

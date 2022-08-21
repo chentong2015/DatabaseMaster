@@ -5,6 +5,7 @@ import org.hibernate.engine.jdbc.dialect.spi.DialectResolutionInfo;
 import org.hibernate.engine.jdbc.dialect.spi.DialectResolver;
 
 // TODO. 根据Database数据库的不同，解析成不同的Dialect方言
+// Hibernate没有为SQLite提供Dialect，需要自定义提供，否则无法建立连接
 public class MyDialectResolver implements DialectResolver {
 
     @Override

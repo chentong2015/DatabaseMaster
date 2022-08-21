@@ -36,7 +36,7 @@ public class DemoMetadataSources {
         // 1. 类型名称如果冲突，需要使用全路径形式
         metadataSources.addAnnotatedClass(BaseJpaMetadata.class);
         // 2. 添加到xmlBindings列表中
-        InputStream inputStream = DemoMetadataSources.class.getResourceAsStream("/metadata.hbm.xml");
+        InputStream inputStream = DemoMetadataSources.class.getResourceAsStream("/metadata/metadata.hbm.xml");
         metadataSources.addInputStream(inputStream);
 
         // TODO. 使用MetadataBuilder构造Metadata配置的源数据信息

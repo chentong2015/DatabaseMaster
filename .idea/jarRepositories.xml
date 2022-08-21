@@ -7,6 +7,21 @@
       <option name="url" value="https://repo.maven.apache.org/maven2" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="nexus-public" />
+      <option name="name" value="nexus-public" />
+      <option name="url" value="https://pandora.fr.murex.com/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nexus-firstretry" />
+      <option name="name" value="nexus-firstretry" />
+      <option name="url" value="https://pandora.fr.murex.com/content/groups/firstretry" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nexus-murex" />
+      <option name="name" value="nexus-murex" />
+      <option name="url" value="https://pandora.fr.murex.com/content/groups/murex" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />

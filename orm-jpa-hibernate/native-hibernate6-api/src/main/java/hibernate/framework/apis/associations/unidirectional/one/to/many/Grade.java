@@ -8,7 +8,6 @@ public class Grade implements Serializable {
 
     private int id;
     private String name;
-    // TODO. List, Set, Map 对应映射时的不同类型, hibernate默认是Set
     private Set<Student> students = new HashSet<>();
 
     public Grade() {

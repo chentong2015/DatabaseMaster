@@ -1,7 +1,0 @@
-注意四种缓存策略之间的区别 ?
-https://www.digitalocean.com/community/tutorials/hibernate-caching-first-level-cache
-https://www.digitalocean.com/community/tutorials/hibernate-ehcache-hibernate-second-level-cache
-https://www.baeldung.com/hibernate-second-level-cache
-
-<property name="hibernate.cache.use_second_level_cache">true</property>
-<property name="hibernate.cache.use_query_cache">true</property>

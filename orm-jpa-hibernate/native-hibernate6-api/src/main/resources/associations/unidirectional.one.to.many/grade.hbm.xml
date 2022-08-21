@@ -4,7 +4,10 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="hibernate.framework.apis.associations.unidirectional.one.to.many">
-    <class name="Grade" schema="public" table="t_grade_1">
+    <class name="Grade"
+           entity-name="hibernate.framework.apis.associations.unidirectional.one.to.many.Grade"
+           schema="public"
+           table="t_grade_1">
         <id name="id" column="id">
             <generator class="native"/>
         </id>
@@ -19,7 +22,8 @@
                       save-update: 在插入时级联
                       none: 默认是不使用级联
                       all: 全部操作都使用级联
-             inverse: true 表示由对方(One-)端来维护关系 -->
+             inverse: true 表示由对方端(另一端)来维护关系, 默认为false -->
+        <!-- TODO. inverse一旦设置成true，则不会多执行update语句，会交给多端来维护关系(提升效率) -->
         <set name="students" cascade="save-update" inverse="true">
             <key column="grade_id" foreign-key="foreign_key"/>
             <one-to-many class="Student"/>

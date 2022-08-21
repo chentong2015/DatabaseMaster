@@ -1,0 +1,10 @@
+连接项目所需要的数据库SQL Server
+1. TODO. 连接项目所需要的数据库，走网络端口去要数据
+2. 打开SQL Server的1433默认的端口
+   SQL Server Configuration Manager > SQL Server Networking Configuration > Protocol > TCP/IP > Enabled开启 > 重启
+3. 打开本地计算机防火墙的1433端口
+   防火墙 > 高级设置 > Inbound Rules入站规则(外部通过网络访问时，是否允许) > New Rule > TCP 1433 > Allow Connection
+   防火墙 > 高级设置 > Outbound Rules出站规则(内部数据通过是否允许从指定端口出去) > New > TCP 1433 > Allow Connection
+4. 添加JDBC Driver Jar驱动库
+   下载Driver Path: C:\Users\CHEN Tong\AppData\Roaming\JetBrains\IntelliJIdea2020.3\jdbc-drivers
+5. 选择SQL Server需要连接的Database > Schema 监测连接的DB > Test Connection

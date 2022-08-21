@@ -17,44 +17,19 @@ Hibernate:
 
 // 2. 插入one-端的数据
 Hibernate:
-    insert
-    into
-        public.t_grade_1
-        (name, id)
-    values
-        (?, ?)
+    insert into public.t_grade_1 (name, id) values (?, ?)
 Hibernate:
-    insert
-    into
-        public.t_grade_1
-        (name, id)
-    values
-        (?, ?)
+    insert into public.t_grade_1 (name, id) values (?, ?)
 
 // 3. 插入Many-端的数据
 Hibernate:
-    insert
-    into
-        public.t_student_1
-        (age, name, id)
-    values
-        (?, ?, ?)
+    insert into public.t_student_1 (age, name, id) values (?, ?, ?)
 Hibernate:
-    insert
-    into
-        public.t_student_1
-        (age, name, id)
-    values
-        (?, ?, ?)
+    insert into public.t_student_1 (age, name, id) values (?, ?, ?)
 Hibernate:
-    insert
-    into
-        public.t_student_1
-        (age, name, id)
-    values
-        (?, ?, ?)
+    insert into public.t_student_1 (age, name, id) values (?, ?, ?)
 
-// 4. 再更新Many-端的外键(关联One端的id)
+// 4. 再更新Many-端的外键(关联One端的id) => 执行update语句会导致效率降低 !!
 Hibernate:
     update
         public.t_student_1
