@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>java-persitence-api</artifactId>
+    <artifactId>javax-persitence-api</artifactId>
 
     <dependencies>
         <!-- TODO. 包含JPA 2.2，同时兼容JPA 3.0版本
