@@ -1,2 +1,11 @@
-设置Natural-Id附加的Id作为查询
+id  label  info   ...       id  label  content ...
+2   EURO   europe           3   EURO   europe
+两个数据库，每个数据库的表带由数据值类型的主键，带有一个label和一些详细的信息
+使用一个数据表的主键到另外一个表中去查找row，由于主键primary key的值是不一致的，所以无法查询
+
+TODO. Natural-Id设计原理
+ - 将label字符串设计成Natural-Id
+ - 在查询时通过比较Natural-Id来找到对于的值，绕开主键primary key，实现跨数据库的检索
+ - 对于大表而言，Natural-Id自然主键可以设计成多个列名称的联合
+
 https://docs.jboss.org/hibernate/orm/5.0/mappingGuide/en-US/html/ch07.html
