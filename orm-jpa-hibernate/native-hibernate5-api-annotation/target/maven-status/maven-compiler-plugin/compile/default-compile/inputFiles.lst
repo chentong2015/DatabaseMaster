@@ -15,6 +15,7 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\fetching\subselect\Employee.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\one\to\one\Address.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\type\DisplayLabelType.java
+D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\inheritance\table\per\clazz\SpecificEntity.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\entity\annotations\TableDescription.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\entity\package1\Person.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\query\SqlRawQuery.java
@@ -30,6 +31,7 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\inheritance\table\per\clazz\SuperClassEntity.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\join\JoinColumnOrFormula\Country.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\polymorphism\Blog.java
+D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\inheritance\table\per\clazz\child\SpecificEntity.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\any\model\StringProperty.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\typedef\MyTypeDefEntity.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate5-api-annotation\src\main\java\com\hibernate5\annotation\fetching\LazyCollection\Worker.java

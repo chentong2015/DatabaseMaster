@@ -2,6 +2,7 @@ com\hibernate5\annotation\entity\annotations\TableDescription.class
 com\hibernate5\annotation\join\JoinColumn\ManyToOne\Type.class
 com\hibernate5\annotation\component\ComponentPersonName.class
 com\hibernate5\annotation\inheritance\mapper\superclass\DebitAccount.class
+com\hibernate5\annotation\inheritance\table\per\clazz\SpecificEntity.class
 com\hibernate5\annotation\join\JoinColumn\OneToMany\Software.class
 com\hibernate5\annotation\any\PropertyHolder.class
 com\hibernate5\annotation\fetching\subselect\DemoFetchingSubselect.class
@@ -46,5 +47,6 @@ com\hibernate5\annotation\entity\non\publiz\entity\EntityTester.class
 com\hibernate5\annotation\one\to\one\Address.class
 com\hibernate5\annotation\polymorphism\Blog.class
 com\hibernate5\annotation\DemoJpaEntity.class
+com\hibernate5\annotation\inheritance\table\per\clazz\child\SpecificEntity.class
 com\hibernate5\annotation\inheritance\single\table\CEmployee.class
 com\hibernate5\annotation\polymorphism\DomainModelEntity.class

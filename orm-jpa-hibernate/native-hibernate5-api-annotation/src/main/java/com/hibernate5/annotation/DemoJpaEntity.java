@@ -1,6 +1,5 @@
 package com.hibernate5.annotation;
 
-import com.hibernate5.annotation.query.HqlRawQuery;
 import org.hibernate.FlushMode;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -18,8 +17,8 @@ public class DemoJpaEntity {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        HqlRawQuery.testHqlSelectQuery(session);
         session.setHibernateFlushMode(FlushMode.ALWAYS);
+
         session.close();
         sessionFactory.close();
     }
