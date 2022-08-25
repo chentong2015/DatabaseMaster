@@ -23,7 +23,10 @@
         <mapping class="com.hibernate5.annotation.entity.non.publiz.entity.Sample"/>
 
         <mapping class="com.hibernate5.annotation.component.Staff"/>
+
         <mapping class="com.hibernate5.annotation.inheritance.table.per.clazz.SuperClassEntity"/>
+        <mapping class="com.hibernate5.annotation.inheritance.table.per.clazz.SpecificEntity"/>
+        <mapping class="com.hibernate5.annotation.inheritance.table.per.clazz.child.SpecificEntity"/>
 
         <mapping class="com.hibernate5.annotation.fetching.subselect.Employee"/>
         <mapping class="com.hibernate5.annotation.fetching.subselect.Department"/>

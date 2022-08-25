@@ -5,8 +5,9 @@ import javax.persistence.*;
 @Entity
 @Table(name = "Employee")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-// 添加用于取分的字段，根据值确定类型
+// 添加用于取分的column字段名称，根据值确定类型
 @DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING)
+// 确定当前super class的用于区分的值
 @DiscriminatorValue(value = "EMP")
 public class Employee {
 

@@ -2,11 +2,9 @@ package com.hibernate5.annotation.inheritance.table.per.clazz;
 
 import javax.persistence.*;
 
-
 @Entity
-@Table(name = "t_super_inheritance_table")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-public class SuperClassEntity {
+public abstract class SuperClassEntity {
 
     @Id
     @Column(name = "id")

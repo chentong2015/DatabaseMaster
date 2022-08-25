@@ -16,7 +16,7 @@ public class HqlRawQuery {
     // 1. .createQuery(query, String.class)   提供的是查询返回的结果类型 The type of the query result
     // 2. .createQuery(query).executeUpdate() 如果是更新的语句，则不需要提供查询结果的类型
     //    执行更新和修改的语句时，需要使用transaction事务
-    public static void testHqlQuery(Session session) {
+    public static void testHqlSelectQuery(Session session) {
         // 表示选择指定的table的所有字段
         String hqlQuery = "From " + Person.class.getName();
         Query<Person> query = session.createQuery(hqlQuery, Person.class);
@@ -24,7 +24,9 @@ public class HqlRawQuery {
         for (Person person : personList) {
             System.out.println(person);
         }
-
+    }
+    
+    public static void testHqlSelectQueryWhere(Session session) {
         String hqlQuery1 = "Select p.firstname FROM " + Person.class.getName() + " p where p.id = :id";
         Optional<String> result = session.createQuery(hqlQuery1, String.class)
                 .setParameter("id", 4)
@@ -33,7 +35,10 @@ public class HqlRawQuery {
         if (result.isPresent()) {
             System.out.println("Firstname: " + result.get());
         }
+    }
 
+    // 对于执行update修改的操作，必须通过事务来执行
+    public static void testHqlDeleteQuery(Session session) {
         session.beginTransaction();
         String hqlQuery2 = "Delete from " + Person.class.getName() + " p where p.id = 3";
         session.createQuery(hqlQuery2).executeUpdate();

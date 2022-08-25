@@ -26,7 +26,7 @@ public class Staff {
     @Embedded
     private ComponentPersonName name;
 
-    // TODO. @AttributeOverride进行对嵌入的class的列名称进行修改
+    // TODO. @AttributeOverride修改嵌入的class的列名称
     @Embedded
     @AttributeOverrides(value = {
             @AttributeOverride(name = "street", column = @Column(name = "streetAddr")),

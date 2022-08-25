@@ -34,22 +34,24 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
         <!-- 一个数据表的描述: 对象的配置文件 -->
         <mapping resource="entity/books.hbm.xml"/>
 
-        <mapping resource="associations/unidirectional.many.to.one/student.hbm.xml"/>
-        <mapping resource="associations/unidirectional.many.to.one/grade.hbm.xml"/>
-        <mapping resource="associations/unidirectional.many.to.one/studentAddress.hbm.xml"/>
-        <mapping resource="associations/unidirectional.many.to.one/package1/grade.hbm.xml"/>
+        <mapping resource="mappings/many.to.one.unidirectional/student.hbm.xml"/>
+        <mapping resource="mappings/many.to.one.unidirectional/grade.hbm.xml"/>
+        <mapping resource="mappings/many.to.one.unidirectional/studentAddress.hbm.xml"/>
+        <mapping resource="mappings/many.to.one.unidirectional/package1/grade.hbm.xml"/>
 
-        <mapping resource="associations/unidirectional.one.to.many/grade.hbm.xml"/>
-        <mapping resource="associations/unidirectional.one.to.many/student.hbm.xml"/>
+        <mapping resource="mappings/one.to.many.unidirectional/grade.hbm.xml"/>
+        <mapping resource="mappings/one.to.many.unidirectional/student.hbm.xml"/>
 
-        <mapping resource="associations/primary.key.one.to.one/idcard.hbm.xml"/>
-        <mapping resource="associations/primary.key.one.to.one/person.hbm.xml"/>
+        <mapping resource="mappings/one.to.one.primary.key/idcard.hbm.xml"/>
+        <mapping resource="mappings/one.to.one.primary.key/person.hbm.xml"/>
 
-        <mapping resource="associations/many.to.many/strategy.hbm.xml"/>
-        <mapping resource="associations/many.to.many/typology.hbm.xml"/>
+        <mapping resource="mappings/many.to.many/strategy.hbm.xml"/>
+        <mapping resource="mappings/many.to.many/typology.hbm.xml"/>
 
-        <mapping class="hibernate.framework.apis.any.model.IntegerProperty"/>
-        <mapping class="hibernate.framework.apis.any.model.StringProperty"/>
-        <mapping class="hibernate.framework.apis.any.PropertyHolder"/>
+        <mapping class="hibernate.framework.apis.mappings.any.model.IntegerProperty"/>
+        <mapping class="hibernate.framework.apis.mappings.any.model.StringProperty"/>
+        <mapping class="hibernate.framework.apis.mappings.any.PropertyHolder"/>
+
+        <mapping class="hibernate.framework.apis.mappings.map.RightsEntity"/>
     </session-factory>
 </hibernate-configuration>

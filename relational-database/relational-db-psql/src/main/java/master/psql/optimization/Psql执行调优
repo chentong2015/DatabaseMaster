@@ -4,3 +4,7 @@
 
 2. 如何解决批量删除效率低的问题 ?
    Delete in batch on Postgresql, performance is low ?
+   https://cargopantsprogramming.com/post/speeding-up-batch-deletes-and-updates/
+   https://www.mssqltips.com/sqlservertip/6240/script-to-delete-sql-server-data-in-batches/
+
+   https://vladmihalcea.com/postgresql-multi-row-insert-rewritebatchedinserts-property/

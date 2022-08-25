@@ -48,3 +48,11 @@
    ... 8 more
    异常原因：显式开启了缓存，但是没有配置指定的.region.factory_class接口的具体实现)
 
+8. org.hibernate.DuplicateMappingException: Duplicate table mapping SpecificEntity
+   异常原因：重复创建了相同的数据库表，有两个Java Entity Class都映射到该数据表 !!
+           不同的Entity Class应该映射到唯一的table
+           如果Java Entity Class名称相同，并且没有自定义指定@Table注解的名称，则会造成上面的错误
+
+9. org.hibernate.MappingException: Repeated column in mapping for entity:
+   异常原因：Java Entity Class映射到Table数据表中的column列的名称重了
+           特别注意继承关系中列的名称是否重复添加了
