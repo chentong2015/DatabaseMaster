@@ -3,7 +3,8 @@ package com.hibernate5.annotation.inheritance.table.per.clazz;
 import javax.persistence.*;
 
 // TODO. 如果是针对super class抽象类来进行查询，则会对它的所有子表进行Union Select查询，得到全局的数据结果
-//   Query<SuperClassEntity> query = session.createQuery("From " + SuperClassEntity.class.getName(), SuperClassEntity.class);
+//   String hqlQuery = "From " + SuperClassEntity.class.getName();
+//   Query<SuperClassEntity> query = session.createQuery(hqlQuery, SuperClassEntity.class);
 //   List<SuperClassEntity> resultList = query.getResultList();
 //
 // Hibernate:
@@ -36,7 +37,7 @@ import javax.persistence.*;
 // 由于抽象的母类没有对应的映射表，所以得到的是子表的合并数据
 // SuperClassEntity{id=1, name='name s1'}
 // SuperClassEntity{id=12, name='name s2'}
-@Entity(name = "com.hibernate5.annotation.inheritance.table.per.clazz.SuperClassEntity")
+@Entity // (name = "com.hibernate5.annotation.inheritance.table.per.clazz.SuperClassEntity")
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class SuperClassEntity {
 

@@ -1,15 +1,17 @@
 package com.hibernate5.annotation;
 
+import com.hibernate5.annotation.inheritance.table.per.clazz.SuperClassEntity;
 import org.hibernate.FlushMode;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.query.Query;
 
-// TODO. Hibernate Jpa annotation Mapping映射问题
-// 1. @Entity() 没有设置名称，使用默认类型名称或者全路径都能查询 !!
-// 2. @Entity(name = "entity-name") 如果设置名称为全路径，则必须使用全路径来查询 !!
+import java.util.List;
+
+
 public class DemoJpaEntity {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
@@ -18,6 +20,13 @@ public class DemoJpaEntity {
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
         session.setHibernateFlushMode(FlushMode.ALWAYS);
+
+        String hqlQuery = "From " + SuperClassEntity.class.getSimpleName();
+        Query<SuperClassEntity> query = session.createQuery(hqlQuery, SuperClassEntity.class);
+        List<SuperClassEntity> resultList = query.getResultList();
+        for (SuperClassEntity entity : resultList) {
+            System.out.println(entity);
+        }
 
         session.close();
         sessionFactory.close();
