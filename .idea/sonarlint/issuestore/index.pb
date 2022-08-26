@@ -175,8 +175,6 @@ Odatabase-orm-design/src/main/java/master/database/design/bacthing/JDBC Batching
 borm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/entity/Event.java,b\f\bf1fa06514404b5bb824402e1df2cd06827d6ec0
 ó
 gorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\5\9535855f5560add89dcf52b7b90925e75cfad9b7
-ö
-jorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,8\a\8a6922ce6bb2f0aa586e6509a6102cffa0fdd98e
 π
 àorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/non/publiz/entity/SelectionResult.java,2\7\27b814960281391899ca67edb43a84bac8eec5f7
 ∂
@@ -331,8 +329,6 @@ gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 zorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/component/ComponentAddress.java,b\3\b33e632eec95535424263936819f74d72ec05408
 õ
 korm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/map/RightsType.java,5\1\51f7b81a5e6ef1bc18638fefc1306f75e0643d76
-ö
-jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
 ≤
 Åorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/many/BidirectionalManyToMany.java,1\5\1562781fe014cd528b194850ef24ba3008cbe217
 †

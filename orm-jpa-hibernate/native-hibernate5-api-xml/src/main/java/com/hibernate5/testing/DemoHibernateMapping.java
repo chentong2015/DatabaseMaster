@@ -16,7 +16,7 @@ import java.util.List;
 //    1.2 如果设置entity-name名称，则必须使用设置的名称(名称中不能含有特殊的符号) !!
 // 2. Hibernate v5.6.9
 //    2.1 没有设置entity-name名称
-//        HQL中如果有重名的POJO class名称，则报错: DuplicationMappingException: entities share the same JPA entity name
+//        HQL中如果有重名的POJO class名称，则报错DuplicationMappingException: entities share same JPA entity name
 //        SomeClass.class.getName()或者class.getSimpleName()都能查询 !!
 //    2.2 如果设置entity-name名称，则必须使用设置的名称
 //        如果有重名的POJO class名称，在使用HQL getSimpleName()时会报错: TypedQuery is incompatible
