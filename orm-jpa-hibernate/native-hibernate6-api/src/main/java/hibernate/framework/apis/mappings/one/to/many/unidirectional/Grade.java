@@ -9,6 +9,7 @@ public class Grade implements Serializable {
     private int id;
     private String name;
     private Set<Student> students = new HashSet<>();
+    private Set<Long> typeReferences;
 
     public Grade() {
     }
@@ -39,5 +40,13 @@ public class Grade implements Serializable {
 
     public void setStudents(Set<Student> students) {
         this.students = students;
+    }
+
+    public Set<Long> getTypeReferences() {
+        return typeReferences;
+    }
+
+    public void setTypeReferences(Set<Long> typeReferences) {
+        this.typeReferences = typeReferences;
     }
 }

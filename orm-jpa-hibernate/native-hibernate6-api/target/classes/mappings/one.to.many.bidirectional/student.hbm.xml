@@ -13,7 +13,9 @@
         <property name="age" column="age"/>
 
         <!-- TODO. column="grade_id"外键是放在Student One一端的 -->
-        <many-to-one name="grade" class="hibernate.framework.apis.mappings.one.to.many.bidirectional.Grade"
-                     column="grade_id" foreign-key="foreign_key"/>
+        <many-to-one name="grade"
+                     class="hibernate.framework.apis.mappings.one.to.many.bidirectional.Grade"
+                     column="grade_id"
+                     foreign-key="foreign_key"/>
     </class>
 </hibernate-mapping>

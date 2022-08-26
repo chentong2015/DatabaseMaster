@@ -15,7 +15,7 @@
         <id type="long" name="id">
             <!-- 指定列的信息和约束条件(存在适配的问题)
                  将Java long类型的id映射成数据库中bigint
-                 将Java String类型的id映射成数据库中bigint，可能会造成存值时类型转换的问题 !! -->
+                 将Java String类型的id映射成数据库中bigint，可能造成存值时类型转换问题(类型并不兼容)!! -->
             <column name="id" sql-type="bigint"/>
             <generator class="increment"/>
         </id>

@@ -1,2 +1,0 @@
-同步持久化上下文的状态与底层数据库同步的过程
-Flushing is the process of synchronizing the state of the persistence context with the underlying database.
