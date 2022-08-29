@@ -23,6 +23,7 @@ https://www.digitalocean.com/community/tutorials/hibernate-ehcache-hibernate-sec
 
 
 TODO. hibernate-ehcache v2版本被废弃，使用Ehcache 3版本
+  https://www.ehcache.org/documentation/3.10/ 研究CacheManager的配置 ?
 Deprecate hibernate-ehcache module as it is using Ehcache 2 as its back-end,
 which is deprecated itself in favor of Ehcache 3.
 Ehcache 3 can be easily used instead by using the hibernate-jcache module and have Ehcache 3
