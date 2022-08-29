@@ -31,6 +31,7 @@
       <module name="distributed-db" target="15" />
       <module name="native-hibernate6-api-metadata" target="15" />
       <module name="object-db-management-system" target="1.5" />
+      <module name="test" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>

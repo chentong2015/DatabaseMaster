@@ -1,4 +1,4 @@
-package caching.entity;
+package caching.second.level;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -7,9 +7,9 @@ import jakarta.persistence.Table;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
+// 设置使用的缓存策略，以及要使用的二级缓存Region区
 @Entity
 @Table(name = "t_cache_second_entity")
-// 设置使用的缓存策略，以及要使用的二级缓存Region区
 @Cache(usage = CacheConcurrencyStrategy.READ_ONLY, region = "second_entity_cache")
 public class SecondCacheEntity {
 

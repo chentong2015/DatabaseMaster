@@ -125,12 +125,6 @@ K
 document-db-mongodb/pom.xml,4\9\49f32a047960359b6162aaa6fe8f76be14f9fcc5
 E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
-k
-;orm-jpa-hibernate-example/sample-mapping-annotation/pom.xml,9\0\90eaf2a59b8936a265f1de68476a7bd04cb362b8
-d
-4orm-jpa-hibernate-example/sample-mapping-xml/pom.xml,e\7\e795f69b7e8daf5486bbea0972d45515b9ac5615
-Q
-!orm-jpa-hibernate-example/pom.xml,6\c\6cedb3a1f1db7f42f6f6aab930c76b57856b5972
 ’
 borm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/JpaEntityLocationsParser.java,1\1\116e9fb2344e03f1ccbb799aaba6533c869cb3d4
 j
@@ -161,8 +155,6 @@ torm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 ‘orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumn/ManyToOne/DemoJoinColumnManyToOne.java,b\0\b05f2e1254d137548d7de501d45dab640c44990b
 ª
 zorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/å¯¹è±¡æ“ä½œèƒŒåæ‰§è¡Œçš„ä»£ç ,4\1\41aa4a2bbc6dddc3dbc53f961c294e9d96fd2458
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ¥
 uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/type/DisplayLabelType.java,b\2\b21b88dbb313148002874864c6dd70cc28b02040
 
@@ -209,18 +201,12 @@ _
 /relational-database/relational-db-mysql/pom.xml,c\7\c7a594144f18a41da9a2061671e1c3fbb82584f3
 
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseMetadata.java,1\a\1ab64bc9e3f6f76d53550c953d804d4c2103743c
-Œ
-\orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/entity/CacheEntity.java,6\6\66e0acc9d1e4e2d9c56f9cb4661eef8430b81737
 ‘
 aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseJpaMetadata.java,0\0\004fcac44c375ddf5ab8e0123b4c1e56c216d54b
-’
-borm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/entity/SecondCacheEntity.java,3\f\3fc7964647199b87de4011ad745ff78b9f6a11e2
 ^
 .relational-database/relational-db-psql/pom.xml,1\9\19aa403b002a2031346683dd4e0f0d8a8683afab
 K
 relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
-›
-korm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/DemoSecondLevelCache.java,b\5\b52352c8a8bfef9f223dcd92f41e9ff367b4792d
 I
 orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 ƒ
@@ -297,8 +283,6 @@ oorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 jorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,8\a\8a6922ce6bb2f0aa586e6509a6102cffa0fdd98e
 
 morm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/DemoJpaEntity.java,0\3\030a2a338e5ce46e80e182c8945314d7e52a12c0
-š
-jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
 Ÿ
 oorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/NamedQueryEntity.java,5\9\59af58a9d9d1e2f9f2225f23fe5a2da12fa27916
 _
@@ -347,8 +331,6 @@ vorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 sorm-jpa-hibernate/jakarta-persistence-api/src/main/java/com/hibernate/entity/manager/DemoJakartaPersistenceAPI.java,8\1\819f3675aa052260b0b05c9afdfb2ba7ae565428
 Š
 Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingJPA.java,6\2\62613f23fbb86c8350d14c5a0715d15efd48c3e3
-Š
-Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/Hibernateç¼“å­˜è®¾è®¡,c\3\c38428e38a2203f0a58a2ed2d26bf08a2ad3d9a7
 
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/flushing/Hibernate Flushingç­–ç•¥,8\f\8f24fe1ff79f7609d2e38e61fcff089aba27da04
 
@@ -357,8 +339,6 @@ Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/Hibernateç
 Xorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/Hibernate Batching,3\a\3ab8e1e3d780b4f29b929aabdc8f4f33e612c3a4
 ]
 -orm-jpa-hibernate/entity-class-parser/pom.xml,6\d\6d08a4622b47d57c8d039916d3f397d2aa83f9e1
-f
-6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
 œ
 lorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/MyImplicitNamingStrategy.java,d\d\dd2869c3956449bdf2b96da14499823161c779e0
 œ

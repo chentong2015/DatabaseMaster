@@ -12,34 +12,17 @@
 
     <artifactId>native-hibernate6-api-master</artifactId>
 
-    <properties>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
-    </properties>
-
     <dependencies>
-        <!-- <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>6.0.0.Alpha7</version>
-         </dependency>
-         <dependency>
-           <groupId>org.hibernate.orm</groupId>
-           <artifactId>hibernate-ehcache</artifactId>
-           <version>6.0.0.Alpha7</version>
-         </dependency> -->
-
-        <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>6.1.2.Final</version>
-        </dependency>
-        <!-- EhCache Core API 3.x -->
+        <!-- Ehcache 3.x 提供cache provider -->
         <dependency>
             <groupId>org.ehcache</groupId>
             <artifactId>ehcache</artifactId>
-            <version>3.10.0</version>
+            <version>3.3.1</version>
         </dependency>
+        <!-- 包含如下依赖:
+             - javax.cache:cache-api 提供Cache缓存API
+             - hibernate-core:6.1.2.Final 包含同版本的依赖
+             - jboss-logging 提供日志的配置 -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-jcache</artifactId>
@@ -49,9 +32,8 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.3.6</version>
+            <version>42.4.2</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
@@ -59,5 +41,4 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
 </project>

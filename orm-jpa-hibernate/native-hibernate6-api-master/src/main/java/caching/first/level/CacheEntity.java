@@ -1,4 +1,4 @@
-package caching.entity;
+package caching.first.level;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
