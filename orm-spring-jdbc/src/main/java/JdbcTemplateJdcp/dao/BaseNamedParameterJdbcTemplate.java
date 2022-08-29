@@ -12,7 +12,6 @@ import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 
-//
 // NamedParameterJdbcTemplate:
 // 使用具有名称的参数替代传统的'?' placeholders，解决代码可读性，参数的顺序问题
 @Repository("baseNamedParameterJdbcTemplate")

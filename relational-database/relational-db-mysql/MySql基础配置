@@ -1,13 +1,17 @@
 MySQL数据库: Oracle旗下免费DB
-
 安装目录下/data/数据库名称(一个库对应一个文件夹)/...  持久层数据以文件的形式存储在硬盘
-
 /MySQL Server 5.0/my.ini 配置文件
   max_connections=500 设置最大并发Session数目
   wait_timeout=20     添加参数: 客户端数据库连接闲置最大时间值(默认值为8小时)
   interactive_timeout=20
 
----------------------------------------------------------------------------
+-------------------------------------------------------------------
+MySQL WorkBench数据库UI工作台
+  CREATE SCHEMA `test_new_schema`; 创建Schema，相当于创建一个数据库
+  DROP DATABASE `test_new_schema`; 删除Schema和其中的所以Table
+  DROP SCHEMA test_new_schema;     使用名称删除Schema
+
+--------------------------------------------------------------------
 启动MySQL终端界面:
   Start Menu\Programs\MySQL\MySQL Command Line Client
   C:\Program Files (x86)\MySQL\MySQL Server 5.0\bin > cmd启动

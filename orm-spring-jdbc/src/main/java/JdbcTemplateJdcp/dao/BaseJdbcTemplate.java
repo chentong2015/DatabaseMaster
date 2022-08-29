@@ -36,6 +36,12 @@ public class BaseJdbcTemplate implements InformationDao {
         return jdbcTemplate.queryForObject(query, new InfoRowMapper(), args);
     }
 
+    // 如果查询返回是Standard Java Types, 则不需要使用RowMapper
+    public long countInformation() {
+        String query = "SELECT count(*) FROM information";
+        return jdbcTemplate.queryForObject(query, Long.class);
+    }
+
     @Override
     public void cleanupTable() {
         // 只清空table中所有信息，只写一次日志记录

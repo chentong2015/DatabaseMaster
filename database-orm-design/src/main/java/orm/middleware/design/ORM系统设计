@@ -31,6 +31,11 @@ JPA是一种ORM层的规范
    如果使用连接池, 如何判断那些线程占用了连接? 那些线程占用了不止一个连接?
    适用Tomcat Web服务器自带的连接池DBCP, 是否可以使用工具对连接进行监测 ?
 
+   TODO. <artifactId>commons-dbcp2</artifactId> 数据库连接池的实现
+   org.apache.commons.dbcp2.BasicDataSource
+
+   项目源码 + Hibernate源码 ?
+
 3. 一个数据库连接如何保证只在一个线程中传递 ?
    使用ThreadLocal<DatasourceEngine>进行封装
 

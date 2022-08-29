@@ -14,3 +14,4 @@ https://www.postgresql.org/docs/current/datatype.html 支持数据类型
 >SELECT * FROM public.t_citizen t where trim(t.language) LIKE '%.US';
  对数据表的字段使用function, 再进行模糊查询, like匹配的字段区分大小写
 
+> DROP SCHEMA [ IF EXISTS ] nom [, ...] [ CASCADE | RESTRICT ] 删除指定Schema
