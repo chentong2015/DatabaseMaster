@@ -1,4 +1,4 @@
-package master.database.design.metadata;
+package database.design.metadata;
 
 import java.sql.*;
 

@@ -1,4 +1,4 @@
-package master.database.design.split;
+package database.design.split;
 
 public class SplitDbTableStrategy {
 

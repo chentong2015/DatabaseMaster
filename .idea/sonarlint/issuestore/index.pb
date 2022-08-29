@@ -251,8 +251,6 @@ norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 |orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/Hibernateç»§æ‰¿æ˜ å°„,5\1\513126eaf2abb8172d153347651a53ca56970a7c
 š
 jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMasterDTO.java,0\f\0f4f1af2eedfff778903631a4c2aedc0409e2b10
-_
-/orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
 ³
 ‚orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/single/table/PEmployee.java,a\f\af8d14438adf462b1a251ee53d7ecefd5a359e37
 ²

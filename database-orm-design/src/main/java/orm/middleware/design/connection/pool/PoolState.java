@@ -1,4 +1,4 @@
-package orm.middleware.design.pool;
+package orm.middleware.design.connection.pool;
 
 import java.sql.Connection;
 import java.sql.SQLException;

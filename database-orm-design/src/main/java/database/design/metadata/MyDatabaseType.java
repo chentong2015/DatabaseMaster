@@ -1,4 +1,4 @@
-package master.database.design.metadata;
+package database.design.metadata;
 
 public enum MyDatabaseType {
 

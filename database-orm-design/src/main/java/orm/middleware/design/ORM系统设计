@@ -41,3 +41,7 @@ JPA是一种ORM层的规范
 
 4. 使用Spring Data JPA作为ORM层，Configuration配置Datasource连接的时，如果同时有多个Datasource，如何设置 ?
    使用@Qualifier("")注解来区别注入同类型的Datasource的bean，通过不同名称来指定获取
+
+5. 如何实现数据服务器的高可用 ?
+   数据服务器中断会强制系统完全重启，从而影响用户体验
+   搭建数据库集群 & 使用分布式数据库

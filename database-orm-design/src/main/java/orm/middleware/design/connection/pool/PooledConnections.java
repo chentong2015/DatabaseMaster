@@ -1,4 +1,4 @@
-package orm.middleware.design.pool;
+package orm.middleware.design.connection.pool;
 
 import orm.middleware.design.api.ConnectionCreator;
 import orm.middleware.design.api.ConnectionValidator;
