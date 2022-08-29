@@ -1,15 +1,13 @@
 TODO. Batching在批量持久化和读取数据时，需要控制缓冲池的大小
 1. OutOfMemoryException 避免造成内存不足的异常
 2. Control the size of the first-level cache 释放一级缓存的大小
-3. long-running transactions 避免长时间的事务消耗线程池(资源)
+3. long-running transactions 避免长时间的事务消耗线程池, transaction没有commit, 则表示在一个事务中
 
 ## set the maximum JDBC 2 batch size (a nonzero value enables batching)
 #hibernate.jdbc.batch_size 5
 #hibernate.jdbc.batch_size 0
 hibernate.jdbc.batch_size=10  可以基于一个线程中的Session设置批量处理的大小
+spring.jpa.properties.hibernate.jdbc.batch_size=10 Spring JPA中JDBC Batch值的设置
 
-hibernate.order_updates       定义SQL updates执行顺序，在高并发系统中可能造成事务的死锁
 hibernate.order_inserts       定义inserts执行顺序
-
-## Spring JPA中JDBC Batch值的设置
-spring.jpa.properties.hibernate.jdbc.batch_size=10
+hibernate.order_updates       定义SQL updates执行顺序，在高并发系统中可能造成事务的死锁

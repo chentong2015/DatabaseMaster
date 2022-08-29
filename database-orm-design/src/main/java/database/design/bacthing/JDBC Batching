@@ -1,2 +1,0 @@
-JDBC支持批量SQL statements成一个单个的PreparedStatement
-驱动程序将在一次调用中将批处理操作发送到服务器，节省对数据库的网络调用，提升性能

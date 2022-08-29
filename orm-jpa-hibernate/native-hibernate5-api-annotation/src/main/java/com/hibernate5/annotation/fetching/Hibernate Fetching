@@ -1,18 +1,17 @@
-TODO. 设置fetching要抓取的数据量的大小 ? 提高执行的效率
-## set the default batch size for batch fetching
-hibernate.default_batch_fetch_size 8
-
-Fetching: 从数据库中抓取数据到App
-The process of grabbing data from the db and making it available to the application.
+Fetching: The process of grabbing data from the db and making it available to the application.
 - Fetching too much data adds overhead in terms of both JDBC communication and ResultSet processing.
 - Fetching too little data might cause additional fetching to be needed.
 
-Fetching: 提供两种类型
-- static 支持EAGER或者LAZY两种模式 (fetch = FetchType.LAZY)
+FetchType: defines whether Hibernate will load data eagerly or lazily 决定是否延迟获取
+- static 支持EAGER或者LAZY两种模式(fetch = FetchType.LAZY)
 - dynamic
 
-FetchMode: 转换成底层执行SQL有所不同
-- FetchMode.SELECT 可以同时运用在FetchType.EAGER FetchType.LAZY两种类型上
-- FetchMode.SUBSELECT
-- FetchMode.JOIN
+FetchMode: how Hibernate will fetch the data 决定如何获取(获取的方式)
+- FetchMode.SELECT    适用额外的Select查询语句来获取数据
+- FetchMode.SUBSELECT 将Select查询语句放到同一个Select的where查询条件中
+- FetchMode.JOIN      适用join来查询关联的表
 - @LazyCollection
+
+TODO. fetching batch size设置, 提高执行的效率
+设置fetching数据时，一批的大小，batch的大小决定要执行的Query的次数
+hibernate.default_batch_fetch_size 8

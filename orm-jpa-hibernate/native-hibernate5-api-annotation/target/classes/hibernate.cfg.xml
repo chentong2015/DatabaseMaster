@@ -28,6 +28,8 @@
         <mapping class="com.hibernate5.annotation.inheritance.table.per.clazz.SpecificEntity"/>
         <mapping class="com.hibernate5.annotation.inheritance.table.per.clazz.child.SpecificEntity"/>
 
+        <mapping class="com.hibernate5.annotation.fetching.select.Customer"/>
+        <mapping class="com.hibernate5.annotation.fetching.select.Order"/>
         <mapping class="com.hibernate5.annotation.fetching.subselect.Employee"/>
         <mapping class="com.hibernate5.annotation.fetching.subselect.Department"/>
 
