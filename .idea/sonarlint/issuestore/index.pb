@@ -114,8 +114,6 @@ Qrelational-database/relational-db-mysql/src/main/java/explain/Explainæ€§èƒ½è°ƒä
 …
 Urelational-database/relational-db-mysql/src/main/java/explain/Explainå‚æ•°è¯´æ˜.txt,6\4\64064f7c231239b20d29f3350a4b557ec36b30e8
 K
-database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
-K
 document-db-mongodb/pom.xml,4\9\49f32a047960359b6162aaa6fe8f76be14f9fcc5
 E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
@@ -361,3 +359,37 @@ uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernateå¸¸è§å¼‚å¸¸,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
 ¨
 xorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/select/Customer.java,3\9\397fbcc725e8d1b9a8185350fd0082d46a10ca87
+
+^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/DemoMetadataSources.java,8\d\8d5dad0ffdcd5a3bd18955077b0940b006887e8c
+·
+†orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/select/DemoFetchingModeSelect.java,0\8\08e2b8682966161f2ffe59e7fa245b4df07d86b3
+Š
+Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/Hibernateç¼“å­˜è®¾è®¡,c\3\c38428e38a2203f0a58a2ed2d26bf08a2ad3d9a7
+®
+~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/LazyCollection/Worker.java,e\0\e04185a97f2280f5dcd6d703c63a773354b4799f
+¯
+orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/LazyCollection/Company.java,c\5\c574cd139f1295aaf48590a42f53bc68441536c4
+¤
+torm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/one/to/one/è®¾è®¡OneToOne,6\7\67feac1f7e5763ee0fe0d781abc50683a494d46e
+«
+{orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/subselect/Employee.java,8\4\84722d252d56a78b67dcaccf8a9c05598f9e929a
+t
+Drelational-database/relational-db-sql-server/SQL Server è¿æ¥æ“ä½œ,7\d\7deda7e4aa955fc7114df8d2f02188013f30da7b
+ª
+zorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/unidirectional/ddl_sql,f\b\fbe455852165bf3e6e695fe6b4782227fb460404
+¯
+orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/unidirectional/Student.java,f\f\ff3077e311f2316297d4718d1b40828d8d1290c8
+­
+}orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/unidirectional/Grade.java,3\9\390c36352b9e46a1c572ccf10fbe6dbd2c1cc9fc
+
+^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/flushing/Hibernate Flushingç­–ç•¥,8\f\8f24fe1ff79f7609d2e38e61fcff089aba27da04
+¦
+vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,f\d\fd4e4a8ced05e9a3040438ffca88b6d44dafaae2
+š
+jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/å…³è”æ˜ å°„å…³ç³»,3\0\30522a73339ff20c21a6c94adb9b8164f0791f08
+†
+Vorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Post.java,e\b\eb351b7ce6ff49b43341dc6cdb76e2c6564916c1
+‰
+Yorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Comment.java,0\f\0f9879ac97175c71c997c9635e60d8ce4d8f97f4
+f
+6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
