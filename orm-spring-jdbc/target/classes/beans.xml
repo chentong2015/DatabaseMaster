@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- TODO: 这里扫描指定package下的全部class类型，需要自定义扫描的annotation注解
+    <!-- TODO: 这里扫描指定package下的全部class类型，需要自定义扫描的annotation注解，指定过滤的类型
                否则会抛出异常：Offending resource: class path resource  -->
     <context:component-scan base-package="JdbcTemplateJdcp.dao" use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>

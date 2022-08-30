@@ -11,9 +11,10 @@
  <property name=".connection.password">admin</property>
 
  SQL Server使用数据库Server的名称进行连接
+ Schema Default: dbo
  <property name=".dialect">org.hibernate.dialect.SQLServerDialect</property>
  <property name=".connection.url">jdbc:sqlserver://LCTON01:1433;Database=my_database;Trusted_Connection=true;</property>
  <property name=".connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
  <property name=".connection.username">test</property>
- <property name=".connection.password">TCHong16</property>
+ <property name=".connection.password">TCHong17</property>
 

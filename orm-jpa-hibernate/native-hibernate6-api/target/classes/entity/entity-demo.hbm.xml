@@ -12,6 +12,9 @@
                entity-name="t_demo_table"，这里提供的名称必须和注解上提供的名称一致(只需要设置一处) -->
     <class name="hibernate.framework.apis.entity.EntityDemo" entity-name="t_demo_table">
 
+        <!-- TODO. 配置该Entity所使用的缓存策略 -->
+        <cache usage="read-only"/>
+
         <!-- TODO. 指定的类型必须提供指定字段的getter & setter方法
                如何设置了id的自动生成策略，则存储的对象不需要手动设置id的值 -->
         <id name="id" column="id">

@@ -11,6 +11,9 @@ MySQL WorkBench数据库UI工作台
   DROP DATABASE `test_new_schema`; 删除Schema和其中的所以Table
   DROP SCHEMA test_new_schema;     使用名称删除Schema
 
+"rewriteBatchedStatements=true" 显式分批的Statement
+  jdbc:mysql://db:3306/stack?useSSL=false&rewriteBatchedStatements=true
+
 --------------------------------------------------------------------
 启动MySQL终端界面:
   Start Menu\Programs\MySQL\MySQL Command Line Client

@@ -1,0 +1,27 @@
+TODO. Batching allows us to send multiple statements in one-shot,
+      saving unnecessary socket stream flushing.
+
+# Hibernate封装底层的JDBC Batching
+Hibernate hides the database statements behind a transactional write-behind abstraction layer.
+An intermediate layer allows us to hide the JDBC batching from the persistence layer logic.
+We can change the JDBC batching strategy without altering the data access code.
+
+# set the maximum JDBC 2 batch size (recommended values between 5 and 30)
+# A non-zero value enables use of JDBC2 batch updates by Hibernate
+> hibernate.jdbc.batch_size 5
+> hibernate.jdbc.batch_size=10
+
+# Enable ordering of SQL UPDATEs by primary key 按照主键来顺序执行
+> hibernate.order_updates=true  在高并发系统中可能造成事务的死锁
+
+# Adding version data batch support, to enable UPDATE batching 将update执行语句按照batch执行
+# Enable batch updates even for versioned data
+> hibernate.jdbc.batch_versioned_data=true
+
+
+TODO. 配置Spring Boot应用的属性
+spring.jpa.properties.hibernate.jdbc.batch_size=10
+
+TODO. 可以设置针对一个Session的batch size的大小
+session.setJdbcBatchSize(100);
+entityManager.unwrap(Session.class).setJdbcBatchSize(100);
