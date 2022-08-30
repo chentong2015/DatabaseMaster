@@ -271,8 +271,6 @@ a
 1orm-jpa-hibernate/jakarta-persistence-api/pom.xml,a\0\a06ddbc7907613bde5d6a54ae83c5d20fe412252
 �
 ]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/identifiers/IdGeneratorType.java,1\0\10c0fec8c3d15dd3bfd9c531595b92b9bd0201c2
-�
-`orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/lock/乐观锁和悲观锁的实现,3\6\364acafe6c2430b2b27052398fc31a5cf2590e1d
 �
 Rrelational-database/relational-db-mysql/src/main/java/transaction/Transaction.java,7\b\7b7c9d93c4fa6a5ea2bb7ab904b234086bce1d9e
 �
@@ -327,8 +325,6 @@ g
 7relational-database/relational-db-psql/PSQL基础教程,d\3\d3ae3aaeb6603fb53a5f3edc5e590c9f292eb24d
 i
 9relational-database/relational-db-mysql/MySql基础配置,e\2\e292760f1d3c7be9e2023c03b5b770fdb85e4b9a
-X
-(relational-database/Database本地连接,d\8\d84a71191405424e418c2ff347cfdb18418a4109
 y
 Iorm-spring-jdbc/src/main/java/JdbcTemplateJdcp/handler/InfoRowMapper.java,9\5\9538699296e3f8e8f0b192a8541208befc9fdb52
 G
@@ -371,3 +367,29 @@ Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/Hibernate�
 `orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/statistics/HibernateStatistics.java,6\4\6430b06319f0a85b1c58906106ddf58b0f21e02e
 �
 korm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/DemoSecondLevelCache.java,b\5\b52352c8a8bfef9f223dcd92f41e9ff367b4792d
+�
+jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
+w
+Gdatabase-orm-design/src/main/java/orm/middleware/design/ORM系统设计,1\5\150c8d71e4941d5d417f7e66e45c276b7d5f7f75
+�
+Pdatabase-orm-design/src/main/java/storage/engine/design/存储引擎系统设计,d\2\d26179dc8c7f41e8204631656d5633335c444390
+�
+^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/flushing/Hibernate Flushing策略,8\f\8f24fe1ff79f7609d2e38e61fcff089aba27da04
+�
+Xorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/Hibernate Batching,3\a\3ab8e1e3d780b4f29b929aabdc8f4f33e612c3a4
+�
+_orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/identifiers/Natural-Id生成策略,a\4\a41f07889ff92c82d0d002e34c91adbc57ce9e70
+�
+jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/关联映射关系,3\0\30522a73339ff20c21a6c94adb9b8164f0791f08
+a
+1orm-jpa-hibernate/base-jpa-hibernate/进阶教程,2\b\2bdcba5853734fe69f8d73ab06e62e5ff82ee9ef
+�
+vorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Hibernate Fetching,6\b\6bef5b1a5bc794a304105565c435f3e4f4f0ad07
+�
+Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingJPA.java,6\2\62613f23fbb86c8350d14c5a0715d15efd48c3e3
+�
+horm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/test,b\f\bf9b76ac1bc31922890add0b4c162fb1d7c1f5f2
+�
+uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/select/Order.java,f\5\f5d3a1bf782a8cbbb510998facc178350ba3c035
+�
+norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate常见异常,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
