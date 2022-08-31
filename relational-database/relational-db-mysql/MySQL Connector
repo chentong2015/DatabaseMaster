@@ -1,0 +1,8 @@
+
+MySQL Connector/J is a JDBC Type 4 driver
+- Pure Java implementation of the MySQL protocol
+- Does not rely on the MySQL client libraries.
+- This driver supports auto-registration with the Driver Manager, standardized validity checks,
+  categorized SQLExceptions, support for large update counts, support for the NCHAR, NVARCHAR
+  support for local and offset date-time variants from the java.time package,
+  support for JDBC-4.x XML processing, support for per connection client information ...

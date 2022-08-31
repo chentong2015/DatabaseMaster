@@ -15,6 +15,12 @@ MySQL WorkBench数据库UI工作台
   jdbc:mysql://db:3306/stack?useSSL=false&rewriteBatchedStatements=true
 
 --------------------------------------------------------------------
+> mysql -u root -p 等效于直接打开MySQl Command Line Client/Open MySQL CLI in your terminal
+> CREATE DATABASE conference_demo;
+> USE conference_demo;
+> source ~/path/to/file/create_tables.sql Setup the database
+> source ~/path/to/file/insert_data.sql Install the Data
+
 启动MySQL终端界面:
   Start Menu\Programs\MySQL\MySQL Command Line Client
   C:\Program Files (x86)\MySQL\MySQL Server 5.0\bin > cmd启动
@@ -40,3 +46,13 @@ MySQL基础终端操作指令
   insert into dbname.tablename select fieldname from dbname.tablename; 从其他表导入数据
   >\q quit le console
   update user set password=PASSWORD('hooray') where user='root'; 修改指定用户密码
+
+
+MySQL GUI界面
+https://www.eversql.com/top-7-mysql-gui-tools-for-windows/
+
+1. MySQL Workbench 由MySQL自家开发，功能特性最全: 不易使用 ?
+2. Navicat for MySQL 付费软件
+3. DataGrip by JetBrain 付费软件 (功能强大)
+4. MySQL Front 付费软件 (界面单一，功能单一)
+5. HeidiSQL 免费软件 (界面和功能足够)

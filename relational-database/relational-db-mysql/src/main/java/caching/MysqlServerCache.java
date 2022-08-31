@@ -1,4 +1,4 @@
-package cache;
+package caching;
 
 // MySql Server中具有"查询缓存"
 // 1. 缓存命中: 通过哈希值引用缓存存放的引用列表，保证SQL语句一致才能命中

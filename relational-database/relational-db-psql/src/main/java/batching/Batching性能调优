@@ -1,0 +1,4 @@
+在批量执行的期间，取消数据表的Trigger触发器
+ALTER TABLE table_name DISABLE TRIGGER ALL;
+DELETE ...
+ALTER TABLE table_name ENABLE TRIGGER ALL;

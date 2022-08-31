@@ -1,0 +1,9 @@
+PSQL Server默认路径，日志显示底层数据库在执行Query操作时抛出的错误详细信息
+C:\Program Files\PostgreSQL\14\data\log
+   postgresql-2022-08-31_000000.txt
+   postgresql-2022-08-23_161135.txt
+   postgresql-2022-08-12_100938.txt
+
+PSQL Server Conf修改配置参数，设置显示全部的执行statement
+C:\Program Files\PostgreSQL\14\data\postgresql.conf
+   log_statement = 'none' # none, ddl, mod, all
