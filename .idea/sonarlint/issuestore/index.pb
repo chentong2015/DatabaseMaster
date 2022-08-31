@@ -401,8 +401,6 @@ _
 /relational-database/relational-db-mysql/pom.xml,c\7\c7a594144f18a41da9a2061671e1c3fbb82584f3
 �
 frelational-database/relational-db-h2-database/src/main/java/com/h2/database/H2数据库配置和连接,1\5\15bb7d41f661237bff51bae1f726bb4ea8ba85af
-q
-Arelational-database/relational-db-sql-server/SQL Server Connector,a\9\a97ea80f5ee174af64a7fcd602cf4ba628361c88
 t
 Drelational-database/relational-db-sql-server/SQL Server 配置操作,7\2\72c8f70e3111290fea4ff95b8c61f4bd6ecd7227
 g
