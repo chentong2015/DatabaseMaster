@@ -9,9 +9,7 @@ public class PostgreSqlBatching {
 
     public static void main(String[] args) throws SQLException {
         String url = "jdbc:postgresql://localhost:5432/my_database";
-        String user = "postgres";
-        String password = "admin";
-        try (Connection connection = DriverManager.getConnection(url, user, password)) {
+        try (Connection connection = DriverManager.getConnection(url, "postgres", "admin")) {
             connection.setAutoCommit(false);
             testStatementInsert(connection);
             connection.commit();
@@ -22,8 +20,6 @@ public class PostgreSqlBatching {
 
     private static void testStatementInsert(Connection connection) throws SQLException {
         try (Statement statement = connection.createStatement()) {
-            statement.execute("ALTER DATABASE my_database");
-            statement.execute("SET log_statement = 'all'");
             for (int index = 12; index < 16; index++) {
                 String sql = "INSERT INTO t_batching_comment(id, review) VALUES (" + index + ",'name review')";
                 statement.addBatch(sql);

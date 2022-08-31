@@ -5,7 +5,11 @@ C:\Program Files\PostgreSQL\14\data\log
    postgresql-2022-08-12_100938.txt
 
 PSQL Server Conf修改配置参数，设置显示全部的执行statement
-C:\Program Files\PostgreSQL\14\data\postgresql.conf
-   log_statement = 'none' # none, ddl, mod, all
+   1. 直接配置Server文件
+      C:\Program Files\PostgreSQL\14\data\postgresql.conf
+      log_statement = 'none' # none, ddl, mod, all
+   2. 通过指令来配置
+      statement.execute("ALTER DATABASE my_database");
+      statement.execute("SET log_statement = 'all'");
 
 更新Conf配置文件，需要重新启动PSQL Server
