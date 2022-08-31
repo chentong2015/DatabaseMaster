@@ -12,7 +12,10 @@ public class PostgreSqlBatching {
         String user = "postgres";
         String password = "admin";
         try (Connection connection = DriverManager.getConnection(url, user, password)) {
-            testPrepareStatementDelete(connection);
+            connection.setAutoCommit(false);
+            testStatementInsert(connection);
+            connection.commit();
+            connection.setAutoCommit(true);
         }
         // finally: make sure connection be closed
     }
@@ -21,13 +24,11 @@ public class PostgreSqlBatching {
         try (Statement statement = connection.createStatement()) {
             statement.execute("ALTER DATABASE my_database");
             statement.execute("SET log_statement = 'all'");
-            connection.setAutoCommit(false);
             for (int index = 12; index < 16; index++) {
-                String sql = "INSERT INTO t_batching_comment(id, review) VALUES (index,'name review')";
+                String sql = "INSERT INTO t_batching_comment(id, review) VALUES (" + index + ",'name review')";
                 statement.addBatch(sql);
             }
             int[] result = statement.executeBatch();
-            connection.commit();
         }
     }
 
@@ -39,14 +40,13 @@ public class PostgreSqlBatching {
                 statement.addBatch(sql);
             }
             int[] result = statement.executeBatch();
-            connection.commit();
         }
     }
 
     public static void testPrepareStatementInsert(Connection connection) throws SQLException {
         String query = "INSERT INTO t_batching_comment(id, review) values (?, ?)";
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {
-            for (int index = 50; index < 53; index++) {
+            for (int index = 60; index < 63; index++) {
                 prepareStatement.setInt(1, index);
                 prepareStatement.setString(2, "name test");
                 prepareStatement.addBatch();
