@@ -5,14 +5,10 @@ MySQL数据库: Oracle旗下免费DB
   wait_timeout=20     添加参数: 客户端数据库连接闲置最大时间值(默认值为8小时)
   interactive_timeout=20
 
--------------------------------------------------------------------
 MySQL WorkBench数据库UI工作台
   CREATE SCHEMA `test_new_schema`; 创建Schema，相当于创建一个数据库
   DROP DATABASE `test_new_schema`; 删除Schema和其中的所以Table
   DROP SCHEMA test_new_schema;     使用名称删除Schema
-
-显式分批的Statement "rewriteBatchedStatements=true"
-  jdbc:mysql://db:3306/stack?useSSL=false&rewriteBatchedStatements=true
 
 --------------------------------------------------------------------
 > mysql -u root -p 等效于直接打开MySQl Command Line Client/Open MySQL CLI in your terminal

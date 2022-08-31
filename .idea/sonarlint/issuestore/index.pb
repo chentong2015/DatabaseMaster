@@ -251,8 +251,6 @@ a
 ]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/identifiers/IdGeneratorType.java,1\0\10c0fec8c3d15dd3bfd9c531595b92b9bd0201c2
 �
 Rrelational-database/relational-db-mysql/src/main/java/transaction/Transaction.java,7\b\7b7c9d93c4fa6a5ea2bb7ab904b234086bce1d9e
-�
-Qrelational-database/relational-db-mysql/src/main/java/cache/MysqlServerCache.java,3\0\30c4a8cfc9ef6976f18da76ae841e3fde71a63ae
 |
 Lrelational-database/relational-db-mysql/src/main/java/MysqlOptimization.java,3\8\382180aeb0ac64cadc3b8af9bd5be6b408cfb5e1
 �
@@ -377,3 +375,39 @@ Vorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Po
 Yorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Comment.java,0\f\0f9879ac97175c71c997c9635e60d8ce4d8f97f4
 f
 6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
+K
+database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
+�
+Rdatabase-orm-design/src/main/java/database/design/bacthing/Batching批执行策略,7\4\74f927f09b10e2ad59b0aa52ce1a38a28743e96c
+_
+/orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
+K
+relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
+�
+Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/Batching参数配置,9\1\91bbcd9a4987e85c91591ab9042ef40957efc4cc
+^
+.relational-database/relational-db-psql/pom.xml,1\9\19aa403b002a2031346683dd4e0f0d8a8683afab
+�
+dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingEntityManager.java,7\e\7eb0fcc8622dcb21de89f9cfbc4e707ee94529d1
+�
+^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingSession.java,9\5\955a57aa305cfe25293d4e244886fea9565ca3f2
+�
+Prelational-database/relational-db-mysql/src/main/java/logging/InnoDBRedoLog.java,2\0\20f1205cfcc8aca4e944210b60b86438283125a4
+
+Orelational-database/relational-db-mysql/src/main/java/logging/MySQL日志路径,4\7\4719baa41fee17e78ed124c4d2d72a4bba5499a6
+y
+Irelational-database/relational-db-psql/src/main/java/logging/PSQL Logging,e\a\ea36761d7f04fc405a91f152ee8df683e6567e44
+_
+/relational-database/relational-db-mysql/pom.xml,c\7\c7a594144f18a41da9a2061671e1c3fbb82584f3
+�
+frelational-database/relational-db-h2-database/src/main/java/com/h2/database/H2数据库配置和连接,1\5\15bb7d41f661237bff51bae1f726bb4ea8ba85af
+q
+Arelational-database/relational-db-sql-server/SQL Server Connector,a\9\a97ea80f5ee174af64a7fcd602cf4ba628361c88
+t
+Drelational-database/relational-db-sql-server/SQL Server 配置操作,7\2\72c8f70e3111290fea4ff95b8c61f4bd6ecd7227
+g
+7relational-database/relational-db-psql/PSQL基础配置,7\a\7a14f1002a533abcae1faa55551a684ddc03a345
+g
+7relational-database/relational-db-mysql/MySQL Connector,d\8\d866b2e9e04c37788a986d50efec61910910f0fd
+�
+_relational-database/relational-db-h2-database/src/main/java/com/h2/database/BaseH2Database.java,b\6\b63098738be416887336c46a4b34ad1c116546db

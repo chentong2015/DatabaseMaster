@@ -16,8 +16,6 @@
 > DROP SCHEMA [ IF EXISTS ] nom [, ...] [ CASCADE | RESTRICT ] 删除指定Schema
 
 
----------------------------------------------------------------------------
 http://www.postgres.cn/docs/13/index.html
+https://www.postgresql.org/docs/current/datatype.html
 https://www.enterprisedb.com/postgresql-tutorial-resources-training
-https://www.postgresql.org/docs/current/datatype.html 支持数据类型
-https://jdbc.postgresql.org/documentation/94/connect.html JDBC Driver配置: "reWriteBatchedInserts = bool"
