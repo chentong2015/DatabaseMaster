@@ -5,7 +5,8 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgresPlusDialect</property>
-        <property name="connection.url">jdbc:postgresql://localhost:5432/my_database</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/my_database?reWriteBatchedInserts=true
+        </property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">admin</property>
@@ -16,9 +17,9 @@
         <!-- <property name="format_sql">true</property> -->
 
         <!-- Hibernate Batching批次执行的设置 -->
-        <property name="hibernate.jdbc.batch_size">10</property>
-        <property name="hibernate.order_updates">true</property>
-        <property name="hibernate.jdbc.batch_versioned_data">true</property>
+        <property name="hibernate.jdbc.batch_size">7</property>
+        <!-- <property name="hibernate.order_updates">true</property>
+        <property name="hibernate.jdbc.batch_versioned_data">true</property> -->
 
         <!-- Enable二级缓存 -->
         <property name="hibernate.cache.use_second_level_cache">true</property>

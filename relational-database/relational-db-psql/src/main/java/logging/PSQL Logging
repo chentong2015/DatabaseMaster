@@ -1,15 +1,21 @@
 PSQL Server默认路径，日志显示底层数据库在执行Query操作时抛出的错误详细信息
 C:\Program Files\PostgreSQL\14\data\log
-   postgresql-2022-08-31_000000.txt 同一天的日志会追加累计
+   postgresql-2022-08-31_000000.txt
    postgresql-2022-08-23_161135.txt
    postgresql-2022-08-12_100938.txt
 
-PSQL Server Conf修改配置参数，设置显示全部的执行statement
-   1. 直接配置Server文件
-      C:\Program Files\PostgreSQL\14\data\postgresql.conf
-      log_statement = 'none' # none, ddl, mod, all
-   2. 通过指令来配置
-      statement.execute("ALTER DATABASE my_database");
-      statement.execute("SET log_statement = 'all'");
+TODO. 更新Conf配置文件，需要重新启动PSQL Server
+C:\Program Files\PostgreSQL\14\data\postgresql.conf
 
-更新Conf配置文件，需要重新启动PSQL Server
+配置每个日志文件最大存储10M=1024KB的数据量
+   log_rotation_size = 10MB
+   # Automatic rotation of logfiles will
+   # happen after that much log output.
+   # 0 disables.
+
+配置显示全部的执行statement的日志
+   log_statement = 'none' # none, ddl, mod, all
+
+   statement.execute("ALTER DATABASE my_database");
+   statement.execute("SET log_statement = 'all'");
+

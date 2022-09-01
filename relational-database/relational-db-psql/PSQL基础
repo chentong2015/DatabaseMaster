@@ -17,5 +17,5 @@
 
 
 http://www.postgres.cn/docs/13/index.html
-https://www.postgresql.org/docs/current/datatype.html
-https://www.enterprisedb.com/postgresql-tutorial-resources-training
+https://www.postgresql.org/docs/current/datatype.html    PSQL数据库支持的Data Types
+https://jdbc.postgresql.org/documentation/changelog.html PSQL版本变更记录

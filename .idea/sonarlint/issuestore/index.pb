@@ -77,10 +77,6 @@ Yorm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/entity/Cus
 Worm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/dao/Component.java,8\0\8045545c23bc01302b8fdb40c046c930f9bb9d08
 Œ
 \orm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/JpaEntityLocations.java,0\7\0744a9e48c7881bd1f4821c2d46c0a0fba9164e6
-Ÿ
-oorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/query/DemoQueryTranslator.java,8\7\8744311bfef4e5bb278fb8d2a54820531aee8539
-œ
-lorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/query/DemoNamedQueries.java,2\6\26b97e12e1d96d119bb5f2ed285270918d569237
  
 porm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/DemoHibernateSession.java,d\7\d7d56d1abacbaf4e56cd3d84536100a5bbf33bc5
 
@@ -187,8 +183,6 @@ eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 }orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/component/ComponentPersonName.java,4\6\46c6ec33d41a34fdcfc4f1c248077bb08834aecb
 Ÿ
 oorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/component/Staff.java,5\6\5661d2719d7990141d046470c451910e27f39542
-¢
-rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/HqlQueryUtil.java,5\b\5b61c075e238478328ebe41b3e665648f75af2f9
 ¡
 qorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/SqlRawQuery.java,7\6\7672731395161becd51f54ee1c95bc77985d6948
 ¬
@@ -223,8 +217,6 @@ jorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testin
 dorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/any/MyAnyClass.java,4\0\408bda19598fb0582da964ae8790c740084d6714
 
 _orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/Book.java,3\0\30e0b521b6ef9629c3f4387389809f8ac158d20a
-¡
-qorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/HqlRawQuery.java,1\6\16334d2fb7a81c6d67d0e8a354fc39eb3e1b36f9
 Ÿ
 oorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/MyEntity.java,9\8\989c41a7f5ed34a284ab38d8621842619d039b9a
 
@@ -323,8 +315,6 @@ horm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/first/leve
 `orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/statistics/HibernateStatistics.java,6\4\6430b06319f0a85b1c58906106ddf58b0f21e02e
 ›
 korm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/DemoSecondLevelCache.java,b\5\b52352c8a8bfef9f223dcd92f41e9ff367b4792d
-š
-jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
 w
 Gdatabase-orm-design/src/main/java/orm/middleware/design/ORMç³»ç»Ÿè®¾è®¡,1\5\150c8d71e4941d5d417f7e66e45c276b7d5f7f75
 €
@@ -347,8 +337,6 @@ xorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/DemoMetadataSources.java,8\d\8d5dad0ffdcd5a3bd18955077b0940b006887e8c
 ·
 †orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/select/DemoFetchingModeSelect.java,0\8\08e2b8682966161f2ffe59e7fa245b4df07d86b3
-Š
-Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/Hibernateç¼“å­˜è®¾è®¡,c\3\c38428e38a2203f0a58a2ed2d26bf08a2ad3d9a7
 ®
 ~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/LazyCollection/Worker.java,e\0\e04185a97f2280f5dcd6d703c63a773354b4799f
 ¯
@@ -371,8 +359,6 @@ vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/å…³è”æ˜ å°„å…³ç³»,3\0\30522a73339ff20c21a6c94adb9b8164f0791f08
 †
 Vorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Post.java,e\b\eb351b7ce6ff49b43341dc6cdb76e2c6564916c1
-‰
-Yorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Comment.java,0\f\0f9879ac97175c71c997c9635e60d8ce4d8f97f4
 f
 6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
 K
@@ -383,28 +369,18 @@ _
 /orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
 K
 relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
-Š
-Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/Batchingå‚æ•°é…ç½®,9\1\91bbcd9a4987e85c91591ab9042ef40957efc4cc
 ^
 .relational-database/relational-db-psql/pom.xml,1\9\19aa403b002a2031346683dd4e0f0d8a8683afab
-”
-dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingEntityManager.java,7\e\7eb0fcc8622dcb21de89f9cfbc4e707ee94529d1
-
-^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingSession.java,9\5\955a57aa305cfe25293d4e244886fea9565ca3f2
 €
 Prelational-database/relational-db-mysql/src/main/java/logging/InnoDBRedoLog.java,2\0\20f1205cfcc8aca4e944210b60b86438283125a4
 
 Orelational-database/relational-db-mysql/src/main/java/logging/MySQLæ—¥å¿—è·¯å¾„,4\7\4719baa41fee17e78ed124c4d2d72a4bba5499a6
-y
-Irelational-database/relational-db-psql/src/main/java/logging/PSQL Logging,e\a\ea36761d7f04fc405a91f152ee8df683e6567e44
 _
 /relational-database/relational-db-mysql/pom.xml,c\7\c7a594144f18a41da9a2061671e1c3fbb82584f3
 –
 frelational-database/relational-db-h2-database/src/main/java/com/h2/database/H2æ•°æ®åº“é…ç½®å’Œè¿æ¥,1\5\15bb7d41f661237bff51bae1f726bb4ea8ba85af
 t
 Drelational-database/relational-db-sql-server/SQL Server é…ç½®æ“ä½œ,7\2\72c8f70e3111290fea4ff95b8c61f4bd6ecd7227
-g
-7relational-database/relational-db-psql/PSQLåŸºç¡€é…ç½®,7\a\7a14f1002a533abcae1faa55551a684ddc03a345
 g
 7relational-database/relational-db-mysql/MySQL Connector,d\8\d866b2e9e04c37788a986d50efec61910910f0fd
 

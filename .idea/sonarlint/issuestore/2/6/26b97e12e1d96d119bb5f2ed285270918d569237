@@ -1,17 +1,0 @@
-
-V	java:S125"<This block of commented-out lines of code should be removed.(§ß£‰úÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(€¹•ôıÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(€¹•ôıÿÿÿÿ
-H
-java:S1135"2Complete the task associated to this TODO comment.(¯Ğ²Ò
-S	java:S106'"9Replace this use of System.out or System.err by a logger.(€¹•ôıÿÿÿÿ
-C
-java:S1172*".Remove this unused method parameter "sqlName".(¿‘¢u
-V	java:S125+"<This block of commented-out lines of code should be removed.(úâœ³ÿÿÿÿÿ
-N	java:S106/"9Replace this use of System.out or System.err by a logger.(ã˜
-L
-java:S1144"6Remove this unused private "testHqlNamedQuery" method.(¬û—â
-U
-java:S1144"?Remove this unused private "testHqlNamedQueryWithAlias" method.(¯Ëï
-K
-java:S1144*"6Remove this unused private "testSqlNamedQuery" method.(¿‘¢u
