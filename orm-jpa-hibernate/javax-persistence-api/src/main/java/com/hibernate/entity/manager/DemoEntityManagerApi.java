@@ -1,10 +1,11 @@
-package com.hibernate.entity.manager.test;
+package com.hibernate.entity.manager;
 
-import com.hibernate.entity.manager.EntityManagerHandler;
+import com.hibernate.entity.manager.entity.Employee;
+import com.hibernate.entity.manager.util.EntityManagerHandler;
 
 import javax.persistence.EntityManager;
 
-public class EntityManagerDemo1 {
+public class DemoEntityManagerApi {
 
     public static void test() {
         EntityManager entityManager = EntityManagerHandler.getEntityManager();

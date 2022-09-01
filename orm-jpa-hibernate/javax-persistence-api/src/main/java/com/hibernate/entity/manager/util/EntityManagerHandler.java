@@ -1,4 +1,4 @@
-package com.hibernate.entity.manager;
+package com.hibernate.entity.manager.util;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

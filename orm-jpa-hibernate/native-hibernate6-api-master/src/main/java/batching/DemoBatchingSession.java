@@ -10,23 +10,24 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import java.util.List;
 
+// TODO. Native Hibernate API上层要执行batched Query
+// 1. 必须配置name="hibernate.jdbc.batch_size"参数
+// 2. 必须直接使用API操作对象
 public class DemoBatchingSession {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
     static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
-    // 只能使用object对象操作
-    // 或者使用PreparedStatement
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
         session.getTransaction().begin();
-        for (int index = 110; index < 120; index++) {
-            // session.persist(new Comment(index, "Post comment"));
-            String query = "INSERT INTO Comment (id, review) values (:id, :review)";
-            session.createMutationQuery(query)
-                    .setParameter(1, index)
-                    .setParameter(2, "post comment")
-                    .executeUpdate();
+        // 1. 测试batched insert
+        // session.persist(new Comment(index, "Post comment"));
+        // 2. 测试batched update/delete
+        List<Comment> comments = session.createQuery("FROM Comment", Comment.class).getResultList();
+        for (Comment comment : comments) {
+            comment.setReview("new review");
+            session.merge(comment);
         }
         session.getTransaction().commit();
         session.close();

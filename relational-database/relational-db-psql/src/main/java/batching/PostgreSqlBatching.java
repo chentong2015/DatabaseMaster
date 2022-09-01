@@ -10,7 +10,7 @@ public class PostgreSqlBatching {
         String url = "jdbc:postgresql://localhost:5432/my_database?reWriteBatchedInserts=true";
         try (Connection connection = DriverManager.getConnection(url, "postgres", "admin")) {
             connection.setAutoCommit(false);
-            testPrepareStatementInsert(connection);
+            testPrepareStatementDelete(connection);
             connection.commit();
             connection.setAutoCommit(true);
         }
@@ -32,13 +32,12 @@ public class PostgreSqlBatching {
     public static void testPrepareStatementInsert(Connection connection) throws SQLException {
         String query = "INSERT INTO t_batching_comment(id, review) values (?, ?)";
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {
-            for (int index = 100; index < 150; index++) {
+            for (int index = 1; index < 10; index++) {
                 prepareStatement.setInt(1, index);
-                prepareStatement.setString(2, "name test");
+                prepareStatement.setString(2, "review name");
                 prepareStatement.addBatch();
             }
-            int[] result = prepareStatement.executeBatch();
-            System.out.println(result[0] + ":" + result[1]);
+            prepareStatement.executeBatch();
         }
     }
 
@@ -55,7 +54,7 @@ public class PostgreSqlBatching {
         System.out.println(System.currentTimeMillis());
         String query = "DELETE FROM t_batching_comment WHERE id=?";
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {
-            for (int index = 200; index < 1500000; index++) {
+            for (int index = 1; index < 10; index++) {
                 prepareStatement.setInt(1, index);
                 prepareStatement.addBatch();
             }

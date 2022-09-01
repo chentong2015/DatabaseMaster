@@ -17,7 +17,7 @@
         <!-- <property name="format_sql">true</property> -->
 
         <!-- Hibernate Batching批次执行的设置 -->
-        <property name="hibernate.jdbc.batch_size">7</property>
+        <property name="hibernate.jdbc.batch_size">10</property>
         <!-- <property name="hibernate.order_updates">true</property>
         <property name="hibernate.jdbc.batch_versioned_data">true</property> -->
 

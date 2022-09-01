@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+// TODO. 提升大量插入和删除的执行效率，显式配置批量Statement: "rewriteBatchedStatements=true"
 public class MySqlBatching {
 
-    // TODO. 提升大量插入和删除的执行效率，显式配置批量Statement: "rewriteBatchedStatements=true"
     public static void main(String[] args) throws SQLException {
         String url = "jdbc:mysql://localhost:3306/my_database?rewriteBatchedStatements=true";
         try (Connection connection = DriverManager.getConnection(url, "root", "admin")) {
@@ -25,7 +25,7 @@ public class MySqlBatching {
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {
             for (int index = 200; index < 1500000; index++) {
                 prepareStatement.setInt(1, index);
-                prepareStatement.setString(2, "name test");
+                prepareStatement.setString(2, "review name");
                 prepareStatement.addBatch();
             }
             int[] result = prepareStatement.executeBatch();

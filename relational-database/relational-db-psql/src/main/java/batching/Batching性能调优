@@ -1,4 +1,5 @@
-在批量执行的期间，取消数据表的Trigger触发器
-ALTER TABLE table_name DISABLE TRIGGER ALL;
-DELETE ...
-ALTER TABLE table_name ENABLE TRIGGER ALL;
+在执行的更新(批量delete)期间，取消数据表的Trigger触发器
+150000行数据 14 secs 979 msec -> 1 secs 70 msec
+ALTER TABLE public.t_batching_comment DISABLE TRIGGER ALL;
+DELETE FROM public.t_batching_comment c WHERE c.id > 100;
+ALTER TABLE public.t_batching_comment ENABLE TRIGGER ALL;

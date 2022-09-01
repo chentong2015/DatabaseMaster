@@ -1,11 +1,12 @@
-package com.hibernate.entity.manager.test;
+package com.hibernate.entity.manager;
 
-import com.hibernate.entity.manager.EntityManagerHandler;
+import com.hibernate.entity.manager.entity.Book;
+import com.hibernate.entity.manager.util.EntityManagerHandler;
 
 import javax.persistence.EntityManager;
 import java.util.List;
 
-public class EntityManagerDemo2 {
+public class DemoEntityManagerQuery {
 
     /**
      * Saves the movie entity into the database.
@@ -29,7 +30,7 @@ public class EntityManagerDemo2 {
     // TODO. 参数的占位符需要表明数字序号 !!
     public Book queryForBookById() {
         EntityManager em = EntityManagerHandler.getEntityManager();
-        return (Book) em.createQuery("SELECT book from Book book where book.id = ?1")
+        return (Book) em.createQuery("SELECT book from " + Book.class.getName() + " book where book.id = ?1")
                 .setParameter(1, 1L)
                 .getSingleResult();
     }
@@ -38,9 +39,9 @@ public class EntityManagerDemo2 {
      * Method to illustrate the querying support in EntityManager
      * when the result is a list.
      */
-    public List<Book> queryForBooks() {
+    public List queryForBooks() {
         EntityManager em = EntityManagerHandler.getEntityManager();
-        return em.createQuery("SELECT book from Book book where book.name = ?1")
+        return em.createQuery("SELECT book from " + Book.class.getName() + " book where book.name = ?1")
                 .setParameter(1, "java")
                 .getResultList();
     }
