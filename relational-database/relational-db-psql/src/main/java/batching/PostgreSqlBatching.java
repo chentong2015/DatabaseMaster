@@ -32,7 +32,7 @@ public class PostgreSqlBatching {
     public static void testPrepareStatementInsert(Connection connection) throws SQLException {
         String query = "INSERT INTO t_batching_comment(id, review) values (?, ?)";
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {
-            for (int index = 1; index < 10; index++) {
+            for (int index = 1; index < 500000; index++) {
                 prepareStatement.setInt(1, index);
                 prepareStatement.setString(2, "review name");
                 prepareStatement.addBatch();
@@ -40,8 +40,8 @@ public class PostgreSqlBatching {
             prepareStatement.executeBatch();
         }
     }
-
-    // TODO. 批量删除，delete语句无法batch合并 ! 是否能通过别的方式提高效率
+    
+    // TODO. 批量删除，delete语句无法batch合并，只能通过别的方式提高效率
     // LOG:  execute S_1: BEGIN
     // LOG:  execute S_2: DELETE FROM t_batching_comment WHERE id=$1
     // DETAIL:  parameters: $1 = '35'
@@ -51,17 +51,17 @@ public class PostgreSqlBatching {
     // DETAIL:  parameters: $1 = '37'
     // LOG:  execute S_3: COMMIT
     public static void testPrepareStatementDelete(Connection connection) throws SQLException {
-        System.out.println(System.currentTimeMillis());
+        long startTime = System.currentTimeMillis();
         String query = "DELETE FROM t_batching_comment WHERE id=?";
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {
-            for (int index = 1; index < 10; index++) {
+            for (int index = 1; index < 500000; index++) {
                 prepareStatement.setInt(1, index);
                 prepareStatement.addBatch();
             }
             prepareStatement.executeBatch();
             // prepareStatement.executeLargeBatch();
         }
-        System.out.println(System.currentTimeMillis());
+        System.out.println(System.currentTimeMillis() - startTime);
     }
 
     // TODO. 使用Statement执行的Query不会被Batched, 不建议使用 !!

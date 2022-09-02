@@ -12,6 +12,7 @@
         <module name="document-db-mongodb" />
         <module name="native-hibernate6-api-master" />
         <module name="jakarta-persistence-api" />
+        <module name="relational-db-sybase" />
         <module name="relational-db-sql-server" />
         <module name="relational-db-mysql" />
         <module name="javax-persistence-api" />
