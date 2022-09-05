@@ -401,8 +401,6 @@ uorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/mana
 norm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/DemoEntityManagerQuery.java,f\6\f69561dd37716ff39ab3e95189c3d1c2e7028f0d
 i
 9relational-database/relational-db-mysql/MySql基础配置,e\2\e292760f1d3c7be9e2023c03b5b770fdb85e4b9a
-�
-Qrelational-database/relational-db-mysql/src/main/java/batching/MySqlBatching.java,f\f\ffc21bce0bd53a874fb2df9cfba038aecbde4295
 y
 Irelational-database/relational-db-psql/src/main/java/logging/PSQL Logging,e\a\ea36761d7f04fc405a91f152ee8df683e6567e44
 �

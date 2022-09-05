@@ -5,7 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-// TODO. 提升大量插入和删除的执行效率，显式配置批量Statement: "rewriteBatchedStatements=true"
+// TODO. 同等数量级，Batched Insert执行效率远高于Delete
+//  提升插入和删除的执行效率，显式配置批量Statement: "rewriteBatchedStatements=true"
 public class MySqlBatching {
 
     public static void main(String[] args) throws SQLException {
@@ -19,7 +20,6 @@ public class MySqlBatching {
         // finally: make sure connection be closed
     }
 
-    // 同等数量级，Batched Insert执行效率远高于Delete !!
     public static void testPrepareStatementInsert(Connection connection) throws SQLException {
         String query = "INSERT INTO t_batching_comment(id, review) values (?, ?)";
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {

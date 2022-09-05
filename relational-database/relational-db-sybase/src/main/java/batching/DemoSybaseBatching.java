@@ -13,7 +13,7 @@ public class DemoSybaseBatching {
             String url = "jdbc:sybase:Tds:xxx:5000/tempdb";
             Connection connection = DriverManager.getConnection(url, "tech_user", "root123");
             connection.setAutoCommit(false);
-            testPrepareStatementDelete(connection);
+            testPrepareStatementInsert(connection);
             connection.commit();
             connection.setAutoCommit(true);
         } catch (Exception exception) {
@@ -25,7 +25,7 @@ public class DemoSybaseBatching {
     public static void testPrepareStatementInsert(Connection connection) throws SQLException {
         String query = "INSERT INTO t_batching_comment(id, review) values (?, ?)";
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {
-            for (int index = 1; index < 500000; index++) {
+            for (int index = 10; index < 20; index++) {
                 prepareStatement.setInt(1, index);
                 prepareStatement.setString(2, "review name");
                 prepareStatement.addBatch();
