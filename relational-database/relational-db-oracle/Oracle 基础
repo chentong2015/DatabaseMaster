@@ -1,0 +1,14 @@
+Application Developer's Guide Oracle支持的DataType类型
+https://docs.oracle.com/cd/A58617_01/server.804/a58241/ch5.htm
+
+SQL>CREATE TABLE t_batching_comment (
+      id NUMBER PRIMARY KEY,
+      review VARCHAR(30)
+    );
+
+SQL> select value from v$diag_info where name ='Diag Alert'; Alert log XML文件位置
+SQL> select * from v$sql;     查看最近所作的操作, 需要权限
+SQL> select * from v$sqlarea; 查看最近所作的操作
+SQL> SELECT * FROM V$SQL V where to_date(v.FIRST_LOAD_TIME,'YYYY-MM-DD hh24:mi:ss') > sysdate - 60 获取指定时间段内的日志
+
+SQL> grant select any dictionary to USERNAME; 在所有dictionay视图上授予SELECT

@@ -5,13 +5,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class DemoSybaseBatching {
+public class DemoSqlServerBatching {
 
     public static void main(String[] args) {
         try {
-            Class.forName("com.sybase.jdbc4.jdbc.SybDriver");
-            String url = "jdbc:sybase:Tds:xxx:5000/tempdb";
-            Connection connection = DriverManager.getConnection(url, "tech_user", "root123");
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            String url = "jdbc:sqlserver://xxx:1433;Database=test_db;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
+            Connection connection = DriverManager.getConnection(url, "test", "TCHong17");
             connection.setAutoCommit(false);
             testPrepareStatementDelete(connection);
             connection.commit();
@@ -21,7 +21,10 @@ public class DemoSybaseBatching {
         }
     }
 
-    // TODO. 使用Inserting in Bulk可以提高批量插入的效率
+    // TODO. 使用BatchInsert=true属性来执行批量的插入操作
+    // This connection property can be enabled to transparently use the Bulk Copy API
+    // when doing batch insert operations using java.sql.PreparedStatement.
+    // This feature potentially provides much higher performance when enabled.
     public static void testPrepareStatementInsert(Connection connection) throws SQLException {
         String query = "INSERT INTO t_batching_comment(id, review) values (?, ?)";
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {
@@ -33,7 +36,6 @@ public class DemoSybaseBatching {
             prepareStatement.executeBatch();
         }
     }
-
 
     public static void testPrepareStatementDelete(Connection connection) throws SQLException {
         long startTime = System.currentTimeMillis();

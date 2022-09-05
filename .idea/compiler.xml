@@ -25,6 +25,7 @@
         <module name="native-hibernate6-api" />
         <module name="sample-mapping-xml" />
         <module name="orm-liquibase" />
+        <module name="relational-db-oracle" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

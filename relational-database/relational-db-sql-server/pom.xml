@@ -18,7 +18,7 @@
     </properties>
 
     <dependencies>
-        <!-- TODO. SQL Server依赖的版本必须对应JRE版本 -->
+        <!-- TODO. SQL Server依赖的版本必须对应JRE版本(Java Version) -->
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>

@@ -1,3 +1,4 @@
+
  SQL Server使用数据库Server名称(Device Name)进行连接
  Schema Default: dbo
  <property name=".dialect">org.hibernate.dialect.SQLServerDialect</property>
@@ -6,7 +7,6 @@
  <property name=".connection.username">test</property>
  <property name=".connection.password">TCHong17</property>
 
-------------------------------------------------------------------------------------------
  数据库SQL Server网络连接配置
  1. TODO. 连接项目所需要的数据库，走网络端口去要数据
  2. 打开SQL Server的1433默认的端口
@@ -17,7 +17,6 @@
  4. 添加JDBC Driver Jar驱动库
     下载Driver Path: C:\Users\CHEN Tong\AppData\Roaming\JetBrains\IntelliJIdea2020.3\jdbc-drivers
  5. 选择SQL Server需要连接的Database > Schema 监测连接的DB > Test Connection
-
 
  Microsoft.PowerShell.Management
  https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7
