@@ -9,12 +9,13 @@ public class Order {
     @Id
     private Long id;
 
+    @Column(name = "name")
     private String name;
 
     // 适用Customer类型对应表的id来唯一Fetch
     // 定义Order对应表的列名称"customer_id"
-    @ManyToOne
-    @JoinColumn(name = "customer_id")
+    @ManyToOne(fetch = FetchType.EAGER)
+    // @JoinColumn(name = "customer_id")
     private Customer customer;
 
     public Order() {

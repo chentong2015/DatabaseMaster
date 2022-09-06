@@ -1,6 +1,5 @@
 package com.hibernate5.annotation.fetching.select;
 
-import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
@@ -15,11 +14,11 @@ public class Customer {
     @Id
     private Long id;
 
-    // 交给Many-端来维护关系，避免执行update语句
-    // FetchType.EAGER在获取Customer数据的时候，选择"立即获取"Order列表
+    // 交给Many-端来维护关系，避免执行update语句 ==>
+    // fetch = FetchType.EAGER 在获取Customer数据的时候，选择"立即获取"Order列表
     @OneToMany(mappedBy = "customer", fetch = FetchType.EAGER)
     @Fetch(value = FetchMode.SELECT)
-    @BatchSize(size = 10) // 8.9
+    // @BatchSize(size = 10)
     private Set<Order> orders = new HashSet<>();
 
     public Customer() {

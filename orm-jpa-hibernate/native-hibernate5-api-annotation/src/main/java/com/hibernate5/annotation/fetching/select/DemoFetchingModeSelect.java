@@ -1,6 +1,5 @@
 package com.hibernate5.annotation.fetching.select;
 
-import org.hibernate.FlushMode;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -17,16 +16,13 @@ public class DemoFetchingModeSelect {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        session.setHibernateFlushMode(FlushMode.ALWAYS);
+        // initData(session);
 
-        // 为什么会抛出异常
-        // Exception in thread "main" java.lang.StackOverflowError
         Customer customer = session.get(Customer.class, 1L);
         System.out.println(customer);
-
-        // for (Order order : customer.getOrders()) {
-        //     System.out.println(order);
-        // }
+        for (Order order : customer.getOrders()) {
+            System.out.println(order);
+        }
         session.close();
         sessionFactory.close();
     }
