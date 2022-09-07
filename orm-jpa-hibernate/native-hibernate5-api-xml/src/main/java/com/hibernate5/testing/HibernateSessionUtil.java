@@ -1,4 +1,4 @@
-package com.hibernate5.testing.session;
+package com.hibernate5.testing;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

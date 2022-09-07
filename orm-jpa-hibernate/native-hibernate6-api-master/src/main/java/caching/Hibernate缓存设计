@@ -4,30 +4,21 @@ https://www.baeldung.com/hibernate-second-level-cache
 https://www.digitalocean.com/community/tutorials/hibernate-caching-first-level-cache
 https://www.digitalocean.com/community/tutorials/hibernate-ehcache-hibernate-second-level-cache
 
-
-# First Level Cache: associated with the Session object
+## First Level Cache: associated with the Session object
   1. 默认开启一级缓存，无法disable
   2. 支持从缓存中删除object，支持彻底清除缓存
   3. 所有在session中缓存的对象对其他的session是不可见的(Session应该被独立的线程所持有)
   4. session关闭时，所有缓存的objects都会丢失
 
-# Second Level Cache: hibernate.cache.use_second_level_cache
+## Second Level Cache: hibernate.cache.use_second_level_cache
   1. 默认关闭，可以通过配置开启
   2. EHCache提供对Hibernate二级缓存的实现，同时支持四种缓存策略
   3. Second level cache is shared across sessions 二级缓存在Session之间共享
 
-# Query Cache: hibernate.cache.use_query_cache
+## Query Cache: hibernate.cache.use_query_cache
   1. 缓存Query查询的结果集
   2. Not cache the state of the actual entities, but only identifier values and results of value type.
   3. It should always be used in conjunction with the second-level cache
-
-
-TODO. hibernate-ehcache v2版本被废弃，使用Ehcache 3版本
-  https://www.ehcache.org/documentation/3.10/ 研究CacheManager的配置 ?
-Deprecate hibernate-ehcache module as it is using Ehcache 2 as its back-end,
-which is deprecated itself in favor of Ehcache 3.
-Ehcache 3 can be easily used instead by using the hibernate-jcache module and have Ehcache 3
-(which is a JCache implementor) properly registered with JCache.
 
 TODO. Spring data JPA Hibernate缓存配置参数
 spring:

@@ -10,9 +10,10 @@ Cascade
 
 - mappedBy=""
   1. 等效于设置反向侧为自身，由对方来维护关系
-  2. 必须是双向关系，""中设置的Many-端类型的属性名称(One-端类型的属性)
-  3. TODO. 使用了该属性，则表示双向关系，不能再使用@Join注解
-      Associations marked as mappedBy must not define database mappings like @JoinTable or @JoinColumn:
+  2. 必须是双向关系，设置的Many-端类型的属性名称(One-端类型的属性)
+  3. 如果是One-to-one双向的关系，则可以选择任意一段做为维护段
+  4. TODO. 配置该属性，则不能再使用@Join注解@JoinTable or @JoinColumn
+      Associations marked as mappedBy must not define database mappings
 
 - inverse="true" 指定关联的双方由那一端来维护关系(which side is the owner to maintain the relationship)
   1. inverse 布尔值，只能在其中一端设置，只能声明在<one-to-many或者<many-to-many关系中

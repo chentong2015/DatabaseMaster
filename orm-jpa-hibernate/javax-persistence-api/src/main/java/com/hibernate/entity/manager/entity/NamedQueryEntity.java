@@ -7,16 +7,17 @@ import java.io.Serializable;
 // TODO. 直接在entity class类型上声明query查询语句，通过name名称来直接调用
 @Entity
 @Table(name = "t_named_query_table")
-
 // 可以设定一组集合的具名查询
 // @NamedQueries({@NamedQuery(name = "EntityNamed.findAll", query = "xxx"),
-//   @NamedQuery(name = "EntityNamed.findByUrl", query = "xxx")})
-@NamedQuery(name = "EntityNamed.findAll", query = "SELECT en FROM NamedQueryEntity en")
-@NamedQuery(name = "EntityNamed.findByUrl", query = "SELECT en FROM NamedQueryEntity en WHERE en.url = :url")
-
+//                @NamedQuery(name = "EntityNamed.findByUrl", query = "xxx")})
+@NamedQuery(name = "EntityNamed.findAll",
+        query = "SELECT en FROM NamedQueryEntity en")
+@NamedQuery(name = "EntityNamed.findByUrl",
+        query = "SELECT en FROM NamedQueryEntity en WHERE en.url = :url")
 // 这里的具名Native查询语句必须声明返回的结果类型
 @NamedNativeQuery(name = "EntityNamedNative.findAll",
-        query = "SELECT * FROM t_named_query_table", resultClass = NamedQueryEntity.class)
+        query = "SELECT * FROM t_named_query_table",
+        resultClass = NamedQueryEntity.class)
 public class NamedQueryEntity implements Serializable {
 
     @Serial

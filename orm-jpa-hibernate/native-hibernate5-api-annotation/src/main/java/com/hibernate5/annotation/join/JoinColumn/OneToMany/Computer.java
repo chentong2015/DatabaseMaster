@@ -20,7 +20,7 @@ public class Computer {
     // 1. targetEntity 目标的实体类型可以不设置，根据field属性确定类型
     // 2. referencedColumnName 指定引用的关联表的列名称，默认使用主键
     @OneToMany(fetch = FetchType.EAGER, targetEntity = Software.class, cascade = CascadeType.ALL)
-    @JoinColumn(name = "software_id", referencedColumnName = "id")
+    @JoinColumn(name = "computer_id", referencedColumnName = "id")
     @LazyCollection(LazyCollectionOption.FALSE)
     private Set<Software> softwareSet;
 

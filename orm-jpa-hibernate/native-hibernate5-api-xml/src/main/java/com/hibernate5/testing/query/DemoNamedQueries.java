@@ -1,7 +1,7 @@
 package com.hibernate5.testing.query;
 
 import com.hibernate5.testing.package1.MyEntity;
-import com.hibernate5.testing.session.HibernateSessionUtil;
+import com.hibernate5.testing.HibernateSessionUtil;
 import org.hibernate.Session;
 
 import java.util.List;

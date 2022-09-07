@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="database-orm-design" />
         <module name="orm-spring-jdbc" />
+        <module name="test" />
         <module name="native-hibernate5-api-annotation" />
         <module name="document-db-mongodb" />
         <module name="native-hibernate6-api-master" />
@@ -33,7 +34,6 @@
       <module name="distributed-db" target="15" />
       <module name="native-hibernate6-api-metadata" target="15" />
       <module name="object-db-management-system" target="1.5" />
-      <module name="test" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>

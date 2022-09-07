@@ -11,8 +11,8 @@ public class User {
     @Column(name = "id")
     private Long id;
 
-    // 1. name = "address_id" 指定User对应的表格中的字段
-    // 2. referencedColumnName 指定映射到Address表的主键名称
+    // name = "address_id" 指定User对应的表格中的字段
+    // referencedColumnName 指定映射到Address表的主键名称
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "address_id", referencedColumnName = "id")
     private Address address;

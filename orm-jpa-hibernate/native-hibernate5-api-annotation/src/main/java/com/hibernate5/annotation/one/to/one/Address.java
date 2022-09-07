@@ -11,7 +11,7 @@ public class Address {
     @Column(name = "id")
     private Long id;
 
-    // 设置哪一端来维护关系
+    // 双向一对一，选择任何一端作为维护端
     @OneToOne(mappedBy = "address")
     private User user;
 

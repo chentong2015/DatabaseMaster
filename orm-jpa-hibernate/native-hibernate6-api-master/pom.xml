@@ -13,20 +13,20 @@
     <artifactId>native-hibernate6-api-master</artifactId>
 
     <dependencies>
+        <!-- TODO. 提供同等版本的hibernate-core依赖
+            - javax.cache:cache-api 提供Cache缓存API
+            - hibernate-core:6.1.2.Final 包含同版本的依赖
+            - jboss-logging 提供日志的配置 -->
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-jcache</artifactId>
+            <version>6.1.2.Final</version>
+        </dependency>
         <!-- Ehcache 3.x 提供cache provider -->
         <dependency>
             <groupId>org.ehcache</groupId>
             <artifactId>ehcache</artifactId>
             <version>3.3.1</version>
-        </dependency>
-        <!-- 包含如下依赖:
-             - javax.cache:cache-api 提供Cache缓存API
-             - hibernate-core:6.1.2.Final 包含同版本的依赖
-             - jboss-logging 提供日志的配置 -->
-        <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-jcache</artifactId>
-            <version>6.1.2.Final</version>
         </dependency>
 
         <dependency>

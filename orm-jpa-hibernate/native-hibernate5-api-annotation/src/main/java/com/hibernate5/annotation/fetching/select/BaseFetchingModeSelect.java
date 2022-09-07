@@ -9,20 +9,20 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DemoFetchingModeSelect {
+public class BaseFetchingModeSelect {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
     static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        // initData(session);
 
         Customer customer = session.get(Customer.class, 1L);
         System.out.println(customer);
         for (Order order : customer.getOrders()) {
             System.out.println(order);
         }
+        
         session.close();
         sessionFactory.close();
     }
@@ -34,7 +34,7 @@ public class DemoFetchingModeSelect {
         Customer customer2 = new Customer(2L);
         Set<Order> orders = new HashSet<>();
         for (long i = 1; i < 25; i++) {
-            Order order = new Order(i, "order " + i, customer1);
+            Order order = new Order(i, "order " + i);
             session.persist(order);
             orders.add(order);
         }

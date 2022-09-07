@@ -1,6 +1,6 @@
 package com.hibernate5.testing.entity;
 
-import com.hibernate5.testing.session.HibernateSessionUtil;
+import com.hibernate5.testing.HibernateSessionUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
