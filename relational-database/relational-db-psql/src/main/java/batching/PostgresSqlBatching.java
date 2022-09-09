@@ -1,22 +1,14 @@
 package batching;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 // TODO. 对于批量插入，可以设置重写Insert语句"reWriteBatchedInserts=true"
 //   https://jdbc.postgresql.org/documentation/94/connect.html
-public class PostgreSqlBatching {
-
-    public static void main(String[] args) throws SQLException {
-        String url = "jdbc:postgresql://localhost:5432/my_database?reWriteBatchedInserts=true";
-        try (Connection connection = DriverManager.getConnection(url, "postgres", "admin")) {
-            connection.setAutoCommit(false);
-            testPrepareStatementDelete(connection);
-            connection.commit();
-            connection.setAutoCommit(true);
-        }
-        // finally: make sure connection be closed
-    }
-
+public class PostgresSqlBatching {
+    
     // TODO. JDBC has to create the prepared statement dynamically.
     //    batch size不需要显式的设置值的大小
     //    batch size会根据.addBatch(sql)添加的次数进行动态计算，最终划分成两个批次
@@ -40,7 +32,7 @@ public class PostgreSqlBatching {
             prepareStatement.executeBatch();
         }
     }
-    
+
     // TODO. 批量删除，delete语句无法batch合并，只能通过别的方式提高效率
     // LOG:  execute S_1: BEGIN
     // LOG:  execute S_2: DELETE FROM t_batching_comment WHERE id=$1

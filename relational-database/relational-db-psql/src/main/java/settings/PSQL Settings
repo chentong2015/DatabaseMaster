@@ -1,0 +1,16 @@
+TODO. PostgresSQL Database每个数据库都有一个Setting配置的表
+ The pg_settings view cannot be inserted into or deleted from, but it can be updated
+https://www.postgresql.org/docs/current/view-pg-settings.html  Table表信息
+
+Displays the current setting of run-time parameters in 3 columns.
+name; setting; description
+> SHOW ALL;
+
+pg_settings view shows all setting details
+> TABLE pg_settings;
+> select setting from pg_settings;
+
+
+TODO. EDB (Enterprise Database) Postgres Advanced Server
+在开源open-source PostgresSQL database数据库的基础上添加的增强功能
+https://edbjapan.com/edbmanual/EPAS_Guide_E_Set_v11/

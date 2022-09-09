@@ -29,12 +29,6 @@ z
 Jorm-liquibase/src/main/java/com/liquibase/main/datatype/MyVarcharType.java,b\d\bd8bc3e04d314d87f93c71120bce2709aa0d0577
 {
 Korm-liquibase/src/main/java/com/liquibase/main/datatype/MyDateTimeType.java,e\7\e74b71e1160b8994d324f29d4e23233a7b1d08c9
-w
-Gorm-liquibase/src/main/java/com/liquibase/main/DemoDatabaseFactory.java,5\5\55b42d8122ac4b410ac8ab972d5550518bcb0279
-w
-Gorm-liquibase/src/main/java/com/liquibase/main/database/MyDatabase.java,9\5\95fcf2170a5dfb627d2f288fe0f0e914c06f247e
-u
-Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
 s
 Cdocument-db-mongodb/src/main/java/com/mongodb/main/BaseMongoDB.java,b\6\b614e1a4278571422ae35ef3b0faa9b276ac7fe2
 É
@@ -111,8 +105,6 @@ Qrelational-database/relational-db-mysql/src/main/java/explain/ExplainÊÄßËÉΩË∞É‰
 Urelational-database/relational-db-mysql/src/main/java/explain/ExplainÂèÇÊï∞ËØ¥Êòé.txt,6\4\64064f7c231239b20d29f3350a4b557ec36b30e8
 K
 document-db-mongodb/pom.xml,4\9\49f32a047960359b6162aaa6fe8f76be14f9fcc5
-E
-orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
 í
 borm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/JpaEntityLocationsParser.java,1\1\116e9fb2344e03f1ccbb799aaba6533c869cb3d4
 í
@@ -217,8 +209,6 @@ a
 1orm-jpa-hibernate/jakarta-persistence-api/pom.xml,a\0\a06ddbc7907613bde5d6a54ae83c5d20fe412252
 ç
 ]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/identifiers/IdGeneratorType.java,1\0\10c0fec8c3d15dd3bfd9c531595b92b9bd0201c2
-Ç
-Rrelational-database/relational-db-mysql/src/main/java/transaction/Transaction.java,7\b\7b7c9d93c4fa6a5ea2bb7ab904b234086bce1d9e
 |
 Lrelational-database/relational-db-mysql/src/main/java/MysqlOptimization.java,3\8\382180aeb0ac64cadc3b8af9bd5be6b408cfb5e1
 Æ
@@ -307,8 +297,6 @@ torm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 {orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/subselect/Employee.java,8\4\84722d252d56a78b67dcaccf8a9c05598f9e929a
 ™
 zorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/unidirectional/ddl_sql,f\b\fbe455852165bf3e6e695fe6b4782227fb460404
-¶
-vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,f\d\fd4e4a8ced05e9a3040438ffca88b6d44dafaae2
 Ü
 Vorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Post.java,e\b\eb351b7ce6ff49b43341dc6cdb76e2c6564916c1
 K
@@ -359,8 +347,6 @@ Irelational-database/relational-db-psql/src/main/java/logging/PSQL Logging,e\a\
 Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/BatchingÊµãËØïÊó•Âøó,e\8\e89cdf65d5317ab7e7f37d51323fc7515f950f9a
 ä
 Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/BatchingÂèÇÊï∞ÈÖçÁΩÆ,9\1\91bbcd9a4987e85c91591ab9042ef40957efc4cc
-Ç
-Rrelational-database/relational-db-psql/src/main/java/batching/BatchingÊÄßËÉΩË∞É‰ºò,2\a\2a28a7e7506675cfc2582a25e3098836eca0bc61
 `
 0relational-database/relational-db-sybase/pom.xml,b\c\bc9e8a14de5486e101ed071ea6a493b6aab8b27d
 â
@@ -379,10 +365,6 @@ K
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 `
 0relational-database/relational-db-oracle/pom.xml,4\d\4d53a3b9e355db9643a9f839bb597d899475217c
-b
-2relational-database/relational-db-psql/PSQL Config,e\b\eb7d8302e5f6d9be187a6daecf5e0400eeb55751
-b
-2relational-database/relational-db-psql/PSQL Âü∫Á°Ä,0\3\0391fd7be61e0329026f64b1251a0e7c7a16f71f
 q
 Arelational-database/relational-db-sql-server/SQL Server Connector,a\9\a97ea80f5ee174af64a7fcd602cf4ba628361c88
 Å
@@ -393,8 +375,6 @@ f
 6relational-database/relational-db-sybase/Sybase Âü∫Á°Ä,4\b\4bac023f4c73ec03dc1bf4738e293a9fb200ef85
 á
 Wrelational-database/relational-db-oracle/src/main/java/batching/DemoOracleBatching.java,b\c\bc7b06e5b3ae47f1a686456907f7592b4ff3a151
-Ö
-Urelational-database/relational-db-psql/src/main/java/batching/PostgreSqlBatching.java,a\6\a644ccac371c66c9c6b837e941a0247b03d6f382
 é
 ^relational-database/relational-db-sql-server/src/main/java/batching/DemoSqlServerBatching.java,3\d\3d01582f23c61a3fd9c9dc11443cdc5d10bc0f97
 á
@@ -465,3 +445,15 @@ norm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 Çorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumn/OneToMany/Computer.java,b\7\b7159ccee0c45a23c5f86d0c3caecfe16dcf22a1
 V
 &orm-jpa-hibernate-example/test/pom.xml,2\1\2105438d673bcd650adbd1889982c166d39abccc
+f
+6relational-database/relational-db-oracle/Oracle Âü∫Á°Ä,c\1\c140a6567e22759b3b8758e72b215884496f5ce1
+∑
+Üorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/select/BaseFetchingModeSelect.java,3\a\3a37fa312ef3be92e9afca34a1502e1f4c6d3669
+w
+Grelational-database/relational-db-psql/src/main/java/config/PSQL Config,c\a\caa84779eb8a54800ac66a709e5534e2970a3d5d
+Ç
+Rrelational-database/relational-db-psql/src/main/java/batching/BatchingÊÄßËÉΩË∞É‰ºò,2\a\2a28a7e7506675cfc2582a25e3098836eca0bc61
+b
+2relational-database/relational-db-psql/PSQL Âü∫Á°Ä,0\3\0391fd7be61e0329026f64b1251a0e7c7a16f71f
+w
+Gorm-liquibase/src/main/java/com/liquibase/main/database/MyDatabase.java,9\5\95fcf2170a5dfb627d2f288fe0f0e914c06f247e
