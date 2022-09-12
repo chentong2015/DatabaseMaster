@@ -1,0 +1,10 @@
+
+0
+java:S1220""Move this file to a named package.
+b
+java:S2095
+"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
+^
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(Åì—
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¦¨¬
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Å¯¬ıÿÿÿÿ

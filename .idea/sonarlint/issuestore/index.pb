@@ -371,8 +371,6 @@ Arelational-database/relational-db-sql-server/SQL Server Connector,a\9\a97ea80f
 Qrelational-database/relational-db-mysql/src/main/java/batching/MySqlBatching.java,f\f\ffc21bce0bd53a874fb2df9cfba038aecbde4295
 t
 Drelational-database/relational-db-sql-server/SQL Server ÈÖçÁΩÆÊìç‰Ωú,7\2\72c8f70e3111290fea4ff95b8c61f4bd6ecd7227
-f
-6relational-database/relational-db-sybase/Sybase Âü∫Á°Ä,4\b\4bac023f4c73ec03dc1bf4738e293a9fb200ef85
 á
 Wrelational-database/relational-db-oracle/src/main/java/batching/DemoOracleBatching.java,b\c\bc7b06e5b3ae47f1a686456907f7592b4ff3a151
 é
@@ -469,3 +467,13 @@ vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 frelational-database/relational-db-mysql/src/main/java/transaction/mvcc/TransactionConcurrencyMvcc.java,e\3\e3d61fd87f6f582078bdc14917e6a34b1c92b298
 Ä
 Prelational-database/relational-db-mysql/src/main/java/locking/ReadWriteLock.java,9\0\9092068f2fe93f5829a584727f816012f1221141
+Ü
+Vrelational-database/relational-db-psql/src/main/java/batching/PostgresSqlBatching.java,e\c\ec84fce184f9f38033375d175b3384137f46f18f
+y
+Irelational-database/relational-db-psql/src/main/java/DemoPostgresSql.java,d\0\d01bf84714d02eead54efb7783a3663e17f8391d
+u
+Eorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseJava.java,9\d\9dae397e726373c7d45df15773bec59b9d28f917
+è
+_relational-database/relational-db-mysql/src/main/java/transaction/TransactionSpecification.java,b\4\b45a4e57128cb56212f9e60f2860c95a056345f5
+Ç
+Rrelational-database/relational-db-mysql/src/main/java/transaction/Transaction.java,7\b\7b7c9d93c4fa6a5ea2bb7ab904b234086bce1d9e
