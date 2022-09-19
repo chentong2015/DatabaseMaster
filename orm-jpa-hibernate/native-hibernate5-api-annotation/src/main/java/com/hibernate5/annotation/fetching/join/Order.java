@@ -1,12 +1,12 @@
-package com.hibernate5.annotation.fetching.select;
+package com.hibernate5.annotation.fetching.join;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity(name = "com.hibernate5.annotation.fetching.select.Order")
-@Table(name = "t_fetching_order")
+@Entity(name = "com.hibernate5.annotation.fetching.join.Order")
+@Table(name = "t_fetching_join_order")
 public class Order {
 
     @Id
@@ -14,7 +14,7 @@ public class Order {
 
     @Column(name = "name")
     private String name;
-    
+
     public Order() {
     }
 

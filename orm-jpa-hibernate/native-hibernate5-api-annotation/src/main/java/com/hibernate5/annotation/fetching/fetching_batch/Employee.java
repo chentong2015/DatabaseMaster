@@ -1,26 +1,22 @@
-package com.hibernate5.annotation.fetching.select;
+package com.hibernate5.annotation.fetching.fetching_batch;
 
-import javax.persistence.Column;
+import org.hibernate.annotations.NaturalId;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity(name = "com.hibernate5.annotation.fetching.select.Order")
-@Table(name = "t_fetching_order")
-public class Order {
+@Entity(name = "com.hibernate5.annotation.fetching_batch.Employee")
+@Table(name = "t_fetching_batch_employee")
+public class Employee {
 
     @Id
     private Long id;
 
-    @Column(name = "name")
+    @NaturalId
     private String name;
-    
-    public Order() {
-    }
 
-    public Order(Long id, String name) {
-        this.id = id;
-        this.name = name;
+    public Employee() {
     }
 
     public Long getId() {
@@ -41,7 +37,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "Employee{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

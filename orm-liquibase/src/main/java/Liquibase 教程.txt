@@ -1,14 +1,14 @@
-
 Liquibase 开源数据库架构变更管理解决方案, 实现数据库的迁移和适配schema变更
 An open-source database schema change management solution.
 Enables to manage revisions of your database changes easily.
 
+Liquibase 4.5.0版本存在安全问题，最低升级到4.13.0版本
+
 TODO. 支持Commands指令操作和Java代码执行操作
 配置liquibase.properties属性文件, 指定在source和target db之间changelog
 
-TODO. Liquibase Conversion Tool转换工具设计
+TODO. Liquibase Conversion Tool 如何设计一个数据库转换工具 ?
 1. 转换的对象
 2. 转换的步骤
 3. 提供的输入
 4. 性能分析
-

@@ -1,6 +1,5 @@
-package com.hibernate5.annotation.fetching.select;
+package com.hibernate5.annotation.fetching.join;
 
-import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
@@ -8,8 +7,8 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity(name = "com.hibernate5.annotation.fetching.select.Customer")
-@Table(name = "t_fetching_customer")
+@Entity(name = "com.hibernate5.annotation.fetching.join.Customer")
+@Table(name = "t_fetching_join_customer")
 public class Customer {
 
     @Id
@@ -18,10 +17,9 @@ public class Customer {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "customer_id")
-    @Fetch(value = FetchMode.SELECT)
-    @BatchSize(size = 10)
+    @Fetch(value = FetchMode.JOIN)
     private Set<Order> orders = new HashSet<>();
 
     public Customer() {

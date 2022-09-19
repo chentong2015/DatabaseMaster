@@ -1,3 +1,7 @@
+https://docs.jboss.org/hibernate/orm/
+https://github.com/hibernate/hibernate-orm/wiki/Migration-Guides
+https://docs.jboss.org/hibernate/orm/6.0/javadocs/deprecated-list.html
+
 TODO. Hibernate(JPA Implementation) 一种JPA标准的实现
 1. Mapping from Java classes to database tables(from Java data types to SQL data types)
    将关系型数据库中的行数据映射成一个对象("数据表行" <--> "实体类Entity")
@@ -22,11 +26,6 @@ TODO. Hibernate(ORM层框架)在优化性能方面做了哪些配置或设计 ?
    - Inverse  关联关系的维护端
 
 -------------------------------------------------------------------------------
-TODO. Hibernate所有版本教程(v3.6支持中文版), 以及版本升级
-https://docs.jboss.org/hibernate/orm/
-https://github.com/hibernate/hibernate-orm/wiki/Migration-Guides
-https://docs.jboss.org/hibernate/orm/6.0/javadocs/deprecated-list.html
-
 Hibernate 3.x 版本的创建
    Configuration configuration = new Configuration().configure();
    SessionFactory sessionFactory = configuration.buildSessionFactory();

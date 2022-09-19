@@ -30,8 +30,14 @@
 
         <mapping class="com.hibernate5.annotation.fetching.select.Customer"/>
         <mapping class="com.hibernate5.annotation.fetching.select.Order"/>
-        <mapping class="com.hibernate5.annotation.fetching.subselect.Employee"/>
-        <mapping class="com.hibernate5.annotation.fetching.subselect.Department"/>
+        <mapping class="com.hibernate5.annotation.fetching.join.Customer"/>
+        <mapping class="com.hibernate5.annotation.fetching.join.Order"/>
+        <mapping class="com.hibernate5.annotation.fetching.sub_select.Customer"/>
+        <mapping class="com.hibernate5.annotation.fetching.sub_select.Order"/>
+        <mapping class="com.hibernate5.annotation.fetching.fetching_type.Employee"/>
+        <mapping class="com.hibernate5.annotation.fetching.fetching_type.Department"/>
+        <mapping class="com.hibernate5.annotation.fetching.fetching_batch.Department"/>
+        <mapping class="com.hibernate5.annotation.fetching.fetching_batch.Employee"/>
 
         <mapping class="com.hibernate5.annotation.join.JoinColumn.ManyToOne.WebPage"/>
         <mapping class="com.hibernate5.annotation.join.JoinColumn.ManyToOne.Type"/>

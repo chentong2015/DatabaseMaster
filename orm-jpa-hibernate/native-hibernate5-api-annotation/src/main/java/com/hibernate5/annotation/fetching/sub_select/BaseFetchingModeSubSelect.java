@@ -1,4 +1,4 @@
-package com.hibernate5.annotation.fetching.join;
+package com.hibernate5.annotation.fetching.sub_select;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -7,32 +7,46 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 // Hibernate:
 //    select
-//        customer0_.id as id1_12_0_,
-//        orders1_.customer_id as customer3_13_1_,
-//        orders1_.id as id1_13_1_,
-//        orders1_.id as id1_13_2_,
-//        orders1_.name as name2_13_2_
+//        customer0_.id as id1_15_,
+//        customer0_.name as name2_15_
 //    from
-//        t_fetching_join_customer customer0_
-//    left outer join
-//        t_fetching_join_order orders1_
-//            on customer0_.id=orders1_.customer_id
+//        t_fetching_sub_select_customer customer0_
 //    where
-//        customer0_.id=?
-public class BaseFetchingModeJoin {
+//        customer0_.name like 'name%'
+//
+// Hibernate:
+//    select
+//        orders0_.customer_id as customer3_16_1_,
+//        orders0_.id as id1_16_1_,
+//        orders0_.id as id1_16_0_,
+//        orders0_.name as name2_16_0_
+//    from
+//        t_fetching_sub_select_order orders0_
+//    where
+//        orders0_.customer_id in (
+//            select
+//                customer0_.id
+//            from
+//                t_fetching_sub_select_customer customer0_
+//            where
+//                customer0_.name like 'name%'
+//        )
+public class BaseFetchingModeSubSelect {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
     static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        Customer customer = session.get(Customer.class, 1L);
-        System.out.println(customer);
-        for (Order order : customer.getOrders()) {
+        String hql = "select c from " + Customer.class.getName() + " c where c.name like 'name%'";
+        List<Customer> customerList = session.createQuery(hql).getResultList();
+        System.out.println(customerList.size());
+        for (Order order : customerList.get(0).getOrders()) {
             System.out.println(order);
         }
         session.close();

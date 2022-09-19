@@ -1,3 +1,6 @@
+TODO. @OneToMany 在一对多的关系下，如果不设置@JoinColum联合查询的列名称
+ 则会创建一个额外的Join表，用于存储一对多的关系，而不是将关联关系存储在其中一个表 !!
+
 @JoinColum注解
 - 表明从Association关联关系表什么column列名称来执行join表
 - 配置Association关系时，设置关联表的列的名称
