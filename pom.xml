@@ -23,6 +23,5 @@
         <module>orm-mybatis</module>
         <module>orm-spring-jdbc</module>
         <module>relational-database</module>
-        <module>orm-jpa-hibernate-example/test</module>
     </modules>
 </project>

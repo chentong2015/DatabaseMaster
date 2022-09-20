@@ -28,6 +28,7 @@ public class EntityDemo {
     @Column(name = "source_id", nullable = false)
     private String sourceId;
 
+    // TODO. 修改映射的名称会导致原始创建的表格中新增列 !!
     @Column(name = "my_edit")
     private Boolean myEdit;
 

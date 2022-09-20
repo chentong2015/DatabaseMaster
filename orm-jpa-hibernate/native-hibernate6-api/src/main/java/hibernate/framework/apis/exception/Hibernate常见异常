@@ -59,3 +59,7 @@
 
 10. org.hibernate.PersistentObjectException: detached entity passed to persist
    异常原因：Entity的id配置了自动生成策略，同时在Session操作时设置了id的值，导致冲突
+
+11. Caused by: org.hibernate.TransientObjectException:
+    object references an unsaved transient instance - save the transient instance before flushing: many.to.one.Person
+    异常原因：在ManyToOne关系中没有设置CascadeType, 没有进行级联存储，导致找不到外键指向
