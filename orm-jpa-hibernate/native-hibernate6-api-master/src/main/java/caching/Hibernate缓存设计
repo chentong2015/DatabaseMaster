@@ -20,15 +20,7 @@ https://www.digitalocean.com/community/tutorials/hibernate-ehcache-hibernate-sec
   2. Not cache the state of the actual entities, but only identifier values and results of value type.
   3. It should always be used in conjunction with the second-level cache
 
-TODO. Spring data JPA Hibernate缓存配置参数
-spring:
-  jpa:
-    properties:
-      hibernate:
-        javax.cache:
-          provider: org.ehcache.jsr107.EhcacheCachingProvider
-          uri: classpath:ehcache.xml
-        cache:
-          use_second_level_cache: true
-          region.factory_class: jcache
-          use_query_cache: true
+TODO. 关于缓存失效的问题, 使用时间戳来判断
+ - normal second level entity cache based on primary key
+ - The timestamp cache keeps track of the last update timestamp for each table
+   (this timestamp is updated for any table modification)

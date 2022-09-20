@@ -12,7 +12,6 @@ We can change the JDBC batching strategy without altering the data access code.
 # A non-zero value enables use of JDBC2 batch updates by Hibernate
 > hibernate.jdbc.batch_size 5
 > hibernate.jdbc.batch_size=10
-> spring.jpa.properties.hibernate.jdbc.batch_size=10
 
 # Enable ordering of SQL UPDATEs by primary key 按照主键来顺序执行
 > hibernate.order_updates=true  在高并发系统中可能造成事务的死锁
