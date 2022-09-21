@@ -10,7 +10,7 @@ import java.util.Set;
 public class BidirectionalManyToMany {
 
     public static void main(String[] args) {
-        testSaveObjects();
+        // testSaveObjects();
         testGetObject();
     }
 

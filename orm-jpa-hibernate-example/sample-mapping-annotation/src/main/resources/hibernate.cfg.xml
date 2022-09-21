@@ -19,5 +19,8 @@
         <mapping class="many.to.one.Person"/>
         <mapping class="many.to.one.Car"/>
 
+        <mapping class="unidirectional.one.to.many.Customer"/>
+        <mapping class="unidirectional.one.to.many.Order"/>
+
     </session-factory>
 </hibernate-configuration>

@@ -12,8 +12,7 @@ public class Car {
 
     @Column(name = "name")
     private String name;
-
-    // cascade = CascadeType.PERSIST
+    
     @ManyToOne
     @JoinColumn(name = "person_id")
     private Person person;

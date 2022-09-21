@@ -19,5 +19,10 @@
         <mapping resource="many.to.one/car.hbm.xml"/>
         <mapping resource="many.to.one/person.hbm.xml"/>
 
+        <mapping resource="unidirectional.one.to.many/customer.hbm.xml"/>
+        <mapping resource="unidirectional.one.to.many/order.hbm.xml"/>
+
+        <mapping resource="bidirectional.many.to.many/project.hbm.xml"/>
+        <mapping resource="bidirectional.many.to.many/employee.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

@@ -10,7 +10,8 @@
 
         <set name="strategies" table="t_typology_set_strategies">
             <key column="m_key_typology"/>
-            <many-to-many outer-join="auto" class="hibernate.framework.apis.mappings.many.to.many.Strategy"
+            <many-to-many outer-join="auto"
+                          class="hibernate.framework.apis.mappings.many.to.many.Strategy"
                           column="m_key_strategy"/>
         </set>
     </class>

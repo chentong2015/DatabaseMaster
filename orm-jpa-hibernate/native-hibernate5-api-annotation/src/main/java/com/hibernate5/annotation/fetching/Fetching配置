@@ -8,7 +8,14 @@ TODO. FetchType: defines whether Hibernate will load data eagerly or lazily 决�
 - dynamic
 
 TODO. FetchMode: how Hibernate will fetch the data 决定如何获取(获取的方式)
+      FetchMode: 如果改变模式，则需要重新建表使得模式生效
 - FetchMode.SELECT    会执行额外的Select查询语句来获取数据
 - FetchMode.JOIN      使用join来查询关联的表
 - FetchMode.SUBSELECT 将Main Select查询语句放到Sub Select查询的where in条件中，前提是Main Select查询的结果不止一条数据
 - @LazyCollection
+
+
+1. fetch-“select” (default) = Lazy load all the collections and entities.
+2. fetch-“join” = Disable the lazy loading, always load all the collections and entities.
+3. batch-size=”N” = Fetching up to ‘N’ collections or entities, *Not record*.
+4. fetch-“subselect” = Group its collection into a sub select statement.
