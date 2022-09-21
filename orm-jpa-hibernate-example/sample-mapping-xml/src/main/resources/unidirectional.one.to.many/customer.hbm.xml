@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="unidirectional.one.to.many.Customer" table="t_customer_xml">
+    <class name="unidirectional.one.to.many.Customer" table="t_xml_customer">
         <id name="id" column="id">
             <generator class="increment"/>
         </id>

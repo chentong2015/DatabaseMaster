@@ -1,0 +1,11 @@
+
+The @JoinTable annotation is used to specify the link table between two other database tables.
+Join table is used in the mapping of many-to-many and unidirectional one-to-many associations.
+
+https://javaee.github.io/javaee-spec/javadocs/javax/persistence/JoinTable.html
+
+Example:
+  @JoinTable(name="CUST_PHONE",
+      joinColumns=@JoinColumn(name="CUST_ID", referencedColumnName="ID"),
+      inverseJoinColumns=@JoinColumn(name="PHONE_ID", referencedColumnName="ID")
+  )

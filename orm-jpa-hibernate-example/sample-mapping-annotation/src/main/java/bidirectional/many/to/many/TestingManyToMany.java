@@ -16,7 +16,7 @@ public class TestingManyToMany {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        getProjectsByEmployee(session, 1);
+        initData(session);
         session.close();
         sessionFactory.close();
     }

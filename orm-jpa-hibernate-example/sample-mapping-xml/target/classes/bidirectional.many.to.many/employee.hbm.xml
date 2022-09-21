@@ -4,15 +4,15 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="bidirectional.many.to.many.Employee" table="t_employee_xml">
+    <class name="bidirectional.many.to.many.Employee" table="t_xml_employee">
         <id name="id" column="id">
             <generator class="increment"/>
         </id>
         <property name="name" column="name"/>
 
-        <set name="projects" table="t_employee_to_projects">
+        <set name="projects" table="t_xml_employee_projects">
             <key column="key_employee"/>
-            <many-to-many outer-join="auto" class="bidirectional.many.to.many.Project" column="key_project"/>
+            <many-to-many class="bidirectional.many.to.many.Project" column="key_project"/>
         </set>
     </class>
 </hibernate-mapping>
