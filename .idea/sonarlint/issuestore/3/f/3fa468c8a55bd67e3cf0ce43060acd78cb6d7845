@@ -1,0 +1,22 @@
+
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(æòªûùÿÿÿÿ
+Q	java:S1255"<This block of commented-out lines of code should be removed.(ô¹ÞÉ
+G
+java:S18746",Remove this use of "save"; it is deprecated.(š§äƒýÿÿÿÿ
+G
+java:S1135A"2Complete the task associated to this TODO comment.(¼üëW
+N	java:S106P"9Replace this use of System.out or System.err by a logger.(äüÃâ
+K
+java:S1481Y"0Remove this unused "rowAffected" local variable.(ž½öÉýÿÿÿÿ
+K
+java:S1481f"0Remove this unused "rowAffected" local variable.(×ÄªÐûÿÿÿÿ
+L
+java:S1144."6Remove this unused private "testPersistObject" method.(øæÇÿ
+G
+java:S1144C"2Remove this unused private "testGetObject" method.(·ñ×(
+C
+java:S1144L"-Remove this unused private "getBooks" method.(Ð¬Äµ
+O
+java:S1144U"4Remove this unused private "testUpdateQuery" method.(òÍÌ†øÿÿÿÿ
+O
+java:S1144b"4Remove this unused private "testDeleteQuery" method.(ÞµšÜúÿÿÿÿ

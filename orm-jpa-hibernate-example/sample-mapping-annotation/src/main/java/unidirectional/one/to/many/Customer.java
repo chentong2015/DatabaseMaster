@@ -12,6 +12,7 @@ import java.util.Set;
 public class Customer {
 
     @Id
+    @GeneratedValue(generator = "increment")
     private Long id;
 
     @Column(name = "name")
@@ -25,8 +26,7 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(Long id, String name) {
-        this.id = id;
+    public Customer(String name) {
         this.name = name;
     }
 

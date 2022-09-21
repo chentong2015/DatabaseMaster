@@ -24,11 +24,11 @@ public class TestingOneToMany {
     private static void initData(Session session) {
         session.getTransaction().begin();
 
-        Customer customer1 = new Customer(1L, "name 1");
-        Customer customer2 = new Customer(2L, "test name");
+        Customer customer1 = new Customer("name 1");
+        Customer customer2 = new Customer("test name");
         Set<Order> orders = new HashSet<>();
         for (long i = 1; i < 25; i++) {
-            Order order = new Order(i, "order " + i);
+            Order order = new Order("order " + i);
             session.persist(order);
             orders.add(order);
         }

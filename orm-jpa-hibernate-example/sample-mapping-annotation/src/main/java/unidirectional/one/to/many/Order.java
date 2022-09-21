@@ -1,15 +1,13 @@
 package unidirectional.one.to.many;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "t_order")
 public class Order {
 
     @Id
+    @GeneratedValue(generator = "increment")
     private Long id;
 
     @Column(name = "name")
@@ -18,8 +16,7 @@ public class Order {
     public Order() {
     }
 
-    public Order(Long id, String name) {
-        this.id = id;
+    public Order(String name) {
         this.name = name;
     }
 

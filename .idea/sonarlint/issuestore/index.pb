@@ -179,8 +179,6 @@ zorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 sorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/CategoryType.java,f\0\f04da8226e9e34d840f4236e5673f6d1f1bebb6a
 è
 _orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/Book.java,3\0\30e0b521b6ef9629c3f4387389809f8ac158d20a
-ü
-oorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/MyEntity.java,9\8\989c41a7f5ed34a284ab38d8621842619d039b9a
 ª
 äorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/table/per/clazz/SpecificEntity.java,c\4\c4b68b57f8ced1d1c1428d496beb146c875d2037
 Ω
@@ -383,8 +381,6 @@ norm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 Çorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_batch/Department.java,a\1\a16ee2ac90eaf5822a5fec319a8fccd7f21cb2c4
 ∏
 áorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_type/BaseFetchingType.java,1\2\12ceedbba850b9fd456e3bee3e1ae723e8c7f457
-j
-:orm-jpa-hibernate/native-hibernate5-api-annotation/pom.xml,8\4\84ecec8d05247655040c5b291dca2719c777eab5
 Ñ
 Trelational-database/relational-db-psql/src/main/java/explain/analyse/Explain analyse,d\0\d0bfe61a6a2aee41c98b8cb633bad4af6d073e2c
 •
@@ -469,3 +465,61 @@ worm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 porm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/HibernateSessionUtil.java,f\1\f1cef56d61a5dc7b0bab8fbb9232e24967b67ae3
 ï
 eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityDemo.java,f\4\f44a51b9b464c6a16c893b2f15207b06d7585e7c
+Ø
+orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/LazyCollection/Company.java,c\5\c574cd139f1295aaf48590a42f53bc68441536c4
+≥
+Çorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/join/BaseFetchingModeJoin.java,1\9\19f9a35fdcada187902ef3c39ef9d21eb2428712
+¶
+vorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/join/Customer.java,a\5\a52602cd9515b9ae970913445482d2933a06b8cc
+ê
+`orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/unidirectional/one/to/many/Order.java,5\3\5313dcaef16ba34f8a01aa14baa84a96ff2f19a7
+¢
+rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/FetchingÈÖçÁΩÆ,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
+¢
+rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/many/Typology.java,8\7\87e8b52de354581f357bb876c105633269404daf
+Æ
+~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumn/ManyToOne/Type.java,c\e\cef592364a5367f0e22bcfc066ace9c5ca07b225
+≥
+Çorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumn/OneToMany/Computer.java,b\7\b7159ccee0c45a23c5f86d0c3caecfe16dcf22a1
+≥
+Çorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumn/OneToMany/Software.java,a\d\ad4a339c4b51c348c20cd1464329636e07447f96
+§
+torm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinTable/Join Table,8\9\894901dd29a0476ff727cc6cbe21b80299360000
+≤
+Åorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumn/ManyToOne/WebPage.java,8\8\88f458a661791644451d2ff3c6a13d3147e7bf25
+ö
+jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/ÂÖ≥ËÅîÊò†Â∞ÑÂÖ≥Á≥ª,3\0\30522a73339ff20c21a6c94adb9b8164f0791f08
+¢
+rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/many/Strategy.java,f\0\f03410388abdf932a5e6ae199322961796db6573
+≤
+Åorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/many/BidirectionalManyToMany.java,1\5\1562781fe014cd528b194850ef24ba3008cbe217
+û
+norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/HibernateÂ∏∏ËßÅÂºÇÂ∏∏,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
+t
+Drelational-database/relational-db-sql-server/SQL Server ÈÖçÁΩÆÊìç‰Ωú,7\2\72c8f70e3111290fea4ff95b8c61f4bd6ecd7227
+b
+2relational-database/relational-db-psql/PSQL Âü∫Á°Ä,0\3\0391fd7be61e0329026f64b1251a0e7c7a16f71f
+i
+9relational-database/relational-db-mysql/MySqlÂü∫Á°ÄÈÖçÁΩÆ,e\2\e292760f1d3c7be9e2023c03b5b770fdb85e4b9a
+f
+6relational-database/relational-db-oracle/Oracle Âü∫Á°Ä,c\1\c140a6567e22759b3b8758e72b215884496f5ce1
+Å
+Qrelational-database/relational-db-mysql/src/main/java/batching/MySqlBatching.java,f\f\ffc21bce0bd53a874fb2df9cfba038aecbde4295
+_
+/relational-database/relational-db-mysql/pom.xml,c\7\c7a594144f18a41da9a2061671e1c3fbb82584f3
+g
+7relational-database/relational-db-mysql/MySQL Connector,d\8\d866b2e9e04c37788a986d50efec61910910f0fd
+ö
+jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
+d
+4relational-database/relational-db-sql-server/pom.xml,8\7\87cb899da86a8927dad21857e49cbb26a6c63012
+é
+^relational-database/relational-db-sql-server/src/main/java/batching/DemoSqlServerBatching.java,3\d\3d01582f23c61a3fd9c9dc11443cdc5d10bc0f97
+q
+Arelational-database/relational-db-sql-server/SQL Server Connector,a\9\a97ea80f5ee174af64a7fcd602cf4ba628361c88
+®
+xorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/HibernateSessionCriteria.java,6\3\63446e17b47d02743aceec8cbd35fafa0bcc2cfe
+≥
+Çorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/large/object/EntityLargeObjectPlus.java,b\3\b345486c9e212b7b72962c50ba2ddbacb920a033
+Æ
+~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/large/object/EntityLargeObject.java,2\6\269418928342fd8cf7099609e37792196a9184ca
