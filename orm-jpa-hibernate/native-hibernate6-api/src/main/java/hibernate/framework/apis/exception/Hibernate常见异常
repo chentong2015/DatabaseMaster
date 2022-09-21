@@ -63,3 +63,6 @@
 11. Caused by: org.hibernate.TransientObjectException:
     object references an unsaved transient instance - save the transient instance before flushing: many.to.one.Person
     异常原因：在ManyToOne关系中没有设置CascadeType, 没有进行级联存储，导致找不到外键指向
+
+12. Exception in thread "main" java.lang.StackOverflowError
+    异常原因：双向关联关系中(比如双向多对多)，获取其中一个表的数据时，使用得出结果再去获取关联关系表，造成循环

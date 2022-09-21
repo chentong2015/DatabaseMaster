@@ -14,6 +14,26 @@ public class BidirectionalManyToMany {
         testGetObject();
     }
 
+    // TODO. 注意双向多对多关系中
+    //  返回结果中获取它关联关系表，它关联关系表再输出它的关联值，会造成循环
+    private static void testGetObject() {
+        Session session = null;
+        try {
+            session = HibernateSessionUtil.getSession();
+            Strategy strategy = session.get(Strategy.class, 1);
+            System.out.println(strategy.getId());
+            System.out.println(strategy.getName());
+            Set<Typology> typologies = strategy.getTypologies();
+            for (Typology typology : typologies) {
+                System.out.println(typology.getId() + " -- " + typology.getName());
+            }
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        } finally {
+            HibernateSessionUtil.closeSession();
+        }
+    }
+
     private static void testSaveObjects() {
         Session session = null;
         Transaction transaction = null;
@@ -59,24 +79,6 @@ public class BidirectionalManyToMany {
             if (transaction != null) {
                 transaction.rollback();
             }
-        } finally {
-            HibernateSessionUtil.closeSession();
-        }
-    }
-
-    private static void testGetObject() {
-        Session session = null;
-        try {
-            session = HibernateSessionUtil.getSession();
-            Strategy strategy = session.get(Strategy.class, 1);
-            System.out.println(strategy.getId());
-            System.out.println(strategy.getName());
-            Set<Typology> typologies = strategy.getTypologies();
-            for (Typology typology : typologies) {
-                System.out.println(typology.getId() + " -- " + typology.getName());
-            }
-        } catch (Exception exception) {
-            exception.printStackTrace();
         } finally {
             HibernateSessionUtil.closeSession();
         }

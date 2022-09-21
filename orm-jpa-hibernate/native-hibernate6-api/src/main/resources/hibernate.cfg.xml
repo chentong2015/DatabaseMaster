@@ -11,11 +11,11 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
     <session-factory>
         <!-- TODO. Dialect: 指定hibernate所要converse到某个特定的SQL; HQL -> SQL specific -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgresPlusDialect</property>
-
         <property name="connection.url">jdbc:postgresql://localhost:5432/hibernate_demo</property>
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">admin</property>
+
         <!-- 定义连接池中的连接数目的大小 number of connections in Hibernate’s built-in connection pool. -->
         <property name="connection.pool_size">100</property>
 
@@ -31,7 +31,7 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <!-- 一个数据表的描述: 对象的配置文件 -->
+        <!-- 一个数据表的描述: 对象的配置文件
         <mapping resource="entity/books.hbm.xml"/>
 
         <mapping resource="mappings/many.to.one.unidirectional/student.hbm.xml"/>
@@ -52,6 +52,7 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
         <mapping class="hibernate.framework.apis.mappings.any.model.StringProperty"/>
         <mapping class="hibernate.framework.apis.mappings.any.PropertyHolder"/>
 
-        <mapping class="hibernate.framework.apis.mappings.map.RightsEntity"/>
+        <mapping class="hibernate.framework.apis.mappings.map.RightsEntity"/> -->
+        <mapping class="com.hibernate5.annotation.large.object.EntityLargeObject"/>
     </session-factory>
 </hibernate-configuration>

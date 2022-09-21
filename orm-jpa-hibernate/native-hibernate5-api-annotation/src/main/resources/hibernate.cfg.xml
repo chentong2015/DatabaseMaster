@@ -53,5 +53,7 @@
         <mapping class="com.hibernate5.annotation.any.model.IntegerProperty"/>
         <mapping class="com.hibernate5.annotation.any.model.StringProperty"/>
         <mapping class="com.hibernate5.annotation.any.PropertyHolder"/>
+
+        <mapping class="com.hibernate5.annotation.large.object.EntityLargeObjectPlus"/>
     </session-factory>
 </hibernate-configuration>

@@ -263,12 +263,8 @@ Rdatabase-orm-design/src/main/java/database/design/bacthing/BatchingÊâπÊâßË°åÁ≠ñ
 Prelational-database/relational-db-mysql/src/main/java/logging/InnoDBRedoLog.java,2\0\20f1205cfcc8aca4e944210b60b86438283125a4
 
 Orelational-database/relational-db-mysql/src/main/java/logging/MySQLÊó•ÂøóË∑ØÂæÑ,4\7\4719baa41fee17e78ed124c4d2d72a4bba5499a6
-_
-/relational-database/relational-db-mysql/pom.xml,c\7\c7a594144f18a41da9a2061671e1c3fbb82584f3
 ñ
 frelational-database/relational-db-h2-database/src/main/java/com/h2/database/H2Êï∞ÊçÆÂ∫ìÈÖçÁΩÆÂíåËøûÊé•,1\5\15bb7d41f661237bff51bae1f726bb4ea8ba85af
-g
-7relational-database/relational-db-mysql/MySQL Connector,d\8\d866b2e9e04c37788a986d50efec61910910f0fd
 è
 _relational-database/relational-db-h2-database/src/main/java/com/h2/database/BaseH2Database.java,b\6\b63098738be416887336c46a4b34ad1c116546db
 ¢
@@ -291,8 +287,6 @@ qorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 lorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/query/DemoNamedQueries.java,2\6\26b97e12e1d96d119bb5f2ed285270918d569237
 û
 norm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/DemoEntityManagerQuery.java,f\6\f69561dd37716ff39ab3e95189c3d1c2e7028f0d
-i
-9relational-database/relational-db-mysql/MySqlÂü∫Á°ÄÈÖçÁΩÆ,e\2\e292760f1d3c7be9e2023c03b5b770fdb85e4b9a
 y
 Irelational-database/relational-db-psql/src/main/java/logging/PSQL Logging,e\a\ea36761d7f04fc405a91f152ee8df683e6567e44
 ä
@@ -305,22 +299,12 @@ Yorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Co
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingSession.java,9\5\955a57aa305cfe25293d4e244886fea9565ca3f2
 î
 dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingEntityManager.java,7\e\7eb0fcc8622dcb21de89f9cfbc4e707ee94529d1
-d
-4relational-database/relational-db-sql-server/pom.xml,8\7\87cb899da86a8927dad21857e49cbb26a6c63012
 K
 relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
 `
 0relational-database/relational-db-oracle/pom.xml,4\d\4d53a3b9e355db9643a9f839bb597d899475217c
-q
-Arelational-database/relational-db-sql-server/SQL Server Connector,a\9\a97ea80f5ee174af64a7fcd602cf4ba628361c88
-Å
-Qrelational-database/relational-db-mysql/src/main/java/batching/MySqlBatching.java,f\f\ffc21bce0bd53a874fb2df9cfba038aecbde4295
-t
-Drelational-database/relational-db-sql-server/SQL Server ÈÖçÁΩÆÊìç‰Ωú,7\2\72c8f70e3111290fea4ff95b8c61f4bd6ecd7227
 á
 Wrelational-database/relational-db-oracle/src/main/java/batching/DemoOracleBatching.java,b\c\bc7b06e5b3ae47f1a686456907f7592b4ff3a151
-é
-^relational-database/relational-db-sql-server/src/main/java/batching/DemoSqlServerBatching.java,3\d\3d01582f23c61a3fd9c9dc11443cdc5d10bc0f97
 á
 Wrelational-database/relational-db-sybase/src/main/java/batching/DemoSybaseBatching.java,e\f\efd63f8d71926b37afa4feba54c1183bb84889d4
 é
@@ -349,14 +333,10 @@ oorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 ëorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumn/OneToMany/DemoJoinColumnOneToMany.java,7\d\7d67ccf3cf3f997bfa28a04e4b1adf2b705944be
 ±
 Äorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumnOrFormula/Country.java,9\6\96622dffbb9c7eacb906edc0836e25e77092b9d3
-f
-6relational-database/relational-db-oracle/Oracle Âü∫Á°Ä,c\1\c140a6567e22759b3b8758e72b215884496f5ce1
 w
 Grelational-database/relational-db-psql/src/main/java/config/PSQL Config,c\a\caa84779eb8a54800ac66a709e5534e2970a3d5d
 Ç
 Rrelational-database/relational-db-psql/src/main/java/batching/BatchingÊÄßËÉΩË∞É‰ºò,2\a\2a28a7e7506675cfc2582a25e3098836eca0bc61
-b
-2relational-database/relational-db-psql/PSQL Âü∫Á°Ä,0\3\0391fd7be61e0329026f64b1251a0e7c7a16f71f
 w
 Gorm-liquibase/src/main/java/com/liquibase/main/database/MyDatabase.java,9\5\95fcf2170a5dfb627d2f288fe0f0e914c06f247e
 w
@@ -401,8 +381,6 @@ norm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 Üorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_batch/Batch Fetching Size,6\c\6c52d24a213c14e71f56f4811afddb6c879344e2
 ≥
 Çorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_batch/Department.java,a\1\a16ee2ac90eaf5822a5fec319a8fccd7f21cb2c4
-®
-xorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/HibernateSessionCriteria.java,6\3\63446e17b47d02743aceec8cbd35fafa0bcc2cfe
 ∏
 áorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_type/BaseFetchingType.java,1\2\12ceedbba850b9fd456e3bee3e1ae723e8c7f457
 j
@@ -417,8 +395,6 @@ uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 yorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/sub_select/Order.java,2\5\25b454906154d3eaa9203095d5fe9701bdae5ea6
 Ø
 orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_type/Employee.java,b\6\b6a1541482767c8e2e2244820f0e2afb0802f7de
-ö
-jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
 ö
 jorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,8\a\8a6922ce6bb2f0aa586e6509a6102cffa0fdd98e
 ≤
@@ -475,8 +451,6 @@ lorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testin
 jorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/any/HibernateAnyDemo.java,d\0\d092e60ff48b06006b530fc35ad5da9c91a0a660
 f
 6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
-_
-/orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
 k
 ;orm-jpa-hibernate-example/sample-mapping-annotation/pom.xml,9\0\90eaf2a59b8936a265f1de68476a7bd04cb362b8
 d

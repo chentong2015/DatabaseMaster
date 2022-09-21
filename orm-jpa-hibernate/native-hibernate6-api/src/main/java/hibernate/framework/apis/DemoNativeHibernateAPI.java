@@ -1,6 +1,7 @@
 package hibernate.framework.apis;
 
 import hibernate.framework.apis.entity.Book;
+import hibernate.framework.apis.entity.large.object.EntityLargeObject;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -20,13 +21,21 @@ public class DemoNativeHibernateAPI {
     static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
     public static void main(String[] args) {
-        try (Session session = sessionFactory.openSession()) {
-            Query<Book> query = session.createQuery("FROM " + Book.class.getSimpleName(), Book.class);
-            List<Book> books = query.getResultList();
-            for (Book book : books) {
-                System.out.println(book);
-            }
-        }
+        Session session = sessionFactory.openSession();
+
+        session.getTransaction().begin();
+        EntityLargeObject largeObject1 = new EntityLargeObject("name 1", "test test ... 111");
+        EntityLargeObject largeObject2 = new EntityLargeObject("name 2", "test test ... 222");
+        EntityLargeObject largeObject3 = new EntityLargeObject("name 3", "test test ... 333");
+        session.persist(largeObject1);
+        session.persist(largeObject2);
+        session.persist(largeObject3);
+        session.getTransaction().commit();
+
+        EntityLargeObject largeObject = session.get(EntityLargeObject.class, 1);
+        System.out.println(largeObject.getJsonData());
+
+        session.close();
         sessionFactory.close();
         // The registry would be destroyed by the SessionFactory,
         // Destroy it manually when we have trouble building the SessionFactory
@@ -61,6 +70,15 @@ public class DemoNativeHibernateAPI {
         session.getTransaction().begin();
         session.remove(object);
         session.getTransaction().commit();
+    }
+
+    // 使用HQL来查询指定类型的数据
+    private static void getBooks(Session session) {
+        Query<Book> query = session.createQuery("FROM " + Book.class.getSimpleName(), Book.class);
+        List<Book> books = query.getResultList();
+        for (Book book : books) {
+            System.out.println(book);
+        }
     }
 
     // 使用named parameters(:namedParam)具名参数来传递参数值

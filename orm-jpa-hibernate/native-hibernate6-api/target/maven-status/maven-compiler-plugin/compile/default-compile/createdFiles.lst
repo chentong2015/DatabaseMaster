@@ -2,6 +2,7 @@ hibernate\framework\apis\mappings\any\model\StringProperty.class
 hibernate\framework\apis\lifecycle\HibernateObjectLifecycle.class
 hibernate\framework\apis\entity\EntityDemo.class
 hibernate\framework\apis\entity\EntityMasterAbstract.class
+hibernate\framework\apis\entity\large\object\EntityLargeObject.class
 hibernate\framework\apis\mappings\one\to\one\foreign\key\unidirectional\IdCard.class
 hibernate\framework\apis\mappings\one\to\many\unidirectional\Grade.class
 hibernate\framework\apis\mappings\one\to\one\foreign\key\unidirectional\FkUnidirectionalOneToOne.class
