@@ -1,18 +1,12 @@
 package many.to.one;
 
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import util.HibernateSessionUtil;
 
 public class TestingManyToOne {
 
-    private static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-    private static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-
     public static void main(String[] args) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateSessionUtil.getSession();
         session.getTransaction().begin();
 
         Person person = new Person("victor", 28);
@@ -26,7 +20,6 @@ public class TestingManyToOne {
         session.persist(car3);
 
         session.getTransaction().commit();
-        session.close();
-        sessionFactory.close();
+        HibernateSessionUtil.closeSession();
     }
 }

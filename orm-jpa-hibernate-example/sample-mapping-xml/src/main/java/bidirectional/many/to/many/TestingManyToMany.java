@@ -1,24 +1,17 @@
 package bidirectional.many.to.many;
 
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import util.HibernateSessionUtil;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class TestingManyToMany {
 
-    static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-    static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-
     public static void main(String[] args) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateSessionUtil.getSession();
         initData(session);
-        session.close();
-        sessionFactory.close();
+        HibernateSessionUtil.closeSession();
     }
 
     private static void initData(Session session) {
