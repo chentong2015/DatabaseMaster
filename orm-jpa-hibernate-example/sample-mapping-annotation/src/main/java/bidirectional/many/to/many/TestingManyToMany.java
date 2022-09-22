@@ -10,7 +10,7 @@ public class TestingManyToMany {
 
     public static void main(String[] args) {
         Session session = HibernateSessionUtil.getSession();
-        initData(session);
+        getProjectsByEmployee(session, 1);
         HibernateSessionUtil.closeSession();
     }
 

@@ -10,7 +10,7 @@ public class TestingOneToMany {
 
     public static void main(String[] args) {
         Session session = HibernateSessionUtil.getSession();
-        initData(session);
+        getData(session);
         HibernateSessionUtil.closeSession();
     }
 

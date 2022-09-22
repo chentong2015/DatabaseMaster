@@ -20,7 +20,7 @@ public class Customer {
 
     @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "customer_id")
-    @Fetch(value = FetchMode.JOIN)
+    @Fetch(value = FetchMode.SELECT)
     private Set<Order> orders = new HashSet<>();
 
     public Customer() {

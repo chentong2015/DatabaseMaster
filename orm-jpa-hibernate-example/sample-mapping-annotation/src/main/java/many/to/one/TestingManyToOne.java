@@ -10,7 +10,7 @@ public class TestingManyToOne {
         session.getTransaction().begin();
 
         Person person = new Person("victor", 28);
-        session.persist(person);
+        // session.persist(person);
 
         Car car1 = new Car("car name 1", person);
         Car car2 = new Car("car name 2", person);
