@@ -1,7 +1,12 @@
 Dialect 针对不同数据库的"方言": 可移植性
 JDBC Connection.createStatement(); 相当于是在数据库的上层创建的一个Dialect
 JDBC Statement 无法适配不同的数据库之间的区别，在执行上面需要硬编码
- 
+
+TODO. 如何考虑在Server端还是在Client Side请求端解决问题 ?
+企业开发中，Server端的配置需要非常小心
+它要配置的应该是针对服务器本身(要提供的配置)，而不是针对Client的配置(适配客户端)
+本质上应该是Client提供正确的请求去适配Server提供的服务，Server端应该保持一致性(不变性)
+
 TODO. JDBC AutoCommit自动提交
 org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
 JDBC Connection默认是开启AutoCommit, 不能再调用connection.commit()显式提交

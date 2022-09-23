@@ -1,7 +1,11 @@
- PgAdmin Tool: admin
- PSQL Admin : postgres, admin
- PSQL User  : test, test
- Schema Default: public
+http://www.postgres.cn/docs/13/index.html
+https://www.postgresql.org/docs/current/datatype.html    PSQL数据库支持的Data Types
+https://jdbc.postgresql.org/documentation/changelog.html PSQL版本变更记录
+
+PgAdmin Tool: admin
+PSQL Admin : postgres, admin
+PSQL User  : test, test
+Schema Default: public
 
 命令行连接Psql
   C:\PostgreSQL\bin>psql.exe -U postgres
@@ -12,10 +16,12 @@
   "services.msc" 在service服务上自动设置启动
 
 > select version() Psql版本查询(区别别的DB)
+
 > SELECT * FROM public.t_citizen t where trim(t.language) LIKE '%.US' 对字段使用function再模糊查询(like匹配区分大小写)
+
 > DROP SCHEMA [ IF EXISTS ] nom [, ...] [ CASCADE | RESTRICT ] 删除指定Schema
 
+> select * from pg_stat_activity; PSQL状态活动记录表
+> SELECT pid, age(clock_timestamp(), query_start), usename, state, query FROM pg_stat_activity where state<>'idle';
 
-http://www.postgres.cn/docs/13/index.html
-https://www.postgresql.org/docs/current/datatype.html    PSQL数据库支持的Data Types
-https://jdbc.postgresql.org/documentation/changelog.html PSQL版本变更记录
+> SELECT * FROM pg_locks;
