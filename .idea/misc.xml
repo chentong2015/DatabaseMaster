@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/orm-hibernate6/pom.xml" />
         <option value="$PROJECT_DIR$/orm-jpa-hibernate/native-hibernate5-api-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/orm-jpa-hibernate/orm-jpa-hibernate-example/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

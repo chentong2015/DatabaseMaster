@@ -9,7 +9,7 @@ public class MetaDataHelper {
 
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
     private static String psqlConnectStr2 = "jdbc:postgresql://dell719srv:5432/java_int_tests?user=java_int_tests&password=JAVA_INT_TESTS";
-    private static String sqlServerConnectStr = "jdbc:sqlserver://LCTON01:1433;databaseName=my_database;Trusted_Connection=true;user=test;password=TCHong16";
+    private static String sqlServerConnectStr = "jdbc:sqlserver://driver_name:1433;databaseName=my_database;Trusted_Connection=true;user=test;password=TCHong16";
 
     public static void main(String[] args) {
         try (Connection connection = DriverManager.getConnection(psqlConnectStr)) {
