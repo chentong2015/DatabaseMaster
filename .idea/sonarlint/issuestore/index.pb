@@ -523,3 +523,11 @@ lorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/
 xorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/MyPhysicalNamingStrategyStandardImpl.java,8\b\8bb716ab804a7d21be2366cad28b33ff42869150
 �
 dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/Hibernate命名策略,7\7\7789c4cbbee27d04bc545c20996c773005b5b4c7
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+c
+3orm-jpa-hibernate/orm-jpa-hibernate-example/pom.xml,f\2\f2f6371c91991630a52a4ed86a8fc2e189911887
+I
+orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
+~
+Ndatabase-orm-design/src/main/java/database/design/metadata/MetaDataHelper.java,5\2\522eae25c66431f94dbbd8de6e33c4804b847183
