@@ -32,9 +32,11 @@ com\hibernate5\annotation\query\HqlRawQuery.class
 com\hibernate5\annotation\HibernateSessionCriteria.class
 com\hibernate5\annotation\any\DemoAnyMapping.class
 com\hibernate5\annotation\entity\MyEntity.class
+com\hibernate5\annotation\large\object\EntityLargeObjectPlus.class
 com\hibernate5\annotation\entity\CategoryType.class
 com\hibernate5\annotation\fetching\fetching_batch\Department.class
 com\hibernate5\annotation\fetching\sub_select\Order.class
+com\hibernate5\annotation\large\object\EntityLargeObject.class
 com\hibernate5\annotation\join\JoinColumn\ManyToOne\DemoJoinColumnManyToOne.class
 com\hibernate5\annotation\inheritance\mapper\superclass\CreditAccount.class
 com\hibernate5\annotation\join\JoinColumn\OneToMany\Computer.class
@@ -51,6 +53,7 @@ com\hibernate5\annotation\fetching\LazyCollection\Company.class
 com\hibernate5\annotation\query\SqlRawQuery.class
 com\hibernate5\annotation\fetching\join\BaseFetchingModeJoin.class
 com\hibernate5\annotation\inheritance\single\table\PEmployee.class
+com\hibernate5\annotation\fetching\fetching_type\BaseFetchingType.class
 com\hibernate5\annotation\entity\package1\Person.class
 com\hibernate5\annotation\entity\annotations\ColumnDescription.class
 com\hibernate5\annotation\entity\non\publiz\entity\EntityTester.class

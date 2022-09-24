@@ -21,10 +21,6 @@
         <!-- <property name="hibernate.order_updates">true</property>
         <property name="hibernate.jdbc.batch_versioned_data">true</property> -->
 
-        <!-- 查询缓存 -->
-        <property name="hibernate.cache.use_query_cache">true</property>
-        <property name="hibernate.javax.cache.missing_cache_strategy">create</property>
-
         <!-- Enable二级缓存 -->
         <property name="hibernate.cache.use_second_level_cache">true</property>
         <property name="net.sf.ehcache.configurationResourceName">/cache/jCache.xml</property>
@@ -33,6 +29,10 @@
         <property name="hibernate.cache.region.factory_class">org.hibernate.cache.jcache.JCacheRegionFactory</property>
         <!-- 通过Ehcache 3来提供Cache Provider -->
         <property name="hibernate.javax.cache.provider">org.ehcache.jsr107.EhcacheCachingProvider</property>
+
+        <!-- 查询缓存 -->
+        <property name="hibernate.cache.use_query_cache">true</property>
+        <property name="hibernate.javax.cache.missing_cache_strategy">create</property>
 
         <mapping class="batching.entity.Post"/>
         <mapping class="batching.entity.Comment"/>

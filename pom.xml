@@ -18,7 +18,6 @@
         <module>database-orm-design</module>
         <module>document-db-mongodb</module>
         <module>orm-jpa-hibernate</module>
-        <module>orm-jpa-hibernate-example</module>
         <module>orm-liquibase</module>
         <module>orm-mybatis</module>
         <module>orm-spring-jdbc</module>

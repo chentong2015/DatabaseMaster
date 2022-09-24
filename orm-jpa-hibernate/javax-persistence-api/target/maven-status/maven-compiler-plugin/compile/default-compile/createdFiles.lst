@@ -1,10 +1,9 @@
 com\hibernate\entity\manager\query\JpqlQueryRunner.class
-com\hibernate\entity\manager\test\Employee.class
-com\hibernate\entity\manager\batching\DemoSessionBatching.class
+com\hibernate\entity\manager\entity\Employee.class
 com\hibernate\entity\manager\query\JpaEntityManagerQueries.class
-com\hibernate\entity\manager\test\Book.class
 com\hibernate\entity\manager\entity\NamedQueryEntity.class
 com\hibernate\entity\manager\entity\Sample.class
-com\hibernate\entity\manager\test\EntityManagerDemo2.class
-com\hibernate\entity\manager\test\EntityManagerDemo1.class
-com\hibernate\entity\manager\EntityManagerHandler.class
+com\hibernate\entity\manager\DemoEntityManagerApi.class
+com\hibernate\entity\manager\util\EntityManagerHandler.class
+com\hibernate\entity\manager\entity\Book.class
+com\hibernate\entity\manager\DemoEntityManagerQuery.class

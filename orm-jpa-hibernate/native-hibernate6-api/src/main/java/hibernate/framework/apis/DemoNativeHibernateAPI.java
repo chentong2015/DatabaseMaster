@@ -1,7 +1,6 @@
 package hibernate.framework.apis;
 
 import hibernate.framework.apis.entity.Book;
-import hibernate.framework.apis.entity.large.object.EntityLargeObject;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -22,19 +21,7 @@ public class DemoNativeHibernateAPI {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-
-        session.getTransaction().begin();
-        EntityLargeObject largeObject1 = new EntityLargeObject("name 1", "test test ... 111");
-        EntityLargeObject largeObject2 = new EntityLargeObject("name 2", "test test ... 222");
-        EntityLargeObject largeObject3 = new EntityLargeObject("name 3", "test test ... 333");
-        session.persist(largeObject1);
-        session.persist(largeObject2);
-        session.persist(largeObject3);
-        session.getTransaction().commit();
-
-        EntityLargeObject largeObject = session.get(EntityLargeObject.class, 1);
-        System.out.println(largeObject.getJsonData());
-
+        testPersistObject();
         session.close();
         sessionFactory.close();
         // The registry would be destroyed by the SessionFactory,

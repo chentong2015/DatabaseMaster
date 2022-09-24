@@ -14,7 +14,6 @@ D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibe
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\session\HibernateSessionCallback.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\DemoNativeHibernateAPI.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\entity\EntityMeta.java
-D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\entity\large\object\EntityLargeObject.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\mappings\many\to\one\StudentAddress.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\mappings\one\to\many\bidirectional\Student.java
 D:\Work My Projects\Database Master\DatabaseMaster\orm-jpa-hibernate\native-hibernate6-api\src\main\java\hibernate\framework\apis\entity\EntityMaster.java

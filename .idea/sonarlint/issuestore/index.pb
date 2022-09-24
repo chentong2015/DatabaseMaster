@@ -139,8 +139,6 @@ e
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseMetadata.java,1\a\1ab64bc9e3f6f76d53550c953d804d4c2103743c
 ‘
 aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseJpaMetadata.java,0\0\004fcac44c375ddf5ab8e0123b4c1e56c216d54b
-I
-orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 ƒ
 Srelational-database/relational-db-mysql/src/main/java/index/IndexSpecification.java,a\a\aa5c6166cc0f91e7091ced9ee9ed21e359deca3e
 ƒ
@@ -421,8 +419,6 @@ k
 ;orm-jpa-hibernate-example/sample-mapping-annotation/pom.xml,9\0\90eaf2a59b8936a265f1de68476a7bd04cb362b8
 d
 4orm-jpa-hibernate-example/sample-mapping-xml/pom.xml,e\7\e795f69b7e8daf5486bbea0972d45515b9ac5615
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 §
 worm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/one/StudentAddress.java,6\f\6f83106974e0a951219b728ddf54b8dfdf048187
 ±
@@ -475,8 +471,6 @@ _
 /relational-database/relational-db-mysql/pom.xml,c\7\c7a594144f18a41da9a2061671e1c3fbb82584f3
 g
 7relational-database/relational-db-mysql/MySQL Connector,d\8\d866b2e9e04c37788a986d50efec61910910f0fd
-š
-jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
 d
 4relational-database/relational-db-sql-server/pom.xml,8\7\87cb899da86a8927dad21857e49cbb26a6c63012
 
@@ -485,10 +479,6 @@ q
 Arelational-database/relational-db-sql-server/SQL Server Connector,a\9\a97ea80f5ee174af64a7fcd602cf4ba628361c88
 ¨
 xorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/HibernateSessionCriteria.java,6\3\63446e17b47d02743aceec8cbd35fafa0bcc2cfe
-³
-‚orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/large/object/EntityLargeObjectPlus.java,b\3\b345486c9e212b7b72962c50ba2ddbacb920a033
-®
-~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/large/object/EntityLargeObject.java,2\6\269418928342fd8cf7099609e37792196a9184ca
 Ÿ
 oorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/MyEntity.java,9\8\989c41a7f5ed34a284ab38d8621842619d039b9a
 œ
@@ -507,12 +497,6 @@ a
 Yorm-jpa-hibernate-example/sample-mapping-xml/src/main/java/util/HibernateSessionUtil.java,b\8\b8546e7b97f07639d6c2e3c1bf1953d14c4a91e2
 
 `orm-jpa-hibernate-example/sample-mapping-annotation/src/main/java/util/HibernateSessionUtil.java,2\5\250681588ddc94d2d5aab0393d258e5272401345
-œ
-lorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/MyPhysicalNamingStrategy.java,3\7\37d69894309bc19dd74b71315b8f5594a432de5b
-œ
-lorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/MyImplicitNamingStrategy.java,d\d\dd2869c3956449bdf2b96da14499823161c779e0
-¨
-xorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/MyPhysicalNamingStrategyStandardImpl.java,8\b\8bb716ab804a7d21be2366cad28b33ff42869150
 ”
 dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingEntityManager.java,7\e\7eb0fcc8622dcb21de89f9cfbc4e707ee94529d1
 †
@@ -563,3 +547,11 @@ a
 1orm-jpa-hibernate/base-jpa-hibernate/è¿›é˜¶æ•™ç¨‹,2\b\2bdcba5853734fe69f8d73ab06e62e5ff82ee9ef
 w
 Gdatabase-orm-design/src/main/java/database/design/æ•°æ®åº“è®¾è®¡æ€æƒ³,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
+`
+0orm-liquibase/src/main/java/Liquibase æ•™ç¨‹.txt,6\8\68db7d7367e44b2b616f97d1dcf45b808fe48a90
+^
+.relational-database/relational-db-psql/pom.xml,1\9\19aa403b002a2031346683dd4e0f0d8a8683afab
+w
+Gdatabase-orm-design/src/main/java/orm/middleware/design/ORMç³»ç»Ÿè®¾è®¡,1\5\150c8d71e4941d5d417f7e66e45c276b7d5f7f75
+y
+Irelational-database/relational-db-psql/src/main/java/DemoPostgresSql.java,d\0\d01bf84714d02eead54efb7783a3663e17f8391d
