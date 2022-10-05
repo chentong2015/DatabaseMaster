@@ -8,24 +8,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="database-orm-design" />
         <module name="orm-spring-jdbc" />
+        <module name="oracle" />
+        <module name="sybase" />
         <module name="native-hibernate5-api-annotation" />
+        <module name="hyper-sql" />
+        <module name="postgre-sql" />
         <module name="document-db-mongodb" />
         <module name="native-hibernate6-api-master" />
         <module name="jakarta-persistence-api" />
-        <module name="relational-db-sybase" />
-        <module name="relational-db-sql-server" />
-        <module name="relational-db-mysql" />
+        <module name="sql-server" />
+        <module name="h2-database" />
         <module name="javax-persistence-api" />
-        <module name="relational-db-h2-database" />
         <module name="native-hibernate5-api-xml" />
-        <module name="relational-db-psql" />
         <module name="sample-mapping-annotation" />
         <module name="entity-class-parser" />
         <module name="orm-mybatis" />
+        <module name="mysql" />
         <module name="native-hibernate6-api" />
         <module name="sample-mapping-xml" />
         <module name="orm-liquibase" />
-        <module name="relational-db-oracle" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
