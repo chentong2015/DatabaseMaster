@@ -1,0 +1,2 @@
+Hibernate提供的所有基础类型: Java Type <-> JDBC Type 类型映射关系
+https://docs.jboss.org/hibernate/orm/5.0/mappingGuide/en-US/html/ch03.html
