@@ -25,3 +25,7 @@ Schema Default: public
 > SELECT pid, age(clock_timestamp(), query_start), usename, state, query FROM pg_stat_activity where state<>'idle';
 
 > SELECT * FROM pg_locks;
+
+> \c database_name 选择指定的数据库
+> \dt              shows all tables in the current schema
+> SELECT * FROM pg_catalog.pg_tables;   The system tables live in the pg_catalog database.

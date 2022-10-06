@@ -32,7 +32,7 @@ public class DemoLiquibaseJava {
             Connection connection = DriverManager.getConnection(psqlConnectStr);
             JdbcConnection jdbcConnection = new JdbcConnection(connection);
             // 根据DatabaseConnection连接来生成Database的具体实现类型
-            // 背后会调用returnDatabase.setConnection(connection);方法
+            // 底层会调用returnDatabase.setConnection(connection);
             Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
 
             database.setDefaultSchemaName("public");
