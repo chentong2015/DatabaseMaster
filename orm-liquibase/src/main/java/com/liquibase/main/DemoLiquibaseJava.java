@@ -26,7 +26,7 @@ public class DemoLiquibaseJava {
 
     public static void main(String[] args) throws Exception {
         Map<String, Object> config = new HashMap<>();
-        config.put("liquibase.pro.licenseKey", "YOUR_PRO_KEY");
+        // config.put("liquibase.pro.licenseKey", "YOUR_PRO_KEY");
         Scope.child(config, () -> {
             // 定义使用什么方式进行Connection连接
             // Connection connection = DriverManager.getConnection(psqlConnectStr);
@@ -41,6 +41,11 @@ public class DemoLiquibaseJava {
 
             database.setDefaultSchemaName("public");
             if (database instanceof PostgresDatabase) {
+                // connection.commit();
+                // connection.setAutoCommit(false);
+
+                database.commit();
+                database.setAutoCommit(false);
                 System.out.println("Created Postgres Database !");
             } else if (database instanceof MySQLDatabase) {
                 System.out.println("Created MySql Database !");
