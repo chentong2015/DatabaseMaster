@@ -1,0 +1,3 @@
+同一个Table不能在同一个数据库中创建两次
+执行changelog.xml是会有一个判断的标准 ?
+liquibase.exception.DatabaseException: ERROR: relation "t_sample_test" already exists

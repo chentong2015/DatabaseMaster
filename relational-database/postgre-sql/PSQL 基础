@@ -8,12 +8,17 @@ PSQL User  : test, test
 Schema Default: public
 
 命令行连接Psql
-  C:\PostgreSQL\bin>psql.exe -U postgres
+C:\PostgreSQL\bin>psql.exe -U postgres
+Password for user postgres:
 
+C:\PostgreSQL\bin>psql -h HOST_NAME -U username
+Password for user postgres: ****
+
+------------------------------------------------------------------------------------------------------------------
 在安装psql之后(指定存储数据的位置)，命令行启动
-  C:\PostgreSQL\bin>pg_ctl.exe start -D C:\Program Files\PostgreSQL\14\data
-  C:\PostgreSQL\bin>pg_ctl.exe restart -D C:\Program Files\PostgreSQL\14\data
-  "services.msc" 在service服务上自动设置启动
+C:\PostgreSQL\bin>pg_ctl.exe start -D C:\Program Files\PostgreSQL\14\data
+C:\PostgreSQL\bin>pg_ctl.exe restart -D C:\Program Files\PostgreSQL\14\data
+"services.msc" 在service服务上自动设置启动
 
 > select version() Psql版本查询(区别别的DB)
 

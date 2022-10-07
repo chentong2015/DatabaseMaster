@@ -15,7 +15,7 @@
         <dependency>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
-            <version>4.15.0</version>
+            <version>4.13.0</version>
         </dependency>
 
         <dependency>
@@ -23,7 +23,11 @@
             <artifactId>postgresql</artifactId>
             <version>42.4.2</version>
         </dependency>
-
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
+        </dependency>
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>

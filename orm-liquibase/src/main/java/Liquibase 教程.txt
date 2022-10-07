@@ -4,6 +4,10 @@ Enables to manage revisions of your database changes easily.
 
 Liquibase 4.5.0版本存在安全问题，最低升级到4.13.0版本
 
+TODO. Liquibase框架封装思想
+1. 继承Connection，将连接封装到自定的MyConnection对象中
+2. 将JdbcConnection和Database包装到自定义的辅助类型LiquibaseHelper中, 控制其生命周期
+
 TODO. 支持Commands指令操作和Java代码执行操作
 配置liquibase.properties属性文件, 指定在source和target db之间changelog
 
