@@ -9,6 +9,7 @@ public class EntityMeta {
 
     public long id;
     public String name;
+    public String ignored;
 
     public EntityMeta(String name) {
         this.name = name;
@@ -34,5 +35,13 @@ public class EntityMeta {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getIgnored() {
+        return ignored;
+    }
+
+    public void setIgnored(String ignored) {
+        this.ignored = ignored;
     }
 }

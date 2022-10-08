@@ -36,6 +36,11 @@ public class EntityDemo {
     @Version
     private Integer version;
 
+    // TODO. Hibernate不会将该字段存储到数据库
+    // private transient int ignored =0; 该字段不会被序列化
+    @Transient
+    private String ignoreInformation;
+
     // 必须提供Getter&Setter方法，满足在HBM mapping文件中的属性配置
     public int getId() {
         return id;
