@@ -1,0 +1,40 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <!-- TODO. 这里的id和author会存储到databasechangelog更新的日志表中
+            再次执行的时候会进行验校 -->
+    <changeSet id="HelloSubsystem_init_table_3" author="HelloSubsystem">
+        <!-- TODO. 设置执行changeset的前提条件, 进行逻辑判断
+              onFail="MARK_RAN" 先决条件判断失败, 任然继续运行 -->
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="HELLO_DBF_1"/>
+            </not>
+        </preConditions>
+
+        <!-- 这里的comment会被写入到databasechangelog表中的description字段 -->
+        <comment>Create table : HELLO_DBF_1</comment>
+        <createTable tableName="HELLO_DBF_1">
+            <column name="M_REFERENCE" type="numeric(10,0)"/>
+            <column name="M_LABEL" type="varchar(30)"/>
+            <column name="M_DESCRIPTION" type="varchar(256)"/>
+            <column name="M_CONTEXT" type="varchar(256)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="HelloSubsystem_init_index_1" author="HelloSubsystem">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <indexExists tableName="HELLO_DBF_1" columnNames="M_REFERENCE"/>
+            </not>
+        </preConditions>
+        <comment>Creating index : HELLO_REF_NDX of table : HELLO_DBF_1 on Column M_REFERENCE</comment>
+
+        <!-- 这里的索引Index不能冲突 -->
+        <createIndex tableName="HELLO_DBF_1" indexName="HELLO_REF_NDX_1" unique="true">
+            <column name="M_REFERENCE"/>
+        </createIndex>
+    </changeSet>
+</databaseChangeLog>

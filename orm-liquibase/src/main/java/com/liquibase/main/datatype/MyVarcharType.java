@@ -8,7 +8,7 @@ import liquibase.datatype.DataTypeInfo;
 import liquibase.datatype.DatabaseDataType;
 import liquibase.datatype.core.VarcharType;
 
-// Varchar类型的转换
+// Varchar类型的转换: 设置自定义类型的priority优先级高于Liquibase原始的
 @DataTypeInfo(name = "varchar",
         aliases = {"java.sql.Types.VARCHAR", "java.lang.String", "varchar2",
                 "character varying", "string", "UROWID"

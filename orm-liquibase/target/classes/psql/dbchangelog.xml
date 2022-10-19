@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+
+    <!-- TODO. changeSet数据库的集合(多种变更的类型)，包含数据库的相关操作 -->
+    <changeSet author="tchen" id="2">
+        <createTable tableName="t_person">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="actor_pkey"/>
+            </column>
+            <column name="firstname" type="VARCHAR(255)"/>
+            <column name="lastname" type="VARCHAR(255)"/>
+            <column name="twitter" type="VARCHAR(15)"/>
+        </createTable>
+
+        <!-- 直接配置要执行的SQL或者提供.sql脚本
+             <sql>SELECT * FROM t_person;</sql>
+             <sqlFile path="dbFunctions.sql"/> -->
+    </changeSet>
+</databaseChangeLog>

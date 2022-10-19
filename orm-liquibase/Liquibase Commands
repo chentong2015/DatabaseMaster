@@ -1,6 +1,7 @@
 Commands
   calculate-checksum            Calculates and prints a checksum for the changeset
                                 [deprecated: calculateChecksum]
+
   changelog-sync                Marks all changes as executed in the database
                                 [deprecated: changelogSync]
   changelog-sync-sql            Output the raw SQL used by Liquibase when running changelogSync

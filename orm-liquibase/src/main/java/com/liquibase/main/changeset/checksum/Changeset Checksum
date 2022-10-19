@@ -1,0 +1,21 @@
+
+Liquibase maintains a table called DATABASECHANGELOG which contains the script steps(changeSets)
+   which have been executed on the current database so far.
+
+TODO. https://www.liquibase.com/blog/what-affects-changeset-checksums
+Liquibase Checksum 设计原理: 基于三个信息判断
+   This checksum helps Liquibase detect differences between the changesets you want to deploy
+   and the changesets that have already been run against the database.
+
+TODO. Running Changeset: psql/changelog-master.xml::HelloSubsystem_init_table_3::HelloSubsystem
+Liquibase Changesets 追踪数据库库的更新
+   Liquibase tracks which changesets have run against your target database
+   by the "id/author/filepath" combination
+
+   - Have a <rollback> element declared in every changeSet
+   - Have preconditions declared in changeSets
+   - Make sure to specify always a unique AUTHOR for your module
+   - Increase the ID for every new changeSet added
+   - Do not create multiple tables in the same changeSet
+   - Avoid database specific changesets 变更应该支持跨数据库
+   - Use the dbms precondition to mark the changeset as ran even for databases other than the targeted one
