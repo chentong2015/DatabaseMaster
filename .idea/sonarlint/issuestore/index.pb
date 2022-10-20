@@ -451,16 +451,12 @@ jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityDemo.java,f\4\f44a51b9b464c6a16c893b2f15207b06d7585e7c
 �
 eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMeta.java,0\9\09c2fb403c82357541eea1ecc5707c9888f931cd
-z
-Jorm-liquibase/src/main/java/com/liquibase/main/logger/LiquibaseLogger.java,3\6\36dc242743b3c4941fca523adc6693771fe2a95e
 }
 Morm-liquibase/src/main/java/com/liquibase/main/exception/Liquibase Exceptions,6\a\6a3af66e1a1576e98722c06c227e3777870d650c
 `
 0orm-liquibase/src/main/java/Liquibase 教程.txt,6\8\68db7d7367e44b2b616f97d1dcf45b808fe48a90
 X
 (relational-database/sybase/Sybase 基础,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
-w
-Gorm-liquibase/src/main/java/com/liquibase/main/database/MyDatabase.java,9\5\95fcf2170a5dfb627d2f288fe0f0e914c06f247e
 y
 Iorm-liquibase/src/main/java/com/liquibase/main/config/DatabaseConfig.java,1\9\19bfc72515846024633c4ba3161e8a2ff0a0be74
 w

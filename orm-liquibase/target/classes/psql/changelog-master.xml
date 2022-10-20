@@ -37,4 +37,20 @@
             <column name="M_REFERENCE"/>
         </createIndex>
     </changeSet>
+
+    <!-- TODO. 自定义有效的checksum使用什么值
+        specify which checksum that you want to accept as valid,
+        even if it’s different than what was stored in the DATABASECHANGELOG table -->
+    <changeSet id="2" author="tchen">
+        <validCheckSum>8:28ecf9a14aea7711f9ed54b52e885ed3</validCheckSum>
+    </changeSet>
+
+    <!-- TODO. 执行更新表的数据类型, 即使前面执行过指定的changeSet -->
+    <changeSet id="int-fixup" author="tchen">
+        <preConditions onFail="MARK_RAN">
+            <changeSetExecuted id="1" author="example"/>
+        </preConditions>
+
+        <modifyDataType tableName="t_liquibase_user" columnName="id" newDataType="BIGINT"/>
+    </changeSet>
 </databaseChangeLog>

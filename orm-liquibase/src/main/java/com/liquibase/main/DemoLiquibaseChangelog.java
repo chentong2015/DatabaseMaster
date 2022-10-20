@@ -23,17 +23,17 @@ public class DemoLiquibaseChangelog {
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
 
-        String changelogFile = "/psql/changelog-test.xml";
+        String changelogFile = "/psql/changelog-test-checksum.xml";
         try (Liquibase liquibase = new liquibase.Liquibase(changelogFile, new ClassLoaderResourceAccessor(), database)) {
-            // TODO. 删除changlog日志表中的md5sum验校字段
-            liquibase.clearCheckSums();
+            // 删除changelog日志表中的md5sum验校字段
+            // liquibase.clearCheckSums();
 
             // 指定要操作的schema的名称，执行指定数据库changelog的变更
             // liquibase.setChangeLogParameter("database.schema", database.getDefaultSchemaName());
 
             liquibase.update(new Contexts(), new LabelExpression());
         } catch (LiquibaseException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 }

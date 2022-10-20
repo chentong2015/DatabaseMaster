@@ -1,3 +1,21 @@
+TODO. Liquibase执行指定指令，配置命令行参数
+liquibase --driver=com.sybase.jdbc4.jdbc.SybDriver \
+     --classpath=[path-to-sybase-driver] \
+     --changeLogFile=[path-to-changelog-file] \
+     --url="jdbc:sybase:Tds:[db-host]:[db-port]/[db-name]" \
+     --username=xxx \
+     --password=xxx \
+     migrate
+
+liquibase --driver=oracle.jdbc.OracleDriver \
+    --classpath=[path-to-oracle-driver] \
+    --changeLogFile=[path-to-changelog-file] \
+    --url="jdbc:oracle:thin:@[db-host]:1521:[db-name]" \
+    --username=xxx \
+    --password=xxx \
+    migrate
+
+
 Commands
   calculate-checksum            Calculates and prints a checksum for the changeset
                                 [deprecated: calculateChecksum]
