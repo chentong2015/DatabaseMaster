@@ -1,24 +1,5 @@
-http://www.postgres.cn/docs/13/index.html
-https://www.postgresql.org/docs/current/datatype.html    PSQL数据库支持的Data Types
-https://jdbc.postgresql.org/documentation/changelog.html PSQL版本变更记录
-
-PgAdmin Tool: admin
-PSQL Admin : postgres, admin
-PSQL User  : test, test
-Schema Default: public
-
-命令行连接Psql
-C:\PostgreSQL\bin>psql.exe -U postgres
-Password for user postgres:
-
-C:\PostgreSQL\bin>psql -h HOST_NAME -U username
-Password for user postgres: ****
-
-------------------------------------------------------------------------------------------------------------------
-在安装psql之后(指定存储数据的位置)，命令行启动
-C:\PostgreSQL\bin>pg_ctl.exe start -D C:\Program Files\PostgreSQL\14\data
-C:\PostgreSQL\bin>pg_ctl.exe restart -D C:\Program Files\PostgreSQL\14\data
-"services.msc" 在service服务上自动设置启动
+> \c database_name 选择指定的数据库
+> \dt              shows all tables in the current schema
 
 > select version() Psql版本查询(区别别的DB)
 
@@ -31,6 +12,6 @@ C:\PostgreSQL\bin>pg_ctl.exe restart -D C:\Program Files\PostgreSQL\14\data
 
 > SELECT * FROM pg_locks;
 
-> \c database_name 选择指定的数据库
-> \dt              shows all tables in the current schema
+> SELECT * FROM pg_views;
+
 > SELECT * FROM pg_catalog.pg_tables;   The system tables live in the pg_catalog database.

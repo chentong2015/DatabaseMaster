@@ -411,26 +411,16 @@ h
 8relational-database/hyper-sql/src/main/HyperSQL数据库,6\5\65dc3cb15d14f1de7c8dba6cf4e4b87dc660c722
 X
 (orm-jpa-hibernate/Hibernate 进阶教程,b\6\b604e1421f5ceeaec16edee761a8da30c5e38256
-�
-]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/basic/types/Hibernate BasicTypes,c\8\c830bd1ab4b87b76132b2b0c85538705dbae87bf
 �
 Pdatabase-orm-design/src/main/java/storage/engine/design/存储引擎系统设计,d\2\d26179dc8c7f41e8204631656d5633335c444390
-w
-Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
 Q
 !relational-database/mysql/pom.xml,b\5\b539580a08e698b2d29c991e6ed07f9277f2ce5e
 s
 Crelational-database/mysql/src/main/java/batching/MySqlBatching.java,0\2\0203b05ef4736502d06a6ca868fe487aa458f9e9
-[
-+relational-database/postgre-sql/PSQL 基础,4\c\4cc55c6c9b5cb4b5d72c08ed8e8458bd9e791fd9
 E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
 r
 Brelational-database/postgre-sql/src/main/java/DemoPostgresSql.java,6\2\62cfd35b0434f2d39fd204e02efa1be83cdf1bbb
-�
-Rdatabase-orm-design/src/main/java/orm/middleware/design/api/ConnectionCreator.java,6\2\628053c04f329cd0386efb0e3e37587a5c48b48e
-�
-Tdatabase-orm-design/src/main/java/orm/middleware/design/api/ConnectionValidator.java,c\e\ce3a8de4df86ccc223afe2bcfb50c5164d1e6485
 �
 gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMaster.java,5\0\50433e6bebf14c5565bf1c849ff87778134c39f3
 �
@@ -445,8 +435,6 @@ eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMeta.java,0\9\09c2fb403c82357541eea1ecc5707c9888f931cd
 }
 Morm-liquibase/src/main/java/com/liquibase/main/exception/Liquibase Exceptions,6\a\6a3af66e1a1576e98722c06c227e3777870d650c
-X
-(relational-database/sybase/Sybase 基础,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
 y
 Iorm-liquibase/src/main/java/com/liquibase/main/config/DatabaseConfig.java,1\9\19bfc72515846024633c4ba3161e8a2ff0a0be74
 w
@@ -489,3 +477,17 @@ f
 Torm-liquibase/src/main/java/com/liquibase/main/changeset/checksum/Changeset Checksum,4\0\40bef954117b50b1b7dde48f6df0ac07b3b28916
 �
 Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
+�
+Vdatabase-orm-design/src/main/java/orm/middleware/design/conversion/tool/DB转换工具,9\4\94b1884ef5c3b0ac535afab37eceb32273ca30d1
+R
+"orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
+�
+Ydatabase-orm-design/src/main/java/orm/middleware/design/datamodel/CrossDatabaseModel.java,2\7\27739951ff510c60c52540b79f4c69c3398e265b
+�
+]database-orm-design/src/main/java/orm/middleware/design/datamodel/AbstractJdbcConnection.java,7\4\74264abf67027980d99b468b80bf84a631f105d7
+�
+Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTruncate.java,7\2\72fe08acc539fc7acd97d8db5e0ed560560e775c
+[
++relational-database/postgre-sql/PSQL 基础,4\c\4cc55c6c9b5cb4b5d72c08ed8e8458bd9e791fd9
+[
++relational-database/postgre-sql/PSQL 连接,d\0\d0680b08dd19a94e5af56c713f50ce38580b164f
