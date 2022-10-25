@@ -1,4 +1,4 @@
-package orm.middleware.design.database;
+package orm.middleware.design.datamodel;
 
 // TODO. 设计一个JDBC Connection抽象类型，抽象方法应该由具体的数据库RealConnection来实现
 public abstract class AbstractJdbcConnection {

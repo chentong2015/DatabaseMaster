@@ -416,8 +416,6 @@ X
 �
 Pdatabase-orm-design/src/main/java/storage/engine/design/存储引擎系统设计,d\2\d26179dc8c7f41e8204631656d5633335c444390
 w
-Gdatabase-orm-design/src/main/java/orm/middleware/design/ORM系统设计,1\5\150c8d71e4941d5d417f7e66e45c276b7d5f7f75
-w
 Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
 Q
 !relational-database/mysql/pom.xml,b\5\b539580a08e698b2d29c991e6ed07f9277f2ce5e
@@ -429,14 +427,10 @@ E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
 r
 Brelational-database/postgre-sql/src/main/java/DemoPostgresSql.java,6\2\62cfd35b0434f2d39fd204e02efa1be83cdf1bbb
-�
-Ydatabase-orm-design/src/main/java/orm/middleware/design/datamodel/CrossDatabaseModel.java,2\7\27739951ff510c60c52540b79f4c69c3398e265b
 �
 Rdatabase-orm-design/src/main/java/orm/middleware/design/api/ConnectionCreator.java,6\2\628053c04f329cd0386efb0e3e37587a5c48b48e
 �
 Tdatabase-orm-design/src/main/java/orm/middleware/design/api/ConnectionValidator.java,c\e\ce3a8de4df86ccc223afe2bcfb50c5164d1e6485
-�
-\database-orm-design/src/main/java/orm/middleware/design/database/AbstractJdbcConnection.java,8\2\820acd3e45070e78357c0db789d991d7b29c1198
 �
 gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMaster.java,5\0\50433e6bebf14c5565bf1c849ff87778134c39f3
 �
@@ -457,8 +451,6 @@ y
 Iorm-liquibase/src/main/java/com/liquibase/main/config/DatabaseConfig.java,1\9\19bfc72515846024633c4ba3161e8a2ff0a0be74
 w
 Gorm-liquibase/src/main/java/com/liquibase/main/DemoDatabaseFactory.java,5\5\55b42d8122ac4b410ac8ab972d5550518bcb0279
-R
-"orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
 z
 Jorm-liquibase/src/main/java/spring/liquibase/main/LiquibaseProperties.java,4\7\471c08a620aa8ca718d0d0d5cff35cff395aeaab
 y
@@ -497,5 +489,3 @@ f
 Torm-liquibase/src/main/java/com/liquibase/main/changeset/checksum/Changeset Checksum,4\0\40bef954117b50b1b7dde48f6df0ac07b3b28916
 �
 Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
-�
-Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTruncate.java,7\2\72fe08acc539fc7acd97d8db5e0ed560560e775c

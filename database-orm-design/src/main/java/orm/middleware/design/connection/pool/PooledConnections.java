@@ -1,7 +1,7 @@
 package orm.middleware.design.connection.pool;
 
-import orm.middleware.design.api.ConnectionCreator;
-import orm.middleware.design.api.ConnectionValidator;
+import orm.middleware.design.datamodel.api.ConnectionCreator;
+import orm.middleware.design.datamodel.api.ConnectionValidator;
 
 import java.sql.Connection;
 import java.sql.SQLException;

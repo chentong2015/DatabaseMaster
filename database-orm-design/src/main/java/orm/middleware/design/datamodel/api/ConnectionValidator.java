@@ -1,4 +1,4 @@
-package orm.middleware.design.api;
+package orm.middleware.design.datamodel.api;
 
 import java.sql.Connection;
 import java.sql.SQLException;
