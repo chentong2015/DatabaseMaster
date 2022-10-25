@@ -385,8 +385,6 @@ Yorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Co
 Çorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/large/object/EntityLargeObjectPlus.java,b\3\b345486c9e212b7b72962c50ba2ddbacb920a033
 Æ
 ~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/large/object/EntityLargeObject.java,2\6\269418928342fd8cf7099609e37792196a9184ca
-ö
-jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
 ú
 lorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/MyImplicitNamingStrategy.java,d\d\dd2869c3956449bdf2b96da14499823161c779e0
 ú
@@ -453,11 +451,51 @@ eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMeta.java,0\9\09c2fb403c82357541eea1ecc5707c9888f931cd
 }
 Morm-liquibase/src/main/java/com/liquibase/main/exception/Liquibase Exceptions,6\a\6a3af66e1a1576e98722c06c227e3777870d650c
-`
-0orm-liquibase/src/main/java/Liquibase ÊïôÁ®ã.txt,6\8\68db7d7367e44b2b616f97d1dcf45b808fe48a90
 X
 (relational-database/sybase/Sybase Âü∫Á°Ä,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
 y
 Iorm-liquibase/src/main/java/com/liquibase/main/config/DatabaseConfig.java,1\9\19bfc72515846024633c4ba3161e8a2ff0a0be74
 w
 Gorm-liquibase/src/main/java/com/liquibase/main/DemoDatabaseFactory.java,5\5\55b42d8122ac4b410ac8ab972d5550518bcb0279
+R
+"orm-liquibase/Liquibase ÊïôÁ®ã.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
+z
+Jorm-liquibase/src/main/java/spring/liquibase/main/LiquibaseProperties.java,4\7\471c08a620aa8ca718d0d0d5cff35cff395aeaab
+y
+Iorm-liquibase/src/main/java/spring/liquibase/main/Spring Liquibase ÈÖçÁΩÆ,c\0\c015f5b0a12da1534d2bab345cbd27cbe2f4b14a
+Ö
+Uorm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataTypeFactory.java,4\6\4639b98790907f234795c3f0e1d6b48ded601574
+{
+Korm-liquibase/src/main/java/com/liquibase/main/datatype/MyDateTimeType.java,e\7\e74b71e1160b8994d324f29d4e23233a7b1d08c9
+z
+Jorm-liquibase/src/main/java/com/liquibase/main/datatype/MyVarcharType.java,b\d\bd8bc3e04d314d87f93c71120bce2709aa0d0577
+~
+Norm-liquibase/src/main/java/com/liquibase/main/datatype/LiquibaseDataType.java,f\7\f72df2a48979850f92e004f2e270357d740a0eb1
+{
+Korm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseConnection.java,6\f\6f8a655e1261e97c7bb9512dac5990f9232fef23
+w
+Gorm-liquibase/src/main/java/com/liquibase/main/database/MyDatabase.java,9\5\95fcf2170a5dfb627d2f288fe0f0e914c06f247e
+z
+Jorm-liquibase/src/main/java/com/liquibase/main/logger/LiquibaseLogger.java,3\6\36dc242743b3c4941fca523adc6693771fe2a95e
+r
+Borm-liquibase/src/main/java/com/liquibase/main/changelog/Changelog,6\c\6c9468e0fd406775c481d7805d020b18ebe68b75
+z
+Jorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseChangelog.java,a\a\aaba9708cd735a2decf0a29eccb9e18cafbc2748
+V
+&orm-liquibase/Liquibase Global Options,1\7\17ad2b395531891dd8f83089ac453d478fd5b03e
+W
+'orm-liquibase/Liquibase Commands Script,9\d\9d691b559f75513ca531b87f14cdfb9c95f186dd
+c
+3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
+ö
+jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
+i
+9relational-database/sql-server/SQL Server Êåá‰ª§ÂÖ®ÈõÜ.md,d\5\d595a9c8e59604487e833cc9e80e15224bcdf486
+f
+6relational-database/sql-server/SQL Server ÈÖçÁΩÆÊìç‰Ωú,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
+Ñ
+Torm-liquibase/src/main/java/com/liquibase/main/changeset/checksum/Changeset Checksum,4\0\40bef954117b50b1b7dde48f6df0ac07b3b28916
+â
+Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
+â
+Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTruncate.java,7\2\72fe08acc539fc7acd97d8db5e0ed560560e775c
