@@ -1,4 +1,4 @@
-package com.liquibase.main;
+package com.liquibase.main.exception;
 
 import liquibase.Scope;
 import liquibase.database.Database;
@@ -12,20 +12,18 @@ import java.sql.DriverManager;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DemoLiquibaseConnection {
+public class DemoPostgresDatabaseConnectionException {
 
-    private static String mysqlConnectStr = "jdbc:mysql://localhost:3306/my_database?rewriteBatchedStatements=true";
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
-    private static String psqlUrl = "jdbc:postgresql://dell1451xxx:5432/tpk0002795_56979469";
-
+    
     public static void main(String[] args) throws Exception {
         Map<String, Object> config = new HashMap<>();
         // config.put("liquibase.pro.licenseKey", "YOUR_PRO_KEY");
         Scope.child(config, () -> {
             // 定义使用什么方式进行Connection连接
-            // Connection connection = DriverManager.getConnection(psqlConnectStr);
+            Connection connection = DriverManager.getConnection(psqlConnectStr);
             // Connection connection = DriverManager.getConnection(mysqlConnectStr, "root", "admin");
-            Connection connection = DriverManager.getConnection(psqlUrl, "postgres", "postgres");
+            // Connection connection = DriverManager.getConnection(psqlUrl, "postgres", "postgres");
             JdbcConnection jdbcConnection = new JdbcConnection(connection);
 
             // 根据DatabaseConnection连接来生成Database的具体实现类型
@@ -43,6 +41,7 @@ public class DemoLiquibaseConnection {
             } else if (database instanceof MySQLDatabase) {
                 System.out.println("Created MySql Database !");
             }
+
             // 这里底层会调用到connection.close()方法
             database.close();
         });

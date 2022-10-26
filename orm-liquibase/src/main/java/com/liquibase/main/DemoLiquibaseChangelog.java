@@ -16,13 +16,17 @@ import java.sql.SQLException;
 
 public class DemoLiquibaseChangelog {
 
+    private static String mysqlConnectStr = "jdbc:mysql://localhost:3306/my_database?rewriteBatchedStatements=true";
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
+    private static String psqlUrl = "jdbc:postgresql://dell1451xxx:5432/tpk0002795_56979469";
 
     public static void main(String[] args) throws DatabaseException, SQLException {
         Connection connection = DriverManager.getConnection(psqlConnectStr, "postgres", "postgres");
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
+    }
 
+    private static void fireLiquibaseChangelog(Database database) {
         String changelogFile = "/psql/changelog-test-checksum.xml";
         try (Liquibase liquibase = new liquibase.Liquibase(changelogFile, new ClassLoaderResourceAccessor(), database)) {
             // 删除changelog日志表中的md5sum验校字段
