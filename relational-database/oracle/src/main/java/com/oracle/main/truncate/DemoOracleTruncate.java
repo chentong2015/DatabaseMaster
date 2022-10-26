@@ -12,12 +12,9 @@ public class DemoOracleTruncate {
     public static void main(String[] args) throws SQLException {
         Connection connection = null;
         try {
-            String url = "jdbc:oracle:thin:@//dell719srv:1521/DELL719SRV";
+            String url = "jdbc:oracle:thin:@//xxx:1521/DELL719SRV";
             connection = DriverManager.getConnection(url, "DAS_CONV_TOOL", "DAS_CONV_TOOL");
-            connection.setAutoCommit(false);
-            testInsertToComments(connection);
-            connection.commit();
-            connection.setAutoCommit(true);
+
         } catch (Exception exception) {
             exception.printStackTrace();
         } finally {

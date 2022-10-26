@@ -334,8 +334,6 @@ porm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 �
 vorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/join/Customer.java,a\5\a52602cd9515b9ae970913445482d2933a06b8cc
 �
-rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Fetching配置,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
-�
 rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/many/Typology.java,8\7\87e8b52de354581f357bb876c105633269404daf
 �
 ~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumn/ManyToOne/Type.java,c\e\cef592364a5367f0e22bcfc066ace9c5ca07b225
@@ -398,8 +396,6 @@ c
 I
 orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 ~
-Ndatabase-orm-design/src/main/java/database/design/metadata/MetaDataHelper.java,5\2\522eae25c66431f94dbbd8de6e33c4804b847183
-~
 Ndatabase-orm-design/src/main/java/database/design/isolation/事务隔离级别,c\f\cfb0aa1f898b562db900760d2b5c37755aebdedb
 U
 %relational-database/hyper-sql/pom.xml,0\8\0833ec567e3de17623e300c4dcb130ea3b0cd2c7
@@ -419,8 +415,6 @@ s
 Crelational-database/mysql/src/main/java/batching/MySqlBatching.java,0\2\0203b05ef4736502d06a6ca868fe487aa458f9e9
 E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
-r
-Brelational-database/postgre-sql/src/main/java/DemoPostgresSql.java,6\2\62cfd35b0434f2d39fd204e02efa1be83cdf1bbb
 �
 gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMaster.java,5\0\50433e6bebf14c5565bf1c849ff87778134c39f3
 �
@@ -477,17 +471,15 @@ f
 Torm-liquibase/src/main/java/com/liquibase/main/changeset/checksum/Changeset Checksum,4\0\40bef954117b50b1b7dde48f6df0ac07b3b28916
 �
 Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
-�
-Vdatabase-orm-design/src/main/java/orm/middleware/design/conversion/tool/DB转换工具,9\4\94b1884ef5c3b0ac535afab37eceb32273ca30d1
 R
 "orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
 �
 Ydatabase-orm-design/src/main/java/orm/middleware/design/datamodel/CrossDatabaseModel.java,2\7\27739951ff510c60c52540b79f4c69c3398e265b
 �
 ]database-orm-design/src/main/java/orm/middleware/design/datamodel/AbstractJdbcConnection.java,7\4\74264abf67027980d99b468b80bf84a631f105d7
-�
-Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTruncate.java,7\2\72fe08acc539fc7acd97d8db5e0ed560560e775c
-[
-+relational-database/postgre-sql/PSQL 基础,4\c\4cc55c6c9b5cb4b5d72c08ed8e8458bd9e791fd9
-[
-+relational-database/postgre-sql/PSQL 连接,d\0\d0680b08dd19a94e5af56c713f50ce38580b164f
+X
+(relational-database/sybase/Sybase 基础,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
+�
+]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/basic/types/Hibernate BasicTypes,c\8\c830bd1ab4b87b76132b2b0c85538705dbae87bf
+w
+Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b

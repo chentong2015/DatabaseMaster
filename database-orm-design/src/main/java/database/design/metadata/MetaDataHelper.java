@@ -8,15 +8,29 @@ import java.sql.*;
 public class MetaDataHelper {
 
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
-    private static String psqlConnectStr2 = "jdbc:postgresql://dell719srv:5432/java_int_tests?user=java_int_tests&password=JAVA_INT_TESTS";
+
+    private static String psqlConnectStr2 = "jdbc:postgresql://xxx:5432/java_int_tests?user=java_int_tests&password=JAVA_INT_TESTS";
     private static String sqlServerConnectStr = "jdbc:sqlserver://driver_name:1433;databaseName=my_database;Trusted_Connection=true;user=test;password=TCHong16";
 
     public static void main(String[] args) {
         try (Connection connection = DriverManager.getConnection(psqlConnectStr)) {
-            dropTableIfExist(connection, "TEST_TABLE");
+            getColumnType(connection);
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
+    }
+
+    // TODO. 通过MetaData来获取表中列数据的指定类型: ColumnType = JDBC Types
+    public static void getColumnType(Connection connection) throws SQLException {
+        String query = "SELECT * from t_country where id = 1";
+        ResultSet resultSet = connection.createStatement().executeQuery(query);
+        resultSet.next();
+        System.out.println(resultSet.getInt(1));
+        System.out.println(resultSet.getString(3));
+
+        System.out.println(resultSet.getMetaData().getColumnType(1));
+        System.out.println(resultSet.getMetaData().getColumnType(3));
+        resultSet.close();
     }
 
     // schemaPattern a schema name pattern; must match the schema name
