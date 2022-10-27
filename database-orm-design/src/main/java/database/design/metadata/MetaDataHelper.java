@@ -30,6 +30,9 @@ public class MetaDataHelper {
 
         System.out.println(resultSet.getMetaData().getColumnType(1));
         System.out.println(resultSet.getMetaData().getColumnType(3));
+
+        // 获取VARCHAR的设置长度
+        System.out.println(resultSet.getMetaData().getColumnDisplaySize(3));
         resultSet.close();
     }
 

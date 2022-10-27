@@ -1,11 +1,6 @@
-> select @@version; 查询版本
-> select name from sysobjects where sysstat2 & 1024 = 1024 and type = "U" 查询Sybase中Proxy Table
-
-
 https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc00801.1510/html/iqrefso/X315712.htm
 https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc36272.1550/html/commands/X75308.htm
 https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc36272.1600/doc/html/jpl1396913930965.html
-
 
 Sybase Driver
 https://docs.oracle.com/cd/E13222_01/wls/docs103/jdbc_drivers/sybase.html

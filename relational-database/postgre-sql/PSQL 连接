@@ -2,9 +2,9 @@ http://www.postgres.cn/docs/13/index.html
 https://www.postgresql.org/docs/current/datatype.html    PSQL数据库支持的Data Types
 https://jdbc.postgresql.org/documentation/changelog.html PSQL版本变更记录
 
-PgAdmin Tool: admin
-PSQL Admin : postgres, admin
-PSQL User  : test, test
+PgAdmin Tool  : admin
+PSQL Admin    : postgres, admin
+PSQL User     : test, test 用于远程URL连接的用户
 Schema Default: public
 
 命令行连接Psql
