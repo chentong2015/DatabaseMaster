@@ -1,4 +1,4 @@
-package com.liquibase.main.database;
+package com.liquibase.main.factory.database;
 
 import liquibase.CatalogAndSchema;
 import liquibase.change.Change;

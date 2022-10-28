@@ -1,4 +1,4 @@
-package com.liquibase.main.datatype;
+package com.liquibase.main.factory.datatype;
 
 import liquibase.database.Database;
 import liquibase.database.core.MSSQLDatabase;

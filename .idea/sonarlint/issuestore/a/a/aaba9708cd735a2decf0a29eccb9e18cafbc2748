@@ -1,13 +1,0 @@
-
-W
-java:S1854"<Remove this useless assignment to local variable "database".(”™¯–ıÿÿÿÿ
-H
-java:S1481"-Remove this unused "database" local variable.(”™¯–ıÿÿÿÿ
-V	java:S125!"<This block of commented-out lines of code should be removed.(à¾“±øÿÿÿÿ
-V	java:S125$"<This block of commented-out lines of code should be removed.(à»Š³øÿÿÿÿ
-I
-java:S1068"3Remove this unused "mysqlConnectStr" private field.(…é
-A
-java:S1068"+Remove this unused "psqlUrl" private field.(òæ×Ê
-Q
-java:S1144";Remove this unused private "fireLiquibaseChangelog" method.(ê¼Ì­

@@ -485,25 +485,29 @@ Vdatabase-orm-design/src/main/java/orm/middleware/design/conversion/tool/DB转�
 Ndatabase-orm-design/src/main/java/database/design/metadata/MyDatabaseType.java,9\6\96fa425ad90a903e2c1a7f13b8e49bbddabdf559
 �
 eorm-liquibase/src/main/java/com/liquibase/main/exception/DemoPostgresDatabaseConnectionException.java,b\b\bb88ade0b6e7a4ed14ccb20918ca5256893d2f9f
-w
-Gorm-liquibase/src/main/java/com/liquibase/main/DemoDatabaseFactory.java,5\5\55b42d8122ac4b410ac8ab972d5550518bcb0279
-
-Orelational-database/postgre-sql/src/main/java/batching/PostgresSqlBatching.java,f\c\fc0a335f8d466ef0c75eb32b96f33de37e23d556
 c
 3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
 f
 6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 [
 +relational-database/postgre-sql/PSQL 连接,d\0\d0680b08dd19a94e5af56c713f50ce38580b164f
-r
-Brelational-database/postgre-sql/src/main/java/DemoPostgresSql.java,6\2\62cfd35b0434f2d39fd204e02efa1be83cdf1bbb
 R
 "orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
 ~
 Ndatabase-orm-design/src/main/java/database/design/metadata/MetaDataHelper.java,5\2\522eae25c66431f94dbbd8de6e33c4804b847183
-z
-Jorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseChangelog.java,a\a\aaba9708cd735a2decf0a29eccb9e18cafbc2748
 y
 Irelational-database/sybase/src/main/java/batching/DemoSybaseBatching.java,0\7\0791f42b05d8dfab2334232f2753ee377b792106
 �
 Yorm-liquibase/src/main/java/com/liquibase/main/lock/service/DemoLiquibaseLockService.java,5\5\55af83909626357a64e9605ad793073821401088
+X
+(relational-database/sybase/Sybase 基础,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
+X
+(relational-database/oracle/Oracle 测试,9\d\9d374e396964580f6acc98a4830d80a040e091d6
+�
+Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTruncate.java,7\2\72fe08acc539fc7acd97d8db5e0ed560560e775c
+X
+(relational-database/oracle/Oracle 基础,7\2\72ab19c47e22d347f965f8538be77813fd686018
+x
+Hrelational-database/sybase/src/main/java/truncate/DemoSybaseVarchar.java,7\f\7fe4968e2e932d7c517c506b3ea2c35dd7ebbeeb
+X
+(relational-database/sybase/Sybase 测试,f\7\f773e5337da6265a967f479820b4412d1c1a6749
