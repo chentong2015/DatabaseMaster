@@ -11,3 +11,14 @@
 
    3.3 主键索引 / 唯一索引(unique列)
    > Create unique index index_name on table_name(column_name ASC/DESC);
+
+4. SQL Server索引创建的参数
+CREATE NONCLUSTERED INDEX [index_page_table] ON [dbo].[t_page_index]([code] ASC)
+   WITH (PAD_INDEX = OFF,
+         STATISTICS_NORECOMPUTE = OFF,
+         SORT_IN_TEMPDB = OFF,
+         DROP_EXISTING = OFF,
+         ONLINE = OFF,
+         ALLOW_ROW_LOCKS = ON,
+         ALLOW_PAGE_LOCKS = OFF,
+         OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]

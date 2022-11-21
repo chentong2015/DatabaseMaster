@@ -34,7 +34,7 @@ public class DemoLiquibaseChangelog {
     }
 
     private static void fireChangelog(Database database, String changelogFilepath) {
-        try (Liquibase liquibase = new liquibase.Liquibase(changelogFilepath, new ClassLoaderResourceAccessor(), database)) {
+        try (Liquibase liquibase = new Liquibase(changelogFilepath, new ClassLoaderResourceAccessor(), database)) {
             // 删除changelog日志表中的md5sum验校字段
             // liquibase.clearCheckSums();
 
@@ -54,8 +54,7 @@ public class DemoLiquibaseChangelog {
             Connection connection = DriverManager.getConnection(connectString);
             // Connection connection = DriverManager.getConnection(mySqlConnectStr, "root", "admin");
             JdbcConnection jdbcConnection = new JdbcConnection(connection);
-            Liquibase liquibase = new Liquibase(null, null, jdbcConnection);
-            return liquibase.getDatabase();
+            return new Liquibase(null, null, jdbcConnection).getDatabase();
         } catch (SQLException e) {
             throw new SQLException("Error in connection properties." + e, e);
         }

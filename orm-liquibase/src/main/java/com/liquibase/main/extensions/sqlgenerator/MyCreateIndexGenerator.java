@@ -16,6 +16,12 @@ import java.util.List;
 
 public class MyCreateIndexGenerator extends CreateIndexGenerator {
 
+    // TODO. 必须要设置权限优先级，才能覆盖Liquibase原始API
+    @Override
+    public int getPriority() {
+        return PRIORITY_DATABASE;
+    }
+
     @Override
     public Sql[] generateSql(CreateIndexStatement statement, Database database, SqlGeneratorChain sqlGeneratorChain) {
         List associatedWith;
