@@ -1,4 +1,4 @@
-package storage.engine;
+package storage.engine.design.InnoDB;
 
 // InnoDB底层架构的设计, 三种链表
 // free链表

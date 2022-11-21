@@ -11,7 +11,7 @@ public class DemoSqlServerBatching {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             String url = "jdbc:sqlserver://xxx:1433;Database=test_db;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
-            Connection connection = DriverManager.getConnection(url, "test", "TCHong17");
+            Connection connection = DriverManager.getConnection(url, "test", "TCHong18");
             connection.setAutoCommit(false);
             testPrepareStatementDelete(connection);
             connection.commit();

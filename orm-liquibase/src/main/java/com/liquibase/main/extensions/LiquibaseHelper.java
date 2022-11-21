@@ -1,8 +1,8 @@
-package com.liquibase.main.factory;
+package com.liquibase.main.extensions;
 
-import com.liquibase.main.factory.database.MyDatabase;
-import com.liquibase.main.factory.datatype.MyDateTimeType;
-import com.liquibase.main.factory.sqlgenerator.MyCreateIndexGenerator;
+import com.liquibase.main.extensions.database.MyDatabase;
+import com.liquibase.main.extensions.datatype.MyDateTimeType;
+import com.liquibase.main.extensions.sqlgenerator.MyCreateIndexGenerator;
 import liquibase.database.DatabaseFactory;
 import liquibase.datatype.DataTypeFactory;
 import liquibase.sqlgenerator.SqlGeneratorFactory;

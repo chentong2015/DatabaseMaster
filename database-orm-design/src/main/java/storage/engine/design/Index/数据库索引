@@ -1,0 +1,13 @@
+1. 索引是什么：帮助数据库高效获取数据的"排好序的数据结构"
+2. 索引的利弊：高效搜索 & 空间和资源
+3. 索引的类型
+   3.1 聚集索引(聚簇索引)?
+       叶子结点包含完整的数据结构; 索引的数据和表中存储的实际数据放在一起(physically sorted in a database table)
+   > CREATE CLUSTERED index index_name on table_name(column_name ASC/DESC);
+
+   3.2 非聚集索引(非聚簇索引, 稀疏索引)?
+       叶子结点存储的是树对应的磁盘文件地址，Index和data是分开在两个文件中
+   > CREATE NONCLUSTERED INDEX index_name ON table_name(column_name ASC/DESC);
+
+   3.3 主键索引 / 唯一索引(unique列)
+   > Create unique index index_name on table_name(column_name ASC/DESC);

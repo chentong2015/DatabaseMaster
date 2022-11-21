@@ -1,4 +1,4 @@
-package com.liquibase.main.factory.sqlgenerator;
+package com.liquibase.main.extensions.sqlgenerator;
 
 import liquibase.sqlgenerator.core.CreateTableGenerator;
 

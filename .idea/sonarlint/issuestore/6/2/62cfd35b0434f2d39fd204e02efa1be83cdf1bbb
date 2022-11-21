@@ -1,0 +1,11 @@
+
+0
+java:S1220""Move this file to a named package.
+]
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(«˜¾_
+O
+java:S1135"2Complete the task associated to this TODO comment.(ğÆçË8Œ¸È»0
+“
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(š˜»i8Ê¢Î›Á0
+]	java:S125	"<This block of commented-out lines of code should be removed.(íÂŸñøÿÿÿÿ8Ğ¹Ù›Á0
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÙñÆ

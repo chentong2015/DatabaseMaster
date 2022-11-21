@@ -1,4 +1,4 @@
-package com.liquibase.main.factory.datatype;
+package com.liquibase.main.extensions.datatype;
 
 import liquibase.datatype.DataTypeFactory;
 
