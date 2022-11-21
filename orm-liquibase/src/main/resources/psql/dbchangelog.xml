@@ -15,8 +15,7 @@
             <column name="twitter" type="VARCHAR(15)"/>
         </createTable>
 
-        <!-- 直接配置要执行的SQL或者提供.sql脚本
-             <sql>SELECT * FROM t_person;</sql>
-             <sqlFile path="dbFunctions.sql"/> -->
+        <!-- <sql>SELECT * FROM t_person</sql> 直接自定义要执行的SQL
+           <sqlFile path="dbFunctions.sql"/> 提供.sql脚本 -->
     </changeSet>
 </databaseChangeLog>

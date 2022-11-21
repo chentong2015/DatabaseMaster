@@ -433,12 +433,8 @@ z
 Jorm-liquibase/src/main/java/spring/liquibase/main/LiquibaseProperties.java,4\7\471c08a620aa8ca718d0d0d5cff35cff395aeaab
 y
 Iorm-liquibase/src/main/java/spring/liquibase/main/Spring Liquibase 配置,c\0\c015f5b0a12da1534d2bab345cbd27cbe2f4b14a
-z
-Jorm-liquibase/src/main/java/com/liquibase/main/logger/LiquibaseLogger.java,3\6\36dc242743b3c4941fca523adc6693771fe2a95e
 r
 Borm-liquibase/src/main/java/com/liquibase/main/changelog/Changelog,6\c\6c9468e0fd406775c481d7805d020b18ebe68b75
-V
-&orm-liquibase/Liquibase Global Options,1\7\17ad2b395531891dd8f83089ac453d478fd5b03e
 W
 'orm-liquibase/Liquibase Commands Script,9\d\9d691b559f75513ca531b87f14cdfb9c95f186dd
 �
@@ -477,14 +473,10 @@ f
 6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 [
 +relational-database/postgre-sql/PSQL 连接,d\0\d0680b08dd19a94e5af56c713f50ce38580b164f
-R
-"orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
 ~
 Ndatabase-orm-design/src/main/java/database/design/metadata/MetaDataHelper.java,5\2\522eae25c66431f94dbbd8de6e33c4804b847183
 y
 Irelational-database/sybase/src/main/java/batching/DemoSybaseBatching.java,0\7\0791f42b05d8dfab2334232f2753ee377b792106
-�
-Yorm-liquibase/src/main/java/com/liquibase/main/lock/service/DemoLiquibaseLockService.java,5\5\55af83909626357a64e9605ad793073821401088
 X
 (relational-database/sybase/Sybase 基础,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
 X
