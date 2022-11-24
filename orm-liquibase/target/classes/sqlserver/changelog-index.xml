@@ -4,8 +4,8 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
 
     <!-- Liquibase如何生成index的执行语句 ? -->
-    <changeSet id="10" author="tchen">
-        <createIndex tableName="t_test_index" indexName="my_index_10" schemaName="dbo">
+    <changeSet id="103" author="tchen">
+        <createIndex tableName="t_test_index" indexName="my_index_103" schemaName="dbo">
             <column name="code"/>
         </createIndex>
     </changeSet>
