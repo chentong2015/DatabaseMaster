@@ -2,16 +2,11 @@
 > \dt              shows all tables in the current schema
 
 > select version() Psql版本查询(区别别的DB)
-
 > SELECT * FROM public.t_citizen t where trim(t.language) LIKE '%.US' 对字段使用function再模糊查询(like匹配区分大小写)
 
 > DROP SCHEMA [ IF EXISTS ] nom [, ...] [ CASCADE | RESTRICT ] 删除指定Schema
-
 > select * from pg_stat_activity; PSQL状态活动记录表
 > SELECT pid, age(clock_timestamp(), query_start), usename, state, query FROM pg_stat_activity where state<>'idle';
-
 > SELECT * FROM pg_locks;
-
 > SELECT * FROM pg_views;
-
 > SELECT * FROM pg_catalog.pg_tables;   The system tables live in the pg_catalog database.
