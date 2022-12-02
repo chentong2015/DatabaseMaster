@@ -3,7 +3,7 @@ Cascade
 1. 在数据库中存储数据时，连带着相关联的数据(外键指向)都一起存储
 2. 在数据库中删除数据时，连带者相关联的数据(外键指向)都一起删除 => 不建议使用
 
-反转维护关系
+TODO: 双向关联的维护关系
 - 始终由Many-端维护关系效率高，One-方维护效率低(需要额外的update操作)
 - Every bidirectional association must have one owning side only (the child side)
   the other one being referred to as the inverse (or the mappedBy) side.

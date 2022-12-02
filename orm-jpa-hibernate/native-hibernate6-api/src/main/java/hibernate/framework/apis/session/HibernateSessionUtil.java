@@ -34,6 +34,7 @@ public class HibernateSessionUtil {
             if (sessionFactory == null) {
                 initSessionFactory();
             }
+            // 再次判断创建出来的sessionFactory是否为空
             session = (sessionFactory == null) ? null : sessionFactory.openSession();
             threadLocalSession.set(session);
         }

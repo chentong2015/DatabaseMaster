@@ -1,0 +1,19 @@
+
+Q	java:S125("<This block of commented-out lines of code should be removed.(ô¹ŞÉ
+G
+java:S1874)",Remove this use of "save"; it is deprecated.(š§äƒıÿÿÿÿ
+G
+java:S11354"2Complete the task associated to this TODO comment.(¼üëW
+N	java:S106C"9Replace this use of System.out or System.err by a logger.(äüÃâ
+K
+java:S1481L"0Remove this unused "rowAffected" local variable.(½öÉıÿÿÿÿ
+K
+java:S1481Y"0Remove this unused "rowAffected" local variable.(×ÄªĞûÿÿÿÿ
+G
+java:S11446"2Remove this unused private "testGetObject" method.(·ñ×(
+C
+java:S1144?"-Remove this unused private "getBooks" method.(Ğ¬Äµ
+O
+java:S1144H"4Remove this unused private "testUpdateQuery" method.(òÍÌ†øÿÿÿÿ
+O
+java:S1144U"4Remove this unused private "testDeleteQuery" method.(ŞµšÜúÿÿÿÿ

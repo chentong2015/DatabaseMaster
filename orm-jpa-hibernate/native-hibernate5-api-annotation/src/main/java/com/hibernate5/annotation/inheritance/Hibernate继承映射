@@ -1,4 +1,5 @@
 https://www.baeldung.com/hibernate-inheritance
+https://docs.jboss.org/hibernate/orm/3.5/reference/en/html/inheritance.html
 
 1. SINGLE_TABLE:
    The records for all entities will be in the same table 需要discriminator来区分不同类型

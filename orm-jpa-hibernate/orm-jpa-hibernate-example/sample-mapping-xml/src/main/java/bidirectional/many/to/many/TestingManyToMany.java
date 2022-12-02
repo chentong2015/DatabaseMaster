@@ -33,6 +33,7 @@ public class TestingManyToMany {
         employee1.setProjects(projectSet);
         employee2.setProjects(projectSet);
         employee3.setProjects(projectSet);
+        
         project1.setEmployees(employeeSet);
         project2.setEmployees(employeeSet);
 
