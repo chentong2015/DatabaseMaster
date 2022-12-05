@@ -1,0 +1,7 @@
+
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(„ªÕà
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(ßò¤Í
+P
+java:S11440":Remove this unused private "getEmployeesByProject" method.(ÄûÞà
+P
+java:S11448":Remove this unused private "getProjectsByEmployee" method.(—ü÷È

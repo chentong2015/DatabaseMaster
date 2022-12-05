@@ -28,8 +28,11 @@ public class MetaDataHelper {
         System.out.println(resultSet.getInt(1));
         System.out.println(resultSet.getString(3));
 
-        System.out.println(resultSet.getMetaData().getColumnType(1));
-        System.out.println(resultSet.getMetaData().getColumnType(3));
+        int columnType = resultSet.getMetaData().getColumnType(1);
+        String tableName = resultSet.getMetaData().getTableName(1);
+        String columnName = resultSet.getMetaData().getColumnName(3);
+        System.out.println(tableName);
+        System.out.println(columnName);
 
         // 获取VARCHAR的设置长度
         System.out.println(resultSet.getMetaData().getColumnDisplaySize(3));
