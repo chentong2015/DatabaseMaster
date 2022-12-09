@@ -6,7 +6,7 @@ import org.hibernate.Transaction;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import statistics.HibernateStatistics;
+import caching.HibernateStatistics;
 
 public class DemoSecondLevelCache {
 

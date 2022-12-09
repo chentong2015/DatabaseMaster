@@ -32,7 +32,7 @@ public class JpaEntityManagerQueries {
         entityManager.createQuery(deleteQuery).setParameter("name", "test").executeUpdate();
         entityManager.getTransaction().commit();
     }
-
+ 
     // TODO. 使用CriteriaQuery.createQuery(Sample.class)来创建条件查询和Entity Name没有关系 !!
     private static void testCriteriaQuery() {
         EntityManager entityManager = EntityManagerHandler.getEntityManager();

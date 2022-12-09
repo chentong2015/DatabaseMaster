@@ -1,4 +1,4 @@
-package statistics;
+package caching;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.stat.Statistics;

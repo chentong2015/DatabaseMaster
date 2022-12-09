@@ -1,5 +1,5 @@
-> select @@version; 查询版本
-> select name from sysobjects where sysstat2 & 1024 = 1024 and type = "U" 查询Sybase中Proxy Table
+> select @@version;
+> select name from sysobjects where sysstat2 & 1024 = 1024 and type = "U"  查询Sybase中Proxy Table
 
 TODO. Sybase会自动做truncate截断存储字符串末尾的空格 -> Oracle截断存储
 > create table t_text (
@@ -8,21 +8,23 @@ TODO. Sybase会自动做truncate截断存储字符串末尾的空格 -> Oracle�
   )
 > insert into t_text (code, name) values (1, 'aaéa ')
 > insert into t_text (code, name) values (2, 'aaéaè')
+> select *, HASH(RTRIM(name),'SHA1') AS name_SHA1 FROM t_text  使用Sybase提供的Hash加密函数
+  返回name_SHA1列的值可以作为checksum验校码进行数据的验证
 
 > create table t_comment (
      code INT,
      name char(5),
      label varchar(10)
   )
-> insert into t_comment (code, name, label) values (1, 'aaéa ', 'test test')   -> (1, 'aéaa', 'test test')
-> insert into t_comment (code, name, label) values (2, 'aaba ', 'test test')   -> (8, 'abaa ', 'test test') no truncate
-> insert into t_comment (code, name, label) values (3, 'aaaaé', 'bbbb bbbb')   -> (2, 'aaaa', 'bbbb bbbb')
-> insert into t_comment (code, name, label) values (4, 'aaaa ', 'abcdefghté')  -> (3, 'aaaa ', 'abcdefght')
-> insert into t_comment (code, name, label) values (5, 'bbbbb', 'aébcdefght')  -> (4, 'bbbbb', 'aébcdefgh')
-> insert into t_comment (code, name, label) values (6, 'ccccc', 'aébcdefghé')  -> (5, 'ccccc', 'aébcdefgh')
-> insert into t_comment (code, name, label) values (7, 'ccccc', 'aébcdefgh')   -> (6, 'ccccc', 'aébcdefgh')
-> insert into t_comment (code, name, label) values (8, 'ccccé', 'aébcdefgho')  -> (7, 'cccc', 'aébcdefgh')
-> insert into t_comment (code, name, label) values (9, 'été  ', 'test test')   -> (10, 'été', 'test test ') not report
+> insert into t_comment (code, name, label) values (1, 'aaéa ', 'test test')
+> insert into t_comment (code, name, label) values (2, 'aaba ', 'test test')
+> insert into t_comment (code, name, label) values (3, 'aaaaé', 'bbbb bbbb')
+> insert into t_comment (code, name, label) values (4, 'aaaa ', 'abcdefghté')
+> insert into t_comment (code, name, label) values (5, 'bbbbb', 'aébcdefght')
+> insert into t_comment (code, name, label) values (6, 'ccccc', 'aébcdefghé')
+> insert into t_comment (code, name, label) values (7, 'ccccc', 'aébcdefgh')
+> insert into t_comment (code, name, label) values (8, 'ccccé', 'aébcdefgho')
+> insert into t_comment (code, name, label) values (9, 'été  ', 'test test')
 
 > create table t_context (
      code INT,

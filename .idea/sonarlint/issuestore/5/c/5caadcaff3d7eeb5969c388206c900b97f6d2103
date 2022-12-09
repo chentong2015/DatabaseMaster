@@ -1,40 +1,0 @@
-
-^
-java:S1192"HDefine a constant instead of duplicating this literal ", City:" 3 times.(ÆÔÉš
-\
-java:S1192"FDefine a constant instead of duplicating this literal "Name:" 5 times.(ÆÔÉš
-P
-java:S1118":Add a private constructor to hide the implicit public one.(¿è×®
-7
-java:S2129"!Remove this "Integer" constructor(ÙÇ¤
-E
-java:S1874"/Remove this use of "Integer"; it is deprecated.(ÙÇ¤
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ÆÔÉš
-M	java:S106"9Replace this use of System.out or System.err by a logger.(Çğõ"
-S	java:S106"9Replace this use of System.out or System.err by a logger.(É‰âˆşÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ğ¬ó€
-M	java:S106"9Replace this use of System.out or System.err by a logger.(”ÄËH
-N	java:S106""9Replace this use of System.out or System.err by a logger.(°±ø„
-7
-java:S2129*"!Remove this "Integer" constructor(ÙÇ¤
-E
-java:S1874*"/Remove this use of "Integer"; it is deprecated.(ÙÇ¤
-N	java:S106+"9Replace this use of System.out or System.err by a logger.(ßÉÖÌ
-M	java:S106,"9Replace this use of System.out or System.err by a logger.(”ÄËH
-N	java:S106/"9Replace this use of System.out or System.err by a logger.(°±ø„
-S	java:S1066"9Replace this use of System.out or System.err by a logger.(¤§’Öÿÿÿÿÿ
-N	java:S1067"9Replace this use of System.out or System.err by a logger.(ßÉÖÌ
-7
-java:S2129>"!Remove this "Integer" constructor(ÙÇ¤
-E
-java:S1874>"/Remove this use of "Integer"; it is deprecated.(ÙÇ¤
-7
-java:S2129I"!Remove this "Integer" constructor(ÙÇ¤
-E
-java:S1874I"/Remove this use of "Integer"; it is deprecated.(ÙÇ¤
-N	java:S106J"9Replace this use of System.out or System.err by a logger.(ÆÔÉš
-7
-java:S2129P"!Remove this "Integer" constructor(€Ëùâ
-E
-java:S1874P"/Remove this use of "Integer"; it is deprecated.(€Ëùâ
-N	java:S106S"9Replace this use of System.out or System.err by a logger.(ÆÔÉš

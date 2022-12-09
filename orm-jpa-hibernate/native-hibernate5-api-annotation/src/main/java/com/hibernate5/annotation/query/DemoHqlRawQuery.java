@@ -10,7 +10,7 @@ import java.util.Optional;
 
 // HQL: hibernate query language 类似sql的简化查询语言
 // 必须满足特定的语句描述规则, 主要看查询时使用的JPA Entity Name名称
-public class HqlRawQuery {
+public class DemoHqlRawQuery {
 
     // TODO. 测试复杂的HQL查询语句的构造
     // 1. .createQuery(query, String.class)   提供的是查询返回的结果类型 The type of the query result
@@ -18,17 +18,17 @@ public class HqlRawQuery {
     //    执行更新和修改的语句时，需要使用transaction事务
     public static void testHqlSelectQuery(Session session) {
         // 表示选择指定的table的所有字段
-        String hqlQuery = "From " + Person.class.getName();
-        Query<Person> query = session.createQuery(hqlQuery, Person.class);
+        String selectQuery = "From " + Person.class.getName();
+        Query<Person> query = session.createQuery(selectQuery, Person.class);
         List<Person> personList = query.getResultList();
         for (Person person : personList) {
             System.out.println(person);
         }
     }
-    
+
     public static void testHqlSelectQueryWhere(Session session) {
-        String hqlQuery1 = "Select p.firstname FROM " + Person.class.getName() + " p where p.id = :id";
-        Optional<String> result = session.createQuery(hqlQuery1, String.class)
+        String selectQuery1 = "Select p.firstname FROM " + Person.class.getName() + " p where p.id = :id";
+        Optional<String> result = session.createQuery(selectQuery1, String.class)
                 .setParameter("id", 4)
                 .stream()
                 .findFirst();
@@ -38,10 +38,15 @@ public class HqlRawQuery {
     }
 
     // 对于执行update修改的操作，必须通过事务来执行
+    public static void testHqlUpdate(Session session) {
+        String updateQuery = "update " + Person.class.getName() + "set name = 'new name' where id=2";
+        session.createQuery(updateQuery).executeUpdate();
+    }
+
     public static void testHqlDeleteQuery(Session session) {
         session.beginTransaction();
-        String hqlQuery2 = "Delete from " + Person.class.getName() + " p where p.id = 3";
-        session.createQuery(hqlQuery2).executeUpdate();
+        String deleteQuery = "Delete from " + Person.class.getName() + " p where p.id = 3";
+        session.createQuery(deleteQuery).executeUpdate();
         session.getTransaction().commit();
     }
 

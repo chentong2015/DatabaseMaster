@@ -12,11 +12,11 @@ import java.util.Optional;
 // SQL语法异常: org.hibernate.exception.SQLGrammarException
 // session.createNativeQuery(sqlQuery)
 // session.createSQLQuery(sqlQuery)
-public class SqlRawQuery {
+public class DemoSqlNativeQuery {
 
     private final String sqlQuery;
 
-    public SqlRawQuery(String sqlQuery) {
+    public DemoSqlNativeQuery(String sqlQuery) {
         this.sqlQuery = sqlQuery;
     }
 
@@ -41,7 +41,7 @@ public class SqlRawQuery {
         for (String firstname : firstnameList) {
             System.out.println(firstname);
         }
-        
+
         String sqlQuery = "Select p.firstname from t_person p where p.id=:id";
         Optional firstname = session.createSQLQuery(sqlQuery)
                 .setParameter("id", 4)
