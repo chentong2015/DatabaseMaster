@@ -19,7 +19,7 @@ public class Customer {
     private String name;
 
     @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "customer_id")
+    @JoinColumn(name = "customer_id") // 这里join列会增加到Order对应的表中
     @Fetch(value = FetchMode.SELECT)
     private Set<Order> orders = new HashSet<>();
 

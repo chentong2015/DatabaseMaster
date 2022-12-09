@@ -1,16 +1,33 @@
 > select @@version; 查询版本
 > select name from sysobjects where sysstat2 & 1024 = 1024 and type = "U" 查询Sybase中Proxy Table
 
+TODO. Sybase会自动做truncate截断存储字符串末尾的空格 -> Oracle截断存储
+> create table t_text (
+     code INT,
+     name char(5)
+  )
+> insert into t_text (code, name) values (1, 'aaéa ')
+> insert into t_text (code, name) values (2, 'aaéaè')
+
 > create table t_comment (
      code INT,
-     des char(5),
-     test varchar(10)
+     name char(5),
+     label varchar(10)
   )
+> insert into t_comment (code, name, label) values (1, 'aaéa ', 'test test')   -> (1, 'aéaa', 'test test')
+> insert into t_comment (code, name, label) values (2, 'aaba ', 'test test')   -> (8, 'abaa ', 'test test') no truncate
+> insert into t_comment (code, name, label) values (3, 'aaaaé', 'bbbb bbbb')   -> (2, 'aaaa', 'bbbb bbbb')
+> insert into t_comment (code, name, label) values (4, 'aaaa ', 'abcdefghté')  -> (3, 'aaaa ', 'abcdefght')
+> insert into t_comment (code, name, label) values (5, 'bbbbb', 'aébcdefght')  -> (4, 'bbbbb', 'aébcdefgh')
+> insert into t_comment (code, name, label) values (6, 'ccccc', 'aébcdefghé')  -> (5, 'ccccc', 'aébcdefgh')
+> insert into t_comment (code, name, label) values (7, 'ccccc', 'aébcdefgh')   -> (6, 'ccccc', 'aébcdefgh')
+> insert into t_comment (code, name, label) values (8, 'ccccé', 'aébcdefgho')  -> (7, 'cccc', 'aébcdefgh')
+> insert into t_comment (code, name, label) values (9, 'été  ', 'test test')   -> (10, 'été', 'test test ') not report
 
-TODO. 插入char或者varchar长度过长，Sybase会自动做truncate截断
-> insert into t_comment (code, des, test) values (1, 'aaaaa', 'test test ')  -> (1, 'aaaaa', 'test test ')
-> insert into t_comment (code, des, test) values (2, 'aaaaé', 'bbbb bbbb ')  -> (2, 'aaaa', 'bbbb bbbb ')
-> insert into t_comment (code, des, test) values (3, 'bbbbb', 'abcdefghté')  -> (3, 'bbbbb', 'abcdefght')
-> insert into t_comment (code, des, test) values (4, 'bbbbb', 'aébcdefght')  -> (4, 'bbbbb', 'aébcdefgh')
-> insert into t_comment (code, des, test) values (5, 'ccccc', 'aébcdefghé')  -> (5, 'ccccc', 'aébcdefg')
-> insert into t_test (code, test) values (1, ' ARG du 30/12/02 Ref Thémis S-00151-2003 supprimé ')
+> create table t_context (
+     code INT,
+     context varchar(10),
+     des VARCHAR(50)
+  )
+> insert into t_context (code, context, des) values (1, 'aaaaa bbéé', ' ARG du 30/12/02 Ref Thémis S-00151-2003 suppriméo')
+

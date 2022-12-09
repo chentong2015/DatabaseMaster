@@ -1,0 +1,29 @@
+
+]
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(İ÷©ä
+^
+java:S2095F"HUse try-with-resources or close this "Connection" in a "finally" clause.(÷¦–Õ
+M
+java:S1135"2Complete the task associated to this TODO comment.(—¿“øùÿÿÿÿ
+T
+java:S1854">Remove this useless assignment to local variable "columnType".(ğÂğ
+H
+java:S1135"2Complete the task associated to this TODO comment.(÷Ù×…
+N	java:S106"9Replace this use of System.out or System.err by a logger.(üİ°ç
+N	java:S106"9Replace this use of System.out or System.err by a logger.(è±‡•
+E
+java:S1481"/Remove this unused "columnType" local variable.(ğÂğ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(Î×İÊùÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(”ëñ‡ıÿÿÿÿ
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(öÅ´è8•È¶ÂÎ0
+M
+java:S11352"2Complete the task associated to this TODO comment.(ˆõ†«üÿÿÿÿ
+H
+java:S11357"2Complete the task associated to this TODO comment.(Íª¸
+Z	java:S106;"9Replace this use of System.out or System.err by a logger.(Ğ¬ÏÙıÿÿÿÿ8ùúÃÎ0
+Q	java:S125:"<This block of commented-out lines of code should be removed.(ı÷•‰
+U	java:S106="9Replace this use of System.out or System.err by a logger.(ì¢õ­8ùúÃÎ0
+N
+java:S1068"3Remove this unused "psqlConnectStr2" private field.(‘ßæØøÿÿÿÿ
+P
+java:S1144."5Remove this unused private "dropTableIfExist" method.(‡®èÏÿÿÿÿÿ

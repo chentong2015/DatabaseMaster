@@ -41,7 +41,7 @@ public class SqlRawQuery {
         for (String firstname : firstnameList) {
             System.out.println(firstname);
         }
-
+        
         String sqlQuery = "Select p.firstname from t_person p where p.id=:id";
         Optional firstname = session.createSQLQuery(sqlQuery)
                 .setParameter("id", 4)
