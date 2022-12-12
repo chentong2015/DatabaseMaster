@@ -9,7 +9,7 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 // Hibernate Session的正确使用方式
-public class DemoHibernateSession {
+public class HibernateSessionTemplate {
 
     final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
     final SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
