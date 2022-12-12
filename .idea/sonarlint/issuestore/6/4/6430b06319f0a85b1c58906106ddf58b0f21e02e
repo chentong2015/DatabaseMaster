@@ -1,12 +1,0 @@
-
-U
-java:S1118":Add a private constructor to hide the implicit public one.(Â¶Ü÷ùÿÿÿÿ
-]	java:S125"<This block of commented-out lines of code should be removed.(¤¥ÓÐûÿÿÿÿ8ÿéÿÐ®0
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ìõÁŠþÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(íÛÎ²ûÿÿÿÿ
-N	java:S106 "9Replace this use of System.out or System.err by a logger.(‘Ù©Ó
-X	java:S125"<This block of commented-out lines of code should be removed.(… ¬8Â ‚Ñ®0
-M	java:S106!"9Replace this use of System.out or System.err by a logger.(Õ‘é?
-T	java:S106""9Replace this use of System.out or System.err by a logger.(ïðãS8’¼Ð®0
-Z	java:S106#"9Replace this use of System.out or System.err by a logger.(óØ’ôúÿÿÿÿ8À¦€Ñ®0
-Z	java:S106$"9Replace this use of System.out or System.err by a logger.(ú¿‡Óúÿÿÿÿ8À¦€Ñ®0

@@ -1,0 +1,26 @@
+https://docs.jboss.org/hibernate/orm/
+https://github.com/hibernate/hibernate-orm/wiki/Migration-Guides
+https://docs.jboss.org/hibernate/orm/6.0/javadocs/deprecated-list.html
+
+TODO. Hibernate(JPA Implementation) 一种JPA标准的实现
+1. Mapping from Java classes to database tables(from Java data types to SQL data types)
+   将关系型数据库中的行数据映射成一个对象("数据表行" <--> "实体类Entity")
+2. Hibernate功能完善，Provides data query and retrieval facilities
+3. Hibernate .hbm.xml文件可以作为C++ Class类型映射的文件
+
+TODO. Native Hibernate API两个映射的配置方式
+1. hbm.xml mapping 该种方式是比较旧的方式
+   - 优点是能够保证POJO的整洁
+   - 缺少是将Java Class和映射分开，需要同时维护两个文件，随着项目的增加，hbm.xml文件会非常大
+2. Annotations 推荐使用新的方式
+   - 只在一个文件配置映射实体和关系，减少hbm映射文件，便于维护
+   - 能够在编译时检查错误
+   - 兼容Spring Data JPA(包含Hibernate依赖)，注解一致性
+
+TODO. Hibernate(ORM层框架)在优化性能方面做了哪些配置或设计 ?
+ - Caching  使用二级缓存
+ - Bathing  减少网络请求
+ - Fetching 控制fetch数据的量
+ - Flushing 刷新同步Context和DB的数据
+ - Locking  保证事务的有效性
+ - Inverse  关联关系的维护端，减少Update语句的执行

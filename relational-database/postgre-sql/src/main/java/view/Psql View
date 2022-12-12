@@ -1,0 +1,13 @@
+> SELECT * FROM pg_views;
+
+> 查找指定的视图是否存在，判断结果是否唯一
+viewExistsStmt = connection.prepareStatement("select 1 from pg_views where viewowner != 'postgres' and viewname=?")) {
+viewExistsStmt.setString(1, key);
+try(final ResultSet resultSet = viewExistsStmt.executeQuery()) {
+    if (resultSet.next()) {
+        return resultSet.getInt(1) == 1;
+    }
+}
+
+> 创建指定名称的view视图，A SELECT or VALUES command which will provide the columns and rows of the view.
+  Create view view_name AS view_query

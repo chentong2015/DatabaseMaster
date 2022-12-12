@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-// spring data jpa
 @Entity
 @Table(name = "t_entity_sample")
 public class BaseEntity {

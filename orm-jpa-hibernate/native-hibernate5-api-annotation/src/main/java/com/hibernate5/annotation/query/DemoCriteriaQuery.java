@@ -11,6 +11,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
+// TODO... 使用CriteriaQuery来写一个相对复杂一点的查询语句
 public class DemoCriteriaQuery {
 
     // 完整的对应到SQL原生查询语句的条件
