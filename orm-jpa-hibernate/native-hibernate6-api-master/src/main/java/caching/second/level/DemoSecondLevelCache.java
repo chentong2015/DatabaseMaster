@@ -1,15 +1,65 @@
 package caching.second.level;
 
+import caching.HibernateStatistics;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import caching.HibernateStatistics;
 
 public class DemoSecondLevelCache {
 
+    // Stats enabled = true
+    // Hibernate:
+    //     select
+    //         s1_0.id,
+    //         s1_0.name,
+    //         s1_0.salary
+    //     from
+    //         t_cache_second_entity s1_0
+    //     where
+    //         s1_0.id=?
+    //
+    // ***** 1 *****
+    // Load Count = 1
+    // Second Level Hit Count = 0
+    // Second Level Miss Count = 1
+    // Second Level Put Count = 1
+    //
+    // ***** 2 *****
+    // Load Count = 1
+    // Second Level Hit Count = 0
+    // Second Level Miss Count = 1
+    // Second Level Put Count = 1
+    //
+    // ***** 3 *****
+    // Load Count = 1
+    // Second Level Hit Count = 1
+    // Second Level Miss Count = 1
+    // Second Level Put Count = 1
+    //
+    // Hibernate:
+    //     select
+    //         s1_0.id,
+    //         s1_0.name,
+    //         s1_0.salary
+    //     from
+    //         t_cache_second_entity s1_0
+    //     where
+    //         s1_0.id=?
+    //
+    // ***** 4 *****
+    // Load Count = 1
+    // Second Level Hit Count = 1
+    // Second Level Miss Count = 2
+    // Second Level Put Count = 1
+    //
+    // ***** 5 *****
+    // Load Count = 1
+    // Second Level Hit Count = 2
+    // Second Level Miss Count = 2
+    // Second Level Put Count = 1
     public static void main(String[] args) {
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
         SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
@@ -50,58 +100,6 @@ public class DemoSecondLevelCache {
         otherTransaction.commit();
         sessionFactory.close();
     }
-
-    // Stats enabled = true
-    // Hibernate: 
-    //     select
-    //         s1_0.id,
-    //         s1_0.name,
-    //         s1_0.salary 
-    //     from
-    //         t_cache_second_entity s1_0 
-    //     where
-    //         s1_0.id=?
-    // 
-    // ***** 1 *****
-    // Load Count = 1
-    // Second Level Hit Count = 0
-    // Second Level Miss Count = 1
-    // Second Level Put Count = 1
-    // 
-    // ***** 2 *****
-    // Load Count = 1
-    // Second Level Hit Count = 0
-    // Second Level Miss Count = 1
-    // Second Level Put Count = 1
-    // 
-    // ***** 3 *****
-    // Load Count = 1
-    // Second Level Hit Count = 1
-    // Second Level Miss Count = 1
-    // Second Level Put Count = 1
-    // 
-    // Hibernate: 
-    //     select
-    //         s1_0.id,
-    //         s1_0.name,
-    //         s1_0.salary 
-    //     from
-    //         t_cache_second_entity s1_0 
-    //     where
-    //         s1_0.id=?
-    //
-    // ***** 4 *****
-    // Load Count = 1
-    // Second Level Hit Count = 1
-    // Second Level Miss Count = 2
-    // Second Level Put Count = 1
-    // 
-    // ***** 5 *****
-    // Load Count = 1
-    // Second Level Hit Count = 2
-    // Second Level Miss Count = 2
-    // Second Level Put Count = 1
-
 
     private static void persistEntity(Session session) {
         session.getTransaction().begin();

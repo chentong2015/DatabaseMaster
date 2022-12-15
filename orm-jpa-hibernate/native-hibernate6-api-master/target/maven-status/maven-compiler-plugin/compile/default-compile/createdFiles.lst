@@ -4,10 +4,10 @@ caching\second\level\SecondCacheEntity.class
 caching\second\level\DemoSecondLevelCache.class
 metadata\entity\BaseJpaMetadata.class
 naming\strategies\MyImplicitNamingStrategy.class
+caching\HibernateStatistics.class
 identifiers\MyStoredTableIdGenerator.class
 naming\strategies\MyPhysicalNamingStrategy.class
 caching\first\level\DemoFistLevelCache.class
-statistics\HibernateStatistics.class
 identifiers\IdGeneratorType.class
 metadata\MetadataSourcesHelper.class
 caching\query_cache\QueryCacheEntity.class

@@ -15,17 +15,16 @@
         <module name="postgre-sql" />
         <module name="document-db-mongodb" />
         <module name="native-hibernate6-api-master" />
+        <module name="relational-non-database" />
         <module name="jakarta-persistence-api" />
         <module name="sql-server" />
         <module name="h2-database" />
         <module name="javax-persistence-api" />
         <module name="native-hibernate5-api-xml" />
-        <module name="sample-mapping-annotation" />
         <module name="entity-class-parser" />
         <module name="orm-mybatis" />
         <module name="mysql" />
         <module name="native-hibernate6-api" />
-        <module name="sample-mapping-xml" />
         <module name="orm-liquibase" />
       </profile>
     </annotationProcessing>
@@ -34,6 +33,9 @@
       <module name="distributed-db" target="15" />
       <module name="native-hibernate6-api-metadata" target="15" />
       <module name="object-db-management-system" target="1.5" />
+      <module name="orm-jpa-hibernate-example" target="15" />
+      <module name="sample-mapping-annotation" target="15" />
+      <module name="sample-mapping-xml" target="15" />
       <module name="test" target="15" />
     </bytecodeTargetLevel>
   </component>

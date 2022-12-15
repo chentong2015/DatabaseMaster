@@ -13,6 +13,9 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/orm-jpa-hibernate-example/test/pom.xml" />
+        <option value="$PROJECT_DIR$/orm-jpa-hibernate/orm-jpa-hibernate-example/pom.xml" />
+        <option value="$PROJECT_DIR$/orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/pom.xml" />
       </set>
     </option>
   </component>

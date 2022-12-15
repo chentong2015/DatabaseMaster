@@ -20,7 +20,7 @@
             <generator class="increment"/>
         </id>
 
-        <property type="string" name="name">
+        <property type="java.lang.String" name="name">
             <column sql-type="character varying(32)" name="name" not-null="true" unique="true"/>
         </property>
         <property name="title">

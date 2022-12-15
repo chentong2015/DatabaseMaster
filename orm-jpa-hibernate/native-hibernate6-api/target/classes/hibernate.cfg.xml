@@ -3,8 +3,7 @@
         PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">  <!-- 加载DTD格式文件 -->
 
-<!-- TODO. 这个XML文件的配置是否可以被取代 ??
-hibernate.cfg.xml file defines the Hibernate configuration information. -->
+<!-- hibernate.cfg.xml file defines Hibernate configuration information -->
 <hibernate-configuration>
 
     <!-- 必须先设置property属性的值，然后定义table的mappings -->
@@ -53,6 +52,5 @@ hibernate.cfg.xml file defines the Hibernate configuration information. -->
         <mapping class="hibernate.framework.apis.mappings.any.PropertyHolder"/>
 
         <mapping class="hibernate.framework.apis.mappings.map.RightsEntity"/> -->
-        <mapping class="com.hibernate5.annotation.large.object.EntityLargeObject"/>
     </session-factory>
 </hibernate-configuration>

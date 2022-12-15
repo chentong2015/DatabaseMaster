@@ -13,6 +13,7 @@ hibernate\framework\apis\mappings\one\to\one\primary\key\IdCard.class
 hibernate\framework\apis\mappings\many\to\many\Typology.class
 hibernate\framework\apis\entity\EntityMasterDTO.class
 hibernate\framework\apis\mappings\one\to\one\foreign\key\bidirectional\FkBidirectionalOneToOne.class
+hibernate\framework\apis\session\HibernateSessionTemplate.class
 hibernate\framework\apis\mappings\map\RightsEntity.class
 hibernate\framework\apis\mappings\one\to\one\primary\key\PkUnidirectionalOneToOne.class
 hibernate\framework\apis\mappings\many\to\many\BidirectionalManyToMany.class
@@ -35,7 +36,6 @@ hibernate\framework\apis\mappings\one\to\many\bidirectional\Grade.class
 hibernate\framework\apis\mappings\one\to\many\bidirectional\BidirectionalOneToMany.class
 hibernate\framework\apis\entity\Book.class
 hibernate\framework\apis\mappings\any\model\IntegerProperty.class
-hibernate\framework\apis\session\DemoHibernateSession.class
 hibernate\framework\apis\session\HibernateSessionUtil.class
 hibernate\framework\apis\mappings\many\to\one\package1\Grade.class
 hibernate\framework\apis\mappings\one\to\one\foreign\key\bidirectional\Person.class

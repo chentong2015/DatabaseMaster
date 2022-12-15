@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+    <!-- xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0" -->
 
     <!-- 每一个persistence-unit单元的名称必须唯一 -->
     <persistence-unit name="base.jpa.demo" transaction-type="RESOURCE_LOCAL">
