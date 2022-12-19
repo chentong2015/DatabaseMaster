@@ -109,8 +109,6 @@ y
 Iorm-spring-jdbc/src/main/java/JdbcTemplateJdcp/handler/InfoRowMapper.java,9\5\9538699296e3f8e8f0b192a8541208befc9fdb52
 G
 orm-spring-jdbc/pom.xml,e\3\e3d4bbe1f3fbf130db88f73f247b5d0004e785cb
-�
-^database-orm-design/src/main/java/orm/middleware/design/connection/pool/PooledConnections.java,e\d\ede0c434872dfaf036bd7834f2ad735e7ec7781e
 t
 Dorm-spring-jdbc/src/main/java/JdbcTemplateJdcp/JdbcTemplateJdcp.java,8\b\8b1591f3a1d3036fdd3455d8a77029f99cb58457
 �
@@ -279,20 +277,12 @@ i
 Torm-liquibase/src/main/java/com/liquibase/main/changeset/checksum/Changeset Checksum,4\0\40bef954117b50b1b7dde48f6df0ac07b3b28916
 �
 Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
-�
-Ydatabase-orm-design/src/main/java/orm/middleware/design/datamodel/CrossDatabaseModel.java,2\7\27739951ff510c60c52540b79f4c69c3398e265b
-�
-]database-orm-design/src/main/java/orm/middleware/design/datamodel/AbstractJdbcConnection.java,7\4\74264abf67027980d99b468b80bf84a631f105d7
 w
 Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
 �
 Trelational-database/postgre-sql/src/main/java/settings/PostgresSqlSettingsTable.java,2\5\25dfb37dd0aeeaf73707a9667b299ec3b72b3024
 �
 rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Fetching配置,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
-w
-Gdatabase-orm-design/src/main/java/orm/middleware/design/ORM系统设计,1\5\150c8d71e4941d5d417f7e66e45c276b7d5f7f75
-�
-Vdatabase-orm-design/src/main/java/orm/middleware/design/conversion/tool/DB转换工具,9\4\94b1884ef5c3b0ac535afab37eceb32273ca30d1
 �
 eorm-liquibase/src/main/java/com/liquibase/main/exception/DemoPostgresDatabaseConnectionException.java,b\b\bb88ade0b6e7a4ed14ccb20918ca5256893d2f9f
 f
@@ -525,8 +515,6 @@ aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/first/leve
 horm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/SecondCacheEntity.java,1\7\17b2e6ca5946163da4fed332a3af4e20036f13d8
 c
 3relational-non-database/document-db-mongodb/pom.xml,d\0\d003cb2841b15b22fcbd88c5a4fdf107d4bb7034
-]
--relational-non-database/非关系性数据库,9\6\96c2d6282535f5c74b7224e60926dc06b2909b37
 ]
 -orm-jpa-hibernate/entity-class-parser/pom.xml,6\d\6d08a4622b47d57c8d039916d3f397d2aa83f9e1
 ~

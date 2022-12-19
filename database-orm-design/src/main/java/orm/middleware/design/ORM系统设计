@@ -1,21 +1,4 @@
-JPA是一种ORM层的规范
-  TODO: ORM(Object Relational Mapping)层的精髓: Map映射 / Row Mapper思想
-  对于面向对象(类型安全)编程语言，实现不同"类型系统"数据之间的转换
-  Java类型               数据库表字段      数据库类型
-  java.lang.Integer     id              Integer
-  java.lang.String      name            VARCHAR
-  java.lang.String      context         LONGVARCHAR
-
-
- TODO: 访问数据库必须使用连接池, 提供可靠性保护 !!
- 1. 必须具有(网络中断)自动重连的功能
- 2. 必须设置何理的超时时间, 防止程序访问数据库长时间的挂死
- 3. 数据库连接池必须设置最大值限制, 默认是500个连接
- 4. 定期回收连接, 设置超时时间
- 5. Java语言推荐使用mybatis持久层框架来访问数据库
-
----------------------------------------------------------------
-1. 如何设计一个ORM层的中间件 ? (参考Hibernate, Mybatis)
+如何设计一个ORM层的中间件 ? (参考Hibernate, Mybatis)
    1. public api   提供给用户使用的API, 注明使用文档
    2. enum types   提供操作的枚举类型，定义使用范围
    3. exception    定义中间件抛出的异常类型
@@ -25,27 +8,3 @@ JPA是一种ORM层的规范
    7. CRUD Impl    提供数据库操作相关的依赖，定义，约束，适配
    8. 中间件额外的功能: 缓存，插件，SPI注入...
    9. 执行Engine引擎: 底层基于Java JDBC
-
-2. 如何设计数据库连接池 ?
-   https://cloud.tencent.com/developer/article/1057410
-   如果使用连接池, 如何判断那些线程占用了连接? 那些线程占用了不止一个连接?
-
-   适用Tomcat Web服务器自带的连接池DBCP, 是否可以使用工具对连接进行监测 ?
-   TODO. <artifactId>commons-dbcp2</artifactId> 数据库连接池的实现
-   org.apache.commons.dbcp2.BasicDataSource
-
-   项目源码 + Hibernate源码 ?
-
-   如果数据库出现大量的连接Connection Session, 如何如何验证连接中的所有Transaction事务都正常关闭了 ?
-   如果一个事务没有关闭，会对DB Server其他的事务造成影响 ?
-
-
-3. 一个数据库连接如何保证只在一个线程中传递 ?
-   使用ThreadLocal<DatasourceEngine>进行封装
-
-4. 使用Spring Data JPA作为ORM层，Configuration配置Datasource连接的时，如果同时有多个Datasource，如何设置 ?
-   使用@Qualifier("")注解来区别注入同类型的Datasource的bean，通过不同名称来指定获取
-
-5. 如何实现数据服务器的高可用 ?
-   数据服务器中断会强制系统完全重启，从而影响用户体验
-   搭建数据库集群 & 使用分布式数据库

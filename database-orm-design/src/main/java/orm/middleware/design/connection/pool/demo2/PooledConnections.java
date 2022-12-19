@@ -1,7 +1,4 @@
-package orm.middleware.design.connection.pool;
-
-import orm.middleware.design.datamodel.api.ConnectionCreator;
-import orm.middleware.design.datamodel.api.ConnectionValidator;
+package orm.middleware.design.connection.pool.demo2;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -13,8 +10,10 @@ public class PooledConnections {
     private final ConcurrentLinkedQueue<Connection> allConnections = new ConcurrentLinkedQueue<Connection>();
     private final ConcurrentLinkedQueue<Connection> availableConnections = new ConcurrentLinkedQueue<Connection>();
 
+    // TODO. 使用接口"抽象出"DB Connection连接的创建和验证 => 区分数据库
     private final ConnectionCreator connectionCreator;
     private final ConnectionValidator connectionValidator;
+
     private final boolean autoCommit;
     private final int minSize;
     private final int maxSize;
@@ -75,11 +74,11 @@ public class PooledConnections {
         return null;
     }
 
-    // TODO.
+    // poll() 从队列中出队
     public Connection poll() throws Exception {
         Connection conn;
         do {
-            // poll() 从队列中出队
+
             conn = availableConnections.poll();
             if (conn == null) {
                 synchronized (allConnections) {
