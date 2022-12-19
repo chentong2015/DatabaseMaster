@@ -17,12 +17,6 @@ C
 orm-mybatis/pom.xml,1\2\12f2ebabb2a1e56c10b3648c6c0e2a1b19f9e084
 w
 Gorm-liquibase/src/main/java/com/liquibase/main/config/ConfigHelper.java,4\b\4b3b86209a71aa7effc5c72e5a96e8474073c251
-s
-Cdocument-db-mongodb/src/main/java/com/mongodb/main/BaseMongoDB.java,b\6\b614e1a4278571422ae35ef3b0faa9b276ac7fe2
-É
-Sdocument-db-mongodb/src/main/java/com/mongodb/main/repository/PersonRepository.java,f\3\f31b72bff10320daa7c62705e54fc2955ca78f85
-t
-Ddocument-db-mongodb/src/main/java/com/mongodb/main/model/Person.java,c\d\cde24ed5015dfdcaa09adffe48dba0dc2575e99d
 d
 4orm-mybatis/src/main/java/spring/dao/UserMapper.java,0\f\0f56547df44fbf0b5a176e41eaced1f7e986297b
 d
@@ -95,8 +89,6 @@ qorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 qorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/polymorphism/Blog.java,3\d\3d1c3b8106a0c0402131ff87c9e1fc04c6ef4070
 £
 sorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/CategoryType.java,f\0\f04da8226e9e34d840f4236e5673f6d1f1bebb6a
-¢
-rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate JPAÂêçÁß∞ÂÜ≤Á™Å,8\5\85e0dbd85c2ed21f18fbc54b9e49ca9a0ca9a15c
 Æ
 ~orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/bidirectional/Student.java,4\3\43c9462b5520d6610787203b149deef687769092
 £
@@ -237,8 +229,6 @@ torm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/many/Strategy.java,f\0\f03410388abdf932a5e6ae199322961796db6573
 ≤
 Åorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/many/BidirectionalManyToMany.java,1\5\1562781fe014cd528b194850ef24ba3008cbe217
-û
-norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/HibernateÂ∏∏ËßÅÂºÇÂ∏∏,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
 °
 qorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/util/EntityManagerHandler.java,4\2\4296d01b9c07f35caa1d92030fd0415872c72560
 _
@@ -259,8 +249,6 @@ lorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/
 xorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/MyPhysicalNamingStrategyStandardImpl.java,8\b\8bb716ab804a7d21be2366cad28b33ff42869150
 î
 dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/HibernateÂëΩÂêçÁ≠ñÁï•,7\7\7789c4cbbee27d04bc545c20996c773005b5b4c7
-c
-3orm-jpa-hibernate/orm-jpa-hibernate-example/pom.xml,f\2\f2f6371c91991630a52a4ed86a8fc2e189911887
 ~
 Ndatabase-orm-design/src/main/java/database/design/isolation/‰∫ãÂä°ÈöîÁ¶ªÁ∫ßÂà´,c\f\cfb0aa1f898b562db900760d2b5c37755aebdedb
 U
@@ -273,8 +261,6 @@ Q
 !relational-database/mysql/pom.xml,b\5\b539580a08e698b2d29c991e6ed07f9277f2ce5e
 s
 Crelational-database/mysql/src/main/java/batching/MySqlBatching.java,0\2\0203b05ef4736502d06a6ca868fe487aa458f9e9
-E
-orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
 }
 Morm-liquibase/src/main/java/com/liquibase/main/exception/Liquibase Exceptions,6\a\6a3af66e1a1576e98722c06c227e3777870d650c
 y
@@ -335,8 +321,6 @@ Yorm-liquibase/src/main/java/com/liquibase/main/lock/service/DemoLiquibaseLockSe
 Norm-liquibase/src/main/java/com/liquibase/main/extensions/LiquibaseHelper.java,5\e\5e4052a2b7542cc690f136ea671a704384697dea
 V
 &orm-liquibase/Liquibase Global Options,1\7\17ad2b395531891dd8f83089ac453d478fd5b03e
-R
-"orm-liquibase/Liquibase ÊïôÁ®ã.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
 z
 Jorm-liquibase/src/main/java/com/liquibase/main/logger/LiquibaseLogger.java,3\6\36dc242743b3c4941fca523adc6693771fe2a95e
 }
@@ -367,14 +351,10 @@ z
 Jorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseChangelog.java,a\a\aaba9708cd735a2decf0a29eccb9e18cafbc2748
 r
 Brelational-database/postgre-sql/src/main/java/DemoPostgresSql.java,6\2\62cfd35b0434f2d39fd204e02efa1be83cdf1bbb
-õ
-korm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/util/HibernateSessionUtil.java,6\d\6d47051d8f736e637d50ed3fcf4111b110c9460b
 ó
 gorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\5\9535855f5560add89dcf52b7b90925e75cfad9b7
 ó
 gorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/package2/SubClass.java,c\1\c1e5ab73497cb24ba431c031eb4bc55c37077a09
-¢
-rorm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/src/main/java/util/HibernateSessionUtil.java,1\1\1191d02ddbd4c9f1b06d7dad4747b0c7f35e035f
 •
 uorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/component/collections/Developer.java,8\0\80bb2b5fbb5af15319b7d19f877efd1c2a9c66ea
 †
@@ -405,30 +385,14 @@ lorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testin
 xorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/inheritance/InheritanceMappingDemo.java,a\2\a261ab707ed088dbcaf7c0bbc9f84e4f873c7b89
 ¨
 |orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/HibernateÁªßÊâøÊò†Â∞Ñ,5\1\513126eaf2abb8172d153347651a53ca56970a7c
-≠
-}orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/unidirectional/one/to/many/TestingOneToMany.java,4\1\41bb0e2239597c963d376991eae8a28431840588
-î
-dorm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/many/to/one/Person.java,3\3\33947746e7006b6d048bfd15d8fd41d70ca357ad
-û
-norm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/many/to/one/TestingManyToOne.java,7\c\7c223b07e9b056d38da9dc9238242af9dc856700
 ™
 zorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/unidirectional/ddl_sql,f\b\fbe455852165bf3e6e695fe6b4782227fb460404
-¢
-rorm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/unidirectional/one/to/many/Order.java,f\a\fac6ff7569f8803cc559f5278ab2f40590694f58
-•
-uorm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/unidirectional/one/to/many/Customer.java,0\a\0a9c0a7f8afcac1ec3eb2b84189afde34d5b61f4
 Ø
 orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/unidirectional/Student.java,f\f\ff3077e311f2316297d4718d1b40828d8d1290c8
 ≠
 }orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/unidirectional/Grade.java,3\9\390c36352b9e46a1c572ccf10fbe6dbd2c1cc9fc
 ø
 éorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/unidirectional/UndirectionalOneToMany.java,8\1\8121055dfd88339e97eb0961a51d2f59de71d4a1
-•
-uorm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/bidirectional/many/to/many/Employee.java,3\0\30847fe9c6bb5741d3c3dbc979ca9e19ead38054
-Æ
-~orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/bidirectional/many/to/many/TestingManyToMany.java,3\8\38277a8643832deeee4250f3ff7a71723bef4ca4
-§
-torm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/bidirectional/many/to/many/Project.java,5\7\57fff090fcdd60de34fa4fcc6a8fc2d3d453c879
 ü
 oorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/component/Staff.java,5\6\5661d2719d7990141d046470c451910e27f39542
 ™
@@ -459,24 +423,8 @@ Ndatabase-orm-design/src/main/java/database/design/metadata/MetaDataHelper.java
 äorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/table/per/clazz/SpecificEntity.java,c\4\c4b68b57f8ced1d1c1428d496beb146c875d2037
 Ω
 åorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/table/per/clazz/SuperClassEntity.java,a\3\a30e00ef43908b2423713ebe6759f2b4fe1fae0c
-ë
-aorm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/src/main/java/many/to/one/Car.java,d\1\d1cc7dc8cf9856a5d4a3f153af0f7e99b0da250f
-õ
-korm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/src/main/java/many/to/one/Person.java,7\3\735559709dad43c7e0d747661f502cd111065671
-ò
-horm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/src/main/java/many/to/one/Car.java,c\7\c7e5b9540190dcfbfb1e7c476c9026788aacc367
-¨
-|orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/src/main/java/unidirectional/one/to/many/Customer.java,e\6\e6c24acb3cbf0787e5244f6ddac3c276a0ba8bf9
-©
-yorm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/src/main/java/unidirectional/one/to/many/Order.java,1\9\192ce2fedef237465d5a294e9426dd6676961f15
-∂
-Öorm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/src/main/java/bidirectional/many/to/many/TestingManyToMany.java,1\a\1acbd0a5f3fffab01b19ac79224da160da399faa
-´
-{orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/src/main/java/bidirectional/many/to/many/Project.java,f\c\fcb8a0108b8ceebabd4abf65924444c53022ecfb
 ö
 jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/ÂÖ≥ËÅîÊò†Â∞ÑÂÖ≥Á≥ª,3\0\30522a73339ff20c21a6c94adb9b8164f0791f08
-¨
-|orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/src/main/java/bidirectional/many/to/many/Employee.java,0\0\00668f98ad4f0b9ff1cbd4ced953b22eb12bbf8a
 j
 :orm-jpa-hibernate/native-hibernate5-api-annotation/pom.xml,8\4\84ecec8d05247655040c5b291dca2719c777eab5
 r
@@ -573,5 +521,27 @@ borm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testin
 horm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/first/level/DemoFistLevelCache.java,2\d\2db725494a888bf8e605b1f5b1b78ae5b7d80773
 ë
 aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/first/level/CacheEntity.java,9\4\9459fe33afee93957b770a5eca63d73cb95666e5
+ò
+horm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/SecondCacheEntity.java,1\7\17b2e6ca5946163da4fed332a3af4e20036f13d8
+c
+3relational-non-database/document-db-mongodb/pom.xml,d\0\d003cb2841b15b22fcbd88c5a4fdf107d4bb7034
+]
+-relational-non-database/ÈùûÂÖ≥Á≥ªÊÄßÊï∞ÊçÆÂ∫ì,9\6\96c2d6282535f5c74b7224e60926dc06b2909b37
+]
+-orm-jpa-hibernate/entity-class-parser/pom.xml,6\d\6d08a4622b47d57c8d039916d3f397d2aa83f9e1
+~
+Ndatabase-orm-design/src/main/java/storage/engine/design/InnoDB/InnoDBÁºìÂ≠òÊ±†,0\1\01e664e585ff8101d5ee5e210df1c63fb80a57a0
+{
+Kdatabase-orm-design/src/main/java/storage/engine/design/InnoDB/InnoDBÂü∫Á°Ä,6\f\6f6af2003dd962d0fd2179bbb47ea91b5f5f852b
+õ
+korm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/DemoSecondLevelCache.java,b\5\b52352c8a8bfef9f223dcd92f41e9ff367b4792d
+ç
+]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/HibernateStatistics.java,d\9\d95c12b0d05c7d4cd2a5aa56d4987f8efecaa2e1
+ó
+gorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/0. ‰∫åÁ∫ßÁºìÂ≠ò‰æùËµñ,4\5\455af2e03dc8414910d8dc917a3188ee9eadf4bf
 ä
 Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/HibernateÁºìÂ≠òËÆæËÆ°,c\3\c38428e38a2203f0a58a2ed2d26bf08a2ad3d9a7
+¢
+rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate JPAÂêçÁß∞ÂÜ≤Á™Å,8\5\85e0dbd85c2ed21f18fbc54b9e49ca9a0ca9a15c
+û
+norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/HibernateÂ∏∏ËßÅÂºÇÂ∏∏,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b

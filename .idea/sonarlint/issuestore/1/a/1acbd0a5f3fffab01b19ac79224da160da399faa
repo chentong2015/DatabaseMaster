@@ -1,7 +1,0 @@
-
-N	java:S1063"9Replace this use of System.out or System.err by a logger.(„ªΥΰ
-N	java:S106;"9Replace this use of System.out or System.err by a logger.(ίς¤Ν
-C
-java:S1144"-Remove this unused private "initData" method.(ΛΖο…
-P
-java:S1144/":Remove this unused private "getEmployeesByProject" method.(Δϋήΰ
