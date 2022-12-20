@@ -7,6 +7,7 @@ import java.sql.SQLException;
 
 public class DemoSqlServerBatching {
 
+    // SQL Server 11.2 connection url property: trustServerCertificate 增加新的配置属性
     public static void main(String[] args) {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");

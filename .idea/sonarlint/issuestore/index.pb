@@ -15,8 +15,6 @@ borm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/datasource/MyDat
 Uorm-mybatis/src/main/java/com/mybatis/basic/testJavaAnnotation/mapper/BlogMapper.java,f\7\f71b119a72055e4aadd9acf0b3f3dd13e328859c
 C
 orm-mybatis/pom.xml,1\2\12f2ebabb2a1e56c10b3648c6c0e2a1b19f9e084
-w
-Gorm-liquibase/src/main/java/com/liquibase/main/config/ConfigHelper.java,4\b\4b3b86209a71aa7effc5c72e5a96e8474073c251
 d
 4orm-mybatis/src/main/java/spring/dao/UserMapper.java,0\f\0f56547df44fbf0b5a176e41eaced1f7e986297b
 d
@@ -251,30 +249,16 @@ dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/
 Ndatabase-orm-design/src/main/java/database/design/isolation/事务隔离级别,c\f\cfb0aa1f898b562db900760d2b5c37755aebdedb
 U
 %relational-database/hyper-sql/pom.xml,0\8\0833ec567e3de17623e300c4dcb130ea3b0cd2c7
-K
-relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
 h
 8relational-database/hyper-sql/src/main/HyperSQL数据库,6\5\65dc3cb15d14f1de7c8dba6cf4e4b87dc660c722
 Q
 !relational-database/mysql/pom.xml,b\5\b539580a08e698b2d29c991e6ed07f9277f2ce5e
 s
 Crelational-database/mysql/src/main/java/batching/MySqlBatching.java,0\2\0203b05ef4736502d06a6ca868fe487aa458f9e9
-}
-Morm-liquibase/src/main/java/com/liquibase/main/exception/Liquibase Exceptions,6\a\6a3af66e1a1576e98722c06c227e3777870d650c
-y
-Iorm-liquibase/src/main/java/com/liquibase/main/config/DatabaseConfig.java,1\9\19bfc72515846024633c4ba3161e8a2ff0a0be74
-z
-Jorm-liquibase/src/main/java/spring/liquibase/main/LiquibaseProperties.java,4\7\471c08a620aa8ca718d0d0d5cff35cff395aeaab
-y
-Iorm-liquibase/src/main/java/spring/liquibase/main/Spring Liquibase 配置,c\0\c015f5b0a12da1534d2bab345cbd27cbe2f4b14a
-r
-Borm-liquibase/src/main/java/com/liquibase/main/changelog/Changelog,6\c\6c9468e0fd406775c481d7805d020b18ebe68b75
 W
 'orm-liquibase/Liquibase Commands Script,9\d\9d691b559f75513ca531b87f14cdfb9c95f186dd
 i
 9relational-database/sql-server/SQL Server 指令全集.md,d\5\d595a9c8e59604487e833cc9e80e15224bcdf486
-�
-Torm-liquibase/src/main/java/com/liquibase/main/changeset/checksum/Changeset Checksum,4\0\40bef954117b50b1b7dde48f6df0ac07b3b28916
 �
 Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
 w
@@ -283,10 +267,6 @@ Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e
 Trelational-database/postgre-sql/src/main/java/settings/PostgresSqlSettingsTable.java,2\5\25dfb37dd0aeeaf73707a9667b299ec3b72b3024
 �
 rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Fetching配置,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
-�
-eorm-liquibase/src/main/java/com/liquibase/main/exception/DemoPostgresDatabaseConnectionException.java,b\b\bb88ade0b6e7a4ed14ccb20918ca5256893d2f9f
-f
-6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 X
 (relational-database/oracle/Oracle 测试,9\d\9d374e396964580f6acc98a4830d80a040e091d6
 �
@@ -303,20 +283,10 @@ u
 Erelational-database/mysql/src/main/java/index/IndexSpecification.java,7\f\7f8ff8b525be4324faf5d0d9d1caab444622f532
 u
 Erelational-database/mysql/src/main/java/index/IndexDataStructure.java,d\c\dc10693b44d5d0560c75f5f2437ec83ba8c2f579
-�
-Rorm-liquibase/src/main/java/com/liquibase/main/extensions/database/MyDatabase.java,f\3\f34478cd986f9d0708c771e5f641fde0e176ee79
-�
-Yorm-liquibase/src/main/java/com/liquibase/main/lock/service/DemoLiquibaseLockService.java,5\5\55af83909626357a64e9605ad793073821401088
-~
-Norm-liquibase/src/main/java/com/liquibase/main/extensions/LiquibaseHelper.java,5\e\5e4052a2b7542cc690f136ea671a704384697dea
 V
 &orm-liquibase/Liquibase Global Options,1\7\17ad2b395531891dd8f83089ac453d478fd5b03e
-z
-Jorm-liquibase/src/main/java/com/liquibase/main/logger/LiquibaseLogger.java,3\6\36dc242743b3c4941fca523adc6693771fe2a95e
 }
 Mdatabase-orm-design/src/main/java/storage/engine/design/Index/数据库索引,7\a\7a94c837182a2648e09e70cec73c444c3bce3a32
-�
-borm-liquibase/src/main/java/com/liquibase/main/extensions/sqlgenerator/MyCreateIndexGenerator.java,0\c\0c4e790181b013e34970ef7d23c02ce6a2e4cae6
 _
 /orm-jpa-hibernate/javax-persistence-api/pom.xml,4\7\47d51ab121ab19073a3af6002f6868e55e42b607
 �
@@ -337,8 +307,6 @@ Y
 +relational-database/mysql/MySql基础配置,a\6\a6467f32651e7aedaa489b6f5440656977a469ed
 v
 Fdatabase-orm-design/src/main/java/database/design/types/JDBCTypes.java,c\e\cee3132c774494524d149743217f13702b0d73cd
-z
-Jorm-liquibase/src/main/java/com/liquibase/main/DemoLiquibaseChangelog.java,a\a\aaba9708cd735a2decf0a29eccb9e18cafbc2748
 r
 Brelational-database/postgre-sql/src/main/java/DemoPostgresSql.java,6\2\62cfd35b0434f2d39fd204e02efa1be83cdf1bbb
 �
@@ -397,8 +365,6 @@ zorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 Ndatabase-orm-design/src/main/java/database/design/metadata/MyDatabaseType.java,9\6\96fa425ad90a903e2c1a7f13b8e49bbddabdf559
 x
 Hrelational-database/sybase/src/main/java/truncate/DemoSybaseVarchar.java,7\f\7fe4968e2e932d7c517c506b3ea2c35dd7ebbeeb
-V
-&relational-database/sql-server/pom.xml,0\6\0652b8025c4df2ced598a0287f033cae7b317589
 ~
 Ndatabase-orm-design/src/main/java/database/design/metadata/MetaDataHelper.java,5\2\522eae25c66431f94dbbd8de6e33c4804b847183
 �
@@ -531,3 +497,47 @@ Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/Hibernate�
 rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate JPA名称冲突,8\5\85e0dbd85c2ed21f18fbc54b9e49ca9a0ca9a15c
 �
 norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate常见异常,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
+O
+relational-non-database/pom.xml,3\a\3a9d5bf6fd1042eb3eacb58b141f01bf11d8cb8d
+R
+"orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+I
+orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
+f
+6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
+E
+orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
+Z
+*orm-liquibase/liquibase-core-basic/pom.xml,9\8\981a6efb5c9c3ff9c08be837d18719ac9cbbe7b9
+x
+Horm-liquibase/liquibase-core-4-5/src/main/java/main/LiquibaseTester.java,2\6\26d7c842b777698e78f471005cf7914ad4bbb7f1
+X
+(orm-liquibase/liquibase-core-4-5/pom.xml,8\9\89b9683de09777a0ca946b71754401d189b246dc
+y
+Iorm-liquibase/liquibase-core-4-18/src/main/java/main/LiquibaseTester.java,3\0\30e6c40a10259adc45094754f15e355196c929b4
+Y
+)orm-liquibase/liquibase-core-4-18/pom.xml,e\d\edfa0ae2a1bb5fab2ef891a76e152b6ba01cf9f3
+�
+Qorm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelog.java,f\a\fa84e92d1d3e471c0af4afaf7ba72fdd0ec21260
+�
+Ydatabase-orm-design/src/main/java/orm/middleware/design/datamodel/CrossDatabaseModel.java,2\7\27739951ff510c60c52540b79f4c69c3398e265b
+�
+]database-orm-design/src/main/java/orm/middleware/design/datamodel/AbstractJdbcConnection.java,7\4\74264abf67027980d99b468b80bf84a631f105d7
+R
+"orm-liquibase/Database转换工具,7\6\76eb7893b2da28cd58c9c25e7c40f7e131472fc9
+w
+Gdatabase-orm-design/src/main/java/orm/middleware/design/ORM系统设计,1\5\150c8d71e4941d5d417f7e66e45c276b7d5f7f75
+K
+orm-jpa-hibernate/JPA规范,a\7\a732a290493241d1163ac78c1a91b936cc320a29
+]
+-relational-non-database/非关系性数据库,9\6\96c2d6282535f5c74b7224e60926dc06b2909b37
+�
+fdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ConnectionValidator.java,c\e\ceb4f36b0b63a84187caa5f9d3a7da02ee009773
+�
+\database-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/PoolState.java,c\b\cbddc732fbf0c93e1e4c7c87b8843b57f3dec05b
+�
+ddatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ConnectionCreator.java,7\4\74c6757112d7d71678715b66ebf4071a472e7df2
+�
+jdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ValidationThreadFactory.java,8\4\84ca7009c0f234eb84a2075f757331fefc32d8c2
