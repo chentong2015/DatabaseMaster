@@ -481,8 +481,6 @@ porm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 torm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/HibernateSessionTemplate.java,0\4\0440b8f3a1bc411dfc165c9d70ca4aeb57f82f3d
  
 porm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/BaseEntity.java,1\d\1d403a0df052cb6828a025aef97744981dbf5dc9
-€
-Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
 l
 <relational-database/postgre-sql/src/main/java/view/Psql View,6\2\62311439938c649bddbcd68c82c418195b99f91a
 [
