@@ -431,8 +431,6 @@ gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 oorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/MyEntity.java,9\8\989c41a7f5ed34a284ab38d8621842619d039b9a
 �
 vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,f\d\fd4e4a8ced05e9a3040438ffca88b6d44dafaae2
-�
-gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/Session的创建,3\e\3edf27468c7f850196b4b2acae7bbe7451d2cac4
 N
 orm-jpa-hibernate/进阶教程,c\3\c30fb1a29a7920852e2de4188733f82c97a69850
 �
@@ -541,3 +539,11 @@ fdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/C
 ddatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ConnectionCreator.java,7\4\74c6757112d7d71678715b66ebf4071a472e7df2
 �
 jdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ValidationThreadFactory.java,8\4\84ca7009c0f234eb84a2075f757331fefc32d8c2
+K
+relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
+V
+&relational-database/sql-server/pom.xml,0\6\0652b8025c4df2ced598a0287f033cae7b317589
+�
+Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
+f
+6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4

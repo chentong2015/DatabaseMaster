@@ -44,9 +44,6 @@ Hibernate 5.x 版本之后的创建: 从元信息中获取Session工厂
 
     MetadataSources metadataSources = new MetadataSources();
     MetadataBuilder metadataBuilder = metadataSources.getMetadataBuilder(standardServiceRegistry);
-    for (BasicType murexType : getMurexTypes()) {
-       metadataBuilder.applyBasicType(murexType);
-    }
 
     Metadata metadata = metadataBuilder.build();
     SessionFactory sessionFactory1 = metadata.buildSessionFactory();

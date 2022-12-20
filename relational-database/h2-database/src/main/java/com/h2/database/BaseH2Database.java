@@ -21,8 +21,8 @@ public class BaseH2Database {
     // login: sa, sa
 
     // H2 Database Engine: 创建新的数据库
-    // JDBC URL for H2 Console: jdbc:h2:./murex_retail_experience
-    //   注意创建的相对位置 创建的连接 relational-db-h2-database/database/murex_retail_experience.mv.db
+    // JDBC URL for H2 Console: jdbc:h2:./ctong_retail_experience
+    //   注意创建的相对位置 创建的连接 relational-db-h2-database/database/ctong_retail_experience.mv.db
     // login: admin
     // password: admin
 
@@ -41,7 +41,7 @@ public class BaseH2Database {
     private static void testBasicConnection() throws ClassNotFoundException, SQLException {
         // Class.forName("org.h2.Driver");
         // System.out.println("Application ");
-        // String url = "jdbc:h2:./murex_retail_experience;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=true;";
+        // String url = "jdbc:h2:./ctong_retail_experience;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=true;";
         // Connection conn = DriverManager.getConnection(url, "admin", "admin");
         // System.out.println(conn);
         // // String sql2 = "CREATE TABLE t_test2 ( \n" +
