@@ -9,14 +9,13 @@ import java.util.Properties;
 public class DBConnectionPoolManager {
 
     private static int countClient;
-    // 容器，存放数据库驱动程序
-    private ArrayList drivers;
+    private ArrayList dbDrivers;
     private HashMap<String, DBConnectionPool> connectionPoolMap;
 
     private static DBConnectionPoolManager instance;
 
     private DBConnectionPoolManager() {
-        drivers = new ArrayList();
+        dbDrivers = new ArrayList();
         connectionPoolMap = new HashMap<>();
         init();
     }
@@ -32,7 +31,7 @@ public class DBConnectionPoolManager {
         return instance;
     }
 
-    // 从配置文件中创建出所有需要的连接池，根据不同的DB和不同的User
+    // 从配置文件中创建出所需要的连接池，针对不同的DB和User
     private void createConnectionPools(Properties props) {
         // load drivers
         String user = props.getProperty("db.connection.username");

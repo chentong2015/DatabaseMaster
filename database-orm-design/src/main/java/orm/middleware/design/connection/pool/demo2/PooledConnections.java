@@ -4,32 +4,29 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-// 数据库的连接池: 适用"非阻塞高性能队列"来存储每一个DB的连接
 public class PooledConnections {
 
+    // 数据库的连接池: 适用"非阻塞高性能队列"来存储每一个DB的连接
     private final ConcurrentLinkedQueue<Connection> allConnections = new ConcurrentLinkedQueue<Connection>();
     private final ConcurrentLinkedQueue<Connection> availableConnections = new ConcurrentLinkedQueue<Connection>();
 
-    // TODO. 使用接口"抽象出"DB Connection连接的创建和验证 => 区分数据库
+    // TODO. 使用接口"抽象出"DB Connection连接的创建和验证
+    // ConnectionCreator可以根据不同的数据库做对应的实现
     private final ConnectionCreator connectionCreator;
     private final ConnectionValidator connectionValidator;
 
+    // 使用参数来配置连接池中Connection的AutoCommit状态
     private final boolean autoCommit;
     private final int minSize;
     private final int maxSize;
-
     private volatile boolean primed;
 
     private PooledConnections(Builder builder) {
-        System.out.println("Initializing Connection pool with %s Connections");
         connectionCreator = builder.connectionCreator;
-        connectionValidator = builder.connectionValidator == null
-                ? ConnectionValidator.ALWAYS_VALID
-                : builder.connectionValidator;
+        connectionValidator = builder.connectionValidator == null ? ConnectionValidator.ALWAYS_VALID : builder.connectionValidator;
         autoCommit = builder.autoCommit;
         maxSize = builder.maxSize;
         minSize = builder.minSize;
-        // CONNECTIONS_MESSAGE_LOGGER.hibernateConnectionPoolSize(maxSize, minSize);
         addConnections(builder.initialSize);
     }
 
@@ -51,7 +48,7 @@ public class PooledConnections {
         }
     }
 
-    public void add(Connection conn) throws SQLException {
+    public void add(Connection conn) {
         final Connection connection = releaseConnection(conn);
         if (connection != null) {
             availableConnections.offer(connection);
@@ -74,11 +71,38 @@ public class PooledConnections {
         return null;
     }
 
-    // poll() 从队列中出队
+    // 关闭一个DB Connection之后，从连接池中移除该connection
+    protected void closeConnection(Connection conn, Throwable t) {
+        try {
+            conn.close();
+        } catch (SQLException ex) {
+            if (t != null) {
+                // t.addSuppressed(ex);
+            }
+        } finally {
+            allConnections.remove(conn);
+        }
+    }
+
+    public void close() throws SQLException {
+        try {
+            int allocationCount = allConnections.size() - availableConnections.size();
+            if (allocationCount > 0) {
+                System.out.println("Connection leak detected: there are " + allocationCount
+                        + " unclosed connections upon shutting down pool " + getUrl());
+            }
+        } finally {
+            for (Connection connection : allConnections) {
+                connection.close();
+            }
+        }
+    }
+
+    // poll()出队: while无限循环，直到出队一个正确的Connection
+    // 设置获取connection的timeout时间
     public Connection poll() throws Exception {
         Connection conn;
         do {
-
             conn = availableConnections.poll();
             if (conn == null) {
                 synchronized (allConnections) {
@@ -95,6 +119,7 @@ public class PooledConnections {
         return conn;
     }
 
+    // 准备Connection: 设置autoCommit并且验证，如果无效则将其关闭
     protected Connection prepareConnection(Connection conn) {
         Exception t = null;
         try {
@@ -108,35 +133,6 @@ public class PooledConnections {
         closeConnection(conn, t);
         System.out.println("Connection preparation failed. Closing pooled connection");
         return null;
-    }
-
-    // 关闭一个DB Connection之后，从连接池中移除该connection
-    protected void closeConnection(Connection conn, Throwable t) {
-        try {
-            conn.close();
-        } catch (SQLException ex) {
-            if (t != null) {
-                // t.addSuppressed(ex);
-            }
-        } finally {
-            allConnections.remove(conn);
-        }
-    }
-
-    public void close() throws SQLException {
-        try {
-            // 计算已经分配出去的连接数目
-            int allocationCount = allConnections.size() - availableConnections.size();
-            if (allocationCount > 0) {
-                System.out.println("Connection leak detected: there are " + allocationCount
-                        + " unclosed connections upon shutting down pool " + getUrl());
-            }
-        } finally {
-            // 关闭线程池中所有的连接
-            for (Connection connection : allConnections) {
-                connection.close();
-            }
-        }
     }
 
     public int size() {
@@ -177,6 +173,7 @@ public class PooledConnections {
         }
     }
 
+    // 使用builder模式来配置连接池的参数
     public static class Builder {
         private final ConnectionCreator connectionCreator;
         private ConnectionValidator connectionValidator;

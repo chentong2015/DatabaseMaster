@@ -531,10 +531,6 @@ K
 orm-jpa-hibernate/JPA规范,a\7\a732a290493241d1163ac78c1a91b936cc320a29
 ]
 -relational-non-database/非关系性数据库,9\6\96c2d6282535f5c74b7224e60926dc06b2909b37
-�
-fdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ConnectionValidator.java,c\e\ceb4f36b0b63a84187caa5f9d3a7da02ee009773
-�
-\database-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/PoolState.java,c\b\cbddc732fbf0c93e1e4c7c87b8843b57f3dec05b
 �
 ddatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ConnectionCreator.java,7\4\74c6757112d7d71678715b66ebf4071a472e7df2
 �
@@ -547,3 +543,5 @@ V
 Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
 f
 6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
+�
+gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/Session的创建,3\e\3edf27468c7f850196b4b2acae7bbe7451d2cac4
