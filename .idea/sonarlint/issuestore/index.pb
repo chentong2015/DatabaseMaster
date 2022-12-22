@@ -119,8 +119,6 @@ Horm-spring-jdbc/src/main/java/JdbcTemplateJdcp/dao/BaseJdbcTemplate.java,3\1\3
 torm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/one/to/one/设计OneToOne,6\7\67feac1f7e5763ee0fe0d781abc50683a494d46e
 K
 database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
-�
-Rdatabase-orm-design/src/main/java/database/design/bacthing/Batching批执行策略,7\4\74f927f09b10e2ad59b0aa52ce1a38a28743e96c
 �
 oorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/query/DemoQueryTranslator.java,8\7\8744311bfef4e5bb278fb8d2a54820531aee8539
 �
@@ -259,22 +257,12 @@ W
 'orm-liquibase/Liquibase Commands Script,9\d\9d691b559f75513ca531b87f14cdfb9c95f186dd
 i
 9relational-database/sql-server/SQL Server 指令全集.md,d\5\d595a9c8e59604487e833cc9e80e15224bcdf486
-�
-Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
 w
 Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
 �
 Trelational-database/postgre-sql/src/main/java/settings/PostgresSqlSettingsTable.java,2\5\25dfb37dd0aeeaf73707a9667b299ec3b72b3024
 �
 rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Fetching配置,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
-X
-(relational-database/oracle/Oracle 测试,9\d\9d374e396964580f6acc98a4830d80a040e091d6
-�
-Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTruncate.java,7\2\72fe08acc539fc7acd97d8db5e0ed560560e775c
-X
-(relational-database/oracle/Oracle 基础,7\2\72ab19c47e22d347f965f8538be77813fd686018
-
-Orelational-database/postgre-sql/src/main/java/batching/PostgresSqlBatching.java,f\c\fc0a335f8d466ef0c75eb32b96f33de37e23d556
 c
 3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
 n
@@ -307,8 +295,6 @@ Y
 +relational-database/mysql/MySql基础配置,a\6\a6467f32651e7aedaa489b6f5440656977a469ed
 v
 Fdatabase-orm-design/src/main/java/database/design/types/JDBCTypes.java,c\e\cee3132c774494524d149743217f13702b0d73cd
-r
-Brelational-database/postgre-sql/src/main/java/DemoPostgresSql.java,6\2\62cfd35b0434f2d39fd204e02efa1be83cdf1bbb
 �
 gorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/package2/MyEntity.java,9\5\9535855f5560add89dcf52b7b90925e75cfad9b7
 �
@@ -363,8 +349,6 @@ zorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 �orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/single/table/Employee.java,7\2\72182205bd781f11ba3df68b1ced9d08ad81d275
 ~
 Ndatabase-orm-design/src/main/java/database/design/metadata/MyDatabaseType.java,9\6\96fa425ad90a903e2c1a7f13b8e49bbddabdf559
-x
-Hrelational-database/sybase/src/main/java/truncate/DemoSybaseVarchar.java,7\f\7fe4968e2e932d7c517c506b3ea2c35dd7ebbeeb
 ~
 Ndatabase-orm-design/src/main/java/database/design/metadata/MetaDataHelper.java,5\2\522eae25c66431f94dbbd8de6e33c4804b847183
 �
@@ -399,16 +383,10 @@ Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/Batching�
 Pdatabase-orm-design/src/main/java/storage/engine/design/存储引擎系统设计,d\2\d26179dc8c7f41e8204631656d5633335c444390
 z
 Jdatabase-orm-design/src/main/java/storage/engine/design/存储引擎对比,7\8\788843b2453dd681384482b46257d2355c7c4ccc
-y
-Irelational-database/sybase/src/main/java/batching/DemoSybaseBatching.java,0\7\0791f42b05d8dfab2334232f2753ee377b792106
 �
 Rdatabase-orm-design/src/main/java/database/design/connection/ConnectionDriver.java,2\f\2f2ceda09ed329ce274bc4c8d27f60e06007a632
-X
-(relational-database/sybase/Sybase 基础,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
 j
 :relational-database/mysql/src/main/java/MySqlFunctions.sql,4\1\4193b622316baaab2e6923424706788bc9609ab9
-X
-(relational-database/sybase/Sybase 测试,f\7\f773e5337da6265a967f479820b4412d1c1a6749
 �
 morm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/query/JpqlQueryRunner.java,a\d\ad51e19a1669e169e3ddf08aa9b6287dcb02e036
 �
@@ -435,8 +413,6 @@ N
 orm-jpa-hibernate/进阶教程,c\3\c30fb1a29a7920852e2de4188733f82c97a69850
 �
 jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
-[
-+relational-database/postgre-sql/PSQL 连接,d\0\d0680b08dd19a94e5af56c713f50ce38580b164f
 �
 rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/any/DemoAnyMapping.java,7\f\7fd20165fea4168a2332c4f3a8f705362d432ef7
 �
@@ -545,3 +521,27 @@ f
 6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 �
 gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/Session的创建,3\e\3edf27468c7f850196b4b2acae7bbe7451d2cac4
+�
+cdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo1/DBConnectionPool.java,7\c\7c6726aee199e22470736bf7d8dcede2a988f072
+�
+jdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo1/DBConnectionPoolManager.java,0\7\072ce2f72a8515e502d0d20665d720f2b4f44c89
+�
+\database-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/PoolState.java,c\b\cbddc732fbf0c93e1e4c7c87b8843b57f3dec05b
+�
+fdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ConnectionValidator.java,c\e\ceb4f36b0b63a84187caa5f9d3a7da02ee009773
+�
+_database-orm-design/src/main/java/orm/middleware/design/connection/pool/JdbcConnectionPool.java,6\9\69449cbb61f10d915b9463935dc9e06454df4c20
+�
+pdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo3/PoolableConnectionFactoryImpl.java,c\3\c3efd02940f1d4805835247caca7cb8b284ab36a
+�
+ldatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo3/PoolableConnectionFactory.java,2\c\2c85e2acbe791d203a0a637fa372e2f8aab205cc
+�
+ddatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/PooledConnections.java,3\5\354d19be6e17b97a61bc8cd2e13c58d960f99d07
+�
+kdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo3/MyPoolableConnectionImpl.java,1\4\143979aeb5891fa98a22917a709e8bb85eec6402
+�
+edatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo3/PoolableConnection.java,1\8\1857418088964c4ba77ed822027a76d3a84a528b
+�
+adatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo3/ConnectionPool.java,d\2\d2295849aa923f7ab90000b1d84b16d508390ec1
+�
+]database-orm-design/src/main/java/orm/middleware/design/connection/pool/连接池设计思想,d\8\d819c08c1af42def862dd978c9523f2a697c683e

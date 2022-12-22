@@ -1,0 +1,17 @@
+
+`	java:S112r"FDefine and throw a dedicated exception instead of using a generic one.(“áÝßûÿÿÿÿ
+t
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(è®Ñ üÿÿÿÿ
+n
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(®ÔãH
+T
+java:S1135"2Complete the task associated to this TODO comment.(‡¬Òõûÿÿÿÿ8ÞÒ±ÚÒ0
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(œ¨Âò
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(£Ä±Èùÿÿÿÿ
+S	java:S106."9Replace this use of System.out or System.err by a logger.(ÅþÇšüÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(üâ‹«ýÿÿÿÿ
+]	java:S125P"<This block of commented-out lines of code should be removed.(þ“Ò¢úÿÿÿÿ8ñ˜ñ¨Ó0
+N	java:S106["9Replace this use of System.out or System.err by a logger.(Í…Î®
+T	java:S106†"9Replace this use of System.out or System.err by a logger.(ïä²€úÿÿÿÿ
+U	java:S106—"9Replace this use of System.out or System.err by a logger.(ç†­68÷˜ñ¨Ó0

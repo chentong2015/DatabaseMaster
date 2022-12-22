@@ -1,7 +1,9 @@
-SQL> CREATE TABLE t_batching_comment (
-       id NUMBER PRIMARY KEY,
-       review VARCHAR2(30)    Oracle的Varchar字符串为VARCHAR2
-     );
+# Oracle创建出来的表名称全部是大写
+# Oracle的Varchar字符串为VARCHAR2
+CREATE TABLE T_BATCHING_COMMENT (
+   ID NUMBER PRIMARY KEY,
+   REVIEW VARCHAR2(30)
+);
 
 SQL> select value from v$diag_info where name ='Diag Alert'; Alert log XML文件位置
 SQL> select * from v$sql;     查看最近所作的操作, 需要权限

@@ -1,0 +1,17 @@
+
+l
+java:S1104"QMake timer a static final constant or non-public and provide accessors if needed.(¦İúéıÿÿÿÿ
+D
+java:S1172*".Remove this unused method parameter "timeout".(ŞÁİğ
+>
+java:S1068"(Remove this unused "name" private field.(Ú§×œ
+I
+java:S1068"'Remove this unused "url" private field.(«Œåùÿÿÿÿ8¹ã×÷Ò0
+J
+java:S1068"(Remove this unused "user" private field.(‡ÏÇ³øÿÿÿÿ8¹ã×÷Ò0
+L
+java:S1068"1Remove this unused "minConnection" private field.(Â˜âÑıÿÿÿÿ
+F
+java:S1068"1Remove this unused "maxConnection" private field.(ñù
+G
+java:S1068"1Remove this unused "countAssigned" private field.(Ì„È¿
