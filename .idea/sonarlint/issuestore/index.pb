@@ -117,8 +117,6 @@ x
 Horm-spring-jdbc/src/main/java/JdbcTemplateJdcp/dao/BaseJdbcTemplate.java,3\1\31a42cc7557e0290896864301dc3ffeb6dae2541
 �
 torm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/one/to/one/设计OneToOne,6\7\67feac1f7e5763ee0fe0d781abc50683a494d46e
-K
-database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
 �
 oorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/query/DemoQueryTranslator.java,8\7\8744311bfef4e5bb278fb8d2a54820531aee8539
 �
@@ -259,12 +257,8 @@ i
 9relational-database/sql-server/SQL Server 指令全集.md,d\5\d595a9c8e59604487e833cc9e80e15224bcdf486
 w
 Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
-�
-Trelational-database/postgre-sql/src/main/java/settings/PostgresSqlSettingsTable.java,2\5\25dfb37dd0aeeaf73707a9667b299ec3b72b3024
 �
 rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Fetching配置,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
-c
-3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
 n
 >relational-database/mysql/src/main/java/MysqlOptimization.java,9\8\98881886a44e1b11da99ccd264d4381e24f771f6
 u
@@ -383,8 +377,6 @@ Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/Batching�
 Pdatabase-orm-design/src/main/java/storage/engine/design/存储引擎系统设计,d\2\d26179dc8c7f41e8204631656d5633335c444390
 z
 Jdatabase-orm-design/src/main/java/storage/engine/design/存储引擎对比,7\8\788843b2453dd681384482b46257d2355c7c4ccc
-�
-Rdatabase-orm-design/src/main/java/database/design/connection/ConnectionDriver.java,2\f\2f2ceda09ed329ce274bc4c8d27f60e06007a632
 j
 :relational-database/mysql/src/main/java/MySqlFunctions.sql,4\1\4193b622316baaab2e6923424706788bc9609ab9
 �
@@ -421,8 +413,6 @@ porm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 torm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/HibernateSessionTemplate.java,0\4\0440b8f3a1bc411dfc165c9d70ca4aeb57f82f3d
 �
 porm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/BaseEntity.java,1\d\1d403a0df052cb6828a025aef97744981dbf5dc9
-l
-<relational-database/postgre-sql/src/main/java/view/Psql View,6\2\62311439938c649bddbcd68c82c418195b99f91a
 [
 +relational-database/postgre-sql/PSQL 基础,4\c\4cc55c6c9b5cb4b5d72c08ed8e8458bd9e791fd9
 �
@@ -475,8 +465,6 @@ O
 relational-non-database/pom.xml,3\a\3a9d5bf6fd1042eb3eacb58b141f01bf11d8cb8d
 R
 "orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 I
 orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 f
@@ -511,12 +499,6 @@ K
 ddatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ConnectionCreator.java,7\4\74c6757112d7d71678715b66ebf4071a472e7df2
 �
 jdatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ValidationThreadFactory.java,8\4\84ca7009c0f234eb84a2075f757331fefc32d8c2
-K
-relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
-V
-&relational-database/sql-server/pom.xml,0\6\0652b8025c4df2ced598a0287f033cae7b317589
-�
-Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
 f
 6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 �
@@ -545,3 +527,35 @@ edatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo3/P
 adatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo3/ConnectionPool.java,d\2\d2295849aa923f7ab90000b1d84b16d508390ec1
 �
 ]database-orm-design/src/main/java/orm/middleware/design/connection/pool/连接池设计思想,d\8\d819c08c1af42def862dd978c9523f2a697c683e
+[
++relational-database/postgre-sql/PSQL 连接,d\0\d0680b08dd19a94e5af56c713f50ce38580b164f
+X
+(relational-database/sybase/Sybase 基础,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
+X
+(relational-database/sybase/Sybase 测试,f\7\f773e5337da6265a967f479820b4412d1c1a6749
+�
+Yrelational-database/postgre-sql/src/main/java/com/psql/main/batching/Batching性能调优,a\c\acadeebde5e53df4ab69cc549ded92bdf1f7a34b
+X
+(relational-database/oracle/Oracle 基础,7\2\72ab19c47e22d347f965f8538be77813fd686018
+X
+(relational-database/oracle/Oracle 测试,9\d\9d374e396964580f6acc98a4830d80a040e091d6
+�
+Xrelational-database/sybase/src/main/java/com/sybase/main/truncate/DemoSybaseVarchar.java,4\f\4f05dabc2c0840943ae6d8828e2764770f167bad
+�
+Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTruncate.java,7\2\72fe08acc539fc7acd97d8db5e0ed560560e775c
+|
+Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
+�
+Qrelational-database/postgre-sql/src/main/java/com/psql/main/DemoPostgresJDBC.java,0\8\08da77cf8e9a2af4e77ce789d5211d8349b87948
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+K
+relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
+W
+'relational-database/postgre-sql/pom.xml,9\e\9e622c3f443856cc45abe9c6a5afebdb1be97806
+V
+&relational-database/sql-server/pom.xml,0\6\0652b8025c4df2ced598a0287f033cae7b317589
+�
+Qdatabase-orm-design/src/main/java/database/design/exception/DemoSqlException.java,4\f\4f7d8dce4734f426d19573fcfb2099e8a3cd05dc
+|
+Lrelational-database/oracle/src/main/java/com/oracle/main/DemoOrcaleJDBC.java,5\c\5c179f72a7efecc9477dc737cecf0964ec973f99

@@ -4,9 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-// Oracle关于批量插入和删除的测试
 public class DemoOracleBatching {
 
+    // 如果背后没有合并成batch query执行，如何提高批量插入效率 ?
     public static int[] testPrepareStatementInsert(Connection connection) throws SQLException {
         int[] countLines;
         String query = "INSERT INTO T_BATCHING_COMMENT(ID, REVIEW) values (?, ?)";

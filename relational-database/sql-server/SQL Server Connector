@@ -1,3 +1,5 @@
+ SQL Server 11.2 Driver
+ 必须设置新property: trustServerCertificate=true到连接Connection字符串
 
  SQL Server使用数据库Server名称(Device Name)进行连接
  Schema Default: dbo
