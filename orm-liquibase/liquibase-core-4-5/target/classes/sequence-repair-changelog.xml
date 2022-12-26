@@ -1,0 +1,31 @@
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet id="1" author="dao-engine">
+        <createTable tableName="DPI_ID_DBF">
+            <column name="M_LABEL1" type="string(30)"/>
+            <column name="M_LABEL2" type="string(30)"/>
+            <column name="M_UNIQUE_ID" type="long"/>
+            <column name="M_IDENTITY" type="long"/>
+        </createTable>
+
+        <createTable tableName="JFT_SEQ_SAMPLES">
+            <column name="M_ID" type="int">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="M_LABEL" type="string(30)"/>
+            <column name="M_AMOUNT" type="double"/>
+        </createTable>
+
+        <createTable tableName="JFT_SEQ_SAMPLES_WITH_LONG_ID">
+            <column name="M_ID" type="long">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="M_LABEL" type="string(30)"/>
+            <column name="M_AMOUNT" type="double"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
