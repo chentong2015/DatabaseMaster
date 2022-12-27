@@ -20,10 +20,8 @@
 Java的开源数据库连接池: C3P0、Proxool、DBCP、BoneCP、Druid
 
 数据库连接池的实现:
- - <artifactId>commons-dbcp2</artifactId>
-   org.apache.commons.dbcp2.BasicDataSource
+ - org.apache.commons.dbcp2.BasicDataSource
  - Hibernate源码
  - Mybatis持久层框架
- - Liquibase源码
 1. 如何判断那些线程占用了数据库连接? 那些线程占用了不止一个连接 ?
 2. 如何验证连接池中所有连接的Transaction事务都正常关闭了 ?
