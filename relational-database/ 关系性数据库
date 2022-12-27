@@ -1,0 +1,3 @@
+Catalog name and schema name are similar concepts.
+- Catalog is used with Oracle, DB2 and MySQL
+- Schema is for PostgresSQL

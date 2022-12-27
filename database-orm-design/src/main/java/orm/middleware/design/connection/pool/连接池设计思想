@@ -17,6 +17,8 @@
  5. 连接池的配置与维护: 连接池参数的配置需要根据系统而定
  6. 性能和可靠性: 必须具有(网络中断)自动重连的功能, 设置超时时间定期回收连接
 
+Java的开源数据库连接池: C3P0、Proxool、DBCP、BoneCP、Druid
+
 数据库连接池的实现:
  - <artifactId>commons-dbcp2</artifactId>
    org.apache.commons.dbcp2.BasicDataSource
