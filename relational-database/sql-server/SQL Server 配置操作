@@ -1,5 +1,9 @@
 SELECT @@VERSION  Sql Server版本查询
 
+Sql Server request请求有最大参数的限制
+com.microsoft.sqlserver.jdbc.SQLServerException: the incoming request has too many parameters
+The sql server supports a maximum of 2100 parameters.
+
 TODO. https://www.sqlshack.com/working-sql-server-command-line-sqlcmd/ 命令行操作
 连接Sql Server, 每个指令都需要使用go来执行
    sqlcmd -S DESKTOP-SO1J50J\SQLEXPRESS -E
