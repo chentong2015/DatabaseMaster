@@ -1,7 +1,12 @@
+http://www.postgres.cn/docs/13/index.html
+https://www.postgresql.org/docs/current/datatype.html    PSQL数据库支持的Data Types
+https://jdbc.postgresql.org/documentation/changelog.html PSQL版本变更记录
+
 TODO. EDB (Enterprise Database) Postgres Advanced Server
 在开源open-source PostgresSQL database数据库的基础上添加的增强功能
 https://edbjapan.com/edbmanual/EPAS_Guide_E_Set_v11/
 
+-----------------------------------------------------------------------------------
 > \c database_name 选择指定的数据库
 
 > \dt              shows all tables in the current schema

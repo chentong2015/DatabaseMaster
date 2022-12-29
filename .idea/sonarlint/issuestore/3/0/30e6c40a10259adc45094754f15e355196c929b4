@@ -1,8 +1,0 @@
-
-Y
-java:S2095-"DUse try-with-resources or close this "Stream" in a "finally" clause.(íØ•%
-y
-java:S1450"WRemove the "database" field and declare it as a local variable in the relevant methods.(‰û²úÿÿÿÿ8»Ö„øÔ0
-S	java:S106""9Replace this use of System.out or System.err by a logger.(ıŸ…“ÿÿÿÿÿ
-Y
-java:S1612/">Replace this lambda with method reference 'Path::getFileName'.(¯×ØÊøÿÿÿÿ

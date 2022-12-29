@@ -32,6 +32,7 @@
     <bytecodeTargetLevel>
       <module name="distributed-database" target="15" />
       <module name="distributed-db" target="15" />
+      <module name="liquibase-core-4-18-sub" target="15" />
       <module name="native-hibernate6-api-metadata" target="15" />
       <module name="object-db-management-system" target="1.5" />
       <module name="orm-jpa-hibernate-example" target="15" />

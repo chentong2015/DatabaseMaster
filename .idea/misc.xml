@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/orm-jpa-hibernate/orm-jpa-hibernate-example/pom.xml" />
         <option value="$PROJECT_DIR$/orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/orm-liquibase/liquibase-core-4-18/liquibase-core-4-18-sub/pom.xml" />
       </set>
     </option>
   </component>

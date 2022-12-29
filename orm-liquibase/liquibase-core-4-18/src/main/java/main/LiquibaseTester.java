@@ -21,20 +21,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class LiquibaseTester {
-
-    private static Database database;
+    
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/liquibase_upgrade_4_18?user=postgres&password=admin";
 
     public static void main(String[] args) throws SQLException, LiquibaseException {
         Connection connection = DriverManager.getConnection(psqlConnectStr);
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
-        database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
-        List<Path> pathList = getAllFilesFromResource("/");
-        for (Path path : pathList) {
-            System.out.println(path.toString());
-        }
+        Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
 
-        try (Liquibase liquibase = new Liquibase("column-types-changelog.xml", new ClassLoaderResourceAccessor(), database)) {
+        try (Liquibase liquibase = new Liquibase("load-update-data-changelog.xml", new ClassLoaderResourceAccessor(), database)) {
             liquibase.update(new Contexts(), new LabelExpression());
         }
     }

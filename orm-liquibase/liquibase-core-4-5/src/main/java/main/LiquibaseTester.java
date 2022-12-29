@@ -30,11 +30,7 @@ public class LiquibaseTester {
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
         ClassLoaderResourceAccessor resourceAccessor = new ClassLoaderResourceAccessor();
 
-        for (Path path : getAllFilesFromResource()) {
-            System.out.println(path.toString());
-        }
-
-        try (Liquibase liquibase = new Liquibase("copy-table-changelog.xml", resourceAccessor, database)) {
+        try (Liquibase liquibase = new Liquibase("load-update-data-changelog.xml", resourceAccessor, database)) {
             liquibase.update(new Contexts(), new LabelExpression());
         }
     }
