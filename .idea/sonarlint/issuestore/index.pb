@@ -529,8 +529,6 @@ V
 Qdatabase-orm-design/src/main/java/database/design/exception/DemoSqlException.java,4\f\4f7d8dce4734f426d19573fcfb2099e8a3cd05dc
 |
 Lrelational-database/oracle/src/main/java/com/oracle/main/DemoOrcaleJDBC.java,5\c\5c179f72a7efecc9477dc737cecf0964ec973f99
-c
-3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
 K
 database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
 �
@@ -539,8 +537,6 @@ K
 Yrelational-database/sybase/src/main/java/com/sybase/main/batching/DemoSybaseBatching.java,e\f\ef24dd71b6a100c7d60ff0575f7b3a0da2f8ffcc
 �
 Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
-�
-Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
 
 Odatabase-orm-design/src/main/java/database/design/bacthing/Batching批量执行,4\f\4fc03b64dde4bf0eb0831039cae2e199288403e3
 ~
@@ -549,8 +545,6 @@ W
 'relational-database/postgre-sql/pom.xml,9\e\9e622c3f443856cc45abe9c6a5afebdb1be97806
 _
 /orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
-�
-Qorm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelog.java,f\a\fa84e92d1d3e471c0af4afaf7ba72fdd0ec21260
 �
 Qorm-liquibase/liquibase-core-basic/src/main/java/main/logger/LiquibaseLogger.java,5\b\5b1be1ff2e00bf4841b4301374af583234077109
 W
@@ -561,17 +555,11 @@ X
 ]database-orm-design/src/main/java/orm/middleware/design/connection/pool/连接池设计思想,d\8\d819c08c1af42def862dd978c9523f2a697c683e
 i
 9relational-database/sql-server/SQL Server 指令全集.md,d\5\d595a9c8e59604487e833cc9e80e15224bcdf486
-f
-6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 �
 [orm-liquibase/liquibase-core-basic/src/main/java/main/changeset/checksum/Changeset Checksum,e\2\e25607f9788f3260d224adfd297d1b05d9b1abd7
-|
-Lorm-liquibase/liquibase-core-4-5/src/main/java/main/LiquibaseUtilTester.java,1\9\19f594a31a5ffd032c41e489a36c9718e924e6ec
-}
-Morm-liquibase/liquibase-core-4-18/src/main/java/main/LiquibaseUtilTester.java,1\4\14788d9c7768cb44a19e16f02317a6fb6a7a78d2
 [
 +relational-database/postgre-sql/PSQL 基础,4\c\4cc55c6c9b5cb4b5d72c08ed8e8458bd9e791fd9
 [
 +relational-database/postgre-sql/PSQL 连接,d\0\d0680b08dd19a94e5af56c713f50ce38580b164f
-x
-Horm-liquibase/liquibase-core-4-5/src/main/java/main/LiquibaseTester.java,2\6\26d7c842b777698e78f471005cf7914ad4bbb7f1
+E
+orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
