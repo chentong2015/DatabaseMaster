@@ -6,29 +6,32 @@ import liquibase.Liquibase;
 import liquibase.database.Database;
 import liquibase.database.DatabaseFactory;
 import liquibase.database.jvm.JdbcConnection;
-import liquibase.exception.LiquibaseException;
 import liquibase.resource.ClassLoaderResourceAccessor;
-import liquibase.snapshot.SnapshotGeneratorFactory;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class LiquibaseTester {
 
-    private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=test_db;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
+    private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase-4-5;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/liquibase_upgrade_4_5?user=postgres&password=admin";
 
-    public static void main(String[] args) throws SQLException, LiquibaseException {
+    public static void main(String[] args) throws Exception {
         Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong18");
+        // Connection connection = DriverManager.getConnection(psqlConnectStr);
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
-        SnapshotGeneratorFactory.getInstance().register(new MyColumnSnapshotGenerator());
 
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
         ClassLoaderResourceAccessor resourceAccessor = new ClassLoaderResourceAccessor();
 
-        try (Liquibase liquibase = new Liquibase("table-api-changelog.xml", resourceAccessor, database)) {
+        try (Liquibase liquibase = new Liquibase("changelog-proc.xml", resourceAccessor, database)) {
             liquibase.update(new Contexts(), new LabelExpression());
         }
+    }
+
+    private static void customSnapshot() {
+        // TODO. 必须unregister注入的类型，然后注册自定义的扩展类型
+        // SnapshotGeneratorFactory.getInstance().unregister(ColumnSnapshotGenerator.class);
+        // SnapshotGeneratorFactory.getInstance().register(new MyColumnSnapshotGenerator());
     }
 }

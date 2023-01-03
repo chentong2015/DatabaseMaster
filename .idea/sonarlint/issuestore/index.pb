@@ -249,8 +249,6 @@ Q
 !relational-database/mysql/pom.xml,b\5\b539580a08e698b2d29c991e6ed07f9277f2ce5e
 s
 Crelational-database/mysql/src/main/java/batching/MySqlBatching.java,0\2\0203b05ef4736502d06a6ca868fe487aa458f9e9
-W
-'orm-liquibase/Liquibase Commands Script,9\d\9d691b559f75513ca531b87f14cdfb9c95f186dd
 w
 Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
 �
@@ -261,8 +259,6 @@ u
 Erelational-database/mysql/src/main/java/index/IndexSpecification.java,7\f\7f8ff8b525be4324faf5d0d9d1caab444622f532
 u
 Erelational-database/mysql/src/main/java/index/IndexDataStructure.java,d\c\dc10693b44d5d0560c75f5f2437ec83ba8c2f579
-V
-&orm-liquibase/Liquibase Global Options,1\7\17ad2b395531891dd8f83089ac453d478fd5b03e
 }
 Mdatabase-orm-design/src/main/java/storage/engine/design/Index/数据库索引,7\a\7a94c837182a2648e09e70cec73c444c3bce3a32
 _
@@ -519,8 +515,6 @@ Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTru
 Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
 �
 Qrelational-database/postgre-sql/src/main/java/com/psql/main/DemoPostgresJDBC.java,0\8\08da77cf8e9a2af4e77ce789d5211d8349b87948
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 K
 relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
 V
@@ -563,3 +557,15 @@ i
 +relational-database/postgre-sql/PSQL 连接,d\0\d0680b08dd19a94e5af56c713f50ce38580b164f
 E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
+}
+Morm-liquibase/liquibase-core-4-18/src/main/java/main/LiquibaseUtilTester.java,1\4\14788d9c7768cb44a19e16f02317a6fb6a7a78d2
+�
+Qorm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelog.java,f\a\fa84e92d1d3e471c0af4afaf7ba72fdd0ec21260
+Z
+*orm-liquibase/liquibase-core-basic/pom.xml,9\8\981a6efb5c9c3ff9c08be837d18719ac9cbbe7b9
+c
+3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
+�
+Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
+f
+6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4

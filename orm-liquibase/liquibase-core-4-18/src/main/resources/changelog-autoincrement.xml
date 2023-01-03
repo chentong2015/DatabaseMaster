@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+    <changeSet author="das" id="1">
+        <createTable tableName="COLUMN_TYPE_TEST_T_10_A">
+            <column name="M_IDENTITY" type="numeric(19, 0)" autoIncrement="true">
+                <constraints nullable="false"/>
+            </column>
+            <column name="BOOLEAN_COLUMN" type="boolean"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
