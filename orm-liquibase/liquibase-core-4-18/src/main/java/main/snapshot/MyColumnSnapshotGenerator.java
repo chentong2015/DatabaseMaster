@@ -1,4 +1,4 @@
-package main;
+package main.snapshot;
 
 import liquibase.Scope;
 import liquibase.database.AbstractJdbcDatabase;
@@ -12,6 +12,7 @@ import liquibase.snapshot.JdbcDatabaseSnapshot;
 import liquibase.snapshot.jvm.ColumnSnapshotGenerator;
 import liquibase.structure.DatabaseObject;
 import liquibase.structure.core.Column;
+import liquibase.structure.core.DataType;
 import liquibase.structure.core.Relation;
 import liquibase.structure.core.Schema;
 
@@ -21,15 +22,9 @@ import java.util.TreeMap;
 
 public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
 
-    //~ ----------------------------------------------------------------------------------------------------------------
-    //~ Static fields/initializers 
-    //~ ----------------------------------------------------------------------------------------------------------------
-
     private static final String ORDINAL_POSITION = "ORDINAL_POSITION";
-
-    //~ ----------------------------------------------------------------------------------------------------------------
-    //~ Instance fields 
-    //~ ----------------------------------------------------------------------------------------------------------------
+    private static final String COLUMN_SIZE = "COLUMN_SIZE";
+    private static final String DECIMAL_DIGITS = "DECIMAL_DIGITS";
 
     private List<CachedRow> allColumnsMetadataRs = null;
 
@@ -38,10 +33,6 @@ public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
         return PRIORITY_DATABASE;
     }
 
-    //~ ----------------------------------------------------------------------------------------------------------------
-    //~ Methods 
-    //~ ----------------------------------------------------------------------------------------------------------------
-
     @Override
     protected void addTo(DatabaseObject foundObject, DatabaseSnapshot snapshot) throws DatabaseException {
         var jdbcSnapshot = (JdbcDatabaseSnapshot) snapshot;
@@ -49,7 +40,6 @@ public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
             super.addTo(foundObject, snapshot);
             return;
         }
-
         if (!snapshot.getSnapshotControl().shouldInclude(Column.class)) {
             return;
         }
@@ -57,17 +47,12 @@ public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
             Database database = snapshot.getDatabase();
             Relation relation = (Relation) foundObject;
             if (allColumnsMetadataRs == null) {
-                // This is where we override Liquibase's behavior.
-                // Only if we don't have the global metadata info, we will go and fetch them.
-                // The output will then be cached into allColumnsMetadataRs, in order to avoid fetching them again.
-                // This way we guarantee that this operation will be executed only once.
                 try {
                     repairTableStructure(jdbcSnapshot, (AbstractJdbcDatabase) database, relation);
                 } catch (SQLException e) {
                     throw new DatabaseException(e);
                 }
             }
-
             try {
                 addColumn(snapshot, database, relation);
             } catch (SQLException e) {
@@ -88,27 +73,14 @@ public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
     private void repairTableStructure(JdbcDatabaseSnapshot snapshot, AbstractJdbcDatabase database, Relation relation) throws SQLException, DatabaseException {
         JdbcDatabaseSnapshot.CachingDatabaseMetaData databaseMetaData = snapshot.getMetaDataFromCache();
 
-        Schema schema;
-
-        schema = relation.getSchema();
+        Schema schema = relation.getSchema();
         allColumnsMetadataRs = databaseMetaData.getColumns(database.getJdbcCatalogName(schema), database.getJdbcSchemaName(schema), relation.getName(), null);
 
-        /*
-         * COMMENT FROM LIQUIBASE
-         *
-         * Microsoft SQL Server, SAP SQL Anywhere and probably other RDBMS guarantee non-duplicate
-         * ORDINAL_POSITIONs for the columns of a single table. But they do not guarantee there are no gaps
-         * in that integers (e.g. if columns have been deleted). So we need to check for that and renumber
-         * if needed.
-         */
         TreeMap<Integer, CachedRow> treeSet = new TreeMap<>();
         for (CachedRow row : allColumnsMetadataRs) {
             treeSet.put(row.getInt(ORDINAL_POSITION), row);
         }
         Logger log = Scope.getCurrentScope().getLog(getClass());
-        // COMMENT FROM LIQUIBASE
-        //
-        // Now we can iterate through the sorted list and repair if needed.
         int currentOrdinal = 0;
         for (CachedRow row : treeSet.values()) {
             currentOrdinal++;
@@ -119,5 +91,66 @@ public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
                 row.set(ORDINAL_POSITION, currentOrdinal);
             }
         }
+    }
+
+    @Override
+    protected DataType readDataType(CachedRow columnMetadataResultSet, Column column, Database database) throws DatabaseException {
+        if (!(database instanceof MSSQLDatabase)) {
+            return super.readDataType(columnMetadataResultSet, column, database);
+        }
+
+        String columnTypeName = parseColumnTypeName(columnMetadataResultSet);
+
+        int dataType;
+        if (columnMetadataResultSet.containsColumn("DATA_TYPE")) {
+            dataType = columnMetadataResultSet.getInt("DATA_TYPE");
+        } else {
+            dataType = columnMetadataResultSet.getInt("data_type");
+        }
+
+        Integer columnSize = null;
+        Integer decimalDigits = null;
+        if (!database.dataTypeIsNotModifiable(columnTypeName)) {
+            columnSize = columnMetadataResultSet.getInt(COLUMN_SIZE);
+            decimalDigits = columnMetadataResultSet.getInt(DECIMAL_DIGITS);
+            if (decimalDigits != null && decimalDigits.equals(0) && dataType != 92) {
+                decimalDigits = null;
+            }
+        }
+
+        DataType type = new DataType(columnTypeName);
+        type.setDataTypeId(dataType);
+        if (dataType == 93) {
+            if (decimalDigits == null) {
+                type.setColumnSize(null);
+            } else {
+                type.setColumnSize(decimalDigits != database.getDefaultFractionalDigitsForTimestamp() ? decimalDigits : null);
+            }
+            type.setDecimalDigits(null);
+        } else {
+            type.setColumnSize(columnSize);
+            type.setDecimalDigits(decimalDigits);
+        }
+
+        type.setRadix(columnMetadataResultSet.getInt("NUM_PREC_RADIX"));
+        type.setCharacterOctetLength(columnMetadataResultSet.getInt("CHAR_OCTET_LENGTH"));
+        type.setColumnSizeUnit(DataType.ColumnSizeUnit.BYTE);
+        return type;
+    }
+
+    private String parseColumnTypeName(CachedRow columnMetadataResultSet) {
+        String columnTypeName = (String) columnMetadataResultSet.get("TYPE_NAME");
+        if ("numeric() identity".equalsIgnoreCase(columnTypeName)) {
+            columnTypeName = "numeric";
+        } else if ("decimal() identity".equalsIgnoreCase(columnTypeName)) {
+            columnTypeName = "decimal";
+        } else if ("xml".equalsIgnoreCase(columnTypeName)) {
+            columnMetadataResultSet.set(COLUMN_SIZE, null);
+            columnMetadataResultSet.set(DECIMAL_DIGITS, null);
+        } else if ("datetimeoffset".equalsIgnoreCase(columnTypeName) || "time".equalsIgnoreCase(columnTypeName)) {
+            columnMetadataResultSet.set(COLUMN_SIZE, columnMetadataResultSet.getInt(DECIMAL_DIGITS));
+            columnMetadataResultSet.set(DECIMAL_DIGITS, null);
+        }
+        return columnTypeName;
     }
 }

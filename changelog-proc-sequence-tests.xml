@@ -1,0 +1,33 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="ctong" id="1672763077222-1">
+        <createTable tableName="TEST_COLUMN_TYPE_TEST_T_10">
+            <column computed="false" name="ID" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="AUTHOR" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="FILENAME" type="nvarchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="DATEEXECUTED" type="datetime2(3)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="ORDEREXECUTED" type="numeric(10, 0)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="EXECTYPE" type="nvarchar(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="MD5SUM" type="nvarchar(35)"/>
+            <column computed="false" name="DESCRIPTION" type="nvarchar(255)"/>
+            <column computed="false" name="COMMENTS" type="nvarchar(255)"/>
+            <column computed="false" name="TAG" type="nvarchar(255)"/>
+            <column computed="false" name="LIQUIBASE" type="nvarchar(20)"/>
+            <column computed="false" name="CONTEXTS" type="nvarchar(255)"/>
+            <column computed="false" name="LABELS" type="nvarchar(255)"/>
+            <column computed="false" name="DEPLOYMENT_ID" type="nvarchar(10)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

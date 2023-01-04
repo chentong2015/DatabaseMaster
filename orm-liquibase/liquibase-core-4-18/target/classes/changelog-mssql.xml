@@ -1,0 +1,18 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <!-- Can not run this changeSet without column name -->
+    <changeSet author="das" id="1672757152493-1">
+        <createTable tableName="COLUMN_TYPE_TEST"/>
+    </changeSet>
+
+    <changeSet author="das" id="1672757152493-2">
+        <addColumn tableName="COLUMN_TYPE_TEST">
+            <column name="VARCHAR_COLUMN" type="varchar(29 BYTE)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="das" id="1672757152493-3">
+        <addUniqueConstraint columnNames="VARCHAR_COLUMN" constraintName="TEST_CS_U" tableName="COLUMN_TYPE_TEST"/>
+    </changeSet>
+</databaseChangeLog>

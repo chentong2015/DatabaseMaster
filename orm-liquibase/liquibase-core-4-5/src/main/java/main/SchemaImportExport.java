@@ -25,15 +25,16 @@ import java.io.FileWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class Main {
+public class SchemaImportExport {
 
-    private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase-4-18;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
+    private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase-4-5;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
 
-    private static final String CHANGELOG_TIM = "orm-liquibase/liquibase-core-4-18/src/main/resources/changelog-tim.xml";
-    private static final String CHANGELOG_PROC = "orm-liquibase/liquibase-core-4-18/src/main/resources/changelog-proc.xml";
+    private static final String CHANGELOG_TIM = "orm-liquibase/liquibase-core-4-5/src/main/resources/changelog-tim.xml";
+    private static final String CHANGELOG_PROC = "orm-liquibase/liquibase-core-4-5/src/main/resources/changelog-proc.xml";
 
     public static void main(String[] args) throws Exception {
         getDBSchemaAndChangelogFiltered(CHANGELOG_TIM, CHANGELOG_PROC);
+        Thread.sleep(2000);
         importSchema();
         exportSchema();
         System.out.println("done");
