@@ -12,10 +12,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class LiquibaseTester {
-
-    // CommandLineUtils
-    // DatabaseChangeLog
-    // IndexSnapshotGenerator
+    
     private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase-4-5;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/liquibase_upgrade_4_5?user=postgres&password=admin";
 

@@ -1,0 +1,49 @@
+
+E
+java:S3740,"/Provide the parametrized type for this generic.(¨®Ðè
+E
+java:S3740-"/Provide the parametrized type for this generic.(äÀê…
+E
+java:S37406"/Provide the parametrized type for this generic.(ÑŠôï
+J
+java:S37407"/Provide the parametrized type for this generic.(Çû„äûÿÿÿÿ
+E
+java:S3740I"/Provide the parametrized type for this generic.(……à¾
+F
+java:S3740¥"/Provide the parametrized type for this generic.(¨®Ðè
+F
+java:S3740¬"/Provide the parametrized type for this generic.(«›ñ¿
+F
+java:S3740—"/Provide the parametrized type for this generic.(Ì‰®Â
+K
+java:S3740¹"/Provide the parametrized type for this generic.(ðÚÿßüÿÿÿÿ
+E
+java:S3740º"/Provide the parametrized type for this generic.(ÇÂÃM
+t
+java:S1488¶"]Immediately return this expression instead of assigning it to the temporary variable "index".(œÓõ°
+i
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 123 to the 15 allowed.(Â²æ
+V
+java:S1119/";Refactor the code to remove this label and the need for it.(ÆÊ¦´ÿÿÿÿÿ
+>
+java:S1905_"(Remove this unnecessary cast to "Index".(þäº¶
+Z
+java:S3358u"DExtract this nested ternary operation into an independent statement.(¹Ûª÷
+o
+java:S3776Ž"SRefactor this method to reduce its Cognitive Complexity from 166 to the 15 allowed.(˜ŒÑ˜ÿÿÿÿÿ
+R
+java:S1119®";Refactor the code to remove this label and the need for it.(Æîñ‡
+d
+java:S5361Ô"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ò´ŒŒþÿÿÿÿ
+D
+java:S1905â"(Remove this unnecessary cast to "Index".(ÝŽ»¶øÿÿÿÿ
+>
+java:S1905•"'Remove this unnecessary cast to "List".(ƒÝî
+[
+java:S3358«"DExtract this nested ternary operation into an independent statement.(¹Ûª÷
+?
+java:S1905¶"(Remove this unnecessary cast to "Index".(œÓõ°
+>
+java:S1905Ó"(Remove this unnecessary cast to "Index".(‹¥ÅE
+`
+java:S6019Ú"IFix this reluctant quantifier that will only ever match the empty string.(Œš„Ç
