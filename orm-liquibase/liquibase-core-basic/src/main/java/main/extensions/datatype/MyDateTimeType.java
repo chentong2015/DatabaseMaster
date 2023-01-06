@@ -3,14 +3,14 @@ package main.extensions.datatype;
 import liquibase.database.Database;
 import liquibase.database.core.MSSQLDatabase;
 import liquibase.database.core.OracleDatabase;
+import liquibase.database.core.PostgresDatabase;
 import liquibase.database.core.SybaseDatabase;
 import liquibase.datatype.DatabaseDataType;
-import liquibase.datatype.core.TimestampType;
+import liquibase.datatype.core.DateTimeType;
 
-// TODO. 根据不同的database来映射到不同的类型
-// liquibase底层支持非常多数据库的交互, 需要DB间的适配
-public class MyDateTimeType extends TimestampType {
+public class MyDateTimeType extends DateTimeType {
 
+    // 将Liquibase Changelog中配置的Type类型映射到不同数据库的不同类型
     @Override
     public DatabaseDataType toDatabaseDataType(Database database) {
         if (database instanceof SybaseDatabase) {
@@ -20,7 +20,10 @@ public class MyDateTimeType extends TimestampType {
             return new DatabaseDataType("TIMESTAMP", getParameters());
         }
         if (database instanceof MSSQLDatabase) {
-            return new DatabaseDataType("rowversion");
+            return new DatabaseDataType("TIMESTAMP2", 3);
+        }
+        if (database instanceof PostgresDatabase) {
+            return new DatabaseDataType("TIMESTAMP2", 3);
         }
         return super.toDatabaseDataType(database);
     }

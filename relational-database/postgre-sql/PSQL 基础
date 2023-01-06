@@ -1,28 +1,21 @@
 http://www.postgres.cn/docs/13/index.html
 https://www.postgresql.org/docs/current/datatype.html    PSQL数据库支持的Data Types
+https://www.postgresql.org/docs/9.4/functions-info.html  PSQL提供的计算方法
+
 https://jdbc.postgresql.org/documentation/changelog.html PSQL版本变更记录
 
 TODO. EDB (Enterprise Database) Postgres Advanced Server
 在开源open-source PostgresSQL database数据库的基础上添加的增强功能
 https://edbjapan.com/edbmanual/EPAS_Guide_E_Set_v11/
 
------------------------------------------------------------------------------------
-> \c database_name 选择指定的数据库
-
+> \c db_name       select database
 > \dt              shows all tables in the current schema
-
-> select version() Psql版本查询(区别别的DB)
-
+> select version()
 > SELECT * FROM public.t_citizen t where trim(t.language) LIKE '%.US' 对字段使用function再模糊查询(like匹配区分大小写)
-
 > DROP SCHEMA [ IF EXISTS ] nom [, ...] [ CASCADE | RESTRICT ] 删除指定Schema
-
 > select * from pg_stat_activity; PSQL状态活动记录表
-
 > SELECT pid, age(clock_timestamp(), query_start), usename, state, query
   FROM pg_stat_activity
   where state<>'idle';
-
 > SELECT * FROM pg_locks;
-
 > SELECT * FROM pg_catalog.pg_tables;   The system tables live in the pg_catalog database.

@@ -1,8 +1,8 @@
 
-]
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(Ý÷©ä
 ^
 java:S2095F"HUse try-with-resources or close this "Connection" in a "finally" clause.(÷¦–Õ
+]
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(Ý÷©ä
 M
 java:S1135"2Complete the task associated to this TODO comment.(—¿“øùÿÿÿÿ
 T
@@ -24,6 +24,6 @@ Z	java:S106;"9Replace this use of System.out or System.err by a logger.(Ð¬ÏÙýÿ
 Q	java:S125:"<This block of commented-out lines of code should be removed.(ý÷•‰
 U	java:S106="9Replace this use of System.out or System.err by a logger.(ì¢õ­8ùúžÃÎ0
 N
-java:S1068"3Remove this unused "psqlConnectStr2" private field.(‘ßæØøÿÿÿÿ
+java:S1068"3Remove this unused "psqlConnectStr2" private field.(‘ßæØøÿÿÿÿ
 P
 java:S1144."5Remove this unused private "dropTableIfExist" method.(‡®èÏÿÿÿÿÿ

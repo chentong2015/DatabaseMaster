@@ -5,11 +5,11 @@ import java.sql.*;
 // TODO. 不同数据库通过MetaData.getTables()判断table是否存在的方式不同
 // getTables is case sensitive for postgres 大小写必须严格的一致
 // getTables is not case sensitive for sql server 字符大小写均可以查询
-public class MetaDataHelper {
+public class DemoDatabaseMetaData {
 
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
-
     private static String psqlConnectStr2 = "jdbc:postgresql://xxx:5432/java_int_tests?user=java_int_tests&password=JAVA_INT_TESTS";
+
     private static String sqlServerConnectStr = "jdbc:sqlserver://driver_name:1433;databaseName=my_database;Trusted_Connection=true;user=test;password=TCHong16";
 
     public static void main(String[] args) {

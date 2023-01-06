@@ -1,0 +1,23 @@
+
+Z	java:S112C"FDefine and throw a dedicated exception instead of using a generic one.(‘¸Ýg
+`	java:S112L"FDefine and throw a dedicated exception instead of using a generic one.(”Ù¼ôøÿÿÿÿ
+b	java:S112V"FDefine and throw a dedicated exception instead of using a generic one.(¡‡·Ý8ÜÐŠî×0
+n
+java:S2095o"LUse try-with-resources or close this "JdbcConnection" in a "finally" clause.(’·œÇùÿÿÿÿ8Í´«ŠØ0
+I
+java:S2755E"3Disable access to external entities in XML parsing.(Ò‹ñÙ
+I
+java:S2755<"3Disable access to external entities in XML parsing.(²µŸš
+X	java:S1254"<This block of commented-out lines of code should be removed.(¸À«Ë8„¦î×0
+X	java:S125X"<This block of commented-out lines of code should be removed.(²÷Å­8Êä‹î×0
+X	java:S125["<This block of commented-out lines of code should be removed.(˜íÿÏ8Ìä‹î×0
+N
+java:S1068("1Remove this unused "CHANGELOG_TIM" private field.(Û°™£8Íµ…î×0
+N
+java:S1068)"1Remove this unused "CHANGELOG_REF" private field.(Î¹‘³8•¦î×0
+T
+java:S1068+"2Remove this unused "CHANGELOG_PROC" private field.(½“éÑûÿÿÿÿ8Î‘†î×0
+T
+java:S1068,"7Remove this unused "CHANGELOG_PROC_TEMP" private field.(ÈÑšè8–¦î×0
+`
+java:S1144:"DRemove this unused private "getDBSchemaAndChangelogFiltered" method.(ô¡õU8–¦î×0
