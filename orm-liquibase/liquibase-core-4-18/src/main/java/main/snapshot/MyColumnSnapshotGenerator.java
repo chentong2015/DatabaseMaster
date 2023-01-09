@@ -46,14 +46,17 @@ public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
         if (foundObject instanceof Relation) {
             Database database = snapshot.getDatabase();
             Relation relation = (Relation) foundObject;
+            //
+            // 对于MSSQL的第一个Relation Table, 如果已经存储获取的ColumnsMetadataRs of Table
+            // 则对于下一个正常的Relation Table, 会使用之前相同的columns来插入到new relation中
+            // 这会导致创建的第二个表的列异常 !!
+            //
             if (allColumnsMetadataRs == null) {
-                try {
-                    repairTableStructure(jdbcSnapshot, (AbstractJdbcDatabase) database, relation);
-                } catch (SQLException e) {
-                    throw new DatabaseException(e);
-                }
+                System.out.println("Has found Relation Table before");
             }
+
             try {
+                repairTableStructure(jdbcSnapshot, (AbstractJdbcDatabase) database, relation);
                 addColumn(snapshot, database, relation);
             } catch (SQLException e) {
                 throw new DatabaseException(e);
@@ -63,7 +66,7 @@ public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
 
     private void addColumn(DatabaseSnapshot snapshot, Database database, Relation relation) throws SQLException, DatabaseException {
         for (CachedRow row : allColumnsMetadataRs) {
-            Column column = readColumn(row, relation, database);
+            Column column = super.readColumn(row, relation, database);
             setAutoIncrementDetails(column, database, snapshot);
             column.setAttribute("liquibase-complete", true);
             relation.getColumns().add(column);

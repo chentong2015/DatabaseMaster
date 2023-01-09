@@ -35,7 +35,7 @@ import java.sql.SQLException;
 public class SchemaImportExportTester {
 
     private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase-4-18;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
-    private static String sqlServerRemote = "jdbc:sqlserver://dell719xxx:1433;Database=DAS_CONV_TOOL;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
+    private static String sqlServerRemote = "jdbc:sqlserver://dell719srv:1433;Database=DAS_CONV_TOOL;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
 
     private static final String CHANGELOG_TIM = "orm-liquibase/liquibase-core-4-18/src/main/resources/changelog-tim.xml";
     private static final String CHANGELOG_REF = "orm-liquibase/liquibase-core-4-18/src/main/resources/changelog-ref.xml";
@@ -45,13 +45,14 @@ public class SchemaImportExportTester {
 
     public static void main(String[] args) throws Exception {
         SnapshotGeneratorFactory.getInstance().unregister(ColumnSnapshotGenerator.class);
-        SnapshotGeneratorFactory.getInstance().register(new MyColumnSnapshotGenerator());
         SnapshotGeneratorFactory.getInstance().unregister(IndexSnapshotGenerator.class);
+
+        SnapshotGeneratorFactory.getInstance().register(new MyColumnSnapshotGenerator());
         SnapshotGeneratorFactory.getInstance().register(new FilteringIndexSnapshotGeneratorTemp());
 
         // getDBSchemaAndChangelogFiltered(CHANGELOG_REF, CHANGELOG_PROC_TEMP);
         // Thread.sleep(5000);
-        importSchema();
+        // importSchema();
         exportSchema();
     }
 
@@ -83,25 +84,26 @@ public class SchemaImportExportTester {
         }
     }
 
+    // Generated changelog written to changelog-proc.xml
+    // 在从DB中提取Schema直接生成changset到指定的changelog文件中
     private static void exportSchema() throws Exception {
-        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong18");
-        // Connection connection = DriverManager.getConnection(sqlServerRemote, "INSTAL", "INSTALL");
-        JdbcConnection jdbcConnection = new JdbcConnection(connection);
-        Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
-        // Database database = createDatabase();
-
+        Database database = createRemoteDatabase();
         CatalogAndSchema[] defaultCatalogAndSchema = new CatalogAndSchema[]{CatalogAndSchema.DEFAULT};
         DiffOutputControl requireTablespaceForDiff = getTableDiff();
         try {
-            // Generated changelog written to changelog-proc.xml
-            // 在从DB中提取Schema直接生成changset到指定的changelog文件中
-            CommandLineUtils.doGenerateChangeLog("changelog-proc_4_5.xml", database, defaultCatalogAndSchema, null, "ctong", null, null, requireTablespaceForDiff);
+            CommandLineUtils.doGenerateChangeLog("changelog-proc18.xml", database, defaultCatalogAndSchema, null, "ctong", null, null, requireTablespaceForDiff);
         } finally {
             database.close();
         }
     }
 
-    public static Database createDatabase() throws LiquibaseException, SQLException {
+    public static Database createLocalhostDatabase() throws Exception {
+        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong18");
+        JdbcConnection jdbcConnection = new JdbcConnection(connection);
+        return DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
+    }
+
+    public static Database createRemoteDatabase() throws LiquibaseException, SQLException {
         Connection connection;
         try {
             connection = DriverManager.getConnection(sqlServerRemote, "INSTAL", "INSTALL");
