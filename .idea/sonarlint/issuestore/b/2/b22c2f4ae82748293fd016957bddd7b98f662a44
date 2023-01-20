@@ -1,0 +1,27 @@
+
+Z	java:S112E"FDefine and throw a dedicated exception instead of using a generic one.(‘¸Ýg
+`	java:S112N"FDefine and throw a dedicated exception instead of using a generic one.(”Ù¼ôøÿÿÿÿ
+b	java:S112Z"FDefine and throw a dedicated exception instead of using a generic one.(¡‡·Ý8ùïÝ¸Ù0
+g	java:S112e"FDefine and throw a dedicated exception instead of using a generic one.(¤¡·Êøÿÿÿÿ8ô¢Þ¸Ù0
+n
+java:S2095s"LUse try-with-resources or close this "JdbcConnection" in a "finally" clause.(’·œÇùÿÿÿÿ8ŠˆÏ¹Ù0
+I
+java:S2755G"3Disable access to external entities in XML parsing.(Ò‹ñÙ
+I
+java:S2755>"3Disable access to external entities in XML parsing.(²µŸš
+X	java:S1256"<This block of commented-out lines of code should be removed.(¸À«Ë8„¦î×0
+X	java:S125n"<This block of commented-out lines of code should be removed.(Äúî8Å³×»Ù0
+P
+java:S1068&"3Remove this unused "sqlServerRemote" private field.(í®˜ƒ8Ñ³×»Ù0
+N
+java:S1068)"1Remove this unused "CHANGELOG_TIM" private field.(Û°™£8Íµ…î×0
+N
+java:S1068*"1Remove this unused "CHANGELOG_REF" private field.(Î¹‘³8•¦î×0
+T
+java:S1068,"2Remove this unused "CHANGELOG_PROC" private field.(½“éÑûÿÿÿÿ8Î‘†î×0
+T
+java:S1068-"7Remove this unused "CHANGELOG_PROC_TEMP" private field.(ÈÑšè8–¦î×0
+`
+java:S1144<"DRemove this unused private "getDBSchemaAndChangelogFiltered" method.(ô¡õU8–¦î×0
+S
+java:S1144N"1Remove this unused private "importSchema" method.(”Ù¼ôøÿÿÿÿ8Îøß¸Ù0

@@ -1,9 +1,0 @@
-
-^
-java:S2095
-"HUse try-with-resources or close this "Connection" in a "finally" clause.(Ğôéÿ
-_
-java:S1854"=Remove this useless assignment to local variable "resultSet".(“ƒ¥øÿÿÿÿ8áÑì´Ø0
-P
-java:S1481".Remove this unused "resultSet" local variable.(“ƒ¥øÿÿÿÿ8ãÑì´Ø0
-N	java:S106"9Replace this use of System.out or System.err by a logger.(¨Ô…‹
