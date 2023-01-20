@@ -4,6 +4,7 @@ import liquibase.Scope;
 import liquibase.database.AbstractJdbcDatabase;
 import liquibase.database.Database;
 import liquibase.database.core.MSSQLDatabase;
+import liquibase.database.core.OracleDatabase;
 import liquibase.exception.DatabaseException;
 import liquibase.logging.Logger;
 import liquibase.snapshot.CachedRow;
@@ -36,7 +37,8 @@ public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
     @Override
     protected void addTo(DatabaseObject foundObject, DatabaseSnapshot snapshot) throws DatabaseException {
         var jdbcSnapshot = (JdbcDatabaseSnapshot) snapshot;
-        if (!(jdbcSnapshot.getDatabase() instanceof MSSQLDatabase)) {
+        Database database = jdbcSnapshot.getDatabase();
+        if (!(database instanceof MSSQLDatabase || database instanceof OracleDatabase)) {
             super.addTo(foundObject, snapshot);
             return;
         }
@@ -44,7 +46,7 @@ public class MyColumnSnapshotGenerator extends ColumnSnapshotGenerator {
             return;
         }
         if (foundObject instanceof Relation) {
-            Database database = snapshot.getDatabase();
+            // Database database = snapshot.getDatabase();
             Relation relation = (Relation) foundObject;
             //
             // 对于MSSQL的第一个Relation Table, 如果已经存储获取的ColumnsMetadataRs of Table

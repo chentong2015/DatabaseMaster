@@ -36,6 +36,7 @@ public class SchemaImportExportTester {
 
     private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase-4-18;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
     private static String sqlServerRemote = "jdbc:sqlserver://dell719srv:1433;Database=DAS_CONV_TOOL;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
+    private static String oracleRemote = "jdbc:oracle:thin:@//dell719srv:1521/DELL719SRV";
 
     private static final String CHANGELOG_TIM = "orm-liquibase/liquibase-core-4-18/src/main/resources/changelog-tim.xml";
     private static final String CHANGELOG_REF = "orm-liquibase/liquibase-core-4-18/src/main/resources/changelog-ref.xml";
@@ -91,7 +92,7 @@ public class SchemaImportExportTester {
         CatalogAndSchema[] defaultCatalogAndSchema = new CatalogAndSchema[]{CatalogAndSchema.DEFAULT};
         DiffOutputControl requireTablespaceForDiff = getTableDiff();
         try {
-            CommandLineUtils.doGenerateChangeLog("changelog-proc18.xml", database, defaultCatalogAndSchema, null, "ctong", null, null, requireTablespaceForDiff);
+            CommandLineUtils.doGenerateChangeLog("changelog-proc18-add3.xml", database, defaultCatalogAndSchema, null, "ctong", null, null, requireTablespaceForDiff);
         } finally {
             database.close();
         }
@@ -106,7 +107,8 @@ public class SchemaImportExportTester {
     public static Database createRemoteDatabase() throws LiquibaseException, SQLException {
         Connection connection;
         try {
-            connection = DriverManager.getConnection(sqlServerRemote, "INSTAL", "INSTALL");
+            // connection = DriverManager.getConnection(sqlServerRemote, "INSTAL", "INSTALL");
+            connection = DriverManager.getConnection(oracleRemote, "DAS_CONV_TEMPLATE", "DAS_CONV_TEMPLATE");
         } catch (SQLException e) {
             throw new SQLException("Error in connection properties." + e, e);
         }

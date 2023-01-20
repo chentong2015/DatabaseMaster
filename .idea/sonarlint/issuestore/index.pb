@@ -405,12 +405,8 @@ porm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 àorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/non/publiz/entity/SelectionResult.java,2\7\27b814960281391899ca67edb43a84bac8eec5f7
 ü
 oorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/NamedQueryEntity.java,5\9\59af58a9d9d1e2f9f2225f23fe5a2da12fa27916
-ß
-worm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/DemoCriteriaQuery.java,2\8\28bc0a82f5ab315d438e94435beabf9701103b7d
 û
 norm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/DemoEntityManagerQuery.java,f\6\f69561dd37716ff39ab3e95189c3d1c2e7028f0d
-•
-uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/DemoHqlRawQuery.java,8\4\84141a520fe2860d374a05865642c83a54907830
 •
 uorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/query/JpaEntityManagerQueries.java,a\a\aacbc417d86f69d95ecc321aaad58360c9882dc4
 ±
@@ -498,8 +494,6 @@ adatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo3/C
 â
 Yrelational-database/postgre-sql/src/main/java/com/psql/main/batching/BatchingÊÄßËÉΩË∞É‰ºò,a\c\acadeebde5e53df4ab69cc549ded92bdf1f7a34b
 X
-(relational-database/oracle/Oracle Âü∫Á°Ä,7\2\72ab19c47e22d347f965f8538be77813fd686018
-X
 (relational-database/oracle/Oracle ÊµãËØï,9\d\9d374e396964580f6acc98a4830d80a040e091d6
 à
 Xrelational-database/sybase/src/main/java/com/sybase/main/truncate/DemoSybaseVarchar.java,4\f\4f05dabc2c0840943ae6d8828e2764770f167bad
@@ -513,8 +507,6 @@ K
 relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
 Å
 Qdatabase-orm-design/src/main/java/database/design/exception/DemoSqlException.java,4\f\4f7d8dce4734f426d19573fcfb2099e8a3cd05dc
-|
-Lrelational-database/oracle/src/main/java/com/oracle/main/DemoOrcaleJDBC.java,5\c\5c179f72a7efecc9477dc737cecf0964ec973f99
 ç
 ]relational-database/postgre-sql/src/main/java/com/psql/main/batching/PostgresSqlBatching.java,5\7\5767e3b23e2153de8f3d7584895d57e77fa3a476
 â
@@ -557,8 +549,6 @@ W
 [orm-liquibase/liquibase-core-4-18/src/main/java/main/snapshot/MyIndexSnapshotGenerator.java,c\c\ccd65fc8f8ecbedcfe24f838cf589337674304d6
 y
 Iorm-liquibase/liquibase-core-4-18/src/main/java/main/LiquibaseTester.java,3\0\30e6c40a10259adc45094754f15e355196c929b4
-x
-Horm-liquibase/liquibase-core-4-5/src/main/java/main/LiquibaseTester.java,2\6\26d7c842b777698e78f471005cf7914ad4bbb7f1
 Z
 *orm-liquibase/liquibase-core-basic/pom.xml,9\8\981a6efb5c9c3ff9c08be837d18719ac9cbbe7b9
 V
@@ -584,10 +574,20 @@ c
 f
 6relational-database/sql-server/SQL Server ÈÖçÁΩÆÊìç‰Ωú,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 X
-(orm-liquibase/liquibase-core-4-5/pom.xml,8\9\89b9683de09777a0ca946b71754401d189b246dc
-X
 (relational-database/sybase/Sybase ÊµãËØï,f\7\f773e5337da6265a967f479820b4412d1c1a6749
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ñ
 form-liquibase/liquibase-core-4-18/src/main/java/main/snapshot/FilteringIndexSnapshotGeneratorTemp.java,d\8\d8ebdb2952f227962f2117d35b1771921d07a1ac
+E
+orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
+X
+(relational-database/oracle/Oracle Âü∫Á°Ä,7\2\72ab19c47e22d347f965f8538be77813fd686018
+R
+"relational-database/oracle/pom.xml,0\f\0fa6e1b3467f8a8c1a16faf9dec43249794efc71
+|
+Lrelational-database/oracle/src/main/java/com/oracle/main/DemoOrcaleJDBC.java,5\c\5c179f72a7efecc9477dc737cecf0964ec973f99
+x
+Horm-liquibase/liquibase-core-4-5/src/main/java/main/LiquibaseTester.java,2\6\26d7c842b777698e78f471005cf7914ad4bbb7f1
+ß
+worm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/DemoCriteriaQuery.java,2\8\28bc0a82f5ab315d438e94435beabf9701103b7d
