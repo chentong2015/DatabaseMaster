@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+
+    <!-- <changeSet author="MIGRATE" id="0">
+        <preConditions onFail="MARK_RAN">
+            <columnExists tableName="LIGRPCFG_DBF" columnName="M_LABEL"/>
+        </preConditions>
+        <comment>Updating Group label column to allow for 50 characters</comment>
+        <modifyDataType tableName="LIGRPCFG_DBF" columnName="M_LABEL" newDataType="char(50)"/>
+    </changeSet>
+
+    <changeSet author="TABLE_DROPPER" id="0">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="LIACTCFG_DBF"/>
+        </preConditions>
+        <comment>Drop table LIACTCFG_DBF</comment>
+        <dropTable tableName="LIACTCFG_DBF"/>
+    </changeSet> -->
+
+
+    <changeSet author="MIGRATE" id="1625">
+        <preConditions onFail="MARK_RAN">
+            <columnExists tableName="LIPFETMPT_DBF" columnName="M_MULTI_ENTITY"/>
+            <columnExists tableName="LIPFETMPT_DBF" columnName="M_SEC_CONSO_KEY"/>
+            <columnExists tableName="LIPFETMPT_DBF" columnName="M_SEC_CONSO_BRKDWN"/>
+        </preConditions>
+
+        <comment>Removing multi-entity column from PFE formulas table</comment>
+        <addColumn tableName="LIPFETMPT_DBF">
+            <column name="M_FUND_SET_BRKDWN" type="char(50)"/>
+        </addColumn>
+
+        <dropColumn
+                columnName="M_MULTI_ENTITY"
+                tableName="LIPFETMPT_DBF"/>
+        <renameColumn
+                oldColumnName="M_SEC_CONSO_KEY"
+                newColumnName="M_ENTITY_KEY"
+                columnDataType="numeric(9,0)"
+                tableName="LIPFETMPT_DBF"/>
+        <renameColumn
+                oldColumnName="M_SEC_CONSO_BRKDWN"
+                newColumnName="M_ENTITY_BRKDWN"
+                columnDataType="char(50)"
+                tableName="LIPFETMPT_DBF"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -24,7 +24,7 @@ public class LiquibaseTester {
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
 
-        try (Liquibase liquibase = new Liquibase("changelog-mssql.xml", new ClassLoaderResourceAccessor(), database)) {
+        try (Liquibase liquibase = new Liquibase("changelog-precondition.xml", new ClassLoaderResourceAccessor(), database)) {
             liquibase.update(new Contexts(), new LabelExpression());
         }
     }

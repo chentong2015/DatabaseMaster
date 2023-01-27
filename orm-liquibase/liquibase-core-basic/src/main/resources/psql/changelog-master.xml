@@ -6,8 +6,9 @@
     <!-- TODO. 这里的id和author会存储到databasechangelog更新的日志表中
             再次执行的时候会进行验校 -->
     <changeSet id="HelloSubsystem_init_table_3" author="HelloSubsystem">
-        <!-- TODO. 设置执行changeset的前提条件, 进行逻辑判断
-              onFail="MARK_RAN" 先决条件判断失败, 任然继续运行 -->
+        <!-- TODO. changeSet前置条件, onFail="MARK_RAN"表示继续运行(不报错)
+              - 如果前置条件判断为True, 则满足条件正常执行(有错报错)
+              - 如果前置条件判断为True，继续执行(当作没有异常产生) -->
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="HELLO_DBF_1"/>
