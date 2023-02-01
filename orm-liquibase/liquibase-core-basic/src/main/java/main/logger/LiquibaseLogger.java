@@ -1,5 +1,6 @@
 package main.logger;
 
+import liquibase.logging.LogMessageFilter;
 import liquibase.logging.core.AbstractLogger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,6 +11,10 @@ import java.util.logging.Level;
 public class LiquibaseLogger extends AbstractLogger {
 
     private Logger logger = LogManager.getLogger(LiquibaseLogger.class.getName());
+
+    public LiquibaseLogger(LogMessageFilter filter) {
+        super(filter);
+    }
 
     @Override
     public void close() throws Exception {

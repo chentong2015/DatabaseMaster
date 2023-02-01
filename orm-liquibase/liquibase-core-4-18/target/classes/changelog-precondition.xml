@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.19.xsd">
 
-    <changeSet author="MIGRATE" id="545">
+    <changeSet author="MIGRATE" id="5150">
         <!-- TODO. 前置条件需要判断Table是存在且列不存在 -->
         <preConditions onFail="MARK_RAN">
+            <tableExists tableName="LIPFETMPT_DBF"/>
             <not>
-                <tableExists tableName="LIPFETMPT_DBF"/>
                 <columnExists tableName="LIPFETMPT_DBF" columnName="M_FUND_SET_BRKDWN"/>
             </not>
         </preConditions>
@@ -15,7 +15,7 @@
 
         <!-- 即使前置条件为false, 依然执行正常的操作 -->
         <createTable tableName="M_JOURNAL_DBF_1">
-            <column name="M_DESTINATION" type="VACHAR(50)">
+            <column name="M_DESTINATION" type="VARCHAR(50)">
                 <constraints nullable="false"/>
             </column>
             <column name="M_EVENT_ID" type="VARCHAR(36)">

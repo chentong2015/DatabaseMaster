@@ -315,6 +315,9 @@ Global Options 所有的全局参数选项
                              (LIQUIBASE_PROPERTY_PROVIDER_CLASS)
                              [deprecated: --propertyProviderClass]
 
+      TODO: <argLine>-Dliquibase.secureParsing=false</argLine>参数的含义
+      https://docs.liquibase.com/concepts/changelogs/xml-format.html
+
       --secure-parsing=PARAM
                              If true, remove functionality from file parsers which could be used insecurely. Examples include (but
                                not limited to) disabling remote XML entity support.

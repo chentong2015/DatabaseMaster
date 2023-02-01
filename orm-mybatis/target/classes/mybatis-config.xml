@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 所有配置信息的详细参数，都可以通过DTD(Document Type Definition)文件定义类型文档来确定
+     configuration中设置参数由严格的顺序 -->
+<configuration>
+
+    <!-- 使用配置文件来动态配置"全局的property属性变量"，资源默认路径是/resources -->
+    <properties resource="mybatis-config.properties">
+        <property name="driverClassName" value="driverClassName"/>
+        <property name="url" value="url"/>
+        <property name="username" value="username"/>
+        <property name="password" value="password"/>
+    </properties>
+
+    <plugins>
+        <plugin interceptor="BaseInterceptor"/>
+    </plugins>
+
+    <environments default="development">
+        <environment id="development">
+            <!-- 决定事务作用域和控制方式的事务管理器 -->
+            <transactionManager type="JDBC"/>
+            <!-- 获取数据库连接实例的数据源DataSource: 基本名称变量不可修改 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driverClassName}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- TODO: Mappers提供Package + 四种加载映射语句的方式 -->
+    <mappers>
+        <!-- <package name="mybatis_basics.testJavaAnnotation.mapper"/> 首先级更高，加载的映射语句更多 -->
+        <mapper resource="BlogMapper.xml"/> <!-- 默认资源路径/resources -->
+        <!-- <mapper class="BlogMapper"/> -->
+        <!-- <mapper url="file:///var/mappers/BlogMapper.xml"/> -->
+        <!-- <mapper name="org.mybatis.builder"/> -->
+    </mappers>
+
+    <!-- MyBatis可以用完整配置参数
+    <xml_settings>
+        <setting name="cacheEnabled" value="true"/> 默认一二级缓存都是开的(二级缓存需要自定义)
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <setting name="useColumnLabel" value="true"/>
+        <setting name="useGeneratedKeys" value="false"/>
+        <setting name="autoMappingBehavior" value="PARTIAL"/>
+        <setting name="autoMappingUnknownColumnBehavior" value="WARNING"/>
+        <setting name="defaultExecutorType" value="SIMPLE"/> 设置使用三种执行器中的一个
+        <setting name="defaultStatementTimeout" value="25"/>
+        <setting name="defaultFetchSize" value="100"/>
+        <setting name="safeRowBoundsEnabled" value="false"/>
+        <setting name="mapUnderscoreToCamelCase" value="false"/>
+        <setting name="localCacheScope" value="SESSION"/>
+        <setting name="jdbcTypeForNull" value="OTHER"/>
+        <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+    </xml_settings>
+    <typeAliases>
+        <typeAlias alias="Author" type="domain.blog.Author"/> 设置别名
+    </typeAliases>
+    <typeHandlers>
+        自定义的类型处理器：将从PreparedStatement结果集中取出的值转换成Java类型
+        <typeHandler handler="org.mybatis.example.ExampleTypeHandler"/>
+    </typeHandlers> -->
+</configuration>

@@ -1,0 +1,3 @@
+com\psql\main\batching\PostgresSqlBatching.class
+com\psql\main\DemoPostgresJDBC.class
+com\psql\main\settings\PostgresSqlSettingsTable.class

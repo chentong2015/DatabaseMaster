@@ -1,0 +1,19 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog dbchangelog-3.2.xsd">
+    <!-- TODO: .xsd版本版本配置
+       -  url的路径使用https:// 完整版本可以参考https://www.liquibase.org/xml/ns/dbchangelog/
+       - 版本尽量和liquibase-core匹配以便增加性的约束和特性 -->
+
+    <!-- 1. 这里的dbchangelog文件从本地加载，必须下载相应的文件版本
+         2. liquibase-core的版本如果升级到4.8以上，则会抛出异常 -->
+
+    <changeSet author="ctong" id="2">
+        <createTable tableName="TS_IMPORT_DBF_2">
+            <column name="M_ID" type="integer" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

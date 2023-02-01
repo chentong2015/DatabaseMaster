@@ -24,5 +24,13 @@
             <artifactId>ojdbc8</artifactId>
             <version>21.7.0.0</version>
         </dependency>
+
+        <!-- Oracle会使用到的ucp.jar依赖包
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ucp</artifactId>
+            <version>19.6.0.0.0</version>
+            <scope>provided</scope>
+        </dependency> -->
     </dependencies>
 </project>
