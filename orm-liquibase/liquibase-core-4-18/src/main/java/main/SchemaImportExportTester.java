@@ -118,7 +118,7 @@ public class SchemaImportExportTester {
     }
 
     // 设置输出来的changelog是否包含catalogName和schemaName的信息
-    // <createTable catalogName="DAS_CONV_TOOL" schemaName="MUREXDB" tableName="COLUMN_TYPE_TEST_T_10">
+    // <createTable catalogName="DAS_CONV_TOOL" schemaName="TongDB" tableName="COLUMN_TYPE_TEST_T_10">
     private static DiffOutputControl getTableDiff() {
         DiffOutputControl diffOutputControl = new DiffOutputControl();
         diffOutputControl.setIncludeCatalog(false);

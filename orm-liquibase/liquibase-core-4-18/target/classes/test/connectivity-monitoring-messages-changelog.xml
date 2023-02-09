@@ -1,0 +1,212 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet id="drop-messages-payload-id-foreign-key" author="Tong.connectivity" dbms="!sybase">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <foreignKeyConstraintExists foreignKeyName="FK_MESSAGE_PAYLOAD_ID"/>
+        </preConditions>
+        <dropForeignKeyConstraint baseTableName="C2_MONITORING_MESSAGES" constraintName="FK_MESSAGE_PAYLOAD_ID"/>
+    </changeSet>
+
+    <changeSet id="drop-messages-header-foreign-key" author="Tong.connectivity" dbms="!sybase">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <foreignKeyConstraintExists foreignKeyName="FK_MESSAGE_HEADER_ID"/>
+        </preConditions>
+        <dropForeignKeyConstraint baseTableName="C2_MONITORING_MESSAGES" constraintName="FK_MESSAGE_HEADER_ID"/>
+    </changeSet>
+
+    <changeSet id="drop-messages-payload-table" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_MESSAGE_PAYLOADS"/>
+        </preConditions>
+        <dropTable tableName="C2_MONITORING_MESSAGE_PAYLOADS"/>
+    </changeSet>
+
+    <changeSet id="drop-messages-headers-table" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_MESSAGE_HEADERS"/>
+        </preConditions>
+        <dropTable tableName="C2_MONITORING_MESSAGE_HEADERS"/>
+    </changeSet>
+
+    <changeSet id="drop-messages-keys-table" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_MESSAGE_KEYS"/>
+        </preConditions>
+        <dropTable tableName="C2_MONITORING_MESSAGE_KEYS"/>
+    </changeSet>
+
+    <changeSet id="drop-main-messages-table" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_MESSAGES"/>
+        </preConditions>
+        <dropTable tableName="C2_MONITORING_MESSAGES"/>
+    </changeSet>
+
+    <changeSet id="create-new-messages-table" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="C2_MONITORING_MESSAGES"/>
+            </not>
+        </preConditions>
+        <createTable tableName="C2_MONITORING_MESSAGES">
+            <column name="ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SUPER_RUN_ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="KEY_ID" type="int">
+                <constraints nullable="true"/>
+            </column>
+            <column name="HEADER_ID" type="int">
+                <constraints nullable="true"/>
+            </column>
+            <column name="PAYLOAD_ID" type="int">
+                <constraints nullable="true"/>
+            </column>
+            <column name="TIMESTAMP" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="STATUS" type="varchar(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="STEP" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CORRELATION_ID" type="varchar(256)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="INTERNAL_ID" type="varchar(256)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="EXTERNAL_ID" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="MAIN_HEADER_1_VALUE" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="MAIN_HEADER_2_VALUE" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="MAIN_HEADER_3_VALUE" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+        <addPrimaryKey
+                constraintName="PK_MESSAGE_IDS"
+                columnNames="ID,SUPER_RUN_ID"
+                tableName="C2_MONITORING_MESSAGES"/>
+    </changeSet>
+
+    <changeSet id="create-new-message-keys-table" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="C2_MONITORING_MESSAGE_KEYS"/>
+            </not>
+        </preConditions>
+        <createTable tableName="C2_MONITORING_MESSAGE_KEYS">
+            <column name="ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SUPER_RUN_ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="OBJECT_TYPE" type="varchar(256)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="MAIN_HEADER_1_KEY" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="MAIN_HEADER_2_KEY" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="MAIN_HEADER_3_KEY" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+
+        </createTable>
+        <addPrimaryKey
+                constraintName="PK_MESSAGE_KEYS"
+                columnNames="ID,SUPER_RUN_ID"
+                tableName="C2_MONITORING_MESSAGE_KEYS"/>
+    </changeSet>
+
+    <changeSet id="create-new-message-payloads-table" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="C2_MONITORING_MESSAGE_PAYLOADS"/>
+            </not>
+        </preConditions>
+        <createTable tableName="C2_MONITORING_MESSAGE_PAYLOADS">
+            <column name="ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SUPER_RUN_ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ORIGINAL_SIZE" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TRUNC_SIZE" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ZIP_SIZE" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="FORMAT" type="varchar(20)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="LABEL" type="varchar(50)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="LIGHT_PAYLOAD" type="varchar(3600)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="PAYLOAD" type="blob">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+        <addPrimaryKey
+                constraintName="PK_MESSAGE_PAYLOADS"
+                tableName="C2_MONITORING_MESSAGE_PAYLOADS"
+                columnNames="ID,SUPER_RUN_ID"/>
+    </changeSet>
+
+    <changeSet id="create-new-message-headers-table" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="C2_MONITORING_MESSAGE_HEADERS"/>
+            </not>
+        </preConditions>
+        <createTable tableName="C2_MONITORING_MESSAGE_HEADERS">
+            <column name="ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SUPER_RUN_ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="HEADERS" type="clob">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addPrimaryKey
+                constraintName="PK_MESSAGE_HEADERS"
+                tableName="C2_MONITORING_MESSAGE_HEADERS"
+                columnNames="ID,SUPER_RUN_ID"/>
+    </changeSet>
+
+    <changeSet id="add-new-msg-timestamp-index" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <not>
+                <indexExists indexName="IDX_MONIT_MSG_TIMESTAMP"/>
+            </not>
+        </preConditions>
+        <createIndex indexName="IDX_MONIT_MSG_TIMESTAMP" tableName="C2_MONITORING_MESSAGES">
+            <column name="TIMESTAMP"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>

@@ -7,6 +7,7 @@ main\extensions\LiquibaseHelper.class
 main\logger\LiquibaseLogger.class
 main\extensions\database\MyDatabase.class
 main\extensions\datatype\LiquibaseDataType.class
+main\DemoLiquibaseChangelogXsd.class
 main\extensions\sqlgenerator\MxCreateTableGenerator.class
 main\lock\service\DemoLiquibaseLockService.class
 main\extensions\datatype\LiquibaseDataTypeFactory.class

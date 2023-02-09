@@ -243,8 +243,6 @@ dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/
 Ndatabase-orm-design/src/main/java/database/design/isolation/事务隔离级别,c\f\cfb0aa1f898b562db900760d2b5c37755aebdedb
 U
 %relational-database/hyper-sql/pom.xml,0\8\0833ec567e3de17623e300c4dcb130ea3b0cd2c7
-h
-8relational-database/hyper-sql/src/main/HyperSQL数据库,6\5\65dc3cb15d14f1de7c8dba6cf4e4b87dc660c722
 Q
 !relational-database/mysql/pom.xml,b\5\b539580a08e698b2d29c991e6ed07f9277f2ce5e
 s
@@ -549,8 +547,6 @@ E
 orm-liquibase/pom.xml,f\0\f0b3c59209474258f6ac8bb25bd9b94e992230dc
 �
 worm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/DemoCriteriaQuery.java,2\8\28bc0a82f5ab315d438e94435beabf9701103b7d
-�
-Rorm-liquibase/liquibase-core-4-18/src/main/java/main/SchemaImportExportTester.java,b\2\b22c2f4ae82748293fd016957bddd7b98f662a44
 �
 uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/DemoHqlRawQuery.java,8\4\84141a520fe2860d374a05865642c83a54907830
 �
@@ -587,3 +583,23 @@ X
 (relational-database/oracle/Oracle 基础,7\2\72ab19c47e22d347f965f8538be77813fd686018
 R
 "orm-liquibase/Database转换工具,7\6\76eb7893b2da28cd58c9c25e7c40f7e131472fc9
+�
+Qorm-liquibase/liquibase-core-basic/src/main/java/main/logger/LiquibaseLogger.java,5\b\5b1be1ff2e00bf4841b4301374af583234077109
+R
+"relational-database/oracle/pom.xml,0\f\0fa6e1b3467f8a8c1a16faf9dec43249794efc71
+W
+'orm-liquibase/Liquibase Commands Script,9\d\9d691b559f75513ca531b87f14cdfb9c95f186dd
+V
+&orm-liquibase/Liquibase Global Options,1\7\17ad2b395531891dd8f83089ac453d478fd5b03e
+R
+"orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
+�
+Rorm-liquibase/liquibase-core-4-18/src/main/java/main/SchemaImportExportTester.java,b\2\b22c2f4ae82748293fd016957bddd7b98f662a44
+�
+Qorm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelog.java,f\a\fa84e92d1d3e471c0af4afaf7ba72fdd0ec21260
+�
+Torm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelogXsd.java,e\3\e308447873e4e014ae748ab377f9c0de889b430f
+Z
+*orm-liquibase/liquibase-core-basic/pom.xml,9\8\981a6efb5c9c3ff9c08be837d18719ac9cbbe7b9
+h
+8relational-database/hyper-sql/src/main/HyperSQL数据库,6\5\65dc3cb15d14f1de7c8dba6cf4e4b87dc660c722

@@ -1,2 +1,9 @@
 HyperSQL 关系型数据库，纯JAVA实现，支持嵌入式和HTTP Server
 http://www.hsqldb.org/doc/2.0/guide/listeners-chapt.html
+
+本地启动HSQL UI界面
+D:\Logiciel\HyperSQL\hsqldb-2.7.0\hsqldb\lib>java -cp hsqldb.jar org.hsqldb.util.DatabaseManagerSwing
+
+HyberSQL Guide连接测试
+https://www.tutorialspoint.com/hsqldb/hsqldb_quick_guide.htm
+http://www.hsqldb.org/doc/2.0/guide/running-chapt.html

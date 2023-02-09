@@ -1,0 +1,141 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet id="rename-runs-table-to-tmp" author="Tong.connectivity" dbms="oracle">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_RUNS"/>
+            <not>
+                <columnExists tableName="C2_MONITORING_RUNS" columnName="LAST_MESSAGE_ID"/>
+            </not>
+        </preConditions>
+        <renameTable oldTableName="C2_MONITORING_RUNS" newTableName="C2_MONITORING_RUNS_TMP"/>
+    </changeSet>
+
+    <!-- TODO: 测试出错，但是继续执行MARK_RAN -->
+    <changeSet id="drop-indices-and-rename-runs-table-to-tmp" author="Tong.connectivity" dbms="!oracle">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_RUNS"/>
+            <not>
+                <columnExists tableName="C2_MONITORING_RUNS" columnName="LAST_MESSAGE_ID"/>
+            </not>
+        </preConditions>
+        <dropForeignKeyConstraint baseTableName="C2_MONITORING_RUNS" constraintName="FK_RUNS_CONFIGURATION"/>
+        <dropIndex tableName="C2_MONITORING_RUNS" indexName="IDX_C2_MONIT_RUNS"/>
+        <dropIndex tableName="C2_MONITORING_RUNS" indexName="IDX_RUNS_ALIAS"/>
+        <dropIndex tableName="C2_MONITORING_RUNS" indexName="IDX_RUNS_ALIAS_NICKNAME"/>
+        <renameTable oldTableName="C2_MONITORING_RUNS" newTableName="C2_MONITORING_RUNS_TMP"/>
+    </changeSet>
+
+    <changeSet id="drop-old-runs-pk" author="Tong.connectivity" dbms="!sybase">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_RUNS_TMP"/>
+        </preConditions>
+        <!-- TODO. 如果这里的主键被另一个表的外键所约束，则无法删除 -->
+        <dropPrimaryKey tableName="C2_MONITORING_RUNS_TMP"/>
+    </changeSet>
+
+
+    <changeSet id="create-runs-with-counters" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="C2_MONITORING_RUNS"/>
+            </not>
+        </preConditions>
+        <createTable tableName="C2_MONITORING_RUNS">
+            <column name="SUPER_RUN_ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ALIAS" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="NICKNAME" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CONFIGURATION_ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TIMESTAMP" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="VERSION" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="MXVERSION" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="BPM_VERSION" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="HOST" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PORT" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PID" type="int"/>
+
+            <column name="MONITORING_LEVEL" type="varchar(300)"/>
+
+            <column name="CUSTOM_LOGGER" type="varchar(200)"/>
+
+            <column name="CUSTOM_CONFIG" type="varchar(200)"/>
+
+            <column name="FLAGS" type="varchar(100)"/>
+
+            <column name="LAST_TIMESTAMP" type="timestamp"/>
+
+            <column name="LAST_MESSAGE_ID" type="int"/>
+
+            <column name="DISTINCT_SUCCESS_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DISTINCT_ERROR_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DISTINCT_INFLIGHT_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DISTINCT_DISCARD_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="DISTINCT_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TOTAL_SUCCESS_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TOTAL_ERROR_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TOTAL_INFLIGHT_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TOTAL_DISCARD_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TOTAL_COUNT" type="int" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LAST_STATUS" type="varchar(20)"/>
+        </createTable>
+        <addPrimaryKey tableName="C2_MONITORING_RUNS" columnNames="SUPER_RUN_ID" constraintName="PK_RUNS_SUPER_RUN_ID"/>
+    </changeSet>
+
+    <changeSet id="create-runs-id-alias-nickname-index" author="Tong.connectivity">
+        <preConditions>
+            <not>
+                <indexExists tableName="C2_MONITORING_RUNS" indexName="IDX_C2_MONIT_RUNS"/>
+            </not>
+        </preConditions>
+        <createIndex tableName="C2_MONITORING_RUNS" indexName="IDX_C2_MONIT_RUNS_ID_ALS_NCK" unique="true">
+            <column name="ID"/>
+            <column name="ALIAS"/>
+            <column name="NICKNAME"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>

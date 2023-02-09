@@ -1,0 +1,27 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+
+    <changeSet id="51" author="tong">
+        <createTable tableName="C2_MONITORING_RUNS_TEST3">
+            <column name="ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ALIAS" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addPrimaryKey constraintName="PK_RUNS3" columnNames="ID, ALIAS" tableName="C2_MONITORING_RUNS_TEST3"/>
+    </changeSet>
+
+    <!-- 如果有外键存在，这里的主键删除会报错
+         The foreign key is still there and blocks the pk drop. -->
+    <changeSet id="41" author="tong" dbms="!sybase">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_RUNS_TEST3"/>
+        </preConditions>
+        <dropPrimaryKey tableName="C2_MONITORING_RUNS_TEST3" constraintName="PK_RUNS3"/>
+    </changeSet>
+
+</databaseChangeLog>

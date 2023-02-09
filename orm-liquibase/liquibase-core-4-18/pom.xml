@@ -42,5 +42,12 @@
             <artifactId>ojdbc8</artifactId>
             <version>21.7.0.0</version>
         </dependency>
+
+        <!-- 测试4.8版本dropForeignKeyConstraint删除外键 -->
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.7.1</version>
+        </dependency>
     </dependencies>
 </project>

@@ -1,0 +1,143 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+    <changeSet id="create-broker-events" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="C2_MONITORING_BROKER_EVENTS"/>
+            </not>
+        </preConditions>
+        <createTable tableName="C2_MONITORING_BROKER_EVENTS">
+            <column name="ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SUPER_RUN_ID" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TIMESTAMP" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="EVENT_NAME" type="varchar(256)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="TYPE" type="varchar(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ACTION" type="varchar(32)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addPrimaryKey constraintName="PK_BROKER_EVENTS"
+                       columnNames="ID, SUPER_RUN_ID"
+                       tableName="C2_MONITORING_BROKER_EVENTS"/>
+    </changeSet>
+
+    <changeSet id="create-broker-events-cascade-trigger" author="Tong.connectivity" dbms="sybase">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_BROKER_EVENTS"/>
+        </preConditions>
+        <sql>
+            create trigger delete_broker_events_cascade
+                on C2_MONITORING_RUNS
+                for
+            delete
+            as
+            delete
+            C2_MONITORING_BROKER_EVENTS
+            from C2_MONITORING_BROKER_EVENTS, deleted
+            where C2_MONITORING_BROKER_EVENTS.SUPER_RUN_ID = deleted.SUPER_RUN_ID
+        </sql>
+    </changeSet>
+
+    <changeSet id="create-broker-events-foreign-key" author="Tong.connectivity" dbms="!sybase">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <and>
+                <tableExists tableName="C2_MONITORING_BROKER_EVENTS"/>
+                <not>
+                    <!-- 对于Liquibase 4.8的版本，这里始终会返回false -->
+                    <foreignKeyConstraintExists foreignKeyName="FK_BROKER_EVENTS_RUNS"/>
+                </not>
+            </and>
+        </preConditions>
+        <!-- 创建一个外键从base table到referenced Table的主键
+             在删除referenced Table的主键时，如果这个外键存在，则删除失败 -->
+        <addForeignKeyConstraint constraintName="FK_BROKER_EVENTS_RUNS"
+                                 baseTableName="C2_MONITORING_BROKER_EVENTS"
+                                 baseColumnNames="SUPER_RUN_ID"
+
+                                 referencedColumnNames="SUPER_RUN_ID"
+                                 referencedTableName="C2_MONITORING_RUNS"
+                                 onDelete="CASCADE"/>
+    </changeSet>
+
+    <changeSet id="enrich-broker-events-table" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <tableExists tableName="C2_MONITORING_BROKER_EVENTS"/>
+            <not>
+                <columnExists tableName="C2_MONITORING_BROKER_EVENTS" columnName="OBJECT_TYPE"/>
+                <columnExists tableName="C2_MONITORING_BROKER_EVENTS" columnName="INTERNAL_ID"/>
+                <columnExists tableName="C2_MONITORING_BROKER_EVENTS" columnName="EXTERNAL_ID"/>
+                <columnExists tableName="C2_MONITORING_BROKER_EVENTS" columnName="FORMAT"/>
+                <columnExists tableName="C2_MONITORING_BROKER_EVENTS" columnName="HEADERS"/>
+                <columnExists tableName="C2_MONITORING_BROKER_EVENTS" columnName="PAYLOAD"/>
+                <columnExists tableName="C2_MONITORING_BROKER_EVENTS" columnName="LIGHT_PAYLOAD"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="C2_MONITORING_BROKER_EVENTS">
+            <column name="OBJECT_TYPE" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="INTERNAL_ID" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="EXTERNAL_ID" type="varchar(1000)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="FORMAT" type="varchar(10)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="HEADERS" type="clob">
+                <constraints nullable="true"/>
+            </column>
+            <column name="PAYLOAD" type="blob">
+                <constraints nullable="true"/>
+            </column>
+            <column name="LIGHT_PAYLOAD" type="varchar(3900)">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="add-event-payload-truncated-column" author="Tong.connectivity">
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="C2_MONITORING_BROKER_EVENTS" columnName="TRUNCATED"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="C2_MONITORING_BROKER_EVENTS">
+            <column name="TRUNCATED" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet id="drop-foreign-key-constraint-on-broker-events-table" author="Tong.connectivity" dbms="!sybase"
+               failOnError="true">
+        <!-- 如果缺少Table的名称，会造成找不到外键，然后不会之后changeSet后面的指令
+             foreignKeyTableName="C2_MONITORING_BROKER_EVENTS" -->
+        <preConditions onError="HALT" onFail="MARK_RAN">
+            <foreignKeyConstraintExists foreignKeyTableName="C2_MONITORING_BROKER_EVENTS"
+                                        foreignKeyName="FK_BROKER_EVENTS_RUNS"/>
+        </preConditions>
+
+        <!-- 删除之前表定义的外键 -->
+        <dropForeignKeyConstraint baseTableName="C2_MONITORING_BROKER_EVENTS" constraintName="FK_BROKER_EVENTS_RUNS"/>
+    </changeSet>
+
+    <changeSet id="drop-triggers-on-broker-event-table" author="Tong.connectivity" dbms="sybase" failOnError="false">
+        <sql> drop trigger delete_broker_events_cascade</sql>
+    </changeSet>
+
+</databaseChangeLog>

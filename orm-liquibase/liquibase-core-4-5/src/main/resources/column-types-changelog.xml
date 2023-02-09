@@ -3,7 +3,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
 
-    <changeSet id="1" author="dao-engine" context="testMurexColumnTypes">
+    <changeSet id="1" author="dao-engine" context="testTongColumnTypes">
         <createTable tableName="COLUMN_TYPE_TEST">
             <!-- <column name="BIG_DECIMAL_COLUMN" type="bigDec"/> -->
             <column name="BOOLEAN_COLUMN" type="boolean" defaultValueBoolean="true"/>
@@ -59,7 +59,7 @@
         </createTable>
     </changeSet> -->
 
-    <changeSet id="6" author="dao-engine" context="testMurexColumnTypes">
+    <changeSet id="6" author="dao-engine" context="testTongColumnTypes">
         <createTable tableName="BOOL_TYPE_TEST">
             <column name="INTEGER_COLUMN" type="integer"/>
             <column name="BOOLEAN_COLUMN1" type="boolean" defaultValueBoolean="true"/>
@@ -68,13 +68,13 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="7" author="dao-engine" context="testMurexColumnTypes">
+    <changeSet id="7" author="dao-engine" context="testTongColumnTypes">
         <insert tableName="BOOL_TYPE_TEST">
             <column name="BOOLEAN_COLUMN3" valueBoolean="false"/>
         </insert>
     </changeSet>
 
-    <changeSet id="8" author="dao-engine" context="testMurexColumnTypes">
+    <changeSet id="8" author="dao-engine" context="testTongColumnTypes">
         <update tableName="BOOL_TYPE_TEST">
             <column name="BOOLEAN_COLUMN3" valueBoolean="true"/>
         </update>
