@@ -143,8 +143,8 @@
     <changeSet id="drop-foreign-key-constraint-on-broker-events-table" author="Tong.connectivity" dbms="!sybase"
                failOnError="true">
         <preConditions onError="HALT" onFail="MARK_RAN">
-            <!-- foreignKeyTableName="C2_MONITORING_BROKER_EVENTS" -->
-            <foreignKeyConstraintExists foreignKeyName="FK_BROKER_EVENTS_RUNS"/>
+            <foreignKeyConstraintExists foreignKeyTableName="C2_MONITORING_BROKER_EVENTS"
+                                        foreignKeyName="FK_BROKER_EVENTS_RUNS"/>
         </preConditions>
         <dropForeignKeyConstraint baseTableName="C2_MONITORING_BROKER_EVENTS" constraintName="FK_BROKER_EVENTS_RUNS"/>
     </changeSet>

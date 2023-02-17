@@ -1,4 +1,4 @@
-package identifiers;
+package identifiers.custom;
 
 import org.hibernate.HibernateException;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
