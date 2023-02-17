@@ -12,7 +12,7 @@ import java.sql.DriverManager;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DemoPostgresDatabaseConnectionException {
+public class DemoPsqlDBConnectionException {
 
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
 
