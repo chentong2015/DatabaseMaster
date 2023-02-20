@@ -1,0 +1,10 @@
+
+^
+java:S2166"CRename this class to remove "Exception" or correct its inheritance.(ðîö¥ùÿÿÿÿ
+P	java:S125"<This block of commented-out lines of code should be removed.(ñˆß]
+V	java:S125"<This block of commented-out lines of code should be removed.(¡“»Äÿÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(èÅŸÀ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(Ø†±„
+V	java:S125$"<This block of commented-out lines of code should be removed.(½ßéþÿÿÿÿ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(¢õêŸ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(üèÁâ
