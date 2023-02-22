@@ -24,16 +24,16 @@ public class MetadataSourcesHelper {
 
     private BootstrapServiceRegistry bootstrapServiceRegistry;
     private StandardServiceRegistryBuilder standardServiceRegistryBuilder;
-    private MetadataSources metadataSources = new MetadataSources();
+
     private Metadata metadata;
-    private Map<String, PersistentClass> mappings;
+    private Map<String, PersistentClass> mappings = new HashMap<>();
+    private MetadataSources metadataSources = new MetadataSources();
 
     private ClassLoader classLoader;
     private File configFile;
 
     // TODO. 从Metadata中获取所有的加载的PersistentClass持久层实例对象
     protected Map<String, PersistentClass> getMappings() {
-        mappings = new HashMap<>();
         Metadata innerMetadata = getMetadata();
         Iterator<PersistentClass> classMappings = innerMetadata.getEntityBindings().iterator();
 

@@ -32,7 +32,7 @@ Hibernate 5.x 版本之后的创建: 从元信息中获取Session工厂
     StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
     SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
-   2. 复杂方式: 支持自定义配置Properties, MetadataSources提供丰富的Metadata源数据注入,
+   2. 复杂方式: 支持自定义配置Properties, MetadataSources提供丰富的Metadata源数据注入
     this.bootstrapServiceRegistry = new BootstrapServiceRegistryBuilder().applyClassLoader(classLoader).build();
     this.standardServiceRegistryBuilder = new StandardServiceRegistryBuilder(bootstrapServiceRegistry);
     if (configFile != null) {

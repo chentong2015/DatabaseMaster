@@ -3,12 +3,10 @@ E
 java:S3740B"/Provide the parametrized type for this generic.(‚íú
 }
 java:S1450"gRemove the "bootstrapServiceRegistry" field and declare it as a local variable in the relevant methods.(úÚ¨«
-m
-java:S1450"WRemove the "mappings" field and declare it as a local variable in the relevant methods.(Šíªä
 ƒ
 java:S1450"mRemove the "standardServiceRegistryBuilder" field and declare it as a local variable in the relevant methods.(µÅõ‰
 M
-java:S1135""2Complete the task associated to this TODO comment.(èºÚİûÿÿÿÿ
+java:S1135#"2Complete the task associated to this TODO comment.(èºÚİûÿÿÿÿ
 G
 java:S11350"2Complete the task associated to this TODO comment.(¤–Ø&
 V	java:S125l"<This block of commented-out lines of code should be removed.(äà©›şÿÿÿÿ
