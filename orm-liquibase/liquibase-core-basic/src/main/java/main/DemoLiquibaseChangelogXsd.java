@@ -23,7 +23,7 @@ public class DemoLiquibaseChangelogXsd {
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
 
-        try (Liquibase liquibase = new Liquibase("xml_schema_definition/changelog-xsd.xml", new ClassLoaderResourceAccessor(), database)) {
+        try (Liquibase liquibase = new Liquibase("/psql/changelog_base.xml", new ClassLoaderResourceAccessor(), database)) {
             liquibase.update(new Contexts(), new LabelExpression());
         } catch (LiquibaseException e) {
             e.printStackTrace();

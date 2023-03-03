@@ -1,5 +1,6 @@
 main\extensions\datatype\MyDateTimeType.class
 main\extensions\datatype\MyVarcharType.class
+main\exception\DemoPsqlDBConnectionException.class
 main\config\ConfigHelper.class
 main\DemoLiquibaseChangelog.class
 spring\LiquibaseProperties.class
@@ -11,6 +12,5 @@ main\DemoLiquibaseChangelogXsd.class
 main\extensions\sqlgenerator\MxCreateTableGenerator.class
 main\lock\service\DemoLiquibaseLockService.class
 main\extensions\datatype\LiquibaseDataTypeFactory.class
-main\exception\DemoPostgresDatabaseConnectionException.class
 main\config\DatabaseConfig.class
 main\extensions\sqlgenerator\MyCreateIndexGenerator.class

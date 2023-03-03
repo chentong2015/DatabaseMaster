@@ -483,8 +483,6 @@ W
 'relational-database/postgre-sql/pom.xml,9\e\9e622c3f443856cc45abe9c6a5afebdb1be97806
 _
 /orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
-X
-(orm-jpa-hibernate/Hibernate 进阶教程,b\6\b604e1421f5ceeaec16edee761a8da30c5e38256
 �
 ]database-orm-design/src/main/java/orm/middleware/design/connection/pool/连接池设计思想,d\8\d819c08c1af42def862dd978c9523f2a697c683e
 i
@@ -589,8 +587,6 @@ Uorm-liquibase/liquibase-core-basic/src/main/java/main/exception/Liquibase源码
 borm-liquibase/liquibase-core-basic/src/main/java/main/exception/DemoPsqlDBConnectionException.java,6\c\6ce7f6421fa6b67c821e19cbdbc6e1c4bb7827db
 �
 morm-jpa-hibernate/native-hibernate6-api-master/src/main/java/identifiers/custom/MyStoredTableIdGenerator.java,8\a\8a84ff45114e8a8c0501be186001e273a7844868
-�
-Torm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelogXsd.java,e\3\e308447873e4e014ae748ab377f9c0de889b430f
 �
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseMetadata.java,1\a\1ab64bc9e3f6f76d53550c953d804d4c2103743c
 �
@@ -609,5 +605,9 @@ Z
 *orm-liquibase/liquibase-core-basic/pom.xml,9\8\981a6efb5c9c3ff9c08be837d18719ac9cbbe7b9
 f
 6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
-�
-Qorm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelog.java,f\a\fa84e92d1d3e471c0af4afaf7ba72fdd0ec21260
+�
+^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/MetadataSourcesDemo.java,e\0\e0ac614578f118de3723b96dc50d5209a3500a9a
+�
+aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseJpaMetadata.java,0\0\004fcac44c375ddf5ab8e0123b4c1e56c216d54b
+X
+(orm-jpa-hibernate/Hibernate 进阶教程,b\6\b604e1421f5ceeaec16edee761a8da30c5e38256

@@ -2,3 +2,10 @@ https://docs.liquibase.com/concepts/changelogs/xml-format.html
 https://github.com/liquibase/liquibase/issues/1153
 https://github.com/liquibase/liquibase/issues/2654
 https://forum.liquibase.org/t/failed-to-read-schema-document-http-www-liquibase-org-xml-ns-dbchangelog-dbchangelog-3-5-xsd/3716
+
+TODO. 问题的本质和解决办法
+https://github.com/liquibase/liquibase/issues/2654
+https://github.com/liquibase/liquibase/issues/3072
+
+https://docs.liquibase.com/concepts/changelogs/xml-format.html
+https://forum.liquibase.org/t/liquibase-secureparsing-user-questions/6973/5

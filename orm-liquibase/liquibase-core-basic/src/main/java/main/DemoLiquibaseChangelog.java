@@ -18,6 +18,9 @@ import java.sql.SQLException;
 
 public class DemoLiquibaseChangelog {
 
+    // TODO. Liquibase Changelog从Classpath中获取(当前的项目或者是依赖项目)
+    static String changelogFilepath = "sqlserver/changelog-index.xml";
+
     private static String mysqlConnectStr = "jdbc:mysql://localhost:3306/my_database?rewriteBatchedStatements=true";
     private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=test_db;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
@@ -30,7 +33,7 @@ public class DemoLiquibaseChangelog {
 
         SqlGeneratorFactory.getInstance().register(new MyCreateIndexGenerator());
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
-        fireChangelog(database, "sqlserver/changelog-index.xml");
+        fireChangelog(database, changelogFilepath);
     }
 
     private static void fireChangelog(Database database, String changelogFilepath) {

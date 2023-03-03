@@ -28,4 +28,12 @@
     <changeSet id="200" author="tchen">
         <dropColumn tableName="t_sample_test" columnName="label"/>
     </changeSet>
+
+    <!-- TODO. changelog 执行sql可以指定特定的数据库  -->
+    <changeSet id="30" author="tchen" dbms="oracle">
+        <sql dbms="oracle">
+            SELECT *
+            FROM t_sample_test;
+        </sql>
+    </changeSet>
 </databaseChangeLog>
