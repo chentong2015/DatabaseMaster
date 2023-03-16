@@ -1,0 +1,49 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+
+    <!-- String和Double不是oracle table支持的类型 -->
+    <changeSet id="1" author="admin" context="testMurexConnection">
+        <createTable tableName="JAVA_TEST_TABLE">
+            <column name="ID" type="int"/>
+            <!-- <column name="NAME" type="string(128)"/> -->
+            <column name="AGE" type="int"/>
+            <!-- <column name="SALARY" type="double"/> -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2" author="admin" context="dropProcedureExists" dbms="oracle" failOnError="false">
+        <sql>
+            drop sequence JAVA_BUILDER_AUTOINC_S
+        </sql>
+    </changeSet>
+
+    <changeSet id="3" author="admin" context="createProcedureExists" dbms="oracle,postgresql">
+        <createTable tableName="JAVA_BUILDER_AUTOINC_TABLE">
+            <column name="ID" type="INTEGER">
+            </column>
+            <column name="NAME" type="varchar(50)"/>
+        </createTable>
+        <createSequence sequenceName="JAVA_BUILDER_AUTOINC_S" startValue="1"/>
+
+        <rollback>
+            <sql>drop table JAVA_BUILDER_AUTOINC_TABLE</sql>
+        </rollback>
+    </changeSet>
+
+
+    <changeSet id="3" author="admin" context="testProcedureExists" dbms="sybase,mssql,hsqldb">
+        <createTable tableName="JAVA_BUILDER_AUTOINC_TABLE">
+            <column name="id" type="INTEGER" autoIncrement="true" startWith="1" incrementBy="1">
+                <constraints primaryKey="true" primaryKeyName="person_pk" nullable="false"/>
+            </column>
+            <column name="NAME" type="varchar(50)"/>
+        </createTable>
+
+        <rollback>
+            <sql>drop table JAVA_BUILDER_AUTOINC_TABLE</sql>
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

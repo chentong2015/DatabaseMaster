@@ -44,6 +44,7 @@ public class DemoLiquibaseChangelog {
             // 指定要操作的schema的名称，执行指定数据库changelog的变更
             // liquibase.setChangeLogParameter("database.schema", database.getDefaultSchemaName());
 
+            // context参数执行要执行的<changeSet ... context="shouldRun">
             liquibase.update(new Contexts(), new LabelExpression());
         } catch (LiquibaseException e) {
             e.printStackTrace();
