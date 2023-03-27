@@ -3,8 +3,8 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
 
+    <!-- String和Double不是oracle table支持的类型 -->
     <changeSet id="1" author="admin" context="testMurexConnection">
-
         <createTable tableName="JAVA_TEST_TABLE">
             <column name="ID" type="int"/>
             <!-- <column name="NAME" type="string(128)"/> -->

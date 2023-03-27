@@ -10,7 +10,7 @@
         <id name="id" type="java.lang.Long" column="m_id">
             <generator class="increment"/>
             <!-- 使用自定义的id生成器，并且提供参数的值
-            <generator class="identifiers.MyStoredTableIdGenerator">
+            <generator class="identifiers.custom.MyStoredTableIdGenerator">
                 <param name="segment_value">parameter_value</param>
             </generator> -->
         </id>

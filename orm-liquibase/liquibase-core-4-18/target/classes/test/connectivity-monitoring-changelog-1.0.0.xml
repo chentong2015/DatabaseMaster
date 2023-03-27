@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
 
 
-    <changeSet id="create-configuration" author="murex.connectivity" dbms="oracle,postgresql">
+    <changeSet id="create-configuration" author="Tong.connectivity" dbms="oracle,postgresql">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="C2_MONITORING_CONFIGURATION"/>
@@ -41,7 +41,7 @@
         </createIndex>
     </changeSet>
 
-    <changeSet id="create-configuration" author="murex.connectivity" dbms="!oracle,!postgresql">
+    <changeSet id="create-configuration" author="Tong.connectivity" dbms="!oracle,!postgresql">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="C2_MONITORING_CONFIGURATION"/>
@@ -78,7 +78,7 @@
         </createIndex>
     </changeSet>
 
-    <changeSet id="create-runs" author="murex.connectivity">
+    <changeSet id="create-runs" author="Tong.connectivity">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -123,7 +123,7 @@
                                  referencedTableName="C2_MONITORING_CONFIGURATION"/>
     </changeSet>
 
-    <changeSet id="create-runs-index" author="murex.connectivity">
+    <changeSet id="create-runs-index" author="Tong.connectivity">
         <createIndex indexName="IDX_RUNS_ALIAS"
                      tableName="C2_MONITORING_RUNS">
             <column name="ALIAS"/>
@@ -135,7 +135,7 @@
         </createIndex>
     </changeSet>
 
-    <changeSet id="add-bpm-version-to-runs" author="murex.connectivity">
+    <changeSet id="add-bpm-version-to-runs" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -149,7 +149,7 @@
         </addColumn>
     </changeSet>
 
-    <changeSet id="add-pid-to-runs" author="murex.connectivity">
+    <changeSet id="add-pid-to-runs" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -163,7 +163,7 @@
         </addColumn>
     </changeSet>
 
-    <changeSet id="monitoring_add_super_run_id" author="murex.connectivity" dbms="!oracle,!postgresql">
+    <changeSet id="monitoring_add_super_run_id" author="Tong.connectivity" dbms="!oracle,!postgresql">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -179,7 +179,7 @@
         </addColumn>
     </changeSet>
 
-    <!-- <changeSet id="insert-super-run-id-uid-row-in-DPI_ID_DBF-table" author="murex.connectivity"
+    <!-- <changeSet id="insert-super-run-id-uid-row-in-DPI_ID_DBF-table" author="Tong.connectivity"
                 dbms="oracle, sybase, mssql, postgresql">
          <preConditions onError="HALT" onFail="MARK_RAN">
              <sqlCheck expectedResult="0">
@@ -205,7 +205,7 @@
      </changeSet> -->
 
     <!-- Empty DB means that SUPER_RUN_ID can be not nullable -->
-    <changeSet id="monitoring_add_super_run_id" author="murex.connectivity" dbms="oracle,postgresql">
+    <changeSet id="monitoring_add_super_run_id" author="Tong.connectivity" dbms="oracle,postgresql">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -223,7 +223,7 @@
     </changeSet>
 
     <!-- Non-Empty DB means that will fill the values for existing data then on a different changeset we make it PK thus making it not nullable  -->
-    <changeSet id="monitoring_add_super_run_id_with_data" author="murex.connectivity" dbms="oracle,postgresql">
+    <changeSet id="monitoring_add_super_run_id_with_data" author="Tong.connectivity" dbms="oracle,postgresql">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -240,7 +240,7 @@
              SET SUPER_RUN_ID = SP_MXGETUNIQUEID('CONNECTIVITY', 'MONIT_SPR_R_ID', 1)</sql>
     </changeSet>
 
-    <changeSet id="monitoring_runs_drop_status_fk" author="murex.connectivity">
+    <changeSet id="monitoring_runs_drop_status_fk" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_STATUS"/>
@@ -252,7 +252,7 @@
                                   baseTableName="C2_MONITORING_STATUS"/>
     </changeSet>
 
-    <changeSet id="monitoring_runs_drop_operations_fk" author="murex.connectivity">
+    <changeSet id="monitoring_runs_drop_operations_fk" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_OPERATIONS"/>
@@ -264,7 +264,7 @@
                                   baseTableName="C2_MONITORING_OPERATIONS"/>
     </changeSet>
 
-    <changeSet id="monitoring-runs-drop-messages-runs-fk" author="murex.connectivity">
+    <changeSet id="monitoring-runs-drop-messages-runs-fk" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_MESSAGES"/>
@@ -277,7 +277,7 @@
                                   baseTableName="C2_MONITORING_MESSAGES"/>
     </changeSet>
 
-    <changeSet id="monitoring_runs_change_pk_to_super_run_id" author="murex.connectivity">
+    <changeSet id="monitoring_runs_change_pk_to_super_run_id" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <not>
@@ -290,7 +290,7 @@
         <addPrimaryKey tableName="C2_MONITORING_RUNS" columnNames="SUPER_RUN_ID"/>
     </changeSet>
 
-    <changeSet id="create-runs-id-alias-nickname-index" author="murex.connectivity">
+    <changeSet id="create-runs-id-alias-nickname-index" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -306,7 +306,7 @@
         </createIndex>
     </changeSet>
 
-    <changeSet id="add-os-user-to-operations" author="murex.connectivity">
+    <changeSet id="add-os-user-to-operations" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_OPERATIONS"/>
@@ -320,7 +320,7 @@
         </addColumn>
     </changeSet>
 
-    <changeSet id="add-monitoring-mode-column-to-runs" author="murex.connectivity">
+    <changeSet id="add-monitoring-mode-column-to-runs" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -340,7 +340,7 @@
         </sql>
     </changeSet>
 
-    <changeSet id="add-custom-columns-to-c2-monitoring-runs" author="murex.connectivity">
+    <changeSet id="add-custom-columns-to-c2-monitoring-runs" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -358,7 +358,7 @@
         </addColumn>
     </changeSet>
 
-    <changeSet id="drop-monitoring-mode-constraint" author="murex.connectivity" dbms="postgresql, mssql">
+    <changeSet id="drop-monitoring-mode-constraint" author="Tong.connectivity" dbms="postgresql, mssql">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -370,7 +370,7 @@
         </sql>
     </changeSet>
 
-    <changeSet id="drop-monitoring-mode-constraint" author="murex.connectivity" dbms="sybase">
+    <changeSet id="drop-monitoring-mode-constraint" author="Tong.connectivity" dbms="sybase">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -386,7 +386,7 @@
         </sql>
     </changeSet>
 
-    <changeSet id="drop-monitoring-mode-constraint" author="murex.connectivity" dbms="oracle">
+    <changeSet id="drop-monitoring-mode-constraint" author="Tong.connectivity" dbms="oracle">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -402,7 +402,7 @@
         </sql>
     </changeSet>
 
-    <changeSet id="drop-monitoring-mode-constraint" author="murex.connectivity"
+    <changeSet id="drop-monitoring-mode-constraint" author="Tong.connectivity"
                dbms="!postgresql, !sybase, !oracle, !mssql">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
@@ -415,7 +415,7 @@
         </sql>
     </changeSet>
 
-    <!--  <changeSet id="init_monitoring_config_ids_sequence" author="murex.connectivity" dbms="oracle,postgresql">
+    <!--  <changeSet id="init_monitoring_config_ids_sequence" author="Tong.connectivity" dbms="oracle,postgresql">
          <preConditions onError="HALT" onFail="MARK_RAN">
              <sqlCheck expectedResult="0">
                  select count(1)
@@ -435,7 +435,7 @@
          </sql>
      </changeSet> -->
 
-    <changeSet id="change-mode-column-name-monitoring-to-level" author="murex.connectivity">
+    <changeSet id="change-mode-column-name-monitoring-to-level" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -445,7 +445,7 @@
         <renameColumn tableName="C2_MONITORING_RUNS" newColumnName="MONITORING_LEVEL" oldColumnName="MONITORING_MODE"/>
     </changeSet>
 
-    <changeSet id="increase-size-of-monitoring-level-column-to-300" author="murex.connectivity">
+    <changeSet id="increase-size-of-monitoring-level-column-to-300" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_RUNS"/>
@@ -455,7 +455,7 @@
         <modifyDataType tableName="C2_MONITORING_RUNS" columnName="MONITORING_LEVEL" newDataType="VARCHAR(300)"/>
     </changeSet>
 
-    <changeSet id="rename-status-table" author="murex.connectivity">
+    <changeSet id="rename-status-table" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <and>
                 <tableExists tableName="C2_MONITORING_STATUS"/>
@@ -465,7 +465,7 @@
         <dropPrimaryKey tableName="C2_MONITORING_STATUS_TMP" constraintName="PK_STATUS"/>
     </changeSet>
 
-    <changeSet id="rename-operations-table" author="murex.connectivity">
+    <changeSet id="rename-operations-table" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <tableExists tableName="C2_MONITORING_OPERATIONS"/>
         </preConditions>
@@ -473,14 +473,14 @@
         <dropPrimaryKey tableName="C2_MONITORING_OPERATIONS_TMP" constraintName="PK_OPERATIONS"/>
     </changeSet>
 
-    <changeSet id="drop-operations-default-value" author="murex.connectivity">
+    <changeSet id="drop-operations-default-value" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <columnExists tableName="C2_MONITORING_OPERATIONS_TMP" columnName="OS_USER"/>
         </preConditions>
         <dropDefaultValue columnName="OS_USER" tableName="C2_MONITORING_OPERATIONS_TMP"/>
     </changeSet>
 
-    <changeSet id="create-status-table" author="murex.connectivity">
+    <changeSet id="create-status-table" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <not>
                 <tableExists tableName="C2_MONITORING_STATUS"/>
@@ -505,7 +505,7 @@
                        tableName="C2_MONITORING_STATUS"/>
     </changeSet>
 
-    <changeSet id="create-operations-table" author="murex.connectivity">
+    <changeSet id="create-operations-table" author="Tong.connectivity">
         <preConditions onError="HALT" onFail="MARK_RAN">
             <not>
                 <tableExists tableName="C2_MONITORING_OPERATIONS"/>

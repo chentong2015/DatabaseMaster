@@ -113,8 +113,6 @@ torm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 oorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/query/DemoQueryTranslator.java,8\7\8744311bfef4e5bb278fb8d2a54820531aee8539
 —
 gorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/Employee.java,3\0\305e68dd20e0518cbe1f7da51554ae109305b5f8
-•
-eorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/Sample.java,5\c\5cfcef1df31def21f7a56c2a26a38fe8bcb1a625
 “
 corm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/Book.java,5\1\51107826734e401f41a3b80589591f5c0a5b0f4b
 œ
@@ -241,8 +239,6 @@ u
 Erelational-database/mysql/src/main/java/index/IndexDataStructure.java,d\c\dc10693b44d5d0560c75f5f2437ec83ba8c2f579
 }
 Mdatabase-orm-design/src/main/java/storage/engine/design/Index/æ•°æ®åº“ç´¢å¼•,7\a\7a94c837182a2648e09e70cec73c444c3bce3a32
-_
-/orm-jpa-hibernate/javax-persistence-api/pom.xml,4\7\47d51ab121ab19073a3af6002f6868e55e42b607
 —
 gorm-jpa-hibernate/jakarta-persistence-api/src/main/java/com/hibernate/entity/manager/entity/Sample.java,9\e\9ef3ae6c890748a3df459d3591b5f3cf08ed2fe1
 •
@@ -349,10 +345,6 @@ z
 Jdatabase-orm-design/src/main/java/storage/engine/design/å­˜å‚¨å¼•æ“å¯¹æ¯”,7\8\788843b2453dd681384482b46257d2355c7c4ccc
 j
 :relational-database/mysql/src/main/java/MySqlFunctions.sql,4\1\4193b622316baaab2e6923424706788bc9609ab9
-
-morm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/query/JpqlQueryRunner.java,a\d\ad51e19a1669e169e3ddf08aa9b6287dcb02e036
-œ
-lorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/DemoEntityManagerApi.java,5\c\5caadcaff3d7eeb5969c388206c900b97f6d2103
 •
 eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityDemo.java,f\4\f44a51b9b464c6a16c893b2f15207b06d7585e7c
 Ÿ
@@ -383,12 +375,6 @@ torm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 porm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/BaseEntity.java,1\d\1d403a0df052cb6828a025aef97744981dbf5dc9
 ¹
 ˆorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/non/publiz/entity/SelectionResult.java,2\7\27b814960281391899ca67edb43a84bac8eec5f7
-Ÿ
-oorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/NamedQueryEntity.java,5\9\59af58a9d9d1e2f9f2225f23fe5a2da12fa27916
-
-norm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/DemoEntityManagerQuery.java,f\6\f69561dd37716ff39ab3e95189c3d1c2e7028f0d
-¥
-uorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/query/JpaEntityManagerQueries.java,a\a\aacbc417d86f69d95ecc321aaad58360c9882dc4
 ±
 €orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_batch/Employee.java,e\8\e8a2af45410f8331e75441ca465bc6db0c9073f1
 ¡
@@ -425,8 +411,6 @@ rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernateå¸¸è§å¼‚å¸¸,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
 O
 relational-non-database/pom.xml,3\a\3a9d5bf6fd1042eb3eacb58b141f01bf11d8cb8d
-I
-orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 ‰
 Ydatabase-orm-design/src/main/java/orm/middleware/design/datamodel/CrossDatabaseModel.java,2\7\27739951ff510c60c52540b79f4c69c3398e265b
 
@@ -611,3 +595,23 @@ Z
 *orm-liquibase/liquibase-core-basic/pom.xml,9\8\981a6efb5c9c3ff9c08be837d18719ac9cbbe7b9
 W
 'relational-database/ å…³ç³»æ€§æ•°æ®åº“,8\1\81c673257671255ca16fd897c3f466d393ef4e5d
+„
+Torm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelogXsd.java,e\3\e308447873e4e014ae748ab377f9c0de889b430f
+
+Qorm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelog.java,f\a\fa84e92d1d3e471c0af4afaf7ba72fdd0ec21260
+I
+orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
+c
+3orm-jpa-hibernate/native-hibernate5-upgrade/pom.xml,9\e\9e20eac41b33a668a0b1ba03f56cedba93642459
+q
+Aorm-jpa-hibernate/native-hibernate5-upgrade/Hibernateå‡çº§ç­–ç•¥,d\e\de6d74679757481e5161930801329fbe9f2a38cf
+œ
+lorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/DemoEntityManagerApi.java,5\c\5caadcaff3d7eeb5969c388206c900b97f6d2103
+
+norm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/DemoEntityManagerQuery.java,f\6\f69561dd37716ff39ab3e95189c3d1c2e7028f0d
+_
+/orm-jpa-hibernate/javax-persistence-api/pom.xml,4\7\47d51ab121ab19073a3af6002f6868e55e42b607
+
+morm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/query/JpqlQueryRunner.java,a\d\ad51e19a1669e169e3ddf08aa9b6287dcb02e036
+Ÿ
+oorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/NamedQueryEntity.java,5\9\59af58a9d9d1e2f9f2225f23fe5a2da12fa27916

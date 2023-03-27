@@ -9,7 +9,7 @@
         <!-- <provider>org.hibernate.ejb.HibernatePersistence</provider> 旧配置provider已经被废弃 -->
 
         <!-- TODO. 这里不能在程序上动态的注入mapping的entity class
-             <class>com.hibernate.entity.manager.entity.*</class> 注入指定的Entity Class或者选择批量注入 -->
+        <class>com.hibernate.entity.manager.entity.*</class> 注入指定的Entity Class或者选择批量注入 -->
         <class>com.hibernate.entity.manager.entity.Sample</class>
         <class>com.hibernate.entity.manager.entity.NamedQueryEntity</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>

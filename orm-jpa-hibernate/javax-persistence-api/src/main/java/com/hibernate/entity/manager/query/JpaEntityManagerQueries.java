@@ -18,21 +18,33 @@ import java.util.List;
 public class JpaEntityManagerQueries {
 
     public static void main(String[] args) {
-        testNativeSqlQueries();
+        testHqlSelectQuery();
+        // testHqlDeleteQuery();
+        // testNativeSqlQueries();
     }
 
-    // TODO. 在添加完@Entity(name="")名称之后，这里的HQL查询语句必须使用全路径名称
-    private static void testHqlQuery() {
+    // TODO. @Entity(name 推荐设置
+    // 1. 当没有设置entity name时，.getSimpleName()和.getName()都能工作
+    // 2. 当设置entity name之后，HQL查询语句必须使用全路径名称.getName()
+    private static void testHqlSelectQuery() {
+        EntityManager entityManager = EntityManagerHandler.getEntityManager();
+        String qlString = "FROM " + Sample.class.getName();
+        List<Sample> sampleList = entityManager.createQuery(qlString).getResultList();
+        System.out.println(sampleList.size());
+    }
+
+    private static void testHqlDeleteQuery() {
         EntityManager entityManager = EntityManagerHandler.getEntityManager();
         entityManager.getTransaction().begin();
-        // 使用Simple Class Name会提示报错; 下面拿到的是类型的全路径
+        // 等效于class.getName()返回全路径
         String fullPath = Sample.class.getCanonicalName();
-        // TODO. 使用冒号作为参数名称的传递
+
         String deleteQuery = "DELETE FROM " + fullPath + " p WHERE p.name = :name";
         entityManager.createQuery(deleteQuery).setParameter("name", "test").executeUpdate();
         entityManager.getTransaction().commit();
     }
- 
+
+
     // TODO. 使用CriteriaQuery.createQuery(Sample.class)来创建条件查询和Entity Name没有关系 !!
     private static void testCriteriaQuery() {
         EntityManager entityManager = EntityManagerHandler.getEntityManager();

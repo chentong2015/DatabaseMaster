@@ -17,6 +17,7 @@
         <module name="document-db-mongodb" />
         <module name="liquibase-core-basic" />
         <module name="native-hibernate6-api-master" />
+        <module name="native-hibernate5-upgrade" />
         <module name="jakarta-persistence-api" />
         <module name="sql-server" />
         <module name="h2-database" />

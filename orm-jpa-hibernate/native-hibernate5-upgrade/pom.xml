@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>orm-jpa-hibernate</artifactId>
+        <groupId>org.example</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>native-hibernate5-upgrade</artifactId>
+
+    <dependencies>
+        <!-- 这里的版本号是严格大小写敏感 -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.6.14.Final</version>
+        </dependency>
+
+        <!-- 下面的依赖至少需要5.4.4以上的版本，才能兼容
+        hibernate 5.5.4 minimum is required when using HibernateJpaAutoConfiguration with spring boot 2.6
+        <dependency>
+            <groupId>org.hibernate.common</groupId>
+            <artifactId>hibernate-commons-annotations</artifactId>
+            <version>5.1.2.Final</version>
+        </dependency> -->
+    </dependencies>
+</project>
