@@ -591,8 +591,6 @@ X
 Lrelational-database/oracle/src/main/java/com/oracle/main/DemoOrcaleJDBC.java,5\c\5c179f72a7efecc9477dc737cecf0964ec973f99
 R
 "relational-database/oracle/pom.xml,0\f\0fa6e1b3467f8a8c1a16faf9dec43249794efc71
-Z
-*orm-liquibase/liquibase-core-basic/pom.xml,9\8\981a6efb5c9c3ff9c08be837d18719ac9cbbe7b9
 W
 'relational-database/ å…³ç³»æ€§æ•°æ®åº“,8\1\81c673257671255ca16fd897c3f466d393ef4e5d
 „
@@ -601,10 +599,6 @@ Torm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelogXsd
 Qorm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelog.java,f\a\fa84e92d1d3e471c0af4afaf7ba72fdd0ec21260
 I
 orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
-c
-3orm-jpa-hibernate/native-hibernate5-upgrade/pom.xml,9\e\9e20eac41b33a668a0b1ba03f56cedba93642459
-q
-Aorm-jpa-hibernate/native-hibernate5-upgrade/Hibernateå‡çº§ç­–ç•¥,d\e\de6d74679757481e5161930801329fbe9f2a38cf
 œ
 lorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/DemoEntityManagerApi.java,5\c\5caadcaff3d7eeb5969c388206c900b97f6d2103
 
@@ -615,3 +609,9 @@ _
 morm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/query/JpqlQueryRunner.java,a\d\ad51e19a1669e169e3ddf08aa9b6287dcb02e036
 Ÿ
 oorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/NamedQueryEntity.java,5\9\59af58a9d9d1e2f9f2225f23fe5a2da12fa27916
+•
+eorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/Sample.java,5\c\5cfcef1df31def21f7a56c2a26a38fe8bcb1a625
+¥
+uorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/query/JpaEntityManagerQueries.java,a\a\aacbc417d86f69d95ecc321aaad58360c9882dc4
+c
+3orm-jpa-hibernate/native-hibernate5-upgrade/pom.xml,9\e\9e20eac41b33a668a0b1ba03f56cedba93642459
