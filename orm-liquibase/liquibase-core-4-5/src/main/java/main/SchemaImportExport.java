@@ -59,7 +59,7 @@ public class SchemaImportExport {
     }
 
     private static void importSchema() throws Exception {
-        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong18");
+        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong19");
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
 
@@ -71,7 +71,7 @@ public class SchemaImportExport {
     // Generated changelog written to changelog-proc.xml
     // 在从DB中提取Schema直接生成changset到指定的changelog文件中
     private static void exportSchema() throws Exception {
-        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong18");
+        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong19");
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
 

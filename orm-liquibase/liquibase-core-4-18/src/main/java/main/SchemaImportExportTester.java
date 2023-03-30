@@ -76,7 +76,7 @@ public class SchemaImportExportTester {
     }
 
     private static void importSchema() throws Exception {
-        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong18");
+        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong19");
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
 
@@ -99,7 +99,7 @@ public class SchemaImportExportTester {
     }
 
     public static Database createLocalhostDatabase() throws Exception {
-        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong18");
+        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong19");
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
         return DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
     }

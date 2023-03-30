@@ -45,6 +45,9 @@ public class DemoDatabaseMetaData {
     //    忽略掉不同数据库的schema名称来进行查找, 不受DB的约束
     private static void dropTableIfExist(Connection connection, String tableNamePattern) {
         try (Statement statement = connection.createStatement()) {
+            // 默认情况下，运行语句完成所允许的时间量没有限制
+            statement.setQueryTimeout(30);
+
             // 获取指定database数据库名称
             String catalog = connection.getCatalog();
             // TODO. Retrieves this Connection object's current schema name.

@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class LiquibaseTester {
 
     private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase-4-18;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
-    // Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong18");
+    // Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong19");
 
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/liquibase_upgrade_4_18?user=postgres&password=admin";
 

@@ -17,7 +17,6 @@
         <module name="document-db-mongodb" />
         <module name="liquibase-core-basic" />
         <module name="native-hibernate6-api-master" />
-        <module name="native-hibernate5-upgrade" />
         <module name="jakarta-persistence-api" />
         <module name="sql-server" />
         <module name="h2-database" />
@@ -34,6 +33,7 @@
       <module name="distributed-database" target="15" />
       <module name="distributed-db" target="15" />
       <module name="liquibase-core-4-18-sub" target="15" />
+      <module name="native-hibernate5-upgrade" target="15" />
       <module name="native-hibernate6-api-metadata" target="15" />
       <module name="object-db-management-system" target="1.5" />
       <module name="orm-jpa-hibernate-example" target="15" />

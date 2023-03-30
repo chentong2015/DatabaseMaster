@@ -465,8 +465,6 @@ Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBat
 Ndatabase-orm-design/src/main/java/database/design/driver/ConnectionDriver.java,e\2\e2ae909e04f446cd660a2f0238495db14da87049
 W
 'relational-database/postgre-sql/pom.xml,9\e\9e622c3f443856cc45abe9c6a5afebdb1be97806
-_
-/orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
 
 ]database-orm-design/src/main/java/orm/middleware/design/connection/pool/è¿æ¥æ± è®¾è®¡æ€æƒ³,d\8\d819c08c1af42def862dd978c9523f2a697c683e
 i
@@ -475,14 +473,10 @@ i
 [orm-liquibase/liquibase-core-basic/src/main/java/main/changeset/checksum/Changeset Checksum,e\2\e25607f9788f3260d224adfd297d1b05d9b1abd7
 }
 Morm-liquibase/liquibase-core-4-18/src/main/java/main/LiquibaseUtilTester.java,1\4\14788d9c7768cb44a19e16f02317a6fb6a7a78d2
-€
-Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
 ‹
 [orm-liquibase/liquibase-core-4-18/src/main/java/main/snapshot/MyIndexSnapshotGenerator.java,c\c\ccd65fc8f8ecbedcfe24f838cf589337674304d6
 V
 &relational-database/sql-server/pom.xml,0\6\0652b8025c4df2ced598a0287f033cae7b317589
-„
-Tdatabase-orm-design/src/main/java/database/design/metadata/DemoDatabaseMetaData.java,e\c\ecebf707137741904608bc92b9a6c6b7a3ff2832
 {
 Korm-liquibase/liquibase-core-4-5/src/main/java/main/SchemaImportExport.java,4\1\415a431b134612c7879de65a5ea2bf896cbd0fce
 K
@@ -491,8 +485,6 @@ K
 \orm-liquibase/liquibase-core-basic/src/main/java/main/extensions/datatype/MyVarcharType.java,8\9\893ec1174a8d7a09ba9ac54c4acd753b6ad64a9e
 
 ]orm-liquibase/liquibase-core-basic/src/main/java/main/extensions/datatype/MyDateTimeType.java,b\2\b2ddfd64ba42e38c849f06f03f029a5397c46bdf
-c
-3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
 [
 +relational-database/postgre-sql/PSQL åŸºç¡€,4\c\4cc55c6c9b5cb4b5d72c08ed8e8458bd9e791fd9
 f
@@ -585,8 +577,6 @@ f
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/MetadataSourcesDemo.java,e\0\e0ac614578f118de3723b96dc50d5209a3500a9a
 ‘
 aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseJpaMetadata.java,0\0\004fcac44c375ddf5ab8e0123b4c1e56c216d54b
-X
-(orm-jpa-hibernate/Hibernate è¿›é˜¶æ•™ç¨‹,b\6\b604e1421f5ceeaec16edee761a8da30c5e38256
 |
 Lrelational-database/oracle/src/main/java/com/oracle/main/DemoOrcaleJDBC.java,5\c\5c179f72a7efecc9477dc737cecf0964ec973f99
 R
@@ -597,8 +587,6 @@ W
 Torm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelogXsd.java,e\3\e308447873e4e014ae748ab377f9c0de889b430f
 
 Qorm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelog.java,f\a\fa84e92d1d3e471c0af4afaf7ba72fdd0ec21260
-I
-orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 œ
 lorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/DemoEntityManagerApi.java,5\c\5caadcaff3d7eeb5969c388206c900b97f6d2103
 
@@ -615,3 +603,5 @@ eorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/mana
 uorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/query/JpaEntityManagerQueries.java,a\a\aacbc417d86f69d95ecc321aaad58360c9882dc4
 c
 3orm-jpa-hibernate/native-hibernate5-upgrade/pom.xml,9\e\9e20eac41b33a668a0b1ba03f56cedba93642459
+Z
+*orm-liquibase/liquibase-core-basic/pom.xml,9\8\981a6efb5c9c3ff9c08be837d18719ac9cbbe7b9
