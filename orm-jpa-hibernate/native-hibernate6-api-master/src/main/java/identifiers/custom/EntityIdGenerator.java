@@ -8,11 +8,10 @@ import org.hibernate.annotations.Parameter;
 @Table(name = "t_base_entity")
 public class EntityIdGenerator {
 
-    // TODO. 使用自定义的ID主键的生成规则，来自hibernate的扩展
-    // UID1: Typically references your module name
-    // UID2: Typically references your table
-    // COUNT (optional): Reserves a number of IDs as specified by the COUNT attribute, by default set to 1.
-
+    // TODO. 将自定义的ID生成器作用到属性id字段上
+    // Use custom generator one needs to configure its Hibernate' field entity to reference it
+    // 1. 使用自定义的ID生成器策略
+    // 2. 为ID生成器设置一个一致的名称
     @Id
     @GeneratedValue(generator = "personIdGenerator")
     @GenericGenerator(name = "personIdGenerator",
@@ -20,7 +19,7 @@ public class EntityIdGenerator {
             parameters = {@Parameter(name = "UID1", value = "STATICS"),
                     @Parameter(name = "UID2", value = "CATEGORY")}
     )
-    @Column(name = "ID")
+    @Column(name = "id")
     private Long id;
 
     public Long getId() {

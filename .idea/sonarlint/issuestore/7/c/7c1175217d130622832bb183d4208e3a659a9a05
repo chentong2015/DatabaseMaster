@@ -1,6 +1,6 @@
 
-c
-java:S2095	"HUse try-with-resources or close this "Connection" in a "finally" clause.(·Ð£ùøÿÿÿÿ
 b
 java:S2095
 "GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+c
+java:S2095	"HUse try-with-resources or close this "Connection" in a "finally" clause.(·Ð£ùøÿÿÿÿ

@@ -227,10 +227,6 @@ Q
 !relational-database/mysql/pom.xml,b\5\b539580a08e698b2d29c991e6ed07f9277f2ce5e
 s
 Crelational-database/mysql/src/main/java/batching/MySqlBatching.java,0\2\0203b05ef4736502d06a6ca868fe487aa458f9e9
-w
-Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
-�
-rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Fetching配置,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
 n
 >relational-database/mysql/src/main/java/MysqlOptimization.java,9\8\98881886a44e1b11da99ccd264d4381e24f771f6
 u
@@ -249,8 +245,6 @@ sorm-jpa-hibernate/jakarta-persistence-api/src/main/java/com/hibernate/entity/ma
 aorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/entity/Fees.java,e\3\e3009984de36c40fe16e846517170498aa205cc3
 �
 `orm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/entity/Fee.java,b\b\bbdc034d02dc8e4e58feda15db4f80a96b3c3e53
-a
-1orm-jpa-hibernate/jakarta-persistence-api/pom.xml,a\0\a06ddbc7907613bde5d6a54ae83c5d20fe412252
 Y
 )relational-database/mysql/MySQL Connector,4\0\406ad2137b1018a4dba6823adc8492590ea28e98
 [
@@ -363,8 +357,6 @@ gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 oorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/MyEntity.java,9\8\989c41a7f5ed34a284ab38d8621842619d039b9a
 �
 vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,f\d\fd4e4a8ced05e9a3040438ffca88b6d44dafaae2
-�
-jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/DemoNativeHibernateAPI.java,3\f\3fa468c8a55bd67e3cf0ce43060acd78cb6d7845
 �
 rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/any/DemoAnyMapping.java,7\f\7fd20165fea4168a2332c4f3a8f705362d432ef7
 �
@@ -415,8 +407,6 @@ O
 Ydatabase-orm-design/src/main/java/orm/middleware/design/datamodel/CrossDatabaseModel.java,2\7\27739951ff510c60c52540b79f4c69c3398e265b
 �
 ]database-orm-design/src/main/java/orm/middleware/design/datamodel/AbstractJdbcConnection.java,7\4\74264abf67027980d99b468b80bf84a631f105d7
-w
-Gdatabase-orm-design/src/main/java/orm/middleware/design/ORM系统设计,1\5\150c8d71e4941d5d417f7e66e45c276b7d5f7f75
 K
 orm-jpa-hibernate/JPA规范,a\7\a732a290493241d1163ac78c1a91b936cc320a29
 ]
@@ -511,8 +501,6 @@ Odatabase-orm-design/src/main/java/database/design/bacthing/Batching批量执行
 Qdatabase-orm-design/src/main/java/database/design/exception/DemoSqlException.java,4\f\4f7d8dce4734f426d19573fcfb2099e8a3cd05dc
 t
 Ddatabase-orm-design/src/main/java/database/design/metadata/Main.java,c\5\c5082520b51fccddae45a1c0d8b877625ec30ee3
-}
-Mdatabase-orm-design/src/main/java/database/design/fectching/DemoFetching.java,7\c\7c1175217d130622832bb183d4208e3a659a9a05
 �
 ]relational-database/postgre-sql/src/main/java/com/psql/main/batching/PostgresSqlBatching.java,5\7\5767e3b23e2153de8f3d7584895d57e77fa3a476
 �
@@ -547,16 +535,10 @@ y
 Iorm-liquibase/liquibase-core-4-18/src/main/java/main/LiquibaseTester.java,3\0\30e6c40a10259adc45094754f15e355196c929b4
 Y
 )orm-liquibase/liquibase-core-4-18/pom.xml,e\d\edfa0ae2a1bb5fab2ef891a76e152b6ba01cf9f3
-�
-]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/identifiers/IdGeneratorType.java,1\0\10c0fec8c3d15dd3bfd9c531595b92b9bd0201c2
-�
-form-jpa-hibernate/native-hibernate6-api-master/src/main/java/identifiers/custom/EntityIdGenerator.java,6\7\6746c6f8f040e6715e571990eecc60efb49d4fb7
 �
 Uorm-liquibase/liquibase-core-basic/src/main/java/main/exception/Liquibase源码问题,1\4\14d00dbf41c0f03f5cf6f3b040f4835177091e1e
 �
 borm-liquibase/liquibase-core-basic/src/main/java/main/exception/DemoPsqlDBConnectionException.java,6\c\6ce7f6421fa6b67c821e19cbdbc6e1c4bb7827db
-�
-morm-jpa-hibernate/native-hibernate6-api-master/src/main/java/identifiers/custom/MyStoredTableIdGenerator.java,8\a\8a84ff45114e8a8c0501be186001e273a7844868
 �
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseMetadata.java,1\a\1ab64bc9e3f6f76d53550c953d804d4c2103743c
 �
@@ -601,7 +583,27 @@ oorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/mana
 eorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/Sample.java,5\c\5cfcef1df31def21f7a56c2a26a38fe8bcb1a625
 �
 uorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/query/JpaEntityManagerQueries.java,a\a\aacbc417d86f69d95ecc321aaad58360c9882dc4
-c
-3orm-jpa-hibernate/native-hibernate5-upgrade/pom.xml,9\e\9e20eac41b33a668a0b1ba03f56cedba93642459
 Z
 *orm-liquibase/liquibase-core-basic/pom.xml,9\8\981a6efb5c9c3ff9c08be837d18719ac9cbbe7b9
+�
+Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
+_
+/orm-jpa-hibernate/native-hibernate6-api/pom.xml,a\2\a21aabdccd15089324dbcc1b3f4fada8abe0850c
+�
+Tdatabase-orm-design/src/main/java/database/design/metadata/DemoDatabaseMetaData.java,e\c\ecebf707137741904608bc92b9a6c6b7a3ff2832
+c
+3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
+X
+(orm-jpa-hibernate/Hibernate 进阶教程,b\6\b604e1421f5ceeaec16edee761a8da30c5e38256
+I
+orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
+a
+1orm-jpa-hibernate/jakarta-persistence-api/pom.xml,a\0\a06ddbc7907613bde5d6a54ae83c5d20fe412252
+w
+Gdatabase-orm-design/src/main/java/orm/middleware/design/ORM系统设计,1\5\150c8d71e4941d5d417f7e66e45c276b7d5f7f75
+w
+Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
+�
+rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Fetching配置,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
+}
+Mdatabase-orm-design/src/main/java/database/design/fectching/DemoFetching.java,7\c\7c1175217d130622832bb183d4208e3a659a9a05

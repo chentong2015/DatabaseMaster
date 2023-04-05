@@ -34,6 +34,10 @@
         <property name="hibernate.cache.use_query_cache">true</property>
         <property name="hibernate.javax.cache.missing_cache_strategy">create</property>
 
+        <!-- TODO. 该属性配置可以在关闭Session之后，当获取Lazy Data时自动创建背后的Session来执行
+             由于本身是Anti-pattern的设计，会对性能造成影响，因此不建议使用(特别是在企业级应用中) -->
+        <property name="hibernate.enable_lazy_load_no_trans">true</property>
+
         <mapping class="batching.entity.Post"/>
         <mapping class="batching.entity.Comment"/>
         <mapping class="caching.first.level.CacheEntity"/>
