@@ -1,0 +1,27 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
+    <changeSet id="EdenImpactRulesTableV1" author="EDEN">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="EDEN_IMPACT_RULES_TABLE_DBF"/>
+            </not>
+        </preConditions>
+        <createTable tableName="EDEN_IMPACT_RULES_TABLE_DBF">
+
+            <column name="ID" autoIncrement="true" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="VERSION" type="int"/>
+            <column name="TABLE_NAME" type="varchar(255)"/>
+            <column name="ENGINE_NAME" type="varchar(255)"/>
+            <column name="AUTHOR" type="varchar(255)"/>
+            <column name="MODIFICATION_TYPE" type="varchar(255)"/>
+            <column name="TIMESTAMP" type="bigint"/>
+            <column name="DELTA_IMPACT" type="varchar(1000)"/>
+
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

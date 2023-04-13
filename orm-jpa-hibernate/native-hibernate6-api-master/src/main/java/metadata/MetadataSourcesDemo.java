@@ -1,6 +1,7 @@
 package metadata;
 
 import dialect.MyDialectResolver;
+import metadata.entity.BaseEntity;
 import metadata.entity.BaseJpaMetadata;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -23,7 +24,7 @@ import java.util.Properties;
 // 2. 注入Xml Entity Mapping文件中的成PersistentClass持久层的对象
 public class MetadataSourcesDemo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         BootstrapServiceRegistry bootstrapServiceRegistry = new BootstrapServiceRegistryBuilder().build();
         StandardServiceRegistry standardServiceRegistry = new StandardServiceRegistryBuilder(bootstrapServiceRegistry)
                 .applySettings(getDbSettings())
@@ -33,6 +34,8 @@ public class MetadataSourcesDemo {
         // TODO. MetadataSources提供一个资源容器: 加载entity class或者hbm entity
         MetadataSources metadataSources = new MetadataSources();
         metadataSources.addAnnotatedClass(BaseJpaMetadata.class);
+        metadataSources.addAnnotatedClass(BaseEntity.class.getClass());
+
         InputStream inputStream = MetadataSourcesDemo.class.getResourceAsStream("/metadata/metadata.hbm.xml");
         metadataSources.addInputStream(inputStream);
 

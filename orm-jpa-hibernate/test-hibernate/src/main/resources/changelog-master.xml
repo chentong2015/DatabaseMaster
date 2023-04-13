@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
+
+    <changeSet author="eden" id="create-auto-tradability-tables">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="EDEN_AQ_CATEGORY"/>
+            </not>
+        </preConditions>
+        <comment>Creation of the Auto Tradability tables</comment>
+
+        <createTable tableName="EDEN_AQ_CATEGORY">
+            <column name="ID" autoIncrement="true" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="LABEL" type="varchar(255)"/>
+            <column name="VALIDITY_DURATION" type="varchar(255)"/>
+            <column name="DELTA_RULE_ID" type="bigint"/>
+            <column name="NOMINAL_RULE_ID" type="bigint"/>
+            <column name="MATURITY_RULE_ID" type="bigint"/>
+
+            <column name="DELTA_COMPARATOR" type="varchar(255)"/>
+            <column name="NOMINAL_COMPARATOR" type="varchar(255)"/>
+            <column name="MATURITY_COMPARATOR" type="varchar(255)"/>
+
+            <column name="DELTA_LOWER_BOUND" type="varchar(255)"/>
+            <column name="NOMINAL_LOWER_BOUND" type="varchar(255)"/>
+            <column name="MATURITY_LOWER_BOUND" type="varchar(255)"/>
+
+            <column name="DELTA_UPPER_BOUND" type="varchar(255)"/>
+            <column name="NOMINAL_UPPER_BOUND" type="varchar(255)"/>
+            <column name="MATURITY_UPPER_BOUND" type="varchar(255)"/>
+        </createTable>
+        <addUniqueConstraint tableName="EDEN_AQ_CATEGORY"
+                             columnNames="LABEL"
+                             constraintName="EDEN_LABEL_UNICITY"/>
+
+        <createTable tableName="EDEN_AQ_INSTRUMENT">
+            <column name="ID" autoIncrement="true" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="LABEL" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="CAT_ID" type="bigint"/>
+        </createTable>
+
+        <addUniqueConstraint tableName="EDEN_AQ_INSTRUMENT"
+                             columnNames="LABEL"
+                             constraintName="INSTRUMENT_UNICITY"/>
+
+
+        <createTable tableName="EDEN_AQ_PANIC">
+
+            <column name="LABEL" type="varchar(255)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+
+    <changeSet id="add-foreign-key-constraint-between-EDEN_AQ_CATEGORY-and-EDEN_AQ_INSTRUMENT" author="eden">
+        <addForeignKeyConstraint baseTableName="EDEN_AQ_INSTRUMENT"
+                                 baseColumnNames="CAT_ID"
+                                 constraintName="fk_instrument_category"
+                                 referencedTableName="EDEN_AQ_CATEGORY"
+                                 referencedColumnNames="ID"/>
+    </changeSet>
+
+    <includeAll path="changesets"/>
+</databaseChangeLog>

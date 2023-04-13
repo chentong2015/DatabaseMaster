@@ -20,6 +20,7 @@
         <module name="jakarta-persistence-api" />
         <module name="sql-server" />
         <module name="h2-database" />
+        <module name="test-hibernate" />
         <module name="javax-persistence-api" />
         <module name="native-hibernate5-api-xml" />
         <module name="entity-class-parser" />

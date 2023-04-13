@@ -55,7 +55,11 @@ public class MetadataSourcesHelper {
             }
 
             // 配置Properties信息必须和指定的数据库对应
+            // 不使用cfg.xml的配置形式，这里的属性必须提供完整的JDBC连接信息
             Properties properties = new Properties();
+            properties.put(AvailableSettings.URL, "jdbc:postgresql://localhost:5432/my_database");
+            properties.put(AvailableSettings.USER, "postgres");
+            properties.put(AvailableSettings.PASS, "admin");
             properties.put(AvailableSettings.DIALECT, PostgresPlusDialect.class.getName());
             standardServiceRegistryBuilder.applySettings(properties);
 

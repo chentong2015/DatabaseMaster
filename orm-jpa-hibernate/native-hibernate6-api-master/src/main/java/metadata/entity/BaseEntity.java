@@ -5,9 +5,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity // (name = "metadata.entity.BaseJpaMetadata")
-@Table(name = "t_jpa_metadata")
-public class BaseJpaMetadata {
+@Entity
+@Table(name = "base_entity")
+public class BaseEntity {
 
     @Id
     @Column(name = "id")
@@ -16,10 +16,11 @@ public class BaseJpaMetadata {
     @Column(name = "name")
     protected String name;
 
-    public BaseJpaMetadata() {
+    public BaseEntity() {
+
     }
 
-    public BaseJpaMetadata(long id, String name) {
+    public BaseEntity(long id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -40,3 +41,4 @@ public class BaseJpaMetadata {
         this.name = name;
     }
 }
+
