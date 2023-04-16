@@ -33,6 +33,10 @@ public class MetadataSourcesDemo {
 
         // TODO. MetadataSources提供一个资源容器: 加载entity class或者hbm entity
         MetadataSources metadataSources = new MetadataSources();
+
+        System.out.println(BaseJpaMetadata.class.getSimpleName());
+        System.out.println(BaseJpaMetadata.class.getName());
+        
         metadataSources.addAnnotatedClass(BaseJpaMetadata.class);
         metadataSources.addAnnotatedClass(BaseEntity.class.getClass());
 

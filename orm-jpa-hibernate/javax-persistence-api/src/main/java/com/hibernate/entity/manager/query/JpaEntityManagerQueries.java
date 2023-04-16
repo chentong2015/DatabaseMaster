@@ -29,7 +29,9 @@ public class JpaEntityManagerQueries {
     private static void testHqlSelectQuery() {
         EntityManager entityManager = EntityManagerHandler.getEntityManager();
         String qlString = "FROM " + Sample.class.getName();
-        List<Sample> sampleList = entityManager.createQuery(qlString).getResultList();
+
+        // 3. 创建HQL Query查询时需要提供ResultClass结果值的类型 !!
+        List<Sample> sampleList = entityManager.createQuery(qlString, Sample.class).getResultList();
         System.out.println(sampleList.size());
     }
 
