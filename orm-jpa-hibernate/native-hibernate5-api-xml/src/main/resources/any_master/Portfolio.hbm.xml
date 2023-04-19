@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="none" default-access="property" auto-import="false">
+    <class name="com.hibernate5.testing.any_master.entities.Portfolio" table="TRN_PFLD_DBF">
+        <meta attribute="checksNotPropertyName">true</meta>
+        <id type="double" name="reference" column="M_REF">
+            <generator class="native"/>
+        </id>
+        <property type="string" name="description" column="M_DESC"/>
+    </class>
+</hibernate-mapping>
