@@ -16,5 +16,6 @@
         <property name="format_sql">true</property>
 
         <mapping resource="entity/sample.hbm.xml"/>
+        <mapping resource="entity/EntityId.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
