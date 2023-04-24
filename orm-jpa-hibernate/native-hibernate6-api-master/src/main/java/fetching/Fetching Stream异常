@@ -1,6 +1,5 @@
 当使用Stream作为查询结果时，如果查询的数据量过大，在Stream中每一个item都执行处理，会导致BD关闭resultSet
 Hibernate在处理可滚动的Streams结果时存在问题，所有并不推荐使用以上代码
-so this is definitely a bug with streaming and/or ScrollableResults
 
 实例代码如下:
 public void accessById(PK id, Consumer<T> handler) {
@@ -17,13 +16,8 @@ Stream流的操作是Lazy操作，在终止操作时才处理(数据)，并且St
 https://github.com/spring-projects/spring-data-jpa/issues/1335
 https://stackoverflow.com/questions/40775697/streaming-query-results-closes-prematurely-spring-data-jpa-and-hibernate
 https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-streaming
+https://hibernate.atlassian.net/jira/software/c/projects/HHH/issues/HHH-16178?jql=project%20%3D%20%22HHH%22%20AND%20text%20~%20%22GenericJDBCException%22%20ORDER%20BY%20created%20DESC
 
-
-------------------------------------------------------------------------------------------------------------------------
-The object is already closed [90007-192]
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 141.856 sec
-<<< FAILURE! - in sample.endless.repositories.RecordRepositoryTest
-readAll_the_object_is_already_closed(sample.endless.repositories.RecordRepositoryTest)  Time elapsed: 139.007 sec  <<< ERROR!
 java.util.concurrent.ExecutionException: org.hibernate.exception.GenericJDBCException: could not advance using next()
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
 	at org.h2.message.DbException.get(DbException.java:179)

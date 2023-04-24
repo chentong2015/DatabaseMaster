@@ -1,0 +1,44 @@
+
+
+1.
+org.hibernate.exception.GenericJDBCException: could not advance using next()
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.internal.ScrollableResultsImpl.convert(ScrollableResultsImpl.java:71)
+	at org.hibernate.internal.ScrollableResultsImpl.next(ScrollableResultsImpl.java:106)
+	at xx.jft.datamodel.dao.query.ScrollableResultsIterator.hasNext(ScrollableResultsIterator.java:36)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:132)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at xx.risk.sourcemanager.persistence.dao.hibernate.RunDaoImpl.findByType(RunDaoImpl.java:34)
+	at xx.risk.sourcemanager.impl.persistence.DBRepository.loadAllRuns(DBRepository.java:809) 
+	at xx.risk.sourcemanager.run.RunManagerImpl.loadAll(RunManagerImpl.java:116) 
+	... 
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: The result set is closed. 
+	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:237)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.checkClosed(SQLServerResultSet.java:468)
+	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.next(SQLServerResultSet.java:1015)
+	at org.hibernate.internal.ScrollableResultsImpl.next(ScrollableResultsImpl.java:101) 
+	... 17 more
+	
+
+2. 当配置Lazy Init时，一旦Session关闭，则数据将不能再获取到
+org.hibernate.LazyInitializationException: could not initialize proxy [xx..application.ScenarioApplicationDTO#7] - no Session
+   at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+   at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+   at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+   at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+   at xx.risk.sourcemanager.persistence.dto.scenario.application.ScenarioApplicationDTO$HibernateProxy$e0s0uYhS.getProxySetReference(Unknown Source)
+   at xx.risk.sourcemanager.run.RunUtils.initProxySet(RunUtils.java:77)
+   at xx.risk.sourcemanager.run.RunImpl.initialize(RunImpl.java:76)
+   at xx.risk.sourcemanager.run.AbstractRunImpl.init(AbstractRunImpl.java:96)
+   at xx.risk.sourcemanager.impl.persistence.DBRepository.tryInitAndAdd(DBRepository.java:899)
+   at xx.risk.sourcemanager.impl.persistence.DBRepository.lambda$loadAllRuns$5(DBRepository.java:812)
+   at xx.risk.sourcemanager.persistence.dao.hibernate.RunDaoImpl.findByType(RunDaoImpl.java:35)
+   at xx.risk.sourcemanager.impl.persistence.DBRepository.loadAllRuns(DBRepository.java:809)
+   at xx.risk.sourcemanager.run.RunManagerImpl.loadAll(RunManagerImpl.java:116)
+   ...
+
+
+3. 通过配置hibernate属性来解决上面的异常
