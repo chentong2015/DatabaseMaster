@@ -1,29 +1,4 @@
-
-
-1.
-org.hibernate.exception.GenericJDBCException: could not advance using next()
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
-	at org.hibernate.internal.ScrollableResultsImpl.convert(ScrollableResultsImpl.java:71)
-	at org.hibernate.internal.ScrollableResultsImpl.next(ScrollableResultsImpl.java:106)
-	at xx.jft.datamodel.dao.query.ScrollableResultsIterator.hasNext(ScrollableResultsIterator.java:36)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:132)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at xx.risk.sourcemanager.persistence.dao.hibernate.RunDaoImpl.findByType(RunDaoImpl.java:34)
-	at xx.risk.sourcemanager.impl.persistence.DBRepository.loadAllRuns(DBRepository.java:809) 
-	at xx.risk.sourcemanager.run.RunManagerImpl.loadAll(RunManagerImpl.java:116) 
-	... 
-Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: The result set is closed. 
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:237)
-	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.checkClosed(SQLServerResultSet.java:468)
-	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.next(SQLServerResultSet.java:1015)
-	at org.hibernate.internal.ScrollableResultsImpl.next(ScrollableResultsImpl.java:101) 
-	... 17 more
-	
-
-2. 当配置Lazy Init时，一旦Session关闭，则数据将不能再获取到
+当配置Lazy Init时，一旦Session关闭，则数据将不能再获取到
 org.hibernate.LazyInitializationException: could not initialize proxy [xx..application.ScenarioApplicationDTO#7] - no Session
    at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
    at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
@@ -40,5 +15,10 @@ org.hibernate.LazyInitializationException: could not initialize proxy [xx..appli
    at xx.risk.sourcemanager.run.RunManagerImpl.loadAll(RunManagerImpl.java:116)
    ...
 
+解决以上异常:
+1. <property name="hibernate.enable_lazy_load_no_trans">true</property>
+   配置即使session关闭，当获取lazy init的数据时，hibernate会额外开启其它的session来发送请求并获取数据
+   该属性设置违反设计本身，可能对性能造成影响 !!
 
-3. 通过配置hibernate属性来解决上面的异常
+2. Mark as @Transactional
+   对于Spring框架，可以考虑通过事务来解决，@Transactional会在底层自动处理事务的传播机制等

@@ -1,30 +1,17 @@
-当使用Stream作为查询结果时，如果查询的数据量过大，在Stream中每一个item都执行处理，会导致BD关闭resultSet
-Hibernate在处理可滚动的Streams结果时存在问题，所有并不推荐使用以上代码
+https://github.com/spring-projects/spring-data-jpa/issues/1335
+https://stackoverflow.com/questions/40775697/streaming-query-results-closes-prematurely-spring-data-jpa-and-hibernate
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-streaming
+https://hibernate.atlassian.net/jira/software/c/projects/HHH/issues/HHH-16178?jql=project%20%3D%20%22HHH%22%20AND%20text%20~%20%22GenericJDBCException%22%20ORDER%20BY%20created%20DESC
 
-实例代码如下:
+当使用Stream作为查询结果时，如果查询的数据量过大，在Stream中每一个item都执行处理，会导致BD关闭resultSet
+Hibernate在处理可滚动的Streams结果时存在问题，实例代码如下:
 public void accessById(PK id, Consumer<T> handler) {
     try (Stream<T> stream = "select query".stream()) {
         stream.forEach(handler);
     }
 }
 
-底层原理逻辑:
-Stream流的操作是Lazy操作，在终止操作时才处理(数据)，并且Stream流必须在使用后关掉.
-当查询的数据量过大时，由于每一个item执行的时间不可忽略，导致Query是否无法关闭
-对于底层数据库而言，返回ResultSet结果的Query timeout已经过了，当Stream再处理下一个数据时抛出异常
-
-https://github.com/spring-projects/spring-data-jpa/issues/1335
-https://stackoverflow.com/questions/40775697/streaming-query-results-closes-prematurely-spring-data-jpa-and-hibernate
-https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-streaming
-https://hibernate.atlassian.net/jira/software/c/projects/HHH/issues/HHH-16178?jql=project%20%3D%20%22HHH%22%20AND%20text%20~%20%22GenericJDBCException%22%20ORDER%20BY%20created%20DESC
-
 java.util.concurrent.ExecutionException: org.hibernate.exception.GenericJDBCException: could not advance using next()
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
-	at org.h2.message.DbException.get(DbException.java:179)
-	at org.h2.message.DbException.get(DbException.java:155)
-	at org.h2.message.DbException.get(DbException.java:144)
-	at org.h2.jdbc.JdbcResultSet.checkClosed(JdbcResultSet.java:3183)
-	at org.h2.jdbc.JdbcResultSet.next(JdbcResultSet.java:122)
 	at org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
 	at org.apache.commons.dbcp.DelegatingResultSet.next(DelegatingResultSet.java:207)
 	at org.hibernate.internal.ScrollableResultsImpl.next(ScrollableResultsImpl.java:99)
@@ -33,3 +20,8 @@ java.util.concurrent.ExecutionException: org.hibernate.exception.GenericJDBCExce
 	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
 	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
 	at sample.endless.repositories.RecordRepositoryTest.lambda$readAll_the_object_is_already_closed$4(RecordRepositoryTest.java:66)
+
+底层原理逻辑:
+Stream流的操作是Lazy操作，在终止操作时才处理(数据)，并且Stream流必须在使用后关掉.
+当查询的数据量过大时，由于每一个item执行的时间不可忽略，导致Query是否无法关闭
+对于底层数据库而言，返回ResultSet结果的Query timeout已经过了，当Stream再处理下一个数据时抛出异常

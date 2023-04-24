@@ -24,7 +24,10 @@ TODO. 为什么数据库中的表在设计是有外键约束的，但实际建�
 3. 方便添加测试数据到表中，而不用考虑外键对应表的数据
 4. 在没有外键约束的情况下，对于SQL语句的编写要求更加的严格，需要了解外键的存在 !!
 
-TODO：SQL改写，语法引擎(SQL必须符合引擎所规定的语法): java.sql.SQLSyntaxErrorException
+TODO. SQL改写，语法引擎(SQL必须符合引擎所规定的语法): java.sql.SQLSyntaxErrorException
 A系统传递给B系统一条SQL, B系统如何检测判断这条SQL正确性 ?
 select * from t_blog where id=#{id};  JDBC无法执行
 select * from t_blog where id=?;      MyBatis需要对其进行改写
+
+
+

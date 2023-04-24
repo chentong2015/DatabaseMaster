@@ -5,6 +5,9 @@ Apache ShardingSphere - 开源分布式数据库生态项目
    https://shardingsphere.apache.org/index_zh.html
    https://www.bilibili.com/video/BV1nV41177Qn?p=9
 
+Apache Cassandra - Open Source NoSQL distributed database
+   https://cassandra.apache.org/_/index.html
+
 分布式数据库的作用
    实现数据服务器的高可用，搭建数据库集群
    数据服务器中断会强制系统完全重启，从而影响用户体验

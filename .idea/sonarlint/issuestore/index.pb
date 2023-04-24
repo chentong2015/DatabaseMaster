@@ -59,8 +59,6 @@ borm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/JpaEntityL
 orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/non/publiz/entity/Sample.java,5\8\58722ed481d388eb31bfdc914045c6b8dda098fa
 Â
 ‘orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumn/ManyToOne/DemoJoinColumnManyToOne.java,b\0\b05f2e1254d137548d7de501d45dab640c44990b
-ª
-zorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/å¯¹è±¡æ“ä½œèƒŒåæ‰§è¡Œçš„ä»£ç ,4\1\41aa4a2bbc6dddc3dbc53f961c294e9d96fd2458
 ¥
 uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/type/DisplayLabelType.java,b\2\b21b88dbb313148002874864c6dd70cc28b02040
 §
@@ -175,8 +173,6 @@ worm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 €orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumnOrFormula/Citizen.java,b\3\b341b7f8efa5f6e9b345223b185cebabc7e5f299
 ¾
 orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_batch/BaseFetchingBatchSize.java,6\7\672a70b0b163ec1f5415cf59eb73396b3bd6a92d
-¯
-orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/LazyCollection/Company.java,c\5\c574cd139f1295aaf48590a42f53bc68441536c4
 ³
 ‚orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/join/BaseFetchingModeJoin.java,1\9\19f9a35fdcada187902ef3c39ef9d21eb2428712
 ¦
@@ -203,8 +199,6 @@ qorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/mana
 ~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/large/object/EntityLargeObject.java,2\6\269418928342fd8cf7099609e37792196a9184ca
 ”
 dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/Hibernateå‘½åç­–ç•¥,7\7\7789c4cbbee27d04bc545c20996c773005b5b4c7
-~
-Ndatabase-orm-design/src/main/java/database/design/isolation/äº‹åŠ¡éš”ç¦»çº§åˆ«,c\f\cfb0aa1f898b562db900760d2b5c37755aebdedb
 U
 %relational-database/hyper-sql/pom.xml,0\8\0833ec567e3de17623e300c4dcb130ea3b0cd2c7
 Q
@@ -325,8 +319,6 @@ oorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 jorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMasterDTO.java,0\f\0f4f1af2eedfff778903631a4c2aedc0409e2b10
 •
 eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMeta.java,0\9\09c2fb403c82357541eea1ecc5707c9888f931cd
-®
-~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/LazyCollection/Worker.java,e\0\e04185a97f2280f5dcd6d703c63a773354b4799f
 ¦
 vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,f\d\fd4e4a8ced05e9a3040438ffca88b6d44dafaae2
 ¢
@@ -377,8 +369,6 @@ O
 Ydatabase-orm-design/src/main/java/orm/middleware/design/datamodel/CrossDatabaseModel.java,2\7\27739951ff510c60c52540b79f4c69c3398e265b
 
 ]database-orm-design/src/main/java/orm/middleware/design/datamodel/AbstractJdbcConnection.java,7\4\74264abf67027980d99b468b80bf84a631f105d7
-]
--relational-non-database/éå…³ç³»æ€§æ•°æ®åº“,9\6\96c2d6282535f5c74b7224e60926dc06b2909b37
 ”
 ddatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo2/ConnectionCreator.java,7\4\74c6757112d7d71678715b66ebf4071a472e7df2
 š
@@ -549,22 +539,12 @@ a
 1orm-jpa-hibernate/jakarta-persistence-api/pom.xml,a\0\a06ddbc7907613bde5d6a54ae83c5d20fe412252
 w
 Gdatabase-orm-design/src/main/java/orm/middleware/design/ORMç³»ç»Ÿè®¾è®¡,1\5\150c8d71e4941d5d417f7e66e45c276b7d5f7f75
-w
-Gdatabase-orm-design/src/main/java/database/design/æ•°æ®åº“è®¾è®¡æ€æƒ³,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
-¢
-rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Fetchingé…ç½®,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
-}
-Mdatabase-orm-design/src/main/java/database/design/fectching/DemoFetching.java,7\c\7c1175217d130622832bb183d4208e3a659a9a05
-¥
-uorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate StreamæŸ¥è¯¢å¼‚å¸¸,4\5\45ab281b05b232c3b6d10b556bdc846139c1530f
 ‚
 Rdatabase-orm-design/src/main/java/database/design/procedure/CallableStatement.java,7\d\7d99f4e7e0ef66bf582456801145e8212201a74c
 
 _orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/Book.java,3\0\30e0b521b6ef9629c3f4387389809f8ac158d20a
 
 morm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/Person.java,9\d\9d570b573ab8c0c86363c30f72e09bcbe92c1627
-•
-eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityDemo.java,f\4\f44a51b9b464c6a16c893b2f15207b06d7585e7c
 —
 gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityMaster.java,5\0\50433e6bebf14c5565bf1c849ff87778134c39f3
 Ÿ
@@ -641,3 +621,11 @@ c
 3orm-jpa-hibernate/native-hibernate5-api-xml/pom.xml,0\2\02388decd075ed563490436bf52e3005825756ed
 f
 6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
+o
+?orm-jpa-hibernate/test-hibernate/src/main/java/entity/User.java,f\b\fbe5bc3488ce7cfef49ddf53093bcb68b12af205
+š
+jorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/DemoHibernateMapping.java,8\a\8a6922ce6bb2f0aa586e6509a6102cffa0fdd98e
+›
+korm-jpa-hibernate/test-hibernate/src/main/java/hibernate_liquibase/DemoHibernateLiquibaseCompatibility.java,d\7\d7a4b4490107a8aa0d439c25d011f8201645be81
+q
+Aorm-jpa-hibernate/test-hibernate/src/main/java/entity/Sample.java,3\c\3c419a515acc67fc0c0f378e1cf3415d69cd0b5d
