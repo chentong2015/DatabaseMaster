@@ -13,7 +13,7 @@
 
         <!-- 设置在第一次插入表格时会自动执行建表的ddl sql -->
         <property name="hbm2ddl.auto">update</property>
-        <property name="show_sql">true</property>
+        <property name="show_sql">false</property>
         <property name="format_sql">true</property>
 
         <!-- 测试Any Set one-to-many混合查询 -->
@@ -21,5 +21,8 @@
         <mapping resource="any_master/Perspective.hbm.xml"/>
         <mapping resource="any_master/Portfolio.hbm.xml"/>
         <mapping resource="any_master/SnapshotTemplate.hbm.xml"/>
+
+        <mapping resource="many.to.one.master/Asset.hbm.xml"/>
+        <mapping resource="many.to.one.master/CommodityContract.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

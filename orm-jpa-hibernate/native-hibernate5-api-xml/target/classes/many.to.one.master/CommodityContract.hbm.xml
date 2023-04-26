@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.hibernate5.testing.many_to_one_master.CommodityContract" table="t_contract">
+        <id type="double" name="reference" column="M_REFERENCE"/>
+        <property name="label" column="label"/>
+
+        <many-to-one name="asset"
+                     not-found="ignore"
+                     class="com.hibernate5.testing.many_to_one_master.Asset"
+                     column="M_ASSET"/>
+    </class>
+</hibernate-mapping>

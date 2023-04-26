@@ -1,0 +1,45 @@
+Hibernate:
+    select
+        commodityc0_.M_REFERENCE as M_REFERE1_4_,
+        commodityc0_.label as label2_4_,
+        commodityc0_.M_ASSET as M_ASSET3_4_
+    from
+        t_contract commodityc0_
+3
+Hibernate:
+    select
+        asset0_.M_REFERENCE as M_REFERE1_3_0_,
+        asset0_.label as label2_3_0_
+    from
+        t_asset asset0_
+    where
+        asset0_.M_REFERENCE=?
+asset 1
+Hibernate:
+    select
+        asset0_.M_REFERENCE as M_REFERE1_3_0_,
+        asset0_.label as label2_3_0_
+    from
+        t_asset asset0_
+    where
+        asset0_.M_REFERENCE=?
+asset 2
+Hibernate:
+    select
+        asset0_.M_REFERENCE as M_REFERE1_3_0_,
+        asset0_.label as label2_3_0_
+    from
+        t_asset asset0_
+    where
+        asset0_.M_REFERENCE=?
+
+org.hibernate.ObjectNotFoundException: No row with the given identifier exists:
+[com.hibernate5.testing.many_to_one_master.Asset#0.0]
+	at org.hibernate.boot.internal.StandardEntityNotFoundDelegate.handleEntityNotFound(StandardEntityNotFoundDelegate.java:28)
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:285)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:180)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:309)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at com.hibernate5.testing.many_to_one_master.Asset$HibernateProxy$2PTql8Nl.getLabel(Unknown Source)
+	at com.hibernate5.testing.many_to_one_master.ManyToOneMaster.main(ManyToOneMaster.java:18)

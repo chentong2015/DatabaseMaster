@@ -13,13 +13,16 @@ com\hibernate5\testing\inheritance\AbstractSuperClass.class
 com\hibernate5\testing\inheritance\SuperClass2.class
 com\hibernate5\testing\entity\Event.class
 com\hibernate5\testing\component\collections\Developer.class
+com\hibernate5\testing\many_to_one_master\ManyToOneMaster.class
 com\hibernate5\testing\any_master\HibernateAnyMaster.class
 com\hibernate5\testing\inheritance\InheritanceMappingDemo.class
 com\hibernate5\testing\any_master\entities\FilterItem.class
+com\hibernate5\testing\many_to_one_master\Asset.class
 com\hibernate5\testing\package1\MyEntity.class
 com\hibernate5\testing\package1\SubSuperClass.class
 com\hibernate5\testing\query\DemoNamedQueries.class
 com\hibernate5\testing\DemoHibernateMapping.class
+com\hibernate5\testing\many_to_one_master\CommodityContract.class
 com\hibernate5\testing\typedef\TemplateType.class
 com\hibernate5\testing\any\HibernateAnyDemo.class
 com\hibernate5\testing\component\ComponentMappingDemo.class
