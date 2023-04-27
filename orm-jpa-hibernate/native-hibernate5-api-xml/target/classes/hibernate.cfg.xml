@@ -24,5 +24,7 @@
 
         <mapping resource="many.to.one.master/Asset.hbm.xml"/>
         <mapping resource="many.to.one.master/CommodityContract.hbm.xml"/>
+
+        <mapping resource="entity/sample.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

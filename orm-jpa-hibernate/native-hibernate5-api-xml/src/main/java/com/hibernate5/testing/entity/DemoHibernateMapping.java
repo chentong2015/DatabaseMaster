@@ -10,8 +10,12 @@ import java.util.Set;
 public class DemoHibernateMapping {
 
     public static void main(String[] args) {
-        testSaveData();
-        // testGetDataByNaturalId();
+        Session session = HibernateSessionUtil.getSession();
+        session.getTransaction().begin();
+        session.persist(new Sample(1, 1));
+        session.getTransaction().commit();
+        session.close();
+        System.out.println("done");
     }
 
     private static void testSaveData() {

@@ -14,7 +14,7 @@ public class DemoHibernateEntityTest {
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
         session.getTransaction().begin();
-        EntityId entityId = new EntityId(2, "test 2");
+        EntityId entityId = new EntityId(4, "test 4");
         session.persist(entityId);
         session.getTransaction().commit();
         sessionFactory.close();

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.hibernate5.testing.entity.Sample" schema="public" table="t_sample_test">
+        <id type="java.lang.Long" name="id" column="m_id"/>
+        <property type="java.lang.Integer" name="value" column="m_value"/>
+    </class>
+</hibernate-mapping>
