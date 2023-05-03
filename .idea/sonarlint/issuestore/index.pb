@@ -391,14 +391,10 @@ adatabase-orm-design/src/main/java/orm/middleware/design/connection/pool/demo3/C
 Yrelational-database/postgre-sql/src/main/java/com/psql/main/batching/Batchingæ€§èƒ½è°ƒä¼˜,a\c\acadeebde5e53df4ab69cc549ded92bdf1f7a34b
 X
 (relational-database/oracle/Oracle æµ‹è¯•,9\d\9d374e396964580f6acc98a4830d80a040e091d6
-ˆ
-Xrelational-database/sybase/src/main/java/com/sybase/main/truncate/DemoSybaseVarchar.java,4\f\4f05dabc2c0840943ae6d8828e2764770f167bad
 ‰
 Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTruncate.java,7\2\72fe08acc539fc7acd97d8db5e0ed560560e775c
 K
 relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
-‰
-Yrelational-database/sybase/src/main/java/com/sybase/main/batching/DemoSybaseBatching.java,e\f\ef24dd71b6a100c7d60ff0575f7b3a0da2f8ffcc
 ‰
 Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
 ~
@@ -457,14 +453,8 @@ Ddatabase-orm-design/src/main/java/database/design/metadata/Main.java,c\5\c5082
 Qrelational-database/postgre-sql/src/main/java/com/psql/main/DemoPostgresJDBC.java,0\8\08da77cf8e9a2af4e77ce789d5211d8349b87948
 [
 +relational-database/postgre-sql/PSQL è¿žæŽ¥,d\0\d0680b08dd19a94e5af56c713f50ce38580b164f
-|
-Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
 R
 "relational-database/sybase/pom.xml,0\0\002df098eae1e6a351f910472c9f8509de5066cf
-X
-(relational-database/sybase/Sybase æµ‹è¯•,f\7\f773e5337da6265a967f479820b4412d1c1a6749
-X
-(relational-database/sybase/Sybase åŸºç¡€,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
 X
 (relational-database/oracle/Oracle åŸºç¡€,7\2\72ab19c47e22d347f965f8538be77813fd686018
 R
@@ -609,8 +599,6 @@ o
 ?orm-jpa-hibernate/test-hibernate/src/main/java/entity/User.java,f\b\fbe5bc3488ce7cfef49ddf53093bcb68b12af205
 ›
 korm-jpa-hibernate/test-hibernate/src/main/java/hibernate_liquibase/DemoHibernateLiquibaseCompatibility.java,d\7\d7a4b4490107a8aa0d439c25d011f8201645be81
-z
-Jorm-jpa-hibernate/test-hibernate/src/main/java/deprecated/deprecated 5.6.x,a\4\a46b704b9bba4746b7608305e2a91107a0bf1238
 Š
 Zrelational-database/postgre-sql/src/main/java/com/psql/main/procedure/postgresql procedure,b\d\bd22cb5f79dd804e3b45952a9034ad873fe1b938
 •
@@ -661,13 +649,25 @@ Cdatabase-orm-design/src/main/java/database/design/lock/å®žæˆ˜åœºæ™¯,c\9\c99fc4
 xorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/many_to_one_master/ManyToOneMaster.java,a\0\a0785d8cbce0c7b703310f2d5d6b0fad8374de3f
 q
 Aorm-jpa-hibernate/test-hibernate/src/main/java/entity/Sample.java,3\c\3c419a515acc67fc0c0f378e1cf3415d69cd0b5d
-X
-(orm-jpa-hibernate/test-hibernate/pom.xml,5\5\55c9fc5d30c2e8379fed0746027adce7b35906de
 „
 Torm-jpa-hibernate/test-hibernate/src/main/java/id_generator/SequenceIdGenerator.java,c\0\c049fe7355e92bee8af0bde0dd727aea34d20d37
 ‚
 Rorm-jpa-hibernate/test-hibernate/src/main/java/entity/DemoHibernateEntityTest.java,b\e\bea0b5e0a56986f895c1c4f2bce6fde9be65cef3
 “
 corm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/entity/Sample.java,f\f\fff0baaea7fea40e84dbff274909fb5e9faae2b4
+¡
+qorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/entity/DemoHibernateMapping.java,f\2\f2104b4be2f097bf549182b9aefc33c65460e503
+š
+jorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/HibernateSessionUtil.java,1\1\1192045b62f23a6db9682a18c13f26b3896735d5
+c
+3orm-jpa-hibernate/native-hibernate5-api-xml/pom.xml,0\2\02388decd075ed563490436bf52e3005825756ed
+s
+Corm-jpa-hibernate/test-hibernate/src/main/java/entity/EntityId.java,5\5\55c00da08ab0cb0e02721237e38b8629c5e908ab
 y
 Iorm-jpa-hibernate/test-hibernate/src/main/java/entity/final getId()æŠ¥é”™,0\8\089e39b0ff6f063b8f84a456411d5c2a22e37aaf
+z
+Jorm-jpa-hibernate/test-hibernate/src/main/java/deprecated/deprecated 5.6.x,a\4\a46b704b9bba4746b7608305e2a91107a0bf1238
+X
+(orm-jpa-hibernate/test-hibernate/pom.xml,5\5\55c9fc5d30c2e8379fed0746027adce7b35906de
+ƒ
+Sorm-jpa-hibernate/test-hibernate/src/main/java/deprecated/HibernateCriteriaAPI.java,c\8\c86f46856c10fcc4e66cd95bee251e0b4c4257a9

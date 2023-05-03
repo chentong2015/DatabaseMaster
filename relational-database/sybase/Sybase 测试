@@ -8,8 +8,7 @@ TODO. Sybase会自动做truncate截断存储字符串末尾的空格 -> Oracle�
   )
 > insert into t_text (code, name) values (1, 'aaéa ')
 > insert into t_text (code, name) values (2, 'aaéaè')
-> select *, HASH(RTRIM(name),'SHA1') AS name_SHA1 FROM t_text  使用Sybase提供的Hash加密函数
-  返回name_SHA1列的值可以作为checksum验校码进行数据的验证
+> select *, HASH(RTRIM(name),'SHA1') AS name_SHA1 FROM t_text 使用Sybase Hash加密函数，返回name_SHA1列值作为checksum验校码验证数据
 
 > create table t_comment (
      code INT,
@@ -32,4 +31,12 @@ TODO. Sybase会自动做truncate截断存储字符串末尾的空格 -> Oracle�
      des VARCHAR(50)
   )
 > insert into t_context (code, context, des) values (1, 'aaaaa bbéé', ' ARG du 30/12/02 Ref Thémis S-00151-2003 suppriméo')
+
+// 创建numeric类型和DATE类型
+CREATE TABLE TEST_DB (
+   M_ID NUMERIC(10),
+   M_STATUS NUMERIC(10),
+   M_CREATED_AT DATE DEFAULT GETDATE()
+)
+> insert into TEST_DB (M_ID, M_STATUS) values (10, 100)
 

@@ -31,5 +31,5 @@
       </component>
     </component>
 
-   
+5.  Hibernate's legacy org.hibernate.Criteria API is deprecated; use the JPA javax.persistence.criteria.CriteriaQuery instead
    
