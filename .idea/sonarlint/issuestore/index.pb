@@ -423,8 +423,6 @@ K
 ]orm-liquibase/liquibase-core-basic/src/main/java/main/extensions/datatype/MyDateTimeType.java,b\2\b2ddfd64ba42e38c849f06f03f029a5397c46bdf
 [
 +relational-database/postgre-sql/PSQL 基础,4\c\4cc55c6c9b5cb4b5d72c08ed8e8458bd9e791fd9
-f
-6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 �
@@ -493,8 +491,6 @@ xorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/
 Lrelational-database/oracle/src/main/java/com/oracle/main/DemoOrcaleJDBC.java,5\c\5c179f72a7efecc9477dc737cecf0964ec973f99
 R
 "relational-database/oracle/pom.xml,0\f\0fa6e1b3467f8a8c1a16faf9dec43249794efc71
-W
-'relational-database/ 关系性数据库,8\1\81c673257671255ca16fd897c3f466d393ef4e5d
 �
 Torm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelogXsd.java,e\3\e308447873e4e014ae748ab377f9c0de889b430f
 �
@@ -509,12 +505,8 @@ morm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/mana
 oorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/NamedQueryEntity.java,5\9\59af58a9d9d1e2f9f2225f23fe5a2da12fa27916
 �
 eorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/Sample.java,5\c\5cfcef1df31def21f7a56c2a26a38fe8bcb1a625
-�
-Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
 �
 Tdatabase-orm-design/src/main/java/database/design/metadata/DemoDatabaseMetaData.java,e\c\ecebf707137741904608bc92b9a6c6b7a3ff2832
-c
-3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
 I
 orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 a
@@ -613,16 +605,12 @@ Mdatabase-orm-design/src/main/java/database/design/fectching/DemoFetching.java,
 rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/Fetching配置,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
 �
 zorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/对象操作背后执行的代码,4\1\41aa4a2bbc6dddc3dbc53f961c294e9d96fd2458
-w
-Gdatabase-orm-design/src/main/java/database/design/数据库设计思想,0\e\0e17388bc69c62c50d4000de5f7b7ee814866d7b
 ~
 Ndatabase-orm-design/src/main/java/database/design/isolation/事务隔离级别,c\f\cfb0aa1f898b562db900760d2b5c37755aebdedb
 �
 Uorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/fetching/Fetching 实战,3\e\3e768c24feef5ef6e31301ce9e6047ca4de27356
 �
 [orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/fetching/Fetching Stream异常,8\a\8ace7af51d165a1453ed4d058c38db883e36c7f4
-]
--relational-non-database/非关系性数据库,9\6\96c2d6282535f5c74b7224e60926dc06b2909b37
 r
 Brelational-database/mysql/src/main/java/locking/ReadWriteLock.java,e\9\e90ad1cab60c6fda508159737a990049a0ece1b0
 �
@@ -671,3 +659,9 @@ X
 (orm-jpa-hibernate/test-hibernate/pom.xml,5\5\55c9fc5d30c2e8379fed0746027adce7b35906de
 �
 Sorm-jpa-hibernate/test-hibernate/src/main/java/deprecated/HibernateCriteriaAPI.java,c\8\c86f46856c10fcc4e66cd95bee251e0b4c4257a9
+�
+Xrelational-database/sybase/src/main/java/com/sybase/main/truncate/DemoSybaseVarchar.java,4\f\4f05dabc2c0840943ae6d8828e2764770f167bad
+|
+Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
+�
+Yrelational-database/sybase/src/main/java/com/sybase/main/batching/DemoSybaseBatching.java,e\f\ef24dd71b6a100c7d60ff0575f7b3a0da2f8ffcc

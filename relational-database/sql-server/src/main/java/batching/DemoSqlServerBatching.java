@@ -10,10 +10,11 @@ public class DemoSqlServerBatching {
     public static void main(String[] args) {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            String url = "jdbc:sqlserver://localhost:1433;Database=test_db;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
+            // 这里的连接字符串中encrypt=false不能使用引号
+            String url = "jdbc:sqlserver://localhost:1433;Database=test_db;Trusted_Connection=true;useBulkCopyForBatchInsert=true;encrypt=false";
             Connection connection = DriverManager.getConnection(url, "test", "TCHong19");
             connection.setAutoCommit(false);
-            testPrepareStatementDelete(connection);
+            // testPrepareStatementDelete(connection);
             connection.commit();
             connection.setAutoCommit(true);
         } catch (Exception exception) {
@@ -28,7 +29,7 @@ public class DemoSqlServerBatching {
     public static void testPrepareStatementInsert(Connection connection) throws SQLException {
         String query = "INSERT INTO t_batching_comment(id, review) values (?, ?)";
         try (PreparedStatement prepareStatement = connection.prepareStatement(query)) {
-            for (int index = 1; index < 500000; index++) {
+            for (int index = 1; index < 50; index++) {
                 prepareStatement.setInt(1, index);
                 prepareStatement.setString(2, "review name");
                 prepareStatement.addBatch();
