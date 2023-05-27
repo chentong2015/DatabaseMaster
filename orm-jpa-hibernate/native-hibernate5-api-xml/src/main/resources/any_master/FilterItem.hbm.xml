@@ -11,7 +11,7 @@
         <any name="objectInstance" id-type="double" meta-type="java.lang.String">
             <meta-value value="MJkQC54506" class="com.hibernate5.testing.any_master.entities.Portfolio"/>
             <column name="M_OBJ_TYPE"/>
-            <column name="M_OBJ_REF" check="false"/>
+            <column name="M_OBJ_REF" check="false"/> <!-- 0 -->
         </any>
     </class>
 </hibernate-mapping>
