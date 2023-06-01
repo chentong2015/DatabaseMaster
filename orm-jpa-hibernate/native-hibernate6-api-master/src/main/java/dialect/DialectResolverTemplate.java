@@ -5,8 +5,7 @@ import org.hibernate.engine.jdbc.dialect.internal.StandardDialectResolver;
 import org.hibernate.engine.jdbc.dialect.spi.DialectResolutionInfo;
 import org.hibernate.engine.jdbc.dialect.spi.DialectResolver;
 
-// 使用自定义的Dialect来做判断
-public class CustomDialectResolver implements DialectResolver {
+public class DialectResolverTemplate implements DialectResolver {
 
     private static final long serialVersionUID = 3438546111602228772L;
     private static final int ORACLE_8 = 8;
@@ -14,6 +13,7 @@ public class CustomDialectResolver implements DialectResolver {
     private static final int SYBASE_11 = 11;
     private static final int SYBASE_12 = 12;
 
+    // 可以自定义Dialect，解析到自定义的Dialect
     @Override
     public Dialect resolveDialect(DialectResolutionInfo info) {
         String databaseName = info.getDatabaseName();

@@ -13,6 +13,7 @@ Hibernate 4.x 版本的创建: 提供属性配置的参数
    SessionFactory sessionFactory = configuration.buildSessionFactory(standardServiceRegistry);
 
    // 使用Configuration和DataSource来完整构建
+   // 对于Hibernate新版本ServiceRegistryBuilder废弃，使用StandardServiceRegistryBuilder来替代
    private void initSessionFactory(Configuration configuration, DataSource dataSource) {
        Thread.currentThread().setContextClassLoader(DataAccessComponent.class.getClassLoader());
        ServiceRegistry serviceRegistry = new ServiceRegistryBuilder()
@@ -23,7 +24,7 @@ Hibernate 4.x 版本的创建: 提供属性配置的参数
        try {
            sessionFactory = configuration.buildSessionFactory(serviceRegistry);
        } catch (Exception e) {
-           throw new DataAccessException("Unable to connect to Financial Database");
+           throw new Exception("Unable to connect to Database");
        }
    }
 
