@@ -273,8 +273,6 @@ zorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 Çorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/single/table/CEmployee.java,8\c\8ceab596dd12977219797f7c8470d2d5447bcab9
 ≤
 Åorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/single/table/Employee.java,7\2\72182205bd781f11ba3df68b1ced9d08ad81d275
-~
-Ndatabase-orm-design/src/main/java/database/design/metadata/MyDatabaseType.java,9\6\96fa425ad90a903e2c1a7f13b8e49bbddabdf559
 ≤
 Åorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/inheritance/joined/JoinedSubClass.java,c\3\c32708267b062e102a601d021a12a08f3bed5a01
 ¥
@@ -407,8 +405,6 @@ V
 &relational-database/sql-server/pom.xml,0\6\0652b8025c4df2ced598a0287f033cae7b317589
 {
 Korm-liquibase/liquibase-core-4-5/src/main/java/main/SchemaImportExport.java,4\1\415a431b134612c7879de65a5ea2bf896cbd0fce
-K
-database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
 å
 \orm-liquibase/liquibase-core-basic/src/main/java/main/extensions/datatype/MyVarcharType.java,8\9\893ec1174a8d7a09ba9ac54c4acd753b6ad64a9e
 ç
@@ -433,8 +429,6 @@ Horm-liquibase/liquibase-core-4-5/src/main/java/main/LiquibaseTester.java,2\6\2
 Odatabase-orm-design/src/main/java/database/design/bacthing/BatchingÊâπÈáèÊâßË°å,4\f\4fc03b64dde4bf0eb0831039cae2e199288403e3
 Å
 Qdatabase-orm-design/src/main/java/database/design/exception/DemoSqlException.java,4\f\4f7d8dce4734f426d19573fcfb2099e8a3cd05dc
-t
-Ddatabase-orm-design/src/main/java/database/design/metadata/Main.java,c\5\c5082520b51fccddae45a1c0d8b877625ec30ee3
 ç
 ]relational-database/postgre-sql/src/main/java/com/psql/main/batching/PostgresSqlBatching.java,5\7\5767e3b23e2153de8f3d7584895d57e77fa3a476
 Å
@@ -475,8 +469,6 @@ morm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/mana
 oorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/NamedQueryEntity.java,5\9\59af58a9d9d1e2f9f2225f23fe5a2da12fa27916
 ï
 eorm-jpa-hibernate/javax-persistence-api/src/main/java/com/hibernate/entity/manager/entity/Sample.java,5\c\5cfcef1df31def21f7a56c2a26a38fe8bcb1a625
-Ñ
-Tdatabase-orm-design/src/main/java/database/design/metadata/DemoDatabaseMetaData.java,e\c\ecebf707137741904608bc92b9a6c6b7a3ff2832
 I
 orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 a
@@ -663,19 +655,17 @@ X
 (relational-database/sybase/Sybase Âü∫Á°Ä,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
 |
 Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
-R
-"relational-database/sybase/pom.xml,0\0\002df098eae1e6a351f910472c9f8509de5066cf
-R
-"relational-database/oracle/pom.xml,0\f\0fa6e1b3467f8a8c1a16faf9dec43249794efc71
 â
 Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
-|
-Lrelational-database/oracle/src/main/java/com/oracle/main/DemoOrcaleJDBC.java,5\c\5c179f72a7efecc9477dc737cecf0964ec973f99
 X
 (relational-database/sybase/Sybase ÊµãËØï,f\7\f773e5337da6265a967f479820b4412d1c1a6749
-X
-(orm-jpa-hibernate/test-hibernate/pom.xml,5\5\55c9fc5d30c2e8379fed0746027adce7b35906de
 X
 (relational-database/oracle/Oracle ÊµãËØï,9\d\9d374e396964580f6acc98a4830d80a040e091d6
 ó
 gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/SessionÁöÑÂàõÂª∫,3\e\3edf27468c7f850196b4b2acae7bbe7451d2cac4
+X
+(orm-jpa-hibernate/test-hibernate/pom.xml,5\5\55c9fc5d30c2e8379fed0746027adce7b35906de
+ã
+[orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/dialect/MyDialectResolver.java,0\d\0dcee0e2b1a0544e4a46e53a9ce7dfabb8c51e67
+ë
+aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/dialect/DialectResolverTemplate.java,5\9\59b217b93e8a09bfe14eed2a4d116025699763c7

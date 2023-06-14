@@ -1,0 +1,15 @@
+
+M
+java:S1135
+"2Complete the task associated to this TODO comment.(úÜ„šıÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ï·“èşÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Íîáœúÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(Á”ô8Ï¶½¼‡1
+M
+java:S1874&"7Remove this use of "Oracle8iDialect"; it is deprecated.(§Â Ş
+R
+java:S1874("7Remove this use of "Oracle9iDialect"; it is deprecated.(ııÒêüÿÿÿÿ
+N
+java:S1874*"8Remove this use of "Oracle10gDialect"; it is deprecated.(Ÿ†ä
+N
+java:S1144""8Remove this unused private "getHibernateDialect" method.(®…¾ö

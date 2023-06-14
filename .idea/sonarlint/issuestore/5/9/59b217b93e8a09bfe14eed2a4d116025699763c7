@@ -1,0 +1,18 @@
+
+c
+java:S1854"HRemove this useless assignment to local variable "databaseMajorVersion".(ÂÀœ‚üÿÿÿÿ
+[
+java:S1854"@Remove this useless assignment to local variable "databaseName".(¬¥‘©üÿÿÿÿ
+L
+java:S1481"1Remove this unused "databaseName" local variable.(¬¥‘©üÿÿÿÿ
+T
+java:S1481"9Remove this unused "databaseMajorVersion" local variable.(ÂÀœ‚üÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÞÉÀñúÿÿÿÿ
+B
+java:S1068",Remove this unused "ORACLE_8" private field.(¬îÃÀ
+G
+java:S1068",Remove this unused "ORACLE_9" private field.(îüÈàúÿÿÿÿ
+H
+java:S1068"-Remove this unused "SYBASE_11" private field.(ÁÒ®ýÿÿÿÿ
+C
+java:S1068"-Remove this unused "SYBASE_12" private field.(‚óƒó
