@@ -17,5 +17,7 @@
 
         <mapping resource="entity/sample.hbm.xml"/>
         <mapping resource="entity/EntityId.hbm.xml"/>
+
+        <mapping class="entity.TradeEntity"/>
     </session-factory>
 </hibernate-configuration>

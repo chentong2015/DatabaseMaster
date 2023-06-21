@@ -18,8 +18,9 @@ public class DbMetaDataDemo {
         String url = "jdbc:oracle:thin:@//dell1230xxx:1521/DELL12303";
         Connection connection = DriverManager.getConnection(url, "TPK0002912_62025675_1", "xxx");
 
+        // TODO. 表中M_LABEL1列的名称会随不同数据库而变化，Postgres的列为小写，Oracle的列为大写
         DatabaseMetaData metaData = connection.getMetaData();
-        ResultSet resultSet = metaData.getColumns(null, null, "DPI_ID_HSU", "M_LABEL1");
+        ResultSet resultSet = metaData.getColumns(null, null, "T_TABLE", "M_LABEL1");
         System.out.println(resultSet.next());
 
         connection.close();
