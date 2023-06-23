@@ -1,0 +1,9 @@
+Catalog name and schema name are similar concepts.
+- Catalog is used with Oracle, DB2 and MySQL
+- Schema is for PostgresSQL
+
+不同的数据库之间存在JDBC Type的类型差别
+不同的数据库提供的Function方法不同
+
+原则上不在数据库中存储非法数据，除非是用于测试目的的数据
+原则上非法数据通过应用或者程序是无法存入DB的

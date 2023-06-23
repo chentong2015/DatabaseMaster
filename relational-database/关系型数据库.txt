@@ -1,6 +1,0 @@
-不同的数据库之间存在JDBC Type的类型差别
-不同的数据库提供的Function方法不同
-
-Catalog name and schema name are similar concepts.
-- Catalog is used with Oracle, DB2 and MySQL
-- Schema is for PostgresSQL
