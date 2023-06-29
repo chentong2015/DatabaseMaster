@@ -17,11 +17,16 @@ public class IndexSpecification {
     // > CREATE INDEX index_name ON table_name (col1); 将表的指定列设置成索引
     // > Show index from table_name; MySql显式表中的index索引
 
-    // TODO: 常见的索引失效问题 ==> 索引优化策略
+    // TODO: 索引失效及优化策略
     // 1. 不在索引列上做任何操作(计算、函数、类型转换)，会导致索引失效而转向全表扫描
     // 2. mysql在使用不等于(！=或者<>)的时候无法使用索引会导致全表扫描
     // 3. is null，is not null无法使用索引
     // 4. like以通配符开头(“%abc..…)mysql索引失效会变成全表扫描的操作
     // 5. 字符串不加单引号索引失效
     // 6. 少用or，用它来连接时会索引失效
+
+    // TODO. MySQL 5.6 针对index的优化 - Index Condition Pushdown
+    // 在5.6版本之前通过联合字段的索引进行查询时，会根据每一个判断条件追一进行回表查询
+    // 在5.6版本之后会在判断所有字段满足条件的情况下再回表查询，通过索引的Pushdown来减少回表次数，减少IO
+    // 对于InnoDB的聚簇索引来说，数据和索引是在一起的，不存在回表
 }

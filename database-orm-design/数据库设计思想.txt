@@ -7,10 +7,11 @@ TODO. 如何考虑在Server端还是在Client Side请求端解决问题 ?
 它要配置的应该是针对服务器本身(要提供的配置)，而不是针对Client的配置(适配客户端)
 本质上应该是Client提供正确的请求去适配Server提供的服务，Server端应该保持一致性(不变性)
 
-TODO. JDBC AutoCommit自动提交
-org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
-JDBC Connection默认是开启AutoCommit, 不能再调用connection.commit()显式提交
-Transaction在开启事务的情况下，才能调用connection.commit()或者connection.rollback();
+TODO. JDBC Connection默认是开启AutoCommit
+在自动提交的情况下不能再AutoCommit显式提交
+    org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
+在取消自动提交的情况下，对于事务可以自定义提交或者回滚
+    调用connection.commit()或者connection.rollback();
 
 TODO. 如何联合查询数据库的多张表 ?
 1. SELECT    查询完一张表，再使用查询的结果执行另一个sql(select查询另外一张表)

@@ -9,11 +9,13 @@ import java.util.List;
 import java.util.Optional;
 
 // HQL: hibernate query language 类似sql的简化查询语言
-// 必须满足特定的语句描述规则, 主要看查询时使用的JPA Entity Name名称
+// 1. 必须满足特定的语句描述规则，查询时使用的JPA Entity Name名称
+// 2. Hibernate源码中会将HQL转换成SQL，然后发送到数据库进行查询
+//    org.hibernate.hql.internal.ast.QueryTranslatorImpl
 public class DemoHqlRawQuery {
 
     // TODO. 测试复杂的HQL查询语句的构造
-    // 1. .createQuery(query, String.class)   提供的是查询返回的结果类型 The type of the query result
+    // 1. .createQuery(query, String.class)   提供的是查询返回的结果类型
     // 2. .createQuery(query).executeUpdate() 如果是更新的语句，则不需要提供查询结果的类型 => 使用transaction事务
     public static void testHqlSelectQuery(Session session) {
         // 表示选择指定的table的所有字段

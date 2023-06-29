@@ -21,6 +21,7 @@ public class MyTypeDefEntity {
     @Column(name = "id")
     private long reference;
 
+    // 使用自定义的类型，混合字段的类型
     @Column(name = "M_TRN_FMLY", nullable = false)
     @Type(type = "char-string")
     private String value;

@@ -10,8 +10,8 @@ public class EntityIdGenerator {
 
     // TODO. 将自定义的ID生成器作用到属性id字段上
     // Use custom generator one needs to configure its Hibernate' field entity to reference it
-    // 1. 使用自定义的ID生成器策略
-    // 2. 为ID生成器设置一个一致的名称
+    // 使用的generator的名称必须和自定义的生成器的名称一致，否则会出现如下错误
+    // org.hibernate.engine.jdbc.spi.SqlExceptionHelper: sequence does not exist
     @Id
     @GeneratedValue(generator = "personIdGenerator")
     @GenericGenerator(name = "personIdGenerator",

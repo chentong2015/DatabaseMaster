@@ -1,4 +1,4 @@
-package database.design.driver;
+package database.design;
 
 import java.sql.Connection;
 import java.sql.Driver;

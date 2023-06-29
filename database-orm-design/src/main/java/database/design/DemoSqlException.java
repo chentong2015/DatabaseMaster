@@ -1,4 +1,4 @@
-package database.design.exception;
+package database.design;
 
 // SQLException封装了database access可能抛出的异常
 public class DemoSqlException {

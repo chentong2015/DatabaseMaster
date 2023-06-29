@@ -13,4 +13,7 @@ SQL> SELECT * FROM V$SQL V where to_date(v.FIRST_LOAD_TIME,'YYYY-MM-DD hh24:mi:s
 SQL>SELECT * FROM user_procedures
 SQL>DROP FUNCTION function_name
 SQL>select * from USER_OBJECTS
-SQL>select count(1) from USER_OBJECTS where OBJECT_TYPE = 'FUNCTION' and OBJECT_NAME = 'SP_MXGETUNIQUEID_HSU'
+SQL>select count(1) from USER_OBJECTS where OBJECT_TYPE = 'FUNCTION' and OBJECT_NAME = 'Procedure_name'
+
+调用定义的含参数的Procedure
+SQL>call procedure_name ('', '') into ..
