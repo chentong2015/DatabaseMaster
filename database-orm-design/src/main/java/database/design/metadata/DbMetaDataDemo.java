@@ -13,7 +13,7 @@ public class DbMetaDataDemo {
     // 通过JDBC来拿到数据库中相关表的信息
     public static void main(String[] args) throws SQLException {
         // Connection connection = DriverManager.getConnection(psqlConnectStr)
-        // Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong19");
+        // Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong20");
 
         String url = "jdbc:oracle:thin:@//dell1230xxx:1521/DELL12303";
         Connection connection = DriverManager.getConnection(url, "TPK0002912_62025675_1", "xxx");

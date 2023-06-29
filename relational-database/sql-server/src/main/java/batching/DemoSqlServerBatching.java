@@ -12,7 +12,7 @@ public class DemoSqlServerBatching {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             // 这里的连接字符串中encrypt=false不能使用引号
             String url = "jdbc:sqlserver://localhost:1433;Database=test_db;Trusted_Connection=true;useBulkCopyForBatchInsert=true;encrypt=false";
-            Connection connection = DriverManager.getConnection(url, "test", "TCHong19");
+            Connection connection = DriverManager.getConnection(url, "test", "TCHong20");
             connection.setAutoCommit(false);
             // testPrepareStatementDelete(connection);
             connection.commit();

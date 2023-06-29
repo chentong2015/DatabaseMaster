@@ -4,12 +4,11 @@
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
 
     <!-- 测试从指定的csv文件中加载数据到table表中 -->
-    <changeSet author="das" id="1">
+    <changeSet author="ctong" id="1">
         <preConditions onFail="MARK_RAN">
             <not>
                 <tableExists tableName="TABLE_UPDATED_FROM_CSV"/>
             </not>
-
         </preConditions>
         <createTable tableName="TABLE_UPDATED_FROM_CSV">
             <column name="M_ID" type="numeric(10,0)">
@@ -21,11 +20,8 @@
         </createTable>
     </changeSet>
 
-    <changeSet author="das" id="2">
-        <loadUpdateData file="load-update-data.csv"
-                        separator=";"
-                        primaryKey="M_ID"
-                        tableName="TABLE_UPDATED_FROM_CSV">
+    <changeSet author="ctong" id="2">
+        <loadUpdateData file="load-update-data.csv" separator=";" primaryKey="M_ID" tableName="TABLE_UPDATED_FROM_CSV">
             <column header="M_ID" type="NUMERIC"/>
         </loadUpdateData>
     </changeSet>

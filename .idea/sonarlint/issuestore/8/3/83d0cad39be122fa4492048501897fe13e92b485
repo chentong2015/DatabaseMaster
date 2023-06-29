@@ -1,0 +1,16 @@
+
+c
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(«¢²Ãúÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(›á‡Æ
+O
+java:S1135"2Complete the task associated to this TODO comment.(Ž¦¦»8­ó•ó1
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ÑÀàr
+M
+java:S1068"2Remove this unused "psqlConnectStr" private field.(»»¤Âþÿÿÿÿ
+N
+java:S1068"3Remove this unused "psqlConnectStr2" private field.(‘ßæØøÿÿÿÿ
+R
+java:S1068
+"7Remove this unused "sqlServerConnectStr" private field.(“ù¥­úÿÿÿÿ
+N
+java:S1068"8Remove this unused "sqlServerConnectStr2" private field.(”ÍÎÎ

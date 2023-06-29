@@ -1,0 +1,35 @@
+M_ID;M_CODE;M_SOURCE;M_DESCRIPTION
+1;AFB;FpML;AFB Master Agreement for Foreign Exchange and Derivatives Transactions
+2;Bespoke;FpML;A Bespoke (custom) Master Agreement, including one-off agreements for transactions
+3;CMA;FpML;Clearing Master Agreement
+4;CMOF;FpML;Contrato Marco de Operaciones Financieras
+5;EEIPower;FpML;EEI Master Power Purchase and Sale Agreement
+6;EFETElectricity;FpML;EFET General Agreement Concerning the Delivery and Acceptance of Electricity
+7;EFETGas;FpML;EFET General Agreement Concerning The Delivery And Acceptance of Natural Gas
+8;EMA;FpML;European Master Agreement and the Derivatives Annex (Banking Federation of the European Union)
+9;FBF;FpML;Master Agreement Relating to transactions on Forward Financial Instruments (Federation Bancaire Francaise)
+10;GasEDI;FpML;GasEDI Base Contract for Short-term Sale and Purchase of Natural Gas
+11;German;FpML;German Master Agreement for Financial derivatives and Addendum for Options on Stock Exchange Indices or Securities
+12;GMRA;FpML;ICMA Global Master Agreement for REPO Trades
+13;GMSLA;FpML;ISLA Global Master Agreement for Securities Lending
+14;GTMA;FpML;FOA Grid Trade Master Agreement
+15;ICOM;FpML;International Currency Options Market Master Agreement
+16;IETA-ERPA;FpML;International Emissions Trading Association Emissions Reduction Purchase Agreement
+17;IETA-ETMA;FpML;International Emissions Trading Association Emissions Trading Master Agreement
+18;IETA-IETMA;FpML;International Emissions Trading Association International Emissions Trading Master Agreement
+19;IFEMA;FpML;International Foreign Exchange Master Agreement
+20;IFEOMA;FpML;International Foreign Exchange and Options Master Agreement
+21;ISDA;FpML;ISDA Master Agreement
+22;ISDAFIA-CDEA;FpML;ISDA-FIA Cleared Derivatives Execution Agreement
+23;JSCC;FpML;Master agreement of Japan Securities Clearing Corporation
+24;LBMA;FpML;International Bullion Master Agreement Terms published by the London Bullion Market Association
+25;LEAP;FpML;Leadership in Energy Automated Processing
+26;MCPSA;FpML;CTA Master Coal Purchase and Sales Agreement
+27;NAESBGas;FpML;NAESB Base Contract for Sale and Purchase of Natural Gas
+28;NBP;FpML;Short Term Flat NBP Trading Terms and Conditions
+29;RussianDerivatives;FpML;Standard Documentation for Derivative Transactions on the Russian Financial Markets
+30;RussianRepo;FpML;Master Agreement and Contractual Terms for Repurchase Agreements on the Russian Financial Market
+31;SCoTA;FpML;globalCOAL Standard Coal Trading Agreement
+32;Swiss;FpML;Swiss Master Agreement for OTC Derivatives Instruments
+33;TTF;FpML;TTF Hub Natural Gas Trading Terms and Conditions
+34;ZBT;FpML;Zeebrugge Hub Natural Gas Trading Terms and Conditions

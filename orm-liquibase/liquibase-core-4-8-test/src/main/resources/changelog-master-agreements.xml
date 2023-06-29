@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.8.xsd">
+
+    <changeSet author="REFDATA-SERVICE" id="1">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="MASTER_AGR_TYPE_DBF"/>
+            </not>
+        </preConditions>
+        <comment>Create master agreement type table</comment>
+        <createTable tableName="MASTER_AGR_TYPE_DBF">
+            <column name="M_ID" type="numeric(10,0)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="M_SOURCE" type="varchar(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="M_CODE" type="varchar(63)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="M_DESCRIPTION" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <!-- TODO. 这里的写法必须列出column列的信息，避免Liquibase执行额外的耗时查询， 使用如下的方式不会击中断点
+          https://docs.liquibase.com/change-types/load-update-data.html  -->
+    <changeSet author="REFDATA-SERVICE" id="2">
+        <loadUpdateData file="masterAgreementTypes.csv" separator=";" primaryKey="M_ID" tableName="MASTER_AGR_TYPE_DBF">
+            <column name="M_ID" type="NUMERIC" header="M_ID"/>
+            <column name="M_CODE" type="varchar(63)" header="M_CODE"/>
+            <column name="M_SOURCE" type="varchar(20)" header="M_SOURCE"/>
+            <column name="M_DESCRIPTION" type="varchar(255)" header="M_DESCRIPTION"/>
+        </loadUpdateData>
+    </changeSet>
+
+</databaseChangeLog>

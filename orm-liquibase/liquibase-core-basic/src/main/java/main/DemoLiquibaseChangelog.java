@@ -28,7 +28,7 @@ public class DemoLiquibaseChangelog {
 
     public static void main(String[] args) throws DatabaseException, SQLException {
         // "postgres", "postgres"
-        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong19");
+        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong20");
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
 
         SqlGeneratorFactory.getInstance().register(new MyCreateIndexGenerator());

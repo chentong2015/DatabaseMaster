@@ -18,7 +18,7 @@ public class LiquibaseTester {
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/liquibase_upgrade_4_5?user=postgres&password=admin";
 
     public static void mainTest(String[] args) throws Exception {
-        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong19");
+        Connection connection = DriverManager.getConnection(sqlServerConnectStr, "test", "TCHong20");
         // Connection connection = DriverManager.getConnection(psqlConnectStr);
         JdbcConnection jdbcConnection = new JdbcConnection(connection);
 

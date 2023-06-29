@@ -3,7 +3,7 @@ Z	java:S1124"FDefine and throw a dedicated exception instead of using a generi
 `	java:S112="FDefine and throw a dedicated exception instead of using a generic one.(”Ù¼ôøÿÿÿÿ
 [	java:S112I"FDefine and throw a dedicated exception instead of using a generic one.(¡‡·Ý
 I
-java:S2755-"3Disable access to external entities in XML parsing.(²µŸš
-I
 java:S27556"3Disable access to external entities in XML parsing.(Ò‹ñÙ
+I
+java:S2755-"3Disable access to external entities in XML parsing.(²µŸš
 S	java:S106("9Replace this use of System.out or System.err by a logger.(Ÿìû‚øÿÿÿÿ

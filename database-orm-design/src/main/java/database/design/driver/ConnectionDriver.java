@@ -21,7 +21,7 @@ public class ConnectionDriver {
         String url = "jdbc:sqlserver://localhost:1433;Database=test_db;";
         Properties properties = new Properties();
         properties.put("user", "test");
-        properties.put("password", "TCHong19");
+        properties.put("password", "TCHong20");
         // 等效于在Connection String后面添加配置trustServerCertificate=true
         properties.put("trustServerCertificate", "true");
 
