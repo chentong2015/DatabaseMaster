@@ -35,8 +35,8 @@ import java.sql.SQLException;
 public class SchemaImportExportTester {
 
     private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase-4-18;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
-    private static String sqlServerRemote = "jdbc:sqlserver://dell719srv:1433;Database=DAS_CONV_TOOL;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
-    private static String oracleRemote = "jdbc:oracle:thin:@//dell719srv:1521/DELL719SRV";
+    private static String sqlServerRemote = "jdbc:sqlserver://dell719xxx:1433;Database=DAS_CONV_TOOL;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
+    private static String oracleRemote = "jdbc:oracle:thin:@//dell719xxx:1521/DELL719SRV";
 
     private static final String CHANGELOG_TIM = "orm-liquibase/liquibase-core-4-18/src/main/resources/changelog-tim.xml";
     private static final String CHANGELOG_REF = "orm-liquibase/liquibase-core-4-18/src/main/resources/changelog-ref.xml";

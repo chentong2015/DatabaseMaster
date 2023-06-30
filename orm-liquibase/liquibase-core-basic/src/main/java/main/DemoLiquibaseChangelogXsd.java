@@ -17,7 +17,7 @@ import java.sql.SQLException;
 public class DemoLiquibaseChangelogXsd {
 
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
-    private static String oracleString = "jdbc:oracle:thin:@//dell719srv:1521/DELL719SRV";
+    private static String oracleString = "jdbc:oracle:thin:@//dell719xxx:1521/DELL719SRV";
 
     public static void main(String[] args) throws DatabaseException, SQLException {
         // Connection connection = DriverManager.getConnection(psqlConnectStr);

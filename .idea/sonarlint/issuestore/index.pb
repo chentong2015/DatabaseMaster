@@ -659,5 +659,33 @@ Z
 -orm-liquibase/liquibase-core-4-8-test/pom.xml,d\3\d399997cc8255c8fc9607aae61834da8c2bab715
 �
 Qorm-liquibase/liquibase-core-basic/src/main/java/main/DemoLiquibaseChangelog.java,f\a\fa84e92d1d3e471c0af4afaf7ba72fdd0ec21260
+|
+Lrelational-database/oracle/src/main/java/com/oracle/main/DemoOrcaleJDBC.java,5\c\5c179f72a7efecc9477dc737cecf0964ec973f99
 �
-Yorm-liquibase/liquibase-core-4-8-test/src/main/java/main/DemoLiquibaseChangelogIssue.java,e\9\e996a911d56043174cdfe729ad50165b592a54b3
+Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTruncate.java,7\2\72fe08acc539fc7acd97d8db5e0ed560560e775c
+�
+Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
+X
+(relational-database/oracle/Oracle 基础,7\2\72ab19c47e22d347f965f8538be77813fd686018
+v
+Fdatabase-orm-design/src/main/java/database/design/types/JDBCTypes.java,c\e\cee3132c774494524d149743217f13702b0d73cd
+Z
+*database-orm-design/关系型数据库.txt,a\1\a12dc57cb7178d4e5f3fc3f2ec5f4d1f65fbefb5
+X
+(relational-database/oracle/Oracle 测试,9\d\9d374e396964580f6acc98a4830d80a040e091d6
+u
+Erelational-database/mysql/src/main/java/index/IndexSpecification.java,7\f\7f8ff8b525be4324faf5d0d9d1caab444622f532
+�
+Rdatabase-orm-design/src/main/java/database/design/procedure/CallableStatement.java,7\d\7d99f4e7e0ef66bf582456801145e8212201a74c
+w
+Gdatabase-orm-design/src/main/java/database/design/DemoSqlException.java,0\c\0c258bcf31838e02c857478c078f4876a4609204
+]
+-database-orm-design/数据库设计思想.txt,b\a\ba169edeb31f71a06ec8641494c849bf3e1c395a
+w
+Gdatabase-orm-design/src/main/java/database/design/ConnectionDriver.java,5\5\55de798a2556ecf8e88cafee91f9571f2d18d5de
+�
+form-jpa-hibernate/native-hibernate6-api-master/src/main/java/identifiers/custom/EntityIdGenerator.java,6\7\6746c6f8f040e6715e571990eecc60efb49d4fb7
+�
+uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/DemoHqlRawQuery.java,8\4\84141a520fe2860d374a05865642c83a54907830
+�
+worm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/MyTypeDefEntity.java,2\5\25fee592e5c04b537bf2686926dc54b2149316c3

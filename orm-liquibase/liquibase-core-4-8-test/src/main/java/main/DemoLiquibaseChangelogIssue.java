@@ -18,7 +18,7 @@ import java.sql.SQLException;
 public class DemoLiquibaseChangelogIssue {
 
     private static String changelog = "changelog-master-agreements.xml";
-    private static String oracleString = "jdbc:oracle:thin:@//dell719srv:1521/DELL719SRV";
+    private static String oracleString = "jdbc:oracle:thin:@//dell719xxx:1521/DELL719SRV";
 
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/liquibase_upgrade_4_8?user=postgres&password=admin";
     private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase_4_8;Trusted_Connection=true;";
