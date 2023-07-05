@@ -14,7 +14,7 @@ public class EntityId {
     }
 
     // TODO. Entity Getter方法不能设置成Final
-    public final long getId() {
+    public long getId() {
         return id;
     }
 

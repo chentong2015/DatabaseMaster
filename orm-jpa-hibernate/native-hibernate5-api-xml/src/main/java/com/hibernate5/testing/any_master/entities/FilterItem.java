@@ -5,9 +5,12 @@ public class FilterItem {
     private double reference;
     private String parentType;
     private int parentReference;
+
+    // 多态: 任意的object对象可以映射到任意的table的主键，进行自定义关联
     private Object objectInstance;
 
     public FilterItem() {
+        // For hibernate using
     }
 
     public double getReference() {

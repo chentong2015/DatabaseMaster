@@ -16,20 +16,20 @@ public class TradeEntity {
     @Column(name = "M_COUNTRPART", nullable = false, columnDefinition = "numeric", length = 10)
     private Long counterpartyReference;
 
-    public TradeEntity() {
-
-    }
-
-    public TradeEntity(Long reference, Long counterpartyReference) {
-        this.reference = reference;
-        this.counterpartyReference = counterpartyReference;
-    }
-
-    public Long getId() {
-        return reference;
-    }
-
-    public Long getCounterpartyReference() {
-        return counterpartyReference;
-    }
+    // public TradeEntity() {
+    //
+    // }
+    //
+    // public TradeEntity(Long reference, Long counterpartyReference) {
+    //     this.reference = reference;
+    //     this.counterpartyReference = counterpartyReference;
+    // }
+    //
+    // public Long getId() {
+    //     return reference;
+    // }
+    //
+    // public Long getCounterpartyReference() {
+    //    return counterpartyReference;
+    // }
 }

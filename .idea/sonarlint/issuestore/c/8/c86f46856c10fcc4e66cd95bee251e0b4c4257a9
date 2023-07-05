@@ -1,7 +1,7 @@
 
 Q
-java:S1874	"6Remove this use of "createCriteria"; it is deprecated.(°›ïúÿÿÿÿ
-]	java:S125
-"<This block of commented-out lines of code should be removed.(Ó«¨ªüÿÿÿÿ8 Ó×ºü0
+java:S1874
+"6Remove this use of "createCriteria"; it is deprecated.(“‡³¦ùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Ó«¨ªüÿÿÿÿ
 }
-java:S3252"bUse static access with "org.hibernate.criterion.CriteriaSpecification" for "DISTINCT_ROOT_ENTITY".(Ø„•ïøÿÿÿÿ
+java:S3252"bUse static access with "org.hibernate.criterion.CriteriaSpecification" for "DISTINCT_ROOT_ENTITY".(Ø„•ïøÿÿÿÿ

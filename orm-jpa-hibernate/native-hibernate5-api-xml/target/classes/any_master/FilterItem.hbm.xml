@@ -1,16 +1,19 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping SYSTEM "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibernate-mapping default-cascade="none" default-access="property" auto-import="false">
-    <class name="com.hibernate5.testing.any_master.entities.FilterItem" table="BE_FILTER_ITEM_DBF">
+<hibernate-mapping package="com.hibernate5.testing.any_master.entities" default-cascade="none" default-access="property"
+                   auto-import="false">
+
+    <class name="FilterItem" table="BE_FILTER_ITEM_DBF">
         <id type="double" name="reference" column="M_REFERENCE">
             <generator class="native"/>
         </id>
         <property type="java.lang.String" name="parentType" column="M_PARENT_TYPE"/>
         <property type="integer" name="parentReference" column="M_PARENT_REF"/>
 
-        <any name="objectInstance" id-type="double" meta-type="java.lang.String">
-            <meta-value value="MJkQC54506" class="com.hibernate5.testing.any_master.entities.Portfolio"/>
-            <column name="M_OBJ_TYPE"/>
+        <any name="objectInstance" meta-type="java.lang.String" id-type="double">
+            <meta-value value="Portfolio" class="Portfolio"/>
+            <!-- 可以定义其他类型的映射meta-value，指定任意的类型和自定义的值 -->
+            <column name="M_OBJ_TYPE" check="false"/>
             <column name="M_OBJ_REF" check="false"/>
         </any>
     </class>

@@ -6,6 +6,8 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+import java.util.List;
+
 public class DemoHibernateEntityTest {
 
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
@@ -13,20 +15,17 @@ public class DemoHibernateEntityTest {
 
     public static void main(String[] args) {
         Session session = sessionFactory.openSession();
-        session.getTransaction().begin();
-        TradeEntity tradeEntity1 = new TradeEntity(1L, 10L);
-        session.persist(tradeEntity1);
+        TradeEntity tradeEntity = new TradeEntity();
+        
+        // session.getTransaction().begin();
+        // session.persist(new TradeEntity());
+        // session.getTransaction().commit();
 
-        TradeEntity tradeEntity2 = new TradeEntity(2L, 20L);
-        session.persist(tradeEntity2);
-        session.getTransaction().commit();
+        // HQL的查询可以直接选择属性进行查询" WHERE counterpartyReference = 10"
+        String fullQuery = "select distinct TRADE.reference" + " FROM " + TradeEntity.class.getCanonicalName() + " TRADE";
 
-        // HQL的查询可以直接选择属性进行查询
-        String fullQuery = "select distinct TRADE.reference" + " FROM " + TradeEntity.class.getName() + " TRADE" +
-                " WHERE counterpartyReference = 10";
-
-        long result = session.createQuery(fullQuery, Long.class).getSingleResult();
-        System.out.println(result);
+        List<Long> result = session.createQuery(fullQuery, Long.class).getResultList();
+        System.out.println(result.size());
 
         sessionFactory.close();
     }

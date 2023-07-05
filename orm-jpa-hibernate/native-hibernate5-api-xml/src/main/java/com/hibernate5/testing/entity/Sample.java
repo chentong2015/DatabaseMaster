@@ -13,7 +13,8 @@ public class Sample {
         this.value = value;
     }
 
-    public final long getId() {
+    // do not set final to the function
+    public long getId() {
         return id;
     }
 

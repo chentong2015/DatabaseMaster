@@ -24,8 +24,8 @@
             <!-- 在Table数据表中会添加两列字段:
                  m_ref 具体类型的主键id, 根据id-type设置的主键类型
                  m_type使用字符串区别类型 -->
-            <column name="m_ref"/>
-            <column name="m_type"/>
+            <column check="false" name="m_ref"/>
+            <column check="false" name="m_type"/>
         </any>
     </class>
 </hibernate-mapping>
