@@ -3,10 +3,10 @@ package multi_id_class.entity;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name = "murex.integration.datalayer.flow.task.cmn.server.businessobjectrefresh.db.dto.SettlementInstructionGridDTO")
+@Entity(name = "multi_id_class.entity.SettlementInstructionGridDTO")
 @Table(name = "SI_GRID_DBF")
 public class SettlementInstructionGridDTO {
-    
+
     @Id
     @Column(name = "M_TRN_NB", nullable = false, columnDefinition = "numeric", length = 10)
     private Long tradeExtensionNumber;

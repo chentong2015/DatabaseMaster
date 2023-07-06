@@ -3,7 +3,7 @@ package multi_id_class.entity;
 import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name = "murex.integration.datalayer.flow.task.cmn.server.businessobjectrefresh.db.dto.TradeExtensionDTO")
+@Entity(name = "multi_id_class.entity.TradeExtensionDTO")
 @Table(name = "TRN_EXT_DBF")
 public class TradeExtensionDTO {
 
