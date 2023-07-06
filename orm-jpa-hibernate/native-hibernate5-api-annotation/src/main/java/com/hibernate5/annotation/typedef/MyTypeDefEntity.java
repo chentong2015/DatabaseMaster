@@ -9,7 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-// 可以定义多个类型的名称，在Entity Class中使用
+// 2. 使用@TypeDefs注入自定义的类型
 @TypeDefs({
         @TypeDef(name = "char-string", typeClass = CharStringType.class)
 })
