@@ -10,7 +10,7 @@
         <property type="java.lang.String" name="parentType" column="M_PARENT_TYPE"/>
         <property type="integer" name="parentReference" column="M_PARENT_REF"/>
 
-        <any name="objectInstance" meta-type="java.lang.String" id-type="double">
+        <any lazy="true" name="objectInstance" meta-type="java.lang.String" id-type="double">
             <meta-value value="Portfolio" class="Portfolio"/>
             <!-- 可以定义其他类型的映射meta-value，指定任意的类型和自定义的值 -->
             <column name="M_OBJ_TYPE" check="false"/>

@@ -8,9 +8,8 @@
         <id type="double" name="reference" column="M_REFERENCE"/>
         <property name="label" column="label"/>
 
-        <many-to-one name="asset"
-                     not-found="ignore"
-                     class="com.hibernate5.testing.many_to_one_master.Asset"
-                     column="M_ASSET"/>
+        <!-- not-found="ignore" -->
+        <many-to-one name="asset" column="M_ASSET"
+                     class="com.hibernate5.testing.many_to_one_master.Asset"/>
     </class>
 </hibernate-mapping>
