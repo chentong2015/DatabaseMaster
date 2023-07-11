@@ -16,7 +16,7 @@ public class DemoMultiIdEntity {
     static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
     static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
-    public static void main1(String[] args) {
+    public static void main(String[] args) {
         Session session = sessionFactory.openSession();
         session.getTransaction().begin();
 
@@ -33,7 +33,7 @@ public class DemoMultiIdEntity {
         sessionFactory.close();
     }
 
-    public static void main(String[] args) {
+    public static void test(String[] args) {
         final StringBuilder fullQuery = new StringBuilder("select distinct ")
                 .append(TRADE_EXT).append(".tradeReference");
         System.out.println(fullQuery);

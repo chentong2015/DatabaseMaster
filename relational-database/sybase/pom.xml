@@ -18,11 +18,13 @@
     </properties>
 
     <dependencies>
-        <!-- 从System系统路径添加指定的JDBC Driver -->
+        <!-- sybase jdbc只能添加在依赖的最后(last in the classpath) -->
         <dependency>
             <groupId>sybase</groupId>
             <artifactId>jconn4</artifactId>
             <version>4.0</version>
+
+            <!-- 从System系统路径添加指定的JDBC Driver -->
             <scope>system</scope>
             <systemPath>C:/SAP/jConnect-16_0/classes/jconn4.jar</systemPath>
         </dependency>
