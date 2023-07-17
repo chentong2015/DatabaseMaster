@@ -1,23 +1,0 @@
-
-J
-java:S3740"/Provide the parametrized type for this generic.(€Û«—øÿÿÿÿ
-E
-java:S3740"/Provide the parametrized type for this generic.(ú°øï
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şñÊëÿÿÿÿÿ
-[
-java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ô­€
-R
-java:S1854&"7Remove this useless assignment to local variable "ure".(…†¡€øÿÿÿÿ
-N
-java:S1854%"8Remove this useless assignment to local variable "user".(ã«Æ×
-?
-java:S1481%")Remove this unused "user" local variable.(ã«Æ×
-C
-java:S1481&"(Remove this unused "ure" local variable.(…†¡€øÿÿÿÿ
-J
-java:S1068"/Remove this unused "countClient" private field.(åê£çûÿÿÿÿ
-O
-java:S1068"-Remove this unused "dbDrivers" private field.(€Û«—øÿÿÿÿ8ÒÌ¡¨Ó0
-P
-java:S1144#":Remove this unused private "createConnectionPools" method.(Š¯¦Ÿ

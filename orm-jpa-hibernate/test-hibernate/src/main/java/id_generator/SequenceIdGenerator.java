@@ -1,17 +1,11 @@
 package id_generator;
 
 import org.hibernate.HibernateException;
-import org.hibernate.MappingException;
-import org.hibernate.boot.model.relational.Database;
-import org.hibernate.boot.model.relational.SqlStringGenerationContext;
 import org.hibernate.engine.spi.SharedSessionContractImplementor;
 import org.hibernate.id.IdentifierGenerator;
 import org.hibernate.id.enhanced.SequenceStyleGenerator;
-import org.hibernate.service.ServiceRegistry;
-import org.hibernate.type.Type;
 
 import java.io.Serializable;
-import java.util.Properties;
 
 /*
   @Id
@@ -33,23 +27,23 @@ public class SequenceIdGenerator implements IdentifierGenerator {
     // We need a SequenceStyleGenerator in Oracle but native identity generator on Sybase.
     private SequenceStyleGenerator strategy;
 
-    @Override
-    public void configure(Type type, Properties params, ServiceRegistry serviceRegistry) throws MappingException {
-        strategy = new SequenceStyleGenerator();
-        strategy.configure(type, params, serviceRegistry);
-    }
+    // @Override
+    // public void configure(Type type, Properties params, ServiceRegistry serviceRegistry) throws MappingException {
+    //     strategy = new SequenceStyleGenerator();
+    //     strategy.configure(type, params, serviceRegistry);
+    // }
 
-    @Override
-    public void registerExportables(Database database) {
-        // IdentifierGenerator.super.registerExportables(database);
-        strategy.registerExportables(database);
-    }
+    // @Override
+    // public void registerExportables(Database database) {
+    //     // IdentifierGenerator.super.registerExportables(database);
+    //     strategy.registerExportables(database);
+    // }
 
-    @Override
-    public void initialize(SqlStringGenerationContext context) {
-        // IdentifierGenerator.super.initialize(context);
-        strategy.initialize(context);
-    }
+    // @Override
+    // public void initialize(SqlStringGenerationContext context) {
+    //     // IdentifierGenerator.super.initialize(context);
+    //     strategy.initialize(context);
+    // }
 
     @Override
     public Serializable generate(SharedSessionContractImplementor session, Object object) throws HibernateException {
