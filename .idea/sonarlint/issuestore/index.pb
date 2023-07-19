@@ -423,8 +423,6 @@ iorm-jpa-hibernate/test-hibernate/src/main/java/metadata/MyDefaultIdentifierGene
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseMetadata.java,1\a\1ab64bc9e3f6f76d53550c953d804d4c2103743c
 Œ
 \orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseEntity.java,8\5\8556fd74a79af3c8e85fcb2a071db8b069cb9207
-Ž
-^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/MetadataSourcesDemo.java,e\0\e0ac614578f118de3723b96dc50d5209a3500a9a
 ‘
 aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/BaseJpaMetadata.java,0\0\004fcac44c375ddf5ab8e0123b4c1e56c216d54b
 ¥
@@ -651,3 +649,15 @@ q
 Aorm-jpa-hibernate/test-hibernate/src/main/java/entity/Sample.java,3\c\3c419a515acc67fc0c0f378e1cf3415d69cd0b5d
 s
 Corm-jpa-hibernate/test-hibernate/src/main/java/entity/EntityId.java,5\5\55c00da08ab0cb0e02721237e38b8629c5e908ab
+j
+:orm-jpa-hibernate/native-hibernate5-api-annotation/pom.xml,8\4\84ecec8d05247655040c5b291dca2719c777eab5
+c
+3orm-jpa-hibernate/native-hibernate5-api-xml/pom.xml,0\2\02388decd075ed563490436bf52e3005825756ed
+o
+?orm-jpa-hibernate/test-hibernate/src/main/java/entity/User.java,f\b\fbe5bc3488ce7cfef49ddf53093bcb68b12af205
+„
+Torm-jpa-hibernate/test-hibernate/src/main/java/id_generator/SequenceIdGenerator.java,c\0\c049fe7355e92bee8af0bde0dd727aea34d20d37
+‹
+[orm-jpa-hibernate/test-hibernate/src/main/java/id_generator/StoredProcedureIdGenerator.java,b\0\b052c3fae80fb131d052a68c24f4b75713a7e7ac
+Ž
+^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/MetadataSourcesDemo.java,e\0\e0ac614578f118de3723b96dc50d5209a3500a9a

@@ -36,7 +36,8 @@ public class MetadataSourcesDemo {
 
         System.out.println(BaseJpaMetadata.class.getSimpleName());
         System.out.println(BaseJpaMetadata.class.getName());
-        
+
+        // 不需要通过.cfg.xml文件来注入entity class
         metadataSources.addAnnotatedClass(BaseJpaMetadata.class);
         metadataSources.addAnnotatedClass(BaseEntity.class.getClass());
 

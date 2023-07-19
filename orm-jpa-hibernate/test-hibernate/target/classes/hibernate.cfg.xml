@@ -15,7 +15,7 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <!-- <mapping class="entity.test.TradeEntity"/> -->
+        <!-- <mapping class="entity.model.TradeEntity"/> -->
 
         <!-- <mapping resource="entity/sample.hbm.xml"/>
         <mapping resource="entity/EntityId.hbm.xml"/>
