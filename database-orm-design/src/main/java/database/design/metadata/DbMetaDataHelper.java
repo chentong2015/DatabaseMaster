@@ -5,21 +5,23 @@ import java.sql.*;
 public class DbMetaDataHelper {
 
     // TODO. 通过MetaData来获取表中列数据的指定类型: ColumnType = JDBC Types
-    public static void getColumnType(Connection connection) throws SQLException {
+    public static void testMetaData(Connection connection) throws SQLException {
         String query = "SELECT * from t_country where id = 1";
         ResultSet resultSet = connection.createStatement().executeQuery(query);
+
+        // 获取到查询的结果数据
         resultSet.next();
         System.out.println(resultSet.getInt(1));
         System.out.println(resultSet.getString(3));
 
-        int columnType = resultSet.getMetaData().getColumnType(1);
-        String tableName = resultSet.getMetaData().getTableName(1);
-        String columnName = resultSet.getMetaData().getColumnName(3);
-        System.out.println(tableName);
-        System.out.println(columnName);
-
-        // 获取VARCHAR的设置长度
-        System.out.println(resultSet.getMetaData().getColumnDisplaySize(3));
+        // 分析查询结果的元信息MetaData
+        ResultSetMetaData resultSetMetaData = resultSet.getMetaData();
+        int columnType = resultSetMetaData.getColumnType(1); // 返回查询列对应的JDBC Type
+        int scale = resultSetMetaData.getScale(1);
+        int displaySize = resultSetMetaData.getColumnDisplaySize(3);
+        int precision = resultSetMetaData.getPrecision(1);
+        String tableName = resultSetMetaData.getTableName(1);
+        String columnName = resultSetMetaData.getColumnName(3);
         resultSet.close();
     }
 
