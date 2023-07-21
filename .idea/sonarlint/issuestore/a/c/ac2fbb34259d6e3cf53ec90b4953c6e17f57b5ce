@@ -1,0 +1,43 @@
+
+]
+java:S2095
+"GUse try-with-resources or close this "Statement" in a "finally" clause.(İ÷©ä
+^
+java:S2095?"HUse try-with-resources or close this "Connection" in a "finally" clause.(à¦™
+T
+java:S1854">Remove this useless assignment to local variable "columnName".(ÂŠåµ
+X
+java:S1854"=Remove this useless assignment to local variable "tableName".(©ş¶úÿÿÿÿ
+R
+java:S1854"=Remove this useless assignment to local variable "precision".(£Ò›D
+U
+java:S1854"?Remove this useless assignment to local variable "displaySize".(¾³İ
+N
+java:S1854"9Remove this useless assignment to local variable "scale".(Îù
+T
+java:S1854">Remove this useless assignment to local variable "columnType".(ˆĞá›
+H
+java:S1135"2Complete the task associated to this TODO comment.(÷Ù×…
+N	java:S106"9Replace this use of System.out or System.err by a logger.(üİ°ç
+N	java:S106"9Replace this use of System.out or System.err by a logger.(è±‡•
+E
+java:S1481"/Remove this unused "columnType" local variable.(ˆĞá›
+?
+java:S1481"*Remove this unused "scale" local variable.(Îù
+F
+java:S1481"0Remove this unused "displaySize" local variable.(¾³İ
+C
+java:S1481".Remove this unused "precision" local variable.(£Ò›D
+I
+java:S1481".Remove this unused "tableName" local variable.(©ş¶úÿÿÿÿ
+E
+java:S1481"/Remove this unused "columnName" local variable.(ÂŠåµ
+M
+java:S1135"2Complete the task associated to this TODO comment.(—¿“øùÿÿÿÿ
+M
+java:S1135+"2Complete the task associated to this TODO comment.(ˆõ†«üÿÿÿÿ
+H
+java:S11350"2Complete the task associated to this TODO comment.(Íª¸
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(Ğ¬ÏÙıÿÿÿÿ
+Q	java:S1253"<This block of commented-out lines of code should be removed.(ı÷•‰
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(ì¢õ­

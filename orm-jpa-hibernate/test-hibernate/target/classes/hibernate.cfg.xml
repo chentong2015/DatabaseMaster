@@ -15,10 +15,13 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <!-- <mapping class="entity.model.TradeEntity"/> -->
-
         <!-- <mapping resource="entity/sample.hbm.xml"/>
         <mapping resource="entity/EntityId.hbm.xml"/>
+
+        <mapping class="metadata.entity.TradeEntity"/>
         <mapping class="multi_id_class.entity.TradeRefreshAuditRecordDTO"/> -->
+
+        <mapping class="hibernate_mockito.entity.Account"/>
+        <mapping class="hibernate_mockito.entity.Person"/>
     </session-factory>
 </hibernate-configuration>

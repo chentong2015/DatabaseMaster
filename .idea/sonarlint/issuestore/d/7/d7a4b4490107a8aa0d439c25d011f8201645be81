@@ -1,14 +1,0 @@
-
-E
-java:S3740?"/Provide the parametrized type for this generic.(Èæ¹´
-M	java:S1060"9Replace this use of System.out or System.err by a logger.(Æ«ËL
-B
-java:S1481<",Remove this unused "session" local variable.(æ¨Íé
-G
-java:S1481=",Remove this unused "builder" local variable.(€‡‚”ùÿÿÿÿ
-H
-java:S1481>"3Remove this unused "tableStructure" local variable.(»Œ‚
-S
-java:S1481?"=Remove this unused "standardServiceInitiator" local variable.(Èæ¹´
-Z
-java:S1481@"FRemove this unused "mutableIdentifierGeneratorFactory" local variable.(ø‡

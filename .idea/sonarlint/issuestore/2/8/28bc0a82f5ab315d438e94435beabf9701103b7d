@@ -1,0 +1,13 @@
+
+h
+java:S1192:"FDefine a constant instead of duplicating this literal "label" 3 times.(÷íš†ÿÿÿÿÿ8ÏÌÿ³Ğ0
+T
+java:S1135"2Complete the task associated to this TODO comment.(÷à–„ıÿÿÿÿ8³Ñ·Ğ0
+X	java:S125"<This block of commented-out lines of code should be removed.(¥¿î’8æ¸ÄàĞ0
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(Ï¯ü£ûÿÿÿÿ8ÿÑ·Ğ0
+]	java:S125."<This block of commented-out lines of code should be removed.(ÒÖÜæıÿÿÿÿ8õÑ·Ğ0
+W	java:S125;"<This block of commented-out lines of code should be removed.(™Ã½M8÷Ñ·Ğ0
+]	java:S125E"<This block of commented-out lines of code should be removed.(ˆüğöüÿÿÿÿ8ùÑ·Ğ0
+U	java:S106N"9Replace this use of System.out or System.err by a logger.(®ï8ê¸ÄàĞ0
+V
+java:S1144":Remove this unused private "testSelectEntityClass" method.(•å8ë¸ÄàĞ0

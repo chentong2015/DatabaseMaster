@@ -1,6 +1,5 @@
 package metadata;
 
-import entity.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -17,23 +16,20 @@ import java.util.Properties;
 
 public class MetadataHelper {
 
-    private BootstrapServiceRegistry bootstrapServiceRegistry;
-    private StandardServiceRegistryBuilder standardServiceRegistryBuilder;
-    private MetadataSources metadataSources = new MetadataSources();
+    private static BootstrapServiceRegistry bootstrapServiceRegistry;
+    private static StandardServiceRegistryBuilder standardServiceRegistryBuilder;
+    private static MetadataSources metadataSources = new MetadataSources();
 
     public static void main(String[] args) {
-        MetadataHelper helper = new MetadataHelper();
-        helper.metadataSources.addAnnotatedClass(User.class);
-
-        Metadata metadata = helper.getMetadata();
+        Metadata metadata = getMetadata();
         SessionFactory sessionFactory = metadata.buildSessionFactory();
         Session session = sessionFactory.openSession();
         System.out.println("done" + session.toString());
     }
 
-    private Metadata getMetadata() {
-        this.bootstrapServiceRegistry = new BootstrapServiceRegistryBuilder().build();
-        this.standardServiceRegistryBuilder = new StandardServiceRegistryBuilder(bootstrapServiceRegistry);
+    private static Metadata getMetadata() {
+        bootstrapServiceRegistry = new BootstrapServiceRegistryBuilder().build();
+        standardServiceRegistryBuilder = new StandardServiceRegistryBuilder(bootstrapServiceRegistry);
 
         // 配置Properties信息必须和指定的数据库对应
         Properties properties = new Properties();

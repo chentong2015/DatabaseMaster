@@ -1,6 +1,5 @@
 package hibernate_liquibase;
 
-import entity.Sample;
 import liquibase.Contexts;
 import liquibase.LabelExpression;
 import liquibase.Liquibase;
@@ -41,8 +40,8 @@ public class DemoHibernateLiquibaseCompatibility {
 
         Session session = sessionFactory.openSession();
         session.getTransaction().begin();
-        session.save(new Sample("sample1"));
-        session.save(new Sample("sample2"));
+        // session.save(new Sample("sample1"));
+        // session.save(new Sample("sample2"));
         session.getTransaction().commit();
         session.close();
         System.out.println("done.");

@@ -20,5 +20,8 @@
 
         <mapping class="metadata.entity.TradeEntity"/>
         <mapping class="multi_id_class.entity.TradeRefreshAuditRecordDTO"/> -->
+
+        <mapping class="hibernate_mockito.entity.Account"/>
+        <mapping class="hibernate_mockito.entity.Person"/>
     </session-factory>
 </hibernate-configuration>
