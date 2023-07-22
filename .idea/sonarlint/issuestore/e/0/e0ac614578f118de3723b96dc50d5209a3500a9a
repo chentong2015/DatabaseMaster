@@ -1,0 +1,20 @@
+
+`
+java:S20959"EUse try-with-resources or close this "Session" in a "finally" clause.(´Ï‚‘ùÿÿÿÿ
+H
+java:S1135"2Complete the task associated to this TODO comment.(á­›§
+”
+java:S1130"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(ªù›“øÿÿÿÿ
+M
+java:S1135""2Complete the task associated to this TODO comment.(ŒŞßÊşÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ääÉùÿÿÿÿ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(¡œ‰õ
+H
+java:S1135/"2Complete the task associated to this TODO comment.(ŞÈ€ã
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(¼Í¤
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(¿Ä­Û8À»ÍØø0
+G
+java:S14819",Remove this unused "session" local variable.(´Ï‚‘ùÿÿÿÿ
+H
+java:S1135="2Complete the task associated to this TODO comment.(ÍøµÓ
+V	java:S125M"<This block of commented-out lines of code should be removed.(œÒÂêúÿÿÿÿ

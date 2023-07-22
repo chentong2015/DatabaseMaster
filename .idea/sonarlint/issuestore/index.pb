@@ -541,8 +541,6 @@ u
 Erelational-database/mysql/src/main/java/index/IndexSpecification.java,7\f\7f8ff8b525be4324faf5d0d9d1caab444622f532
 ‚
 Rdatabase-orm-design/src/main/java/database/design/procedure/CallableStatement.java,7\d\7d99f4e7e0ef66bf582456801145e8212201a74c
-w
-Gdatabase-orm-design/src/main/java/database/design/DemoSqlException.java,0\c\0c258bcf31838e02c857478c078f4876a4609204
 ]
 -database-orm-design/æ•°æ®åº“è®¾è®¡æ€æƒ³.txt,b\a\ba169edeb31f71a06ec8641494c849bf3e1c395a
 w
@@ -657,3 +655,15 @@ K
 Pdatabase-orm-design/src/main/java/database/design/metadata/DbMetaDataHelper.java,a\c\ac2fbb34259d6e3cf53ec90b4953c6e17f57b5ce
 ~
 Ndatabase-orm-design/src/main/java/database/design/metadata/DbMetaDataDemo.java,8\3\83d0cad39be122fa4492048501897fe13e92b485
+{
+Korm-jpa-hibernate/test-hibernate/src/main/java/metadata/MetadataHelper.java,b\b\bb9087d3f9177892181ab58d91f4ba1ed3f43d0b
+
+^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/MetadataSourcesDemo.java,e\0\e0ac614578f118de3723b96dc50d5209a3500a9a
+’
+borm-jpa-hibernate/native-hibernate6-api-master/src/main/java/export/HibernateSchemaExportDemo.java,a\e\aedc32a025871a743a64696f02fece089e4a0ca6
+
+^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/DemoBatchingSession.java,9\5\955a57aa305cfe25293d4e244886fea9565ca3f2
+ƒ
+Sorm-jpa-hibernate/test-hibernate/src/main/java/deprecated/HibernateCriteriaAPI.java,c\8\c86f46856c10fcc4e66cd95bee251e0b4c4257a9
+›
+korm-jpa-hibernate/test-hibernate/src/main/java/hibernate_liquibase/DemoHibernateLiquibaseCompatibility.java,d\7\d7a4b4490107a8aa0d439c25d011f8201645be81
