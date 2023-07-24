@@ -1,0 +1,14 @@
+PgAdmin Tool  : admin
+PSQL Admin    : postgres, admin  在安装时需要设置管理员的密码，之后用于登录连接
+PSQL User     : test, test       用于远程URL连接的用户，可以通过PgAdmin来添加新用户
+
+http://www.postgres.cn/docs/13/index.html
+https://jdbc.postgresql.org/documentation/changelog.html PSQL版本变更记录
+
+https://www.postgresql.org/docs/current/app-psql.html    PSQL提供的指令操作 **
+https://www.postgresql.org/docs/current/datatype.html    PSQL数据库支持Data Types **
+https://www.postgresql.org/docs/14/functions.html        PSQL提供的方法Functions
+
+TODO. EDB (Enterprise Database) Postgres Advanced Server
+在开源open-source PostgresSQL database数据库的基础上添加的增强功能
+https://edbjapan.com/edbmanual/EPAS_Guide_E_Set_v11/

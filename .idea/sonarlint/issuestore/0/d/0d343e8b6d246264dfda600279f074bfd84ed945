@@ -1,0 +1,13 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ø•»Ü
+e
+java:S1104"OMake rnd a static final constant or non-public and provide accessors if needed.(Åü£˜
+?
+java:S1444")Make this "public static rnd" field final(Åü£˜
+—
+java:S1186b"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼¥–÷
+=
+java:S1905@"'Remove this unnecessary cast to "long".(œÝµª
+I
+java:S1068".Remove this unused "friendlist" private field.(²Õß–úÿÿÿÿ

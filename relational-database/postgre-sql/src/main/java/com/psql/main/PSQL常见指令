@@ -1,0 +1,16 @@
+对字段使用function再模糊查询(like匹配区分大小写)
+> SELECT * FROM public.t_citizen t where trim(t.language) LIKE '%.US'
+
+删除指定Schema
+> DROP SCHEMA [ IF EXISTS ] nom [, ...] [ CASCADE | RESTRICT ]
+
+PSQL状态活动记录表
+> SELECT pid, age(clock_timestamp(), query_start), username, state, query
+  FROM pg_stat_activity
+  where state<>'idle';
+
+> SELECT * FROM pg_locks;
+
+> SELECT * FROM pg_catalog.pg_tables;
+
+> SELECT version()
