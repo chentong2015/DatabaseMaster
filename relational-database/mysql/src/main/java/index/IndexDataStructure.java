@@ -1,5 +1,6 @@
 package index;
 
+// MySQL索引底层选择的数据结构 B+Tree
 public class IndexDataStructure {
 
     // 1. 二叉树: 结点存储<key, value> value存储的是磁盘文件地址
@@ -17,8 +18,7 @@ public class IndexDataStructure {
     //                               (node, node, node, node, node ...)
     //            (node, node, node, node, node ...)      (node, node, node, node, node ...)
     //           .....                          .....                  (node, node, node, node, node ...)
-
-    // TODO: MySQL索引底层选择的数据结构
+    //
     // 5. B+Tree: 1. 上层的key构成的一组结点，从左到右依次递增，左子树都小，右子树都大
     //            2. 提取叶子结点的一组元素中的第一个值(冗余值)，构成第二层
     //            3. 叶子结点具有指针的连接，从左到右递增，支持对范围的查找
@@ -42,6 +42,7 @@ public class IndexDataStructure {
     // 3. 最左前缀法则: 一种限制
     //    要使用联合索引，必须从前面的字段开始使用，不能跳过前面的直接使用后面的字段
     //    因为联合索引的B+树的构建是根据逐个字段排号序的，后面的单个字段不是排好序的
+    //
     // 4. 为什么非主键索引结构(二级索引)，叶子结点存储的是主键值?
     //    TODO: 存在一致性(数据更新困难)和节省存储空间问题
     //    对于创建的非主键索引，在叶子结点上如果存储的是表的实际数据，则会和主键索引生成的B+树中的叶子结点上的数据一致，存在数据的冗余 !!

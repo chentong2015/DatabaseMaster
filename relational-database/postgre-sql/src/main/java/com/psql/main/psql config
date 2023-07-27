@@ -1,6 +1,16 @@
-# -----------------------------
+TODO. 更新Conf配置文件，需要重新启动PSQL Server
+C:\Program Files\PostgreSQL\14\data\postgresql.conf
+  配置每个日志文件最大存储10M=1024KB的数据量
+  log_rotation_size = 10MB
+
+  配置显示全部的执行statement的日志
+  log_statement = 'none' # none, ddl, mod, all
+  statement.execute("SET log_statement = 'all'");
+
+
+# ---------------------------------------------------------------------------------------------------------------------
 # PostgreSQL configuration file
-# -----------------------------
+# ---------------------------------------------------------------------------------------------------------------------
 #
 # This file consists of lines of the form:
 #

@@ -14,7 +14,6 @@ C:\PostgreSQL\bin>psql.exe -U postgres
 C:\PostgreSQL\bin>psql -h HOST_NAME -U username
    Password for user postgres: ****
 
--------------------------------------------------------------------------------
 >\l              list databases 显示所有创建的数据库
 >\c db_name1     connect 连接到一个指定的数据库
 >\c db_name2     再切换到另外一个数据库
@@ -30,4 +29,5 @@ C:\PostgreSQL\bin>psql -h HOST_NAME -U username
 >delete from table
 
 >exit/quit
+
 

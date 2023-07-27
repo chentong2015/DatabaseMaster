@@ -1,0 +1,20 @@
+Triggers 触发器: 类似于一个事件, 当遇到某个事件的时候执行什么操作
+触发器可以用于监测数据的变化，然后执行相应的操作
+
+create or replace function handlePersonInsertion() returns Trigger
+as $$
+  begin
+     insert into my_auto_table (name, value) values ('insert new person', 200);
+     return new;  -- 研究返回NEW的原因
+  end;
+$$ LANGUAGE plpgsql;
+
+
+针对什么表，在什么操作的前后执行什么样的逻辑/方法
+create or replace trigger listenPersonInsertion after insert on t_person
+execute function handlePersonInsertion();
+
+监测数据插入之后，由于触发器的作用会连带的在另一表中存储数据
+
+查询在当前DB中的所有触发器
+# SELECT * FROM pg_trigger;

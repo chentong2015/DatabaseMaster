@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 // TODO. 对于批量插入，可以设置重写Insert语句"reWriteBatchedInserts=true"
-//   https://jdbc.postgresql.org/documentation/94/connect.html
+// https://jdbc.postgresql.org/documentation/94/connect.html
 public class PostgresSqlBatching {
 
     // TODO. JDBC has to create the prepared statement dynamically.
