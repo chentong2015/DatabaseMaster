@@ -10,6 +10,8 @@ public class DemoPostgresJDBC {
 
     public static void main(String[] args) throws SQLException {
         try (Connection connection = DriverManager.getConnection(url, "postgres", "admin")) {
+            // 获取默认的schema: public
+            connection.getSchema();
             System.out.println(connection.getAutoCommit());
 
             // 注意这里不同DB的列名称有所区别，在匹配namePattern时需要动态匹配
