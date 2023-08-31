@@ -10,10 +10,14 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class HibernateMockitoDemo {
 
-    static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
-    static SessionFactory sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-
     public static void main(String[] args) {
+        StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+        SessionFactory sessionFactory = new MetadataSources(registry)
+                .addAnnotatedClass(Account.class)
+                .addAnnotatedClass(Person.class)
+                .buildMetadata()
+                .buildSessionFactory();
+
         Session session = sessionFactory.openSession();
         session.getTransaction().begin();
 
