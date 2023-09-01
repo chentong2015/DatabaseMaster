@@ -5,8 +5,8 @@
 
 <!-- 在类名称层级上需要添加entity-name=""避免JPA entity name名称冲突 -->
 <hibernate-mapping>
-    <class name="hibernate.framework.apis.mappings.many.to.one.Grade"
-           entity-name="hibernate.framework.apis.mappings.many.to.one.Grade"
+    <class name="hibernate.framework.apis.mappings.many.to.one.model.Grade"
+           entity-name="hibernate.framework.apis.mappings.many.to.one.model.Grade"
            schema="public"
            table="t_grade">
         <id name="id" column="id">

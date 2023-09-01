@@ -1,37 +1,9 @@
-Hibernate:
-    select
-        commodityc0_.M_REFERENCE as M_REFERE1_4_,
-        commodityc0_.label as label2_4_,
-        commodityc0_.M_ASSET as M_ASSET3_4_
-    from
-        t_contract commodityc0_
-3
-Hibernate:
-    select
-        asset0_.M_REFERENCE as M_REFERE1_3_0_,
-        asset0_.label as label2_3_0_
-    from
-        t_asset asset0_
-    where
-        asset0_.M_REFERENCE=?
-asset 1
-Hibernate:
-    select
-        asset0_.M_REFERENCE as M_REFERE1_3_0_,
-        asset0_.label as label2_3_0_
-    from
-        t_asset asset0_
-    where
-        asset0_.M_REFERENCE=?
-asset 2
-Hibernate:
-    select
-        asset0_.M_REFERENCE as M_REFERE1_3_0_,
-        asset0_.label as label2_3_0_
-    from
-        t_asset asset0_
-    where
-        asset0_.M_REFERENCE=?
+TODO. 在多对一的关系中，如果外键的值在关联的表中找不到，在使用数据时会抛出异常
+- 保证数据在存储进入表中时是正确的
+- 如果数据表中通过某个方式初始存储不正确的数据，在查询时需要忽略错误数据 not-found="ignore"
+
+搭建Many-to-one测试案例: 将外键的关联关系删除之后再添加0.0的错误id
+返回能够查询到的所有数据，只有在获取属性值时才会抛出异常 !!
 
 org.hibernate.ObjectNotFoundException: No row with the given identifier exists:
 [com.hibernate5.testing.many_to_one_master.Asset#0.0]

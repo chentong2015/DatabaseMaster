@@ -1,5 +1,8 @@
 package hibernate.framework.apis.mappings.many.to.one;
 
+import hibernate.framework.apis.mappings.many.to.one.model.Grade;
+import hibernate.framework.apis.mappings.many.to.one.model.Student;
+import hibernate.framework.apis.mappings.many.to.one.model.StudentAddress;
 import hibernate.framework.apis.session.HibernateSessionUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

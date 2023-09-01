@@ -4,8 +4,8 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="hibernate.framework.apis.mappings.many.to.one.Student"
-           entity-name="hibernate.framework.apis.mappings.many.to.one.Student"
+    <class name="hibernate.framework.apis.mappings.many.to.one.model.Student"
+           entity-name="hibernate.framework.apis.mappings.many.to.one.model.Student"
            schema="public"
            table="t_student">
         <id name="id" column="id">
@@ -24,7 +24,7 @@
                        一般不设置成非空，如果有多个外键会无法正确存储 !!
              not-found="ignore" 在没有找到外键表的主键时，忽略异常 -->
         <many-to-one name="grade"
-                     class="hibernate.framework.apis.mappings.many.to.one.Grade"
+                     class="hibernate.framework.apis.mappings.many.to.one.model.Grade"
                      column="grade_id"
                      not-found="ignore"
                      foreign-key="foreign_key"/>
@@ -42,7 +42,7 @@
             <key column="student_id" unique="true"/>
             <!-- 多个Student可能住在同一个地址 -->
             <many-to-one name="address"
-                         class="hibernate.framework.apis.mappings.many.to.one.StudentAddress"
+                         class="hibernate.framework.apis.mappings.many.to.one.model.StudentAddress"
                          column="addressId" not-null="true"/>
         </join>
     </class>

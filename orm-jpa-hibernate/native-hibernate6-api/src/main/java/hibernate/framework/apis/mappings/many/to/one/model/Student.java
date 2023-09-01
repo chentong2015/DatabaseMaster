@@ -1,4 +1,4 @@
-package hibernate.framework.apis.mappings.many.to.one;
+package hibernate.framework.apis.mappings.many.to.one.model;
 
 import java.io.Serializable;
 

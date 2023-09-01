@@ -437,8 +437,6 @@ Brelational-database/mysql/src/main/java/locking/ReadWriteLock.java,e\9\e90ad1c
 �orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/one/UnidirectionalManyToOne.java,8\8\88ff5204ff98f78523dbe627ec0992899dd71925
 �
 vorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/lifecycle/HibernateObjectLifecycle.java,f\d\fd4e4a8ced05e9a3040438ffca88b6d44dafaae2
-�
-vorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/many_to_one_master/新旧版本对比,9\b\9bf3baa1d733be5e405ce67dd4f201f564ef7465
 y
 Idatabase-orm-design/src/main/java/database/design/lock/乐观和悲观锁,1\7\17c5f947c830310e8a98358da61ff198c0b7fba5
 s
@@ -533,12 +531,6 @@ corm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testin
 qorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/entity/DemoHibernateMapping.java,f\2\f2104b4be2f097bf549182b9aefc33c65460e503
 �
 torm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/any_master/entities/FilterItem.java,2\1\21c377502a617dff2bd9bfc224da5e20846a2d71
-�
-norm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/many_to_one_master/Asset.java,7\0\7055e6731ecc9d148c57bee4b3c9246162406c8c
-�
-zorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/many_to_one_master/CommodityContract.java,7\0\707d46b6032e446f2b641dc41804a751085ebb53
-�
-xorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/many_to_one_master/ManyToOneMaster.java,a\0\a0785d8cbce0c7b703310f2d5d6b0fad8374de3f
 �
 Yorm-jpa-hibernate/test-hibernate/src/main/java/multi_id_class/query_builder/EntityId.java,2\f\2f661726d983285133c13a54f1624c6a0d47d4f8
 �
@@ -631,12 +623,6 @@ t
 Drelational-database/mysql/src/main/java/transaction/Transaction.java,5\2\529e6cf73b7457cf66f8ff4c3c47e57edf5fb05e
 z
 Jrelational-database/postgre-sql/src/main/java/com/psql/main/view/Psql View,9\b\9bd8f53a28a77f2b9b30ea75947b80089550eece
-[
-+relational-database/postgre-sql/PSQL Master,e\e\eee846e6c2e8c1431f24cb156aeac7abbf491ce9
-X
-(relational-database/postgre-sql/PSQL Cmd,3\8\38fac6f5e09a6da088e08fb31f976e5c33e4b046
-Z
-*relational-database/postgre-sql/PSQL Basic,6\0\60af16f794314235d690593764ed15f10c92947c
 x
 Hrelational-database/postgre-sql/src/main/java/com/psql/main/psql logging,3\4\34bcc439682d5fa396c0cace78c6d7d7a03a8227
 �
@@ -685,7 +671,23 @@ Zorm-jpa-hibernate/test-hibernate/src/main/java/hibernate_mockito/HibernateMocki
 sorm-jpa-hibernate/jakarta-persistence-api/src/main/java/com/hibernate/entity/manager/DemoJakartaPersistenceAPI.java,8\1\819f3675aa052260b0b05c9afdfb2ba7ae565428
 I
 orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
-c
-3orm-jpa-hibernate/native-hibernate5-api-xml/pom.xml,0\2\02388decd075ed563490436bf52e3005825756ed
 X
 (orm-jpa-hibernate/test-hibernate/pom.xml,5\5\55c9fc5d30c2e8379fed0746027adce7b35906de
+w
+Gdatabase-orm-design/src/main/java/database/design/ConnectionDriver.java,5\5\55de798a2556ecf8e88cafee91f9571f2d18d5de
+l
+<database-orm-design/src/main/java/database/design/DataSource,4\0\409f41913229da592eeb9678153976ed121e89df
+Z
+*database-orm-design/关系型数据库.txt,a\1\a12dc57cb7178d4e5f3fc3f2ec5f4d1f65fbefb5
+]
+-database-orm-design/数据库设计思想.txt,b\a\ba169edeb31f71a06ec8641494c849bf3e1c395a
+�
+~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/large/object/EntityLargeObject.java,2\6\269418928342fd8cf7099609e37792196a9184ca
+Z
+*relational-database/postgre-sql/PSQL Basic,6\0\60af16f794314235d690593764ed15f10c92947c
+X
+(relational-database/postgre-sql/PSQL Cmd,3\8\38fac6f5e09a6da088e08fb31f976e5c33e4b046
+]
+-relational-non-database/非关系性数据库,9\6\96c2d6282535f5c74b7224e60926dc06b2909b37
+[
++relational-database/postgre-sql/PSQL Master,e\e\eee846e6c2e8c1431f24cb156aeac7abbf491ce9
