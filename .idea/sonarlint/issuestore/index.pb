@@ -145,14 +145,8 @@ corm-jpa-hibernate/native-hibernate6-api-master/src/main/java/locking/乐观锁�
 xorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/select/Customer.java,3\9\397fbcc725e8d1b9a8185350fd0082d46a10ca87
 �
 rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/any/PropertyHolder.java,e\6\e6a95100a0d060dd8764408c75141c46f69f2f31
-�
-porm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/one/Student.java,4\2\422df9998889c9e69d30a212e1b230ce653d2484
-�
-norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/one/Grade.java,6\1\61d13fcdae5b2c9f21d5a94fd0ba73dfd1f1ce98
 �
 sorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/join/Order.java,6\4\64abd326c4b473b263107c811e288f75f70d1fe1
-�
-worm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/one/StudentAddress.java,6\f\6f83106974e0a951219b728ddf54b8dfdf048187
 �
 �orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/join/JoinColumnOrFormula/Citizen.java,b\3\b341b7f8efa5f6e9b345223b185cebabc7e5f299
 �
@@ -447,8 +441,6 @@ z
 Jorm-jpa-hibernate/test-hibernate/src/main/java/deprecated/deprecated 5.6.x,a\4\a46b704b9bba4746b7608305e2a91107a0bf1238
 �
 Xrelational-database/sybase/src/main/java/com/sybase/main/truncate/DemoSybaseVarchar.java,4\f\4f05dabc2c0840943ae6d8828e2764770f167bad
-�
-Yrelational-database/sybase/src/main/java/com/sybase/main/batching/DemoSybaseBatching.java,e\f\ef24dd71b6a100c7d60ff0575f7b3a0da2f8ffcc
 c
 3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
 f
@@ -463,12 +455,6 @@ lorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/
 xorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/MyPhysicalNamingStrategyStandardImpl.java,8\b\8bb716ab804a7d21be2366cad28b33ff42869150
 �
 dorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/naming/strategies/Hibernate命名策略,7\7\7789c4cbbee27d04bc545c20996c773005b5b4c7
-X
-(relational-database/sybase/Sybase 基础,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
-|
-Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
-X
-(relational-database/sybase/Sybase 测试,f\7\f773e5337da6265a967f479820b4412d1c1a6749
 �
 gorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/session/Session的创建,3\e\3edf27468c7f850196b4b2acae7bbe7451d2cac4
 �
@@ -619,8 +605,6 @@ u
 Erelational-database/mysql/src/main/java/index/IndexSpecification.java,7\f\7f8ff8b525be4324faf5d0d9d1caab444622f532
 u
 Erelational-database/mysql/src/main/java/index/IndexDataStructure.java,d\c\dc10693b44d5d0560c75f5f2437ec83ba8c2f579
-t
-Drelational-database/mysql/src/main/java/transaction/Transaction.java,5\2\529e6cf73b7457cf66f8ff4c3c47e57edf5fb05e
 z
 Jrelational-database/postgre-sql/src/main/java/com/psql/main/view/Psql View,9\b\9bd8f53a28a77f2b9b30ea75947b80089550eece
 x
@@ -639,10 +623,6 @@ W
 'relational-database/postgre-sql/pom.xml,9\e\9e622c3f443856cc45abe9c6a5afebdb1be97806
 �
 Yrelational-database/postgre-sql/src/main/java/com/psql/main/batching/Batching性能调优,a\c\acadeebde5e53df4ab69cc549ded92bdf1f7a34b
-�
-Qrelational-database/postgre-sql/src/main/java/com/psql/main/DemoPostgresJDBC.java,0\8\08da77cf8e9a2af4e77ce789d5211d8349b87948
-�
-]relational-database/postgre-sql/src/main/java/com/psql/main/batching/PostgresSqlBatching.java,5\7\5767e3b23e2153de8f3d7584895d57e77fa3a476
 �
 Torm-jpa-hibernate/test-hibernate/src/main/java/id_generator/SequenceIdGenerator.java,c\0\c049fe7355e92bee8af0bde0dd727aea34d20d37
 �
@@ -673,14 +653,10 @@ I
 orm-jpa-hibernate/pom.xml,5\5\55526d7150c26e8ec975ebdab7dfbe24a6a1cf9e
 X
 (orm-jpa-hibernate/test-hibernate/pom.xml,5\5\55c9fc5d30c2e8379fed0746027adce7b35906de
-w
-Gdatabase-orm-design/src/main/java/database/design/ConnectionDriver.java,5\5\55de798a2556ecf8e88cafee91f9571f2d18d5de
 l
 <database-orm-design/src/main/java/database/design/DataSource,4\0\409f41913229da592eeb9678153976ed121e89df
 Z
 *database-orm-design/关系型数据库.txt,a\1\a12dc57cb7178d4e5f3fc3f2ec5f4d1f65fbefb5
-]
--database-orm-design/数据库设计思想.txt,b\a\ba169edeb31f71a06ec8641494c849bf3e1c395a
 �
 ~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/large/object/EntityLargeObject.java,2\6\269418928342fd8cf7099609e37792196a9184ca
 Z
@@ -691,3 +667,15 @@ X
 -relational-non-database/非关系性数据库,9\6\96c2d6282535f5c74b7224e60926dc06b2909b37
 [
 +relational-database/postgre-sql/PSQL Master,e\e\eee846e6c2e8c1431f24cb156aeac7abbf491ce9
+c
+3orm-jpa-hibernate/native-hibernate5-api-xml/pom.xml,0\2\02388decd075ed563490436bf52e3005825756ed
+�
+sorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/one/多对一异常,a\8\a8fe5c902dad543f3a0f4d27888c61308205a496
+X
+(relational-database/sybase/Sybase 基础,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
+|
+Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
+�
+Yrelational-database/sybase/src/main/java/com/sybase/main/batching/DemoSybaseBatching.java,e\f\ef24dd71b6a100c7d60ff0575f7b3a0da2f8ffcc
+X
+(relational-database/sybase/Sybase 测试,f\7\f773e5337da6265a967f479820b4412d1c1a6749

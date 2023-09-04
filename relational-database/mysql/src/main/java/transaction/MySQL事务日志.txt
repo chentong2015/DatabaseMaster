@@ -1,0 +1,20 @@
+MySQL何时生成事务ID ?
+1. 在begin之后，执行第一个操作InnoDB语句表的语句时，事务才真正启动，向MySQL申请事务id，并且严格按照顺序来分配
+2. 只有update, delete, insert更新操作才会生成事务id，查询语句select不会有事务id
+
+事务执行流程
+begin;
+update        修改buffer pool中的数据
+...
+// rollback   如果回滚，则需要通过undo log日志来还原
+commit;       此时才做redo log持久化处理, 对应存储区域是Log Buffer !!
+
+TODO: 事务在执行的过程中，会生成三种log
+1. bin log: MySQL的概念
+   1.1 存储一些执行的SQL语句，恢复的时候需要执行语句，比redo log慢
+   1.2 主要用在数据库主从上面，比如需要将数据库转移到新开的数据库中，则需要bin log
+2. redo log: InnoDB存储引擎概念  >> 在事务commit提交之后生成
+   2.1 记录Page中某地址中的一些数据进行了修改，做数据恢复会更快
+   2.2 不能用于数据库的主从关系，不能搬redo log
+3. undo log:
+   3.1 记录"反向操作"，用于事务执行的过程中回滚 insert -> delete, update -> update

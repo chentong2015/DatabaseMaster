@@ -1,0 +1,5 @@
+TODO. 如何理解事务的传播机制 ?
+MethodA(带事务) calls MethodB(带事务) calls MethodC(带事务)
+在嵌套方法调用的过程中，事务是如何在其中进行传播的，模式和路径?
+1. 支持MethodA中的事务
+2. 不支持MethodA中的事务
