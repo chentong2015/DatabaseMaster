@@ -1,0 +1,26 @@
+
+`	java:S112T"FDefine and throw a dedicated exception instead of using a generic one.(‚˜Í–ûÿÿÿÿ
+[	java:S112;"FDefine and throw a dedicated exception instead of using a generic one.(±¸ø¬
+>
+java:S1604-"(Make this anonymous inner class a lambda(ôÐÃø
+n
+java:S1450"XRemove the "scheduler" field and declare it as a local variable in the relevant methods.(“„¹Í
+M
+java:S1135+"2Complete the task associated to this TODO comment.(É¨Á¤ûÿÿÿÿ
+h
+java:S3776;"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(±¸ø¬
+M
+java:S11358"2Complete the task associated to this TODO comment.(ó˜’ôÿÿÿÿÿ
+N	java:S106H"9Replace this use of System.out or System.err by a logger.(ÿ¼éô
+t
+java:S2142L"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+M
+java:S1135]"2Complete the task associated to this TODO comment.(‘»¿¿ùÿÿÿÿ
+S	java:S106o"9Replace this use of System.out or System.err by a logger.(ñÒÀµúÿÿÿÿ
+U	java:S899v";Do something with the "boolean" value returned by "remove".(×ÏÛÿúÿÿÿÿ
+H
+java:S1172z"-Remove this unused method parameter "reason".(Ýø“Çúÿÿÿÿ
+N
+java:S1135Œ"2Complete the task associated to this TODO comment.(ÈÃ’íÿÿÿÿÿ
+G
+java:S1068	",Remove this unused "poolName" private field.(¨¬Ù€ûÿÿÿÿ

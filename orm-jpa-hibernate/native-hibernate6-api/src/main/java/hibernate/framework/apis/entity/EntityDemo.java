@@ -11,7 +11,8 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity(name = "t_demo_table")
 @Table(name = "t_demo_table",
         schema = "public", // 使用特定的schema
-        uniqueConstraints = @UniqueConstraint(columnNames = {"source_id"})) // 约定具体列的唯一性, 也可以直接在@Column定义上约束
+        uniqueConstraints = @UniqueConstraint(columnNames = {"source_id"}))
+// 约定具体列的唯一性, 也可以直接在@Column定义上约束
 public class EntityDemo {
 
     @Id
@@ -28,7 +29,7 @@ public class EntityDemo {
     @Column(name = "source_id", nullable = false)
     private String sourceId;
 
-    // TODO. 修改映射的名称会导致原始创建的表格中新增列 !!
+    // TODO. 修改映射的名称会导致原始创建的表格中新增列
     @Column(name = "my_edit")
     private Boolean myEdit;
 
@@ -36,7 +37,8 @@ public class EntityDemo {
     @Version
     private Integer version;
 
-    // TODO. Hibernate不会将该字段存储到数据库
+    // TODO. 只有当从DB中检索数据出错时才会被设值
+    // @Transient Hibernate不会将该字段存储到数据库
     // private transient int ignored =0; 该字段不会被序列化
     @Transient
     private String ignoreInformation;

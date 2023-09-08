@@ -5,6 +5,9 @@ package database.design.types;
 public class JDBCTypes {
 
     // java.sql.Types
+
     // [1] JDBC type code  -> CHAR
     // [12] JDBC type code -> VARCHAR 对应代码中的字符串类型
+    // [-9] NVARCHAR
+    // [-16] LONGNVARCHAR
 }
