@@ -67,8 +67,6 @@ borm-jpa-hibernate/entity-class-parser/src/main/java/com/example/main/JpaEntityL
 sorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/CategoryType.java,f\0\f04da8226e9e34d840f4236e5673f6d1f1bebb6a
 ®
 ~orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/one/to/many/bidirectional/Student.java,4\3\43c9462b5520d6610787203b149deef687769092
-£
-sorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/map/DemoMapCollections.java,b\6\b6b4986ac6b239585f5f13a7d0a25bdbf23b358a
 ›
 korm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/map/RightsType.java,5\1\51f7b81a5e6ef1bc18638fefc1306f75e0643d76
 ¢
@@ -533,12 +531,8 @@ j
 worm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/CustomDefEntity.java,8\9\8949c5b3e9b4c0dd84621e8d69f2115f911a1932
 ®
 ~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/types/DisplayLabelType.java,f\4\f47e36a272b7c8b98d2a790cd52789691259a9d4
-¦
-vorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/Staff.java,7\2\7276efa983f41cb9d42fb1449b5ad1d5a6fd37d4
 ·
 †orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/immutability/EntityImmutability.java,8\f\8fe0b6fa6eb9a56f8aa611326493a6cd4a687809
-µ
-„orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/ComponentPersonName.java,b\3\b304faf94c22fab2018b7c36f67a7f65bc89cc1e
 §
 worm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/DemoCriteriaQuery.java,2\8\28bc0a82f5ab315d438e94435beabf9701103b7d
 Ž

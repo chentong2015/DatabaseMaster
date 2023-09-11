@@ -1,10 +1,11 @@
 package hibernate.framework.apis.mappings.map;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
-// @Entity
-// @Table(name = "t_map_rights")
+import java.util.Map;
+
+@Entity
+@Table(name = "t_map_rights")
 public class RightsEntity {
 
     @Id
@@ -14,12 +15,11 @@ public class RightsEntity {
     @Column(name = "group")
     private String group;
 
-    // 创建额外的Map Collection的Table数据表 ??
-    // @ElementCollection(targetClass = PermissionsEntity.class, fetch = FetchType.EAGER)
-    // @CollectionTable(name = "t_map_rights_permissions", joinColumns = @JoinColumn(name = "right_id"))
-    // @MapKeyEnumerated(EnumType.ORDINAL) // 设置键值的类型，取枚举类型定义的ORDINAL序数
-    // @MapKeyColumn(name = "type")        // 设置key键值对应的列
-    // private Map<RightsType, PermissionsEntity> permissionsMap;
+    @ElementCollection(targetClass = PermissionsEntity.class, fetch = FetchType.EAGER)
+    @CollectionTable(name = "t_map_rights_permissions", joinColumns = @JoinColumn(name = "right_id"))
+    @MapKeyEnumerated(EnumType.ORDINAL) // 设置键值的类型，取枚举类型定义的ORDINAL序数
+    @MapKeyColumn(name = "type")        // 设置key键值对应的列
+    private Map<RightsType, PermissionsEntity> permissionsMap;
 
     public RightsEntity() {
     }
