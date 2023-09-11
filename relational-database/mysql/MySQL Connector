@@ -1,3 +1,5 @@
+url 配置连接属性
+"jdbc:mysql://127.0.0.1:3306/database?autoReconnect=true&maxReconnects=100"
 
 MySQL Schema和数据库名称是统一的
  <property name=".dialect">org.hibernate.dialect.MySQLDialect</property>

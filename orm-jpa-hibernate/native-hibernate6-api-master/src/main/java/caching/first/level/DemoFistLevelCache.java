@@ -6,6 +6,7 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+// Hibernate的Session(一级缓存)中的对象属于持久态, 需要及时关闭或flush一级缓存, 否则可能造成OOM
 public class DemoFistLevelCache {
 
     public static void main(String[] args) throws InterruptedException {

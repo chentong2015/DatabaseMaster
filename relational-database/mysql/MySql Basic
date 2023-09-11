@@ -1,0 +1,14 @@
+MySQL数据库: Oracle旗下免费DB
+安装目录下/data/数据库名称(一个库对应一个文件夹)/...  持久层数据以文件的形式存储在硬盘
+/MySQL Server 5.0/my.ini 配置文件
+  max_connections=500 设置最大并发Session数目
+  wait_timeout=20     添加参数: 客户端数据库连接闲置最大时间值(默认值为8小时)
+  interactive_timeout=20
+
+MySQL GUI界面
+https://www.eversql.com/top-7-mysql-gui-tools-for-windows/
+1. MySQL Workbench 由MySQL自家开发，功能特性最全: 不易使用 ?
+2. Navicat for MySQL 付费软件
+3. DataGrip by JetBrain 付费软件 (功能强大)
+4. MySQL Front 付费软件 (界面单一，功能单一)
+5. HeidiSQL 免费软件 (界面和功能足够)
