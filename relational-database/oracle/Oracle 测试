@@ -17,3 +17,6 @@ SQL>select count(1) from USER_OBJECTS where OBJECT_TYPE = 'FUNCTION' and OBJECT_
 
 调用定义的含参数的Procedure
 SQL>call procedure_name ('', '') into ..
+
+判断指定的表名称是否存在
+SQL>select table_name from all_tables where table_name = '%s'

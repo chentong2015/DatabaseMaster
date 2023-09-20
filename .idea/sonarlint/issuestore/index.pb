@@ -299,8 +299,6 @@ rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernateå¸¸è§å¼‚å¸¸,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
 O
 relational-non-database/pom.xml,3\a\3a9d5bf6fd1042eb3eacb58b141f01bf11d8cb8d
-i
-9relational-database/sql-server/SQL Server æŒ‡ä»¤å…¨é›†.md,d\5\d595a9c8e59604487e833cc9e80e15224bcdf486
 ‹
 [orm-liquibase/liquibase-core-basic/src/main/java/main/changeset/checksum/Changeset Checksum,e\2\e25607f9788f3260d224adfd297d1b05d9b1abd7
 ‹
@@ -417,10 +415,6 @@ z
 Jorm-jpa-hibernate/test-hibernate/src/main/java/deprecated/deprecated 5.6.x,a\4\a46b704b9bba4746b7608305e2a91107a0bf1238
 ˆ
 Xrelational-database/sybase/src/main/java/com/sybase/main/truncate/DemoSybaseVarchar.java,4\f\4f05dabc2c0840943ae6d8828e2764770f167bad
-c
-3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
-f
-6relational-database/sql-server/SQL Server é…ç½®æ“ä½œ,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 €
 Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
 œ
@@ -463,8 +457,6 @@ Yrelational-database/oracle/src/main/java/com/oracle/main/truncate/DemoOracleTru
 Yrelational-database/oracle/src/main/java/com/oracle/main/batching/DemoOracleBatching.java,e\f\efe0768e8a1c0d8da9968bd37508bc8f41c6086b
 X
 (relational-database/oracle/Oracle åŸºç¡€,7\2\72ab19c47e22d347f965f8538be77813fd686018
-X
-(relational-database/oracle/Oracle æµ‹è¯•,9\d\9d374e396964580f6acc98a4830d80a040e091d6
 ‚
 Rdatabase-orm-design/src/main/java/database/design/procedure/CallableStatement.java,7\d\7d99f4e7e0ef66bf582456801145e8212201a74c
 ¥
@@ -633,8 +625,6 @@ X
 Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
 ‰
 Yrelational-database/sybase/src/main/java/com/sybase/main/batching/DemoSybaseBatching.java,e\f\ef24dd71b6a100c7d60ff0575f7b3a0da2f8ffcc
-X
-(relational-database/sybase/Sybase æµ‹è¯•,f\7\f773e5337da6265a967f479820b4412d1c1a6749
 w
 Gdatabase-orm-design/src/main/java/database/design/ConnectionDriver.java,5\5\55de798a2556ecf8e88cafee91f9571f2d18d5de
 y
@@ -661,8 +651,6 @@ adatabase-orm-design/src/main/java/middleware/design/connection/pool/demo3/Poola
 Qrelational-database/postgre-sql/src/main/java/com/psql/main/DemoPostgresJDBC.java,0\8\08da77cf8e9a2af4e77ce789d5211d8349b87948
 ¯
 orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/types/TrimmedStringType.java,a\9\a9f29702dec4d5e25fe6c204ebe42a1d96593950
-€
-Pdatabase-orm-design/src/main/java/database/design/types/Character data types.txt,3\a\3ace286624c53cb9a1291dd891f127ddef4374c7
 v
 Fdatabase-orm-design/src/main/java/database/design/types/JDBCTypes.java,c\e\cee3132c774494524d149743217f13702b0d73cd
 •
@@ -675,3 +663,63 @@ Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/Hibernateç
 horm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/first/level/DemoFistLevelCache.java,2\d\2db725494a888bf8e605b1f5b1b78ae5b7d80773
 ‘
 aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/first/level/CacheEntity.java,9\4\9459fe33afee93957b770a5eca63d73cb95666e5
+~
+Ndatabase-orm-design/src/main/java/database/design/metadata/DbMetaDataDemo.java,8\3\83d0cad39be122fa4492048501897fe13e92b485
+‰
+Yorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Comment.java,0\f\0f9879ac97175c71c997c9635e60d8ce4d8f97f4
+K
+relational-database/pom.xml,4\0\40a979ea24e8503bca4b50461bebec4beb5aeb6c
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+|
+Lrelational-database/sql-lite/src/main/java/com/sqllite/main/model/Album.java,d\7\d7d78106f9229ec9c628c825d5d216f88f6a7dc4
+r
+Brelational-database/mysql/src/main/java/MysqlåŸºæœ¬ç±»å‹å’Œæ–¹æ³•,c\0\c08cb2ffdc9ff073001418436d29c66d62600149
+Y
+)relational-database/mysql/MySQL Connector,4\0\406ad2137b1018a4dba6823adc8492590ea28e98
+M
+orm-spring-jdbc/JDBCä¼˜ç¼ºç‚¹,c\5\c570724686a2eb4f33d283c214c5cdd99c6e5741
+h
+8relational-database/sql-lite/src/main/java/SQLite åŸºç¡€,c\6\c6fdc76cfd49114cb0e8f4a175a5fbaa0ee8ad00
+Z
+*relational-database/å…³ç³»å‹æ•°æ®åº“.txt,a\d\ad99ef8c002e9fe378cca8dfac8ea78d819320d2
+W
+'relational-database/mysql/MySql Command,d\4\d470d40a9c66b58277222560fb4b705b6a0c9e7f
+U
+%relational-database/mysql/MySql Basic,d\5\d5c73c73fece15065a4b557af00b07f7a0e474cf
+{
+Kdatabase-orm-design/src/main/java/database/design/æ•°æ®åº“è®¾è®¡æ€æƒ³.txt,7\c\7c08fb3ccf0b92ff3b2bbe28545296f0e85097ac
+
+Qdatabase-orm-design/src/main/java/database/design/æ•°æ®åº“è€—æ—¶æ“ä½œè®¾è®¡.txt,1\d\1d27d92838850563a271fb103d4293d7880337a5
+€
+Prelational-database/sql-lite/src/main/java/com/sqllite/main/DemoTransaction.java,d\e\de294b78ab65d593e187e04fc4099f4ba097f50d
+T
+$relational-database/sql-lite/pom.xml,6\1\6180fbc82c1e64250c5aa99df189c6f2f61e0dc2
+
+Qrelational-database/sql-lite/src/main/java/com/sqllite/main/BaseSQLiteTester.java,f\5\f5b4758145ca5f4455887fcbb1f0badc4cf65f15
+†
+Vrelational-database/sql-lite/src/main/java/com/sqllite/main/DemoPreparedStatement.java,1\7\17eb63be6aaf972af927548eb6327d431f8e5731
+
+Qrelational-database/sql-lite/src/main/java/com/sqllite/main/model/Datasource.java,3\7\37581c47221868d9a69155f26461581eb6ef3ebf
+l
+<database-orm-design/src/main/java/database/design/DataSource,4\0\409f41913229da592eeb9678153976ed121e89df
+
+]relational-database/postgre-sql/src/main/java/com/psql/main/batching/PostgresSqlBatching.java,5\7\5767e3b23e2153de8f3d7584895d57e77fa3a476
+£
+sorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/map/DemoMapCollections.java,b\6\b6b4986ac6b239585f5f13a7d0a25bdbf23b358a
+¦
+vorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/Staff.java,7\2\7276efa983f41cb9d42fb1449b5ad1d5a6fd37d4
+­
+}orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/@Embeddableæ³¨è§£,9\a\9a29d7d33e4b7dd7ec9c8284d69d3cfa00cd70fa
+²
+orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/ComponentAddress.java,9\7\9783978cd4abca9fa62bf26008c08612520770de
+µ
+„orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/ComponentPersonName.java,b\3\b304faf94c22fab2018b7c36f67a7f65bc89cc1e
+»
+Šorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementPartyEntity.java,a\8\a88df0bdc6ee2f24724251eb59d087e983fb4840
+
+morm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/map/RightsEntity.java,c\c\cc1d4862afa0b7715f055dadb15cc1cf866f34a7
+¶
+…orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementEntity.java,4\2\42625d06fca4e9680b98534f736880e6a4311929
+€
+Pdatabase-orm-design/src/main/java/database/design/types/Character data types.txt,3\a\3ace286624c53cb9a1291dd891f127ddef4374c7

@@ -1,0 +1,40 @@
+
+^
+java:S22590"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ
+^
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(¤¦ñ
+S
+java:S1854'"8Remove this useless assignment to local variable "name".(‹åğÕüÿÿÿÿ
+O
+java:S1854("9Remove this useless assignment to local variable "phone".(´¢óÛ
+T
+java:S1854)"9Remove this useless assignment to local variable "email".(¾Ù´şÿÿÿÿ
+D
+java:S1481'")Remove this unused "name" local variable.(‹åğÕüÿÿÿÿ
+@
+java:S1481("*Remove this unused "phone" local variable.(´¢óÛ
+E
+java:S1481)"*Remove this unused "email" local variable.(¾Ù´şÿÿÿÿ
+H
+java:S1135+"2Complete the task associated to this TODO comment.(í‰Ôµ
+M
+java:S1135/"2Complete the task associated to this TODO comment.(ƒÊÜ¥úÿÿÿÿ
+l
+java:S3457B"Q%n should be used in place of \n to produce the platform-specific line separator.(ß˜ ¿ÿÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(ß˜ ¿ÿÿÿÿÿ
+@
+java:S1481P"*Remove this unused "count" local variable.(‡»¿š
+@
+java:S1481Q"*Remove this unused "minId" local variable.(Ï‚ûİ
+O
+java:S1854["9Remove this useless assignment to local variable "query".(È¶
+@
+java:S1481["*Remove this unused "query" local variable.(È¶
+L
+java:S11449"6Remove this unused private "testTableMetaData" method.(™õİÉ
+K
+java:S1144J"5Remove this unused private "testSQLFunctions" method.(¸ßÁ¯
+L
+java:S1144Z"1Remove this unused private "testSQLViews" method.(ş¶áÃüÿÿÿÿ

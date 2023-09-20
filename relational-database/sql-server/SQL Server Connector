@@ -7,7 +7,7 @@
  <property name=".connection.url">jdbc:sqlserver://device_name:1433;Database=my_database;Trusted_Connection=true;</property>
  <property name=".connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
  <property name=".connection.username">test</property>
- <property name=".connection.password">TCHong20</property>
+ <property name=".connection.password">TCHong21</property>
 
  数据库SQL Server网络连接配置
  1. TODO. 连接项目所需要的数据库，走网络端口去要数据

@@ -1,0 +1,23 @@
+
+]
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(Ý÷©ä
+Q	java:S125"<This block of commented-out lines of code should be removed.(Éô©í
+F
+java:S2115")Add password protection to this database.(î—ûµ8†Ë¡—1
+T
+java:S1135"2Complete the task associated to this TODO comment.(Œ–§‡úÿÿÿÿ8¶¨Á¡—1
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¤¼…òüÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(«ÐÁÎ
+H
+java:S1135%"2Complete the task associated to this TODO comment.(Ž¦¦»
+M
+java:S1068"2Remove this unused "psqlConnectStr" private field.(»»¤Âþÿÿÿÿ
+N
+java:S1068"3Remove this unused "psqlConnectStr2" private field.(‘ßæØøÿÿÿÿ
+R
+java:S1068
+"7Remove this unused "sqlServerConnectStr" private field.(“ù¥­úÿÿÿÿ
+N
+java:S1068"8Remove this unused "sqlServerConnectStr2" private field.(”ÍÎÎ
+O
+java:S1144&"4Remove this unused private "checkTableExist" method.(ÅŽä¬úÿÿÿÿ

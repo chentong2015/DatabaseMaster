@@ -1,0 +1,23 @@
+
+Y
+java:S1854">Remove this useless assignment to local variable "queryCheck".(š“×Ãùÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "queryOK".(êÀÜÁ
+Y
+java:S1854">Remove this useless assignment to local variable "queryNotOK".(ß¼†§ûÿÿÿÿ
+J
+java:S1481"/Remove this unused "queryNotOK" local variable.(ß¼†§ûÿÿÿÿ
+B
+java:S1481",Remove this unused "queryOK" local variable.(êÀÜÁ
+J
+java:S1481"/Remove this unused "queryCheck" local variable.(š“×Ãùÿÿÿÿ
+A
+java:S2695"+This "PreparedStatement" has no parameters.(Øïº¦
+[
+java:S18543"@Remove this useless assignment to local variable "affectedRows".(ÁÍž™ÿÿÿÿÿ
+L
+java:S14813"1Remove this unused "affectedRows" local variable.(ÁÍž™ÿÿÿÿÿ
+P
+java:S1144"5Remove this unused private "testSQLInjection" method.(˜•òÐýÿÿÿÿ
+L
+java:S1144-"6Remove this unused private "testExecuteUpdate" method.(ÄÞÝú
