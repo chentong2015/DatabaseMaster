@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="database-orm-design" />
-        <module name="orm-spring-jdbc" />
         <module name="oracle" />
         <module name="sybase" />
         <module name="native-hibernate5-api-annotation" />
@@ -40,6 +39,7 @@
       <module name="native-hibernate6-api-metadata" target="15" />
       <module name="object-db-management-system" target="1.5" />
       <module name="orm-jpa-hibernate-example" target="15" />
+      <module name="orm-spring-jdbc" target="15" />
       <module name="sample-mapping-annotation" target="15" />
       <module name="sample-mapping-xml" target="15" />
       <module name="test" target="15" />
