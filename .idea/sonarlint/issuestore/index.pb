@@ -269,10 +269,6 @@ korm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/lev
 ]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/HibernateStatistics.java,d\9\d95c12b0d05c7d4cd2a5aa56d4987f8efecaa2e1
 �
 gorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/0. 二级缓存依赖,4\5\455af2e03dc8414910d8dc917a3188ee9eadf4bf
-�
-rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate JPA名称冲突,8\5\85e0dbd85c2ed21f18fbc54b9e49ca9a0ca9a15c
-�
-norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate常见异常,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
 O
 relational-non-database/pom.xml,3\a\3a9d5bf6fd1042eb3eacb58b141f01bf11d8cb8d
 �
@@ -493,12 +489,6 @@ _
 ]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/metadata/entity/TradeEntity.java,1\4\14e898fba01070393e77c9623b66e97118833a33
 j
 :orm-jpa-hibernate/native-hibernate5-api-annotation/pom.xml,8\4\84ecec8d05247655040c5b291dca2719c777eab5
-�
-|orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/types/CharStringType.java,6\8\688c3786e05ed594871557f1a8d0db2a4ec36f15
-�
-worm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/CustomDefEntity.java,8\9\8949c5b3e9b4c0dd84621e8d69f2115f911a1932
-�
-~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/types/DisplayLabelType.java,f\4\f47e36a272b7c8b98d2a790cd52789691259a9d4
 �
 �orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/immutability/EntityImmutability.java,8\f\8fe0b6fa6eb9a56f8aa611326493a6cd4a687809
 �
@@ -509,8 +499,6 @@ worm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 Ndatabase-orm-design/src/main/java/database/design/metadata/MyDatabaseType.java,9\6\96fa425ad90a903e2c1a7f13b8e49bbddabdf559
 K
 database-orm-design/pom.xml,8\8\881c459f7fd46fd86fffd056ada3d0e7c07bace0
-�
-|orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/types/StringEnumType.java,b\6\b6a3ee0fbe7f10fd28aa0648e356c9cffe6f32da
 �
 Pdatabase-orm-design/src/main/java/database/design/metadata/DbMetaDataHelper.java,a\c\ac2fbb34259d6e3cf53ec90b4953c6e17f57b5ce
 {
@@ -663,10 +651,6 @@ Qrelational-database/sql-lite/src/main/java/com/sqllite/main/model/Datasource.ja
 sorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/map/DemoMapCollections.java,b\6\b6b4986ac6b239585f5f13a7d0a25bdbf23b358a
 �
 vorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/Staff.java,7\2\7276efa983f41cb9d42fb1449b5ad1d5a6fd37d4
-�
-}orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/@Embeddable注解,9\a\9a29d7d33e4b7dd7ec9c8284d69d3cfa00cd70fa
-�
-�orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/ComponentAddress.java,9\7\9783978cd4abca9fa62bf26008c08612520770de
 �
 �orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/ComponentPersonName.java,b\3\b304faf94c22fab2018b7c36f67a7f65bc89cc1e
 �
@@ -687,3 +671,29 @@ f
 6relational-database/sql-server/SQL Server 配置操作,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
 X
 (relational-database/oracle/Oracle 测试,9\d\9d374e396964580f6acc98a4830d80a040e091d6
+Z
+*orm-mybatis/src/main/java/MybatisBeans.xml,2\4\243ee8fd79cf0d969012ba9d7f23c6f181b75faa
+�
+Ydatabase-orm-design/src/main/java/middleware/design/connection/pool/连接池设计思想,7\c\7c74566de7d58d0e673aa794d78fe7e6d21880a3
+l
+<database-orm-design/src/main/java/database/design/DataSource,4\0\409f41913229da592eeb9678153976ed121e89df
+Y
+)relational-database/mysql/MySQL Connector,4\0\406ad2137b1018a4dba6823adc8492590ea28e98
+�
+Qdatabase-orm-design/src/main/java/database/design/数据库耗时操作设计.txt,1\d\1d27d92838850563a271fb103d4293d7880337a5
+{
+Kdatabase-orm-design/src/main/java/database/design/数据库设计思想.txt,7\c\7c08fb3ccf0b92ff3b2bbe28545296f0e85097ac
+U
+%relational-database/mysql/MySql Basic,d\5\d5c73c73fece15065a4b557af00b07f7a0e474cf
+{
+Kdatabase-orm-design/src/main/java/storage/engine/design/InnoDB/InnoDB基础,6\f\6f6af2003dd962d0fd2179bbb47ea91b5f5f852b
+W
+'relational-database/mysql/MySql Command,d\4\d470d40a9c66b58277222560fb4b705b6a0c9e7f
+r
+Brelational-database/mysql/src/main/java/Mysql基本类型和方法,c\0\c08cb2ffdc9ff073001418436d29c66d62600149
+q
+Adatabase-orm-design/src/main/java/middleware/design/JDBC优缺点,1\f\1fa507cfacefa486c7ec4ee72364d642a43260fb
+~
+Ndatabase-orm-design/src/main/java/database/design/split/分库分表设计.txt,f\a\fa86ce157924d95b48e715cbeff4caba28fee91d
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
