@@ -151,8 +151,6 @@ U
 %relational-database/hyper-sql/pom.xml,0\8\0833ec567e3de17623e300c4dcb130ea3b0cd2c7
 Q
 !relational-database/mysql/pom.xml,b\5\b539580a08e698b2d29c991e6ed07f9277f2ce5e
-s
-Crelational-database/mysql/src/main/java/batching/MySqlBatching.java,0\2\0203b05ef4736502d06a6ca868fe487aa458f9e9
 n
 >relational-database/mysql/src/main/java/MysqlOptimization.java,9\8\98881886a44e1b11da99ccd264d4381e24f771f6
 }
@@ -299,8 +297,6 @@ V
 &orm-liquibase/Liquibase Global Options,1\7\17ad2b395531891dd8f83089ac453d478fd5b03e
 R
 "orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
-h
-8relational-database/hyper-sql/src/main/HyperSQL数据库,6\5\65dc3cb15d14f1de7c8dba6cf4e4b87dc660c722
 Y
 )orm-liquibase/liquibase-core-4-18/pom.xml,e\d\edfa0ae2a1bb5fab2ef891a76e152b6ba01cf9f3
 �
@@ -573,8 +569,6 @@ X
 (relational-database/postgre-sql/PSQL Cmd,3\8\38fac6f5e09a6da088e08fb31f976e5c33e4b046
 ]
 -relational-non-database/非关系性数据库,9\6\96c2d6282535f5c74b7224e60926dc06b2909b37
-[
-+relational-database/postgre-sql/PSQL Master,e\e\eee846e6c2e8c1431f24cb156aeac7abbf491ce9
 c
 3orm-jpa-hibernate/native-hibernate5-api-xml/pom.xml,0\2\02388decd075ed563490436bf52e3005825756ed
 �
@@ -607,8 +601,6 @@ hdatabase-orm-design/src/main/java/middleware/design/connection/pool/demo3/Poola
 gdatabase-orm-design/src/main/java/middleware/design/connection/pool/demo3/MyPoolableConnectionImpl.java,6\e\6e3b8a4f27ca798167a2afb7fec104f83d9fd3c1
 �
 adatabase-orm-design/src/main/java/middleware/design/connection/pool/demo3/PoolableConnection.java,e\f\efddf364e7dc2ae3ee2a89e1014ffa2f7924d380
-�
-Qrelational-database/postgre-sql/src/main/java/com/psql/main/DemoPostgresJDBC.java,0\8\08da77cf8e9a2af4e77ce789d5211d8349b87948
 �
 orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/types/TrimmedStringType.java,a\9\a9f29702dec4d5e25fe6c204ebe42a1d96593950
 v
@@ -677,18 +669,12 @@ Z
 Ydatabase-orm-design/src/main/java/middleware/design/connection/pool/连接池设计思想,7\c\7c74566de7d58d0e673aa794d78fe7e6d21880a3
 l
 <database-orm-design/src/main/java/database/design/DataSource,4\0\409f41913229da592eeb9678153976ed121e89df
-Y
-)relational-database/mysql/MySQL Connector,4\0\406ad2137b1018a4dba6823adc8492590ea28e98
 �
 Qdatabase-orm-design/src/main/java/database/design/数据库耗时操作设计.txt,1\d\1d27d92838850563a271fb103d4293d7880337a5
 {
 Kdatabase-orm-design/src/main/java/database/design/数据库设计思想.txt,7\c\7c08fb3ccf0b92ff3b2bbe28545296f0e85097ac
-U
-%relational-database/mysql/MySql Basic,d\5\d5c73c73fece15065a4b557af00b07f7a0e474cf
 {
 Kdatabase-orm-design/src/main/java/storage/engine/design/InnoDB/InnoDB基础,6\f\6f6af2003dd962d0fd2179bbb47ea91b5f5f852b
-W
-'relational-database/mysql/MySql Command,d\4\d470d40a9c66b58277222560fb4b705b6a0c9e7f
 r
 Brelational-database/mysql/src/main/java/Mysql基本类型和方法,c\0\c08cb2ffdc9ff073001418436d29c66d62600149
 q
@@ -697,3 +683,35 @@ Adatabase-orm-design/src/main/java/middleware/design/JDBC优缺点,1\f\1fa507cf
 Ndatabase-orm-design/src/main/java/database/design/split/分库分表设计.txt,f\a\fa86ce157924d95b48e715cbeff4caba28fee91d
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+�
+worm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/CustomDefEntity.java,8\9\8949c5b3e9b4c0dd84621e8d69f2115f911a1932
+�
+|orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/types/CharStringType.java,6\8\688c3786e05ed594871557f1a8d0db2a4ec36f15
+�
+~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/types/DisplayLabelType.java,f\4\f47e36a272b7c8b98d2a790cd52789691259a9d4
+�
+|orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/typedef/types/StringEnumType.java,b\6\b6a3ee0fbe7f10fd28aa0648e356c9cffe6f32da
+�
+norm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate常见异常,0\a\0aac6e28e5a0bc6a0511ede62dd4f20e6456407b
+�
+rorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/exception/Hibernate JPA名称冲突,8\5\85e0dbd85c2ed21f18fbc54b9e49ca9a0ca9a15c
+�
+}orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/@Embeddable注解,9\a\9a29d7d33e4b7dd7ec9c8284d69d3cfa00cd70fa
+�
+�orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/ComponentAddress.java,9\7\9783978cd4abca9fa62bf26008c08612520770de
+�
+Xrelational-database/h2-database/src/main/java/com/h2/database/H2数据库配置和连接,b\0\b0d147dbaa6eaa930b3f27cc64ed25b66b5b4ef7
+_
+/relational-database/hyper-sql/HyperSQL数据库,f\1\f1fa6db8424d062e37acae290f3308dcf8700439
+�
+Qrelational-database/postgre-sql/src/main/java/com/psql/main/DemoPostgresJDBC.java,0\8\08da77cf8e9a2af4e77ce789d5211d8349b87948
+[
++relational-database/postgre-sql/PSQL Master,e\e\eee846e6c2e8c1431f24cb156aeac7abbf491ce9
+U
+%relational-database/mysql/MySql Basic,d\5\d5c73c73fece15065a4b557af00b07f7a0e474cf
+Z
+*relational-database/mysql/MySQL Connection,2\4\24aec85ea74c7f4df4b2600583591ccf21058e29
+s
+Crelational-database/mysql/src/main/java/batching/MySqlBatching.java,0\2\0203b05ef4736502d06a6ca868fe487aa458f9e9
+W
+'relational-database/mysql/MySql Command,d\4\d470d40a9c66b58277222560fb4b705b6a0c9e7f

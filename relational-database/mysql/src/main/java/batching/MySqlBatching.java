@@ -11,7 +11,7 @@ public class MySqlBatching {
 
     public static void main(String[] args) throws SQLException {
         String url = "jdbc:mysql://localhost:3306/my_database?rewriteBatchedStatements=true";
-        try (Connection connection = DriverManager.getConnection(url, "root", "admin")) {
+        try (Connection connection = DriverManager.getConnection(url, "root", "")) {
             connection.setAutoCommit(false);
             testPrepareStatementDelete(connection);
             connection.commit();
