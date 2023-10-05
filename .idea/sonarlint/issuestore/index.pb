@@ -527,8 +527,6 @@ w
 Grelational-database/postgre-sql/src/main/java/com/psql/main/psql config,7\4\740d210d7e55c2441190fc44649dd3c6dbd94d0d
 X
 (orm-jpa-hibernate/Hibernate ËøõÈò∂ÊïôÁ®ã,b\6\b604e1421f5ceeaec16edee761a8da30c5e38256
-W
-'relational-database/postgre-sql/pom.xml,9\e\9e622c3f443856cc45abe9c6a5afebdb1be97806
 â
 Yrelational-database/postgre-sql/src/main/java/com/psql/main/batching/BatchingÊÄßËÉΩË∞É‰ºò,a\c\acadeebde5e53df4ab69cc549ded92bdf1f7a34b
 Ñ
@@ -565,10 +563,6 @@ c
 3orm-jpa-hibernate/native-hibernate5-api-xml/pom.xml,0\2\02388decd075ed563490436bf52e3005825756ed
 £
 sorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/many/to/one/Â§öÂØπ‰∏ÄÂºÇÂ∏∏,a\8\a8fe5c902dad543f3a0f4d27888c61308205a496
-X
-(relational-database/sybase/Sybase Âü∫Á°Ä,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
-|
-Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
 â
 Yrelational-database/sybase/src/main/java/com/sybase/main/batching/DemoSybaseBatching.java,e\f\ef24dd71b6a100c7d60ff0575f7b3a0da2f8ffcc
 y
@@ -605,8 +599,6 @@ Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/HibernateÁ
 horm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/first/level/DemoFistLevelCache.java,2\d\2db725494a888bf8e605b1f5b1b78ae5b7d80773
 ë
 aorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/first/level/CacheEntity.java,9\4\9459fe33afee93957b770a5eca63d73cb95666e5
-~
-Ndatabase-orm-design/src/main/java/database/design/metadata/DbMetaDataDemo.java,8\3\83d0cad39be122fa4492048501897fe13e92b485
 â
 Yorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/batching/entity/Comment.java,0\f\0f9879ac97175c71c997c9635e60d8ce4d8f97f4
 K
@@ -631,12 +623,8 @@ sorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/
 vorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/Staff.java,7\2\7276efa983f41cb9d42fb1449b5ad1d5a6fd37d4
 µ
 Ñorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/entity/component/ComponentPersonName.java,b\3\b304faf94c22fab2018b7c36f67a7f65bc89cc1e
-ª
-äorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementPartyEntity.java,a\8\a88df0bdc6ee2f24724251eb59d087e983fb4840
 ù
 morm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/map/RightsEntity.java,c\c\cc1d4862afa0b7715f055dadb15cc1cf866f34a7
-∂
-Öorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementEntity.java,4\2\42625d06fca4e9680b98534f736880e6a4311929
 Ä
 Pdatabase-orm-design/src/main/java/database/design/types/Character data types.txt,3\a\3ace286624c53cb9a1291dd891f127ddef4374c7
 i
@@ -695,3 +683,29 @@ Z
 *relational-database/mysql/MySQL Connection,2\4\24aec85ea74c7f4df4b2600583591ccf21058e29
 f
 6relational-database/sql-server/SQL Server ÈÖçÁΩÆÊìç‰Ωú,c\6\c6ee48113b3ba6763276276891796fe0d46f42f4
+[
++relational-database/postgre-sql/PSQL Master,e\e\eee846e6c2e8c1431f24cb156aeac7abbf491ce9
+X
+(relational-database/postgre-sql/PSQL Cmd,3\8\38fac6f5e09a6da088e08fb31f976e5c33e4b046
+Z
+*relational-database/postgre-sql/PSQL Basic,6\0\60af16f794314235d690593764ed15f10c92947c
+c
+3relational-database/sql-server/SQL Server Connector,f\0\f0562054f3d04e4ea0ef19049e480c7aa085162e
+Å
+Qrelational-database/postgre-sql/src/main/java/com/psql/main/DemoPostgresJDBC.java,0\8\08da77cf8e9a2af4e77ce789d5211d8349b87948
+Ä
+Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
+w
+Gdatabase-orm-design/src/main/java/database/design/ConnectionDriver.java,5\5\55de798a2556ecf8e88cafee91f9571f2d18d5de
+Ä
+Prelational-database/sql-lite/src/main/java/com/sqllite/main/DemoTransaction.java,d\e\de294b78ab65d593e187e04fc4099f4ba097f50d
+Ü
+Vrelational-database/sql-lite/src/main/java/com/sqllite/main/DemoPreparedStatement.java,1\7\17eb63be6aaf972af927548eb6327d431f8e5731
+x
+Hrelational-database/sql-server/src/main/java/test/DemoSqlServerJDBC.java,4\a\4a91282e698ebaebc0b1563cb8bd6d77c18a58e6
+W
+'relational-database/postgre-sql/pom.xml,9\e\9e622c3f443856cc45abe9c6a5afebdb1be97806
+ª
+äorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementPartyEntity.java,a\8\a88df0bdc6ee2f24724251eb59d087e983fb4840
+∂
+Öorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementEntity.java,4\2\42625d06fca4e9680b98534f736880e6a4311929
