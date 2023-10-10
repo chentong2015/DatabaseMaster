@@ -1,4 +1,5 @@
-Global Options 所有的全局参数选项
+TODO. Global Options 所有的全局参数选项
+https://docs.liquibase.com/parameters/home.html
 
       --always-override-stored-logic-schema=PARAM
                              When generating SQL for createProcedure, should the procedure schema be forced to the default schema if

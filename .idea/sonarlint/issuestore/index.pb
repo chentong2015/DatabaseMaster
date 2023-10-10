@@ -105,8 +105,6 @@ uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 yorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/sub_select/Order.java,2\5\25b454906154d3eaa9203095d5fe9701bdae5ea6
 ¯
 orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_type/Employee.java,b\6\b6a1541482767c8e2e2244820f0e2afb0802f7de
-²
-orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_type/Department.java,6\d\6d846fae183ea7ad7e450ee819d101e5d0284bed
 
 ^orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/natural_id/Natural-Idç”Ÿæˆç­–ç•¥,7\0\70412a5711299c9215fb2d66b358436e7cdf1bdb
 š
@@ -289,10 +287,6 @@ X
 Odatabase-orm-design/src/main/java/database/design/bacthing/Batchingæ‰¹é‡æ‰§è¡Œ,4\f\4fc03b64dde4bf0eb0831039cae2e199288403e3
 R
 "orm-liquibase/Databaseè½¬æ¢å·¥å…·,7\6\76eb7893b2da28cd58c9c25e7c40f7e131472fc9
-W
-'orm-liquibase/Liquibase Commands Script,9\d\9d691b559f75513ca531b87f14cdfb9c95f186dd
-V
-&orm-liquibase/Liquibase Global Options,1\7\17ad2b395531891dd8f83089ac453d478fd5b03e
 R
 "orm-liquibase/Liquibase æ•™ç¨‹.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
 Y
@@ -425,10 +419,6 @@ X
 Rdatabase-orm-design/src/main/java/database/design/procedure/CallableStatement.java,7\d\7d99f4e7e0ef66bf582456801145e8212201a74c
 ¥
 uorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/query/DemoHqlRawQuery.java,8\4\84141a520fe2860d374a05865642c83a54907830
-]
--orm-liquibase/liquibase-core-4-8-test/pom.xml,d\3\d399997cc8255c8fc9607aae61834da8c2bab715
-‰
-Yorm-liquibase/liquibase-core-4-8-test/src/main/java/main/DemoLiquibaseChangelogIssue.java,e\9\e996a911d56043174cdfe729ad50165b592a54b3
 £
 sorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/any_master/entities/Portfolio.java,0\5\05a5c3b82b69225b299ce05347f011540c16c6f3
 ª
@@ -709,3 +699,13 @@ W
 Šorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementPartyEntity.java,a\8\a88df0bdc6ee2f24724251eb59d087e983fb4840
 ¶
 …orm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementEntity.java,4\2\42625d06fca4e9680b98534f736880e6a4311929
+~
+Ndatabase-orm-design/src/main/java/database/design/metadata/DbMetaDataDemo.java,8\3\83d0cad39be122fa4492048501897fe13e92b485
+X
+(relational-database/sybase/Sybase åŸºç¡€,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
+X
+(relational-database/sybase/Sybase æµ‹è¯•,f\7\f773e5337da6265a967f479820b4412d1c1a6749
+|
+Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
+²
+orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_type/Department.java,6\d\6d846fae183ea7ad7e450ee819d101e5d0284bed
