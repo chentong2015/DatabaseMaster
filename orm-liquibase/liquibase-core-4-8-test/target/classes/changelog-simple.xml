@@ -3,6 +3,8 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
 
+    <!-- liquibase在执行时会检测author:id:changelog是否在databasechangelog中存在
+         如果相同的信息存在，则不会再执行其中的changeSet -->
     <changeSet author="ctong" id="101">
         <createTable tableName="TABLE_SIMPLE">
             <column name="M_ID" type="numeric(10,0)">

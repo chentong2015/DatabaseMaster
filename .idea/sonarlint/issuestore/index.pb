@@ -347,8 +347,6 @@ lorm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testin
 ~orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/LazyCollection/Worker.java,e\0\e04185a97f2280f5dcd6d703c63a773354b4799f
 Ø
 orm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/LazyCollection/Company.java,c\5\c574cd139f1295aaf48590a42f53bc68441536c4
-}
-Mdatabase-orm-design/src/main/java/database/design/fectching/DemoFetching.java,7\c\7c1175217d130622832bb183d4208e3a659a9a05
 ¢
 rorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/FetchingÈÖçÁΩÆ,0\f\0f11fb5deb89b061904b50d47f69d877b625e685
 ™
@@ -685,8 +683,6 @@ c
 Qrelational-database/postgre-sql/src/main/java/com/psql/main/DemoPostgresJDBC.java,0\8\08da77cf8e9a2af4e77ce789d5211d8349b87948
 Ä
 Prelational-database/sql-server/src/main/java/batching/DemoSqlServerBatching.java,4\0\4099c7cca1e3204dc3a46d7a104fa816c558116d
-w
-Gdatabase-orm-design/src/main/java/database/design/ConnectionDriver.java,5\5\55de798a2556ecf8e88cafee91f9571f2d18d5de
 Ä
 Prelational-database/sql-lite/src/main/java/com/sqllite/main/DemoTransaction.java,d\e\de294b78ab65d593e187e04fc4099f4ba097f50d
 Ü
@@ -699,8 +695,6 @@ W
 äorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementPartyEntity.java,a\8\a88df0bdc6ee2f24724251eb59d087e983fb4840
 ∂
 Öorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/mappings/element/collection/MasterAgreementEntity.java,4\2\42625d06fca4e9680b98534f736880e6a4311929
-~
-Ndatabase-orm-design/src/main/java/database/design/metadata/DbMetaDataDemo.java,8\3\83d0cad39be122fa4492048501897fe13e92b485
 X
 (relational-database/sybase/Sybase Âü∫Á°Ä,c\7\c71d89c895188df95e9d5f8cbce833557cbeced9
 X
@@ -709,3 +703,9 @@ X
 Lrelational-database/sybase/src/main/java/com/sybase/main/DemoSybaseJDBC.java,6\f\6fe5d5d2d3463b61fbfb8ce1f648b7adddea0067
 ≤
 Åorm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5/annotation/fetching/fetching_type/Department.java,6\d\6d846fae183ea7ad7e450ee819d101e5d0284bed
+W
+'orm-liquibase/Liquibase Commands Script,9\d\9d691b559f75513ca531b87f14cdfb9c95f186dd
+R
+"orm-liquibase/Liquibase Properties,0\c\0c73a56510460f78f7900c708454f6357a50389e
+]
+-orm-liquibase/liquibase-core-4-8-test/pom.xml,d\3\d399997cc8255c8fc9607aae61834da8c2bab715

@@ -1,7 +1,6 @@
 package main;
 
 import liquibase.Contexts;
-import liquibase.LabelExpression;
 import liquibase.Liquibase;
 import liquibase.database.Database;
 import liquibase.database.DatabaseFactory;
@@ -31,12 +30,12 @@ public class DemoLiquibaseIssues {
 
         // 自定义生成到database中的changelog表名称
         Database database = DatabaseFactory.getInstance().findCorrectDatabaseImplementation(jdbcConnection);
-        database.setDatabaseChangeLogTableName("databasechangelog_sub");
-        database.setDatabaseChangeLogLockTableName("databasechangeloglock_sub");
+        // database.setDatabaseChangeLogTableName("databasechangelog_sub");
+        // database.setDatabaseChangeLogLockTableName("databasechangeloglock_sub");
 
         String changelog = "changelog-simple.xml";
         try (Liquibase liquibase = new Liquibase(changelog, new ClassLoaderResourceAccessor(), database)) {
-            liquibase.update(new Contexts(), new LabelExpression());
+            liquibase.update(new Contexts());
         } catch (LiquibaseException e) {
             e.printStackTrace();
         }
