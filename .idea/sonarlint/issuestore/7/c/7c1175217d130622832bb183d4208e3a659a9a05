@@ -1,0 +1,12 @@
+
+c
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(·Ð£ùøÿÿÿÿ
+b
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµþÿÿÿÿ
+H
+java:S1135
+"2Complete the task associated to this TODO comment.(Â©¤Ö
+g
+java:S1854"ERemove this useless assignment to local variable "resultSetMetaData".(ûíË¡øÿÿÿÿ8ÕÝ´è³1
+X
+java:S1481"6Remove this unused "resultSetMetaData" local variable.(ûíË¡øÿÿÿÿ8ØÝ´è³1

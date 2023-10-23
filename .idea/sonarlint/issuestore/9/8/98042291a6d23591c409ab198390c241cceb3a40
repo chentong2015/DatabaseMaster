@@ -1,0 +1,7 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(‘Ş¸Ûüÿÿÿÿ
+V	java:S125!"<This block of commented-out lines of code should be removed.(¼Á¸ˆüÿÿÿÿ
+K
+java:S1068"0Remove this unused "oracleString" private field.(Ó´êºÿÿÿÿÿ
+R
+java:S1068"7Remove this unused "sqlServerConnectStr" private field.(Çò³§ÿÿÿÿÿ

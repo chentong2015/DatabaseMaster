@@ -251,18 +251,12 @@ porm-jpa-hibernate/native-hibernate5-api-annotation/src/main/java/com/hibernate5
 borm-jpa-hibernate/native-hibernate5-api-xml/src/main/java/com/hibernate5/testing/entity/Event.java,b\f\bf1fa06514404b5bb824402e1df2cd06827d6ec0
 �
 ]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/query_cache/查询缓存,5\e\5edb1f90a3e9b18db49362df35d04c200dc441cf
-�
-horm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/SecondCacheEntity.java,1\7\17b2e6ca5946163da4fed332a3af4e20036f13d8
 c
 3relational-non-database/document-db-mongodb/pom.xml,d\0\d003cb2841b15b22fcbd88c5a4fdf107d4bb7034
 ~
 Ndatabase-orm-design/src/main/java/storage/engine/design/InnoDB/InnoDB缓存池,0\1\01e664e585ff8101d5ee5e210df1c63fb80a57a0
-�
-korm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/DemoSecondLevelCache.java,b\5\b52352c8a8bfef9f223dcd92f41e9ff367b4792d
 �
 ]orm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/HibernateStatistics.java,d\9\d95c12b0d05c7d4cd2a5aa56d4987f8efecaa2e1
-�
-gorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/0. 二级缓存依赖,4\5\455af2e03dc8414910d8dc917a3188ee9eadf4bf
 O
 relational-non-database/pom.xml,3\a\3a9d5bf6fd1042eb3eacb58b141f01bf11d8cb8d
 �
@@ -513,8 +507,6 @@ Nrelational-database/postgre-sql/src/main/java/com/psql/main/function/functions
 Lrelational-database/postgre-sql/src/main/java/com/psql/main/trigger/triggers,f\5\f50c06ce2d1abedc09af9a8d2c774b959a532168
 w
 Grelational-database/postgre-sql/src/main/java/com/psql/main/psql config,7\4\740d210d7e55c2441190fc44649dd3c6dbd94d0d
-X
-(orm-jpa-hibernate/Hibernate 进阶教程,b\6\b604e1421f5ceeaec16edee761a8da30c5e38256
 �
 Yrelational-database/postgre-sql/src/main/java/com/psql/main/batching/Batching性能调优,a\c\acadeebde5e53df4ab69cc549ded92bdf1f7a34b
 �
@@ -579,10 +571,6 @@ v
 Fdatabase-orm-design/src/main/java/database/design/types/JDBCTypes.java,c\e\cee3132c774494524d149743217f13702b0d73cd
 �
 eorm-jpa-hibernate/native-hibernate6-api/src/main/java/hibernate/framework/apis/entity/EntityDemo.java,f\4\f44a51b9b464c6a16c893b2f15207b06d7585e7c
-f
-6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
-�
-Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/Hibernate缓存设计,c\3\c38428e38a2203f0a58a2ed2d26bf08a2ad3d9a7
 �
 horm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/first/level/DemoFistLevelCache.java,2\d\2db725494a888bf8e605b1f5b1b78ae5b7d80773
 �
@@ -709,3 +697,13 @@ R
 "orm-liquibase/Liquibase Properties,0\c\0c73a56510460f78f7900c708454f6357a50389e
 ]
 -orm-liquibase/liquibase-core-4-8-test/pom.xml,d\3\d399997cc8255c8fc9607aae61834da8c2bab715
+�
+Qorm-liquibase/liquibase-core-4-8-test/src/main/java/main/DemoLiquibaseIssues.java,9\8\98042291a6d23591c409ab198390c241cceb3a40
+w
+Gdatabase-orm-design/src/main/java/database/design/ConnectionDriver.java,5\5\55de798a2556ecf8e88cafee91f9571f2d18d5de
+~
+Ndatabase-orm-design/src/main/java/database/design/metadata/DbMetaDataDemo.java,8\3\83d0cad39be122fa4492048501897fe13e92b485
+X
+(orm-jpa-hibernate/Hibernate 进阶教程,b\6\b604e1421f5ceeaec16edee761a8da30c5e38256
+}
+Mdatabase-orm-design/src/main/java/database/design/fectching/DemoFetching.java,7\c\7c1175217d130622832bb183d4208e3a659a9a05
