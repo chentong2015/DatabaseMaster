@@ -33,22 +33,3 @@ CREATE TABLE IF NOT EXISTS public.t_person (
     city text,
     CONSTRAINT t_person_pkey PRIMARY KEY (id)  -- 自定义主键约束的名称
 )
-
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (1, 'Ali', 23, 'java', 2000, 'new york');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (2, 'Paul', 33, 'c++', 2700, 'london');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (3, 'Alex', 27, 'php', 2400, 'paris');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (4, 'David', 29, 'java', 3000, 'dubai');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (5, 'Rody', 40, 'java', 5000, 'paris');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (6, 'Mark', 19, 'c#', 6500, 'new york');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (7, 'Mark TB', 20, 'html', 2200, 'beijing');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (8, 'Ali HT', 33, 'node.js', 2800, 'shanghai');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (9, 'Victor', 27, 'java', 4500, 'new york');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (10, 'Nicoals', 30, 'c++', 4000, 'paris');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (11, 'Kim', 60, 'desgin', 6000, 'tokyo');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (12, 'Allen', 23, 'database', 1000, 'syney');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (13, 'Alan', 21, 'java', 2500, 'Mexico');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (14, 'Tom', 16, 'c++', 3500, 'new york');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (15, 'Toky', 34, 'php', 4700, 'hong kong');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (16, 'Jello', 45, 'java', 3900, 'milan');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (17, 'Hello', 65, 'java', 7000, 'paris');
-INSERT INTO public.t_person(id, name, age, team, salary, city) VALUES (18, 'James', 54, 'javascript', 6000, 'singapore');

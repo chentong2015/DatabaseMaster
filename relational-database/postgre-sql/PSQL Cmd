@@ -1,12 +1,13 @@
 TODO. PSQL的安装和启动
 1. 使用Task Manager来启动数据库服务器，可以设置开机启动
-   PSQL Installer会将psql service添加的任务管理器的services服务中
-   "services.msc" 在service服务上自动设置启动
+PSQL Installer会将psql service添加的任务管理器的services服务中
+"services.msc" 在service服务上自动设置启动
+
 2. pg_ctl命令行启动
-   C:\PostgreSQL\bin>pg_ctl.exe --help 查看使用方式
-   C:\PostgreSQL\bin>pg_ctl.exe start -D "C:\Program Files\PostgreSQL\14\data"
-   C:\PostgreSQL\bin>pg_ctl.exe restart -D "C:\Program Files\PostgreSQL\14\data"
-   C:\PostgreSQL\bin>pg_ctl.exe stop -D "C:\Program Files\PostgreSQL\14\data"
+C:\PostgreSQL\bin>pg_ctl.exe --help 查看使用方式
+C:\PostgreSQL\bin>pg_ctl.exe start -D "C:\Program Files\PostgreSQL\14\data"
+C:\PostgreSQL\bin>pg_ctl.exe restart -D "C:\Program Files\PostgreSQL\14\data"
+C:\PostgreSQL\bin>pg_ctl.exe stop -D "C:\Program Files\PostgreSQL\14\data"
 
 命令行连接Psql, 可以连接远程host的服务器
 C:\PostgreSQL\bin>psql.exe -U postgres
@@ -14,20 +15,21 @@ C:\PostgreSQL\bin>psql.exe -U postgres
 C:\PostgreSQL\bin>psql -h HOST_NAME -U username
    Password for user postgres: ****
 
->\l              list databases 显示所有创建的数据库
->\c db_name1     connect 连接到一个指定的数据库
->\c db_name2     再切换到另外一个数据库
->\dt             shows all tables in the current schema
->\d table_name   show one table infos 显示指定表的信息
+Window pgAdmin无法启动问题: 清空(同版本)冲突文件夹
+C:\Users\CHEN Tong\AppData\Roaming\pgAdmin\pgadmin.db
 
->create database
->create table
->\d
->insert into
->select * from
->update table set
->delete from table
-
->exit/quit
+> \l              list databases 显示所有创建的数据库
+> \c db_name1     connect 连接到一个指定的数据库
+> \c db_name2     再切换到另外一个数据库
+> \dt             shows all tables in the current schema
+> \d table_name   show one table infos 显示指定表的信息
+> create database
+> create table
+> \d
+> insert into
+> select * from
+> update table set
+> delete from table
+> exit/quit
 
 
