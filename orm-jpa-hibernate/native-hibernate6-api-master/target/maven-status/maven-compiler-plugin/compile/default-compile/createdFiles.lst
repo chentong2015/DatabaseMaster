@@ -8,9 +8,12 @@ naming\strategies\MyImplicitNamingStrategy.class
 caching\HibernateStatistics.class
 identifiers\custom\MyStoredTableIdGenerator.class
 naming\strategies\MyPhysicalNamingStrategy.class
+dialect\DialectResolverTemplate.class
 caching\first\level\DemoFistLevelCache.class
+metadata\entity\LabelEntity.class
 identifiers\IdGeneratorType.class
 metadata\MetadataSourcesHelper.class
+metadata\MetadataSourcesTest.class
 caching\query_cache\QueryCacheEntity.class
 batching\DemoBatchingEntityManager.class
 batching\entity\Comment.class
@@ -20,4 +23,6 @@ batching\DemoBatchingSession.class
 identifiers\custom\EntityIdGenerator.class
 naming\strategies\MyPhysicalNamingStrategyStandardImpl.class
 caching\first\level\CacheEntity.class
+metadata\entity\TradeEntity.class
 batching\entity\Post.class
+metadata\entity\BaseEntity.class

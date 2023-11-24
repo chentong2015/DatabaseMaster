@@ -1,0 +1,5 @@
+com\sqllite\main\DemoTransaction.class
+com\sqllite\main\model\Datasource.class
+com\sqllite\main\DemoPreparedStatement.class
+com\sqllite\main\BaseSQLiteTester.class
+com\sqllite\main\model\Album.class

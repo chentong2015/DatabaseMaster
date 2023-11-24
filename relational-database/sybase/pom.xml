@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>relational-db-sybase</artifactId>
+    <artifactId>sybase</artifactId>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
@@ -18,15 +18,13 @@
     </properties>
 
     <dependencies>
-        <!-- sybase jdbc只能添加在依赖的最后(last in the classpath) -->
+        <!-- sybase jdbc只能添加在依赖的最后(last in the classpath)
         <dependency>
             <groupId>sybase</groupId>
             <artifactId>jconn4</artifactId>
-            <version>4.0</version>
-
-            <!-- 从System系统路径添加指定的JDBC Driver -->
+            <version>4.0</version
             <scope>system</scope>
             <systemPath>C:/SAP/jConnect-16_0/classes/jconn4.jar</systemPath>
-        </dependency>
+        </dependency> -->
     </dependencies>
 </project>

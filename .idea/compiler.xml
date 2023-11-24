@@ -7,17 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="database-orm-design" />
+        <module name="hyper-sql" />
+        <module name="postgre-sql" />
+        <module name="sql-server" />
+        <module name="liquibase-core-4-18" />
+        <module name="orm-mybatis" />
+        <module name="mysql" />
+        <module name="native-hibernate6-api" />
         <module name="oracle" />
         <module name="sybase" />
         <module name="native-hibernate5-api-annotation" />
-        <module name="hyper-sql" />
         <module name="liquibase-core-4-5" />
-        <module name="postgre-sql" />
         <module name="document-db-mongodb" />
         <module name="liquibase-core-basic" />
         <module name="native-hibernate6-api-master" />
         <module name="jakarta-persistence-api" />
-        <module name="sql-server" />
         <module name="h2-database" />
         <module name="test-hibernate" />
         <module name="javax-persistence-api" />
@@ -25,10 +29,6 @@
         <module name="native-hibernate5-api-xml" />
         <module name="liquibase-core-4-8-test" />
         <module name="entity-class-parser" />
-        <module name="liquibase-core-4-18" />
-        <module name="orm-mybatis" />
-        <module name="mysql" />
-        <module name="native-hibernate6-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

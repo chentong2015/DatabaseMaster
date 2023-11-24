@@ -4,15 +4,6 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * FACADE模式
- * 1. 为一组具有复杂且全面的接口的对象提供一个简单且特定的接口
- * 2. Datasource隐藏java.sql的复杂性，关于数据库的操作都是透过Datasource来实现
- * 大数据库的设计模式：
- * 1. 数据库的连接Connection来自Connection pool
- * 2. 针对每一个table创建一个model class
- * 3. 封装在数据库模型类型中的方法，不应该对外暴露实现的细节，比如：
- */
 public class Datasource {
 
     private Connection connection;

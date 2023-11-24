@@ -4,7 +4,7 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="hibernate.framework.apis.mappings.many.to.one.StudentAddress" schema="public" table="t_stu_address">
+    <class name="hibernate.framework.apis.mappings.many.to.one.model.StudentAddress" schema="public" table="t_stu_address">
         <id name="id" column="id">
             <generator class="native"/>
         </id>

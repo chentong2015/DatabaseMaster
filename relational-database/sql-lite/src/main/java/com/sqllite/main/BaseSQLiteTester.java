@@ -2,11 +2,8 @@ package com.sqllite.main;
 
 import java.sql.*;
 
-// sqlite-jdbc-3.20.1.jar 内置提供默认的DB数据库, 不需要在做配置, 内置指定的版本
-// DB Browser for SQLite 数据库GUI用户操作界面(前端)
 public class BaseSQLiteTester {
 
-    // 确定db的完整路径
     public static final String DB_NAME = "demo.db";
     public static final String CONNECTION_STRING = "jdbc:sqlite:" + DB_NAME;
 

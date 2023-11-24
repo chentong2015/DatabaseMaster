@@ -1,11 +1,9 @@
 index\IndexDataStructure.class
 logging\InnoDBRedoLog.class
-transaction\Transaction.class
 batching\MySqlBatching.class
 distributed\id\MysqlAutoIncrementId.class
-transaction\mvcc\TransactionConcurrencyMvcc.class
 MysqlOptimization.class
 caching\MysqlServerCache.class
-transaction\TransactionSpecification.class
 index\IndexSpecification.class
 locking\ReadWriteLock.class
+transaction\TransactionConcurrencyMvcc.class

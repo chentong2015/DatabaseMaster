@@ -149,8 +149,6 @@ U
 %relational-database/hyper-sql/pom.xml,0\8\0833ec567e3de17623e300c4dcb130ea3b0cd2c7
 n
 >relational-database/mysql/src/main/java/MysqlOptimization.java,9\8\98881886a44e1b11da99ccd264d4381e24f771f6
-}
-Mdatabase-orm-design/src/main/java/storage/engine/design/Index/数据库索引,7\a\7a94c837182a2648e09e70cec73c444c3bce3a32
 �
 gorm-jpa-hibernate/jakarta-persistence-api/src/main/java/com/hibernate/entity/manager/entity/Sample.java,9\e\9ef3ae6c890748a3df459d3591b5f3cf08ed2fe1
 �
@@ -279,8 +277,6 @@ X
 (orm-liquibase/liquibase-core-4-5/pom.xml,8\9\89b9683de09777a0ca946b71754401d189b246dc
 
 Odatabase-orm-design/src/main/java/database/design/bacthing/Batching批量执行,4\f\4fc03b64dde4bf0eb0831039cae2e199288403e3
-R
-"orm-liquibase/Database转换工具,7\6\76eb7893b2da28cd58c9c25e7c40f7e131472fc9
 R
 "orm-liquibase/Liquibase 教程.txt,1\1\110a318403fb2e6bfc0575352a5949dfb4b96ade
 Y
@@ -707,3 +703,17 @@ X
 (orm-jpa-hibernate/Hibernate 进阶教程,b\6\b604e1421f5ceeaec16edee761a8da30c5e38256
 }
 Mdatabase-orm-design/src/main/java/database/design/fectching/DemoFetching.java,7\c\7c1175217d130622832bb183d4208e3a659a9a05
+�
+horm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/SecondCacheEntity.java,1\7\17b2e6ca5946163da4fed332a3af4e20036f13d8
+�
+gorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/0. 二级缓存依赖,4\5\455af2e03dc8414910d8dc917a3188ee9eadf4bf
+�
+korm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/second/level/DemoSecondLevelCache.java,b\5\b52352c8a8bfef9f223dcd92f41e9ff367b4792d
+f
+6orm-jpa-hibernate/native-hibernate6-api-master/pom.xml,1\f\1fa0a6e3e0db381939108795ec773265128dee6e
+�
+Zorm-jpa-hibernate/native-hibernate6-api-master/src/main/java/caching/Hibernate缓存设计,c\3\c38428e38a2203f0a58a2ed2d26bf08a2ad3d9a7
+R
+"orm-liquibase/Database转换工具,7\6\76eb7893b2da28cd58c9c25e7c40f7e131472fc9
+}
+Mdatabase-orm-design/src/main/java/storage/engine/design/Index/数据库索引,7\a\7a94c837182a2648e09e70cec73c444c3bce3a32

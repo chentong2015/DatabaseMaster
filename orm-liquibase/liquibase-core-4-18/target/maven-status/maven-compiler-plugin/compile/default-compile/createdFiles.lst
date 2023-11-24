@@ -3,4 +3,3 @@ main\snapshot\FilteringIndexSnapshotGeneratorTemp.class
 main\snapshot\MyColumnSnapshotGenerator.class
 main\LiquibaseTester.class
 main\snapshot\MyIndexSnapshotGenerator.class
-main\LiquibaseUtilTester.class

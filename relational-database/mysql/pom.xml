@@ -10,10 +10,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>relational-db-mysql</artifactId>
+    <artifactId>mysql</artifactId>
 
     <dependencies>
-        <!-- MySql JDBC Driver -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>

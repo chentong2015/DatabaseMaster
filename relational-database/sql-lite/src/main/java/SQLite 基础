@@ -1,3 +1,5 @@
+DB Browser for SQLite 数据库GUI用户操作界面(前端)
+
 SQLite特点:
 1. 轻量级，适配性高，可设计成嵌入APP的数据库
 2. 非Client-server模式，运行在同一台机器上

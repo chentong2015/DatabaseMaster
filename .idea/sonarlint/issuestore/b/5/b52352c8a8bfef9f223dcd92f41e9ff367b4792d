@@ -1,0 +1,17 @@
+
+`
+java:S2095E"EUse try-with-resources or close this "Session" in a "finally" clause.(¥ğşÿÿÿÿ
+`
+java:S2095D"EUse try-with-resources or close this "Session" in a "finally" clause.(´Ï‚‘ùÿÿÿÿ
+P
+java:S1854`":Remove this useless assignment to local variable "entity".(ƒåšü
+U
+java:S1854\":Remove this useless assignment to local variable "entity".(Ï‚ùÙûÿÿÿÿ
+\
+java:S1854X":Remove this useless assignment to local variable "entity".(Ï‚ùÙûÿÿÿÿ8øè–Ñ®0
+U
+java:S1854T":Remove this useless assignment to local variable "entity".(™öÏ³üÿÿÿÿ
+U
+java:S1854J":Remove this useless assignment to local variable "entity".(§äÀşÿÿÿÿ
+H
+java:S1144h"2Remove this unused private "persistEntity" method.(÷É®
