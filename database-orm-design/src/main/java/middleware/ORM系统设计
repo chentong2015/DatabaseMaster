@@ -1,4 +1,17 @@
-如何设计一个ORM层的中间件 ? (参考Hibernate, Mybatis)
+TODO: JDBC的弊端
+1. jdbc底层没有使用连接池，操作数据库需要频繁的连接和关闭链接，消耗资源
+2. jdbc的sql写在代码中，如果修改需要重新编译
+3. 使用PreparedStatement预编译，需要用对parameterIndex123，不利于维护
+4. 需要对返回的ResultSet结果进行解析
+
+TODO: ORM(Object Relational Mapping)层的精髓: Map映射 / Row Mapper思想
+对于面向对象(类型安全)编程语言，实现不同"类型系统"数据之间的转换
+Java类型               数据库表字段      数据库类型
+java.lang.Integer     id              Integer
+java.lang.String      name            VARCHAR
+java.lang.String      context         LONGVARCHAR
+
+如何设计一个ORM层的中间件? JPA是一种ORM层的规范 !!
    1. public api   提供给用户使用的API, 注明使用文档
    2. enum types   提供操作的枚举类型，定义使用范围
    3. exception    定义中间件抛出的异常类型

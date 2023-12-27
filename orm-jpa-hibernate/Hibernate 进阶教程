@@ -24,6 +24,3 @@ TODO. Hibernate(ORM层框架)在优化性能方面做了哪些配置或设计 ?
  - Flushing 刷新同步Context和DB的数据
  - Locking  保证事务的有效性
  - Inverse  关联关系的维护端，减少Update语句的执行
-
-Hibernate升级策略:
-当从低版本想高版本升级时，考虑先升级hibernate-core相关的版本，以适配版本的兼容性

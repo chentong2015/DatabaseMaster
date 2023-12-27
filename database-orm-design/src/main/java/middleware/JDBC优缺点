@@ -1,5 +1,0 @@
-TODO: JDBC的弊端
-1. jdbc底层没有使用连接池，操作数据库需要频繁的连接和关闭链接，消耗资源
-2. jdbc的sql写在代码中，如果修改需要重新编译
-3. 使用PreparedStatement预编译，需要用对parameterIndex123，不利于维护
-4. 还需要对返回的ResultSet结果解析
