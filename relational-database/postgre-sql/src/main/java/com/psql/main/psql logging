@@ -1,8 +1,0 @@
-PSQL Server默认路径 C:\Program Files\PostgreSQL\14\data\log
-- 日志显示底层数据库在执行Query操作时抛出的错误详细信息
-- 如果这里清空所有日志文件，则需要重启Server，恢复一个日志文件txt
-  postgresql-2022-08-31_000000.txt
-  postgresql-2022-08-23_161135.txt
-  postgresql-2022-08-12_100938.txt
-
-

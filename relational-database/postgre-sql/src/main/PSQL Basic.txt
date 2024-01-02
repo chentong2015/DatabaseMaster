@@ -1,7 +1,7 @@
 对字段使用function再模糊查询(like匹配区分大小写)
 SELECT * FROM public.t_citizen t where trim(t.language) LIKE '%.US';
 
-===========================================================================================================
+===============================================================================================
 列的约束条件
 CREATE TABLE t_test (
    id         integer     PRIMARY KEY,     -- primary key
@@ -19,9 +19,9 @@ INSERT INTO public.t_test(
 	id, temp_id, name, fullname, value, table_id)
 	VALUES (1, 100, 'name 1', 'full name 1', 50, 3); --  受到外键id条件的约束
 
-ALTER TABLE table_name DROP CONSTRAINT some_name;        -- 每一个约束都有一个名字，需要删除指定的名称
+ALTER TABLE table_name DROP CONSTRAINT some_name;     -- 每一个约束都有一个名字，需要删除指定的名称
 
-===========================================================================================================
+===============================================================================================
 -- DROP TABLE IF EXISTS public.t_person;
 
 CREATE TABLE IF NOT EXISTS public.t_person (

@@ -11,25 +11,17 @@ public class DemoPostgresJDBC {
     private static String url = "jdbc:postgresql://localhost:5432/my_database?reWriteBatchedInserts=true";
 
     public static void main(String[] args) throws SQLException {
-        try (Connection connection = DriverManager.getConnection(url, "postgres", "admin")) {
-            // 获取默认的schema: public
-            connection.getSchema();
-
-            // PostgreSQL JDBC Connection默认开启AutoCommit=true
-            connection.setAutoCommit(false);
+        try (Connection connection = DriverManager.getConnection(url, "postgres", "")) {
+            connection.getSchema(); // Default Schema: public
+            connection.setAutoCommit(false); // Enable by default: AutoCommit=true !!
             System.out.println(connection.getAutoCommit());
 
-            // 注意这里不同DB的列名称有所区别，在匹配namePattern时需要动态匹配
-            ResultSet resultSet = connection.getMetaData()
-                    .getColumns(null, null, "t_batching_comment", "Not_Exist");
-            System.out.println(resultSet.next());
-
-            // 返回的是受影响的行数，准确的被修改的行数
-            // String query = "DELETE FROM t_batching_comment WHERE id<5";
-            // try (Statement statement = connection.createStatement()) {
-            //     statement.executeUpdate(query);
-            // }
-
+            ResultSet resultSet = connection.createStatement().executeQuery("select * from t_test");
+            while (resultSet.next()) {
+                System.out.println(resultSet.getInt("id"));
+                System.out.println(resultSet.getString("name"));
+            }
+            System.out.println("Connection Done");
         }
     }
 }

@@ -1,15 +1,14 @@
 TODO. PSQL的安装和启动
 1. 使用Task Manager来启动数据库服务器，可以设置开机启动
-PSQL Installer会将psql service添加的任务管理器的services服务中
-"services.msc" 在service服务上自动设置启动
-
+  PSQL Installer会将psql service添加的任务管理器的services服务中
+  "services.msc" 在service服务上自动设置启动
 2. pg_ctl命令行启动
-C:\PostgreSQL\bin>pg_ctl.exe --help 查看使用方式
-C:\PostgreSQL\bin>pg_ctl.exe start -D "C:\Program Files\PostgreSQL\14\data"
-C:\PostgreSQL\bin>pg_ctl.exe restart -D "C:\Program Files\PostgreSQL\14\data"
-C:\PostgreSQL\bin>pg_ctl.exe stop -D "C:\Program Files\PostgreSQL\14\data"
+  C:\PostgreSQL\bin>pg_ctl.exe --help 查看使用方式
+  C:\PostgreSQL\bin>pg_ctl.exe start -D "C:\Program Files\PostgreSQL\14\data"
+  C:\PostgreSQL\bin>pg_ctl.exe restart -D "C:\Program Files\PostgreSQL\14\data"
+  C:\PostgreSQL\bin>pg_ctl.exe stop -D "C:\Program Files\PostgreSQL\14\data"
 
-命令行连接Psql, 可以连接远程host的服务器
+TODO. CMD命令行连接Psql, 可以连接远程host的服务器
 C:\PostgreSQL\bin>psql.exe -U postgres
    Password for user postgres: admin
 C:\PostgreSQL\bin>psql -h HOST_NAME -U username
@@ -17,6 +16,13 @@ C:\PostgreSQL\bin>psql -h HOST_NAME -U username
 
 Window pgAdmin无法启动问题: 清空(同版本)冲突文件夹
 C:\Users\CHEN Tong\AppData\Roaming\pgAdmin\pgadmin.db
+
+PSQL Server默认路径 C:\Program Files\PostgreSQL\14\data\log
+- 日志显示底层数据库在执行Query操作时抛出的错误详细信息
+- 如果这里清空所有日志文件，则需要重启Server，恢复一个日志文件txt
+  postgresql-2022-08-31_000000.txt
+  postgresql-2022-08-23_161135.txt
+  postgresql-2022-08-12_100938.txt
 
 > \l              list databases 显示所有创建的数据库
 > \c db_name1     connect 连接到一个指定的数据库
