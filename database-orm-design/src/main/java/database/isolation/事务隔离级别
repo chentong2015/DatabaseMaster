@@ -1,4 +1,4 @@
- TODO: 事务的4种隔离级别: 将不同的事务隔离开来处理
+事务的4种隔离级别: 将不同的事务隔离开来处理
  > set session transaction isolation level read committed;
  > select @@tx_isolation; 查看隔离级别
 
