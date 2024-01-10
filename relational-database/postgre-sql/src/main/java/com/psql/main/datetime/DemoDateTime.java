@@ -22,7 +22,7 @@ public class DemoDateTime {
     // Output: List of java.sql.Timestamp
     public static List<Timestamp> getAvailableSlots(LocalDate localDate) throws Exception {
         List<Timestamp> slotsList = new ArrayList<>();
-        String url = "jdbc:postgresql://localhost:5432/my_database?reWriteBatchedInserts=true";
+        String url = "jdbc:postgresql://localhost:5432/my_database";
         String query = "select * from t_calendar where kind = 'opening' and timestamp >= ? and timestamp <= ?";
         try (Connection connection = DriverManager.getConnection(url, "postgres", "");
              PreparedStatement statement = connection.prepareStatement(query)) {
@@ -31,7 +31,8 @@ public class DemoDateTime {
             statement.setDate(2, Date.valueOf(localDate.plusDays(8)));
             ResultSet results = statement.executeQuery();
             while (results.next()) {
-                // results.getDate("timestamp"); 获取纯粹的Date日期时间, 对应Date JDBC Type类型
+                // 获取纯粹的Date日期时间, 对应Date JDBC Type类型
+                // results.getDate("timestamp");
 
                 // 获取数据表中Timestamp时间戳JDBC Type类型
                 slotsList.add(results.getTimestamp("timestamp"));
