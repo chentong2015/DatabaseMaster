@@ -17,7 +17,7 @@ public class DemoDateTime {
         }
     }
 
-    // TODO. 使用的类型全部统一为java.sql的类型
+    // TODO. 提供的输入为Date日期，只需要指明那一天即可，返回的是slots时间戳
     // Input: java.util.Date (有两种类型) or java.util.LocalDate
     // Output: List of java.sql.Timestamp
     public static List<Timestamp> getAvailableSlots(LocalDate localDate) throws Exception {
@@ -29,6 +29,10 @@ public class DemoDateTime {
 
             statement.setDate(1, Date.valueOf(localDate));
             statement.setDate(2, Date.valueOf(localDate.plusDays(8)));
+
+            // 根据传递的类型直接设置时间戳
+            // statement.setTimestamp(3, Timestamp.valueOf(localDate.atStartOfDay()));
+
             ResultSet results = statement.executeQuery();
             while (results.next()) {
                 // 获取纯粹的Date日期时间, 对应Date JDBC Type类型
