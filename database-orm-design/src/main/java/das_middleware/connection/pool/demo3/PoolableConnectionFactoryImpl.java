@@ -1,4 +1,4 @@
-package middleware.connection.pool.demo3;
+package das_middleware.connection.pool.demo3;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

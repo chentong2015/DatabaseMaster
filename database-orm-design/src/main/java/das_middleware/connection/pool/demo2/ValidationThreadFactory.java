@@ -1,4 +1,4 @@
-package middleware.connection.pool.demo2;
+package das_middleware.connection.pool.demo2;
 
 import java.util.concurrent.ThreadFactory;
 
