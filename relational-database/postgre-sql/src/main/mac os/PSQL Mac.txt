@@ -7,11 +7,6 @@ TODO. MacOS安装PostgreSQL数据库
   ==> postgresql@15
   This formula has created a default database cluster with:
     initdb --locale=C -E UTF-8 /opt/homebrew/var/postgresql@15
-  For more details, read:
-    https://www.postgresql.org/docs/15/app-initdb.html
-
-  postgresql@15 is keg-only, which means it was not symlinked into /opt/homebrew,
-  because this is an alternate version of another formula.
 
   If you need to have postgresql@15 first in your PATH, run:
     echo 'export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"' >> ~/.zshrc
@@ -21,13 +16,17 @@ TODO. MacOS安装PostgreSQL数据库
     export CPPFLAGS="-I/opt/homebrew/opt/postgresql@15/include"
 
   To start postgresql@15 now and restart at login:
-    brew services start postgresql@15
+    > brew services start postgresql@15
 
-  Or, if you don't want/need a background service you can just run:
+  if you don't want/need a background service you can just run:
     LC_ALL="C" /opt/homebrew/opt/postgresql@15/bin/postgres -D /opt/homebrew/var/postgresql@15
 
 % brew services start postgresql@15
   ==> Successfully started `postgresql@15` (label: homebrew.mxcl.postgresql@15)
+
+% brew services stop postgresql@15
+  Stopping `postgresql@15`... (might take a while)
+  ==> Successfully stopped `postgresql@15` (label: homebrew.mxcl.postgresql@15)
 
 % ./createuser -s postgres 在使用前需要先创建特定的用户名称
 % ./createuser --interactive --pwprompt 使用交换方式来创建带密码的账户
