@@ -1,4 +1,4 @@
-package das_middleware.connection.pool.demo2;
+package datalayer.connection.pool.demo2;
 
 import java.sql.Connection;
 
