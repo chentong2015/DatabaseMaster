@@ -1,5 +1,5 @@
-main\SchemaImportExportTester.class
-main\snapshot\FilteringIndexSnapshotGeneratorTemp.class
-main\snapshot\MyColumnSnapshotGenerator.class
-main\LiquibaseTester.class
-main\snapshot\MyIndexSnapshotGenerator.class
+main/SchemaImportExportTester.class
+main/LiquibaseTester.class
+main/snapshot/MyIndexSnapshotGenerator.class
+main/snapshot/MyColumnSnapshotGenerator.class
+main/snapshot/FilteringIndexSnapshotGeneratorTemp.class

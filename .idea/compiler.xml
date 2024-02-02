@@ -7,12 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="database-orm-design" />
         <module name="oracle" />
         <module name="sybase" />
         <module name="native-hibernate5-api-annotation" />
         <module name="hyper-sql" />
         <module name="liquibase-core-4-5" />
+        <module name="relational-database-test" />
         <module name="postgre-sql" />
         <module name="liquibase-core-basic" />
         <module name="native-hibernate6-api-master" />
@@ -22,6 +22,7 @@
         <module name="test-hibernate" />
         <module name="javax-persistence-api" />
         <module name="sql-lite" />
+        <module name="orm-design" />
         <module name="native-hibernate5-api-xml" />
         <module name="liquibase-core-4-8-test" />
         <module name="liquibase-core-4-18" />

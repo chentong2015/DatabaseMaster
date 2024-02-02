@@ -1,3 +1,3 @@
-com\oracle\main\DemoOrcaleJDBC.class
-com\oracle\main\truncate\DemoOracleTruncate.class
-com\oracle\main\batching\DemoOracleBatching.class
+com/oracle/main/truncate/DemoOracleTruncate.class
+com/oracle/main/DemoOrcaleJDBC.class
+com/oracle/main/batching/DemoOracleBatching.class

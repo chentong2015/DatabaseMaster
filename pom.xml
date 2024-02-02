@@ -15,11 +15,11 @@
     </properties>
 
     <modules>
-        <module>database-orm-design</module>
         <module>orm-jpa-hibernate</module>
         <module>orm-liquibase</module>
         <module>orm-mybatis</module>
         <module>relational-database</module>
-        <module>relational-non-database</module>
+        <module>relational-database-test</module>
+        <module>orm-design</module>
     </modules>
 </project>

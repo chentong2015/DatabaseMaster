@@ -1,12 +1,10 @@
 Liquibase:
- - 开源数据库架构变更管理解决方案, 实现数据库的迁移和适配schema变更
-   An open-source database schema change management solution. Enables to manage revisions of your database changes easily.
- - Liquibase 4.5.0版本存在安全问题，最低升级到4.13.0版本
- - Oracle is better covered by liquibase, so certain features might not work on Sybase
+开源数据库架构变更管理解决方案, 实现数据库的迁移和适配schema变更
+An open-source database schema change management solution.
+Enables to manage revisions of your database changes easily.
 
-TODO. Liquibase框架封装思想
-1. 继承Connection，将连接封装到自定的MyConnection对象中
-2. 将JdbcConnection和Database包装到自定义的辅助类型LiquibaseHelper中, 控制其生命周期
+- Liquibase 4.5.0版本存在安全问题，最低升级到4.13.0版本
+- Oracle is better covered by liquibase, so certain features might not work on Sybase
 
-TODO. 支持Commands指令操作和Java代码执行操作
-配置liquibase.properties属性文件, 指定在source和target db之间changelog
+Global Options全局参数选项
+https://docs.liquibase.com/parameters/home.html

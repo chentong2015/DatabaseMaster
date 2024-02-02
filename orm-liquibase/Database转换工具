@@ -1,6 +1,0 @@
-TODO. 如何设计一个Conversion Tool数据库转换工具 ?
-底层基于Liquibase Schema数据库迁移工具，基于执行Changelog文件来实现
-1. 转换的对象: 源DB和目标DB
-2. 转换的步骤: 从源DB中提前数据和转换到目标DB，两个阶段都需要提供Filter过滤器，过滤不同DB之间的差异
-3. 提供的输入: 提供用户自定义属性配置Config properties
-4. 性能分析
