@@ -1,8 +1,0 @@
-database/timestamp/JdbcTimestamp.class
-database/metadata/MyDatabaseType.class
-database/types/JDBCTypes.class
-database/ConnectionDriver.class
-database/fectching/DemoFetching.class
-database/procedure/CallableStatement.class
-database/metadata/DbMetaDataHelper.class
-database/metadata/DbMetaDataDemo.class

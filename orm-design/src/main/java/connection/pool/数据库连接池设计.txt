@@ -1,4 +1,4 @@
-数据库连接池设计原理 ?
+TODO. 数据库连接池设计原理
 - 在系统初始化的时候，将数据库连接作为对象存储在内存中
 - 连接池管理数据库连接的建立，断开，初始连接数、连接的上下限数、每个连接的最大使用次数、最大空闲时间..
 - 用户需要访问数据库时，从连接池中取出一个已建立的空闲连接对象，使用完毕后是将连接放回连接池中
@@ -20,13 +20,8 @@
    } finally {
       ConnectionPool.freePooledObject(pooledObject);
    }
+8. 如何判断那些线程占用了数据库连接? 那些线程占用了不止一个连接 ?
+9. 如何验证连接池中所有连接的Transaction事务都正常关闭了 ?
 
-Java的开源数据库连接池:
-C3P0、Proxool、DBCP、BoneCP、Druid
-
-数据库连接池的实现:
-- org.apache.commons.dbcp2.BasicDataSource
-- Hibernate源码
-- Mybatis持久层框架
-1. 如何判断那些线程占用了数据库连接? 那些线程占用了不止一个连接 ?
-2. 如何验证连接池中所有连接的Transaction事务都正常关闭了 ?
+Java的开源数据库连接池: C3P0, Proxool, DBCP, BoneCP, Druid
+Third-party数据库连接池: commons-dbcp2, hibernate, mybatis
