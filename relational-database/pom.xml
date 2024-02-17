@@ -19,7 +19,6 @@
 
     <modules>
         <module>h2-database</module>
-        <module>hyper-sql</module>
         <module>mysql</module>
         <module>oracle</module>
         <module>postgre-sql</module>

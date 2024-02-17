@@ -1,0 +1,44 @@
+TODO. 从编程语言的类型映射到SQL数据库中存储数据的类型
+java.sql.Types JDBC Types
+[1] JDBC type code  -> CHAR
+[12] JDBC type code -> VARCHAR 对应代码中的字符串类型
+[-9] NVARCHAR
+[-16] LONGNVARCHAR
+
+SQL Data Types > Character data types
+通常支持的字符数据类型，根据存储数据的不同而选择对于的JDBC Type
+1. Char data type
+   CHAR( max-length ) 存储定长的字符长度
+   The CHAR data type stores character data, up to 32767 bytes.
+
+2. VARCHAR data type 存储变长的字符长度
+   The VARCHAR data type stores character data, up to 32767 bytes.
+
+3. LONG VARCHAR data type 存储任意长度的超长的字符长度
+   The maximum size is 2 GB minus 1 byte (23^1 - 1).
+   The LONG VARCHAR data type stores character data of arbitrary length.
+
+4. LONG NVARCHAR data type 存储任意长度的超长的"全部Unicode字符"
+   The maximum size is 2 GB minus 1 byte (23^1 - 1).
+   The LONG NVARCHAR data type stores Unicode character data of arbitrary length.
+
+5. NCHAR data type 存储指定长度的"部分Unicode字符"
+   The length must be in the range 1 to 32767. If the length is not specified, then it is 1.
+   The NCHAR data type stores Unicode character data, up to 32767 characters.
+
+6. NVARCHAR data type 存储变长度的"部分Unicode字符"
+   The length must be in the range 1 to 32767. If the length is not specified, then it is 1.
+   The NVARCHAR data type stores Unicode character data, up to 32767 characters.
+
+7. TEXT data type
+   TEXT is a domain, implemented as a LONG VARCHAR.
+
+8. NTEXT data type
+   NTEXT is a domain, implemented as a LONG NVARCHAR.
+
+9. UNIQUEIDENTIFIERSTR data type
+   UNIQUEIDENTIFIERSTR is a domain, implemented as CHAR(36).
+
+10. XML data type
+   The maximum size is 2 GB minus 1 byte (231 - 1).
+   The XML data type stores character data of arbitrary length, and is used to store XML documents.

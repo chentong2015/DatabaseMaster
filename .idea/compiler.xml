@@ -10,7 +10,6 @@
         <module name="oracle" />
         <module name="sybase" />
         <module name="native-hibernate5-api-annotation" />
-        <module name="hyper-sql" />
         <module name="liquibase-core-4-5" />
         <module name="relational-database-test" />
         <module name="postgre-sql" />
@@ -36,6 +35,7 @@
       <module name="distributed-database" target="15" />
       <module name="distributed-db" target="15" />
       <module name="document-db-mongodb" target="11" />
+      <module name="hyper-sql" target="15" />
       <module name="liquibase-core-4-18-sub" target="15" />
       <module name="native-hibernate5-upgrade" target="15" />
       <module name="native-hibernate6-api-metadata" target="15" />

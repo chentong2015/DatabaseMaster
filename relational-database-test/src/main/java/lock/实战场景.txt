@@ -2,21 +2,17 @@ Scenario 实战场景如下:
 User A selects a Student object to edit it.
 User B selects the same student to edit it.
 User A presses the save button, then user B presses the save button.
-Well, if two users edit the same data, we need to think of concurrent access.
-What should happen ?
+If two users edit the same data, we need to think of concurrent access. What should happen ?
 
 Basically, we have some options:
 1. We could prevent that user B – the later one to edit – can edit the Student object.
-
-2. The changes of user B        – the last one to press save – could overwrite the changes of user A?
+2. The changes of user B – the last one to press save – could overwrite the changes of user A?
    But B did not know that A was already editing and the changes of A might be more important.
-
-3. Should the changes of A      – the first one to press save – be successful
+3. Should the changes of A – the first one to press save – be successful
    and B gets an error message and needs to restart editing?
-
 4. Should A be successful while B is being informed about the changes
    and he can decide if we want to overwrite, merge or cancel his changes ?
 
 执行逻辑1: 需要悲观锁，需要更新数据是添加写锁
-执行逻辑2: (默认) 后一个编辑的User B能够修改前一个编辑的User A, 对于大多数的APP是合适的
+执行逻辑2: (默认)后一个编辑的User B能够修改前一个编辑的User A, 对于大多数的APP是合适的
 执行逻辑3: 需要乐观锁，后一个编辑的User将会得到数据已经被更新的通知

@@ -5,5 +5,5 @@ static view of the source database as it existed at the time of the database sna
 - 表中列的信息
 - 其他配置信息
 
-TODO. 如何使用离线的快照数据库? 在连接字符串中添加离线设置
+通过连接字符串使用离线的快照数据库
 url = "offline:oracle?snapshot=snapshot-ref.json"

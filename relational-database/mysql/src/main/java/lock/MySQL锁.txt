@@ -1,0 +1,14 @@
+操作角度:
+1. 读锁(限制更新，不限制读)                              > 共享锁 shared locks
+2. 写锁(限制更新和读，对于不会加锁的操作Select，不会阻塞冲突) > 排他锁 exclusive locks
+
+粒度范围:
+1. 表锁: READ [LOCAL] lock + [LOW_PRIORITY] WRITE lock
+   mysql> LOCK TABLES t1 READ;
+   mysql> SELECT COUNT(*) FROM t1;
+   mysql> SELECT COUNT(*) FROM t2; Session只能访问锁定的表, t2也需要用LOCK TABLES申明
+   mysql> UNLOCK TABLES;
+2. 行锁
+   lock_rec_not_cap 单个行记录上的锁
+   lock_gap         间隙锁，锁定一个区间范围(行旁边的间隙)，但不包括记录本身。目的是为了防止同一个事务的两次当前读，造成幻读
+   lock_ordinary    锁定记录本身，并且锁定上下两个间隙区间范围，目的是解决幻读问题

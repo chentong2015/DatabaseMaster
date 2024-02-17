@@ -1,0 +1,27 @@
+分析以下SQL的执行顺序 ？
+  select cat_id, count(order_id) as sales
+  from t_tab
+  where cat_id <> "c666"
+  group by cat_id
+  having count(order_id) > 10
+  order by count(order_id) desc
+  limit 100
+1. FROM先从表中筛选并过滤数据，再分组数据
+2. SELECT将符合条件的数据选择
+3. ORDER最后将选择的结果进行调整
+
+分析以下查询语句的区别(性能差异)
+  select t1.id,t1.xxx,t2.xxx
+  from t1 left join t2 on t1.id = t2.id and t1.id < 10
+
+  select t1.id,t1.xxx,t2.xxx
+  from t1 left join t2 on t1.id = t2.id
+  where t1.id < 10
+
+  select tmp_t1.id,tmp_t1.xxx,t2.xxx
+  from (
+    select * from t1 where t1.id < 10
+  ) tmp_t1 left join t2 on tmp_t1.id = t2.id
+1. 由于Join聚合查询的特殊性，加在on上的判断条件将会失效
+2. 需要在Join完之后进行额外的where条件筛选
+3. 如果查询的数据量很大，则可以先过滤表再进行Join

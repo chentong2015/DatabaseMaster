@@ -1,4 +1,6 @@
 MySQL数据库: Oracle旗下免费DB
+Mysql单机支撑的并发大约几百，不到一千，撑不起高并发
+
 安装目录下/data/数据库名称(一个库对应一个文件夹)/...  持久层数据以文件的形式存储在硬盘
 /MySQL Server 5.0/my.ini 配置文件
   max_connections=500 设置最大并发Session数目
