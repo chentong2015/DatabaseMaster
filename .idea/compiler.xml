@@ -21,9 +21,9 @@
         <module name="test-hibernate" />
         <module name="javax-persistence-api" />
         <module name="sql-lite" />
-        <module name="orm-design" />
         <module name="native-hibernate5-api-xml" />
         <module name="liquibase-core-4-8-test" />
+        <module name="orm-design-core" />
         <module name="liquibase-core-4-18" />
         <module name="entity-class-parser" />
         <module name="orm-mybatis" />

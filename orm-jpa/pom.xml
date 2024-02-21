@@ -9,12 +9,12 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>orm-design</artifactId>
+    <artifactId>orm-jpa</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>entity-class-parser</module>
-        <module>orm-design-core</module>
+        <module>jakarta-persistence-api</module>
+        <module>javax-persistence-api</module>
     </modules>
 
     <properties>

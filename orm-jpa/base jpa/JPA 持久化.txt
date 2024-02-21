@@ -1,0 +1,6 @@
+JPA 持久化方面的实现:
+- hibernate > spring data jpa
+- Mybatis
+- Batoo JPA
+- EclipseLink
+- OpenJPA
