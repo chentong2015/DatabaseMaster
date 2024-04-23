@@ -1,0 +1,13 @@
+Application Developer's Guide Oracle支持的DataType类型
+https://docs.oracle.com/cd/A58617_01/server.804/a58241/ch5.htm
+
+TODO. Oracle字符串的存储和截取
+Oracle会对存储数据进行UFT-8编码之后再存储
+Oracle对字符串编码后的长度可能会超过Column列类型的设计长度
+
+TODO. 给指定用户赋予数据库使用权限
+The user connect to database(USER_NAME) needs to have "SELECT ON SYS.DBA_RECYCLEBIN" permissions
+Set before we can perform this operation. Please run the following SQL to set permissions:
+
+SQL> GRANT SELECT ON SYS.DBA_RECYCLEBIN TO USER_NAME;
+SQL> GRANT SELECT ANY dictionary TO USER_NAME;
