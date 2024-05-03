@@ -1,4 +1,4 @@
-# Oracle创建出来的表名称全部是大写
+Oracle创建出来的表名称全部是大写
 CREATE TABLE T_BATCHING_COMMENT (
    ID NUMBER PRIMARY KEY,
    REVIEW VARCHAR2(30)  // 字符串为VARCHAR2
