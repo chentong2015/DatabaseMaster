@@ -1,0 +1,6 @@
+TODO. 数据库如何检测要执行的SQL是否正确 ?
+SQL必须符合引擎所规定的语法, 否则会抛出SQLSyntaxErrorException
+对于ORM中出现的Template模板类型的语句, 是无法之间在数据库中执行的
+
+select * from t_blog where id=#{id};  JDBC无法执行
+select * from t_blog where id=?;      MyBatis需要对其进行改写
