@@ -15,10 +15,9 @@
     </properties>
 
     <modules>
+        <module>orm-design</module>
+        <module>orm-middleware</module>
         <module>relational-database</module>
         <module>relational-database-test</module>
-        <module>orm-design</module>
-        <module>orm-jpa</module>
-        <module>orm-middleware</module>
     </modules>
 </project>

@@ -7,10 +7,6 @@
     <file url="file://$PROJECT_DIR$/orm-design/orm-design-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-design/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-design/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orm-jpa/jakarta-persistence-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orm-jpa/jakarta-persistence-api/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orm-jpa/javax-persistence-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orm-jpa/javax-persistence-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-jpa/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-jpa/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-hibernate/native-hibernate5-api-annotation/src/main/java" charset="UTF-8" />
@@ -39,5 +35,9 @@
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Java Master/JavaMasterApplications/core-apis/jakarta-persistence-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Java Master/JavaMasterApplications/core-apis/jakarta-persistence-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Java Master/JavaMasterApplications/core-apis/javax-persistence-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../Java Master/JavaMasterApplications/core-apis/javax-persistence-api/src/main/resources" charset="UTF-8" />
   </component>
 </project>

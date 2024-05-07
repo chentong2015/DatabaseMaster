@@ -40,6 +40,7 @@
       <module name="native-hibernate5-upgrade" target="15" />
       <module name="native-hibernate6-api-metadata" target="15" />
       <module name="object-db-management-system" target="1.5" />
+      <module name="orm-jpa" target="17" />
       <module name="orm-jpa-hibernate-example" target="15" />
       <module name="orm-spring-jdbc" target="15" />
       <module name="relational-non-database" target="15" />
