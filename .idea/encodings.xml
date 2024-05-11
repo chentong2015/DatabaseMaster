@@ -31,6 +31,10 @@
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-liquibase/liquibase-core-basic/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-liquibase/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-liquibase/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orm-middleware/orm-mybatis/mybatis-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orm-middleware/orm-mybatis/mybatis-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orm-middleware/orm-mybatis/mybatis-spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orm-middleware/orm-mybatis/mybatis-spring/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/src/main/java" charset="UTF-8" />

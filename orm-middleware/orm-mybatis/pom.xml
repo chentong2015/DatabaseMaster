@@ -7,6 +7,11 @@
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>pom</packaging>
+    <modules>
+        <module>mybatis-core</module>
+        <module>mybatis-spring</module>
+    </modules>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>orm-mybatis</artifactId>
@@ -17,18 +22,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.5.10</version>
-        </dependency>
-
-        <!-- 这里最好配置最新的版本Patched version: 8.0.16 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.42</version>
-        </dependency>
 
         <!-- Spring整合了mybatis -->
         <dependency>

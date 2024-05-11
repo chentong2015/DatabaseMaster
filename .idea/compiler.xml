@@ -24,9 +24,10 @@
         <module name="orm-design-core" />
         <module name="liquibase-core-4-18" />
         <module name="entity-class-parser" />
-        <module name="orm-mybatis" />
         <module name="mysql" />
         <module name="native-hibernate6-api" />
+        <module name="mybatis-spring" />
+        <module name="mybatis-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
