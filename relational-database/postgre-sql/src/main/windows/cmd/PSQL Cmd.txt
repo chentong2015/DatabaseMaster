@@ -1,0 +1,25 @@
+TODO. PSQL 命令行启动和连接
+PostgreSQL\bin>pg_ctl.exe --help 查看使用方式
+PostgreSQL\bin>pg_ctl.exe start -D "C:\Program Files\PostgreSQL\14\data"
+PostgreSQL\bin>pg_ctl.exe restart -D "C:\Program Files\PostgreSQL\14\data"
+PostgreSQL\bin>pg_ctl.exe stop -D "C:\Program Files\PostgreSQL\14\data"
+
+TODO. PSQL 默认登录用户 postgres + null password
+PostgreSQL\bin>psql.exe -U postgres
+   Password for user postgres: admin
+PostgreSQL\bin>psql -h HOST_NAME -U username
+   Password for user postgres: ****
+
+> \l              list databases 显示所有创建的数据库
+> \c db_name1     connect 连接到一个指定的数据库
+> \c db_name2     再切换到另外一个数据库
+> \dt             shows all tables in the current schema
+> \d table_name   show one table infos 显示指定表的信息
+> create database
+> create table
+> \d
+> insert into
+> select * from
+> update table set
+> delete from table
+> exit/quit

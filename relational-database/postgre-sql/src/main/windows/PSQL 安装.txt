@@ -1,0 +1,14 @@
+TODO. PSQL的安装和启动
+1. PSQL Installer会将psql service添加的任务管理器的services服务中
+   "services.msc" 在service服务上自动设置启动
+2. PSQL binary 通过命令行启动
+
+Window pgAdmin无法启动问题:
+清空(同版本)冲突文件夹 C:\Users\CHEN Tong\AppData\Roaming\pgAdmin\pgadmin.db
+
+PSQL Server默认路径 C:\Program Files\PostgreSQL\14\data\log
+- 日志显示底层数据库在执行Query操作时抛出的错误详细信息
+- 如果这里清空所有日志文件，则需要重启Server，恢复一个日志文件txt
+  postgresql-2022-08-31_000000.txt
+  postgresql-2022-08-23_161135.txt
+  postgresql-2022-08-12_100938.txt

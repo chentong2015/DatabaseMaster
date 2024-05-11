@@ -15,11 +15,9 @@
         <module name="postgre-sql" />
         <module name="liquibase-core-basic" />
         <module name="native-hibernate6-api-master" />
-        <module name="jakarta-persistence-api" />
         <module name="sql-server" />
         <module name="h2-database" />
         <module name="test-hibernate" />
-        <module name="javax-persistence-api" />
         <module name="sql-lite" />
         <module name="native-hibernate5-api-xml" />
         <module name="liquibase-core-4-8-test" />
@@ -36,6 +34,8 @@
       <module name="distributed-db" target="15" />
       <module name="document-db-mongodb" target="11" />
       <module name="hyper-sql" target="15" />
+      <module name="jakarta-persistence-api" target="17" />
+      <module name="javax-persistence-api" target="17" />
       <module name="liquibase-core-4-18-sub" target="15" />
       <module name="native-hibernate5-upgrade" target="15" />
       <module name="native-hibernate6-api-metadata" target="15" />
