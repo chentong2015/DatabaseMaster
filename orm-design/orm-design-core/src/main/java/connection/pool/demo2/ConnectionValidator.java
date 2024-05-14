@@ -1,4 +1,4 @@
-package datalayer.connection.pool.demo2;
+package connection.pool.demo2;
 
 import java.sql.Connection;
 import java.sql.SQLException;

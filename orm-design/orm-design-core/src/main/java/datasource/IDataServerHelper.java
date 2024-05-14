@@ -1,4 +1,4 @@
-package datalayer.datasource;
+package datasource;
 
 // DB Server的辅助类，提供关于DB Metadata相关的操作，实现跨数据库的兼容性
 public interface IDataServerHelper {
