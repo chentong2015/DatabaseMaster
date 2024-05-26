@@ -24,5 +24,6 @@
         <module>native-hibernate6-api</module>
         <module>native-hibernate6-api-master</module>
         <module>test-hibernate</module>
+        <module>test-hibernate-db</module>
     </modules>
 </project>

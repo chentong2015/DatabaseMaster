@@ -15,6 +15,7 @@
         <module name="postgre-sql" />
         <module name="liquibase-core-basic" />
         <module name="native-hibernate6-api-master" />
+        <module name="test-hibernate-db" />
         <module name="sql-server" />
         <module name="h2-database" />
         <module name="test-hibernate" />

@@ -3,10 +3,10 @@ jdbc:mysql://127.0.0.1:3306/database?autoReconnect=true&maxReconnects=100
 
 MySQL Schema和数据库名称是统一的
 <property name=".dialect">org.hibernate.dialect.MySQLDialect</property>
-<property name=".connection.driver_class">com.mysql.jdbc.Driver</property>
-<property name=".connection.url">jdbc:mysql://localhost:3306/test</property>
-<property name=".connection.username">root</property>
-<property name=".connection.password">admin</property>  => 密码设置成空
+<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="connection.url">jdbc:mysql://localhost:3306/test</property>
+<property name="connection.username">root</property>
+<property name="connection.password">admin</property>  => 密码设置成空
 
 MySQL Connector/J is a JDBC Type 4 driver
 - Pure Java implementation of the MySQL protocol

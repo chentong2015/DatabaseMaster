@@ -19,6 +19,8 @@
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-hibernate/native-hibernate6-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-hibernate/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-hibernate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orm-middleware/orm-hibernate/test-hibernate-db/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orm-middleware/orm-hibernate/test-hibernate-db/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-hibernate/test-hibernate/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-hibernate/test-hibernate/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-liquibase/liquibase-core-4-18/src/main/java" charset="UTF-8" />
