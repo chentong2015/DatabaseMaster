@@ -18,7 +18,8 @@
     </properties>
 
     <dependencies>
-        <!-- Oracle JDBC Driver compatible with JDK8, JDK11, JDK12, JDK13, JDK14 and JDK15 -->
+        <!-- Oracle JDBC Driver compatible with JDK8, JDK11-15
+         TODO. JDBC Driver 是否能同时兼容32-Bit和64-Bit Oracle DB ? -->
         <dependency>
             <groupId>com.oracle.database.jdbc</groupId>
             <artifactId>ojdbc8</artifactId>

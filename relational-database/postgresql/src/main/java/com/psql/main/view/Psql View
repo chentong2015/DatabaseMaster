@@ -1,0 +1,24 @@
+View视图:
+- 源Table数据的变更会影响到view视图的数据
+- view视图数据的删除会印象到原始数据Table ==> 需要避免在视图中操作，会导致原表数据问题 !!
+
+create view person_view as
+select id, name, team from t_person;
+
+通过指定的名称可以删除
+drop view view _name;
+
+查找指定的视图是否存在，判断结果是否唯一
+viewExistsStmt = connection.prepareStatement("select 1 from pg_views where viewowner != 'postgres' and viewname=?")) {
+viewExistsStmt.setString(1, key);
+try(final ResultSet resultSet = viewExistsStmt.executeQuery()) {
+    if (resultSet.next()) {
+        return resultSet.getInt(1) == 1;
+    }
+}
+
+创建指定名称的view视图，A SELECT or VALUES command which will provide the columns and rows of the view.
+Create view view_name AS view_query
+
+查看当前数据的所有view视图
+SELECT * FROM pg_views;

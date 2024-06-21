@@ -1,0 +1,15 @@
+TODO. Trigger对于数据大量删除的影响
+当数据库在有约束的情况下，无论进行删除或者更新操作，都会对相关表进行一个校验
+判断相关表的相关记录是否被删除或者更新，这个检查的过程会非常慢
+
+在执行的更新(批量delete)期间，取消数据表的Trigger触发器，提高执行效率
+  150000行数据 14 secs 979 msec -> 1 secs 70 msec
+> ALTER TABLE public.t_batching_comment DISABLE TRIGGER ALL;
+> DELETE FROM public.t_batching_comment c WHERE c.id > 100;
+> ALTER TABLE public.t_batching_comment ENABLE TRIGGER ALL;
+
+使用vacuum(维护数据库磁盘的工具)删除那些已经被标记为删除的数据，并释放空间，但不能对相应的索引进行清理
+> vacuum FULL test
+
+重新建立索引提高查询效率
+> REINDEX TABLE test

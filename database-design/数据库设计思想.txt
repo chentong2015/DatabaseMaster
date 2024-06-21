@@ -4,9 +4,9 @@ TODO. 如何考虑在Server端还是在Client Side请求端解决问题 ?
 
 TODO. JDBC Connection默认是开启AutoCommit
 在自动提交的情况下不能再AutoCommit显式提交
-    org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
+  org.postgresql.util.PSQLException: Cannot commit when autoCommit is enabled.
 在取消自动提交的情况下，对于事务可以自定义提交或者回滚
-    调用connection.commit()或者connection.rollback();
+  调用connection.commit()或者connection.rollback();
 
 TODO. 为什么数据库中的表在设计是有外键约束的，但实际建表操作时却可以删除外键 ?
 1. 没有外键对于一条需要匹配外键的查询语句而言并不影响，可以基于数据的值来搜索
@@ -14,3 +14,10 @@ TODO. 为什么数据库中的表在设计是有外键约束的，但实际建�
 2. 对于数据库表经常变动update的场景，添加外键约束会造成修改数据不顺畅(非空约束)
 3. 方便添加测试数据到表中，而不用考虑外键对应表的数据
 4. 在没有外键约束的情况下，对于SQL语句的编写要求更加的严格，需要了解外键的存在 !!
+
+TODO. TPS: transaction per second 每秒事务量(每秒完成了多少commit), 在DB层面获取
+QPS = Questions(or Queries) / seconds
+mysql > show /* global */ status like ‘Question’;
+TPS = (Com_commit + Com_rollback) / seconds
+mysql > show status like ‘Com_commit’;
+mysql > show status like ‘Com_rollback’;
