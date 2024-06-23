@@ -11,3 +11,5 @@ Set before we can perform this operation. Please run the following SQL to set pe
 
 SQL> GRANT SELECT ON SYS.DBA_RECYCLEBIN TO USER_NAME;
 SQL> GRANT SELECT ANY dictionary TO USER_NAME;
+
+Oracle> select value from v$sysstat where name='user commits' 统计指定时间段内的提交量

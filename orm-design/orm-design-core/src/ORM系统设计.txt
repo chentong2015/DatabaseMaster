@@ -1,0 +1,33 @@
+TODO: JDBC的弊端
+1. jdbc底层没有使用连接池，操作数据库需要频繁的连接和关闭链接，消耗资源
+2. jdbc的sql写在代码中，如果修改需要重新编译
+3. 使用PreparedStatement预编译，需要用对parameterIndex123，不利于维护
+4. 需要对返回的ResultSet结果进行解析
+
+TODO: ORM(Object Relational Mapping)层的精髓: Map映射 / Row Mapper思想
+对于面向对象(类型安全)编程语言，实现不同"类型系统"数据之间的转换
+Java类型               数据库表字段      数据库类型
+java.lang.Integer     id              Integer
+java.lang.String      name            VARCHAR
+java.lang.String      context         LONGVARCHAR
+
+如何设计一个ORM层的中间件? JPA是一种ORM层的规范 !!
+1. public api   提供给用户使用的API, 注明使用文档
+2. enum types   提供操作的枚举类型，定义使用范围
+3. exception    定义中间件抛出的异常类型
+4. annotations  提供满足使用的注解，提高使用性
+5. boot impl    核心逻辑的实现，API的实现
+6. Connect pool 连接池的实现 ?
+7. CRUD Impl    提供数据库操作相关的依赖，定义，约束，适配
+8. 中间件额外的功能: 缓存，插件，SPI注入...
+9. 执行Engine引擎: 底层基于Java JDBC
+
+TODO. DAO和DTO概念
+DAO(Data Access Object)层，数据持久层: 将应用持久层的细节抽象出来
+
+DTO(Data transfer object) 数据库传送对象
+1. Data Model 一种数据结构
+2. Object used to encapsulate data, and send it from one sub system of config to anther
+   数据封装的对象，用于在应用和系统之间进行传递：特别是数据库通信, 解析套接字传递的信息等场景
+
+Active Record: 一种特殊的DTO形式: 具有公共变量的数据结构和(对象才具有的)行为方法
