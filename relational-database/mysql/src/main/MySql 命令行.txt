@@ -1,0 +1,40 @@
+> mysql -u root -p 等效于直接打开MySQl Command Line Client/Open MySQL CLI in your terminal
+> CREATE DATABASE conference_demo;
+> USE conference_demo;
+> source ~/path/to/file/create_tables.sql Setup the database
+> source ~/path/to/file/insert_data.sql Install the Data
+
+启动MySQL终端界面:
+  Start Menu\Programs\MySQL\MySQL Command Line Client
+  C:\Program Files (x86)\MySQL\MySQL Server 5.0\bin > cmd启动
+
+MySQL基础终端操作指令
+  mysql -h localhost -u root -p 进入mysql数据库, 使用用户名+密码
+  show databsses 显示数据库
+  use dbname 选择数据库
+  show tables 显示数据表
+  create database 数据库名 建库
+  drop database dbname 删除库
+  delete database dbname 删除库
+  create table <表名> ( <字段名1> <类型1> [,..<字段名n> <类型n>]) 建表
+  rename table 原表名 to 新表名 改表名
+  update 表名 set 字段=新值,… where 条件  修改表中数据
+  update 表名 set 字段名 = 新内容 更改表字段
+  show character set 显示字符集
+  show collation 显示字符集的校对
+  character set 字符集名 计置字符集
+  set name 计置字符集* character_set_client 客户端字符集
+  character_set_connection 链接字符集
+  character_set_results 返回字符集NAHP-DKTT-3ZWJ-JNGY
+  insert into dbname.tablename select fieldname from dbname.tablename; 从其他表导入数据
+  >\q quit le console
+  update user set password=PASSWORD('hooray') where user='root'; 修改指定用户密码
+
+SELECT @@system_time_zone;  MySQL会追踪time zone用于有时间关联的functions, 可以在System Variables中看到
+SELECT @@time_zone;
+SET GLOBAL time_zone='+1:00' 重新设置时区
+
+transaction per second 每秒事务量(每秒完成了多少commit), 在DB层面获取
+mysql > show /* global */ status like ‘Question’;  Queries/seconds
+mysql > show status like ‘Com_commit’;  Com_commit/seconds
+mysql > show status like ‘Com_rollback’; Com_rollback/seconds
