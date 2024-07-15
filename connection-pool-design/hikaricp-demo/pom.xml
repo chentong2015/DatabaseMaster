@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>connection-pool-hikaricp</artifactId>
+    <artifactId>hikaricp-demo</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -22,7 +22,30 @@
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-            <version>3.2.0</version>
+            <version>4.0.3</version>
+        </dependency>
+
+        <!-- HikariCP默认包含slf4j-api, 需要提供API的实现 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.13</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.5.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>21.7.0.0</version>
         </dependency>
     </dependencies>
 
