@@ -1,6 +1,0 @@
-<jpa-entity-locations>
-
-    <!-- 通过配置package包的路径，来扫描entity class -->
-    <package>com.example.main.entity</package>
-    <package>com.example.main.dao</package>
-</jpa-entity-locations>

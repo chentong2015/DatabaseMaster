@@ -1,0 +1,5 @@
+com/example/main/MainReflections.class
+com/example/main/model/SubProject.class
+com/example/main/model/Project.class
+com/example/main/data/MyEntityData.class
+com/example/main/dto/MyEntity.class

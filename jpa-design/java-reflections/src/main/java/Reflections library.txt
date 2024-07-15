@@ -1,0 +1,18 @@
+Reflections存在没有修复的bug, 已经不再支持 !!
+https://github.com/ronmamo/reflections
+https://github.com/ronmamo/reflections/issues/373
+
+- Java runtime metadata analysis:
+- 从编译成class字节码(元数据)文件中执行反射，获取到类型的信息
+- 每次都需要重新编译，避免报错 Could not find or load main class
+
+Reflections' query methods:
+- getMethodsWithAnyParamAnnotated
+- getConstructorsMatchParams
+- getConstructorsWithAnyParamAnnotated
+- getFieldsAnnotatedWith
+- getMethodParamNames
+- getConstructorParamNames
+- getFieldUsage
+- getMethodUsage
+- getConstructorUsage

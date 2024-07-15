@@ -1,0 +1,9 @@
+Database snapshot is a point-in-time, read-only,
+static view of the source database as it existed at the time of the database snapshot creation.
+- 数据库连接信息url
+- 数据库中表的信息
+- 表中列的信息
+- 其他配置信息
+
+通过连接字符串使用离线的快照数据库
+url = "offline:oracle?snapshot=snapshot-ref.json"

@@ -1,0 +1,10 @@
+TODO. JPA提供持久化层的注解，为ORM层框架提供上层API Layer
+  javax. JPA 2.0
+  jakarta. JPA 3.0
+
+JPA 持久化的实现:
+- hibernate > Spring data jpa
+- Mybatis
+- Batoo JPA
+- EclipseLink
+- OpenJPA

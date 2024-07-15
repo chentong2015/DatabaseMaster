@@ -1,0 +1,25 @@
+事务的4种隔离级别: 将不同的事务隔离开来处理
+ > set session transaction isolation level read committed;
+ > select @@tx_isolation; 查看隔离级别
+
+ 1.1 读未提交: 会造成事务的三大问题
+
+ 1.2 读可提交:
+     和可重复读类似，每次查询的时候记录的readview都会刷新
+     直接判断undo log版本链中的头部的事务id，判断是否执行undo log链
+
+ 1.3 可重复读:
+     #transaction200       #transaction300        #select100
+     begin;                begin;                 begin;
+                                                  select...; readview[200,300],300 存储除自己以外的活跃事务ID数组
+     update...生成undo log
+                           update...追加undo log
+                                                  select...; 再次查内存中数据，发现undo log，根据记录的日志来(恢复)回到原始数据
+                           commit;
+                                                  select...; readview[200],300 根据隔离级别的机制，不会改变
+                                                             查询的时候第一次记录的readview始终不变
+     update
+                                                  select...; readview[200],300
+     commit;
+
+ 1.4 串行化: 最高级别的隔离级别，但是不支持并发 => 使用锁或者分布式锁

@@ -1,0 +1,27 @@
+SQL Server 11.2 Driver必须设置trustServerCertificate=true到连接字符串
+
+SQL Server使用数据库Server名称(Device Name)进行连接
+Schema Default: dbo
+<property name=".dialect">org.hibernate.dialect.SQLServerDialect</property>
+<property name=".connection.url">jdbc:sqlserver://device_name:1433;Database=my_database;Trusted_Connection=true;</property>
+<property name=".connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+<property name=".connection.username">test</property>
+<property name=".connection.password">TCHong21</property>
+
+数据库SQL Server网络连接配置
+ 1. 打开SQL Server的1433默认的端口
+    SQL Server Configuration Manager
+    > SQL Server Networking Configuration
+    > Protocol
+    > TCP/IP
+    > Enabled开启
+    > 重启
+ 2. 打开本地计算机防火墙的1433端口
+    防火墙 > 高级设置 > Inbound Rules入站规则(外部通过网络访问时，是否允许) > New Rule > TCP 1433 > Allow Connection
+    防火墙 > 高级设置 > Outbound Rules出站规则(内部数据通过是否允许从指定端口出去) > New > TCP 1433 > Allow Connection
+ 3. 添加JDBC Driver Jar驱动库
+    下载Driver Path: C:\Users\CHEN Tong\AppData\Roaming\JetBrains\IntelliJIdea2020.3\jdbc-drivers
+ 4. 选择SQL Server需要连接的Database > Schema 监测连接的DB > Test Connection
+
+Microsoft.PowerShell.Management
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7

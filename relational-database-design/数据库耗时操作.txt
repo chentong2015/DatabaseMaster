@@ -1,0 +1,18 @@
+TODO. 关于DB交互耗时的常见问题
+ 对于UI的阻塞和页面数据的刷新，如何返回数据结果 ?
+ 通常"DB交互次数"比写入表的row数据量有更大的性能影响 !
+
+解决方案 1.
+一般Datasource应使用Singleton pattern单列模型, 只创建一个DB的instance对象
+类型可以通过调用指定的方法获取instance, 然后调用对象的方法
+一般在启动时Open Connection获取数据, 在UI完全显示出来后加载; 如果open失败，则不显示UI
+一般在关闭App时Close Connection关闭数据库的连接
+
+解决方案 2.
+使用异步线程来处理背后耗时的操作, 获取和加工数据
+UI界面应该给用户提示背后的运行进度
+
+解决方案 3.
+可以使用Controller/Data binding来加载和渲染数据
+保持UI和Database的数据同步性，在UI执行数据更新才刷新UI界面的数据
+需要更新Database中一切相关的数据，可能执行Transaction

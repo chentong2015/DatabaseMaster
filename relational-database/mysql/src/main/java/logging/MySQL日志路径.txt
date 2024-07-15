@@ -1,5 +1,0 @@
-默认日志文件
-C:\Program Files\MySQL\MySQL Server 8.0\data\xxx.err
-
-默认的Server上没有\data目录，需要运行如下指令
-C:\Program Files\MySQL\MySQL Server 8.0\bin>mysqld --initialize-insecure --user=mysql

@@ -1,0 +1,43 @@
+2022-02-01 17:36:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CPU" not found (this database is empty); SQL statement:
+INSERT INTO t_cpu values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 17:38:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "t_cpu" not found (this database is empty); SQL statement:
+INSERT INTO t_cpu values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 17:39:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CPU" not found (this database is empty); SQL statement:
+INSERT INTO T_CPU values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 17:41:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CPU" not found (this database is empty); SQL statement:
+INSERT INTO T_CPU values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 17:42:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CPU" not found (this database is empty); SQL statement:
+INSERT INTO T_CPU values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 17:43:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CPU" not found (this database is empty); SQL statement:
+INSERT INTO T_CPU values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 17:44:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "t_cpu" not found (this database is empty); SQL statement:
+INSERT INTO t_cpu values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 17:44:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "t_cpu" not found (this database is empty); SQL statement:
+INSERT INTO t_cpu values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 17:45:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CPU" not found (this database is empty); SQL statement:
+INSERT INTO t_cpu values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 17:46:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CPU" not found (this database is empty); SQL statement:
+INSERT INTO T_CPU values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 18:28:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CPU" not found (this database is empty); SQL statement:
+INSERT INTO T_CPU values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 18:30:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CPU" not found (this database is empty); SQL statement:
+Insert into t_cpu values (default, '70d0c37e-634e-4a68-8862-0ba44f216f3b', 'CPU', 'Intel Core i7-8809G', 'Intel', 150.0 , 25, 'Core i7', 4, '3.10 GHz', '1.20 GHz'); [42104-210]
+2022-02-01 18:34:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE t_test2 ( \000a   id INT NOT NULL, \000a   title VARCHAR(50) NOT NULL, \000a   author VARCHAR(20) NOT NULL, \000a[*]);"; expected "identifier"; SQL statement:
+CREATE TABLE t_test2 ( 
+   id INT NOT NULL, 
+   title VARCHAR(50) NOT NULL, 
+   author VARCHAR(20) NOT NULL, 
+); [42001-210]

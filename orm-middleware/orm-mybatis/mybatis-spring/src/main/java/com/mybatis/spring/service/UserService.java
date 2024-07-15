@@ -1,6 +1,6 @@
 package com.mybatis.spring.service;
 
-import spring.dao.UserMapper;
+import com.mybatis.spring.dao.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
