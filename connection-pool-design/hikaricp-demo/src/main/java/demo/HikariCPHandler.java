@@ -6,7 +6,7 @@ import com.zaxxer.hikari.pool.HikariPool;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
-public class HikariConnectionPool {
+public class HikariCPHandler {
 
     public static DataSource getDataSource(int threads) throws SQLException {
         HikariDataSource dataSource = new HikariDataSource();
