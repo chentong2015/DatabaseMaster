@@ -10,7 +10,7 @@ public class DbMetaDataDemo {
     private static String sqlServerConnectStr = "jdbc:sqlserver://driver_name:1433;databaseName=my_database;Trusted_Connection=true;user=test;password=TCHong16";
     private static String sqlServerConnectStr2 = "jdbc:sqlserver://localhost:1433;Database=liquibase-4-18;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
 
-    private static String sqlOracleConnectStr = "jdbc:oracle:thin:@//dell756xxx:1521/DELL756xxx";
+    private static String sqlOracleConnectStr = "jdbc:oracle:thin:@//server:1521/DB_NAME";
 
     // 通过JDBC来拿到数据库中相关表的信息
     public static void main(String[] args) throws SQLException {

@@ -24,6 +24,6 @@ https://github.com/brettwooldridge/HikariCP
 TODO. 连接池的Monitoring ?
 1. 监测连接池中连接的使用情况和闲置情况 ?
 2. 判断那些线程占用数据库连接? 那些线程占用了不止一个连接?
-3. 判断所有连接的事务都正常关闭 ?
+3. 如何监测事务的提交量(单位时间的commits数量影响插入的效率) ?
 
 

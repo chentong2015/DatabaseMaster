@@ -13,7 +13,7 @@ public class DemoSybaseJDBC {
     public static void main(String[] args) {
         try {
             Class.forName("com.sybase.jdbc4.jdbc.SybDriver");
-            String url = "jdbc:sybase:Tds:dell719xxx:4100/JAVA_INT_TESTS";
+            String url = "jdbc:sybase:Tds:server:4100/JAVA_INT_TESTS";
             Connection connection = DriverManager.getConnection(url, "INSTAL", "***");
 
             // JDBC提供的获取主版本的API, 无论什么版本都能返回正确值

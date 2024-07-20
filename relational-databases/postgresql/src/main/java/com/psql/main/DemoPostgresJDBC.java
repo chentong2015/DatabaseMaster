@@ -1,27 +1,22 @@
 package com.psql.main;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DemoPostgresJDBC {
 
-    // private static String url = "jdbc:postgresql://dell1451xxx:5432/tpk0002795_56979469";
-    private static String url = "jdbc:postgresql://localhost:5432/my_database?reWriteBatchedInserts=true";
-
     public static void main(String[] args) throws SQLException {
+        String url = "jdbc:postgresql://localhost:5432/my_database";
         try (Connection connection = DriverManager.getConnection(url, "postgres", "")) {
             connection.getSchema(); // Default Schema: public
-            connection.setAutoCommit(false); // Enable by default: AutoCommit=true !!
             System.out.println(connection.getAutoCommit());
 
-            ResultSet resultSet = connection.createStatement().executeQuery("select * from t_test");
-            while (resultSet.next()) {
-                System.out.println(resultSet.getInt("id"));
-                System.out.println(resultSet.getString("name"));
-            }
+            Statement statement = connection.createStatement();
+            statement.executeUpdate("INSERT INTO t_comment(id, review) values (1002, 'test')");
+
+            Thread.sleep(10000);
             System.out.println("Connection Done");
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
     }
 }

@@ -1,0 +1,28 @@
+Triggers 触发器:
+类似于一个事件, 当遇到某个事件的时候执行什么操作
+触发器可以用于监测数据的变化，然后执行相应的操作
+
+# SELECT * FROM pg_trigger; 查询在当前DB中的所有触发器
+create or replace function handlePersonInsertion() returns Trigger
+as $$
+  begin
+     insert into my_auto_table (name, value) values ('insert new person', 200);
+     return new;  -- 研究返回NEW的原因
+  end;
+$$ LANGUAGE plpgsql;
+
+针对什么表，在什么操作的前后执行什么样的逻辑/方法
+监测数据插入之后，由于触发器的作用会连带存储数据到其他表
+create or replace trigger listenPersonInsertion after insert on t_person
+execute function handlePersonInsertion();
+
+
+TODO. Trigger对于数据大量删除的影响
+当数据库在有约束的情况下，无论进行删除或者更新操作，都会对相关表进行一个校验
+判断相关表的相关记录是否被删除或者更新，这个检查的过程会非常慢
+
+在执行的更新(批量delete)期间，取消数据表的Trigger触发器，提高执行效率
+  150000行数据 14 secs 979 msec -> 1 secs 70 msec
+> ALTER TABLE public.t_batching_comment DISABLE TRIGGER ALL;
+> DELETE FROM public.t_batching_comment c WHERE c.id > 100;
+> ALTER TABLE public.t_batching_comment ENABLE TRIGGER ALL;

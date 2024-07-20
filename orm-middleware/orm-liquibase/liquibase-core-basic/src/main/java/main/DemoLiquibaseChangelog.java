@@ -24,7 +24,7 @@ public class DemoLiquibaseChangelog {
     private static String mysqlConnectStr = "jdbc:mysql://localhost:3306/my_database?rewriteBatchedStatements=true";
     private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=test_db;Trusted_Connection=true;useBulkCopyForBatchInsert=true;";
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/my_database?user=postgres&password=admin";
-    private static String psqlRemoteUrl = "jdbc:postgresql://dell1451xxx:5432/tpk0002795_56979469";
+    private static String psqlRemoteUrl = "jdbc:postgresql://server:5432/tpk0002795_56979469";
 
     public static void main(String[] args) throws DatabaseException, SQLException {
         // "postgres", "postgres"

@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class DemoSqlServerJDBC {
 
     public static void main(String[] args) throws SQLException {
-        String url = "jdbc:sqlserver://dell719srv:1433;databaseName=DAS_CONV_TOOL;trustServerCertificate=true";
+        String url = "jdbc:sqlserver://server:1433;databaseName=DAS_CONV_TOOL;trustServerCertificate=true";
         Connection connection = DriverManager.getConnection(url, "INSTAL", "INSTALL");
         String query = "insert into test_table (code, value1, value2) values (?, ?, ?)";
 

@@ -1,4 +1,4 @@
-package fectching;
+package fectch;
 
 import java.sql.*;
 
@@ -6,10 +6,9 @@ import java.sql.*;
 // The process of grabbing data from the db and making it available to the application.
 // - Fetching too much data adds overhead in terms of both JDBC communication and ResultSet processing.
 // - Fetching too little data might cause additional fetching to be needed.
-
-// TODO. Fetching一般分成两种: Lazy & Eager
-//  Lazy Fetch doesn't work outside transaction
-//  在事务之外的延迟获取可能造成timeout(如果返回Stream<>且数据量较大)
+//
+// TODO. Fetching Types: Eager & Lazy (Lazy Fetch must work inside transaction)
+// 在事务之外的延迟获取可能造成timeout (如果返回Stream<>且数据量较大, 流的操作时间过长)
 public class DemoFetching {
 
     // 如果设置AutoCommit=false, 则不能设置fetch size的参数

@@ -11,7 +11,7 @@ public class DemoOracleJDBC {
     public static void main(String[] args) throws SQLException {
         Connection connection = null;
         try {
-            String url = "jdbc:oracle:thin:@//dell719xxx:1521/DELL719xxx";
+            String url = "jdbc:oracle:thin:@//server:1521/DB_NAME";
             connection = DriverManager.getConnection(url, "DAS_CONV_TOOL", "xxx");
             int[] countLines = DemoOracleBatching.testPrepareStatementInsert(connection);
             for (int count : countLines) {

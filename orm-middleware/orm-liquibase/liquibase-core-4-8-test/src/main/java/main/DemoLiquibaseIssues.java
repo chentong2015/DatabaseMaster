@@ -16,7 +16,7 @@ import java.sql.SQLException;
 // Liquibase在翻译changelog文件中的changeSet时会构建出SQL Query
 public class DemoLiquibaseIssues {
 
-    private static String oracleString = "jdbc:oracle:thin:@//dell719xxx:1521/DELL719SRV";
+    private static String oracleString = "jdbc:oracle:thin:@//server:1521/DB_NAME";
     private static String psqlConnectStr = "jdbc:postgresql://localhost:5432/liquibase_upgrade_4_8?user=postgres&password=admin";
     private static String sqlServerConnectStr = "jdbc:sqlserver://localhost:1433;Database=liquibase_4_8;Trusted_Connection=true;";
 
