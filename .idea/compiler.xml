@@ -8,9 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="test-hibernate-db" />
-        <module name="commons-dbcp" />
         <module name="sql-server" />
-        <module name="hikaricp-demo" />
         <module name="postgresql" />
         <module name="liquibase-core-4-18" />
         <module name="relational-databases-test" />
@@ -23,18 +21,20 @@
         <module name="native-hibernate5-api-annotation" />
         <module name="liquibase-core-4-5" />
         <module name="liquibase-core-basic" />
+        <module name="commons-dbcp2" />
         <module name="native-hibernate6-api-master" />
         <module name="java-reflections" />
         <module name="jakarta-persistence-api" />
         <module name="h2-database" />
+        <module name="hikaricp" />
         <module name="test-hibernate" />
         <module name="core-annotation-validation" />
         <module name="sql-lite" />
         <module name="native-hibernate5-api-xml" />
         <module name="java-reflections-entity-parser" />
         <module name="liquibase-core-4-8-test" />
+        <module name="base-cp-design" />
         <module name="mybatis-core" />
-        <module name="base-connection-pool" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

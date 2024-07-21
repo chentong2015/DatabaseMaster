@@ -1,0 +1,67 @@
+TODO. 添加Log4j API, 通过日志分析CP的参数和状态
+
+由于自定义MaxLifetime最大生命周期，默认的idleTimeout闲置生命周期将被抑制
+idleTimeout必须小于MaxLifetime
+[main] WARN com.zaxxer.hikari.HikariConfig -- HCP Name - idleTimeout is close to or more than maxLifetime, disabling it.
+
+连接池的所有核心参数配置
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- HCP Name - configuration:
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- allowPoolSuspension................................false
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- autoCommit................................true
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- catalog................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionInitSql................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTestQuery................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- connectionTimeout................................30000
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSource................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceClassName................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceJNDI................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- dataSourceProperties................................{password=<masked>}
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- driverClassName................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- exceptionOverrideClassName................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckProperties................................{}
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- healthCheckRegistry................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- idleTimeout................................0
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- initializationFailTimeout................................1
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- isolateInternalQueries................................false
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- jdbcUrl................................jdbc:oracle:thin:@//localhost:1555/orclcdb
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- keepaliveTime................................0
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- leakDetectionThreshold................................0
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- maxLifetime................................580000
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- maximumPoolSize................................5
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- metricRegistry................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- metricsTrackerFactory................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- minimumIdle................................2
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- password................................<masked>
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- poolName................................"HCP Name"
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- readOnly................................false
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- registerMbeans................................false
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- scheduledExecutor................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- schema................................none
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- threadFactory................................internal
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- transactionIsolation................................default
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- username................................"fmm"
+[main] DEBUG com.zaxxer.hikari.HikariConfig -- validationTimeout................................5000
+
+连接池启动并准备完毕
+[main] INFO com.zaxxer.hikari.HikariDataSource -- HCP Name - Starting...
+[main] DEBUG com.zaxxer.hikari.util.DriverDataSource -- Loaded driver with class name oracle.jdbc.OracleDriver for jdbcUrl=jdbc:oracle:thin:@//localhost:1555/orclcdb
+[main] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Added connection oracle.jdbc.driver.T4CConnection@44ebcd03
+[main] INFO com.zaxxer.hikari.HikariDataSource -- HCP Name - Start completed.
+
+CP中的连接分配给指定的线程，并显示分配完毕后的Pool Stats状态: 还有多少个正在被等待的连接
+[HCP Name connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Added connection oracle.jdbc.driver.T4CConnection@bbc65ea
+[HCP Name connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Added connection oracle.jdbc.driver.T4CConnection@13fae787
+[HCP Name housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Pool stats (total=3, active=3, idle=0, waiting=7)
+[HCP Name housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Fill pool skipped, pool is at sufficient level.
+
+[HCP Name connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Added connection oracle.jdbc.driver.T4CConnection@6b9095da
+[HCP Name connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Added connection oracle.jdbc.driver.T4CConnection@70949a7d
+[HCP Name housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Pool stats (total=5, active=5, idle=0, waiting=5)
+
+
+五个线程在指定的时间内每个等到Connection, 因此出现超时状态错误
+[Thread-8] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Timeout failure stats (total=5, active=5, idle=0, waiting=2)
+[Thread-10] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Timeout failure stats (total=5, active=5, idle=0, waiting=2)
+[Thread-9] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Timeout failure stats (total=5, active=5, idle=0, waiting=2)
+[Thread-7] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Timeout failure stats (total=5, active=5, idle=0, waiting=1)
+[Thread-6] DEBUG com.zaxxer.hikari.pool.HikariPool -- HCP Name - Timeout failure stats (total=5, active=5, idle=0, waiting=0)
