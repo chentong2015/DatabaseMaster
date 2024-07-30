@@ -31,9 +31,10 @@ public class HikariCPHandler {
         // 如果这个参数接近或者超过MaxLifetime最大生命周期，则被Disable
         dataSource.setIdleTimeout(500000);
 
+
         // TODO. MaxLifetime参数可能造成异常，如何模拟被DB超时 ?
         // 连接的最大存活时间，超过生命周期的连接(没有在被使用的连接)将被移除
-        // it should be several seconds shorter than any database or infrastructure imposed connection time limit.
+        // it should be several seconds shorter than any database or infra imposed connection time limit.
         dataSource.setMaxLifetime(580000);
 
         // TODO. 监测空闲的连接是否还有效，没有被超时关闭 !
@@ -43,12 +44,23 @@ public class HikariCPHandler {
         dataSource.setKeepaliveTime(50000);
 
         // Pool will wait for a connection to be validated as alive.
-        // dataSource.setValidationTimeout(3000);
+        dataSource.setValidationTimeout(3000);
+
 
         // TODO. 判断CP中获取的连接是否有效，注意连接泄露
         try (Connection connection = dataSource.getConnection()) {
             System.out.println("Valid:" + connection.isValid(0));
         }
+
+        // 推荐使用Connection.isValid()高效验证
+        // SQL query to be executed to test the validity of connections
+        dataSource.setConnectionTestQuery("test select query");
+
+        // 使用创建出来的连接执行初始化的SQL，完成DB数据的准备
+        // SQL string that will be executed on all new connections when they are created
+        // before they are added to the pool.
+        dataSource.setConnectionInitSql("init query");
+
         return dataSource;
     }
 }

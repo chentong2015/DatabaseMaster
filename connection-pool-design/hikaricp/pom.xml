@@ -25,7 +25,9 @@
             <version>4.0.3</version>
         </dependency>
 
-        <!-- HikariCP默认包含slf4j-api, 需要提供API的实现 -->
+        <!-- HikariCP默认包含slf4j-api, 需要提供API的实现
+        logging.level.com.zaxxer.hikari.HikariConfig=DEBUG
+        logging.level.com.zaxxer.hikari=TRACE -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
