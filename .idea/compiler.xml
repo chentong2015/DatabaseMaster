@@ -31,7 +31,10 @@
         <module name="core-annotation-validation" />
         <module name="sql-lite" />
         <module name="native-hibernate5-api-xml" />
+<<<<<<< HEAD
         <module name="java-reflections-entity-parser" />
+=======
+>>>>>>> 20004709 (update database sharding)
         <module name="liquibase-core-4-8-test" />
         <module name="base-cp-design" />
         <module name="mybatis-core" />
@@ -52,6 +55,8 @@
       <module name="orm-jpa" target="17" />
       <module name="orm-jpa-hibernate-example" target="15" />
       <module name="orm-spring-jdbc" target="15" />
+      <module name="postgre-sql" target="15" />
+      <module name="postgresql" target="15" />
       <module name="relational-non-database" target="15" />
       <module name="sample-mapping-annotation" target="15" />
       <module name="sample-mapping-xml" target="15" />
