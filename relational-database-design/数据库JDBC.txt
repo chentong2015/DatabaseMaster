@@ -19,6 +19,8 @@ TODO. 数据库实战项目操作
 
 为什么数据库中的表在设计是有外键约束的，但实际建表操作时却可以删除外键
 1. 没有外键对于一条需要匹配外键的查询语句而言并不影响
-   SELECT * FROM student LEFT JOIN grade ON student.id = grade.id WHERE grade.id = 1;
+   SELECT * FROM student
+   LEFT JOIN grade ON student.id = grade.id
+   WHERE grade.id = 1;
 2. 对于数据库表经常变动update的场景，添加外键约束会影响修改数据
 3. 方便添加测试数据到表中，而不用考虑外键对应表的数据
