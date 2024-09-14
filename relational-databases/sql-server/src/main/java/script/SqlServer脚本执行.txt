@@ -1,0 +1,11 @@
+使用Powershell > New-Item> Type 或者是改变扩展名称
+> use TestDB;
+> GO
+> Select * FROM Users;
+> GO
+> > type test.sql
+> sqlcmd -S myServer\instanceName -i C:\myScript.sql -o C:\EmpAdds.txt
+
+运行SQL脚本并传递特定参数的值
+> sqlcmd -S server -U user -P password -d database
+  -i script.sql -v DateLimite="@2023-06-21 00:00:00" -v CommitStep=100

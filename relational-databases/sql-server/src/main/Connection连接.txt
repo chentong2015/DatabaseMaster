@@ -22,6 +22,3 @@ Schema Default: dbo
  3. 添加JDBC Driver Jar驱动库
     下载Driver Path: C:\Users\CHEN Tong\AppData\Roaming\JetBrains\IntelliJIdea2020.3\jdbc-drivers
  4. 选择SQL Server需要连接的Database > Schema 监测连接的DB > Test Connection
-
-Microsoft.PowerShell.Management
-https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-item?view=powershell-7

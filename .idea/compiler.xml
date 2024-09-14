@@ -20,47 +20,30 @@
         <module name="sybase" />
         <module name="native-hibernate5-api-annotation" />
         <module name="liquibase-core-4-5" />
-        <module name="liquibase-core-basic" />
         <module name="commons-dbcp2" />
+        <module name="liquibase-core-basic" />
         <module name="native-hibernate6-api-master" />
         <module name="java-reflections" />
         <module name="jakarta-persistence-api" />
         <module name="h2-database" />
         <module name="hikaricp" />
-        <module name="test-hibernate" />
         <module name="core-annotation-validation" />
+        <module name="test-hibernate" />
         <module name="sql-lite" />
         <module name="native-hibernate5-api-xml" />
-<<<<<<< HEAD
         <module name="java-reflections-entity-parser" />
-=======
->>>>>>> 20004709 (update database sharding)
         <module name="liquibase-core-4-8-test" />
         <module name="base-cp-design" />
         <module name="mybatis-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="custom-entity-parser" target="15" />
-      <module name="distributed-database" target="15" />
-      <module name="distributed-db" target="15" />
-      <module name="document-db-mongodb" target="11" />
-      <module name="hyper-sql" target="15" />
-      <module name="javax-persistence-api" target="17" />
-      <module name="liquibase-core-4-18-sub" target="15" />
-      <module name="native-hibernate5-upgrade" target="15" />
-      <module name="native-hibernate6-api-metadata" target="15" />
-      <module name="object-db-management-system" target="1.5" />
+      <module name="entity-class-parser" target="15" />
+      <module name="orm-design" target="17" />
       <module name="orm-design-core" target="17" />
-      <module name="orm-jpa" target="17" />
-      <module name="orm-jpa-hibernate-example" target="15" />
-      <module name="orm-spring-jdbc" target="15" />
       <module name="postgre-sql" target="15" />
-      <module name="postgresql" target="15" />
-      <module name="relational-non-database" target="15" />
-      <module name="sample-mapping-annotation" target="15" />
-      <module name="sample-mapping-xml" target="15" />
-      <module name="test" target="15" />
+      <module name="relational-database" target="15" />
+      <module name="relational-database-test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
