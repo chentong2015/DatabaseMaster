@@ -1,0 +1,3 @@
+Sql Server request请求有最大参数的限制
+com.microsoft.sqlserver.jdbc.SQLServerException: the incoming request has too many parameters
+The sql server supports a maximum of 2100 parameters.

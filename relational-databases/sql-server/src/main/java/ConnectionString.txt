@@ -1,0 +1,15 @@
+SQL Server使用数据库Server名称(Device Name)进行连接
+SQL Server 11.2 Driver必须设置trustServerCertificate=true
+Schema Default: dbo
+
+<property name=".dialect">
+    org.hibernate.dialect.SQLServerDialect
+</property>
+<property name=".connection.url">
+    jdbc:sqlserver://device_name:1433;Database=my_database;Trusted_Connection=true;
+</property>
+<property name=".connection.driver_class">
+    com.microsoft.sqlserver.jdbc.SQLServerDriver
+</property>
+<property name=".connection.username">test</property>
+<property name=".connection.password">TCHong21</property>
