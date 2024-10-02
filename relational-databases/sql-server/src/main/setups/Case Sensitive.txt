@@ -1,0 +1,21 @@
+TODO. SQL Server Collation排序规则属性，具有大小写敏感之分
+> SELECT SERVERPROPERTY('COLLATION')             查看server的属性
+> SELECT name, collation_name FROM sys.databases 查看具体DB的属性
+
+Example: SQL_Latin1_General_CP1_CI_AS
+1. latin1 makes the server treat strings using charset latin 1, basically ascii
+2. CP1 stands for Code Page 1252
+3. CI case-insensitive comparisons so 'ABC' would equal 'abc'
+4. AS accent sensitive, so 'ü' does not equal 'u'
+
+TODO. Database Collation 属性修改
+修改时必须确保只有一个User在使用指定的数据库，最后设置成MULTI_USER
+> ALTER DATABASE DB_NAME SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+> ALTER DATABASE DB_NAME COLLATE SQL_Latin1_General_CP1_CS_AS;
+> ALTER DATABASE DB_NAME SET MULTI_USER
+
+TODO. Sql Server Collation 属性修改
+Drop all the user databases, then run following command:
+> Setup /QUIET /ACTION=REBUILDDATABASE /INSTANCENAME=InstanceName
+  /SQLSYSADMINACCOUNTS=accounts [ /SAPWD= StrongPassword ]
+  /SQLCOLLATION=CollationName

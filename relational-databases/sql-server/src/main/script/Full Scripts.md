@@ -91,7 +91,6 @@ The subquery results are substituted into the outer query. As we need table obje
 ```
 ***To find name of Primary key constraint***
 ```sql
-// key_constraints表可能大小写敏感
 	SELECT name FROM sys.key_constraints  WHERE type = 'PK' AND OBJECT_NAME(parent_object_id) = N'CLOS_ext';  	
 ```
 ***Drop primary key***
