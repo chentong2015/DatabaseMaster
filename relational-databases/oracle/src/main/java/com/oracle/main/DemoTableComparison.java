@@ -1,11 +1,11 @@
-package com.oracle.main.comparison;
+package com.oracle.main;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 // Test Comparing two tables from different oracle databases
-public class DemoComparisonTable {
+public class DemoTableComparison {
 
     private static String database1 = "jdbc:oracle:thin:@//localhost:1560/orclcdb";
     private static String database2 = "jdbc:oracle:thin:@//localhost:1561/orclcdb";

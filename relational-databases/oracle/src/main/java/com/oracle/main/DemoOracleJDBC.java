@@ -1,28 +1,25 @@
 package com.oracle.main;
 
-import com.oracle.main.batching.DemoOracleBatching;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class DemoOracleJDBC {
 
+    private static String url = "jdbc:oracle:thin:@//localhost:1522/orclcdb";
+
     public static void main(String[] args) throws SQLException {
-        Connection connection = null;
-        try {
-            String url = "jdbc:oracle:thin:@//server:1521/DB_NAME";
-            connection = DriverManager.getConnection(url, "DAS_CONV_TOOL", "xxx");
-            int[] countLines = DemoOracleBatching.testPrepareStatementInsert(connection);
-            for (int count : countLines) {
-                System.out.println(count);
-            }
-        } catch (Exception exception) {
-            exception.printStackTrace();
-        } finally {
-            if (connection != null) {
-                connection.close();
-            }
+        Connection connection =  DriverManager.getConnection(url, "fmm", "hello00");
+
+        String query = "insert into FOFUTI_SCTR (ctrysynid, country, formatok) values (?, ?, ?)";
+        PreparedStatement statement = connection.prepareStatement(query);
+        for (int id = 231; id < 1000; id++) {
+            statement.setString(1, String.valueOf(id));
+            statement.setString(2, "CTONG-" + (id));
+            statement.setString(3, "0");
+            statement.executeUpdate();
         }
+        statement.close();
+
+        // Make sure to close connection
+        connection.close();
     }
 }
