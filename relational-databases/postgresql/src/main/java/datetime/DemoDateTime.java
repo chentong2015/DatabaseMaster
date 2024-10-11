@@ -1,4 +1,4 @@
-package com.psql.main.datetime;
+package datetime;
 
 import java.sql.*;
 import java.time.LocalDate;

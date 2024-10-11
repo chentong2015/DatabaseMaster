@@ -1,4 +1,4 @@
-package com.psql.main.settings;
+package settings;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

@@ -1,4 +1,4 @@
-package com.psql.main.batching;
+package batching;
 
 import java.sql.*;
 

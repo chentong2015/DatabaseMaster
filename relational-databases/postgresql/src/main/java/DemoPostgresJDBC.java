@@ -1,5 +1,3 @@
-package com.psql.main;
-
 import java.sql.*;
 
 public class DemoPostgresJDBC {

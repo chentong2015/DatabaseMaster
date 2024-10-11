@@ -1,0 +1,27 @@
+PSQL的安装和启动
+1. PSQL Installer会将psql service添加的任务管理器的services服务中
+2. PSQL /bin 通过CMD命令行启动
+
+TODO. PSQL 命令行启动和连接
+\bin>pg_ctl.exe --help 查看使用方式
+\bin>pg_ctl.exe start -D "C:\Program Files\PostgreSQL\14\data"
+\bin>pg_ctl.exe restart -D "C:\Program Files\PostgreSQL\14\data"
+\bin>pg_ctl.exe stop -D "C:\Program Files\PostgreSQL\14\data"
+
+TODO. PSQL 命令行登录用户 postgres + password
+\bin>psql.exe -U postgres
+\bin>psql -h HOST_NAME -U username
+
+cmd> \l              list databases 显示所有创建的数据库
+cmd> \c db_name1     connect 连接到一个指定的数据库
+cmd> \c db_name2     再切换到另外一个数据库
+cmd> \dt             shows all tables in the current schema
+cmd> \d table_name   show one table infos 显示指定表的信息
+cmd> create database
+cmd> create table
+cmd> \d
+cmd> insert into
+cmd> select * from
+cmd> update table set
+cmd> delete from table
+cmd> exit/quit

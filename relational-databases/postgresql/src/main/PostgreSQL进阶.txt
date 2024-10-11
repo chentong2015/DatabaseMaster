@@ -1,7 +1,3 @@
-PgAdmin Tool  : admin
-PSQL Admin    : postgres, admin  在安装时需要设置管理员的密码，之后用于登录连接
-PSQL User     : test, test       用于远程URL连接的用户，可以通过PgAdmin来添加新用户
-
 http://www.postgres.cn/docs/13/index.html
 https://jdbc.postgresql.org/documentation/changelog.html PSQL版本变更记录
 

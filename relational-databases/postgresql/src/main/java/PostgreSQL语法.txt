@@ -12,14 +12,13 @@ CREATE TABLE t_test (
    table_id   Integer     references my_table(id)
 );
 
-INSERT INTO public.t_test(
-	id, temp_id, name, fullname, value, table_id)
+INSERT INTO public.t_test(id, temp_id, name, fullname, value, table_id)
 	VALUES (1, 100, 'name 1', 'full name 1', 5, 1);  -- 受到check条件的约束
-INSERT INTO public.t_test(
-	id, temp_id, name, fullname, value, table_id)
-	VALUES (1, 100, 'name 1', 'full name 1', 50, 3); --  受到外键id条件的约束
 
-ALTER TABLE table_name DROP CONSTRAINT some_name;     -- 每一个约束都有一个名字，需要删除指定的名称
+INSERT INTO public.t_test(id, temp_id, name, fullname, value, table_id)
+	VALUES (1, 100, 'name 1', 'full name 1', 50, 3); -- 受到外键id条件的约束
+
+ALTER TABLE table_name DROP CONSTRAINT some_name; -- 每一个约束都有一个名字，需要删除指定的名称
 
 ===============================================================================================
 -- DROP TABLE IF EXISTS public.t_person;
