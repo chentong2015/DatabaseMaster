@@ -1,0 +1,23 @@
+TODO. 事务隔离级别: 提交事务时的不同处理方式
+> set session transaction isolation level read committed;
+> select @@tx_isolation;
+
+1. Read Uncommitted
+2. Read Committed
+   和可重复读类似，每次查询的时候记录的readview都会刷新
+   直接判断undo log版本链中的头部的事务id，判断是否执行undo log链
+3. Repeatable Read
+   #transaction200       #transaction300        #select100
+   begin;                begin;                 begin;
+                                                select...; readview[200,300],300 存储除自己以外的活跃事务ID数组
+   update...生成undo log
+                         update...追加undo log
+                                                select...; 再次查内存中数据，发现undo log，根据记录的日志来(恢复)回到原始数据
+                         commit;
+                                                select...; readview[200],300 根据隔离级别的机制，不会改变
+                                                           查询的时候第一次记录的readview始终不变
+   update
+                                                select...; readview[200],300
+   commit;
+4. Serializable => 事务无法并发提交(不支持并发)
+   最严格的事务隔离, 模拟所有已提交事务的串行事务执行(需要加锁)
