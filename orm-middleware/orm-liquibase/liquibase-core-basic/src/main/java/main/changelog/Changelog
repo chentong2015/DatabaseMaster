@@ -1,7 +1,0 @@
-Liquibase maintains a table called DATABASECHANGELOG which contains
-the script steps(changeSets) which have been executed on the current database so far.
-
-TODO. Changelog Formats
-https://docs.liquibase.com/concepts/changelogs/changelog-formats.html#:~:
-
-TODO. databasechangeloglock table 数据表的作用和应用场景 ?

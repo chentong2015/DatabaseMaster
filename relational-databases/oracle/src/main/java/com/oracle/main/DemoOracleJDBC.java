@@ -13,7 +13,7 @@ public class DemoOracleJDBC {
         PreparedStatement statement = connection.prepareStatement(query);
         for (int id = 231; id < 1000; id++) {
             statement.setString(1, String.valueOf(id));
-            statement.setString(2, "CTONG-" + (id));
+            statement.setString(2, "Country-" + (id));
             statement.setString(3, "0");
             statement.executeUpdate();
         }

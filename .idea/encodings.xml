@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/connection-pool-design/base-cp-design/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/connection-pool-design/base-cp-design/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/connection-pool-design/base-datasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/connection-pool-design/base-datasource/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/connection-pool-design/commons-dbcp2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/connection-pool-design/commons-dbcp2/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/connection-pool-design/hikaricp/src/main/java" charset="UTF-8" />
@@ -11,9 +11,8 @@
     <file url="file://$PROJECT_DIR$/connection-pool-design/orm-design-core/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/connection-pool-design/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/connection-pool-design/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jpa-design" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/jpa-design/JPA 持久化.txt" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jpa-design/JPA 最佳实践.PNG" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jdbc-driver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jdbc-driver/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpa-design/core-annotation-validation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpa-design/core-annotation-validation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jpa-design/jakarta-persistence-api/src/main/java" charset="UTF-8" />
@@ -64,5 +63,14 @@
     <file url="file://$PROJECT_DIR$/orm-middleware/orm-mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orm-middleware/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JpaOrmMiddlewaresProject/jpa-design/java-reflections/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JpaOrmMiddlewaresProject/jpa-design/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JpaOrmMiddlewaresProject/jpa-design/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JpaOrmMiddlewaresProject/orm-hibernate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JpaOrmMiddlewaresProject/orm-hibernate/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JpaOrmMiddlewaresProject/orm-liquibase/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JpaOrmMiddlewaresProject/orm-liquibase/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JpaOrmMiddlewaresProject/orm-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../JpaOrmMiddlewaresProject/orm-mybatis/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -1,5 +1,0 @@
-TODO. HQL支持两种关联join的形式：implicit(隐式)与explicit(显式)
-1. form子句中明确给出了join关键字, 建议使用
-2. implicit隐式形式不使用join关键字。关联使用"点号"来进行“引用”
-   from Cat as cat where cat.mate.name like '%s%'
-   form table1, table2 where table1.id = table2.ref; 逗号隔开会自动join两个表

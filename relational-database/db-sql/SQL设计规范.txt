@@ -1,0 +1,14 @@
+TODO: SQL设计规范:
+查询时尽量写全字段名，避免使用*查询 > 使用count(Field)替代count(*)提高统计速度
+多表连接时，尽量小表驱动(JOIN)大表 > 先对表where筛选之后再join联合查询
+使用explain和profile分析查询语句
+在千万级分页时使用limit
+对于经常使用的查询，可以开启缓存
+
+慢查询的优化:
+slow_query_log 捕获低效sql, 通过参数on来捕获执行时间
+ong_query_time 当SQL语句执行时间超过此数值时，就会被记录到日志中，建议设置为1或者更短
+slow_query_log_file 记录日志的文件名
+log_queries_not_using_indexes 这个参数设置为ON，可以捕获到所有未使用索引的SQL语句
+where条件单表查，锁定最小返回记录表
+order by limit 形式的sql语句让排序的表优先查

@@ -1,0 +1,17 @@
+Oracle创建出来的表名称全部是大写
+CREATE TABLE T_BATCHING_COMMENT (
+   ID NUMBER PRIMARY KEY,
+   REVIEW VARCHAR2(30)  // 字符串为VARCHAR2
+);
+
+查找用户自定义的对象或者是方法
+>SELECT * FROM user_procedures
+>DROP FUNCTION func_name
+>select * from USER_OBJECTS
+>select count(1) from USER_OBJECTS where OBJECT_TYPE = 'FUNCTION' and OBJECT_NAME = 'Procedure_name'
+
+>select * from table where rownum <= 100; 返回行数在前100的数据
+>call procedure_name ('', '') into ..   调用定义的含参数的Procedure
+>select table_name from all_tables where table_name = '%s'; 判断指定的表名称是否存在
+
+>select * from record where NVL(col1, 'NULL')

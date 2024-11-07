@@ -1,6 +1,0 @@
-设置fetching数据时，一批的大小，batch的大小决定要执行的Query的次数
-hibernate.default_batch_fetch_size 8
-
-Specify the size for batch loading the entries of a lazy collection
-只能作用在懒加载的Fetching中，设置一次要获取的数据量，否则将会执行N+1次Queries
-@BatchSize(size = 8)

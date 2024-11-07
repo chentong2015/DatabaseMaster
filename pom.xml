@@ -16,9 +16,8 @@
 
     <modules>
         <module>connection-pool-design</module>
-        <module>jpa-design</module>
-        <module>orm-middleware</module>
+        <module>jdbc-database</module>
         <module>relational-databases</module>
-        <module>relational-databases-test</module>
+        <module>jdbc-driver</module>
     </modules>
 </project>

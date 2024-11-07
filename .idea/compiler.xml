@@ -7,49 +7,63 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jdbc-database" />
+        <module name="jdbc-driver" />
+        <module name="sql-server" />
+        <module name="postgresql" />
+        <module name="mysql" />
+        <module name="base-datasource" />
         <module name="oracle" />
         <module name="sybase" />
-        <module name="native-hibernate5-api-annotation" />
-        <module name="liquibase-core-4-5" />
         <module name="relational-database-test" />
-        <module name="liquibase-core-basic" />
-        <module name="native-hibernate6-api-master" />
-        <module name="test-hibernate-db" />
-        <module name="sql-server" />
-        <module name="h2-database" />
-        <module name="test-hibernate" />
+        <module name="commons-dbcp2" />
+        <module name="hikaricp" />
+        <module name="h2-db" />
         <module name="sql-lite" />
-        <module name="native-hibernate5-api-xml" />
-        <module name="liquibase-core-4-8-test" />
         <module name="orm-design-core" />
-        <module name="liquibase-core-4-18" />
         <module name="entity-class-parser" />
-        <module name="mysql" />
-        <module name="native-hibernate6-api" />
-        <module name="mybatis-spring" />
-        <module name="mybatis-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="core-annotation-validation" target="17" />
       <module name="distributed-database" target="15" />
       <module name="distributed-db" target="15" />
       <module name="document-db-mongodb" target="11" />
       <module name="hyper-sql" target="15" />
       <module name="jakarta-persistence-api" target="17" />
+      <module name="java-persistence-api" target="17" />
+      <module name="java-reflections" target="15" />
+      <module name="java-reflections-entity-parser" target="15" />
       <module name="javax-persistence-api" target="17" />
+      <module name="jpa-design" target="17" />
+      <module name="liquibase-core-4-18" target="17" />
       <module name="liquibase-core-4-18-sub" target="15" />
+      <module name="liquibase-core-4-5" target="15" />
+      <module name="liquibase-core-4-8-test" target="15" />
+      <module name="liquibase-core-basic" target="15" />
+      <module name="mybatis-core" target="17" />
+      <module name="mybatis-spring" target="17" />
+      <module name="native-hibernate5-api-annotation" target="15" />
+      <module name="native-hibernate5-api-xml" target="15" />
       <module name="native-hibernate5-upgrade" target="15" />
+      <module name="native-hibernate6-api" target="15" />
+      <module name="native-hibernate6-api-master" target="15" />
       <module name="native-hibernate6-api-metadata" target="15" />
       <module name="object-db-management-system" target="1.5" />
+      <module name="orm-hibernate" target="15" />
       <module name="orm-jpa" target="17" />
       <module name="orm-jpa-hibernate-example" target="15" />
+      <module name="orm-liquibase" target="17" />
+      <module name="orm-middleware" target="17" />
+      <module name="orm-mybatis" target="15" />
       <module name="orm-spring-jdbc" target="15" />
       <module name="postgre-sql" target="15" />
-      <module name="postgresql" target="15" />
       <module name="relational-non-database" target="15" />
       <module name="sample-mapping-annotation" target="15" />
       <module name="sample-mapping-xml" target="15" />
       <module name="test" target="15" />
+      <module name="test-hibernate" target="15" />
+      <module name="test-hibernate-db" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

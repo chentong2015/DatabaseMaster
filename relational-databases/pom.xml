@@ -18,7 +18,7 @@
     </properties>
 
     <modules>
-        <module>h2-database</module>
+        <module>h2-db</module>
         <module>mysql</module>
         <module>oracle</module>
         <module>postgresql</module>

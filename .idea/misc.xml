@@ -23,11 +23,11 @@
         <option value="$PROJECT_DIR$/orm-jpa-hibernate/orm-jpa-hibernate-example/sample-mapping-xml/pom.xml" />
         <option value="$PROJECT_DIR$/orm-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/orm-liquibase/liquibase-core-4-18/liquibase-core-4-18-sub/pom.xml" />
+        <option value="$PROJECT_DIR$/orm-middleware/pom.xml" />
         <option value="$PROJECT_DIR$/orm-spring-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/relational-non-database/pom.xml" />
       </set>
     </option>
-    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_19" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

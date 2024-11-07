@@ -1,0 +1,14 @@
+TODO: JDBC的弊端
+1. jdbc底层没有使用连接池，操作数据库需要频繁的连接和关闭链接，消耗资源
+2. jdbc的sql写在代码中，如果修改需要重新编译
+3. 使用PreparedStatement预编译，需要用对parameterIndex123，不利于维护
+4. 需要对返回的ResultSet结果进行解析
+
+TODO. 关于JDBC Connection数据库连接
+1. JDBC Statement无法适配不同的数据库的区别，在执行上面需要硬编码
+2. JDBC Connection默认是开启AutoCommit
+   在自动提交的情况下不能再AutoCommit显式提交: Cannot commit when autoCommit is enabled.
+   在取消自动提交的情况下，可以自定义事务提交或者回滚: connection.commit()或connection.rollback();
+3. JDBC Connection连接具有Timeout
+   一般数据库接收TCP/HTTP的连接具有Timeout超时时间(Connection, Idle, Statement)
+   在超时时间内没有完成将会造成异常，导致程序无法继续执行

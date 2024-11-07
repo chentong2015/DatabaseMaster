@@ -1,4 +1,0 @@
-Hibernate Locking对两种锁的实现
-- Optimistic
-- Pessimistic
-https://docs.jboss.org/hibernate/orm/6.1/userguide/html_single/Hibernate_User_Guide.html#locking

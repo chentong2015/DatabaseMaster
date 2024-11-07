@@ -1,0 +1,14 @@
+TODO. 隔离级别基于数据库的隔离级别
+基于AOP来实现，Spring为标记@Transactional注解的类型(或者方法)创建代理
+Spring creates proxies for all classes annotated with @Transactional on class or any methods
+
+使用Cglib: 创建继承类(Proxy代理类)来执行对数据库的请求操作, 不同于JDK通过接口来实现
+class DemoTransactionProxy extends DemoTransactionClass {
+    DemoTransactionClass target;
+    判断是否有@Transactional注解
+       创建数据库连接connection
+       connection.autocommit=false 方便回滚
+    target.test();
+       事务会统一提交commit
+       反之会回滚rollback
+}
