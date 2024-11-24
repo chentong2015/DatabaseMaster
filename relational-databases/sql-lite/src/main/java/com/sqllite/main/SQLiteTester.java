@@ -2,10 +2,9 @@ package com.sqllite.main;
 
 import java.sql.*;
 
-public class BaseSQLiteTester {
+public class SQLiteTester {
 
-    public static final String DB_NAME = "demo.db";
-    public static final String CONNECTION_STRING = "jdbc:sqlite:" + DB_NAME;
+    public static final String CONNECTION_STRING = "jdbc:sqlite:path_to_sqlite_file" ;
 
     /**
      * 1. 创建数据库连接时, 如果DB不存在, 则会创建出来
@@ -47,10 +46,8 @@ public class BaseSQLiteTester {
         }
     }
 
-    /**
-     * SQLite Driver对Java并没有提供Schema数据表的信息，可通过ResultSet来获取table的构建信息Metadata
-     * 不同的数据库提供的原信息可能有所不同
-     */
+    // SQLite Driver对Java并没有提供Schema数据表的信息，
+    // 通过ResultSet来获取table的构建信息Metadata, 不同数据库的原信息可能有所不同
     private void testTableMetaData() {
         String query = "SELECT * FROM contacts";
         try (Connection connection = DriverManager.getConnection(CONNECTION_STRING);
